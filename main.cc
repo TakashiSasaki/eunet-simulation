@@ -5,7 +5,10 @@
 #include <ns3/point-to-point-helper.h>
 #include <ns3/applications-module.h>
 #include <ns3/ipv4-global-routing-helper.h>
-#include <ns3/wifi-helper.h>
+//#include <ns3/wifi-helper.h>
+//#include <ns3/wifi-channel.h>
+#include <ns3/yans-wifi-helper.h>
+#include <ns3/yans-wifi-phy.h>
 #include <stdlib.h>
 #include <iostream>
 #include <iomanip>
@@ -4628,6 +4631,1277 @@ ns3::NetDeviceContainer apdevices312 ;
 ns3::NetDeviceContainer apdevices314 ;
 //    apdevices315 = ns.network.NetDeviceContainer()
 
+//wifi
+	ns3::WifiHelper Wifi;
+	Wifi = ns3::WifiHelper::Default();
+	Wifi.SetRemoteStationManager("ns3::ArfWifiManager");
 
+//wifi channel
+	ns3::YansWifiChannelHelper wifiChannel;
+	wifiChannel = ns3::YansWifiChannelHelper::Default();
+	ns3::YansWifiPhy wifiPhy;
+	wifiPhy = ns3::YansWifiPhyHelper::Default();
+	wifiPhy.SetChannel(wifiChannel.Create());
+
+   //wifiChannel = ns.wifi.YansWifiChannelHelper.Default()
+   //wifiPhy = ns.wifi.YansWifiPhyHelper.Default()
+   //wifiPhy.SetChannel(wifiChannel.Create())
+
+   wifiChannel2 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy2 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy2.SetChannel(wifiChannel2.Create())
+
+   wifiChannel3 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy3 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy3.SetChannel(wifiChannel3.Create())
+
+   wifiChannel4 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy4 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy4.SetChannel(wifiChannel4.Create())
+
+   wifiChannel5 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy5 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy5.SetChannel(wifiChannel5.Create())
+
+   wifiChannel6 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy6 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy6.SetChannel(wifiChannel6.Create())
+
+   wifiChannel7 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy7 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy7.SetChannel(wifiChannel7.Create())
+
+   wifiChannel8 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy8 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy8.SetChannel(wifiChannel8.Create())
+
+   wifiChannel9 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy9 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy9.SetChannel(wifiChannel9.Create())
+
+   wifiChannel10 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy10 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy10.SetChannel(wifiChannel10.Create())
+
+   wifiChannel11 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy11 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy11.SetChannel(wifiChannel11.Create())
+
+   wifiChannel12 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy12 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy12.SetChannel(wifiChannel12.Create())
+
+   wifiChannel13 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy13 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy13.SetChannel(wifiChannel13.Create())
+
+   wifiChannel14 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy14 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy14.SetChannel(wifiChannel14.Create())
+
+   wifiChannel15 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy15 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy15.SetChannel(wifiChannel15.Create())
+
+   wifiChannel16 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy16 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy16.SetChannel(wifiChannel16.Create())
+
+   wifiChannel17 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy17 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy17.SetChannel(wifiChannel17.Create())
+
+   wifiChannel18 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy18 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy18.SetChannel(wifiChannel18.Create())
+
+   wifiChannel19 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy19 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy19.SetChannel(wifiChannel19.Create())
+
+   wifiChannel20 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy20 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy20.SetChannel(wifiChannel20.Create())
+
+   wifiChannel21 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy21 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy21.SetChannel(wifiChannel21.Create())
+
+   wifiChannel22 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy22 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy22.SetChannel(wifiChannel22.Create())
+
+   wifiChannel23 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy23 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy23.SetChannel(wifiChannel23.Create())
+
+   wifiChannel24 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy24 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy24.SetChannel(wifiChannel24.Create())
+
+   wifiChannel25 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy25 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy25.SetChannel(wifiChannel25.Create())
+
+   wifiChannel26 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy26 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy26.SetChannel(wifiChannel26.Create())
+
+   wifiChannel27 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy27 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy27.SetChannel(wifiChannel27.Create())
+
+   wifiChannel28 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy28 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy28.SetChannel(wifiChannel28.Create())
+
+   wifiChannel29 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy29 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy29.SetChannel(wifiChannel29.Create())
+
+   wifiChannel30 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy30 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy30.SetChannel(wifiChannel30.Create())
+
+   wifiChannel31 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy31 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy31.SetChannel(wifiChannel31.Create())
+
+   wifiChannel32 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy32 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy32.SetChannel(wifiChannel32.Create())
+
+   wifiChannel33 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy33 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy33.SetChannel(wifiChannel33.Create())
+
+   wifiChannel34 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy34 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy34.SetChannel(wifiChannel34.Create())
+
+   wifiChannel35 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy35 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy35.SetChannel(wifiChannel35.Create())
+
+   wifiChannel36 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy36 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy36.SetChannel(wifiChannel36.Create())
+
+   wifiChannel37 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy37 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy37.SetChannel(wifiChannel37.Create())
+
+   wifiChannel38 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy38 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy38.SetChannel(wifiChannel38.Create())
+
+   wifiChannel39 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy39 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy39.SetChannel(wifiChannel39.Create())
+
+   wifiChannel40 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy40 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy40.SetChannel(wifiChannel40.Create())
+
+   wifiChannel41 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy41 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy41.SetChannel(wifiChannel41.Create())
+
+   wifiChannel42 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy42 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy42.SetChannel(wifiChannel42.Create())
+
+   wifiChannel43 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy43 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy43.SetChannel(wifiChannel43.Create())
+
+   wifiChannel44 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy44 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy44.SetChannel(wifiChannel44.Create())
+
+   wifiChannel45 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy45 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy45.SetChannel(wifiChannel45.Create())
+
+   wifiChannel46 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy46 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy46.SetChannel(wifiChannel46.Create())
+
+   wifiChannel47 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy47 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy47.SetChannel(wifiChannel47.Create())
+
+   wifiChannel48 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy48 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy48.SetChannel(wifiChannel48.Create())
+
+   wifiChannel49 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy49 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy49.SetChannel(wifiChannel49.Create())
+
+   wifiChannel50 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy50 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy50.SetChannel(wifiChannel50.Create())
+
+   wifiChannel51 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy51 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy51.SetChannel(wifiChannel51.Create())
+
+   wifiChannel52 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy52 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy52.SetChannel(wifiChannel52.Create())
+
+   wifiChannel53 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy53 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy53.SetChannel(wifiChannel53.Create())
+
+   wifiChannel54 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy54 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy54.SetChannel(wifiChannel54.Create())
+
+   wifiChannel55 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy55 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy55.SetChannel(wifiChannel55.Create())
+
+   wifiChannel56 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy56 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy56.SetChannel(wifiChannel56.Create())
+
+   wifiChannel57 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy57 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy57.SetChannel(wifiChannel57.Create())
+
+   wifiChannel58 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy58 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy58.SetChannel(wifiChannel58.Create())
+
+   wifiChannel59 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy59 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy59.SetChannel(wifiChannel59.Create())
+
+   wifiChannel60 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy60 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy60.SetChannel(wifiChannel60.Create())
+
+   wifiChannel61 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy61 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy61.SetChannel(wifiChannel61.Create())
+
+   wifiChannel62 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy62 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy62.SetChannel(wifiChannel62.Create())
+
+   wifiChannel63 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy63 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy63.SetChannel(wifiChannel63.Create())
+
+   wifiChannel64 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy64 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy64.SetChannel(wifiChannel64.Create())
+
+   wifiChannel65 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy65 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy65.SetChannel(wifiChannel65.Create())
+
+   wifiChannel66 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy66 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy66.SetChannel(wifiChannel66.Create())
+
+   wifiChannel67 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy67 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy67.SetChannel(wifiChannel67.Create())
+
+   wifiChannel68 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy68 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy68.SetChannel(wifiChannel68.Create())
+
+   wifiChannel69 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy69 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy69.SetChannel(wifiChannel69.Create())
+
+   wifiChannel70 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy70 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy70.SetChannel(wifiChannel70.Create())
+
+   wifiChannel71 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy71 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy71.SetChannel(wifiChannel71.Create())
+
+   wifiChannel72 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy72 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy72.SetChannel(wifiChannel72.Create())
+
+   wifiChannel73 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy73 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy73.SetChannel(wifiChannel73.Create())
+
+   wifiChannel74 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy74 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy74.SetChannel(wifiChannel74.Create())
+
+   wifiChannel75 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy75 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy75.SetChannel(wifiChannel75.Create())
+
+   wifiChannel76 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy76 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy76.SetChannel(wifiChannel76.Create())
+
+   wifiChannel77 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy77 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy77.SetChannel(wifiChannel77.Create())
+
+   wifiChannel78 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy78 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy78.SetChannel(wifiChannel78.Create())
+
+   wifiChannel79 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy79 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy79.SetChannel(wifiChannel79.Create())
+
+   wifiChannel80 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy80 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy80.SetChannel(wifiChannel80.Create())
+
+   wifiChannel81 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy81 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy81.SetChannel(wifiChannel81.Create())
+
+   wifiChannel82 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy82 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy82.SetChannel(wifiChannel82.Create())
+
+   wifiChannel83 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy83 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy83.SetChannel(wifiChannel83.Create())
+
+   wifiChannel84 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy84 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy84.SetChannel(wifiChannel84.Create())
+
+   wifiChannel85 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy85 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy85.SetChannel(wifiChannel85.Create())
+
+   wifiChannel86 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy86 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy86.SetChannel(wifiChannel86.Create())
+
+   wifiChannel87 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy87 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy87.SetChannel(wifiChannel87.Create())
+
+   wifiChannel88 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy88 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy88.SetChannel(wifiChannel88.Create())
+
+   wifiChannel89 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy89 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy89.SetChannel(wifiChannel89.Create())
+
+   wifiChannel90 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy90 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy90.SetChannel(wifiChannel90.Create())
+
+   wifiChannel91 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy91 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy91.SetChannel(wifiChannel91.Create())
+
+   wifiChannel92 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy92 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy92.SetChannel(wifiChannel92.Create())
+
+   wifiChannel93 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy93 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy93.SetChannel(wifiChannel93.Create())
+
+   wifiChannel94 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy94 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy94.SetChannel(wifiChannel94.Create())
+
+   wifiChannel95 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy95 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy95.SetChannel(wifiChannel95.Create())
+
+   wifiChannel96 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy96 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy96.SetChannel(wifiChannel96.Create())
+
+   wifiChannel97 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy97 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy97.SetChannel(wifiChannel97.Create())
+
+   wifiChannel98 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy98 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy98.SetChannel(wifiChannel98.Create())
+
+   wifiChannel99 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy99 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy99.SetChannel(wifiChannel99.Create())
+
+   wifiChannel100 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy100 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy100.SetChannel(wifiChannel100.Create())
+
+   wifiChannel101 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy101 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy101.SetChannel(wifiChannel101.Create())
+
+   wifiChannel102 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy102 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy102.SetChannel(wifiChannel102.Create())
+
+   wifiChannel103 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy103 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy103.SetChannel(wifiChannel103.Create())
+
+   wifiChannel104 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy104 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy104.SetChannel(wifiChannel104.Create())
+
+   wifiChannel105 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy105 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy105.SetChannel(wifiChannel105.Create())
+
+   wifiChannel106 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy106 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy106.SetChannel(wifiChannel106.Create())
+
+   wifiChannel107 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy107 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy107.SetChannel(wifiChannel107.Create())
+
+   wifiChannel108 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy108 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy108.SetChannel(wifiChannel108.Create())
+
+   wifiChannel109 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy109 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy109.SetChannel(wifiChannel109.Create())
+
+   wifiChannel110 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy110 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy110.SetChannel(wifiChannel110.Create())
+
+   wifiChannel111 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy111 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy111.SetChannel(wifiChannel111.Create())
+
+   wifiChannel112 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy112 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy112.SetChannel(wifiChannel112.Create())
+
+   wifiChannel113 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy113 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy113.SetChannel(wifiChannel113.Create())
+
+   wifiChannel114 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy114 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy114.SetChannel(wifiChannel114.Create())
+
+   wifiChannel115 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy115 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy115.SetChannel(wifiChannel115.Create())
+
+   wifiChannel116 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy116 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy116.SetChannel(wifiChannel116.Create())
+
+   wifiChannel117 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy117 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy117.SetChannel(wifiChannel117.Create())
+
+   wifiChannel118 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy118 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy118.SetChannel(wifiChannel118.Create())
+
+   wifiChannel119 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy119 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy119.SetChannel(wifiChannel119.Create())
+
+   wifiChannel120 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy120 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy120.SetChannel(wifiChannel120.Create())
+
+   wifiChannel121 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy121 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy121.SetChannel(wifiChannel121.Create())
+
+   wifiChannel122 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy122 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy122.SetChannel(wifiChannel122.Create())
+
+   wifiChannel123 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy123 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy123.SetChannel(wifiChannel123.Create())
+
+   wifiChannel124 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy124 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy124.SetChannel(wifiChannel124.Create())
+
+   wifiChannel125 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy125 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy125.SetChannel(wifiChannel125.Create())
+
+   wifiChannel126 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy126 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy126.SetChannel(wifiChannel126.Create())
+
+   wifiChannel127 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy127 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy127.SetChannel(wifiChannel127.Create())
+
+   wifiChannel128 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy128 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy128.SetChannel(wifiChannel128.Create())
+
+   wifiChannel129 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy129 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy129.SetChannel(wifiChannel129.Create())
+
+   wifiChannel130 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy130 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy130.SetChannel(wifiChannel130.Create())
+
+   wifiChannel131 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy131 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy131.SetChannel(wifiChannel131.Create())
+
+   wifiChannel132 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy132 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy132.SetChannel(wifiChannel132.Create())
+
+   wifiChannel133 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy133 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy133.SetChannel(wifiChannel133.Create())
+
+   wifiChannel134 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy134 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy134.SetChannel(wifiChannel134.Create())
+
+   wifiChannel135 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy135 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy135.SetChannel(wifiChannel135.Create())
+
+   wifiChannel136 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy136 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy136.SetChannel(wifiChannel136.Create())
+
+   wifiChannel137 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy137 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy137.SetChannel(wifiChannel137.Create())
+
+   wifiChannel138 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy138 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy138.SetChannel(wifiChannel138.Create())
+
+   wifiChannel139 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy139 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy139.SetChannel(wifiChannel139.Create())
+
+   wifiChannel140 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy140 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy140.SetChannel(wifiChannel140.Create())
+
+   wifiChannel141 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy141 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy141.SetChannel(wifiChannel141.Create())
+
+   wifiChannel142 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy142 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy142.SetChannel(wifiChannel142.Create())
+
+   wifiChannel143 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy143 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy143.SetChannel(wifiChannel143.Create())
+
+   wifiChannel144 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy144 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy144.SetChannel(wifiChannel144.Create())
+
+   wifiChannel145 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy145 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy145.SetChannel(wifiChannel145.Create())
+
+   wifiChannel146 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy146 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy146.SetChannel(wifiChannel146.Create())
+
+   wifiChannel147 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy147 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy147.SetChannel(wifiChannel147.Create())
+
+   wifiChannel148 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy148 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy148.SetChannel(wifiChannel148.Create())
+
+   wifiChannel149 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy149 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy149.SetChannel(wifiChannel149.Create())
+
+   wifiChannel150 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy150 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy150.SetChannel(wifiChannel150.Create())
+
+   wifiChannel151 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy151 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy151.SetChannel(wifiChannel151.Create())
+
+   wifiChannel152 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy152 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy152.SetChannel(wifiChannel152.Create())
+
+   wifiChannel153 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy153 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy153.SetChannel(wifiChannel153.Create())
+
+   wifiChannel154 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy154 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy154.SetChannel(wifiChannel154.Create())
+
+   wifiChannel155 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy155 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy155.SetChannel(wifiChannel155.Create())
+
+   wifiChannel156 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy156 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy156.SetChannel(wifiChannel156.Create())
+
+   wifiChannel157 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy157 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy157.SetChannel(wifiChannel157.Create())
+
+   wifiChannel158 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy158 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy158.SetChannel(wifiChannel158.Create())
+
+   wifiChannel159 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy159 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy159.SetChannel(wifiChannel159.Create())
+
+   wifiChannel160 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy160 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy160.SetChannel(wifiChannel160.Create())
+
+   wifiChannel161 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy161 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy161.SetChannel(wifiChannel161.Create())
+
+   wifiChannel162 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy162 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy162.SetChannel(wifiChannel162.Create())
+
+   wifiChannel163 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy163 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy163.SetChannel(wifiChannel163.Create())
+
+   wifiChannel164 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy164 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy164.SetChannel(wifiChannel164.Create())
+
+   wifiChannel165 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy165 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy165.SetChannel(wifiChannel165.Create())
+
+   wifiChannel166 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy166 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy166.SetChannel(wifiChannel166.Create())
+
+   wifiChannel167 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy167 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy167.SetChannel(wifiChannel167.Create())
+
+   wifiChannel168 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy168 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy168.SetChannel(wifiChannel168.Create())
+
+   wifiChannel169 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy169 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy169.SetChannel(wifiChannel169.Create())
+
+   wifiChannel170 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy170 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy170.SetChannel(wifiChannel170.Create())
+
+   wifiChannel171 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy171 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy171.SetChannel(wifiChannel171.Create())
+
+   wifiChannel172 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy172 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy172.SetChannel(wifiChannel172.Create())
+
+   wifiChannel173 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy173 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy173.SetChannel(wifiChannel173.Create())
+
+   wifiChannel174 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy174 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy174.SetChannel(wifiChannel174.Create())
+
+   wifiChannel175 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy175 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy175.SetChannel(wifiChannel175.Create())
+
+   wifiChannel176 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy176 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy176.SetChannel(wifiChannel176.Create())
+
+   wifiChannel177 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy177 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy177.SetChannel(wifiChannel177.Create())
+
+   wifiChannel178 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy178 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy178.SetChannel(wifiChannel178.Create())
+
+   wifiChannel179 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy179 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy179.SetChannel(wifiChannel179.Create())
+
+   wifiChannel180 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy180 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy180.SetChannel(wifiChannel180.Create())
+
+   wifiChannel181 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy181 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy181.SetChannel(wifiChannel181.Create())
+
+   wifiChannel182 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy182 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy182.SetChannel(wifiChannel182.Create())
+
+   wifiChannel183 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy183 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy183.SetChannel(wifiChannel183.Create())
+
+   wifiChannel184 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy184 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy184.SetChannel(wifiChannel184.Create())
+
+   wifiChannel185 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy185 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy185.SetChannel(wifiChannel185.Create())
+
+   wifiChannel186 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy186 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy186.SetChannel(wifiChannel186.Create())
+
+   wifiChannel187 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy187 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy187.SetChannel(wifiChannel187.Create())
+
+   wifiChannel188 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy188 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy188.SetChannel(wifiChannel188.Create())
+
+   wifiChannel189 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy189 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy189.SetChannel(wifiChannel189.Create())
+
+   wifiChannel190 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy190 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy190.SetChannel(wifiChannel190.Create())
+
+   wifiChannel191 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy191 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy191.SetChannel(wifiChannel191.Create())
+
+   wifiChannel192 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy192 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy192.SetChannel(wifiChannel192.Create())
+
+   wifiChannel193 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy193 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy193.SetChannel(wifiChannel193.Create())
+
+   wifiChannel194 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy194 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy194.SetChannel(wifiChannel194.Create())
+
+   wifiChannel195 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy195 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy195.SetChannel(wifiChannel195.Create())
+
+   wifiChannel196 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy196 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy196.SetChannel(wifiChannel196.Create())
+
+   wifiChannel197 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy197 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy197.SetChannel(wifiChannel197.Create())
+
+   wifiChannel198 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy198 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy198.SetChannel(wifiChannel198.Create())
+
+   wifiChannel199 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy199 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy199.SetChannel(wifiChannel199.Create())
+
+   wifiChannel200 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy200 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy200.SetChannel(wifiChannel200.Create())
+
+   wifiChannel201 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy201 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy201.SetChannel(wifiChannel201.Create())
+
+   wifiChannel202 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy202 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy202.SetChannel(wifiChannel202.Create())
+
+   wifiChannel203 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy203 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy203.SetChannel(wifiChannel203.Create())
+
+   wifiChannel204 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy204 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy204.SetChannel(wifiChannel204.Create())
+
+   wifiChannel205 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy205 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy205.SetChannel(wifiChannel205.Create())
+
+   wifiChannel206 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy206 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy206.SetChannel(wifiChannel206.Create())
+
+   wifiChannel207 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy207 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy207.SetChannel(wifiChannel207.Create())
+
+   wifiChannel208 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy208 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy208.SetChannel(wifiChannel208.Create())
+
+   wifiChannel209 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy209 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy209.SetChannel(wifiChannel209.Create())
+
+   wifiChannel210 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy210 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy210.SetChannel(wifiChannel210.Create())
+
+   wifiChannel211 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy211 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy211.SetChannel(wifiChannel211.Create())
+
+   wifiChannel212 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy212 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy212.SetChannel(wifiChannel212.Create())
+
+   wifiChannel213 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy213 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy213.SetChannel(wifiChannel213.Create())
+
+   wifiChannel214 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy214 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy214.SetChannel(wifiChannel214.Create())
+
+   wifiChannel215 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy215 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy215.SetChannel(wifiChannel215.Create())
+
+   wifiChannel216 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy216 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy216.SetChannel(wifiChannel216.Create())
+
+   wifiChannel217 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy217 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy217.SetChannel(wifiChannel217.Create())
+
+   wifiChannel218 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy218 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy218.SetChannel(wifiChannel218.Create())
+
+   wifiChannel219 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy219 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy219.SetChannel(wifiChannel219.Create())
+
+   wifiChannel220 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy220 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy220.SetChannel(wifiChannel220.Create())
+
+   wifiChannel221 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy221 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy221.SetChannel(wifiChannel221.Create())
+
+   wifiChannel222 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy222 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy222.SetChannel(wifiChannel222.Create())
+
+   wifiChannel223 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy223 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy223.SetChannel(wifiChannel223.Create())
+
+   wifiChannel224 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy224 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy224.SetChannel(wifiChannel224.Create())
+
+   wifiChannel225 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy225 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy225.SetChannel(wifiChannel225.Create())
+
+   wifiChannel226 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy226 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy226.SetChannel(wifiChannel226.Create())
+
+   wifiChannel227 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy227 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy227.SetChannel(wifiChannel227.Create())
+
+   wifiChannel228 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy228 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy228.SetChannel(wifiChannel228.Create())
+
+   wifiChannel229 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy229 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy229.SetChannel(wifiChannel229.Create())
+
+   wifiChannel230 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy230 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy230.SetChannel(wifiChannel230.Create())
+
+   wifiChannel231 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy231 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy231.SetChannel(wifiChannel231.Create())
+
+   wifiChannel232 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy232 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy232.SetChannel(wifiChannel232.Create())
+
+   wifiChannel233 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy233 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy233.SetChannel(wifiChannel233.Create())
+
+   wifiChannel234 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy234 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy234.SetChannel(wifiChannel234.Create())
+
+   wifiChannel235 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy235 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy235.SetChannel(wifiChannel235.Create())
+
+   wifiChannel236 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy236 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy236.SetChannel(wifiChannel236.Create())
+
+   wifiChannel237 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy237 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy237.SetChannel(wifiChannel237.Create())
+
+   wifiChannel238 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy238 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy238.SetChannel(wifiChannel238.Create())
+
+   wifiChannel239 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy239 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy239.SetChannel(wifiChannel239.Create())
+
+   wifiChannel240 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy240 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy240.SetChannel(wifiChannel240.Create())
+
+   wifiChannel241 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy241 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy241.SetChannel(wifiChannel241.Create())
+
+   wifiChannel242 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy242 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy242.SetChannel(wifiChannel242.Create())
+
+   wifiChannel243 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy243 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy243.SetChannel(wifiChannel243.Create())
+
+   wifiChannel244 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy244 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy244.SetChannel(wifiChannel244.Create())
+
+   wifiChannel245 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy245 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy245.SetChannel(wifiChannel245.Create())
+
+   wifiChannel246 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy246 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy246.SetChannel(wifiChannel246.Create())
+
+   wifiChannel247 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy247 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy247.SetChannel(wifiChannel247.Create())
+
+   wifiChannel248 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy248 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy248.SetChannel(wifiChannel248.Create())
+
+   wifiChannel249 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy249 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy249.SetChannel(wifiChannel249.Create())
+
+   wifiChannel250 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy250 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy250.SetChannel(wifiChannel250.Create())
+
+   wifiChannel251 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy251 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy251.SetChannel(wifiChannel251.Create())
+
+   wifiChannel252 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy252 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy252.SetChannel(wifiChannel252.Create())
+
+   wifiChannel253 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy253 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy253.SetChannel(wifiChannel253.Create())
+
+   wifiChannel254 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy254 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy254.SetChannel(wifiChannel254.Create())
+
+   wifiChannel255 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy255 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy255.SetChannel(wifiChannel255.Create())
+
+   wifiChannel256 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy256 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy256.SetChannel(wifiChannel256.Create())
+
+   wifiChannel257 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy257 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy257.SetChannel(wifiChannel257.Create())
+
+   wifiChannel258 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy258 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy258.SetChannel(wifiChannel258.Create())
+
+   wifiChannel259 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy259 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy259.SetChannel(wifiChannel259.Create())
+
+   wifiChannel260 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy260 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy260.SetChannel(wifiChannel260.Create())
+
+   wifiChannel261 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy261 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy261.SetChannel(wifiChannel261.Create())
+
+   wifiChannel262 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy262 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy262.SetChannel(wifiChannel262.Create())
+
+   wifiChannel263 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy263 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy263.SetChannel(wifiChannel263.Create())
+
+   wifiChannel264 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy264 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy264.SetChannel(wifiChannel264.Create())
+
+   wifiChannel265 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy265 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy265.SetChannel(wifiChannel265.Create())
+
+   wifiChannel266 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy266 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy266.SetChannel(wifiChannel266.Create())
+
+   wifiChannel267 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy267 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy267.SetChannel(wifiChannel267.Create())
+
+   wifiChannel268 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy268 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy268.SetChannel(wifiChannel268.Create())
+
+   wifiChannel269 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy269 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy269.SetChannel(wifiChannel269.Create())
+
+   wifiChannel270 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy270 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy270.SetChannel(wifiChannel270.Create())
+
+   wifiChannel271 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy271 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy271.SetChannel(wifiChannel271.Create())
+
+   wifiChannel272 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy272 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy272.SetChannel(wifiChannel272.Create())
+
+   wifiChannel273 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy273 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy273.SetChannel(wifiChannel273.Create())
+
+   wifiChannel274 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy274 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy274.SetChannel(wifiChannel274.Create())
+
+   wifiChannel275 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy275 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy275.SetChannel(wifiChannel275.Create())
+
+   wifiChannel276 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy276 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy276.SetChannel(wifiChannel276.Create())
+
+   wifiChannel277 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy277 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy277.SetChannel(wifiChannel277.Create())
+
+   wifiChannel278 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy278 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy278.SetChannel(wifiChannel278.Create())
+
+   wifiChannel279 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy279 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy279.SetChannel(wifiChannel279.Create())
+
+   wifiChannel280 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy280 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy280.SetChannel(wifiChannel280.Create())
+
+   wifiChannel281 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy281 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy281.SetChannel(wifiChannel281.Create())
+
+   wifiChannel282 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy282 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy282.SetChannel(wifiChannel282.Create())
+
+   wifiChannel283 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy283 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy283.SetChannel(wifiChannel283.Create())
+
+   wifiChannel284 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy284 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy284.SetChannel(wifiChannel284.Create())
+
+   wifiChannel285 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy285 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy285.SetChannel(wifiChannel285.Create())
+
+   wifiChannel286 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy286 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy286.SetChannel(wifiChannel286.Create())
+
+   wifiChannel287 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy287 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy287.SetChannel(wifiChannel287.Create())
+
+   wifiChannel288 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy288 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy288.SetChannel(wifiChannel288.Create())
+
+   wifiChannel289 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy289 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy289.SetChannel(wifiChannel289.Create())
+
+   wifiChannel290 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy290 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy290.SetChannel(wifiChannel290.Create())
+
+   wifiChannel291 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy291 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy291.SetChannel(wifiChannel291.Create())
+
+   wifiChannel292 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy292 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy292.SetChannel(wifiChannel292.Create())
+
+   wifiChannel293 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy293 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy293.SetChannel(wifiChannel293.Create())
+
+   wifiChannel294 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy294 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy294.SetChannel(wifiChannel294.Create())
+
+   wifiChannel295 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy295 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy295.SetChannel(wifiChannel295.Create())
+
+   wifiChannel296 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy296 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy296.SetChannel(wifiChannel296.Create())
+
+   wifiChannel297 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy297 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy297.SetChannel(wifiChannel297.Create())
+
+//    wifiChannel298 = ns.wifi.YansWifiChannelHelper.Default()
+//    wifiPhy298 = ns.wifi.YansWifiPhyHelper.Default()
+//    wifiPhy298.SetChannel(wifiChannel298.Create())
+//
+//    wifiChannel299 = ns.wifi.YansWifiChannelHelper.Default()
+//    wifiPhy299 = ns.wifi.YansWifiPhyHelper.Default()
+//    wifiPhy299.SetChannel(wifiChannel299.Create())
+//
+   wifiChannel300 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy300 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy300.SetChannel(wifiChannel300.Create())
+
+   wifiChannel301 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy301 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy301.SetChannel(wifiChannel301.Create())
+
+   wifiChannel302 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy302 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy302.SetChannel(wifiChannel302.Create())
+
+   wifiChannel303 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy303 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy303.SetChannel(wifiChannel303.Create())
+
+   wifiChannel304 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy304 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy304.SetChannel(wifiChannel304.Create())
+
+   wifiChannel305 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy305 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy305.SetChannel(wifiChannel305.Create())
+
+//    wifiChannel306 = ns.wifi.YansWifiChannelHelper.Default()
+//    wifiPhy306 = ns.wifi.YansWifiPhyHelper.Default()
+//    wifiPhy306.SetChannel(wifiChannel306.Create())
+//
+   wifiChannel307 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy307 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy307.SetChannel(wifiChannel307.Create())
+
+   wifiChannel308 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy308 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy308.SetChannel(wifiChannel308.Create())
+
+   wifiChannel309 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy309 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy309.SetChannel(wifiChannel309.Create())
+
+   wifiChannel310 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy310 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy310.SetChannel(wifiChannel310.Create())
+
+   wifiChannel311 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy311 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy311.SetChannel(wifiChannel311.Create())
+
+   wifiChannel312 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy312 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy312.SetChannel(wifiChannel312.Create())
+
+   wifiChannel313 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy313 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy313.SetChannel(wifiChannel313.Create())
+
+   wifiChannel314 = ns.wifi.YansWifiChannelHelper.Default()
+   wifiPhy314 = ns.wifi.YansWifiPhyHelper.Default()
+   wifiPhy314.SetChannel(wifiChannel314.Create())
+
+//    wifiChannel315 = ns.wifi.YansWifiChannelHelper.Default()
+//    wifiPhy315 = ns.wifi.YansWifiPhyHelper.Default()
+//    wifiPhy315.SetChannel(wifiChannel315.Create())
+//
 	return EXIT_SUCCESS;
 } //main
