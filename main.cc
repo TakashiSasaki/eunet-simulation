@@ -17718,5 +17718,2786 @@ int main(int argc, char** argv) {
 	link342 = csma.Install(ns3::NodeContainer(csmaSwitch336, csmaSwitch342));
 	switchDevices336.Add(link342.Get(0));
 	switchDevices342.Add(link342.Get(1));
+
+// switch create
+
+	ns3::Ptr<ns3::Node> switchNoderouter = csmaSwitchrouter.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevicerouter = ns3::BridgeNetDevice();
+	switchNoderouter->AddDevice(bridgeDevicerouter);
+
+	for (int portIter; portIter < switchDevicesrouter.GetN(); ++portIter) {
+		bridgeDevicerouter->AddBridgePort(switchDevicesrouter.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode6506E = csmaSwitch6506E.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice6506E = ns3::BridgeNetDevice();
+	switchNode6506E->AddDevice(bridgeDevice6506E);
+
+	for (int portIter; portIter < switchDevices6506E.GetN(); ++portIter) {
+		bridgeDevice6506E->AddBridgePort(switchDevices6506E.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode5 = csmaSwitch5.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice5 = ns3::BridgeNetDevice();
+	switchNode5->AddDevice(bridgeDevice5);
+
+	for (int portIter; portIter < switchDevices5.GetN(); ++portIter) {
+		bridgeDevice5->AddBridgePort(switchDevices5.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode6 = csmaSwitch6.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice6 = ns3::BridgeNetDevice();
+	switchNode6->AddDevice(bridgeDevice6);
+
+	for (int portIter; portIter < switchDevices6.GetN(); ++portIter) {
+		bridgeDevice6->AddBridgePort(switchDevices6.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode7 = csmaSwitch7.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice7 = ns3::BridgeNetDevice();
+	switchNode7->AddDevice(bridgeDevice7);
+
+	for (int portIter; portIter < switchDevices7.GetN(); ++portIter) {
+		bridgeDevice7->AddBridgePort(switchDevices7.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode8 = csmaSwitch8.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice8 = ns3::BridgeNetDevice();
+	switchNode8->AddDevice(bridgeDevice8);
+
+	for (int portIter; portIter < switchDevices8.GetN(); ++portIter) {
+		bridgeDevice8->AddBridgePort(switchDevices8.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode9 = csmaSwitch9.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice9 = ns3::BridgeNetDevice();
+	switchNode9->AddDevice(bridgeDevice9);
+
+	for (int portIter; portIter < switchDevices9.GetN(); ++portIter) {
+		bridgeDevice9->AddBridgePort(switchDevices9.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode10 = csmaSwitch10.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice10 = ns3::BridgeNetDevice();
+	switchNode10->AddDevice(bridgeDevice10);
+
+	for (int portIter; portIter < switchDevices10.GetN(); ++portIter) {
+		bridgeDevice10->AddBridgePort(switchDevices10.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode11 = csmaSwitch11.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice11 = ns3::BridgeNetDevice();
+	switchNode11->AddDevice(bridgeDevice11);
+
+	for (int portIter; portIter < switchDevices11.GetN(); ++portIter) {
+		bridgeDevice11->AddBridgePort(switchDevices11.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode12 = csmaSwitch12.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice12 = ns3::BridgeNetDevice();
+	switchNode12->AddDevice(bridgeDevice12);
+
+	for (int portIter; portIter < switchDevices12.GetN(); ++portIter) {
+		bridgeDevice12->AddBridgePort(switchDevices12.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode13 = csmaSwitch13.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice13 = ns3::BridgeNetDevice();
+	switchNode13->AddDevice(bridgeDevice13);
+
+	for (int portIter; portIter < switchDevices13.GetN(); ++portIter) {
+		bridgeDevice13->AddBridgePort(switchDevices13.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode14 = csmaSwitch14.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice14 = ns3::BridgeNetDevice();
+	switchNode14->AddDevice(bridgeDevice14);
+
+	for (int portIter; portIter < switchDevices14.GetN(); ++portIter) {
+		bridgeDevice14->AddBridgePort(switchDevices14.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode15 = csmaSwitch15.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice15 = ns3::BridgeNetDevice();
+	switchNode15->AddDevice(bridgeDevice15);
+
+	for (int portIter; portIter < switchDevices15.GetN(); ++portIter) {
+		bridgeDevice15->AddBridgePort(switchDevices15.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode16 = csmaSwitch16.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice16 = ns3::BridgeNetDevice();
+	switchNode16->AddDevice(bridgeDevice16);
+
+	for (int portIter; portIter < switchDevices16.GetN(); ++portIter) {
+		bridgeDevice16->AddBridgePort(switchDevices16.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode17 = csmaSwitch17.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice17 = ns3::BridgeNetDevice();
+	switchNode17->AddDevice(bridgeDevice17);
+
+	for (int portIter; portIter < switchDevices17.GetN(); ++portIter) {
+		bridgeDevice17->AddBridgePort(switchDevices17.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode18 = csmaSwitch18.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice18 = ns3::BridgeNetDevice();
+	switchNode18->AddDevice(bridgeDevice18);
+
+	for (int portIter; portIter < switchDevices18.GetN(); ++portIter) {
+		bridgeDevice18->AddBridgePort(switchDevices18.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode19 = csmaSwitch19.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice19 = ns3::BridgeNetDevice();
+	switchNode19->AddDevice(bridgeDevice19);
+
+	for (int portIter; portIter < switchDevices19.GetN(); ++portIter) {
+		bridgeDevice19->AddBridgePort(switchDevices19.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode20 = csmaSwitch20.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice20 = ns3::BridgeNetDevice();
+	switchNode20->AddDevice(bridgeDevice20);
+
+	for (int portIter; portIter < switchDevices20.GetN(); ++portIter) {
+		bridgeDevice20->AddBridgePort(switchDevices20.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode21 = csmaSwitch21.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice21 = ns3::BridgeNetDevice();
+	switchNode21->AddDevice(bridgeDevice21);
+
+	for (int portIter; portIter < switchDevices21.GetN(); ++portIter) {
+		bridgeDevice21->AddBridgePort(switchDevices21.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode22 = csmaSwitch22.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice22 = ns3::BridgeNetDevice();
+	switchNode22->AddDevice(bridgeDevice22);
+
+	for (int portIter; portIter < switchDevices22.GetN(); ++portIter) {
+		bridgeDevice22->AddBridgePort(switchDevices22.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode23 = csmaSwitch23.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice23 = ns3::BridgeNetDevice();
+	switchNode23->AddDevice(bridgeDevice23);
+
+	for (int portIter; portIter < switchDevices23.GetN(); ++portIter) {
+		bridgeDevice23->AddBridgePort(switchDevices23.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode24 = csmaSwitch24.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice24 = ns3::BridgeNetDevice();
+	switchNode24->AddDevice(bridgeDevice24);
+
+	for (int portIter; portIter < switchDevices24.GetN(); ++portIter) {
+		bridgeDevice24->AddBridgePort(switchDevices24.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode25 = csmaSwitch25.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice25 = ns3::BridgeNetDevice();
+	switchNode25->AddDevice(bridgeDevice25);
+
+	for (int portIter; portIter < switchDevices25.GetN(); ++portIter) {
+		bridgeDevice25->AddBridgePort(switchDevices25.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode26 = csmaSwitch26.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice26 = ns3::BridgeNetDevice();
+	switchNode26->AddDevice(bridgeDevice26);
+
+	for (int portIter; portIter < switchDevices26.GetN(); ++portIter) {
+		bridgeDevice26->AddBridgePort(switchDevices26.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode27 = csmaSwitch27.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice27 = ns3::BridgeNetDevice();
+	switchNode27->AddDevice(bridgeDevice27);
+
+	for (int portIter; portIter < switchDevices27.GetN(); ++portIter) {
+		bridgeDevice27->AddBridgePort(switchDevices27.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode28 = csmaSwitch28.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice28 = ns3::BridgeNetDevice();
+	switchNode28->AddDevice(bridgeDevice28);
+
+	for (int portIter; portIter < switchDevices28.GetN(); ++portIter) {
+		bridgeDevice28->AddBridgePort(switchDevices28.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode29 = csmaSwitch29.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice29 = ns3::BridgeNetDevice();
+	switchNode29->AddDevice(bridgeDevice29);
+
+	for (int portIter; portIter < switchDevices29.GetN(); ++portIter) {
+		bridgeDevice29->AddBridgePort(switchDevices29.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode30 = csmaSwitch30.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice30 = ns3::BridgeNetDevice();
+	switchNode30->AddDevice(bridgeDevice30);
+
+	for (int portIter; portIter < switchDevices30.GetN(); ++portIter) {
+		bridgeDevice30->AddBridgePort(switchDevices30.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode31 = csmaSwitch31.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice31 = ns3::BridgeNetDevice();
+	switchNode31->AddDevice(bridgeDevice31);
+
+	for (int portIter; portIter < switchDevices31.GetN(); ++portIter) {
+		bridgeDevice31->AddBridgePort(switchDevices31.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode32 = csmaSwitch32.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice32 = ns3::BridgeNetDevice();
+	switchNode32->AddDevice(bridgeDevice32);
+
+	for (int portIter; portIter < switchDevices32.GetN(); ++portIter) {
+		bridgeDevice32->AddBridgePort(switchDevices32.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode33 = csmaSwitch33.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice33 = ns3::BridgeNetDevice();
+	switchNode33->AddDevice(bridgeDevice33);
+
+	for (int portIter; portIter < switchDevices33.GetN(); ++portIter) {
+		bridgeDevice33->AddBridgePort(switchDevices33.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode34 = csmaSwitch34.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice34 = ns3::BridgeNetDevice();
+	switchNode34->AddDevice(bridgeDevice34);
+
+	for (int portIter; portIter < switchDevices34.GetN(); ++portIter) {
+		bridgeDevice34->AddBridgePort(switchDevices34.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode35 = csmaSwitch35.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice35 = ns3::BridgeNetDevice();
+	switchNode35->AddDevice(bridgeDevice35);
+
+	for (int portIter; portIter < switchDevices35.GetN(); ++portIter) {
+		bridgeDevice35->AddBridgePort(switchDevices35.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode36 = csmaSwitch36.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice36 = ns3::BridgeNetDevice();
+	switchNode36->AddDevice(bridgeDevice36);
+
+	for (int portIter; portIter < switchDevices36.GetN(); ++portIter) {
+		bridgeDevice36->AddBridgePort(switchDevices36.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode37 = csmaSwitch37.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice37 = ns3::BridgeNetDevice();
+	switchNode37->AddDevice(bridgeDevice37);
+
+	for (int portIter; portIter < switchDevices37.GetN(); ++portIter) {
+		bridgeDevice37->AddBridgePort(switchDevices37.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode38 = csmaSwitch38.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice38 = ns3::BridgeNetDevice();
+	switchNode38->AddDevice(bridgeDevice38);
+
+	for (int portIter; portIter < switchDevices38.GetN(); ++portIter) {
+		bridgeDevice38->AddBridgePort(switchDevices38.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode39 = csmaSwitch39.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice39 = ns3::BridgeNetDevice();
+	switchNode39->AddDevice(bridgeDevice39);
+
+	for (int portIter; portIter < switchDevices39.GetN(); ++portIter) {
+		bridgeDevice39->AddBridgePort(switchDevices39.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode40 = csmaSwitch40.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice40 = ns3::BridgeNetDevice();
+	switchNode40->AddDevice(bridgeDevice40);
+
+	for (int portIter; portIter < switchDevices40.GetN(); ++portIter) {
+		bridgeDevice40->AddBridgePort(switchDevices40.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode41 = csmaSwitch41.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice41 = ns3::BridgeNetDevice();
+	switchNode41->AddDevice(bridgeDevice41);
+
+	for (int portIter; portIter < switchDevices41.GetN(); ++portIter) {
+		bridgeDevice41->AddBridgePort(switchDevices41.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode42 = csmaSwitch42.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice42 = ns3::BridgeNetDevice();
+	switchNode42->AddDevice(bridgeDevice42);
+
+	for (int portIter; portIter < switchDevices42.GetN(); ++portIter) {
+		bridgeDevice42->AddBridgePort(switchDevices42.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode43 = csmaSwitch43.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice43 = ns3::BridgeNetDevice();
+	switchNode43->AddDevice(bridgeDevice43);
+
+	for (int portIter; portIter < switchDevices43.GetN(); ++portIter) {
+		bridgeDevice43->AddBridgePort(switchDevices43.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode44 = csmaSwitch44.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice44 = ns3::BridgeNetDevice();
+	switchNode44->AddDevice(bridgeDevice44);
+
+	for (int portIter; portIter < switchDevices44.GetN(); ++portIter) {
+		bridgeDevice44->AddBridgePort(switchDevices44.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode45 = csmaSwitch45.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice45 = ns3::BridgeNetDevice();
+	switchNode45->AddDevice(bridgeDevice45);
+
+	for (int portIter; portIter < switchDevices45.GetN(); ++portIter) {
+		bridgeDevice45->AddBridgePort(switchDevices45.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode46 = csmaSwitch46.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice46 = ns3::BridgeNetDevice();
+	switchNode46->AddDevice(bridgeDevice46);
+
+	for (int portIter; portIter < switchDevices46.GetN(); ++portIter) {
+		bridgeDevice46->AddBridgePort(switchDevices46.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode47 = csmaSwitch47.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice47 = ns3::BridgeNetDevice();
+	switchNode47->AddDevice(bridgeDevice47);
+
+	for (int portIter; portIter < switchDevices47.GetN(); ++portIter) {
+		bridgeDevice47->AddBridgePort(switchDevices47.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode48 = csmaSwitch48.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice48 = ns3::BridgeNetDevice();
+	switchNode48->AddDevice(bridgeDevice48);
+
+	for (int portIter; portIter < switchDevices48.GetN(); ++portIter) {
+		bridgeDevice48->AddBridgePort(switchDevices48.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode49 = csmaSwitch49.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice49 = ns3::BridgeNetDevice();
+	switchNode49->AddDevice(bridgeDevice49);
+
+	for (int portIter; portIter < switchDevices49.GetN(); ++portIter) {
+		bridgeDevice49->AddBridgePort(switchDevices49.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode50 = csmaSwitch50.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice50 = ns3::BridgeNetDevice();
+	switchNode50->AddDevice(bridgeDevice50);
+
+	for (int portIter; portIter < switchDevices50.GetN(); ++portIter) {
+		bridgeDevice50->AddBridgePort(switchDevices50.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode51 = csmaSwitch51.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice51 = ns3::BridgeNetDevice();
+	switchNode51->AddDevice(bridgeDevice51);
+
+	for (int portIter; portIter < switchDevices51.GetN(); ++portIter) {
+		bridgeDevice51->AddBridgePort(switchDevices51.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode52 = csmaSwitch52.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice52 = ns3::BridgeNetDevice();
+	switchNode52->AddDevice(bridgeDevice52);
+
+	for (int portIter; portIter < switchDevices52.GetN(); ++portIter) {
+		bridgeDevice52->AddBridgePort(switchDevices52.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode53 = csmaSwitch53.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice53 = ns3::BridgeNetDevice();
+	switchNode53->AddDevice(bridgeDevice53);
+
+	for (int portIter; portIter < switchDevices53.GetN(); ++portIter) {
+		bridgeDevice53->AddBridgePort(switchDevices53.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode54 = csmaSwitch54.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice54 = ns3::BridgeNetDevice();
+	switchNode54->AddDevice(bridgeDevice54);
+
+	for (int portIter; portIter < switchDevices54.GetN(); ++portIter) {
+		bridgeDevice54->AddBridgePort(switchDevices54.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode55 = csmaSwitch55.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice55 = ns3::BridgeNetDevice();
+	switchNode55->AddDevice(bridgeDevice55);
+
+	for (int portIter; portIter < switchDevices55.GetN(); ++portIter) {
+		bridgeDevice55->AddBridgePort(switchDevices55.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode56 = csmaSwitch56.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice56 = ns3::BridgeNetDevice();
+	switchNode56->AddDevice(bridgeDevice56);
+
+	for (int portIter; portIter < switchDevices56.GetN(); ++portIter) {
+		bridgeDevice56->AddBridgePort(switchDevices56.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode57 = csmaSwitch57.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice57 = ns3::BridgeNetDevice();
+	switchNode57->AddDevice(bridgeDevice57);
+
+	for (int portIter; portIter < switchDevices57.GetN(); ++portIter) {
+		bridgeDevice57->AddBridgePort(switchDevices57.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode58 = csmaSwitch58.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice58 = ns3::BridgeNetDevice();
+	switchNode58->AddDevice(bridgeDevice58);
+
+	for (int portIter; portIter < switchDevices58.GetN(); ++portIter) {
+		bridgeDevice58->AddBridgePort(switchDevices58.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode59 = csmaSwitch59.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice59 = ns3::BridgeNetDevice();
+	switchNode59->AddDevice(bridgeDevice59);
+
+	for (int portIter; portIter < switchDevices59.GetN(); ++portIter) {
+		bridgeDevice59->AddBridgePort(switchDevices59.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode60 = csmaSwitch60.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice60 = ns3::BridgeNetDevice();
+	switchNode60->AddDevice(bridgeDevice60);
+
+	for (int portIter; portIter < switchDevices60.GetN(); ++portIter) {
+		bridgeDevice60->AddBridgePort(switchDevices60.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode61 = csmaSwitch61.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice61 = ns3::BridgeNetDevice();
+	switchNode61->AddDevice(bridgeDevice61);
+
+	for (int portIter; portIter < switchDevices61.GetN(); ++portIter) {
+		bridgeDevice61->AddBridgePort(switchDevices61.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode62 = csmaSwitch62.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice62 = ns3::BridgeNetDevice();
+	switchNode62->AddDevice(bridgeDevice62);
+
+	for (int portIter; portIter < switchDevices62.GetN(); ++portIter) {
+		bridgeDevice62->AddBridgePort(switchDevices62.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode63 = csmaSwitch63.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice63 = ns3::BridgeNetDevice();
+	switchNode63->AddDevice(bridgeDevice63);
+
+	for (int portIter; portIter < switchDevices63.GetN(); ++portIter) {
+		bridgeDevice63->AddBridgePort(switchDevices63.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode64 = csmaSwitch64.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice64 = ns3::BridgeNetDevice();
+	switchNode64->AddDevice(bridgeDevice64);
+
+	for (int portIter; portIter < switchDevices64.GetN(); ++portIter) {
+		bridgeDevice64->AddBridgePort(switchDevices64.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode65 = csmaSwitch65.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice65 = ns3::BridgeNetDevice();
+	switchNode65->AddDevice(bridgeDevice65);
+
+	for (int portIter; portIter < switchDevices65.GetN(); ++portIter) {
+		bridgeDevice65->AddBridgePort(switchDevices65.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode66 = csmaSwitch66.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice66 = ns3::BridgeNetDevice();
+	switchNode66->AddDevice(bridgeDevice66);
+
+	for (int portIter; portIter < switchDevices66.GetN(); ++portIter) {
+		bridgeDevice66->AddBridgePort(switchDevices66.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode67 = csmaSwitch67.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice67 = ns3::BridgeNetDevice();
+	switchNode67->AddDevice(bridgeDevice67);
+
+	for (int portIter; portIter < switchDevices67.GetN(); ++portIter) {
+		bridgeDevice67->AddBridgePort(switchDevices67.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode68 = csmaSwitch68.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice68 = ns3::BridgeNetDevice();
+	switchNode68->AddDevice(bridgeDevice68);
+
+	for (int portIter; portIter < switchDevices68.GetN(); ++portIter) {
+		bridgeDevice68->AddBridgePort(switchDevices68.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode69 = csmaSwitch69.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice69 = ns3::BridgeNetDevice();
+	switchNode69->AddDevice(bridgeDevice69);
+
+	for (int portIter; portIter < switchDevices69.GetN(); ++portIter) {
+		bridgeDevice69->AddBridgePort(switchDevices69.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode70 = csmaSwitch70.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice70 = ns3::BridgeNetDevice();
+	switchNode70->AddDevice(bridgeDevice70);
+
+	for (int portIter; portIter < switchDevices70.GetN(); ++portIter) {
+		bridgeDevice70->AddBridgePort(switchDevices70.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode71 = csmaSwitch71.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice71 = ns3::BridgeNetDevice();
+	switchNode71->AddDevice(bridgeDevice71);
+
+	for (int portIter; portIter < switchDevices71.GetN(); ++portIter) {
+		bridgeDevice71->AddBridgePort(switchDevices71.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode72 = csmaSwitch72.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice72 = ns3::BridgeNetDevice();
+	switchNode72->AddDevice(bridgeDevice72);
+
+	for (int portIter; portIter < switchDevices72.GetN(); ++portIter) {
+		bridgeDevice72->AddBridgePort(switchDevices72.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode73 = csmaSwitch73.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice73 = ns3::BridgeNetDevice();
+	switchNode73->AddDevice(bridgeDevice73);
+
+	for (int portIter; portIter < switchDevices73.GetN(); ++portIter) {
+		bridgeDevice73->AddBridgePort(switchDevices73.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode74 = csmaSwitch74.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice74 = ns3::BridgeNetDevice();
+	switchNode74->AddDevice(bridgeDevice74);
+
+	for (int portIter; portIter < switchDevices74.GetN(); ++portIter) {
+		bridgeDevice74->AddBridgePort(switchDevices74.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode75 = csmaSwitch75.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice75 = ns3::BridgeNetDevice();
+	switchNode75->AddDevice(bridgeDevice75);
+
+	for (int portIter; portIter < switchDevices75.GetN(); ++portIter) {
+		bridgeDevice75->AddBridgePort(switchDevices75.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode76 = csmaSwitch76.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice76 = ns3::BridgeNetDevice();
+	switchNode76->AddDevice(bridgeDevice76);
+
+	for (int portIter; portIter < switchDevices76.GetN(); ++portIter) {
+		bridgeDevice76->AddBridgePort(switchDevices76.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode77 = csmaSwitch77.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice77 = ns3::BridgeNetDevice();
+	switchNode77->AddDevice(bridgeDevice77);
+
+	for (int portIter; portIter < switchDevices77.GetN(); ++portIter) {
+		bridgeDevice77->AddBridgePort(switchDevices77.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode78 = csmaSwitch78.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice78 = ns3::BridgeNetDevice();
+	switchNode78->AddDevice(bridgeDevice78);
+
+	for (int portIter; portIter < switchDevices78.GetN(); ++portIter) {
+		bridgeDevice78->AddBridgePort(switchDevices78.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode79 = csmaSwitch79.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice79 = ns3::BridgeNetDevice();
+	switchNode79->AddDevice(bridgeDevice79);
+
+	for (int portIter; portIter < switchDevices79.GetN(); ++portIter) {
+		bridgeDevice79->AddBridgePort(switchDevices79.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode80 = csmaSwitch80.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice80 = ns3::BridgeNetDevice();
+	switchNode80->AddDevice(bridgeDevice80);
+
+	for (int portIter; portIter < switchDevices80.GetN(); ++portIter) {
+		bridgeDevice80->AddBridgePort(switchDevices80.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode81 = csmaSwitch81.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice81 = ns3::BridgeNetDevice();
+	switchNode81->AddDevice(bridgeDevice81);
+
+	for (int portIter; portIter < switchDevices81.GetN(); ++portIter) {
+		bridgeDevice81->AddBridgePort(switchDevices81.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode82 = csmaSwitch82.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice82 = ns3::BridgeNetDevice();
+	switchNode82->AddDevice(bridgeDevice82);
+
+	for (int portIter; portIter < switchDevices82.GetN(); ++portIter) {
+		bridgeDevice82->AddBridgePort(switchDevices82.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode83 = csmaSwitch83.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice83 = ns3::BridgeNetDevice();
+	switchNode83->AddDevice(bridgeDevice83);
+
+	for (int portIter; portIter < switchDevices83.GetN(); ++portIter) {
+		bridgeDevice83->AddBridgePort(switchDevices83.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode84 = csmaSwitch84.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice84 = ns3::BridgeNetDevice();
+	switchNode84->AddDevice(bridgeDevice84);
+
+	for (int portIter; portIter < switchDevices84.GetN(); ++portIter) {
+		bridgeDevice84->AddBridgePort(switchDevices84.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode85 = csmaSwitch85.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice85 = ns3::BridgeNetDevice();
+	switchNode85->AddDevice(bridgeDevice85);
+
+	for (int portIter; portIter < switchDevices85.GetN(); ++portIter) {
+		bridgeDevice85->AddBridgePort(switchDevices85.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode86 = csmaSwitch86.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice86 = ns3::BridgeNetDevice();
+	switchNode86->AddDevice(bridgeDevice86);
+
+	for (int portIter; portIter < switchDevices86.GetN(); ++portIter) {
+		bridgeDevice86->AddBridgePort(switchDevices86.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode87 = csmaSwitch87.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice87 = ns3::BridgeNetDevice();
+	switchNode87->AddDevice(bridgeDevice87);
+
+	for (int portIter; portIter < switchDevices87.GetN(); ++portIter) {
+		bridgeDevice87->AddBridgePort(switchDevices87.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode88 = csmaSwitch88.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice88 = ns3::BridgeNetDevice();
+	switchNode88->AddDevice(bridgeDevice88);
+
+	for (int portIter; portIter < switchDevices88.GetN(); ++portIter) {
+		bridgeDevice88->AddBridgePort(switchDevices88.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode89 = csmaSwitch89.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice89 = ns3::BridgeNetDevice();
+	switchNode89->AddDevice(bridgeDevice89);
+
+	for (int portIter; portIter < switchDevices89.GetN(); ++portIter) {
+		bridgeDevice89->AddBridgePort(switchDevices89.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode90 = csmaSwitch90.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice90 = ns3::BridgeNetDevice();
+	switchNode90->AddDevice(bridgeDevice90);
+
+	for (int portIter; portIter < switchDevices90.GetN(); ++portIter) {
+		bridgeDevice90->AddBridgePort(switchDevices90.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode91 = csmaSwitch91.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice91 = ns3::BridgeNetDevice();
+	switchNode91->AddDevice(bridgeDevice91);
+
+	for (int portIter; portIter < switchDevices91.GetN(); ++portIter) {
+		bridgeDevice91->AddBridgePort(switchDevices91.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode92 = csmaSwitch92.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice92 = ns3::BridgeNetDevice();
+	switchNode92->AddDevice(bridgeDevice92);
+
+	for (int portIter; portIter < switchDevices92.GetN(); ++portIter) {
+		bridgeDevice92->AddBridgePort(switchDevices92.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode93 = csmaSwitch93.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice93 = ns3::BridgeNetDevice();
+	switchNode93->AddDevice(bridgeDevice93);
+
+	for (int portIter; portIter < switchDevices93.GetN(); ++portIter) {
+		bridgeDevice93->AddBridgePort(switchDevices93.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode94 = csmaSwitch94.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice94 = ns3::BridgeNetDevice();
+	switchNode94->AddDevice(bridgeDevice94);
+
+	for (int portIter; portIter < switchDevices94.GetN(); ++portIter) {
+		bridgeDevice94->AddBridgePort(switchDevices94.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode95 = csmaSwitch95.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice95 = ns3::BridgeNetDevice();
+	switchNode95->AddDevice(bridgeDevice95);
+
+	for (int portIter; portIter < switchDevices95.GetN(); ++portIter) {
+		bridgeDevice95->AddBridgePort(switchDevices95.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode96 = csmaSwitch96.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice96 = ns3::BridgeNetDevice();
+	switchNode96->AddDevice(bridgeDevice96);
+
+	for (int portIter; portIter < switchDevices96.GetN(); ++portIter) {
+		bridgeDevice96->AddBridgePort(switchDevices96.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode97 = csmaSwitch97.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice97 = ns3::BridgeNetDevice();
+	switchNode97->AddDevice(bridgeDevice97);
+
+	for (int portIter; portIter < switchDevices97.GetN(); ++portIter) {
+		bridgeDevice97->AddBridgePort(switchDevices97.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode98 = csmaSwitch98.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice98 = ns3::BridgeNetDevice();
+	switchNode98->AddDevice(bridgeDevice98);
+
+	for (int portIter; portIter < switchDevices98.GetN(); ++portIter) {
+		bridgeDevice98->AddBridgePort(switchDevices98.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode99 = csmaSwitch99.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice99 = ns3::BridgeNetDevice();
+	switchNode99->AddDevice(bridgeDevice99);
+
+	for (int portIter; portIter < switchDevices99.GetN(); ++portIter) {
+		bridgeDevice99->AddBridgePort(switchDevices99.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode100 = csmaSwitch100.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice100 = ns3::BridgeNetDevice();
+	switchNode100->AddDevice(bridgeDevice100);
+
+	for (int portIter; portIter < switchDevices100.GetN(); ++portIter) {
+		bridgeDevice100->AddBridgePort(switchDevices100.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode101 = csmaSwitch101.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice101 = ns3::BridgeNetDevice();
+	switchNode101->AddDevice(bridgeDevice101);
+
+	for (int portIter; portIter < switchDevices101.GetN(); ++portIter) {
+		bridgeDevice101->AddBridgePort(switchDevices101.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode102 = csmaSwitch102.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice102 = ns3::BridgeNetDevice();
+	switchNode102->AddDevice(bridgeDevice102);
+
+	for (int portIter; portIter < switchDevices102.GetN(); ++portIter) {
+		bridgeDevice102->AddBridgePort(switchDevices102.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode103 = csmaSwitch103.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice103 = ns3::BridgeNetDevice();
+	switchNode103->AddDevice(bridgeDevice103);
+
+	for (int portIter; portIter < switchDevices103.GetN(); ++portIter) {
+		bridgeDevice103->AddBridgePort(switchDevices103.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode104 = csmaSwitch104.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice104 = ns3::BridgeNetDevice();
+	switchNode104->AddDevice(bridgeDevice104);
+
+	for (int portIter; portIter < switchDevices104.GetN(); ++portIter) {
+		bridgeDevice104->AddBridgePort(switchDevices104.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode105 = csmaSwitch105.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice105 = ns3::BridgeNetDevice();
+	switchNode105->AddDevice(bridgeDevice105);
+
+	for (int portIter; portIter < switchDevices105.GetN(); ++portIter) {
+		bridgeDevice105->AddBridgePort(switchDevices105.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode106 = csmaSwitch106.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice106 = ns3::BridgeNetDevice();
+	switchNode106->AddDevice(bridgeDevice106);
+
+	for (int portIter; portIter < switchDevices106.GetN(); ++portIter) {
+		bridgeDevice106->AddBridgePort(switchDevices106.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode107 = csmaSwitch107.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice107 = ns3::BridgeNetDevice();
+	switchNode107->AddDevice(bridgeDevice107);
+
+	for (int portIter; portIter < switchDevices107.GetN(); ++portIter) {
+		bridgeDevice107->AddBridgePort(switchDevices107.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode108 = csmaSwitch108.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice108 = ns3::BridgeNetDevice();
+	switchNode108->AddDevice(bridgeDevice108);
+
+	for (int portIter; portIter < switchDevices108.GetN(); ++portIter) {
+		bridgeDevice108->AddBridgePort(switchDevices108.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode109 = csmaSwitch109.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice109 = ns3::BridgeNetDevice();
+	switchNode109->AddDevice(bridgeDevice109);
+
+	for (int portIter; portIter < switchDevices109.GetN(); ++portIter) {
+		bridgeDevice109->AddBridgePort(switchDevices109.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode110 = csmaSwitch110.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice110 = ns3::BridgeNetDevice();
+	switchNode110->AddDevice(bridgeDevice110);
+
+	for (int portIter; portIter < switchDevices110.GetN(); ++portIter) {
+		bridgeDevice110->AddBridgePort(switchDevices110.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode111 = csmaSwitch111.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice111 = ns3::BridgeNetDevice();
+	switchNode111->AddDevice(bridgeDevice111);
+
+	for (int portIter; portIter < switchDevices111.GetN(); ++portIter) {
+		bridgeDevice111->AddBridgePort(switchDevices111.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode112 = csmaSwitch112.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice112 = ns3::BridgeNetDevice();
+	switchNode112->AddDevice(bridgeDevice112);
+
+	for (int portIter; portIter < switchDevices112.GetN(); ++portIter) {
+		bridgeDevice112->AddBridgePort(switchDevices112.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode113 = csmaSwitch113.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice113 = ns3::BridgeNetDevice();
+	switchNode113->AddDevice(bridgeDevice113);
+
+	for (int portIter; portIter < switchDevices113.GetN(); ++portIter) {
+		bridgeDevice113->AddBridgePort(switchDevices113.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode114 = csmaSwitch114.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice114 = ns3::BridgeNetDevice();
+	switchNode114->AddDevice(bridgeDevice114);
+
+	for (int portIter; portIter < switchDevices114.GetN(); ++portIter) {
+		bridgeDevice114->AddBridgePort(switchDevices114.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode115 = csmaSwitch115.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice115 = ns3::BridgeNetDevice();
+	switchNode115->AddDevice(bridgeDevice115);
+
+	for (int portIter; portIter < switchDevices115.GetN(); ++portIter) {
+		bridgeDevice115->AddBridgePort(switchDevices115.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode116 = csmaSwitch116.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice116 = ns3::BridgeNetDevice();
+	switchNode116->AddDevice(bridgeDevice116);
+
+	for (int portIter; portIter < switchDevices116.GetN(); ++portIter) {
+		bridgeDevice116->AddBridgePort(switchDevices116.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode117 = csmaSwitch117.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice117 = ns3::BridgeNetDevice();
+	switchNode117->AddDevice(bridgeDevice117);
+
+	for (int portIter; portIter < switchDevices117.GetN(); ++portIter) {
+		bridgeDevice117->AddBridgePort(switchDevices117.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode118 = csmaSwitch118.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice118 = ns3::BridgeNetDevice();
+	switchNode118->AddDevice(bridgeDevice118);
+
+	for (int portIter; portIter < switchDevices118.GetN(); ++portIter) {
+		bridgeDevice118->AddBridgePort(switchDevices118.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode119 = csmaSwitch119.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice119 = ns3::BridgeNetDevice();
+	switchNode119->AddDevice(bridgeDevice119);
+
+	for (int portIter; portIter < switchDevices119.GetN(); ++portIter) {
+		bridgeDevice119->AddBridgePort(switchDevices119.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode120 = csmaSwitch120.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice120 = ns3::BridgeNetDevice();
+	switchNode120->AddDevice(bridgeDevice120);
+
+	for (int portIter; portIter < switchDevices120.GetN(); ++portIter) {
+		bridgeDevice120->AddBridgePort(switchDevices120.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode121 = csmaSwitch121.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice121 = ns3::BridgeNetDevice();
+	switchNode121->AddDevice(bridgeDevice121);
+
+	for (int portIter; portIter < switchDevices121.GetN(); ++portIter) {
+		bridgeDevice121->AddBridgePort(switchDevices121.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode122 = csmaSwitch122.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice122 = ns3::BridgeNetDevice();
+	switchNode122->AddDevice(bridgeDevice122);
+
+	for (int portIter; portIter < switchDevices122.GetN(); ++portIter) {
+		bridgeDevice122->AddBridgePort(switchDevices122.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode123 = csmaSwitch123.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice123 = ns3::BridgeNetDevice();
+	switchNode123->AddDevice(bridgeDevice123);
+
+	for (int portIter; portIter < switchDevices123.GetN(); ++portIter) {
+		bridgeDevice123->AddBridgePort(switchDevices123.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode124 = csmaSwitch124.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice124 = ns3::BridgeNetDevice();
+	switchNode124->AddDevice(bridgeDevice124);
+
+	for (int portIter; portIter < switchDevices124.GetN(); ++portIter) {
+		bridgeDevice124->AddBridgePort(switchDevices124.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode125 = csmaSwitch125.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice125 = ns3::BridgeNetDevice();
+	switchNode125->AddDevice(bridgeDevice125);
+
+	for (int portIter; portIter < switchDevices125.GetN(); ++portIter) {
+		bridgeDevice125->AddBridgePort(switchDevices125.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode126 = csmaSwitch126.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice126 = ns3::BridgeNetDevice();
+	switchNode126->AddDevice(bridgeDevice126);
+
+	for (int portIter; portIter < switchDevices126.GetN(); ++portIter) {
+		bridgeDevice126->AddBridgePort(switchDevices126.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode127 = csmaSwitch127.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice127 = ns3::BridgeNetDevice();
+	switchNode127->AddDevice(bridgeDevice127);
+
+	for (int portIter; portIter < switchDevices127.GetN(); ++portIter) {
+		bridgeDevice127->AddBridgePort(switchDevices127.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode128 = csmaSwitch128.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice128 = ns3::BridgeNetDevice();
+	switchNode128->AddDevice(bridgeDevice128);
+
+	for (int portIter; portIter < switchDevices128.GetN(); ++portIter) {
+		bridgeDevice128->AddBridgePort(switchDevices128.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode129 = csmaSwitch129.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice129 = ns3::BridgeNetDevice();
+	switchNode129->AddDevice(bridgeDevice129);
+
+	for (int portIter; portIter < switchDevices129.GetN(); ++portIter) {
+		bridgeDevice129->AddBridgePort(switchDevices129.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode130 = csmaSwitch130.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice130 = ns3::BridgeNetDevice();
+	switchNode130->AddDevice(bridgeDevice130);
+
+	for (int portIter; portIter < switchDevices130.GetN(); ++portIter) {
+		bridgeDevice130->AddBridgePort(switchDevices130.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode131 = csmaSwitch131.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice131 = ns3::BridgeNetDevice();
+	switchNode131->AddDevice(bridgeDevice131);
+
+	for (int portIter; portIter < switchDevices131.GetN(); ++portIter) {
+		bridgeDevice131->AddBridgePort(switchDevices131.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode132 = csmaSwitch132.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice132 = ns3::BridgeNetDevice();
+	switchNode132->AddDevice(bridgeDevice132);
+
+	for (int portIter; portIter < switchDevices132.GetN(); ++portIter) {
+		bridgeDevice132->AddBridgePort(switchDevices132.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode133 = csmaSwitch133.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice133 = ns3::BridgeNetDevice();
+	switchNode133->AddDevice(bridgeDevice133);
+
+	for (int portIter; portIter < switchDevices134.GetN(); ++portIter) {
+		bridgeDevice133->AddBridgePort(switchDevices133.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode134 = csmaSwitch134.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice134 = ns3::BridgeNetDevice();
+	switchNode134->AddDevice(bridgeDevice134);
+
+	for (int portIter; portIter < switchDevices134.GetN(); ++portIter) {
+		bridgeDevice134->AddBridgePort(switchDevices134.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode135 = csmaSwitch135.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice135 = ns3::BridgeNetDevice();
+	switchNode135->AddDevice(bridgeDevice135);
+
+	for (int portIter; portIter < switchDevices135.GetN(); ++portIter) {
+		bridgeDevice135->AddBridgePort(switchDevices135.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode136 = csmaSwitch136.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice136 = ns3::BridgeNetDevice();
+	switchNode136->AddDevice(bridgeDevice136);
+
+	for (int portIter; portIter < switchDevices136.GetN(); ++portIter) {
+		bridgeDevice136->AddBridgePort(switchDevices136.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode137 = csmaSwitch137.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice137 = ns3::BridgeNetDevice();
+	switchNode137->AddDevice(bridgeDevice137);
+
+	for (int portIter; portIter < switchDevices137.GetN(); ++portIter) {
+		bridgeDevice137->AddBridgePort(switchDevices137.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode138 = csmaSwitch138.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice138 = ns3::BridgeNetDevice();
+	switchNode138->AddDevice(bridgeDevice138);
+
+	for (int portIter; portIter < switchDevices138.GetN(); ++portIter) {
+		bridgeDevice138->AddBridgePort(switchDevices138.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode139 = csmaSwitch139.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice139 = ns3::BridgeNetDevice();
+	switchNode139->AddDevice(bridgeDevice139);
+
+	for (int portIter; portIter < switchDevices139.GetN(); ++portIter) {
+		bridgeDevice139->AddBridgePort(switchDevices139.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode140 = csmaSwitch140.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice140 = ns3::BridgeNetDevice();
+	switchNode140->AddDevice(bridgeDevice140);
+
+	for (int portIter; portIter < switchDevices140.GetN(); ++portIter) {
+		bridgeDevice140->AddBridgePort(switchDevices140.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode141 = csmaSwitch141.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice141 = ns3::BridgeNetDevice();
+	switchNode141->AddDevice(bridgeDevice141);
+
+	for (int portIter; portIter < switchDevices141.GetN(); ++portIter) {
+		bridgeDevice141->AddBridgePort(switchDevices141.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode142 = csmaSwitch142.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice142 = ns3::BridgeNetDevice();
+	switchNode142->AddDevice(bridgeDevice142);
+
+	for (int portIter; portIter < switchDevices142.GetN(); ++portIter) {
+		bridgeDevice142->AddBridgePort(switchDevices142.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode143 = csmaSwitch143.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice143 = ns3::BridgeNetDevice();
+	switchNode143->AddDevice(bridgeDevice143);
+
+	for (int portIter; portIter < switchDevices143.GetN(); ++portIter) {
+		bridgeDevice143->AddBridgePort(switchDevices143.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode144 = csmaSwitch144.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice144 = ns3::BridgeNetDevice();
+	switchNode144->AddDevice(bridgeDevice144);
+
+	for (int portIter; portIter < switchDevices144.GetN(); ++portIter) {
+		bridgeDevice144->AddBridgePort(switchDevices144.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode145 = csmaSwitch145.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice145 = ns3::BridgeNetDevice();
+	switchNode145->AddDevice(bridgeDevice145);
+
+	for (int portIter; portIter < switchDevices145.GetN(); ++portIter) {
+		bridgeDevice145->AddBridgePort(switchDevices145.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode146 = csmaSwitch146.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice146 = ns3::BridgeNetDevice();
+	switchNode146->AddDevice(bridgeDevice146);
+
+	for (int portIter; portIter < switchDevices146.GetN(); ++portIter) {
+		bridgeDevice146->AddBridgePort(switchDevices146.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode147 = csmaSwitch147.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice147 = ns3::BridgeNetDevice();
+	switchNode147->AddDevice(bridgeDevice147);
+
+	for (int portIter; portIter < switchDevices147.GetN(); ++portIter) {
+		bridgeDevice147->AddBridgePort(switchDevices147.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode148 = csmaSwitch148.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice148 = ns3::BridgeNetDevice();
+	switchNode148->AddDevice(bridgeDevice148);
+
+	for (int portIter; portIter < switchDevices148.GetN(); ++portIter) {
+		bridgeDevice148->AddBridgePort(switchDevices148.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode149 = csmaSwitch149.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice149 = ns3::BridgeNetDevice();
+	switchNode149->AddDevice(bridgeDevice149);
+
+	for (int portIter; portIter < switchDevices149.GetN(); ++portIter) {
+		bridgeDevice149->AddBridgePort(switchDevices149.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode150 = csmaSwitch150.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice150 = ns3::BridgeNetDevice();
+	switchNode150->AddDevice(bridgeDevice150);
+
+	for (int portIter; portIter < switchDevices150.GetN(); ++portIter) {
+		bridgeDevice150->AddBridgePort(switchDevices150.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode151 = csmaSwitch151.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice151 = ns3::BridgeNetDevice();
+	switchNode151->AddDevice(bridgeDevice151);
+
+	for (int portIter; portIter < switchDevices151.GetN(); ++portIter) {
+		bridgeDevice151->AddBridgePort(switchDevices151.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode152 = csmaSwitch152.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice152 = ns3::BridgeNetDevice();
+	switchNode152->AddDevice(bridgeDevice152);
+
+	for (int portIter; portIter < switchDevices152.GetN(); ++portIter) {
+		bridgeDevice152->AddBridgePort(switchDevices152.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode153 = csmaSwitch153.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice153 = ns3::BridgeNetDevice();
+	switchNode153->AddDevice(bridgeDevice153);
+
+	for (int portIter; portIter < switchDevices153.GetN(); ++portIter) {
+		bridgeDevice153->AddBridgePort(switchDevices153.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode154 = csmaSwitch154.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice154 = ns3::BridgeNetDevice();
+	switchNode154->AddDevice(bridgeDevice154);
+
+	for (int portIter; portIter < switchDevices154.GetN(); ++portIter) {
+		bridgeDevice154->AddBridgePort(switchDevices154.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode155 = csmaSwitch155.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice155 = ns3::BridgeNetDevice();
+	switchNode155->AddDevice(bridgeDevice155);
+
+	for (int portIter; portIter < switchDevices155.GetN(); ++portIter) {
+		bridgeDevice155->AddBridgePort(switchDevices155.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode156 = csmaSwitch156.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice156 = ns3::BridgeNetDevice();
+	switchNode156->AddDevice(bridgeDevice156);
+
+	for (int portIter; portIter < switchDevices156.GetN(); ++portIter) {
+		bridgeDevice156->AddBridgePort(switchDevices156.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode157 = csmaSwitch157.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice157 = ns3::BridgeNetDevice();
+	switchNode157->AddDevice(bridgeDevice157);
+
+	for (int portIter; portIter < switchDevices157.GetN(); ++portIter) {
+		bridgeDevice157->AddBridgePort(switchDevices157.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode158 = csmaSwitch158.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice158 = ns3::BridgeNetDevice();
+	switchNode158->AddDevice(bridgeDevice158);
+
+	for (int portIter; portIter < switchDevices158.GetN(); ++portIter) {
+		bridgeDevice158->AddBridgePort(switchDevices158.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode159 = csmaSwitch159.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice159 = ns3::BridgeNetDevice();
+	switchNode159->AddDevice(bridgeDevice159);
+
+	for (int portIter; portIter < switchDevices159.GetN(); ++portIter) {
+		bridgeDevice159->AddBridgePort(switchDevices159.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode160 = csmaSwitch160.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice160 = ns3::BridgeNetDevice();
+	switchNode160->AddDevice(bridgeDevice160);
+
+	for (int portIter; portIter < switchDevices160.GetN(); ++portIter) {
+		bridgeDevice160->AddBridgePort(switchDevices160.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode161 = csmaSwitch161.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice161 = ns3::BridgeNetDevice();
+	switchNode161->AddDevice(bridgeDevice161);
+
+	for (int portIter; portIter < switchDevices161.GetN(); ++portIter) {
+		bridgeDevice161->AddBridgePort(switchDevices161.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode162 = csmaSwitch162.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice162 = ns3::BridgeNetDevice();
+	switchNode162->AddDevice(bridgeDevice162);
+
+	for (int portIter; portIter < switchDevices162.GetN(); ++portIter) {
+		bridgeDevice162->AddBridgePort(switchDevices162.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode163 = csmaSwitch163.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice163 = ns3::BridgeNetDevice();
+	switchNode163->AddDevice(bridgeDevice163);
+
+	for (int portIter; portIter < switchDevices163.GetN(); ++portIter) {
+		bridgeDevice163->AddBridgePort(switchDevices163.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode164 = csmaSwitch164.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice164 = ns3::BridgeNetDevice();
+	switchNode164->AddDevice(bridgeDevice164);
+
+	for (int portIter; portIter < switchDevices164.GetN(); ++portIter) {
+		bridgeDevice164->AddBridgePort(switchDevices164.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode165 = csmaSwitch165.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice165 = ns3::BridgeNetDevice();
+	switchNode165->AddDevice(bridgeDevice165);
+
+	for (int portIter; portIter < switchDevices165.GetN(); ++portIter) {
+		bridgeDevice165->AddBridgePort(switchDevices165.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode166 = csmaSwitch166.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice166 = ns3::BridgeNetDevice();
+	switchNode166->AddDevice(bridgeDevice166);
+
+	for (int portIter; portIter < switchDevices166.GetN(); ++portIter) {
+		bridgeDevice166->AddBridgePort(switchDevices166.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode167 = csmaSwitch167.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice167 = ns3::BridgeNetDevice();
+	switchNode167->AddDevice(bridgeDevice167);
+
+	for (int portIter; portIter < switchDevices167.GetN(); ++portIter) {
+		bridgeDevice167->AddBridgePort(switchDevices167.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode168 = csmaSwitch168.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice168 = ns3::BridgeNetDevice();
+	switchNode168->AddDevice(bridgeDevice168);
+
+	for (int portIter; portIter < switchDevices168.GetN(); ++portIter) {
+		bridgeDevice168->AddBridgePort(switchDevices168.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode169 = csmaSwitch169.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice169 = ns3::BridgeNetDevice();
+	switchNode169->AddDevice(bridgeDevice169);
+
+	for (int portIter; portIter < switchDevices169.GetN(); ++portIter) {
+		bridgeDevice169->AddBridgePort(switchDevices169.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode170 = csmaSwitch170.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice170 = ns3::BridgeNetDevice();
+	switchNode170->AddDevice(bridgeDevice170);
+
+	for (int portIter; portIter < switchDevices170.GetN(); ++portIter) {
+		bridgeDevice170->AddBridgePort(switchDevices170.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode171 = csmaSwitch171.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice171 = ns3::BridgeNetDevice();
+	switchNode171->AddDevice(bridgeDevice171);
+
+	for (int portIter; portIter < switchDevices171.GetN(); ++portIter) {
+		bridgeDevice171->AddBridgePort(switchDevices171.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode172 = csmaSwitch172.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice172 = ns3::BridgeNetDevice();
+	switchNode172->AddDevice(bridgeDevice172);
+
+	for (int portIter; portIter < switchDevices172.GetN(); ++portIter) {
+		bridgeDevice172->AddBridgePort(switchDevices172.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode173 = csmaSwitch173.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice173 = ns3::BridgeNetDevice();
+	switchNode173->AddDevice(bridgeDevice173);
+
+	for (int portIter; portIter < switchDevices173.GetN(); ++portIter) {
+		bridgeDevice173->AddBridgePort(switchDevices173.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode174 = csmaSwitch174.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice174 = ns3::BridgeNetDevice();
+	switchNode174->AddDevice(bridgeDevice174);
+
+	for (int portIter; portIter < switchDevices174.GetN(); ++portIter) {
+		bridgeDevice174->AddBridgePort(switchDevices174.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode175 = csmaSwitch175.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice175 = ns3::BridgeNetDevice();
+	switchNode175->AddDevice(bridgeDevice175);
+
+	for (int portIter; portIter < switchDevices175.GetN(); ++portIter) {
+		bridgeDevice175->AddBridgePort(switchDevices175.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode176 = csmaSwitch176.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice176 = ns3::BridgeNetDevice();
+	switchNode176->AddDevice(bridgeDevice176);
+
+	for (int portIter; portIter < switchDevices176.GetN(); ++portIter) {
+		bridgeDevice176->AddBridgePort(switchDevices176.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode177 = csmaSwitch177.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice177 = ns3::BridgeNetDevice();
+	switchNode177->AddDevice(bridgeDevice177);
+
+	for (int portIter; portIter < switchDevices177.GetN(); ++portIter) {
+		bridgeDevice177->AddBridgePort(switchDevices177.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode178 = csmaSwitch178.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice178 = ns3::BridgeNetDevice();
+	switchNode178->AddDevice(bridgeDevice178);
+
+	for (int portIter; portIter < switchDevices178.GetN(); ++portIter) {
+		bridgeDevice178->AddBridgePort(switchDevices178.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode179 = csmaSwitch179.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice179 = ns3::BridgeNetDevice();
+	switchNode179->AddDevice(bridgeDevice179);
+
+	for (int portIter; portIter < switchDevices179.GetN(); ++portIter) {
+		bridgeDevice179->AddBridgePort(switchDevices179.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode180 = csmaSwitch180.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice180 = ns3::BridgeNetDevice();
+	switchNode180->AddDevice(bridgeDevice180);
+
+	for (int portIter; portIter < switchDevices180.GetN(); ++portIter) {
+		bridgeDevice180->AddBridgePort(switchDevices180.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode181 = csmaSwitch181.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice181 = ns3::BridgeNetDevice();
+	switchNode181->AddDevice(bridgeDevice181);
+
+	for (int portIter; portIter < switchDevices181.GetN(); ++portIter) {
+		bridgeDevice181->AddBridgePort(switchDevices181.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode182 = csmaSwitch182.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice182 = ns3::BridgeNetDevice();
+	switchNode182->AddDevice(bridgeDevice182);
+
+	for (int portIter; portIter < switchDevices182.GetN(); ++portIter) {
+		bridgeDevice182->AddBridgePort(switchDevices182.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode183 = csmaSwitch183.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice183 = ns3::BridgeNetDevice();
+	switchNode183->AddDevice(bridgeDevice183);
+
+	for (int portIter; portIter < switchDevices183.GetN(); ++portIter) {
+		bridgeDevice183->AddBridgePort(switchDevices183.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode184 = csmaSwitch184.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice184 = ns3::BridgeNetDevice();
+	switchNode184->AddDevice(bridgeDevice184);
+
+	for (int portIter; portIter < switchDevices184.GetN(); ++portIter) {
+		bridgeDevice184->AddBridgePort(switchDevices184.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode185 = csmaSwitch185.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice185 = ns3::BridgeNetDevice();
+	switchNode185->AddDevice(bridgeDevice185);
+
+	for (int portIter; portIter < switchDevices185.GetN(); ++portIter) {
+		bridgeDevice185->AddBridgePort(switchDevices185.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode186 = csmaSwitch186.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice186 = ns3::BridgeNetDevice();
+	switchNode186->AddDevice(bridgeDevice186);
+
+	for (int portIter; portIter < switchDevices186.GetN(); ++portIter) {
+		bridgeDevice186->AddBridgePort(switchDevices186.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode187 = csmaSwitch187.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice187 = ns3::BridgeNetDevice();
+	switchNode187->AddDevice(bridgeDevice187);
+
+	for (int portIter; portIter < switchDevices187.GetN(); ++portIter) {
+		bridgeDevice187->AddBridgePort(switchDevices187.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode188 = csmaSwitch188.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice188 = ns3::BridgeNetDevice();
+	switchNode188->AddDevice(bridgeDevice188);
+
+	for (int portIter; portIter < switchDevices188.GetN(); ++portIter) {
+		bridgeDevice188->AddBridgePort(switchDevices188.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode189 = csmaSwitch189.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice189 = ns3::BridgeNetDevice();
+	switchNode189->AddDevice(bridgeDevice189);
+
+	for (int portIter; portIter < switchDevices189.GetN(); ++portIter) {
+		bridgeDevice189->AddBridgePort(switchDevices189.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode190 = csmaSwitch190.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice190 = ns3::BridgeNetDevice();
+	switchNode190->AddDevice(bridgeDevice190);
+
+	for (int portIter; portIter < switchDevices190.GetN(); ++portIter) {
+		bridgeDevice190->AddBridgePort(switchDevices190.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode191 = csmaSwitch191.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice191 = ns3::BridgeNetDevice();
+	switchNode191->AddDevice(bridgeDevice191);
+
+	for (int portIter; portIter < switchDevices191.GetN(); ++portIter) {
+		bridgeDevice191->AddBridgePort(switchDevices191.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode192 = csmaSwitch192.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice192 = ns3::BridgeNetDevice();
+	switchNode192->AddDevice(bridgeDevice192);
+
+	for (int portIter; portIter < switchDevices192.GetN(); ++portIter) {
+		bridgeDevice192->AddBridgePort(switchDevices192.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode193 = csmaSwitch193.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice193 = ns3::BridgeNetDevice();
+	switchNode193->AddDevice(bridgeDevice193);
+
+	for (int portIter; portIter < switchDevices193.GetN(); ++portIter) {
+		bridgeDevice193->AddBridgePort(switchDevices193.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode194 = csmaSwitch194.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice194 = ns3::BridgeNetDevice();
+	switchNode194->AddDevice(bridgeDevice194);
+
+	for (int portIter; portIter < switchDevices194.GetN(); ++portIter) {
+		bridgeDevice194->AddBridgePort(switchDevices194.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode195 = csmaSwitch195.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice195 = ns3::BridgeNetDevice();
+	switchNode195->AddDevice(bridgeDevice195);
+
+	for (int portIter; portIter < switchDevices195.GetN(); ++portIter) {
+		bridgeDevice195->AddBridgePort(switchDevices195.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode196 = csmaSwitch196.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice196 = ns3::BridgeNetDevice();
+	switchNode196->AddDevice(bridgeDevice196);
+
+	for (int portIter; portIter < switchDevices196.GetN(); ++portIter) {
+		bridgeDevice196->AddBridgePort(switchDevices196.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode197 = csmaSwitch197.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice197 = ns3::BridgeNetDevice();
+	switchNode197->AddDevice(bridgeDevice197);
+
+	for (int portIter; portIter < switchDevices197.GetN(); ++portIter) {
+		bridgeDevice197->AddBridgePort(switchDevices197.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode198 = csmaSwitch198.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice198 = ns3::BridgeNetDevice();
+	switchNode198->AddDevice(bridgeDevice198);
+
+	for (int portIter; portIter < switchDevices198.GetN(); ++portIter) {
+		bridgeDevice198->AddBridgePort(switchDevices198.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode199 = csmaSwitch199.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice199 = ns3::BridgeNetDevice();
+	switchNode199->AddDevice(bridgeDevice199);
+
+	for (int portIter; portIter < switchDevices199.GetN(); ++portIter) {
+		bridgeDevice199->AddBridgePort(switchDevices199.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode200 = csmaSwitch200.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice200 = ns3::BridgeNetDevice();
+	switchNode200->AddDevice(bridgeDevice200);
+
+	for (int portIter; portIter < switchDevices200.GetN(); ++portIter) {
+		bridgeDevice200->AddBridgePort(switchDevices200.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode201 = csmaSwitch201.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice201 = ns3::BridgeNetDevice();
+	switchNode201->AddDevice(bridgeDevice201);
+
+	for (int portIter; portIter < switchDevices201.GetN(); ++portIter) {
+		bridgeDevice201->AddBridgePort(switchDevices201.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode202 = csmaSwitch202.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice202 = ns3::BridgeNetDevice();
+	switchNode202->AddDevice(bridgeDevice202);
+
+	for (int portIter; portIter < switchDevices202.GetN(); ++portIter) {
+		bridgeDevice202->AddBridgePort(switchDevices202.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode203 = csmaSwitch203.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice203 = ns3::BridgeNetDevice();
+	switchNode203->AddDevice(bridgeDevice203);
+
+	for (int portIter; portIter < switchDevices203.GetN(); ++portIter) {
+		bridgeDevice203->AddBridgePort(switchDevices203.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode204 = csmaSwitch204.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice204 = ns3::BridgeNetDevice();
+	switchNode204->AddDevice(bridgeDevice204);
+
+	for (int portIter; portIter < switchDevices204.GetN(); ++portIter) {
+		bridgeDevice204->AddBridgePort(switchDevices204.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode205 = csmaSwitch205.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice205 = ns3::BridgeNetDevice();
+	switchNode205->AddDevice(bridgeDevice205);
+
+	for (int portIter; portIter < switchDevices205.GetN(); ++portIter) {
+		bridgeDevice205->AddBridgePort(switchDevices205.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode206 = csmaSwitch206.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice206 = ns3::BridgeNetDevice();
+	switchNode206->AddDevice(bridgeDevice206);
+
+	for (int portIter; portIter < switchDevices206.GetN(); ++portIter) {
+		bridgeDevice206->AddBridgePort(switchDevices206.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode207 = csmaSwitch207.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice207 = ns3::BridgeNetDevice();
+	switchNode207->AddDevice(bridgeDevice207);
+
+	for (int portIter; portIter < switchDevices207.GetN(); ++portIter) {
+		bridgeDevice207->AddBridgePort(switchDevices207.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode208 = csmaSwitch208.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice208 = ns3::BridgeNetDevice();
+	switchNode208->AddDevice(bridgeDevice208);
+
+	for (int portIter; portIter < switchDevices208.GetN(); ++portIter) {
+		bridgeDevice208->AddBridgePort(switchDevices208.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode209 = csmaSwitch209.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice209 = ns3::BridgeNetDevice();
+	switchNode209->AddDevice(bridgeDevice209);
+
+	for (int portIter; portIter < switchDevices209.GetN(); ++portIter) {
+		bridgeDevice209->AddBridgePort(switchDevices209.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode210 = csmaSwitch210.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice210 = ns3::BridgeNetDevice();
+	switchNode210->AddDevice(bridgeDevice210);
+
+	for (int portIter; portIter < switchDevices210.GetN(); ++portIter) {
+		bridgeDevice210->AddBridgePort(switchDevices210.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode211 = csmaSwitch211.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice211 = ns3::BridgeNetDevice();
+	switchNode211->AddDevice(bridgeDevice211);
+
+	for (int portIter; portIter < switchDevices211.GetN(); ++portIter) {
+		bridgeDevice211->AddBridgePort(switchDevices211.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode212 = csmaSwitch212.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice212 = ns3::BridgeNetDevice();
+	switchNode212->AddDevice(bridgeDevice212);
+
+	for (int portIter; portIter < switchDevices212.GetN(); ++portIter) {
+		bridgeDevice212->AddBridgePort(switchDevices212.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode213 = csmaSwitch213.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice213 = ns3::BridgeNetDevice();
+	switchNode213->AddDevice(bridgeDevice213);
+
+	for (int portIter; portIter < switchDevices213.GetN(); ++portIter) {
+		bridgeDevice213->AddBridgePort(switchDevices213.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNodesigenobu = csmaSwitchsigenobu.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevicesigenobu =
+			ns3::BridgeNetDevice();
+	switchNodesigenobu->AddDevice(bridgeDevicesigenobu);
+
+	for (int portIter; portIter < switchDevicessigenobu.GetN(); ++portIter) {
+		bridgeDevicesigenobu->AddBridgePort(
+				switchDevicessigenobu.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode214 = csmaSwitch214.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice214 = ns3::BridgeNetDevice();
+	switchNode214->AddDevice(bridgeDevice214);
+
+	for (int portIter; portIter < switchDevices214.GetN(); ++portIter) {
+		bridgeDevice214->AddBridgePort(switchDevices214.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode215 = csmaSwitch215.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice215 = ns3::BridgeNetDevice();
+	switchNode215->AddDevice(bridgeDevice215);
+
+	for (int portIter; portIter < switchDevices215.GetN(); ++portIter) {
+		bridgeDevice215->AddBridgePort(switchDevices215.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode216 = csmaSwitch216.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice216 = ns3::BridgeNetDevice();
+	switchNode216->AddDevice(bridgeDevice216);
+
+	for (int portIter; portIter < switchDevices216.GetN(); ++portIter) {
+		bridgeDevice216->AddBridgePort(switchDevices216.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode217 = csmaSwitch217.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice217 = ns3::BridgeNetDevice();
+	switchNode217->AddDevice(bridgeDevice217);
+
+	for (int portIter; portIter < switchDevices217.GetN(); ++portIter) {
+		bridgeDevice217->AddBridgePort(switchDevices217.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode218 = csmaSwitch218.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice218 = ns3::BridgeNetDevice();
+	switchNode218->AddDevice(bridgeDevice218);
+
+	for (int portIter; portIter < switchDevices218.GetN(); ++portIter) {
+		bridgeDevice218->AddBridgePort(switchDevices218.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode219 = csmaSwitch219.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice219 = ns3::BridgeNetDevice();
+	switchNode219->AddDevice(bridgeDevice219);
+
+	for (int portIter; portIter < switchDevices219.GetN(); ++portIter) {
+		bridgeDevice219->AddBridgePort(switchDevices219.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode220 = csmaSwitch220.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice220 = ns3::BridgeNetDevice();
+	switchNode220->AddDevice(bridgeDevice220);
+
+	for (int portIter; portIter < switchDevices220.GetN(); ++portIter) {
+		bridgeDevice220->AddBridgePort(switchDevices220.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode221 = csmaSwitch221.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice221 = ns3::BridgeNetDevice();
+	switchNode221->AddDevice(bridgeDevice221);
+
+	for (int portIter; portIter < switchDevices221.GetN(); ++portIter) {
+		bridgeDevice221->AddBridgePort(switchDevices221.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode222 = csmaSwitch222.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice222 = ns3::BridgeNetDevice();
+	switchNode222->AddDevice(bridgeDevice222);
+
+	for (int portIter; portIter < switchDevices222.GetN(); ++portIter) {
+		bridgeDevice222->AddBridgePort(switchDevices222.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode223 = csmaSwitch223.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice223 = ns3::BridgeNetDevice();
+	switchNode223->AddDevice(bridgeDevice223);
+
+	for (int portIter; portIter < switchDevices223.GetN(); ++portIter) {
+		bridgeDevice223->AddBridgePort(switchDevices223.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode224 = csmaSwitch224.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice224 = ns3::BridgeNetDevice();
+	switchNode224->AddDevice(bridgeDevice224);
+
+	for (int portIter; portIter < switchDevices224.GetN(); ++portIter) {
+		bridgeDevice224->AddBridgePort(switchDevices224.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode225 = csmaSwitch225.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice225 = ns3::BridgeNetDevice();
+	switchNode225->AddDevice(bridgeDevice225);
+
+	for (int portIter; portIter < switchDevices225.GetN(); ++portIter) {
+		bridgeDevice225->AddBridgePort(switchDevices225.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode226 = csmaSwitch226.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice226 = ns3::BridgeNetDevice();
+	switchNode226->AddDevice(bridgeDevice226);
+
+	for (int portIter; portIter < switchDevices226.GetN(); ++portIter) {
+		bridgeDevice226->AddBridgePort(switchDevices226.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode227 = csmaSwitch227.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice227 = ns3::BridgeNetDevice();
+	switchNode227->AddDevice(bridgeDevice227);
+
+	for (int portIter; portIter < switchDevices227.GetN(); ++portIter) {
+		bridgeDevice227->AddBridgePort(switchDevices227.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode228 = csmaSwitch228.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice228 = ns3::BridgeNetDevice();
+	switchNode228->AddDevice(bridgeDevice228);
+
+	for (int portIter; portIter < switchDevices228.GetN(); ++portIter) {
+		bridgeDevice228->AddBridgePort(switchDevices228.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode229 = csmaSwitch229.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice229 = ns3::BridgeNetDevice();
+	switchNode229->AddDevice(bridgeDevice229);
+
+	for (int portIter; portIter < switchDevices229.GetN(); ++portIter) {
+		bridgeDevice229->AddBridgePort(switchDevices229.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode230 = csmaSwitch230.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice230 = ns3::BridgeNetDevice();
+	switchNode230->AddDevice(bridgeDevice230);
+
+	for (int portIter; portIter < switchDevices230.GetN(); ++portIter) {
+		bridgeDevice230->AddBridgePort(switchDevices230.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode231 = csmaSwitch231.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice231 = ns3::BridgeNetDevice();
+	switchNode231->AddDevice(bridgeDevice231);
+
+	for (int portIter; portIter < switchDevices231.GetN(); ++portIter) {
+		bridgeDevice231->AddBridgePort(switchDevices231.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode232 = csmaSwitch232.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice232 = ns3::BridgeNetDevice();
+	switchNode232->AddDevice(bridgeDevice232);
+
+	for (int portIter; portIter < switchDevices232.GetN(); ++portIter) {
+		bridgeDevice232->AddBridgePort(switchDevices232.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode233 = csmaSwitch233.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice233 = ns3::BridgeNetDevice();
+	switchNode233->AddDevice(bridgeDevice233);
+
+	for (int portIter; portIter < switchDevices233.GetN(); ++portIter) {
+		bridgeDevice233->AddBridgePort(switchDevices233.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode234 = csmaSwitch234.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice234 = ns3::BridgeNetDevice();
+	switchNode234->AddDevice(bridgeDevice234);
+
+	for (int portIter; portIter < switchDevices234.GetN(); ++portIter) {
+		bridgeDevice234->AddBridgePort(switchDevices234.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode235 = csmaSwitch235.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice235 = ns3::BridgeNetDevice();
+	switchNode235->AddDevice(bridgeDevice235);
+
+	for (int portIter; portIter < switchDevices235.GetN(); ++portIter) {
+		bridgeDevice235->AddBridgePort(switchDevices235.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode236 = csmaSwitch236.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice236 = ns3::BridgeNetDevice();
+	switchNode236->AddDevice(bridgeDevice236);
+
+	for (int portIter; portIter < switchDevices236.GetN(); ++portIter) {
+		bridgeDevice236->AddBridgePort(switchDevices236.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode237 = csmaSwitch237.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice237 = ns3::BridgeNetDevice();
+	switchNode237->AddDevice(bridgeDevice237);
+
+	for (int portIter; portIter < switchDevices237.GetN(); ++portIter) {
+		bridgeDevice237->AddBridgePort(switchDevices237.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode238 = csmaSwitch238.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice238 = ns3::BridgeNetDevice();
+	switchNode238->AddDevice(bridgeDevice238);
+
+	for (int portIter; portIter < switchDevices238.GetN(); ++portIter) {
+		bridgeDevice238->AddBridgePort(switchDevices238.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode239 = csmaSwitch239.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice239 = ns3::BridgeNetDevice();
+	switchNode239->AddDevice(bridgeDevice239);
+
+	for (int portIter; portIter < switchDevices239.GetN(); ++portIter) {
+		bridgeDevice239->AddBridgePort(switchDevices239.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode240 = csmaSwitch240.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice240 = ns3::BridgeNetDevice();
+	switchNode240->AddDevice(bridgeDevice240);
+
+	for (int portIter; portIter < switchDevices240.GetN(); ++portIter) {
+		bridgeDevice240->AddBridgePort(switchDevices240.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode241 = csmaSwitch241.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice241 = ns3::BridgeNetDevice();
+	switchNode241->AddDevice(bridgeDevice241);
+
+	for (int portIter; portIter < switchDevices241.GetN(); ++portIter) {
+		bridgeDevice241->AddBridgePort(switchDevices241.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode242 = csmaSwitch242.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice242 = ns3::BridgeNetDevice();
+	switchNode242->AddDevice(bridgeDevice242);
+
+	for (int portIter; portIter < switchDevices242.GetN(); ++portIter) {
+		bridgeDevice242->AddBridgePort(switchDevices242.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode243 = csmaSwitch243.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice243 = ns3::BridgeNetDevice();
+	switchNode243->AddDevice(bridgeDevice243);
+
+	for (int portIter; portIter < switchDevices243.GetN(); ++portIter) {
+		bridgeDevice243->AddBridgePort(switchDevices243.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode244 = csmaSwitch244.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice244 = ns3::BridgeNetDevice();
+	switchNode244->AddDevice(bridgeDevice244);
+
+	for (int portIter; portIter < switchDevices244.GetN(); ++portIter) {
+		bridgeDevice244->AddBridgePort(switchDevices244.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode245 = csmaSwitch245.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice245 = ns3::BridgeNetDevice();
+	switchNode245->AddDevice(bridgeDevice245);
+
+	for (int portIter; portIter < switchDevices245.GetN(); ++portIter) {
+		bridgeDevice245->AddBridgePort(switchDevices245.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode246 = csmaSwitch246.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice246 = ns3::BridgeNetDevice();
+	switchNode246->AddDevice(bridgeDevice246);
+
+	for (int portIter; portIter < switchDevices246.GetN(); ++portIter) {
+		bridgeDevice246->AddBridgePort(switchDevices246.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode247 = csmaSwitch247.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice247 = ns3::BridgeNetDevice();
+	switchNode247->AddDevice(bridgeDevice247);
+
+	for (int portIter; portIter < switchDevices247.GetN(); ++portIter) {
+		bridgeDevice247->AddBridgePort(switchDevices247.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode248 = csmaSwitch248.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice248 = ns3::BridgeNetDevice();
+	switchNode248->AddDevice(bridgeDevice248);
+
+	for (int portIter; portIter < switchDevices248.GetN(); ++portIter) {
+		bridgeDevice248->AddBridgePort(switchDevices248.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode284 = csmaSwitch284.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice284 = ns3::BridgeNetDevice();
+	switchNode284->AddDevice(bridgeDevice284);
+
+	for (int portIter; portIter < switchDevices284.GetN(); ++portIter) {
+		bridgeDevice284->AddBridgePort(switchDevices284.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode249 = csmaSwitch249.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice249 = ns3::BridgeNetDevice();
+	switchNode249->AddDevice(bridgeDevice249);
+
+	for (int portIter; portIter < switchDevices249.GetN(); ++portIter) {
+		bridgeDevice249->AddBridgePort(switchDevices249.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode250 = csmaSwitch250.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice250 = ns3::BridgeNetDevice();
+	switchNode250->AddDevice(bridgeDevice250);
+
+	for (int portIter; portIter < switchDevices250.GetN(); ++portIter) {
+		bridgeDevice250->AddBridgePort(switchDevices250.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode251 = csmaSwitch251.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice251 = ns3::BridgeNetDevice();
+	switchNode251->AddDevice(bridgeDevice251);
+
+	for (int portIter; portIter < switchDevices251.GetN(); ++portIter) {
+		bridgeDevice251->AddBridgePort(switchDevices251.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode252 = csmaSwitch252.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice252 = ns3::BridgeNetDevice();
+	switchNode252->AddDevice(bridgeDevice252);
+
+	for (int portIter; portIter < switchDevices252.GetN(); ++portIter) {
+		bridgeDevice252->AddBridgePort(switchDevices252.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode253 = csmaSwitch253.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice253 = ns3::BridgeNetDevice();
+	switchNode253->AddDevice(bridgeDevice253);
+
+	for (int portIter; portIter < switchDevices253.GetN(); ++portIter) {
+		bridgeDevice253->AddBridgePort(switchDevices253.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode254 = csmaSwitch254.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice254 = ns3::BridgeNetDevice();
+	switchNode254->AddDevice(bridgeDevice254);
+
+	for (int portIter; portIter < switchDevices254.GetN(); ++portIter) {
+		bridgeDevice254->AddBridgePort(switchDevices254.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode255 = csmaSwitch255.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice255 = ns3::BridgeNetDevice();
+	switchNode255->AddDevice(bridgeDevice255);
+
+	for (int portIter; portIter < switchDevices255.GetN(); ++portIter) {
+		bridgeDevice255->AddBridgePort(switchDevices255.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode256 = csmaSwitch256.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice256 = ns3::BridgeNetDevice();
+	switchNode256->AddDevice(bridgeDevice256);
+
+	for (int portIter; portIter < switchDevices256.GetN(); ++portIter) {
+		bridgeDevice256->AddBridgePort(switchDevices256.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode257 = csmaSwitch257.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice257 = ns3::BridgeNetDevice();
+	switchNode257->AddDevice(bridgeDevice257);
+
+	for (int portIter; portIter < switchDevices257.GetN(); ++portIter) {
+		bridgeDevice257->AddBridgePort(switchDevices257.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode258 = csmaSwitch258.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice258 = ns3::BridgeNetDevice();
+	switchNode258->AddDevice(bridgeDevice258);
+
+	for (int portIter; portIter < switchDevices258.GetN(); ++portIter) {
+		bridgeDevice258->AddBridgePort(switchDevices258.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode259 = csmaSwitch259.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice259 = ns3::BridgeNetDevice();
+	switchNode259->AddDevice(bridgeDevice259);
+
+	for (int portIter; portIter < switchDevices259.GetN(); ++portIter) {
+		bridgeDevice259->AddBridgePort(switchDevices259.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode260 = csmaSwitch260.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice260 = ns3::BridgeNetDevice();
+	switchNode260->AddDevice(bridgeDevice260);
+
+	for (int portIter; portIter < switchDevices260.GetN(); ++portIter) {
+		bridgeDevice260->AddBridgePort(switchDevices260.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode261 = csmaSwitch261.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice261 = ns3::BridgeNetDevice();
+	switchNode261->AddDevice(bridgeDevice261);
+
+	for (int portIter; portIter < switchDevices261.GetN(); ++portIter) {
+		bridgeDevice261->AddBridgePort(switchDevices261.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode262 = csmaSwitch262.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice262 = ns3::BridgeNetDevice();
+	switchNode262->AddDevice(bridgeDevice262);
+
+	for (int portIter; portIter < switchDevices262.GetN(); ++portIter) {
+		bridgeDevice262->AddBridgePort(switchDevices262.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode263 = csmaSwitch263.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice263 = ns3::BridgeNetDevice();
+	switchNode263->AddDevice(bridgeDevice263);
+
+	for (int portIter; portIter < switchDevices263.GetN(); ++portIter) {
+		bridgeDevice263->AddBridgePort(switchDevices263.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode264 = csmaSwitch264.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice264 = ns3::BridgeNetDevice();
+	switchNode264->AddDevice(bridgeDevice264);
+
+	for (int portIter; portIter < switchDevices264.GetN(); ++portIter) {
+		bridgeDevice264->AddBridgePort(switchDevices264.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode265 = csmaSwitch265.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice265 = ns3::BridgeNetDevice();
+	switchNode265->AddDevice(bridgeDevice265);
+
+	for (int portIter; portIter < switchDevices265.GetN(); ++portIter) {
+		bridgeDevice265->AddBridgePort(switchDevices265.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode266 = csmaSwitch266.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice266 = ns3::BridgeNetDevice();
+	switchNode266->AddDevice(bridgeDevice266);
+
+	for (int portIter; portIter < switchDevices266.GetN(); ++portIter) {
+		bridgeDevice266->AddBridgePort(switchDevices266.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode267 = csmaSwitch267.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice267 = ns3::BridgeNetDevice();
+	switchNode267->AddDevice(bridgeDevice267);
+
+	for (int portIter; portIter < switchDevices267.GetN(); ++portIter) {
+		bridgeDevice267->AddBridgePort(switchDevices267.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode268 = csmaSwitch268.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice268 = ns3::BridgeNetDevice();
+	switchNode268->AddDevice(bridgeDevice268);
+
+	for (int portIter; portIter < switchDevices268.GetN(); ++portIter) {
+		bridgeDevice268->AddBridgePort(switchDevices268.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode269 = csmaSwitch269.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice269 = ns3::BridgeNetDevice();
+	switchNode269->AddDevice(bridgeDevice269);
+
+	for (int portIter; portIter < switchDevices269.GetN(); ++portIter) {
+		bridgeDevice269->AddBridgePort(switchDevices269.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode270 = csmaSwitch270.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice270 = ns3::BridgeNetDevice();
+	switchNode270->AddDevice(bridgeDevice270);
+
+	for (int portIter; portIter < switchDevices270.GetN(); ++portIter) {
+		bridgeDevice270->AddBridgePort(switchDevices270.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode272 = csmaSwitch272.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice272 = ns3::BridgeNetDevice();
+	switchNode272->AddDevice(bridgeDevice272);
+
+	for (int portIter; portIter < switchDevices272.GetN(); ++portIter) {
+		bridgeDevice272->AddBridgePort(switchDevices272.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode273 = csmaSwitch273.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice273 = ns3::BridgeNetDevice();
+	switchNode273->AddDevice(bridgeDevice273);
+
+	for (int portIter; portIter < switchDevices273.GetN(); ++portIter) {
+		bridgeDevice273->AddBridgePort(switchDevices273.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode274 = csmaSwitch274.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice274 = ns3::BridgeNetDevice();
+	switchNode274->AddDevice(bridgeDevice274);
+
+	for (int portIter; portIter < switchDevices274.GetN(); ++portIter) {
+		bridgeDevice274->AddBridgePort(switchDevices274.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode275 = csmaSwitch275.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice275 = ns3::BridgeNetDevice();
+	switchNode275->AddDevice(bridgeDevice275);
+
+	for (int portIter; portIter < switchDevices275.GetN(); ++portIter) {
+		bridgeDevice275->AddBridgePort(switchDevices275.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode276 = csmaSwitch276.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice276 = ns3::BridgeNetDevice();
+	switchNode276->AddDevice(bridgeDevice276);
+
+	for (int portIter; portIter < switchDevices276.GetN(); ++portIter) {
+		bridgeDevice276->AddBridgePort(switchDevices276.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode277 = csmaSwitch277.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice277 = ns3::BridgeNetDevice();
+	switchNode277->AddDevice(bridgeDevice277);
+
+	for (int portIter; portIter < switchDevices277.GetN(); ++portIter) {
+		bridgeDevice277->AddBridgePort(switchDevices277.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode278 = csmaSwitch278.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice278 = ns3::BridgeNetDevice();
+	switchNode278->AddDevice(bridgeDevice278);
+
+	for (int portIter; portIter < switchDevices278.GetN(); ++portIter) {
+		bridgeDevice278->AddBridgePort(switchDevices278.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode279 = csmaSwitch279.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice279 = ns3::BridgeNetDevice();
+	switchNode279->AddDevice(bridgeDevice279);
+
+	for (int portIter; portIter < switchDevices279.GetN(); ++portIter) {
+		bridgeDevice279->AddBridgePort(switchDevices279.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode280 = csmaSwitch280.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice280 = ns3::BridgeNetDevice();
+	switchNode280->AddDevice(bridgeDevice280);
+
+	for (int portIter; portIter < switchDevices280.GetN(); ++portIter) {
+		bridgeDevice280->AddBridgePort(switchDevices280.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode281 = csmaSwitch281.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice281 = ns3::BridgeNetDevice();
+	switchNode281->AddDevice(bridgeDevice281);
+
+	for (int portIter; portIter < switchDevices281.GetN(); ++portIter) {
+		bridgeDevice281->AddBridgePort(switchDevices281.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode282 = csmaSwitch282.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice282 = ns3::BridgeNetDevice();
+	switchNode282->AddDevice(bridgeDevice282);
+
+	for (int portIter; portIter < switchDevices282.GetN(); ++portIter) {
+		bridgeDevice282->AddBridgePort(switchDevices282.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode283 = csmaSwitch283.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice283 = ns3::BridgeNetDevice();
+	switchNode283->AddDevice(bridgeDevice283);
+
+	for (int portIter; portIter < switchDevices283.GetN(); ++portIter) {
+		bridgeDevice283->AddBridgePort(switchDevices283.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNodetarumi = csmaSwitchtarumi.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevicetarumi = ns3::BridgeNetDevice();
+	switchNodetarumi->AddDevice(bridgeDevicetarumi);
+
+	for (int portIter; portIter < switchDevicestarumi.GetN(); ++portIter) {
+		bridgeDevicetarumi->AddBridgePort(switchDevicestarumi.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode285 = csmaSwitch285.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice285 = ns3::BridgeNetDevice();
+	switchNode285->AddDevice(bridgeDevice285);
+
+	for (int portIter; portIter < switchDevices285.GetN(); ++portIter) {
+		bridgeDevice285->AddBridgePort(switchDevices285.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode286 = csmaSwitch286.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice286 = ns3::BridgeNetDevice();
+	switchNode286->AddDevice(bridgeDevice286);
+
+	for (int portIter; portIter < switchDevices286.GetN(); ++portIter) {
+		bridgeDevice286->AddBridgePort(switchDevices286.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode287 = csmaSwitch287.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice287 = ns3::BridgeNetDevice();
+	switchNode287->AddDevice(bridgeDevice287);
+
+	for (int portIter; portIter < switchDevices287.GetN(); ++portIter) {
+		bridgeDevice287->AddBridgePort(switchDevices287.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode288 = csmaSwitch288.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice288 = ns3::BridgeNetDevice();
+	switchNode288->AddDevice(bridgeDevice288);
+
+	for (int portIter; portIter < switchDevices288.GetN(); ++portIter) {
+		bridgeDevice288->AddBridgePort(switchDevices288.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode289 = csmaSwitch289.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice289 = ns3::BridgeNetDevice();
+	switchNode289->AddDevice(bridgeDevice289);
+
+	for (int portIter; portIter < switchDevices289.GetN(); ++portIter) {
+		bridgeDevice289->AddBridgePort(switchDevices289.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode290 = csmaSwitch290.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice290 = ns3::BridgeNetDevice();
+	switchNode290->AddDevice(bridgeDevice290);
+
+	for (int portIter; portIter < switchDevices290.GetN(); ++portIter) {
+		bridgeDevice290->AddBridgePort(switchDevices290.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode291 = csmaSwitch291.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice291 = ns3::BridgeNetDevice();
+	switchNode291->AddDevice(bridgeDevice291);
+
+	for (int portIter; portIter < switchDevices291.GetN(); ++portIter) {
+		bridgeDevice291->AddBridgePort(switchDevices291.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode292 = csmaSwitch292.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice292 = ns3::BridgeNetDevice();
+	switchNode292->AddDevice(bridgeDevice292);
+
+	for (int portIter; portIter < switchDevices292.GetN(); ++portIter) {
+		bridgeDevice292->AddBridgePort(switchDevices292.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode293 = csmaSwitch293.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice293 = ns3::BridgeNetDevice();
+	switchNode293->AddDevice(bridgeDevice293);
+
+	for (int portIter; portIter < switchDevices293.GetN(); ++portIter) {
+		bridgeDevice293->AddBridgePort(switchDevices293.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode294 = csmaSwitch294.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice294 = ns3::BridgeNetDevice();
+	switchNode294->AddDevice(bridgeDevice294);
+
+	for (int portIter; portIter < switchDevices294.GetN(); ++portIter) {
+		bridgeDevice294->AddBridgePort(switchDevices294.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode295 = csmaSwitch295.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice295 = ns3::BridgeNetDevice();
+	switchNode295->AddDevice(bridgeDevice295);
+
+	for (int portIter; portIter < switchDevices295.GetN(); ++portIter) {
+		bridgeDevice295->AddBridgePort(switchDevices295.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode296 = csmaSwitch296.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice296 = ns3::BridgeNetDevice();
+	switchNode296->AddDevice(bridgeDevice296);
+
+	for (int portIter; portIter < switchDevices296.GetN(); ++portIter) {
+		bridgeDevice296->AddBridgePort(switchDevices296.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode297 = csmaSwitch297.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice297 = ns3::BridgeNetDevice();
+	switchNode297->AddDevice(bridgeDevice297);
+
+	for (int portIter; portIter < switchDevices297.GetN(); ++portIter) {
+		bridgeDevice297->AddBridgePort(switchDevices297.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode298 = csmaSwitch298.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice298 = ns3::BridgeNetDevice();
+	switchNode298->AddDevice(bridgeDevice298);
+
+	for (int portIter; portIter < switchDevices298.GetN(); ++portIter) {
+		bridgeDevice298->AddBridgePort(switchDevices298.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode299 = csmaSwitch299.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice299 = ns3::BridgeNetDevice();
+	switchNode299->AddDevice(bridgeDevice299);
+
+	for (int portIter; portIter < switchDevices299.GetN(); ++portIter) {
+		bridgeDevice299->AddBridgePort(switchDevices299.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode300 = csmaSwitch300.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice300 = ns3::BridgeNetDevice();
+	switchNode300->AddDevice(bridgeDevice300);
+
+	for (int portIter; portIter < switchDevices300.GetN(); ++portIter) {
+		bridgeDevice300->AddBridgePort(switchDevices300.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode301 = csmaSwitch301.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice301 = ns3::BridgeNetDevice();
+	switchNode301->AddDevice(bridgeDevice301);
+
+	for (int portIter; portIter < switchDevices301.GetN(); ++portIter) {
+		bridgeDevice301->AddBridgePort(switchDevices301.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode302 = csmaSwitch302.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice302 = ns3::BridgeNetDevice();
+	switchNode302->AddDevice(bridgeDevice302);
+
+	for (int portIter; portIter < switchDevices302.GetN(); ++portIter) {
+		bridgeDevice302->AddBridgePort(switchDevices302.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode303 = csmaSwitch303.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice303 = ns3::BridgeNetDevice();
+	switchNode303->AddDevice(bridgeDevice303);
+
+	for (int portIter; portIter < switchDevices303.GetN(); ++portIter) {
+		bridgeDevice303->AddBridgePort(switchDevices303.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode304 = csmaSwitch304.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice304 = ns3::BridgeNetDevice();
+	switchNode304->AddDevice(bridgeDevice304);
+
+	for (int portIter; portIter < switchDevices304.GetN(); ++portIter) {
+		bridgeDevice304->AddBridgePort(switchDevices304.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode305 = csmaSwitch305.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice305 = ns3::BridgeNetDevice();
+	switchNode305->AddDevice(bridgeDevice305);
+
+	for (int portIter; portIter < switchDevices305.GetN(); ++portIter) {
+		bridgeDevice305->AddBridgePort(switchDevices305.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode306 = csmaSwitch306.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice306 = ns3::BridgeNetDevice();
+	switchNode306->AddDevice(bridgeDevice306);
+
+	for (int portIter; portIter < switchDevices306.GetN(); ++portIter) {
+		bridgeDevice306->AddBridgePort(switchDevices306.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode307 = csmaSwitch307.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice307 = ns3::BridgeNetDevice();
+	switchNode307->AddDevice(bridgeDevice307);
+
+	for (int portIter; portIter < switchDevices307.GetN(); ++portIter) {
+		bridgeDevice307->AddBridgePort(switchDevices307.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode308 = csmaSwitch308.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice308 = ns3::BridgeNetDevice();
+	switchNode308->AddDevice(bridgeDevice308);
+
+	for (int portIter; portIter < switchDevices308.GetN(); ++portIter) {
+		bridgeDevice308->AddBridgePort(switchDevices308.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode309 = csmaSwitch309.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice309 = ns3::BridgeNetDevice();
+	switchNode309->AddDevice(bridgeDevice309);
+
+	for (int portIter; portIter < switchDevices309.GetN(); ++portIter) {
+		bridgeDevice309->AddBridgePort(switchDevices309.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode310 = csmaSwitch310.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice310 = ns3::BridgeNetDevice();
+	switchNode310->AddDevice(bridgeDevice310);
+
+	for (int portIter; portIter < switchDevices310.GetN(); ++portIter) {
+		bridgeDevice310->AddBridgePort(switchDevices310.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode311 = csmaSwitch311.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice311 = ns3::BridgeNetDevice();
+	switchNode311->AddDevice(bridgeDevice311);
+
+	for (int portIter; portIter < switchDevices311.GetN(); ++portIter) {
+		bridgeDevice311->AddBridgePort(switchDevices311.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode312 = csmaSwitch312.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice312 = ns3::BridgeNetDevice();
+	switchNode312->AddDevice(bridgeDevice312);
+
+	for (int portIter; portIter < switchDevices312.GetN(); ++portIter) {
+		bridgeDevice312->AddBridgePort(switchDevices312.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode313 = csmaSwitch313.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice313 = ns3::BridgeNetDevice();
+	switchNode313->AddDevice(bridgeDevice313);
+
+	for (int portIter; portIter < switchDevices313.GetN(); ++portIter) {
+		bridgeDevice313->AddBridgePort(switchDevices313.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode314 = csmaSwitch314.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice314 = ns3::BridgeNetDevice();
+	switchNode314->AddDevice(bridgeDevice314);
+
+	for (int portIter; portIter < switchDevices314.GetN(); ++portIter) {
+		bridgeDevice314->AddBridgePort(switchDevices314.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode315 = csmaSwitch315.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice315 = ns3::BridgeNetDevice();
+	switchNode315->AddDevice(bridgeDevice315);
+
+	for (int portIter; portIter < switchDevices315.GetN(); ++portIter) {
+		bridgeDevice315->AddBridgePort(switchDevices315.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode316 = csmaSwitch316.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice316 = ns3::BridgeNetDevice();
+	switchNode316->AddDevice(bridgeDevice316);
+
+	for (int portIter; portIter < switchDevices316.GetN(); ++portIter) {
+		bridgeDevice316->AddBridgePort(switchDevices316.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode317 = csmaSwitch317.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice317 = ns3::BridgeNetDevice();
+	switchNode317->AddDevice(bridgeDevice317);
+
+	for (int portIter; portIter < switchDevices317.GetN(); ++portIter) {
+		bridgeDevice317->AddBridgePort(switchDevices317.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode318 = csmaSwitch318.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice318 = ns3::BridgeNetDevice();
+	switchNode318->AddDevice(bridgeDevice318);
+
+	for (int portIter; portIter < switchDevices318.GetN(); ++portIter) {
+		bridgeDevice318->AddBridgePort(switchDevices318.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode319 = csmaSwitch319.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice319 = ns3::BridgeNetDevice();
+	switchNode319->AddDevice(bridgeDevice319);
+
+	for (int portIter; portIter < switchDevices319.GetN(); ++portIter) {
+		bridgeDevice319->AddBridgePort(switchDevices319.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode320 = csmaSwitch320.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice320 = ns3::BridgeNetDevice();
+	switchNode320->AddDevice(bridgeDevice320);
+
+	for (int portIter; portIter < switchDevices320.GetN(); ++portIter) {
+		bridgeDevice320->AddBridgePort(switchDevices320.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode321 = csmaSwitch321.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice321 = ns3::BridgeNetDevice();
+	switchNode321->AddDevice(bridgeDevice321);
+
+	for (int portIter; portIter < switchDevices321.GetN(); ++portIter) {
+		bridgeDevice321->AddBridgePort(switchDevices321.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode322 = csmaSwitch322.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice322 = ns3::BridgeNetDevice();
+	switchNode322->AddDevice(bridgeDevice322);
+
+	for (int portIter; portIter < switchDevices322.GetN(); ++portIter) {
+		bridgeDevice322->AddBridgePort(switchDevices322.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode323 = csmaSwitch323.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice323 = ns3::BridgeNetDevice();
+	switchNode323->AddDevice(bridgeDevice323);
+
+	for (int portIter; portIter < switchDevices323.GetN(); ++portIter) {
+		bridgeDevice323->AddBridgePort(switchDevices323.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode324 = csmaSwitch324.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice324 = ns3::BridgeNetDevice();
+	switchNode324->AddDevice(bridgeDevice324);
+
+	for (int portIter; portIter < switchDevices324.GetN(); ++portIter) {
+		bridgeDevice324->AddBridgePort(switchDevices324.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode325 = csmaSwitch325.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice325 = ns3::BridgeNetDevice();
+	switchNode325->AddDevice(bridgeDevice325);
+
+	for (int portIter; portIter < switchDevices325.GetN(); ++portIter) {
+		bridgeDevice325->AddBridgePort(switchDevices325.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode326 = csmaSwitch326.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice326 = ns3::BridgeNetDevice();
+	switchNode326->AddDevice(bridgeDevice326);
+
+	for (int portIter; portIter < switchDevices326.GetN(); ++portIter) {
+		bridgeDevice326->AddBridgePort(switchDevices326.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode327 = csmaSwitch327.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice327 = ns3::BridgeNetDevice();
+	switchNode327->AddDevice(bridgeDevice327);
+
+	for (int portIter; portIter < switchDevices327.GetN(); ++portIter) {
+		bridgeDevice327->AddBridgePort(switchDevices327.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode328 = csmaSwitch328.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice328 = ns3::BridgeNetDevice();
+	switchNode328->AddDevice(bridgeDevice328);
+
+	for (int portIter; portIter < switchDevices328.GetN(); ++portIter) {
+		bridgeDevice328->AddBridgePort(switchDevices328.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode329 = csmaSwitch329.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice329 = ns3::BridgeNetDevice();
+	switchNode329->AddDevice(bridgeDevice329);
+
+	for (int portIter; portIter < switchDevices329.GetN(); ++portIter) {
+		bridgeDevice329->AddBridgePort(switchDevices329.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode330 = csmaSwitch330.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice330 = ns3::BridgeNetDevice();
+	switchNode330->AddDevice(bridgeDevice330);
+
+	for (int portIter; portIter < switchDevices330.GetN(); ++portIter) {
+		bridgeDevice330->AddBridgePort(switchDevices330.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode331 = csmaSwitch331.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice331 = ns3::BridgeNetDevice();
+	switchNode331->AddDevice(bridgeDevice331);
+
+	for (int portIter; portIter < switchDevices331.GetN(); ++portIter) {
+		bridgeDevice331->AddBridgePort(switchDevices331.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode332 = csmaSwitch332.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice332 = ns3::BridgeNetDevice();
+	switchNode332->AddDevice(bridgeDevice332);
+
+	for (int portIter; portIter < switchDevices332.GetN(); ++portIter) {
+		bridgeDevice332->AddBridgePort(switchDevices332.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode333 = csmaSwitch333.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice333 = ns3::BridgeNetDevice();
+	switchNode333->AddDevice(bridgeDevice333);
+
+	for (int portIter; portIter < switchDevices333.GetN(); ++portIter) {
+		bridgeDevice333->AddBridgePort(switchDevices333.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode334 = csmaSwitch334.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice334 = ns3::BridgeNetDevice();
+	switchNode334->AddDevice(bridgeDevice334);
+
+	for (int portIter; portIter < switchDevices334.GetN(); ++portIter) {
+		bridgeDevice334->AddBridgePort(switchDevices334.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode335 = csmaSwitch335.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice335 = ns3::BridgeNetDevice();
+	switchNode335->AddDevice(bridgeDevice335);
+
+	for (int portIter; portIter < switchDevices335.GetN(); ++portIter) {
+		bridgeDevice335->AddBridgePort(switchDevices335.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode336 = csmaSwitch336.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice336 = ns3::BridgeNetDevice();
+	switchNode336->AddDevice(bridgeDevice336);
+
+	for (int portIter; portIter < switchDevices336.GetN(); ++portIter) {
+		bridgeDevice336->AddBridgePort(switchDevices336.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode337 = csmaSwitch337.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice337 = ns3::BridgeNetDevice();
+	switchNode337->AddDevice(bridgeDevice337);
+
+	for (int portIter; portIter < switchDevices337.GetN(); ++portIter) {
+		bridgeDevice337->AddBridgePort(switchDevices337.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode338 = csmaSwitch338.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice338 = ns3::BridgeNetDevice();
+	switchNode338->AddDevice(bridgeDevice338);
+
+	for (int portIter; portIter < switchDevices338.GetN(); ++portIter) {
+		bridgeDevice338->AddBridgePort(switchDevices338.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode339 = csmaSwitch339.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice339 = ns3::BridgeNetDevice();
+	switchNode339->AddDevice(bridgeDevice339);
+
+	for (int portIter; portIter < switchDevices339.GetN(); ++portIter) {
+		bridgeDevice339->AddBridgePort(switchDevices339.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode340 = csmaSwitch340.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice340 = ns3::BridgeNetDevice();
+	switchNode340->AddDevice(bridgeDevice340);
+
+	for (int portIter; portIter < switchDevices340.GetN(); ++portIter) {
+		bridgeDevice340->AddBridgePort(switchDevices340.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode341 = csmaSwitch341.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice341 = ns3::BridgeNetDevice();
+	switchNode341->AddDevice(bridgeDevice341);
+
+	for (int portIter; portIter < switchDevices341.GetN(); ++portIter) {
+		bridgeDevice341->AddBridgePort(switchDevices341.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode342 = csmaSwitch342.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice342 = ns3::BridgeNetDevice();
+	switchNode342->AddDevice(bridgeDevice342);
+
+	for (int portIter; portIter < switchDevices342.GetN(); ++portIter) {
+		bridgeDevice342->AddBridgePort(switchDevices342.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode343 = csmaSwitch343.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice343 = ns3::BridgeNetDevice();
+	switchNode343->AddDevice(bridgeDevice343);
+
+	for (int portIter; portIter < switchDevices343.GetN(); ++portIter) {
+		bridgeDevice343->AddBridgePort(switchDevices343.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode344 = csmaSwitch344.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice344 = ns3::BridgeNetDevice();
+	switchNode344->AddDevice(bridgeDevice344);
+
+	for (int portIter; portIter < switchDevices344.GetN(); ++portIter) {
+		bridgeDevice344->AddBridgePort(switchDevices344.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode345 = csmaSwitch345.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice345 = ns3::BridgeNetDevice();
+	switchNode345->AddDevice(bridgeDevice345);
+
+	for (int portIter; portIter < switchDevices345.GetN(); ++portIter) {
+		bridgeDevice345->AddBridgePort(switchDevices345.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode346 = csmaSwitch346.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice346 = ns3::BridgeNetDevice();
+	switchNode346->AddDevice(bridgeDevice346);
+
+	for (int portIter; portIter < switchDevices346.GetN(); ++portIter) {
+		bridgeDevice346->AddBridgePort(switchDevices346.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode347 = csmaSwitch347.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice347 = ns3::BridgeNetDevice();
+	switchNode347->AddDevice(bridgeDevice347);
+
+	for (int portIter; portIter < switchDevices347.GetN(); ++portIter) {
+		bridgeDevice347->AddBridgePort(switchDevices347.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> switchNode348 = csmaSwitch348.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice348 = ns3::BridgeNetDevice();
+	switchNode348->AddDevice(bridgeDevice348);
+
+	for (int portIter; portIter < switchDevices348.GetN(); ++portIter) {
+		bridgeDevice348->AddBridgePort(switchDevices348.Get(portIter));
+	}
+
 	return EXIT_SUCCESS;
 } //main
