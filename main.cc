@@ -27229,7 +27229,7 @@ int main(int argc, char** argv) {
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 
-//UDPechp
+//UDPecho
 	int port = 9;
 	ns3::OnOffHelper onoff("ns3::UdpSocketFactory",
 			ns3::Address(
@@ -27255,7 +27255,7 @@ int main(int argc, char** argv) {
 	appsink = sink.Install(terminals5.Get(1));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
-//UDPechp
+//UDPecho
 	int port = 9;
 	ns3::OnOffHelper onoff("ns3::UdpSocketFactory",
 			ns3::Address(
@@ -27281,7 +27281,7 @@ int main(int argc, char** argv) {
 	appsink = sink.Install(terminals5.Get(2));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
-//UDPechp
+//UDPecho
 	int port = 9;
 	ns3::OnOffHelper onoff("ns3::UdpSocketFactory",
 			ns3::Address(
@@ -27307,7 +27307,7 @@ int main(int argc, char** argv) {
 	appsink = sink.Install(terminals5.Get(3));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
-//UDPechp
+//UDPecho
 	int port = 9;
 	ns3::OnOffHelper onoff("ns3::UdpSocketFactory",
 			ns3::Address(
@@ -27358,7 +27358,7 @@ int main(int argc, char** argv) {
 	appsink = sink.Install(terminals6.Get(0));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
-//UDPechp
+//UDPecho
 	int port = 9;
 	ns3::OnOffHelper onoff("ns3::UdpSocketFactory",
 			ns3::Address(
@@ -27384,7 +27384,7 @@ int main(int argc, char** argv) {
 	appsink = sink.Install(terminals6.Get(1));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
-//UDPechp
+//UDPecho
 	int port = 9;
 	ns3::OnOffHelper onoff("ns3::UdpSocketFactory",
 			ns3::Address(
@@ -27410,7 +27410,7 @@ int main(int argc, char** argv) {
 	appsink = sink.Install(terminals6.Get(2));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
-//UDPechp
+//UDPecho
 	int port = 9;
 	ns3::OnOffHelper onoff("ns3::UdpSocketFactory",
 			ns3::Address(
@@ -27436,7 +27436,7 @@ int main(int argc, char** argv) {
 	appsink = sink.Install(terminals6.Get(3));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
-//UDPechp
+//UDPecho
 	int port = 9;
 	ns3::OnOffHelper onoff("ns3::UdpSocketFactory",
 			ns3::Address(
