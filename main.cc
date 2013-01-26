@@ -26726,5 +26726,13 @@ sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",ns3::InetSocketAddress(ns3:
 appsink = sink.Install (terminals6.Get (4));
 appsink.Start(ns3::Seconds(0.0));
 appsink.Stop(ns3::Seconds(10.0));
+
+ns3::Ipv4GlobalRoutingHelper().PopulateRoutingTables();
+
+ns3::Simulator simulator;
+simulator.Stop(ns3::Seconds(10.00));
+simulator.Run();
+simulator.Destroy();
+
 	return EXIT_SUCCESS;
 } //main
