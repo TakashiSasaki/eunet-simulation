@@ -4641,7 +4641,7 @@ int main(int argc, char** argv) {
 
 	//wifiChannel = ns.wifi.YansWifiChannelHelper.Default()
 	//wifiPhy = ns.wifi.YansWifiPhyHelper.Default()
-	//wifiPhy.SetChannel(wifiChannel.Create())
+	//wifiPhy.SetChannel(wifiChannel.Create());
 
 	ns3::YansWifiChannelHelper wifiChannel2;
 	wifiChannel2 = ns3::YansWifiChannelHelper::Default();
@@ -6421,11 +6421,11 @@ int main(int argc, char** argv) {
 
 //    wifiChannel298 = ns.wifi.YansWifiChannelHelper.Default()
 //    wifiPhy298 = ns.wifi.YansWifiPhyHelper.Default()
-//    wifiPhy298.SetChannel(wifiChannel298.Create())
+//    wifiPhy298.SetChannel(wifiChannel298.Create());
 //
 //    wifiChannel299 = ns.wifi.YansWifiChannelHelper.Default()
 //    wifiPhy299 = ns.wifi.YansWifiPhyHelper.Default()
-//    wifiPhy299.SetChannel(wifiChannel299.Create())
+//    wifiPhy299.SetChannel(wifiChannel299.Create());
 //
 	ns3::YansWifiChannelHelper wifiChannel300;
 	wifiChannel300 = ns3::YansWifiChannelHelper::Default();
@@ -6465,7 +6465,7 @@ int main(int argc, char** argv) {
 
 //    wifiChannel306 = ns.wifi.YansWifiChannelHelper.Default()
 //    wifiPhy306 = ns.wifi.YansWifiPhyHelper.Default()
-//    wifiPhy306.SetChannel(wifiChannel306.Create())
+//    wifiPhy306.SetChannel(wifiChannel306.Create());
 //
 	ns3::YansWifiChannelHelper wifiChannel307;
 	wifiChannel307 = ns3::YansWifiChannelHelper::Default();
@@ -6517,7 +6517,7 @@ int main(int argc, char** argv) {
 
 //    wifiChannel315 = ns.wifi.YansWifiChannelHelper.Default()
 //    wifiPhy315 = ns.wifi.YansWifiPhyHelper.Default()
-//    wifiPhy315.SetChannel(wifiChannel315.Create())
+//    wifiPhy315.SetChannel(wifiChannel315.Create());
 //
 
 //stanodes mac
@@ -10949,7 +10949,7 @@ int main(int argc, char** argv) {
 //    "LayoutType", ns3::StringValue ("RowFirst"));
 
 // #stanodes mobility
-//    mobility315.SetMobilityModel ("ns3::RandomWalk2dMobilityModel","Bounds", ns.mobility.RectangleValue (ns.mobility.Rectangle(-30, 30, -30, 30)))
+//    mobility315.SetMobilityModel ("ns3::RandomWalk2dMobilityModel","Bounds", ns.mobility.RectangleValue (ns.mobility.Rectangle(-30, 30, -30, 30)));
 //    mobility315.Install (wifiStaNodes315)
 
 // apnodes mobility
@@ -16026,11 +16026,11 @@ int main(int argc, char** argv) {
 	switchDevices346.Add(aplink297.Get(0));
 	apdevices297.Add(aplink297.Get(1));
 
-//    aplink298 = csma.Install(ns3::NodeContainer(csmaSwitch10,wifiApNode298))
+//    aplink298 = csma.Install(ns3::NodeContainer(csmaSwitch10,wifiApNode298));
 //    switchDevices20.Add(aplink298.Get(0));
 //    apdevices298.Add(aplink298.Get(1));
 //
-//    aplink299 = csma.Install(ns3::NodeContainer(csmaSwitch11,wifiApNode299))
+//    aplink299 = csma.Install(ns3::NodeContainer(csmaSwitch11,wifiApNode299));
 //    switchDevices21.Add(aplink299.Get(0));
 //    apdevices299.Add(aplink299.Get(1));
 //
@@ -16064,7 +16064,7 @@ int main(int argc, char** argv) {
 	switchDevices335.Add(aplink305.Get(0));
 	apdevices305.Add(aplink305.Get(1));
 
-//    aplink306 = csma.Install(ns3::NodeContainer(csmaSwitch335,wifiApNode306))
+//    aplink306 = csma.Install(ns3::NodeContainer(csmaSwitch335,wifiApNode306));
 //    switchDevices335.Add(aplink306.Get(0));
 //    apdevices306.Add(aplink306.Get(1));
 
@@ -16103,7 +16103,7 @@ int main(int argc, char** argv) {
 	switchDevices342.Add(aplink314.Get(0));
 	apdevices314.Add(aplink314.Get(1));
 
-//    aplink315 = csma.Install(ns3::NodeContainer(csmaSwitch05,wifiApNode315))
+//    aplink315 = csma.Install(ns3::NodeContainer(csmaSwitch05,wifiApNode315));
 //    switchDevices05.Add(aplink315.Get(0));
 //    apdevices315.Add(aplink315.Get(1));
 
@@ -24366,20 +24366,20 @@ int main(int argc, char** argv) {
 //    aoNode298.AddDevice(apbridgeDevice298)
 //
 //    for portIter in range(apdevices298.GetN()):
-//       apbridgeDevice298.AddBridgePort(apdevices298.Get(portIter))
+//       apbridgeDevice298.AddBridgePort(apdevices298.Get(portIter));
 //
 //    for portIter in range(apDevices298.GetN()):
-//       apbridgeDevice298.AddBridgePort(apDevices298.Get(portIter))
+//       apbridgeDevice298.AddBridgePort(apDevices298.Get(portIter));
 //
 //    aoNode299 = wifiApNode299.Get(0)
 //    apbridgeDevice299 = ns3::BridgeNetDevice();
 //    aoNode299.AddDevice(apbridgeDevice299)
 //
 //    for portIter in range(apdevices299.GetN()):
-//       apbridgeDevice299.AddBridgePort(apdevices299.Get(portIter))
+//       apbridgeDevice299.AddBridgePort(apdevices299.Get(portIter));
 //
 //    for portIter in range(apDevices299.GetN()):
-//       apbridgeDevice299.AddBridgePort(apDevices299.Get(portIter))
+//       apbridgeDevice299.AddBridgePort(apDevices299.Get(portIter));
 //
 	ns3::Ptr<ns3::Node> aoNode300 = wifiApNode300.Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice300 = ns3::CreateObject<
@@ -24464,10 +24464,10 @@ int main(int argc, char** argv) {
 //    aoNode306.AddDevice(apbridgeDevice306)
 //
 //    for portIter in range(apdevices306.GetN()):
-//       apbridgeDevice306.AddBridgePort(apdevices306.Get(portIter))
+//       apbridgeDevice306.AddBridgePort(apdevices306.Get(portIter));
 //
 //    for portIter in range(apDevices306.GetN()):
-//       apbridgeDevice306.AddBridgePort(apDevices306.Get(portIter))
+//       apbridgeDevice306.AddBridgePort(apDevices306.Get(portIter));
 //
 	ns3::Ptr<ns3::Node> aoNode307 = wifiApNode307.Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice307 = ns3::CreateObject<
@@ -24578,10 +24578,10 @@ int main(int argc, char** argv) {
 //    aoNode315.AddDevice(apbridgeDevice315)
 //
 //    for portIter in range(apdevices315.GetN()):
-//       apbridgeDevice315.AddBridgePort(apdevices315.Get(portIter))
+//       apbridgeDevice315.AddBridgePort(apdevices315.Get(portIter));
 //
 //    for portIter in range(apDevices315.GetN()):
-//       apbridgeDevice315.AddBridgePort(apDevices315.Get(portIter))
+//       apbridgeDevice315.AddBridgePort(apDevices315.Get(portIter));
 //
 
 
@@ -26567,6 +26567,164 @@ ns3::Ipv4InterfaceContainer apinterfaces312 = ipv4.ipv4().Assign(staDevices312);
 ns3::Ipv4InterfaceContainer apinterfaces313 = ipv4.ipv4().Assign(staDevices313);
 ns3::Ipv4InterfaceContainer apinterfaces314 = ipv4.ipv4().Assign(staDevices314);
 
+int port=9;
+ns3::OnOffHelper onoff("ns3::UdpSocketFactory",ns3::Address(ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.1"), port)));
+onoff.SetAttribute("OnTime", ns3::RandomVariableValue(ns3::ConstantVariable(5)));
+onoff.SetAttribute("OffTime", ns3::RandomVariableValue(ns3::ConstantVariable(0)));
+onoff.SetAttribute("DataRate", ns3::DataRateValue(ns3::DataRate("100kbps")));
+onoff.SetAttribute ("PacketSize", ns3::StringValue ("1024"));
+onoff.SetAttribute("MaxBytes", ns3::UintegerValue (100000000));
+onoff.SetAttribute ("Remote", ns3::AddressValue(ns3::InetSocketAddress(PtoPinterfaces5.GetAddress(0),port)));
+ns3::ApplicationContainer apps = onoff.Install(internetrouter.Get(0));
+apps.Start(ns3::Seconds(0.0));
+apps.Stop(ns3::Seconds(10.0));
+ns3::PacketSinkHelper sink("ns3::UdpSocketFactory",ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
+ns3::ApplicationContainer appsink = sink.Install (terminals5.Get (0));
+appsink.Start(ns3::Seconds(0.0));
+appsink.Stop(ns3::Seconds(10.0));
 
+//UDPechp
+int port=9;
+ns3::OnOffHelper onoff("ns3::UdpSocketFactory",ns3::Address(ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.2"), port)));
+onoff.SetAttribute("OnTime", ns3::RandomVariableValue(ns3::ConstantVariable(5)));
+onoff.SetAttribute("OffTime", ns3::RandomVariableValue(ns3::ConstantVariable(0)));
+onoff.SetAttribute("DataRate", ns3::DataRateValue(ns3::DataRate("100kbps")));
+onoff.SetAttribute ("PacketSize", ns3::StringValue ("1024"));
+onoff.SetAttribute("MaxBytes", ns3::UintegerValue (100000000));
+onoff.SetAttribute ("Remote", ns3::AddressValue(ns3::InetSocketAddress(PtoPinterfaces5.GetAddress(1),port)));
+apps = onoff.Install(internetrouter.Get(0));
+apps.Start(ns3::Seconds(0.0));
+apps.Stop(ns3::Seconds(10.0));
+sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
+appsink = sink.Install (terminals5.Get (1));
+appsink.Start(ns3::Seconds(0.0));
+appsink.Stop(ns3::Seconds(10.0));
+//UDPechp
+int port=9;
+ns3::OnOffHelper onoff("ns3::UdpSocketFactory",ns3::Address(ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.3"), port)));
+onoff.SetAttribute("OnTime", ns3::RandomVariableValue(ns3::ConstantVariable(5)));
+onoff.SetAttribute("OffTime", ns3::RandomVariableValue(ns3::ConstantVariable(0)));
+onoff.SetAttribute("DataRate", ns3::DataRateValue(ns3::DataRate("100kbps")));
+onoff.SetAttribute ("PacketSize", ns3::StringValue ("1024"));
+onoff.SetAttribute("MaxBytes", ns3::UintegerValue (100000000));
+onoff.SetAttribute ("Remote", ns3::AddressValue(ns3::InetSocketAddress(PtoPinterfaces5.GetAddress(2),port)));
+apps = onoff.Install(internetrouter.Get(0));
+apps.Start(ns3::Seconds(0.0));
+apps.Stop(ns3::Seconds(10.0));
+sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
+appsink = sink.Install (terminals5.Get (2));
+appsink.Start(ns3::Seconds(0.0));
+appsink.Stop(ns3::Seconds(10.0));
+//UDPechp
+int port=9;
+ns3::OnOffHelper onoff("ns3::UdpSocketFactory",ns3::Address(ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.4"), port)));
+onoff.SetAttribute("OnTime", ns3::RandomVariableValue(ns3::ConstantVariable(5)));
+onoff.SetAttribute("OffTime", ns3::RandomVariableValue(ns3::ConstantVariable(0)));
+onoff.SetAttribute("DataRate", ns3::DataRateValue(ns3::DataRate("100kbps")));
+onoff.SetAttribute ("PacketSize", ns3::StringValue ("1024"));
+onoff.SetAttribute("MaxBytes", ns3::UintegerValue (100000000));
+onoff.SetAttribute ("Remote", ns3::AddressValue(ns3::InetSocketAddress(PtoPinterfaces5.GetAddress(3),port)));
+apps = onoff.Install(internetrouter.Get(0));
+apps.Start(ns3::Seconds(0.0));
+apps.Stop(ns3::Seconds(10.0));
+sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
+appsink = sink.Install (terminals5.Get (3));
+appsink.Start(ns3::Seconds(0.0));
+appsink.Stop(ns3::Seconds(10.0));
+//UDPechp
+int port=9;
+ns3::OnOffHelper onoff("ns3::UdpSocketFactory",ns3::Address(ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.5"), port)));
+onoff.SetAttribute("OnTime", ns3::RandomVariableValue(ns3::ConstantVariable(5)));
+onoff.SetAttribute("OffTime", ns3::RandomVariableValue(ns3::ConstantVariable(0)));
+onoff.SetAttribute("DataRate", ns3::DataRateValue(ns3::DataRate("100kbps")));
+onoff.SetAttribute ("PacketSize", ns3::StringValue ("1024"));
+onoff.SetAttribute("MaxBytes", ns3::UintegerValue (100000000));
+onoff.SetAttribute ("Remote", ns3::AddressValue(ns3::InetSocketAddress(PtoPinterfaces5.GetAddress(4),port)));
+apps = onoff.Install(internetrouter.Get(0));
+apps.Start(ns3::Seconds(0.0));
+apps.Stop(ns3::Seconds(10.0));
+sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
+appsink = sink.Install (terminals5.Get (4));
+appsink.Start(ns3::Seconds(0.0));
+appsink.Stop(ns3::Seconds(10.0));
+int port=9;
+ns3::OnOffHelper onoff("ns3::UdpSocketFactory",ns3::Address(ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.6"), port)));
+onoff.SetAttribute("OnTime", ns3::RandomVariableValue(ns3::ConstantVariable(5)));
+onoff.SetAttribute("OffTime", ns3::RandomVariableValue(ns3::ConstantVariable(0)));
+onoff.SetAttribute("DataRate", ns3::DataRateValue(ns3::DataRate("100kbps")));
+onoff.SetAttribute ("PacketSize", ns3::StringValue ("1024"));
+onoff.SetAttribute("MaxBytes", ns3::UintegerValue (100000000));
+onoff.SetAttribute ("Remote", ns3::AddressValue(ns3::InetSocketAddress(PtoPinterfaces6.GetAddress(0),port)));
+apps = onoff.Install(internetrouter.Get(0));
+apps.Start(ns3::Seconds(0.0));
+apps.Stop(ns3::Seconds(10.0));
+sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
+appsink = sink.Install (terminals6.Get (0));
+appsink.Start(ns3::Seconds(0.0));
+appsink.Stop(ns3::Seconds(10.0));
+//UDPechp
+int port=9;
+ns3::OnOffHelper onoff("ns3::UdpSocketFactory",ns3::Address(ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.7"), port)));
+onoff.SetAttribute("OnTime", ns3::RandomVariableValue(ns3::ConstantVariable(5)));
+onoff.SetAttribute("OffTime", ns3::RandomVariableValue(ns3::ConstantVariable(0)));
+onoff.SetAttribute("DataRate", ns3::DataRateValue(ns3::DataRate("100kbps")));
+onoff.SetAttribute ("PacketSize", ns3::StringValue ("1024"));
+onoff.SetAttribute("MaxBytes", ns3::UintegerValue (100000000));
+onoff.SetAttribute ("Remote", ns3::AddressValue(ns3::InetSocketAddress(PtoPinterfaces6.GetAddress(1),port)));
+apps = onoff.Install(internetrouter.Get(0));
+apps.Start(ns3::Seconds(0.0));
+apps.Stop(ns3::Seconds(10.0));
+sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
+appsink = sink.Install (terminals6.Get (1));
+appsink.Start(ns3::Seconds(0.0));
+appsink.Stop(ns3::Seconds(10.0));
+//UDPechp
+int port=9;
+ns3::OnOffHelper onoff("ns3::UdpSocketFactory",ns3::Address(ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.8"), port)));
+onoff.SetAttribute("OnTime", ns3::RandomVariableValue(ns3::ConstantVariable(5)));
+onoff.SetAttribute("OffTime", ns3::RandomVariableValue(ns3::ConstantVariable(0)));
+onoff.SetAttribute("DataRate", ns3::DataRateValue(ns3::DataRate("100kbps")));
+onoff.SetAttribute ("PacketSize", ns3::StringValue ("1024"));
+onoff.SetAttribute("MaxBytes", ns3::UintegerValue (100000000));
+onoff.SetAttribute ("Remote", ns3::AddressValue(ns3::InetSocketAddress(PtoPinterfaces6.GetAddress(2),port)));
+apps = onoff.Install(internetrouter.Get(0));
+apps.Start(ns3::Seconds(0.0));
+apps.Stop(ns3::Seconds(10.0));
+sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
+appsink = sink.Install (terminals6.Get (2));
+appsink.Start(ns3::Seconds(0.0));
+appsink.Stop(ns3::Seconds(10.0));
+//UDPechp
+int port=9;
+ns3::OnOffHelper onoff("ns3::UdpSocketFactory",ns3::Address(ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.9"), port)));
+onoff.SetAttribute("OnTime", ns3::RandomVariableValue(ns3::ConstantVariable(5)));
+onoff.SetAttribute("OffTime", ns3::RandomVariableValue(ns3::ConstantVariable(0)));
+onoff.SetAttribute("DataRate", ns3::DataRateValue(ns3::DataRate("100kbps")));
+onoff.SetAttribute ("PacketSize", ns3::StringValue ("1024"));
+onoff.SetAttribute("MaxBytes", ns3::UintegerValue (100000000));
+onoff.SetAttribute ("Remote", ns3::AddressValue(ns3::InetSocketAddress(PtoPinterfaces6.GetAddress(3),port)));
+apps = onoff.Install(internetrouter.Get(0));
+apps.Start(ns3::Seconds(0.0));
+apps.Stop(ns3::Seconds(10.0));
+sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
+appsink = sink.Install (terminals6.Get (3));
+appsink.Start(ns3::Seconds(0.0));
+appsink.Stop(ns3::Seconds(10.0));
+//UDPechp
+int port=9;
+ns3::OnOffHelper onoff("ns3::UdpSocketFactory",ns3::Address(ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.10"), port)));
+onoff.SetAttribute("OnTime", ns3::RandomVariableValue(ns3::ConstantVariable(5)));
+onoff.SetAttribute("OffTime", ns3::RandomVariableValue(ns3::ConstantVariable(0)));
+onoff.SetAttribute("DataRate", ns3::DataRateValue(ns3::DataRate("100kbps")));
+onoff.SetAttribute ("PacketSize", ns3::StringValue ("1024"));
+onoff.SetAttribute("MaxBytes", ns3::UintegerValue (100000000));
+onoff.SetAttribute ("Remote", ns3::AddressValue(ns3::InetSocketAddress(PtoPinterfaces6.GetAddress(4),port)));
+apps = onoff.Install(internetrouter.Get(0));
+apps.Start(ns3::Seconds(0.0));
+apps.Stop(ns3::Seconds(10.0));
+sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
+appsink = sink.Install (terminals6.Get (4));
+appsink.Start(ns3::Seconds(0.0));
+appsink.Stop(ns3::Seconds(10.0));
 	return EXIT_SUCCESS;
 } //main
