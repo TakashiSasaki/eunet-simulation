@@ -20499,5 +20499,4090 @@ int main(int argc, char** argv) {
 		bridgeDevice348->AddBridgePort(switchDevices348.Get(portIter));
 	}
 
+//apDevices switchDevices setuzoku
+	ns3::Ptr<ns3::Node> aoNode1 = wifiApNode1.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice1 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode1->AddDevice(apbridgeDevice1);
+
+	for (int portIter = 0; portIter < apdevices1.GetN(); ++portIter) {
+		apbridgeDevice1->AddBridgePort(apdevices1.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices1.GetN(); ++portIter) {
+		apbridgeDevice1->AddBridgePort(apDevices1.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode2 = wifiApNode2.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice2 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode2->AddDevice(apbridgeDevice2);
+
+	for (int portIter = 0; portIter < apdevices2.GetN(); ++portIter) {
+		apbridgeDevice2->AddBridgePort(apdevices2.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices2.GetN(); ++portIter) {
+		apbridgeDevice2->AddBridgePort(apDevices2.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode3 = wifiApNode3.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice3 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode3->AddDevice(apbridgeDevice3);
+
+	for (int portIter = 0; portIter < apdevices3.GetN(); ++portIter) {
+		apbridgeDevice3->AddBridgePort(apdevices3.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices3.GetN(); ++portIter) {
+		apbridgeDevice3->AddBridgePort(apDevices3.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode4 = wifiApNode4.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice4 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode4->AddDevice(apbridgeDevice4);
+
+	for (int portIter = 0; portIter < apdevices4.GetN(); ++portIter) {
+		apbridgeDevice4->AddBridgePort(apdevices4.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices4.GetN(); ++portIter) {
+		apbridgeDevice4->AddBridgePort(apDevices4.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode5 = wifiApNode5.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice5 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode5->AddDevice(apbridgeDevice5);
+
+	for (int portIter = 0; portIter < apdevices5.GetN(); ++portIter) {
+		apbridgeDevice5->AddBridgePort(apdevices5.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices5.GetN(); ++portIter) {
+		apbridgeDevice5->AddBridgePort(apDevices5.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode6 = wifiApNode6.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice6 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode6->AddDevice(apbridgeDevice6);
+
+	for (int portIter = 0; portIter < apdevices6.GetN(); ++portIter) {
+		apbridgeDevice6->AddBridgePort(apdevices6.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices6.GetN(); ++portIter) {
+		apbridgeDevice6->AddBridgePort(apDevices6.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode7 = wifiApNode7.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice7 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode7->AddDevice(apbridgeDevice7);
+
+	for (int portIter = 0; portIter < apdevices7.GetN(); ++portIter) {
+		apbridgeDevice7->AddBridgePort(apdevices7.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices7.GetN(); ++portIter) {
+		apbridgeDevice7->AddBridgePort(apDevices7.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode8 = wifiApNode8.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice8 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode8->AddDevice(apbridgeDevice8);
+
+	for (int portIter = 0; portIter < apdevices8.GetN(); ++portIter) {
+		apbridgeDevice8->AddBridgePort(apdevices8.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices8.GetN(); ++portIter) {
+		apbridgeDevice8->AddBridgePort(apDevices8.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode9 = wifiApNode9.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice9 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode9->AddDevice(apbridgeDevice9);
+
+	for (int portIter = 0; portIter < apdevices9.GetN(); ++portIter) {
+		apbridgeDevice9->AddBridgePort(apdevices9.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices9.GetN(); ++portIter) {
+		apbridgeDevice9->AddBridgePort(apDevices9.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode10 = wifiApNode10.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice10 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode10->AddDevice(apbridgeDevice10);
+
+	for (int portIter = 0; portIter < apdevices10.GetN(); ++portIter) {
+		apbridgeDevice10->AddBridgePort(apdevices10.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices10.GetN(); ++portIter) {
+		apbridgeDevice10->AddBridgePort(apDevices10.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode11 = wifiApNode11.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice11 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode11->AddDevice(apbridgeDevice11);
+
+	for (int portIter = 0; portIter < apdevices11.GetN(); ++portIter) {
+		apbridgeDevice11->AddBridgePort(apdevices11.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices11.GetN(); ++portIter) {
+		apbridgeDevice11->AddBridgePort(apDevices11.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode12 = wifiApNode12.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice12 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode12->AddDevice(apbridgeDevice12);
+
+	for (int portIter = 0; portIter < apdevices12.GetN(); ++portIter) {
+		apbridgeDevice12->AddBridgePort(apdevices12.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices12.GetN(); ++portIter) {
+		apbridgeDevice12->AddBridgePort(apDevices12.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode13 = wifiApNode13.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice13 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode13->AddDevice(apbridgeDevice13);
+
+	for (int portIter = 0; portIter < apdevices13.GetN(); ++portIter) {
+		apbridgeDevice13->AddBridgePort(apdevices13.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices13.GetN(); ++portIter) {
+		apbridgeDevice13->AddBridgePort(apDevices13.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode14 = wifiApNode14.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice14 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode14->AddDevice(apbridgeDevice14);
+
+	for (int portIter = 0; portIter < apdevices14.GetN(); ++portIter) {
+		apbridgeDevice14->AddBridgePort(apdevices14.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices14.GetN(); ++portIter) {
+		apbridgeDevice14->AddBridgePort(apDevices14.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode15 = wifiApNode15.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice15 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode15->AddDevice(apbridgeDevice15);
+
+	for (int portIter = 0; portIter < apdevices15.GetN(); ++portIter) {
+		apbridgeDevice15->AddBridgePort(apdevices15.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices15.GetN(); ++portIter) {
+		apbridgeDevice15->AddBridgePort(apDevices15.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode16 = wifiApNode16.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice16 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode16->AddDevice(apbridgeDevice16);
+
+	for (int portIter = 0; portIter < apdevices16.GetN(); ++portIter) {
+		apbridgeDevice16->AddBridgePort(apdevices16.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices16.GetN(); ++portIter) {
+		apbridgeDevice16->AddBridgePort(apDevices16.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode17 = wifiApNode17.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice17 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode17->AddDevice(apbridgeDevice17);
+
+	for (int portIter = 0; portIter < apdevices17.GetN(); ++portIter) {
+		apbridgeDevice17->AddBridgePort(apdevices17.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices17.GetN(); ++portIter) {
+		apbridgeDevice17->AddBridgePort(apDevices17.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode18 = wifiApNode18.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice18 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode18->AddDevice(apbridgeDevice18);
+
+	for (int portIter = 0; portIter < apdevices18.GetN(); ++portIter) {
+		apbridgeDevice18->AddBridgePort(apdevices18.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices18.GetN(); ++portIter) {
+		apbridgeDevice18->AddBridgePort(apDevices18.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode19 = wifiApNode19.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice19 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode19->AddDevice(apbridgeDevice19);
+
+	for (int portIter = 0; portIter < apdevices19.GetN(); ++portIter) {
+		apbridgeDevice19->AddBridgePort(apdevices19.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices19.GetN(); ++portIter) {
+		apbridgeDevice19->AddBridgePort(apDevices19.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode20 = wifiApNode20.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice20 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode20->AddDevice(apbridgeDevice20);
+
+	for (int portIter = 0; portIter < apdevices20.GetN(); ++portIter) {
+		apbridgeDevice20->AddBridgePort(apdevices20.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices20.GetN(); ++portIter) {
+		apbridgeDevice20->AddBridgePort(apDevices20.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode21 = wifiApNode21.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice21 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode21->AddDevice(apbridgeDevice21);
+
+	for (int portIter = 0; portIter < apdevices21.GetN(); ++portIter) {
+		apbridgeDevice21->AddBridgePort(apdevices21.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices21.GetN(); ++portIter) {
+		apbridgeDevice21->AddBridgePort(apDevices21.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode22 = wifiApNode22.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice22 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode22->AddDevice(apbridgeDevice22);
+
+	for (int portIter = 0; portIter < apdevices22.GetN(); ++portIter) {
+		apbridgeDevice22->AddBridgePort(apdevices22.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices22.GetN(); ++portIter) {
+		apbridgeDevice22->AddBridgePort(apDevices22.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode23 = wifiApNode23.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice23 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode23->AddDevice(apbridgeDevice23);
+
+	for (int portIter = 0; portIter < apdevices23.GetN(); ++portIter) {
+		apbridgeDevice23->AddBridgePort(apdevices23.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices23.GetN(); ++portIter) {
+		apbridgeDevice23->AddBridgePort(apDevices23.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode24 = wifiApNode24.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice24 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode24->AddDevice(apbridgeDevice24);
+
+	for (int portIter = 0; portIter < apdevices24.GetN(); ++portIter) {
+		apbridgeDevice24->AddBridgePort(apdevices24.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices24.GetN(); ++portIter) {
+		apbridgeDevice24->AddBridgePort(apDevices24.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode25 = wifiApNode25.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice25 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode25->AddDevice(apbridgeDevice25);
+
+	for (int portIter = 0; portIter < apdevices25.GetN(); ++portIter) {
+		apbridgeDevice25->AddBridgePort(apdevices25.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices25.GetN(); ++portIter) {
+		apbridgeDevice25->AddBridgePort(apDevices25.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode26 = wifiApNode26.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice26 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode26->AddDevice(apbridgeDevice26);
+
+	for (int portIter = 0; portIter < apdevices26.GetN(); ++portIter) {
+		apbridgeDevice26->AddBridgePort(apdevices26.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices26.GetN(); ++portIter) {
+		apbridgeDevice26->AddBridgePort(apDevices26.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode27 = wifiApNode27.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice27 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode27->AddDevice(apbridgeDevice27);
+
+	for (int portIter = 0; portIter < apdevices27.GetN(); ++portIter) {
+		apbridgeDevice27->AddBridgePort(apdevices27.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices27.GetN(); ++portIter) {
+		apbridgeDevice27->AddBridgePort(apDevices27.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode28 = wifiApNode28.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice28 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode28->AddDevice(apbridgeDevice28);
+
+	for (int portIter = 0; portIter < apdevices28.GetN(); ++portIter) {
+		apbridgeDevice28->AddBridgePort(apdevices28.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices28.GetN(); ++portIter) {
+		apbridgeDevice28->AddBridgePort(apDevices28.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode29 = wifiApNode29.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice29 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode29->AddDevice(apbridgeDevice29);
+
+	for (int portIter = 0; portIter < apdevices29.GetN(); ++portIter) {
+		apbridgeDevice29->AddBridgePort(apdevices29.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices29.GetN(); ++portIter) {
+		apbridgeDevice29->AddBridgePort(apDevices29.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode30 = wifiApNode30.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice30 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode30->AddDevice(apbridgeDevice30);
+
+	for (int portIter = 0; portIter < apdevices30.GetN(); ++portIter) {
+		apbridgeDevice30->AddBridgePort(apdevices30.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices30.GetN(); ++portIter) {
+		apbridgeDevice30->AddBridgePort(apDevices30.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode31 = wifiApNode31.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice31 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode31->AddDevice(apbridgeDevice31);
+
+	for (int portIter = 0; portIter < apdevices31.GetN(); ++portIter) {
+		apbridgeDevice31->AddBridgePort(apdevices31.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices31.GetN(); ++portIter) {
+		apbridgeDevice31->AddBridgePort(apDevices31.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode32 = wifiApNode32.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice32 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode32->AddDevice(apbridgeDevice32);
+
+	for (int portIter = 0; portIter < apdevices32.GetN(); ++portIter) {
+		apbridgeDevice32->AddBridgePort(apdevices32.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices32.GetN(); ++portIter) {
+		apbridgeDevice32->AddBridgePort(apDevices32.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode33 = wifiApNode33.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice33 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode33->AddDevice(apbridgeDevice33);
+
+	for (int portIter = 0; portIter < apdevices33.GetN(); ++portIter) {
+		apbridgeDevice33->AddBridgePort(apdevices33.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices33.GetN(); ++portIter) {
+		apbridgeDevice33->AddBridgePort(apDevices33.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode34 = wifiApNode34.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice34 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode34->AddDevice(apbridgeDevice34);
+
+	for (int portIter = 0; portIter < apdevices34.GetN(); ++portIter) {
+		apbridgeDevice34->AddBridgePort(apdevices34.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices34.GetN(); ++portIter) {
+		apbridgeDevice34->AddBridgePort(apDevices34.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode35 = wifiApNode35.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice35 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode35->AddDevice(apbridgeDevice35);
+
+	for (int portIter = 0; portIter < apdevices35.GetN(); ++portIter) {
+		apbridgeDevice35->AddBridgePort(apdevices35.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices35.GetN(); ++portIter) {
+		apbridgeDevice35->AddBridgePort(apDevices35.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode36 = wifiApNode36.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice36 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode36->AddDevice(apbridgeDevice36);
+
+	for (int portIter = 0; portIter < apdevices36.GetN(); ++portIter) {
+		apbridgeDevice36->AddBridgePort(apdevices36.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices36.GetN(); ++portIter) {
+		apbridgeDevice36->AddBridgePort(apDevices36.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode37 = wifiApNode37.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice37 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode37->AddDevice(apbridgeDevice37);
+
+	for (int portIter = 0; portIter < apdevices37.GetN(); ++portIter) {
+		apbridgeDevice37->AddBridgePort(apdevices37.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices37.GetN(); ++portIter) {
+		apbridgeDevice37->AddBridgePort(apDevices37.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode38 = wifiApNode38.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice38 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode38->AddDevice(apbridgeDevice38);
+
+	for (int portIter = 0; portIter < apdevices38.GetN(); ++portIter) {
+		apbridgeDevice38->AddBridgePort(apdevices38.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices38.GetN(); ++portIter) {
+		apbridgeDevice38->AddBridgePort(apDevices38.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode39 = wifiApNode39.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice39 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode39->AddDevice(apbridgeDevice39);
+
+	for (int portIter = 0; portIter < apdevices39.GetN(); ++portIter) {
+		apbridgeDevice39->AddBridgePort(apdevices39.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices39.GetN(); ++portIter) {
+		apbridgeDevice39->AddBridgePort(apDevices39.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode40 = wifiApNode40.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice40 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode40->AddDevice(apbridgeDevice40);
+
+	for (int portIter = 0; portIter < apdevices40.GetN(); ++portIter) {
+		apbridgeDevice40->AddBridgePort(apdevices40.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices40.GetN(); ++portIter) {
+		apbridgeDevice40->AddBridgePort(apDevices40.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode41 = wifiApNode41.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice41 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode41->AddDevice(apbridgeDevice41);
+
+	for (int portIter = 0; portIter < apdevices41.GetN(); ++portIter) {
+		apbridgeDevice41->AddBridgePort(apdevices41.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices41.GetN(); ++portIter) {
+		apbridgeDevice41->AddBridgePort(apDevices41.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode42 = wifiApNode42.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice42 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode42->AddDevice(apbridgeDevice42);
+
+	for (int portIter = 0; portIter < apdevices42.GetN(); ++portIter) {
+		apbridgeDevice42->AddBridgePort(apdevices42.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices42.GetN(); ++portIter) {
+		apbridgeDevice42->AddBridgePort(apDevices42.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode43 = wifiApNode43.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice43 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode43->AddDevice(apbridgeDevice43);
+
+	for (int portIter = 0; portIter < apdevices43.GetN(); ++portIter) {
+		apbridgeDevice43->AddBridgePort(apdevices43.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices43.GetN(); ++portIter) {
+		apbridgeDevice43->AddBridgePort(apDevices43.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode44 = wifiApNode44.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice44 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode44->AddDevice(apbridgeDevice44);
+
+	for (int portIter = 0; portIter < apdevices44.GetN(); ++portIter) {
+		apbridgeDevice44->AddBridgePort(apdevices44.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices44.GetN(); ++portIter) {
+		apbridgeDevice44->AddBridgePort(apDevices44.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode45 = wifiApNode45.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice45 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode45->AddDevice(apbridgeDevice45);
+
+	for (int portIter = 0; portIter < apdevices45.GetN(); ++portIter) {
+		apbridgeDevice45->AddBridgePort(apdevices45.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices45.GetN(); ++portIter) {
+		apbridgeDevice45->AddBridgePort(apDevices45.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode46 = wifiApNode46.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice46 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode46->AddDevice(apbridgeDevice46);
+
+	for (int portIter = 0; portIter < apdevices46.GetN(); ++portIter) {
+		apbridgeDevice46->AddBridgePort(apdevices46.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices46.GetN(); ++portIter) {
+		apbridgeDevice46->AddBridgePort(apDevices46.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode47 = wifiApNode47.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice47 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode47->AddDevice(apbridgeDevice47);
+
+	for (int portIter = 0; portIter < apdevices47.GetN(); ++portIter) {
+		apbridgeDevice47->AddBridgePort(apdevices47.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices47.GetN(); ++portIter) {
+		apbridgeDevice47->AddBridgePort(apDevices47.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode48 = wifiApNode48.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice48 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode48->AddDevice(apbridgeDevice48);
+
+	for (int portIter = 0; portIter < apdevices48.GetN(); ++portIter) {
+		apbridgeDevice48->AddBridgePort(apdevices48.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices48.GetN(); ++portIter) {
+		apbridgeDevice48->AddBridgePort(apDevices48.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode49 = wifiApNode49.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice49 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode49->AddDevice(apbridgeDevice49);
+
+	for (int portIter = 0; portIter < apdevices49.GetN(); ++portIter) {
+		apbridgeDevice49->AddBridgePort(apdevices49.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices49.GetN(); ++portIter) {
+		apbridgeDevice49->AddBridgePort(apDevices49.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode50 = wifiApNode50.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice50 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode50->AddDevice(apbridgeDevice50);
+
+	for (int portIter = 0; portIter < apdevices50.GetN(); ++portIter) {
+		apbridgeDevice50->AddBridgePort(apdevices50.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices50.GetN(); ++portIter) {
+		apbridgeDevice50->AddBridgePort(apDevices50.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode51 = wifiApNode51.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice51 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode51->AddDevice(apbridgeDevice51);
+
+	for (int portIter = 0; portIter < apdevices51.GetN(); ++portIter) {
+		apbridgeDevice51->AddBridgePort(apdevices51.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices51.GetN(); ++portIter) {
+		apbridgeDevice51->AddBridgePort(apDevices51.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode52 = wifiApNode52.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice52 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode52->AddDevice(apbridgeDevice52);
+
+	for (int portIter = 0; portIter < apdevices52.GetN(); ++portIter) {
+		apbridgeDevice52->AddBridgePort(apdevices52.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices52.GetN(); ++portIter) {
+		apbridgeDevice52->AddBridgePort(apDevices52.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode53 = wifiApNode53.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice53 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode53->AddDevice(apbridgeDevice53);
+
+	for (int portIter = 0; portIter < apdevices53.GetN(); ++portIter) {
+		apbridgeDevice53->AddBridgePort(apdevices53.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices53.GetN(); ++portIter) {
+		apbridgeDevice53->AddBridgePort(apDevices53.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode54 = wifiApNode54.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice54 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode54->AddDevice(apbridgeDevice54);
+
+	for (int portIter = 0; portIter < apdevices54.GetN(); ++portIter) {
+		apbridgeDevice54->AddBridgePort(apdevices54.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices54.GetN(); ++portIter) {
+		apbridgeDevice54->AddBridgePort(apDevices54.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode55 = wifiApNode55.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice55 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode55->AddDevice(apbridgeDevice55);
+
+	for (int portIter = 0; portIter < apdevices55.GetN(); ++portIter) {
+		apbridgeDevice55->AddBridgePort(apdevices55.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices55.GetN(); ++portIter) {
+		apbridgeDevice55->AddBridgePort(apDevices55.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode56 = wifiApNode56.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice56 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode56->AddDevice(apbridgeDevice56);
+
+	for (int portIter = 0; portIter < apdevices56.GetN(); ++portIter) {
+		apbridgeDevice56->AddBridgePort(apdevices56.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices56.GetN(); ++portIter) {
+		apbridgeDevice56->AddBridgePort(apDevices56.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode57 = wifiApNode57.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice57 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode57->AddDevice(apbridgeDevice57);
+
+	for (int portIter = 0; portIter < apdevices57.GetN(); ++portIter) {
+		apbridgeDevice57->AddBridgePort(apdevices57.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices57.GetN(); ++portIter) {
+		apbridgeDevice57->AddBridgePort(apDevices57.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode58 = wifiApNode58.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice58 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode58->AddDevice(apbridgeDevice58);
+
+	for (int portIter = 0; portIter < apdevices58.GetN(); ++portIter) {
+		apbridgeDevice58->AddBridgePort(apdevices58.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices58.GetN(); ++portIter) {
+		apbridgeDevice58->AddBridgePort(apDevices58.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode59 = wifiApNode59.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice59 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode59->AddDevice(apbridgeDevice59);
+
+	for (int portIter = 0; portIter < apdevices59.GetN(); ++portIter) {
+		apbridgeDevice59->AddBridgePort(apdevices59.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices59.GetN(); ++portIter) {
+		apbridgeDevice59->AddBridgePort(apDevices59.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode60 = wifiApNode60.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice60 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode60->AddDevice(apbridgeDevice60);
+
+	for (int portIter = 0; portIter < apdevices60.GetN(); ++portIter) {
+		apbridgeDevice60->AddBridgePort(apdevices60.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices60.GetN(); ++portIter) {
+		apbridgeDevice60->AddBridgePort(apDevices60.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode61 = wifiApNode61.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice61 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode61->AddDevice(apbridgeDevice61);
+
+	for (int portIter = 0; portIter < apdevices61.GetN(); ++portIter) {
+		apbridgeDevice61->AddBridgePort(apdevices61.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices61.GetN(); ++portIter) {
+		apbridgeDevice61->AddBridgePort(apDevices61.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode62 = wifiApNode62.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice62 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode62->AddDevice(apbridgeDevice62);
+
+	for (int portIter = 0; portIter < apdevices62.GetN(); ++portIter) {
+		apbridgeDevice62->AddBridgePort(apdevices62.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices62.GetN(); ++portIter) {
+		apbridgeDevice62->AddBridgePort(apDevices62.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode63 = wifiApNode63.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice63 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode63->AddDevice(apbridgeDevice63);
+
+	for (int portIter = 0; portIter < apdevices63.GetN(); ++portIter) {
+		apbridgeDevice63->AddBridgePort(apdevices63.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices63.GetN(); ++portIter) {
+		apbridgeDevice63->AddBridgePort(apDevices63.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode64 = wifiApNode64.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice64 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode64->AddDevice(apbridgeDevice64);
+
+	for (int portIter = 0; portIter < apdevices64.GetN(); ++portIter) {
+		apbridgeDevice64->AddBridgePort(apdevices64.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices64.GetN(); ++portIter) {
+		apbridgeDevice64->AddBridgePort(apDevices64.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode65 = wifiApNode65.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice65 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode65->AddDevice(apbridgeDevice65);
+
+	for (int portIter = 0; portIter < apdevices65.GetN(); ++portIter) {
+		apbridgeDevice65->AddBridgePort(apdevices65.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices65.GetN(); ++portIter) {
+		apbridgeDevice65->AddBridgePort(apDevices65.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode66 = wifiApNode66.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice66 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode66->AddDevice(apbridgeDevice66);
+
+	for (int portIter = 0; portIter < apdevices66.GetN(); ++portIter) {
+		apbridgeDevice66->AddBridgePort(apdevices66.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices66.GetN(); ++portIter) {
+		apbridgeDevice66->AddBridgePort(apDevices66.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode67 = wifiApNode67.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice67 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode67->AddDevice(apbridgeDevice67);
+
+	for (int portIter = 0; portIter < apdevices67.GetN(); ++portIter) {
+		apbridgeDevice67->AddBridgePort(apdevices67.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices67.GetN(); ++portIter) {
+		apbridgeDevice67->AddBridgePort(apDevices67.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode68 = wifiApNode68.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice68 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode68->AddDevice(apbridgeDevice68);
+
+	for (int portIter = 0; portIter < apdevices68.GetN(); ++portIter) {
+		apbridgeDevice68->AddBridgePort(apdevices68.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices68.GetN(); ++portIter) {
+		apbridgeDevice68->AddBridgePort(apDevices68.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode69 = wifiApNode69.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice69 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode69->AddDevice(apbridgeDevice69);
+
+	for (int portIter = 0; portIter < apdevices69.GetN(); ++portIter) {
+		apbridgeDevice69->AddBridgePort(apdevices69.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices69.GetN(); ++portIter) {
+		apbridgeDevice69->AddBridgePort(apDevices69.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode70 = wifiApNode70.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice70 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode70->AddDevice(apbridgeDevice70);
+
+	for (int portIter = 0; portIter < apdevices70.GetN(); ++portIter) {
+		apbridgeDevice70->AddBridgePort(apdevices70.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices70.GetN(); ++portIter) {
+		apbridgeDevice70->AddBridgePort(apDevices70.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode71 = wifiApNode71.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice71 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode71->AddDevice(apbridgeDevice71);
+
+	for (int portIter = 0; portIter < apdevices71.GetN(); ++portIter) {
+		apbridgeDevice71->AddBridgePort(apdevices71.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices71.GetN(); ++portIter) {
+		apbridgeDevice71->AddBridgePort(apDevices71.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode72 = wifiApNode72.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice72 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode72->AddDevice(apbridgeDevice72);
+
+	for (int portIter = 0; portIter < apdevices72.GetN(); ++portIter) {
+		apbridgeDevice72->AddBridgePort(apdevices72.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices72.GetN(); ++portIter) {
+		apbridgeDevice72->AddBridgePort(apDevices72.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode73 = wifiApNode73.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice73 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode73->AddDevice(apbridgeDevice73);
+
+	for (int portIter = 0; portIter < apdevices73.GetN(); ++portIter) {
+		apbridgeDevice73->AddBridgePort(apdevices73.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices73.GetN(); ++portIter) {
+		apbridgeDevice73->AddBridgePort(apDevices73.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode74 = wifiApNode74.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice74 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode74->AddDevice(apbridgeDevice74);
+
+	for (int portIter = 0; portIter < apdevices74.GetN(); ++portIter) {
+		apbridgeDevice74->AddBridgePort(apdevices74.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices74.GetN(); ++portIter) {
+		apbridgeDevice74->AddBridgePort(apDevices74.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode75 = wifiApNode75.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice75 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode75->AddDevice(apbridgeDevice75);
+
+	for (int portIter = 0; portIter < apdevices75.GetN(); ++portIter) {
+		apbridgeDevice75->AddBridgePort(apdevices75.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices75.GetN(); ++portIter) {
+		apbridgeDevice75->AddBridgePort(apDevices75.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode76 = wifiApNode76.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice76 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode76->AddDevice(apbridgeDevice76);
+
+	for (int portIter = 0; portIter < apdevices76.GetN(); ++portIter) {
+		apbridgeDevice76->AddBridgePort(apdevices76.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices76.GetN(); ++portIter) {
+		apbridgeDevice76->AddBridgePort(apDevices76.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode77 = wifiApNode77.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice77 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode77->AddDevice(apbridgeDevice77);
+
+	for (int portIter = 0; portIter < apdevices77.GetN(); ++portIter) {
+		apbridgeDevice77->AddBridgePort(apdevices77.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices77.GetN(); ++portIter) {
+		apbridgeDevice77->AddBridgePort(apDevices77.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode78 = wifiApNode78.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice78 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode78->AddDevice(apbridgeDevice78);
+
+	for (int portIter = 0; portIter < apdevices78.GetN(); ++portIter) {
+		apbridgeDevice78->AddBridgePort(apdevices78.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices78.GetN(); ++portIter) {
+		apbridgeDevice78->AddBridgePort(apDevices78.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode79 = wifiApNode79.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice79 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode79->AddDevice(apbridgeDevice79);
+
+	for (int portIter = 0; portIter < apdevices79.GetN(); ++portIter) {
+		apbridgeDevice79->AddBridgePort(apdevices79.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices79.GetN(); ++portIter) {
+		apbridgeDevice79->AddBridgePort(apDevices79.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode80 = wifiApNode80.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice80 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode80->AddDevice(apbridgeDevice80);
+
+	for (int portIter = 0; portIter < apdevices80.GetN(); ++portIter) {
+		apbridgeDevice80->AddBridgePort(apdevices80.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices80.GetN(); ++portIter) {
+		apbridgeDevice80->AddBridgePort(apDevices80.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode81 = wifiApNode81.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice81 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode81->AddDevice(apbridgeDevice81);
+
+	for (int portIter = 0; portIter < apdevices81.GetN(); ++portIter) {
+		apbridgeDevice81->AddBridgePort(apdevices81.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices81.GetN(); ++portIter) {
+		apbridgeDevice81->AddBridgePort(apDevices81.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode82 = wifiApNode82.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice82 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode82->AddDevice(apbridgeDevice82);
+
+	for (int portIter = 0; portIter < apdevices82.GetN(); ++portIter) {
+		apbridgeDevice82->AddBridgePort(apdevices82.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices82.GetN(); ++portIter) {
+		apbridgeDevice82->AddBridgePort(apDevices82.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode83 = wifiApNode83.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice83 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode83->AddDevice(apbridgeDevice83);
+
+	for (int portIter = 0; portIter < apdevices83.GetN(); ++portIter) {
+		apbridgeDevice83->AddBridgePort(apdevices83.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices83.GetN(); ++portIter) {
+		apbridgeDevice83->AddBridgePort(apDevices83.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode84 = wifiApNode84.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice84 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode84->AddDevice(apbridgeDevice84);
+
+	for (int portIter = 0; portIter < apdevices84.GetN(); ++portIter) {
+		apbridgeDevice84->AddBridgePort(apdevices84.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices84.GetN(); ++portIter) {
+		apbridgeDevice84->AddBridgePort(apDevices84.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode85 = wifiApNode85.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice85 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode85->AddDevice(apbridgeDevice85);
+
+	for (int portIter = 0; portIter < apdevices85.GetN(); ++portIter) {
+		apbridgeDevice85->AddBridgePort(apdevices85.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices85.GetN(); ++portIter) {
+		apbridgeDevice85->AddBridgePort(apDevices85.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode86 = wifiApNode86.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice86 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode86->AddDevice(apbridgeDevice86);
+
+	for (int portIter = 0; portIter < apdevices86.GetN(); ++portIter) {
+		apbridgeDevice86->AddBridgePort(apdevices86.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices86.GetN(); ++portIter) {
+		apbridgeDevice86->AddBridgePort(apDevices86.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode87 = wifiApNode87.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice87 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode87->AddDevice(apbridgeDevice87);
+
+	for (int portIter = 0; portIter < apdevices87.GetN(); ++portIter) {
+		apbridgeDevice87->AddBridgePort(apdevices87.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices87.GetN(); ++portIter) {
+		apbridgeDevice87->AddBridgePort(apDevices87.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode88 = wifiApNode88.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice88 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode88->AddDevice(apbridgeDevice88);
+
+	for (int portIter = 0; portIter < apdevices88.GetN(); ++portIter) {
+		apbridgeDevice88->AddBridgePort(apdevices88.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices88.GetN(); ++portIter) {
+		apbridgeDevice88->AddBridgePort(apDevices88.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode89 = wifiApNode89.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice89 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode89->AddDevice(apbridgeDevice89);
+
+	for (int portIter = 0; portIter < apdevices89.GetN(); ++portIter) {
+		apbridgeDevice89->AddBridgePort(apdevices89.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices89.GetN(); ++portIter) {
+		apbridgeDevice89->AddBridgePort(apDevices89.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode90 = wifiApNode90.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice90 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode90->AddDevice(apbridgeDevice90);
+
+	for (int portIter = 0; portIter < apdevices90.GetN(); ++portIter) {
+		apbridgeDevice90->AddBridgePort(apdevices90.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices90.GetN(); ++portIter) {
+		apbridgeDevice90->AddBridgePort(apDevices90.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode91 = wifiApNode91.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice91 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode91->AddDevice(apbridgeDevice91);
+
+	for (int portIter = 0; portIter < apdevices91.GetN(); ++portIter) {
+		apbridgeDevice91->AddBridgePort(apdevices91.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices91.GetN(); ++portIter) {
+		apbridgeDevice91->AddBridgePort(apDevices91.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode92 = wifiApNode92.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice92 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode92->AddDevice(apbridgeDevice92);
+
+	for (int portIter = 0; portIter < apdevices92.GetN(); ++portIter) {
+		apbridgeDevice92->AddBridgePort(apdevices92.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices92.GetN(); ++portIter) {
+		apbridgeDevice92->AddBridgePort(apDevices92.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode93 = wifiApNode93.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice93 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode93->AddDevice(apbridgeDevice93);
+
+	for (int portIter = 0; portIter < apdevices93.GetN(); ++portIter) {
+		apbridgeDevice93->AddBridgePort(apdevices93.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices93.GetN(); ++portIter) {
+		apbridgeDevice93->AddBridgePort(apDevices93.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode94 = wifiApNode94.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice94 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode94->AddDevice(apbridgeDevice94);
+
+	for (int portIter = 0; portIter < apdevices94.GetN(); ++portIter) {
+		apbridgeDevice94->AddBridgePort(apdevices94.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices94.GetN(); ++portIter) {
+		apbridgeDevice94->AddBridgePort(apDevices94.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode95 = wifiApNode95.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice95 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode95->AddDevice(apbridgeDevice95);
+
+	for (int portIter = 0; portIter < apdevices95.GetN(); ++portIter) {
+		apbridgeDevice95->AddBridgePort(apdevices95.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices95.GetN(); ++portIter) {
+		apbridgeDevice95->AddBridgePort(apDevices95.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode96 = wifiApNode96.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice96 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode96->AddDevice(apbridgeDevice96);
+
+	for (int portIter = 0; portIter < apdevices96.GetN(); ++portIter) {
+		apbridgeDevice96->AddBridgePort(apdevices96.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices96.GetN(); ++portIter) {
+		apbridgeDevice96->AddBridgePort(apDevices96.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode97 = wifiApNode97.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice97 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode97->AddDevice(apbridgeDevice97);
+
+	for (int portIter = 0; portIter < apdevices97.GetN(); ++portIter) {
+		apbridgeDevice97->AddBridgePort(apdevices97.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices97.GetN(); ++portIter) {
+		apbridgeDevice97->AddBridgePort(apDevices97.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode98 = wifiApNode98.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice98 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode98->AddDevice(apbridgeDevice98);
+
+	for (int portIter = 0; portIter < apdevices98.GetN(); ++portIter) {
+		apbridgeDevice98->AddBridgePort(apdevices98.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices98.GetN(); ++portIter) {
+		apbridgeDevice98->AddBridgePort(apDevices98.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode99 = wifiApNode99.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice99 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode99->AddDevice(apbridgeDevice99);
+
+	for (int portIter = 0; portIter < apdevices99.GetN(); ++portIter) {
+		apbridgeDevice99->AddBridgePort(apdevices99.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices99.GetN(); ++portIter) {
+		apbridgeDevice99->AddBridgePort(apDevices99.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode100 = wifiApNode100.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice100 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode100->AddDevice(apbridgeDevice100);
+
+	for (int portIter = 0; portIter < apdevices100.GetN(); ++portIter) {
+		apbridgeDevice100->AddBridgePort(apdevices100.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices100.GetN(); ++portIter) {
+		apbridgeDevice100->AddBridgePort(apDevices100.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode101 = wifiApNode101.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice101 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode101->AddDevice(apbridgeDevice101);
+
+	for (int portIter = 0; portIter < apdevices101.GetN(); ++portIter) {
+		apbridgeDevice101->AddBridgePort(apdevices101.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices101.GetN(); ++portIter) {
+		apbridgeDevice101->AddBridgePort(apDevices101.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode102 = wifiApNode102.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice102 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode102->AddDevice(apbridgeDevice102);
+
+	for (int portIter = 0; portIter < apdevices102.GetN(); ++portIter) {
+		apbridgeDevice102->AddBridgePort(apdevices102.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices102.GetN(); ++portIter) {
+		apbridgeDevice102->AddBridgePort(apDevices102.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode103 = wifiApNode103.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice103 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode103->AddDevice(apbridgeDevice103);
+
+	for (int portIter = 0; portIter < apdevices103.GetN(); ++portIter) {
+		apbridgeDevice103->AddBridgePort(apdevices103.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices103.GetN(); ++portIter) {
+		apbridgeDevice103->AddBridgePort(apDevices103.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode104 = wifiApNode104.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice104 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode104->AddDevice(apbridgeDevice104);
+
+	for (int portIter = 0; portIter < apdevices104.GetN(); ++portIter) {
+		apbridgeDevice104->AddBridgePort(apdevices104.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices104.GetN(); ++portIter) {
+		apbridgeDevice104->AddBridgePort(apDevices104.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode105 = wifiApNode105.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice105 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode105->AddDevice(apbridgeDevice105);
+
+	for (int portIter = 0; portIter < apdevices105.GetN(); ++portIter) {
+		apbridgeDevice105->AddBridgePort(apdevices105.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices105.GetN(); ++portIter) {
+		apbridgeDevice105->AddBridgePort(apDevices105.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode106 = wifiApNode106.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice106 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode106->AddDevice(apbridgeDevice106);
+
+	for (int portIter = 0; portIter < apdevices106.GetN(); ++portIter) {
+		apbridgeDevice106->AddBridgePort(apdevices106.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices106.GetN(); ++portIter) {
+		apbridgeDevice106->AddBridgePort(apDevices106.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode107 = wifiApNode107.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice107 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode107->AddDevice(apbridgeDevice107);
+
+	for (int portIter = 0; portIter < apdevices107.GetN(); ++portIter) {
+		apbridgeDevice107->AddBridgePort(apdevices107.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices107.GetN(); ++portIter) {
+		apbridgeDevice107->AddBridgePort(apDevices107.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode108 = wifiApNode108.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice108 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode108->AddDevice(apbridgeDevice108);
+
+	for (int portIter = 0; portIter < apdevices108.GetN(); ++portIter) {
+		apbridgeDevice108->AddBridgePort(apdevices108.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices108.GetN(); ++portIter) {
+		apbridgeDevice108->AddBridgePort(apDevices108.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode109 = wifiApNode109.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice109 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode109->AddDevice(apbridgeDevice109);
+
+	for (int portIter = 0; portIter < apdevices109.GetN(); ++portIter) {
+		apbridgeDevice109->AddBridgePort(apdevices109.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices109.GetN(); ++portIter) {
+		apbridgeDevice109->AddBridgePort(apDevices109.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode110 = wifiApNode110.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice110 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode110->AddDevice(apbridgeDevice110);
+
+	for (int portIter = 0; portIter < apdevices110.GetN(); ++portIter) {
+		apbridgeDevice110->AddBridgePort(apdevices110.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices110.GetN(); ++portIter) {
+		apbridgeDevice110->AddBridgePort(apDevices110.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode111 = wifiApNode111.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice111 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode111->AddDevice(apbridgeDevice111);
+
+	for (int portIter = 0; portIter < apdevices111.GetN(); ++portIter) {
+		apbridgeDevice111->AddBridgePort(apdevices111.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices111.GetN(); ++portIter) {
+		apbridgeDevice111->AddBridgePort(apDevices111.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode112 = wifiApNode112.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice112 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode112->AddDevice(apbridgeDevice112);
+
+	for (int portIter = 0; portIter < apdevices112.GetN(); ++portIter) {
+		apbridgeDevice112->AddBridgePort(apdevices112.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices112.GetN(); ++portIter) {
+		apbridgeDevice112->AddBridgePort(apDevices112.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode113 = wifiApNode113.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice113 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode113->AddDevice(apbridgeDevice113);
+
+	for (int portIter = 0; portIter < apdevices113.GetN(); ++portIter) {
+		apbridgeDevice113->AddBridgePort(apdevices113.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices113.GetN(); ++portIter) {
+		apbridgeDevice113->AddBridgePort(apDevices113.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode114 = wifiApNode114.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice114 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode114->AddDevice(apbridgeDevice114);
+
+	for (int portIter = 0; portIter < apdevices114.GetN(); ++portIter) {
+		apbridgeDevice114->AddBridgePort(apdevices114.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices114.GetN(); ++portIter) {
+		apbridgeDevice114->AddBridgePort(apDevices114.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode115 = wifiApNode115.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice115 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode115->AddDevice(apbridgeDevice115);
+
+	for (int portIter = 0; portIter < apdevices115.GetN(); ++portIter) {
+		apbridgeDevice115->AddBridgePort(apdevices115.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices115.GetN(); ++portIter) {
+		apbridgeDevice115->AddBridgePort(apDevices115.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode116 = wifiApNode116.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice116 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode116->AddDevice(apbridgeDevice116);
+
+	for (int portIter = 0; portIter < apdevices116.GetN(); ++portIter) {
+		apbridgeDevice116->AddBridgePort(apdevices116.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices116.GetN(); ++portIter) {
+		apbridgeDevice116->AddBridgePort(apDevices116.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode117 = wifiApNode117.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice117 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode117->AddDevice(apbridgeDevice117);
+
+	for (int portIter = 0; portIter < apdevices117.GetN(); ++portIter) {
+		apbridgeDevice117->AddBridgePort(apdevices117.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices117.GetN(); ++portIter) {
+		apbridgeDevice117->AddBridgePort(apDevices117.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode118 = wifiApNode118.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice118 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode118->AddDevice(apbridgeDevice118);
+
+	for (int portIter = 0; portIter < apdevices118.GetN(); ++portIter) {
+		apbridgeDevice118->AddBridgePort(apdevices118.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices118.GetN(); ++portIter) {
+		apbridgeDevice118->AddBridgePort(apDevices118.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode119 = wifiApNode119.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice119 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode119->AddDevice(apbridgeDevice119);
+
+	for (int portIter = 0; portIter < apdevices119.GetN(); ++portIter) {
+		apbridgeDevice119->AddBridgePort(apdevices119.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices119.GetN(); ++portIter) {
+		apbridgeDevice119->AddBridgePort(apDevices119.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode120 = wifiApNode120.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice120 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode120->AddDevice(apbridgeDevice120);
+
+	for (int portIter = 0; portIter < apdevices120.GetN(); ++portIter) {
+		apbridgeDevice120->AddBridgePort(apdevices120.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices120.GetN(); ++portIter) {
+		apbridgeDevice120->AddBridgePort(apDevices120.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode121 = wifiApNode121.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice121 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode121->AddDevice(apbridgeDevice121);
+
+	for (int portIter = 0; portIter < apdevices121.GetN(); ++portIter) {
+		apbridgeDevice121->AddBridgePort(apdevices121.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices121.GetN(); ++portIter) {
+		apbridgeDevice121->AddBridgePort(apDevices121.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode122 = wifiApNode122.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice122 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode122->AddDevice(apbridgeDevice122);
+
+	for (int portIter = 0; portIter < apdevices122.GetN(); ++portIter) {
+		apbridgeDevice122->AddBridgePort(apdevices122.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices122.GetN(); ++portIter) {
+		apbridgeDevice122->AddBridgePort(apDevices122.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode123 = wifiApNode123.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice123 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode123->AddDevice(apbridgeDevice123);
+
+	for (int portIter = 0; portIter < apdevices123.GetN(); ++portIter) {
+		apbridgeDevice123->AddBridgePort(apdevices123.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices123.GetN(); ++portIter) {
+		apbridgeDevice123->AddBridgePort(apDevices123.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode124 = wifiApNode124.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice124 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode124->AddDevice(apbridgeDevice124);
+
+	for (int portIter = 0; portIter < apdevices124.GetN(); ++portIter) {
+		apbridgeDevice124->AddBridgePort(apdevices124.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices124.GetN(); ++portIter) {
+		apbridgeDevice124->AddBridgePort(apDevices124.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode125 = wifiApNode125.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice125 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode125->AddDevice(apbridgeDevice125);
+
+	for (int portIter = 0; portIter < apdevices125.GetN(); ++portIter) {
+		apbridgeDevice125->AddBridgePort(apdevices125.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices125.GetN(); ++portIter) {
+		apbridgeDevice125->AddBridgePort(apDevices125.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode126 = wifiApNode126.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice126 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode126->AddDevice(apbridgeDevice126);
+
+	for (int portIter = 0; portIter < apdevices126.GetN(); ++portIter) {
+		apbridgeDevice126->AddBridgePort(apdevices126.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices126.GetN(); ++portIter) {
+		apbridgeDevice126->AddBridgePort(apDevices126.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode127 = wifiApNode127.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice127 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode127->AddDevice(apbridgeDevice127);
+
+	for (int portIter = 0; portIter < apdevices127.GetN(); ++portIter) {
+		apbridgeDevice127->AddBridgePort(apdevices127.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices127.GetN(); ++portIter) {
+		apbridgeDevice127->AddBridgePort(apDevices127.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode128 = wifiApNode128.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice128 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode128->AddDevice(apbridgeDevice128);
+
+	for (int portIter = 0; portIter < apdevices128.GetN(); ++portIter) {
+		apbridgeDevice128->AddBridgePort(apdevices128.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices128.GetN(); ++portIter) {
+		apbridgeDevice128->AddBridgePort(apDevices128.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode129 = wifiApNode129.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice129 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode129->AddDevice(apbridgeDevice129);
+
+	for (int portIter = 0; portIter < apdevices129.GetN(); ++portIter) {
+		apbridgeDevice129->AddBridgePort(apdevices129.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices129.GetN(); ++portIter) {
+		apbridgeDevice129->AddBridgePort(apDevices129.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode130 = wifiApNode130.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice130 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode130->AddDevice(apbridgeDevice130);
+
+	for (int portIter = 0; portIter < apdevices130.GetN(); ++portIter) {
+		apbridgeDevice130->AddBridgePort(apdevices130.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices130.GetN(); ++portIter) {
+		apbridgeDevice130->AddBridgePort(apDevices130.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode131 = wifiApNode131.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice131 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode131->AddDevice(apbridgeDevice131);
+
+	for (int portIter = 0; portIter < apdevices131.GetN(); ++portIter) {
+		apbridgeDevice131->AddBridgePort(apdevices131.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices131.GetN(); ++portIter) {
+		apbridgeDevice131->AddBridgePort(apDevices131.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode132 = wifiApNode132.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice132 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode132->AddDevice(apbridgeDevice132);
+
+	for (int portIter = 0; portIter < apdevices132.GetN(); ++portIter) {
+		apbridgeDevice132->AddBridgePort(apdevices132.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices132.GetN(); ++portIter) {
+		apbridgeDevice132->AddBridgePort(apDevices132.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode133 = wifiApNode133.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice133 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode133->AddDevice(apbridgeDevice133);
+
+	for (int portIter = 0; portIter < apdevices133.GetN(); ++portIter) {
+		apbridgeDevice133->AddBridgePort(apdevices133.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices133.GetN(); ++portIter) {
+		apbridgeDevice133->AddBridgePort(apDevices133.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode134 = wifiApNode134.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice134 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode134->AddDevice(apbridgeDevice134);
+
+	for (int portIter = 0; portIter < apdevices134.GetN(); ++portIter) {
+		apbridgeDevice134->AddBridgePort(apdevices134.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices134.GetN(); ++portIter) {
+		apbridgeDevice134->AddBridgePort(apDevices134.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode135 = wifiApNode135.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice135 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode135->AddDevice(apbridgeDevice135);
+
+	for (int portIter = 0; portIter < apdevices135.GetN(); ++portIter) {
+		apbridgeDevice135->AddBridgePort(apdevices135.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices135.GetN(); ++portIter) {
+		apbridgeDevice135->AddBridgePort(apDevices135.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode136 = wifiApNode136.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice136 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode136->AddDevice(apbridgeDevice136);
+
+	for (int portIter = 0; portIter < apdevices136.GetN(); ++portIter) {
+		apbridgeDevice136->AddBridgePort(apdevices136.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices136.GetN(); ++portIter) {
+		apbridgeDevice136->AddBridgePort(apDevices136.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode137 = wifiApNode137.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice137 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode137->AddDevice(apbridgeDevice137);
+
+	for (int portIter = 0; portIter < apdevices137.GetN(); ++portIter) {
+		apbridgeDevice137->AddBridgePort(apdevices137.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices137.GetN(); ++portIter) {
+		apbridgeDevice137->AddBridgePort(apDevices137.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode138 = wifiApNode138.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice138 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode138->AddDevice(apbridgeDevice138);
+
+	for (int portIter = 0; portIter < apdevices138.GetN(); ++portIter) {
+		apbridgeDevice138->AddBridgePort(apdevices138.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices138.GetN(); ++portIter) {
+		apbridgeDevice138->AddBridgePort(apDevices138.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode139 = wifiApNode139.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice139 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode139->AddDevice(apbridgeDevice139);
+
+	for (int portIter = 0; portIter < apdevices139.GetN(); ++portIter) {
+		apbridgeDevice139->AddBridgePort(apdevices139.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices139.GetN(); ++portIter) {
+		apbridgeDevice139->AddBridgePort(apDevices139.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode140 = wifiApNode140.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice140 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode140->AddDevice(apbridgeDevice140);
+
+	for (int portIter = 0; portIter < apdevices140.GetN(); ++portIter) {
+		apbridgeDevice140->AddBridgePort(apdevices140.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices140.GetN(); ++portIter) {
+		apbridgeDevice140->AddBridgePort(apDevices140.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode141 = wifiApNode141.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice141 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode141->AddDevice(apbridgeDevice141);
+
+	for (int portIter = 0; portIter < apdevices141.GetN(); ++portIter) {
+		apbridgeDevice141->AddBridgePort(apdevices141.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices141.GetN(); ++portIter) {
+		apbridgeDevice141->AddBridgePort(apDevices141.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode142 = wifiApNode142.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice142 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode142->AddDevice(apbridgeDevice142);
+
+	for (int portIter = 0; portIter < apdevices142.GetN(); ++portIter) {
+		apbridgeDevice142->AddBridgePort(apdevices142.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices142.GetN(); ++portIter) {
+		apbridgeDevice142->AddBridgePort(apDevices142.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode143 = wifiApNode143.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice143 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode143->AddDevice(apbridgeDevice143);
+
+	for (int portIter = 0; portIter < apdevices143.GetN(); ++portIter) {
+		apbridgeDevice143->AddBridgePort(apdevices143.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices143.GetN(); ++portIter) {
+		apbridgeDevice143->AddBridgePort(apDevices143.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode144 = wifiApNode144.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice144 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode144->AddDevice(apbridgeDevice144);
+
+	for (int portIter = 0; portIter < apdevices144.GetN(); ++portIter) {
+		apbridgeDevice144->AddBridgePort(apdevices144.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices144.GetN(); ++portIter) {
+		apbridgeDevice144->AddBridgePort(apDevices144.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode145 = wifiApNode145.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice145 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode145->AddDevice(apbridgeDevice145);
+
+	for (int portIter = 0; portIter < apdevices145.GetN(); ++portIter) {
+		apbridgeDevice145->AddBridgePort(apdevices145.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices145.GetN(); ++portIter) {
+		apbridgeDevice145->AddBridgePort(apDevices145.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode146 = wifiApNode146.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice146 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode146->AddDevice(apbridgeDevice146);
+
+	for (int portIter = 0; portIter < apdevices146.GetN(); ++portIter) {
+		apbridgeDevice146->AddBridgePort(apdevices146.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices146.GetN(); ++portIter) {
+		apbridgeDevice146->AddBridgePort(apDevices146.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode147 = wifiApNode147.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice147 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode147->AddDevice(apbridgeDevice147);
+
+	for (int portIter = 0; portIter < apdevices147.GetN(); ++portIter) {
+		apbridgeDevice147->AddBridgePort(apdevices147.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices147.GetN(); ++portIter) {
+		apbridgeDevice147->AddBridgePort(apDevices147.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode148 = wifiApNode148.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice148 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode148->AddDevice(apbridgeDevice148);
+
+	for (int portIter = 0; portIter < apdevices148.GetN(); ++portIter) {
+		apbridgeDevice148->AddBridgePort(apdevices148.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices148.GetN(); ++portIter) {
+		apbridgeDevice148->AddBridgePort(apDevices148.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode149 = wifiApNode149.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice149 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode149->AddDevice(apbridgeDevice149);
+
+	for (int portIter = 0; portIter < apdevices149.GetN(); ++portIter) {
+		apbridgeDevice149->AddBridgePort(apdevices149.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices149.GetN(); ++portIter) {
+		apbridgeDevice149->AddBridgePort(apDevices149.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode150 = wifiApNode150.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice150 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode150->AddDevice(apbridgeDevice150);
+
+	for (int portIter = 0; portIter < apdevices150.GetN(); ++portIter) {
+		apbridgeDevice150->AddBridgePort(apdevices150.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices150.GetN(); ++portIter) {
+		apbridgeDevice150->AddBridgePort(apDevices150.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode151 = wifiApNode151.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice151 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode151->AddDevice(apbridgeDevice151);
+
+	for (int portIter = 0; portIter < apdevices151.GetN(); ++portIter) {
+		apbridgeDevice151->AddBridgePort(apdevices151.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices151.GetN(); ++portIter) {
+		apbridgeDevice151->AddBridgePort(apDevices151.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode152 = wifiApNode152.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice152 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode152->AddDevice(apbridgeDevice152);
+
+	for (int portIter = 0; portIter < apdevices152.GetN(); ++portIter) {
+		apbridgeDevice152->AddBridgePort(apdevices152.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices152.GetN(); ++portIter) {
+		apbridgeDevice152->AddBridgePort(apDevices152.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode153 = wifiApNode153.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice153 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode153->AddDevice(apbridgeDevice153);
+
+	for (int portIter = 0; portIter < apdevices153.GetN(); ++portIter) {
+		apbridgeDevice153->AddBridgePort(apdevices153.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices153.GetN(); ++portIter) {
+		apbridgeDevice153->AddBridgePort(apDevices153.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode154 = wifiApNode154.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice154 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode154->AddDevice(apbridgeDevice154);
+
+	for (int portIter = 0; portIter < apdevices154.GetN(); ++portIter) {
+		apbridgeDevice154->AddBridgePort(apdevices154.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices154.GetN(); ++portIter) {
+		apbridgeDevice154->AddBridgePort(apDevices154.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode155 = wifiApNode155.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice155 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode155->AddDevice(apbridgeDevice155);
+
+	for (int portIter = 0; portIter < apdevices155.GetN(); ++portIter) {
+		apbridgeDevice155->AddBridgePort(apdevices155.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices155.GetN(); ++portIter) {
+		apbridgeDevice155->AddBridgePort(apDevices155.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode156 = wifiApNode156.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice156 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode156->AddDevice(apbridgeDevice156);
+
+	for (int portIter = 0; portIter < apdevices156.GetN(); ++portIter) {
+		apbridgeDevice156->AddBridgePort(apdevices156.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices156.GetN(); ++portIter) {
+		apbridgeDevice156->AddBridgePort(apDevices156.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode157 = wifiApNode157.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice157 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode157->AddDevice(apbridgeDevice157);
+
+	for (int portIter = 0; portIter < apdevices157.GetN(); ++portIter) {
+		apbridgeDevice157->AddBridgePort(apdevices157.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices157.GetN(); ++portIter) {
+		apbridgeDevice157->AddBridgePort(apDevices157.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode158 = wifiApNode158.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice158 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode158->AddDevice(apbridgeDevice158);
+
+	for (int portIter = 0; portIter < apdevices158.GetN(); ++portIter) {
+		apbridgeDevice158->AddBridgePort(apdevices158.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices158.GetN(); ++portIter) {
+		apbridgeDevice158->AddBridgePort(apDevices158.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode159 = wifiApNode159.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice159 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode159->AddDevice(apbridgeDevice159);
+
+	for (int portIter = 0; portIter < apdevices159.GetN(); ++portIter) {
+		apbridgeDevice159->AddBridgePort(apdevices159.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices159.GetN(); ++portIter) {
+		apbridgeDevice159->AddBridgePort(apDevices159.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode160 = wifiApNode160.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice160 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode160->AddDevice(apbridgeDevice160);
+
+	for (int portIter = 0; portIter < apdevices160.GetN(); ++portIter) {
+		apbridgeDevice160->AddBridgePort(apdevices160.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices160.GetN(); ++portIter) {
+		apbridgeDevice160->AddBridgePort(apDevices160.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode161 = wifiApNode161.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice161 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode161->AddDevice(apbridgeDevice161);
+
+	for (int portIter = 0; portIter < apdevices161.GetN(); ++portIter) {
+		apbridgeDevice161->AddBridgePort(apdevices161.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices161.GetN(); ++portIter) {
+		apbridgeDevice161->AddBridgePort(apDevices161.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode162 = wifiApNode162.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice162 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode162->AddDevice(apbridgeDevice162);
+
+	for (int portIter = 0; portIter < apdevices162.GetN(); ++portIter) {
+		apbridgeDevice162->AddBridgePort(apdevices162.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices162.GetN(); ++portIter) {
+		apbridgeDevice162->AddBridgePort(apDevices162.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode163 = wifiApNode163.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice163 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode163->AddDevice(apbridgeDevice163);
+
+	for (int portIter = 0; portIter < apdevices163.GetN(); ++portIter) {
+		apbridgeDevice163->AddBridgePort(apdevices163.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices163.GetN(); ++portIter) {
+		apbridgeDevice163->AddBridgePort(apDevices163.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode164 = wifiApNode164.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice164 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode164->AddDevice(apbridgeDevice164);
+
+	for (int portIter = 0; portIter < apdevices164.GetN(); ++portIter) {
+		apbridgeDevice164->AddBridgePort(apdevices164.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices164.GetN(); ++portIter) {
+		apbridgeDevice164->AddBridgePort(apDevices164.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode165 = wifiApNode165.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice165 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode165->AddDevice(apbridgeDevice165);
+
+	for (int portIter = 0; portIter < apdevices165.GetN(); ++portIter) {
+		apbridgeDevice165->AddBridgePort(apdevices165.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices165.GetN(); ++portIter) {
+		apbridgeDevice165->AddBridgePort(apDevices165.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode166 = wifiApNode166.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice166 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode166->AddDevice(apbridgeDevice166);
+
+	for (int portIter = 0; portIter < apdevices166.GetN(); ++portIter) {
+		apbridgeDevice166->AddBridgePort(apdevices166.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices166.GetN(); ++portIter) {
+		apbridgeDevice166->AddBridgePort(apDevices166.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode167 = wifiApNode167.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice167 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode167->AddDevice(apbridgeDevice167);
+
+	for (int portIter = 0; portIter < apdevices167.GetN(); ++portIter) {
+		apbridgeDevice167->AddBridgePort(apdevices167.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices167.GetN(); ++portIter) {
+		apbridgeDevice167->AddBridgePort(apDevices167.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode168 = wifiApNode168.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice168 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode168->AddDevice(apbridgeDevice168);
+
+	for (int portIter = 0; portIter < apdevices168.GetN(); ++portIter) {
+		apbridgeDevice168->AddBridgePort(apdevices168.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices168.GetN(); ++portIter) {
+		apbridgeDevice168->AddBridgePort(apDevices168.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode169 = wifiApNode169.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice169 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode169->AddDevice(apbridgeDevice169);
+
+	for (int portIter = 0; portIter < apdevices169.GetN(); ++portIter) {
+		apbridgeDevice169->AddBridgePort(apdevices169.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices169.GetN(); ++portIter) {
+		apbridgeDevice169->AddBridgePort(apDevices169.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode170 = wifiApNode170.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice170 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode170->AddDevice(apbridgeDevice170);
+
+	for (int portIter = 0; portIter < apdevices170.GetN(); ++portIter) {
+		apbridgeDevice170->AddBridgePort(apdevices170.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices170.GetN(); ++portIter) {
+		apbridgeDevice170->AddBridgePort(apDevices170.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode171 = wifiApNode171.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice171 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode171->AddDevice(apbridgeDevice171);
+
+	for (int portIter = 0; portIter < apdevices171.GetN(); ++portIter) {
+		apbridgeDevice171->AddBridgePort(apdevices171.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices171.GetN(); ++portIter) {
+		apbridgeDevice171->AddBridgePort(apDevices171.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode172 = wifiApNode172.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice172 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode172->AddDevice(apbridgeDevice172);
+
+	for (int portIter = 0; portIter < apdevices172.GetN(); ++portIter) {
+		apbridgeDevice172->AddBridgePort(apdevices172.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices172.GetN(); ++portIter) {
+		apbridgeDevice172->AddBridgePort(apDevices172.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode173 = wifiApNode173.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice173 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode173->AddDevice(apbridgeDevice173);
+
+	for (int portIter = 0; portIter < apdevices173.GetN(); ++portIter) {
+		apbridgeDevice173->AddBridgePort(apdevices173.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices173.GetN(); ++portIter) {
+		apbridgeDevice173->AddBridgePort(apDevices173.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode174 = wifiApNode174.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice174 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode174->AddDevice(apbridgeDevice174);
+
+	for (int portIter = 0; portIter < apdevices174.GetN(); ++portIter) {
+		apbridgeDevice174->AddBridgePort(apdevices174.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices174.GetN(); ++portIter) {
+		apbridgeDevice174->AddBridgePort(apDevices174.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode175 = wifiApNode175.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice175 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode175->AddDevice(apbridgeDevice175);
+
+	for (int portIter = 0; portIter < apdevices175.GetN(); ++portIter) {
+		apbridgeDevice175->AddBridgePort(apdevices175.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices175.GetN(); ++portIter) {
+		apbridgeDevice175->AddBridgePort(apDevices175.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode176 = wifiApNode176.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice176 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode176->AddDevice(apbridgeDevice176);
+
+	for (int portIter = 0; portIter < apdevices176.GetN(); ++portIter) {
+		apbridgeDevice176->AddBridgePort(apdevices176.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices176.GetN(); ++portIter) {
+		apbridgeDevice176->AddBridgePort(apDevices176.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode177 = wifiApNode177.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice177 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode177->AddDevice(apbridgeDevice177);
+
+	for (int portIter = 0; portIter < apdevices177.GetN(); ++portIter) {
+		apbridgeDevice177->AddBridgePort(apdevices177.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices177.GetN(); ++portIter) {
+		apbridgeDevice177->AddBridgePort(apDevices177.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode178 = wifiApNode178.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice178 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode178->AddDevice(apbridgeDevice178);
+
+	for (int portIter = 0; portIter < apdevices178.GetN(); ++portIter) {
+		apbridgeDevice178->AddBridgePort(apdevices178.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices178.GetN(); ++portIter) {
+		apbridgeDevice178->AddBridgePort(apDevices178.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode179 = wifiApNode179.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice179 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode179->AddDevice(apbridgeDevice179);
+
+	for (int portIter = 0; portIter < apdevices179.GetN(); ++portIter) {
+		apbridgeDevice179->AddBridgePort(apdevices179.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices179.GetN(); ++portIter) {
+		apbridgeDevice179->AddBridgePort(apDevices179.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode180 = wifiApNode180.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice180 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode180->AddDevice(apbridgeDevice180);
+
+	for (int portIter = 0; portIter < apdevices180.GetN(); ++portIter) {
+		apbridgeDevice180->AddBridgePort(apdevices180.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices180.GetN(); ++portIter) {
+		apbridgeDevice180->AddBridgePort(apDevices180.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode181 = wifiApNode181.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice181 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode181->AddDevice(apbridgeDevice181);
+
+	for (int portIter = 0; portIter < apdevices181.GetN(); ++portIter) {
+		apbridgeDevice181->AddBridgePort(apdevices181.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices181.GetN(); ++portIter) {
+		apbridgeDevice181->AddBridgePort(apDevices181.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode182 = wifiApNode182.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice182 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode182->AddDevice(apbridgeDevice182);
+
+	for (int portIter = 0; portIter < apdevices182.GetN(); ++portIter) {
+		apbridgeDevice182->AddBridgePort(apdevices182.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices182.GetN(); ++portIter) {
+		apbridgeDevice182->AddBridgePort(apDevices182.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode183 = wifiApNode183.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice183 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode183->AddDevice(apbridgeDevice183);
+
+	for (int portIter = 0; portIter < apdevices183.GetN(); ++portIter) {
+		apbridgeDevice183->AddBridgePort(apdevices183.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices183.GetN(); ++portIter) {
+		apbridgeDevice183->AddBridgePort(apDevices183.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode184 = wifiApNode184.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice184 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode184->AddDevice(apbridgeDevice184);
+
+	for (int portIter = 0; portIter < apdevices184.GetN(); ++portIter) {
+		apbridgeDevice184->AddBridgePort(apdevices184.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices184.GetN(); ++portIter) {
+		apbridgeDevice184->AddBridgePort(apDevices184.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode185 = wifiApNode185.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice185 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode185->AddDevice(apbridgeDevice185);
+
+	for (int portIter = 0; portIter < apdevices185.GetN(); ++portIter) {
+		apbridgeDevice185->AddBridgePort(apdevices185.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices185.GetN(); ++portIter) {
+		apbridgeDevice185->AddBridgePort(apDevices185.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode186 = wifiApNode186.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice186 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode186->AddDevice(apbridgeDevice186);
+
+	for (int portIter = 0; portIter < apdevices186.GetN(); ++portIter) {
+		apbridgeDevice186->AddBridgePort(apdevices186.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices186.GetN(); ++portIter) {
+		apbridgeDevice186->AddBridgePort(apDevices186.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode187 = wifiApNode187.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice187 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode187->AddDevice(apbridgeDevice187);
+
+	for (int portIter = 0; portIter < apdevices187.GetN(); ++portIter) {
+		apbridgeDevice187->AddBridgePort(apdevices187.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices187.GetN(); ++portIter) {
+		apbridgeDevice187->AddBridgePort(apDevices187.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode188 = wifiApNode188.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice188 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode188->AddDevice(apbridgeDevice188);
+
+	for (int portIter = 0; portIter < apdevices188.GetN(); ++portIter) {
+		apbridgeDevice188->AddBridgePort(apdevices188.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices188.GetN(); ++portIter) {
+		apbridgeDevice188->AddBridgePort(apDevices188.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode189 = wifiApNode189.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice189 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode189->AddDevice(apbridgeDevice189);
+
+	for (int portIter = 0; portIter < apdevices189.GetN(); ++portIter) {
+		apbridgeDevice189->AddBridgePort(apdevices189.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices189.GetN(); ++portIter) {
+		apbridgeDevice189->AddBridgePort(apDevices189.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode190 = wifiApNode190.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice190 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode190->AddDevice(apbridgeDevice190);
+
+	for (int portIter = 0; portIter < apdevices190.GetN(); ++portIter) {
+		apbridgeDevice190->AddBridgePort(apdevices190.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices190.GetN(); ++portIter) {
+		apbridgeDevice190->AddBridgePort(apDevices190.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode191 = wifiApNode191.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice191 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode191->AddDevice(apbridgeDevice191);
+
+	for (int portIter = 0; portIter < apdevices191.GetN(); ++portIter) {
+		apbridgeDevice191->AddBridgePort(apdevices191.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices191.GetN(); ++portIter) {
+		apbridgeDevice191->AddBridgePort(apDevices191.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode192 = wifiApNode192.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice192 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode192->AddDevice(apbridgeDevice192);
+
+	for (int portIter = 0; portIter < apdevices192.GetN(); ++portIter) {
+		apbridgeDevice192->AddBridgePort(apdevices192.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices192.GetN(); ++portIter) {
+		apbridgeDevice192->AddBridgePort(apDevices192.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode193 = wifiApNode193.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice193 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode193->AddDevice(apbridgeDevice193);
+
+	for (int portIter = 0; portIter < apdevices193.GetN(); ++portIter) {
+		apbridgeDevice193->AddBridgePort(apdevices193.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices193.GetN(); ++portIter) {
+		apbridgeDevice193->AddBridgePort(apDevices193.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode194 = wifiApNode194.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice194 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode194->AddDevice(apbridgeDevice194);
+
+	for (int portIter = 0; portIter < apdevices194.GetN(); ++portIter) {
+		apbridgeDevice194->AddBridgePort(apdevices194.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices194.GetN(); ++portIter) {
+		apbridgeDevice194->AddBridgePort(apDevices194.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode195 = wifiApNode195.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice195 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode195->AddDevice(apbridgeDevice195);
+
+	for (int portIter = 0; portIter < apdevices195.GetN(); ++portIter) {
+		apbridgeDevice195->AddBridgePort(apdevices195.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices195.GetN(); ++portIter) {
+		apbridgeDevice195->AddBridgePort(apDevices195.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode196 = wifiApNode196.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice196 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode196->AddDevice(apbridgeDevice196);
+
+	for (int portIter = 0; portIter < apdevices196.GetN(); ++portIter) {
+		apbridgeDevice196->AddBridgePort(apdevices196.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices196.GetN(); ++portIter) {
+		apbridgeDevice196->AddBridgePort(apDevices196.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode197 = wifiApNode197.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice197 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode197->AddDevice(apbridgeDevice197);
+
+	for (int portIter = 0; portIter < apdevices197.GetN(); ++portIter) {
+		apbridgeDevice197->AddBridgePort(apdevices197.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices197.GetN(); ++portIter) {
+		apbridgeDevice197->AddBridgePort(apDevices197.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode198 = wifiApNode198.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice198 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode198->AddDevice(apbridgeDevice198);
+
+	for (int portIter = 0; portIter < apdevices198.GetN(); ++portIter) {
+		apbridgeDevice198->AddBridgePort(apdevices198.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices198.GetN(); ++portIter) {
+		apbridgeDevice198->AddBridgePort(apDevices198.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode199 = wifiApNode199.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice199 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode199->AddDevice(apbridgeDevice199);
+
+	for (int portIter = 0; portIter < apdevices199.GetN(); ++portIter) {
+		apbridgeDevice199->AddBridgePort(apdevices199.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices199.GetN(); ++portIter) {
+		apbridgeDevice199->AddBridgePort(apDevices199.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode200 = wifiApNode200.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice200 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode200->AddDevice(apbridgeDevice200);
+
+	for (int portIter = 0; portIter < apdevices200.GetN(); ++portIter) {
+		apbridgeDevice200->AddBridgePort(apdevices200.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices200.GetN(); ++portIter) {
+		apbridgeDevice200->AddBridgePort(apDevices200.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode201 = wifiApNode201.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice201 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode201->AddDevice(apbridgeDevice201);
+
+	for (int portIter = 0; portIter < apdevices201.GetN(); ++portIter) {
+		apbridgeDevice201->AddBridgePort(apdevices201.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices201.GetN(); ++portIter) {
+		apbridgeDevice201->AddBridgePort(apDevices201.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode202 = wifiApNode202.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice202 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode202->AddDevice(apbridgeDevice202);
+
+	for (int portIter = 0; portIter < apdevices202.GetN(); ++portIter) {
+		apbridgeDevice202->AddBridgePort(apdevices202.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices202.GetN(); ++portIter) {
+		apbridgeDevice202->AddBridgePort(apDevices202.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode203 = wifiApNode203.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice203 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode203->AddDevice(apbridgeDevice203);
+
+	for (int portIter = 0; portIter < apdevices203.GetN(); ++portIter) {
+		apbridgeDevice203->AddBridgePort(apdevices203.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices203.GetN(); ++portIter) {
+		apbridgeDevice203->AddBridgePort(apDevices203.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode204 = wifiApNode204.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice204 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode204->AddDevice(apbridgeDevice204);
+
+	for (int portIter = 0; portIter < apdevices204.GetN(); ++portIter) {
+		apbridgeDevice204->AddBridgePort(apdevices204.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices204.GetN(); ++portIter) {
+		apbridgeDevice204->AddBridgePort(apDevices204.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode205 = wifiApNode205.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice205 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode205->AddDevice(apbridgeDevice205);
+
+	for (int portIter = 0; portIter < apdevices205.GetN(); ++portIter) {
+		apbridgeDevice205->AddBridgePort(apdevices205.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices205.GetN(); ++portIter) {
+		apbridgeDevice205->AddBridgePort(apDevices205.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode206 = wifiApNode206.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice206 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode206->AddDevice(apbridgeDevice206);
+
+	for (int portIter = 0; portIter < apdevices206.GetN(); ++portIter) {
+		apbridgeDevice206->AddBridgePort(apdevices206.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices206.GetN(); ++portIter) {
+		apbridgeDevice206->AddBridgePort(apDevices206.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode207 = wifiApNode207.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice207 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode207->AddDevice(apbridgeDevice207);
+
+	for (int portIter = 0; portIter < apdevices207.GetN(); ++portIter) {
+		apbridgeDevice207->AddBridgePort(apdevices207.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices207.GetN(); ++portIter) {
+		apbridgeDevice207->AddBridgePort(apDevices207.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode208 = wifiApNode208.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice208 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode208->AddDevice(apbridgeDevice208);
+
+	for (int portIter = 0; portIter < apdevices208.GetN(); ++portIter) {
+		apbridgeDevice208->AddBridgePort(apdevices208.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices208.GetN(); ++portIter) {
+		apbridgeDevice208->AddBridgePort(apDevices208.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode209 = wifiApNode209.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice209 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode209->AddDevice(apbridgeDevice209);
+
+	for (int portIter = 0; portIter < apdevices209.GetN(); ++portIter) {
+		apbridgeDevice209->AddBridgePort(apdevices209.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices209.GetN(); ++portIter) {
+		apbridgeDevice209->AddBridgePort(apDevices209.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode210 = wifiApNode210.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice210 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode210->AddDevice(apbridgeDevice210);
+
+	for (int portIter = 0; portIter < apdevices210.GetN(); ++portIter) {
+		apbridgeDevice210->AddBridgePort(apdevices210.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices210.GetN(); ++portIter) {
+		apbridgeDevice210->AddBridgePort(apDevices210.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode211 = wifiApNode211.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice211 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode211->AddDevice(apbridgeDevice211);
+
+	for (int portIter = 0; portIter < apdevices211.GetN(); ++portIter) {
+		apbridgeDevice211->AddBridgePort(apdevices211.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices211.GetN(); ++portIter) {
+		apbridgeDevice211->AddBridgePort(apDevices211.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode212 = wifiApNode212.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice212 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode212->AddDevice(apbridgeDevice212);
+
+	for (int portIter = 0; portIter < apdevices212.GetN(); ++portIter) {
+		apbridgeDevice212->AddBridgePort(apdevices212.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices212.GetN(); ++portIter) {
+		apbridgeDevice212->AddBridgePort(apDevices212.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode213 = wifiApNode213.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice213 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode213->AddDevice(apbridgeDevice213);
+
+	for (int portIter = 0; portIter < apdevices213.GetN(); ++portIter) {
+		apbridgeDevice213->AddBridgePort(apdevices213.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices213.GetN(); ++portIter) {
+		apbridgeDevice213->AddBridgePort(apDevices213.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode214 = wifiApNode214.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice214 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode214->AddDevice(apbridgeDevice214);
+
+	for (int portIter = 0; portIter < apdevices214.GetN(); ++portIter) {
+		apbridgeDevice214->AddBridgePort(apdevices214.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices214.GetN(); ++portIter) {
+		apbridgeDevice214->AddBridgePort(apDevices214.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode215 = wifiApNode215.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice215 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode215->AddDevice(apbridgeDevice215);
+
+	for (int portIter = 0; portIter < apdevices215.GetN(); ++portIter) {
+		apbridgeDevice215->AddBridgePort(apdevices215.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices215.GetN(); ++portIter) {
+		apbridgeDevice215->AddBridgePort(apDevices215.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode216 = wifiApNode216.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice216 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode216->AddDevice(apbridgeDevice216);
+
+	for (int portIter = 0; portIter < apdevices216.GetN(); ++portIter) {
+		apbridgeDevice216->AddBridgePort(apdevices216.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices216.GetN(); ++portIter) {
+		apbridgeDevice216->AddBridgePort(apDevices216.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode217 = wifiApNode217.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice217 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode217->AddDevice(apbridgeDevice217);
+
+	for (int portIter = 0; portIter < apdevices217.GetN(); ++portIter) {
+		apbridgeDevice217->AddBridgePort(apdevices217.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices217.GetN(); ++portIter) {
+		apbridgeDevice217->AddBridgePort(apDevices217.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode218 = wifiApNode218.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice218 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode218->AddDevice(apbridgeDevice218);
+
+	for (int portIter = 0; portIter < apdevices218.GetN(); ++portIter) {
+		apbridgeDevice218->AddBridgePort(apdevices218.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices218.GetN(); ++portIter) {
+		apbridgeDevice218->AddBridgePort(apDevices218.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode219 = wifiApNode219.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice219 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode219->AddDevice(apbridgeDevice219);
+
+	for (int portIter = 0; portIter < apdevices219.GetN(); ++portIter) {
+		apbridgeDevice219->AddBridgePort(apdevices219.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices219.GetN(); ++portIter) {
+		apbridgeDevice219->AddBridgePort(apDevices219.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode220 = wifiApNode220.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice220 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode220->AddDevice(apbridgeDevice220);
+
+	for (int portIter = 0; portIter < apdevices220.GetN(); ++portIter) {
+		apbridgeDevice220->AddBridgePort(apdevices220.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices220.GetN(); ++portIter) {
+		apbridgeDevice220->AddBridgePort(apDevices220.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode221 = wifiApNode221.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice221 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode221->AddDevice(apbridgeDevice221);
+
+	for (int portIter = 0; portIter < apdevices221.GetN(); ++portIter) {
+		apbridgeDevice221->AddBridgePort(apdevices221.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices221.GetN(); ++portIter) {
+		apbridgeDevice221->AddBridgePort(apDevices221.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode222 = wifiApNode222.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice222 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode222->AddDevice(apbridgeDevice222);
+
+	for (int portIter = 0; portIter < apdevices222.GetN(); ++portIter) {
+		apbridgeDevice222->AddBridgePort(apdevices222.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices222.GetN(); ++portIter) {
+		apbridgeDevice222->AddBridgePort(apDevices222.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode223 = wifiApNode223.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice223 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode223->AddDevice(apbridgeDevice223);
+
+	for (int portIter = 0; portIter < apdevices223.GetN(); ++portIter) {
+		apbridgeDevice223->AddBridgePort(apdevices223.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices223.GetN(); ++portIter) {
+		apbridgeDevice223->AddBridgePort(apDevices223.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode224 = wifiApNode224.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice224 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode224->AddDevice(apbridgeDevice224);
+
+	for (int portIter = 0; portIter < apdevices224.GetN(); ++portIter) {
+		apbridgeDevice224->AddBridgePort(apdevices224.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices224.GetN(); ++portIter) {
+		apbridgeDevice224->AddBridgePort(apDevices224.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode225 = wifiApNode225.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice225 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode225->AddDevice(apbridgeDevice225);
+
+	for (int portIter = 0; portIter < apdevices225.GetN(); ++portIter) {
+		apbridgeDevice225->AddBridgePort(apdevices225.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices225.GetN(); ++portIter) {
+		apbridgeDevice225->AddBridgePort(apDevices225.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode226 = wifiApNode226.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice226 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode226->AddDevice(apbridgeDevice226);
+
+	for (int portIter = 0; portIter < apdevices226.GetN(); ++portIter) {
+		apbridgeDevice226->AddBridgePort(apdevices226.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices226.GetN(); ++portIter) {
+		apbridgeDevice226->AddBridgePort(apDevices226.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode227 = wifiApNode227.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice227 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode227->AddDevice(apbridgeDevice227);
+
+	for (int portIter = 0; portIter < apdevices227.GetN(); ++portIter) {
+		apbridgeDevice227->AddBridgePort(apdevices227.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices227.GetN(); ++portIter) {
+		apbridgeDevice227->AddBridgePort(apDevices227.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode228 = wifiApNode228.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice228 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode228->AddDevice(apbridgeDevice228);
+
+	for (int portIter = 0; portIter < apdevices228.GetN(); ++portIter) {
+		apbridgeDevice228->AddBridgePort(apdevices228.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices228.GetN(); ++portIter) {
+		apbridgeDevice228->AddBridgePort(apDevices228.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode229 = wifiApNode229.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice229 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode229->AddDevice(apbridgeDevice229);
+
+	for (int portIter = 0; portIter < apdevices229.GetN(); ++portIter) {
+		apbridgeDevice229->AddBridgePort(apdevices229.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices229.GetN(); ++portIter) {
+		apbridgeDevice229->AddBridgePort(apDevices229.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode230 = wifiApNode230.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice230 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode230->AddDevice(apbridgeDevice230);
+
+	for (int portIter = 0; portIter < apdevices230.GetN(); ++portIter) {
+		apbridgeDevice230->AddBridgePort(apdevices230.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices230.GetN(); ++portIter) {
+		apbridgeDevice230->AddBridgePort(apDevices230.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode231 = wifiApNode231.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice231 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode231->AddDevice(apbridgeDevice231);
+
+	for (int portIter = 0; portIter < apdevices231.GetN(); ++portIter) {
+		apbridgeDevice231->AddBridgePort(apdevices231.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices231.GetN(); ++portIter) {
+		apbridgeDevice231->AddBridgePort(apDevices231.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode232 = wifiApNode232.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice232 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode232->AddDevice(apbridgeDevice232);
+
+	for (int portIter = 0; portIter < apdevices232.GetN(); ++portIter) {
+		apbridgeDevice232->AddBridgePort(apdevices232.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices232.GetN(); ++portIter) {
+		apbridgeDevice232->AddBridgePort(apDevices232.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode233 = wifiApNode233.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice233 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode233->AddDevice(apbridgeDevice233);
+
+	for (int portIter = 0; portIter < apdevices233.GetN(); ++portIter) {
+		apbridgeDevice233->AddBridgePort(apdevices233.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices233.GetN(); ++portIter) {
+		apbridgeDevice233->AddBridgePort(apDevices233.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode234 = wifiApNode234.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice234 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode234->AddDevice(apbridgeDevice234);
+
+	for (int portIter = 0; portIter < apdevices234.GetN(); ++portIter) {
+		apbridgeDevice234->AddBridgePort(apdevices234.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices234.GetN(); ++portIter) {
+		apbridgeDevice234->AddBridgePort(apDevices234.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode235 = wifiApNode235.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice235 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode235->AddDevice(apbridgeDevice235);
+
+	for (int portIter = 0; portIter < apdevices235.GetN(); ++portIter) {
+		apbridgeDevice235->AddBridgePort(apdevices235.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices235.GetN(); ++portIter) {
+		apbridgeDevice235->AddBridgePort(apDevices235.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode236 = wifiApNode236.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice236 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode236->AddDevice(apbridgeDevice236);
+
+	for (int portIter = 0; portIter < apdevices236.GetN(); ++portIter) {
+		apbridgeDevice236->AddBridgePort(apdevices236.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices236.GetN(); ++portIter) {
+		apbridgeDevice236->AddBridgePort(apDevices236.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode237 = wifiApNode237.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice237 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode237->AddDevice(apbridgeDevice237);
+
+	for (int portIter = 0; portIter < apdevices237.GetN(); ++portIter) {
+		apbridgeDevice237->AddBridgePort(apdevices237.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices237.GetN(); ++portIter) {
+		apbridgeDevice237->AddBridgePort(apDevices237.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode238 = wifiApNode238.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice238 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode238->AddDevice(apbridgeDevice238);
+
+	for (int portIter = 0; portIter < apdevices238.GetN(); ++portIter) {
+		apbridgeDevice238->AddBridgePort(apdevices238.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices238.GetN(); ++portIter) {
+		apbridgeDevice238->AddBridgePort(apDevices238.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode239 = wifiApNode239.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice239 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode239->AddDevice(apbridgeDevice239);
+
+	for (int portIter = 0; portIter < apdevices239.GetN(); ++portIter) {
+		apbridgeDevice239->AddBridgePort(apdevices239.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices239.GetN(); ++portIter) {
+		apbridgeDevice239->AddBridgePort(apDevices239.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode240 = wifiApNode240.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice240 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode240->AddDevice(apbridgeDevice240);
+
+	for (int portIter = 0; portIter < apdevices240.GetN(); ++portIter) {
+		apbridgeDevice240->AddBridgePort(apdevices240.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices240.GetN(); ++portIter) {
+		apbridgeDevice240->AddBridgePort(apDevices240.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode241 = wifiApNode241.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice241 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode241->AddDevice(apbridgeDevice241);
+
+	for (int portIter = 0; portIter < apdevices241.GetN(); ++portIter) {
+		apbridgeDevice241->AddBridgePort(apdevices241.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices241.GetN(); ++portIter) {
+		apbridgeDevice241->AddBridgePort(apDevices241.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode242 = wifiApNode242.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice242 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode242->AddDevice(apbridgeDevice242);
+
+	for (int portIter = 0; portIter < apdevices242.GetN(); ++portIter) {
+		apbridgeDevice242->AddBridgePort(apdevices242.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices242.GetN(); ++portIter) {
+		apbridgeDevice242->AddBridgePort(apDevices242.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode243 = wifiApNode243.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice243 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode243->AddDevice(apbridgeDevice243);
+
+	for (int portIter = 0; portIter < apdevices243.GetN(); ++portIter) {
+		apbridgeDevice243->AddBridgePort(apdevices243.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices243.GetN(); ++portIter) {
+		apbridgeDevice243->AddBridgePort(apDevices243.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode244 = wifiApNode244.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice244 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode244->AddDevice(apbridgeDevice244);
+
+	for (int portIter = 0; portIter < apdevices244.GetN(); ++portIter) {
+		apbridgeDevice244->AddBridgePort(apdevices244.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices244.GetN(); ++portIter) {
+		apbridgeDevice244->AddBridgePort(apDevices244.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode245 = wifiApNode245.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice245 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode245->AddDevice(apbridgeDevice245);
+
+	for (int portIter = 0; portIter < apdevices245.GetN(); ++portIter) {
+		apbridgeDevice245->AddBridgePort(apdevices245.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices245.GetN(); ++portIter) {
+		apbridgeDevice245->AddBridgePort(apDevices245.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode246 = wifiApNode246.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice246 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode246->AddDevice(apbridgeDevice246);
+
+	for (int portIter = 0; portIter < apdevices246.GetN(); ++portIter) {
+		apbridgeDevice246->AddBridgePort(apdevices246.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices246.GetN(); ++portIter) {
+		apbridgeDevice246->AddBridgePort(apDevices246.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode247 = wifiApNode247.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice247 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode247->AddDevice(apbridgeDevice247);
+
+	for (int portIter = 0; portIter < apdevices247.GetN(); ++portIter) {
+		apbridgeDevice247->AddBridgePort(apdevices247.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices247.GetN(); ++portIter) {
+		apbridgeDevice247->AddBridgePort(apDevices247.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode248 = wifiApNode248.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice248 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode248->AddDevice(apbridgeDevice248);
+
+	for (int portIter = 0; portIter < apdevices248.GetN(); ++portIter) {
+		apbridgeDevice248->AddBridgePort(apdevices248.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices248.GetN(); ++portIter) {
+		apbridgeDevice248->AddBridgePort(apDevices248.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode249 = wifiApNode249.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice249 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode249->AddDevice(apbridgeDevice249);
+
+	for (int portIter = 0; portIter < apdevices249.GetN(); ++portIter) {
+		apbridgeDevice249->AddBridgePort(apdevices249.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices249.GetN(); ++portIter) {
+		apbridgeDevice249->AddBridgePort(apDevices249.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode250 = wifiApNode250.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice250 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode250->AddDevice(apbridgeDevice250);
+
+	for (int portIter = 0; portIter < apdevices250.GetN(); ++portIter) {
+		apbridgeDevice250->AddBridgePort(apdevices250.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices250.GetN(); ++portIter) {
+		apbridgeDevice250->AddBridgePort(apDevices250.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode251 = wifiApNode251.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice251 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode251->AddDevice(apbridgeDevice251);
+
+	for (int portIter = 0; portIter < apdevices251.GetN(); ++portIter) {
+		apbridgeDevice251->AddBridgePort(apdevices251.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices251.GetN(); ++portIter) {
+		apbridgeDevice251->AddBridgePort(apDevices251.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode252 = wifiApNode252.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice252 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode252->AddDevice(apbridgeDevice252);
+
+	for (int portIter = 0; portIter < apdevices252.GetN(); ++portIter) {
+		apbridgeDevice252->AddBridgePort(apdevices252.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices252.GetN(); ++portIter) {
+		apbridgeDevice252->AddBridgePort(apDevices252.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode253 = wifiApNode253.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice253 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode253->AddDevice(apbridgeDevice253);
+
+	for (int portIter = 0; portIter < apdevices253.GetN(); ++portIter) {
+		apbridgeDevice253->AddBridgePort(apdevices253.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices253.GetN(); ++portIter) {
+		apbridgeDevice253->AddBridgePort(apDevices253.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode254 = wifiApNode254.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice254 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode254->AddDevice(apbridgeDevice254);
+
+	for (int portIter = 0; portIter < apdevices254.GetN(); ++portIter) {
+		apbridgeDevice254->AddBridgePort(apdevices254.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices254.GetN(); ++portIter) {
+		apbridgeDevice254->AddBridgePort(apDevices254.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode255 = wifiApNode255.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice255 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode255->AddDevice(apbridgeDevice255);
+
+	for (int portIter = 0; portIter < apdevices255.GetN(); ++portIter) {
+		apbridgeDevice255->AddBridgePort(apdevices255.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices255.GetN(); ++portIter) {
+		apbridgeDevice255->AddBridgePort(apDevices255.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode256 = wifiApNode256.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice256 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode256->AddDevice(apbridgeDevice256);
+
+	for (int portIter = 0; portIter < apdevices256.GetN(); ++portIter) {
+		apbridgeDevice256->AddBridgePort(apdevices256.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices256.GetN(); ++portIter) {
+		apbridgeDevice256->AddBridgePort(apDevices256.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode257 = wifiApNode257.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice257 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode257->AddDevice(apbridgeDevice257);
+
+	for (int portIter = 0; portIter < apdevices257.GetN(); ++portIter) {
+		apbridgeDevice257->AddBridgePort(apdevices257.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices257.GetN(); ++portIter) {
+		apbridgeDevice257->AddBridgePort(apDevices257.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode258 = wifiApNode258.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice258 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode258->AddDevice(apbridgeDevice258);
+
+	for (int portIter = 0; portIter < apdevices258.GetN(); ++portIter) {
+		apbridgeDevice258->AddBridgePort(apdevices258.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices258.GetN(); ++portIter) {
+		apbridgeDevice258->AddBridgePort(apDevices258.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode259 = wifiApNode259.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice259 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode259->AddDevice(apbridgeDevice259);
+
+	for (int portIter = 0; portIter < apdevices259.GetN(); ++portIter) {
+		apbridgeDevice259->AddBridgePort(apdevices259.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices259.GetN(); ++portIter) {
+		apbridgeDevice259->AddBridgePort(apDevices259.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode260 = wifiApNode260.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice260 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode260->AddDevice(apbridgeDevice260);
+
+	for (int portIter = 0; portIter < apdevices260.GetN(); ++portIter) {
+		apbridgeDevice260->AddBridgePort(apdevices260.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices260.GetN(); ++portIter) {
+		apbridgeDevice260->AddBridgePort(apDevices260.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode261 = wifiApNode261.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice261 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode261->AddDevice(apbridgeDevice261);
+
+	for (int portIter = 0; portIter < apdevices261.GetN(); ++portIter) {
+		apbridgeDevice261->AddBridgePort(apdevices261.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices261.GetN(); ++portIter) {
+		apbridgeDevice261->AddBridgePort(apDevices261.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode262 = wifiApNode262.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice262 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode262->AddDevice(apbridgeDevice262);
+
+	for (int portIter = 0; portIter < apdevices262.GetN(); ++portIter) {
+		apbridgeDevice262->AddBridgePort(apdevices262.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices262.GetN(); ++portIter) {
+		apbridgeDevice262->AddBridgePort(apDevices262.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode263 = wifiApNode263.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice263 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode263->AddDevice(apbridgeDevice263);
+
+	for (int portIter = 0; portIter < apdevices263.GetN(); ++portIter) {
+		apbridgeDevice263->AddBridgePort(apdevices263.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices263.GetN(); ++portIter) {
+		apbridgeDevice263->AddBridgePort(apDevices263.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode264 = wifiApNode264.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice264 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode264->AddDevice(apbridgeDevice264);
+
+	for (int portIter = 0; portIter < apdevices264.GetN(); ++portIter) {
+		apbridgeDevice264->AddBridgePort(apdevices264.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices264.GetN(); ++portIter) {
+		apbridgeDevice264->AddBridgePort(apDevices264.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode265 = wifiApNode265.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice265 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode265->AddDevice(apbridgeDevice265);
+
+	for (int portIter = 0; portIter < apdevices265.GetN(); ++portIter) {
+		apbridgeDevice265->AddBridgePort(apdevices265.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices265.GetN(); ++portIter) {
+		apbridgeDevice265->AddBridgePort(apDevices265.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode266 = wifiApNode266.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice266 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode266->AddDevice(apbridgeDevice266);
+
+	for (int portIter = 0; portIter < apdevices266.GetN(); ++portIter) {
+		apbridgeDevice266->AddBridgePort(apdevices266.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices266.GetN(); ++portIter) {
+		apbridgeDevice266->AddBridgePort(apDevices266.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode267 = wifiApNode267.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice267 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode267->AddDevice(apbridgeDevice267);
+
+	for (int portIter = 0; portIter < apdevices267.GetN(); ++portIter) {
+		apbridgeDevice267->AddBridgePort(apdevices267.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices267.GetN(); ++portIter) {
+		apbridgeDevice267->AddBridgePort(apDevices267.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode268 = wifiApNode268.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice268 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode268->AddDevice(apbridgeDevice268);
+
+	for (int portIter = 0; portIter < apdevices268.GetN(); ++portIter) {
+		apbridgeDevice268->AddBridgePort(apdevices268.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices268.GetN(); ++portIter) {
+		apbridgeDevice268->AddBridgePort(apDevices268.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode269 = wifiApNode269.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice269 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode269->AddDevice(apbridgeDevice269);
+
+	for (int portIter = 0; portIter < apdevices269.GetN(); ++portIter) {
+		apbridgeDevice269->AddBridgePort(apdevices269.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices269.GetN(); ++portIter) {
+		apbridgeDevice269->AddBridgePort(apDevices269.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode270 = wifiApNode270.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice270 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode270->AddDevice(apbridgeDevice270);
+
+	for (int portIter = 0; portIter < apdevices270.GetN(); ++portIter) {
+		apbridgeDevice270->AddBridgePort(apdevices270.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices270.GetN(); ++portIter) {
+		apbridgeDevice270->AddBridgePort(apDevices270.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode271 = wifiApNode271.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice271 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode271->AddDevice(apbridgeDevice271);
+
+	for (int portIter = 0; portIter < apdevices271.GetN(); ++portIter) {
+		apbridgeDevice271->AddBridgePort(apdevices271.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices271.GetN(); ++portIter) {
+		apbridgeDevice271->AddBridgePort(apDevices271.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode272 = wifiApNode272.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice272 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode272->AddDevice(apbridgeDevice272);
+
+	for (int portIter = 0; portIter < apdevices272.GetN(); ++portIter) {
+		apbridgeDevice272->AddBridgePort(apdevices272.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices272.GetN(); ++portIter) {
+		apbridgeDevice272->AddBridgePort(apDevices272.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode273 = wifiApNode273.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice273 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode273->AddDevice(apbridgeDevice273);
+
+	for (int portIter = 0; portIter < apdevices273.GetN(); ++portIter) {
+		apbridgeDevice273->AddBridgePort(apdevices273.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices273.GetN(); ++portIter) {
+		apbridgeDevice273->AddBridgePort(apDevices273.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode274 = wifiApNode274.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice274 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode274->AddDevice(apbridgeDevice274);
+
+	for (int portIter = 0; portIter < apdevices274.GetN(); ++portIter) {
+		apbridgeDevice274->AddBridgePort(apdevices274.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices274.GetN(); ++portIter) {
+		apbridgeDevice274->AddBridgePort(apDevices274.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode275 = wifiApNode275.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice275 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode275->AddDevice(apbridgeDevice275);
+
+	for (int portIter = 0; portIter < apdevices275.GetN(); ++portIter) {
+		apbridgeDevice275->AddBridgePort(apdevices275.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices275.GetN(); ++portIter) {
+		apbridgeDevice275->AddBridgePort(apDevices275.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode276 = wifiApNode276.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice276 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode276->AddDevice(apbridgeDevice276);
+
+	for (int portIter = 0; portIter < apdevices276.GetN(); ++portIter) {
+		apbridgeDevice276->AddBridgePort(apdevices276.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices276.GetN(); ++portIter) {
+		apbridgeDevice276->AddBridgePort(apDevices276.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode277 = wifiApNode277.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice277 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode277->AddDevice(apbridgeDevice277);
+
+	for (int portIter = 0; portIter < apdevices277.GetN(); ++portIter) {
+		apbridgeDevice277->AddBridgePort(apdevices277.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices277.GetN(); ++portIter) {
+		apbridgeDevice277->AddBridgePort(apDevices277.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode278 = wifiApNode278.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice278 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode278->AddDevice(apbridgeDevice278);
+
+	for (int portIter = 0; portIter < apdevices278.GetN(); ++portIter) {
+		apbridgeDevice278->AddBridgePort(apdevices278.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices278.GetN(); ++portIter) {
+		apbridgeDevice278->AddBridgePort(apDevices278.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode279 = wifiApNode279.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice279 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode279->AddDevice(apbridgeDevice279);
+
+	for (int portIter = 0; portIter < apdevices279.GetN(); ++portIter) {
+		apbridgeDevice279->AddBridgePort(apdevices279.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices279.GetN(); ++portIter) {
+		apbridgeDevice279->AddBridgePort(apDevices279.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode280 = wifiApNode280.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice280 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode280->AddDevice(apbridgeDevice280);
+
+	for (int portIter = 0; portIter < apdevices280.GetN(); ++portIter) {
+		apbridgeDevice280->AddBridgePort(apdevices280.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices280.GetN(); ++portIter) {
+		apbridgeDevice280->AddBridgePort(apDevices280.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode281 = wifiApNode281.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice281 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode281->AddDevice(apbridgeDevice281);
+
+	for (int portIter = 0; portIter < apdevices281.GetN(); ++portIter) {
+		apbridgeDevice281->AddBridgePort(apdevices281.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices281.GetN(); ++portIter) {
+		apbridgeDevice281->AddBridgePort(apDevices281.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode282 = wifiApNode282.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice282 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode282->AddDevice(apbridgeDevice282);
+
+	for (int portIter = 0; portIter < apdevices282.GetN(); ++portIter) {
+		apbridgeDevice282->AddBridgePort(apdevices282.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices282.GetN(); ++portIter) {
+		apbridgeDevice282->AddBridgePort(apDevices282.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode283 = wifiApNode283.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice283 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode283->AddDevice(apbridgeDevice283);
+
+	for (int portIter = 0; portIter < apdevices283.GetN(); ++portIter) {
+		apbridgeDevice283->AddBridgePort(apdevices283.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices283.GetN(); ++portIter) {
+		apbridgeDevice283->AddBridgePort(apDevices283.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode284 = wifiApNode284.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice284 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode284->AddDevice(apbridgeDevice284);
+
+	for (int portIter = 0; portIter < apdevices284.GetN(); ++portIter) {
+		apbridgeDevice284->AddBridgePort(apdevices284.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices284.GetN(); ++portIter) {
+		apbridgeDevice284->AddBridgePort(apDevices284.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode285 = wifiApNode285.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice285 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode285->AddDevice(apbridgeDevice285);
+
+	for (int portIter = 0; portIter < apdevices285.GetN(); ++portIter) {
+		apbridgeDevice285->AddBridgePort(apdevices285.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices285.GetN(); ++portIter) {
+		apbridgeDevice285->AddBridgePort(apDevices285.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode286 = wifiApNode286.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice286 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode286->AddDevice(apbridgeDevice286);
+
+	for (int portIter = 0; portIter < apdevices286.GetN(); ++portIter) {
+		apbridgeDevice286->AddBridgePort(apdevices286.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices286.GetN(); ++portIter) {
+		apbridgeDevice286->AddBridgePort(apDevices286.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode287 = wifiApNode287.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice287 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode287->AddDevice(apbridgeDevice287);
+
+	for (int portIter = 0; portIter < apdevices287.GetN(); ++portIter) {
+		apbridgeDevice287->AddBridgePort(apdevices287.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices287.GetN(); ++portIter) {
+		apbridgeDevice287->AddBridgePort(apDevices287.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode288 = wifiApNode288.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice288 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode288->AddDevice(apbridgeDevice288);
+
+	for (int portIter = 0; portIter < apdevices288.GetN(); ++portIter) {
+		apbridgeDevice288->AddBridgePort(apdevices288.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices288.GetN(); ++portIter) {
+		apbridgeDevice288->AddBridgePort(apDevices288.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode289 = wifiApNode289.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice289 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode289->AddDevice(apbridgeDevice289);
+
+	for (int portIter = 0; portIter < apdevices289.GetN(); ++portIter) {
+		apbridgeDevice289->AddBridgePort(apdevices289.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices289.GetN(); ++portIter) {
+		apbridgeDevice289->AddBridgePort(apDevices289.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode290 = wifiApNode290.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice290 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode290->AddDevice(apbridgeDevice290);
+
+	for (int portIter = 0; portIter < apdevices290.GetN(); ++portIter) {
+		apbridgeDevice290->AddBridgePort(apdevices290.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices290.GetN(); ++portIter) {
+		apbridgeDevice290->AddBridgePort(apDevices290.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode291 = wifiApNode291.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice291 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode291->AddDevice(apbridgeDevice291);
+
+	for (int portIter = 0; portIter < apdevices291.GetN(); ++portIter) {
+		apbridgeDevice291->AddBridgePort(apdevices291.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices291.GetN(); ++portIter) {
+		apbridgeDevice291->AddBridgePort(apDevices291.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode292 = wifiApNode292.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice292 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode292->AddDevice(apbridgeDevice292);
+
+	for (int portIter = 0; portIter < apdevices292.GetN(); ++portIter) {
+		apbridgeDevice292->AddBridgePort(apdevices292.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices292.GetN(); ++portIter) {
+		apbridgeDevice292->AddBridgePort(apDevices292.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode293 = wifiApNode293.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice293 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode293->AddDevice(apbridgeDevice293);
+
+	for (int portIter = 0; portIter < apdevices293.GetN(); ++portIter) {
+		apbridgeDevice293->AddBridgePort(apdevices293.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices293.GetN(); ++portIter) {
+		apbridgeDevice293->AddBridgePort(apDevices293.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode294 = wifiApNode294.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice294 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode294->AddDevice(apbridgeDevice294);
+
+	for (int portIter = 0; portIter < apdevices294.GetN(); ++portIter) {
+		apbridgeDevice294->AddBridgePort(apdevices294.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices294.GetN(); ++portIter) {
+		apbridgeDevice294->AddBridgePort(apDevices294.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode295 = wifiApNode295.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice295 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode295->AddDevice(apbridgeDevice295);
+
+	for (int portIter = 0; portIter < apdevices295.GetN(); ++portIter) {
+		apbridgeDevice295->AddBridgePort(apdevices295.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices295.GetN(); ++portIter) {
+		apbridgeDevice295->AddBridgePort(apDevices295.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode296 = wifiApNode296.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice296 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode296->AddDevice(apbridgeDevice296);
+
+	for (int portIter = 0; portIter < apdevices296.GetN(); ++portIter) {
+		apbridgeDevice296->AddBridgePort(apdevices296.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices296.GetN(); ++portIter) {
+		apbridgeDevice296->AddBridgePort(apDevices296.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode297 = wifiApNode297.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice297 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode297->AddDevice(apbridgeDevice297);
+
+	for (int portIter = 0; portIter < apdevices297.GetN(); ++portIter) {
+		apbridgeDevice297->AddBridgePort(apdevices297.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices297.GetN(); ++portIter) {
+		apbridgeDevice297->AddBridgePort(apDevices297.Get(portIter));
+	}
+
+//    aoNode298 = wifiApNode298.Get(0)
+//    apbridgeDevice298 = ns3::BridgeNetDevice();
+//    aoNode298.AddDevice(apbridgeDevice298)
+//
+//    for portIter in range(apdevices298.GetN()):
+//       apbridgeDevice298.AddBridgePort(apdevices298.Get(portIter))
+//
+//    for portIter in range(apDevices298.GetN()):
+//       apbridgeDevice298.AddBridgePort(apDevices298.Get(portIter))
+//
+//    aoNode299 = wifiApNode299.Get(0)
+//    apbridgeDevice299 = ns3::BridgeNetDevice();
+//    aoNode299.AddDevice(apbridgeDevice299)
+//
+//    for portIter in range(apdevices299.GetN()):
+//       apbridgeDevice299.AddBridgePort(apdevices299.Get(portIter))
+//
+//    for portIter in range(apDevices299.GetN()):
+//       apbridgeDevice299.AddBridgePort(apDevices299.Get(portIter))
+//
+	ns3::Ptr<ns3::Node> aoNode300 = wifiApNode300.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice300 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode300->AddDevice(apbridgeDevice300);
+
+	for (int portIter = 0; portIter < apdevices300.GetN(); ++portIter) {
+		apbridgeDevice300->AddBridgePort(apdevices300.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices300.GetN(); ++portIter) {
+		apbridgeDevice300->AddBridgePort(apDevices300.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode301 = wifiApNode301.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice301 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode301->AddDevice(apbridgeDevice301);
+
+	for (int portIter = 0; portIter < apdevices301.GetN(); ++portIter) {
+		apbridgeDevice301->AddBridgePort(apdevices301.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices301.GetN(); ++portIter) {
+		apbridgeDevice301->AddBridgePort(apDevices301.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode302 = wifiApNode302.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice302 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode302->AddDevice(apbridgeDevice302);
+
+	for (int portIter = 0; portIter < apdevices302.GetN(); ++portIter) {
+		apbridgeDevice302->AddBridgePort(apdevices302.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices302.GetN(); ++portIter) {
+		apbridgeDevice302->AddBridgePort(apDevices302.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode303 = wifiApNode303.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice303 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode303->AddDevice(apbridgeDevice303);
+
+	for (int portIter = 0; portIter < apdevices303.GetN(); ++portIter) {
+		apbridgeDevice303->AddBridgePort(apdevices303.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices303.GetN(); ++portIter) {
+		apbridgeDevice303->AddBridgePort(apDevices303.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode304 = wifiApNode304.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice304 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode304->AddDevice(apbridgeDevice304);
+
+	for (int portIter = 0; portIter < apdevices304.GetN(); ++portIter) {
+		apbridgeDevice304->AddBridgePort(apdevices304.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices304.GetN(); ++portIter) {
+		apbridgeDevice304->AddBridgePort(apDevices304.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode305 = wifiApNode305.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice305 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode305->AddDevice(apbridgeDevice305);
+
+	for (int portIter = 0; portIter < apdevices305.GetN(); ++portIter) {
+		apbridgeDevice305->AddBridgePort(apdevices305.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices305.GetN(); ++portIter) {
+		apbridgeDevice305->AddBridgePort(apDevices305.Get(portIter));
+	}
+
+//    aoNode306 = wifiApNode306.Get(0)
+//    apbridgeDevice306 = ns3::BridgeNetDevice();
+//    aoNode306.AddDevice(apbridgeDevice306)
+//
+//    for portIter in range(apdevices306.GetN()):
+//       apbridgeDevice306.AddBridgePort(apdevices306.Get(portIter))
+//
+//    for portIter in range(apDevices306.GetN()):
+//       apbridgeDevice306.AddBridgePort(apDevices306.Get(portIter))
+//
+	ns3::Ptr<ns3::Node> aoNode307 = wifiApNode307.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice307 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode307->AddDevice(apbridgeDevice307);
+
+	for (int portIter = 0; portIter < apdevices307.GetN(); ++portIter) {
+		apbridgeDevice307->AddBridgePort(apdevices307.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices307.GetN(); ++portIter) {
+		apbridgeDevice307->AddBridgePort(apDevices307.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode308 = wifiApNode308.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice308 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode308->AddDevice(apbridgeDevice308);
+
+	for (int portIter = 0; portIter < apdevices308.GetN(); ++portIter) {
+		apbridgeDevice308->AddBridgePort(apdevices308.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices308.GetN(); ++portIter) {
+		apbridgeDevice308->AddBridgePort(apDevices308.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode309 = wifiApNode309.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice309 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode309->AddDevice(apbridgeDevice309);
+
+	for (int portIter = 0; portIter < apdevices309.GetN(); ++portIter) {
+		apbridgeDevice309->AddBridgePort(apdevices309.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices309.GetN(); ++portIter) {
+		apbridgeDevice309->AddBridgePort(apDevices309.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode310 = wifiApNode310.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice310 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode310->AddDevice(apbridgeDevice310);
+
+	for (int portIter = 0; portIter < apdevices310.GetN(); ++portIter) {
+		apbridgeDevice310->AddBridgePort(apdevices310.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices310.GetN(); ++portIter) {
+		apbridgeDevice310->AddBridgePort(apDevices310.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode311 = wifiApNode311.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice311 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode311->AddDevice(apbridgeDevice311);
+
+	for (int portIter = 0; portIter < apdevices311.GetN(); ++portIter) {
+		apbridgeDevice311->AddBridgePort(apdevices311.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices311.GetN(); ++portIter) {
+		apbridgeDevice311->AddBridgePort(apDevices311.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode312 = wifiApNode312.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice312 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode312->AddDevice(apbridgeDevice312);
+
+	for (int portIter = 0; portIter < apdevices312.GetN(); ++portIter) {
+		apbridgeDevice312->AddBridgePort(apdevices312.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices312.GetN(); ++portIter) {
+		apbridgeDevice312->AddBridgePort(apDevices312.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode313 = wifiApNode313.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice313 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode313->AddDevice(apbridgeDevice313);
+
+	for (int portIter = 0; portIter < apdevices313.GetN(); ++portIter) {
+		apbridgeDevice313->AddBridgePort(apdevices313.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices313.GetN(); ++portIter) {
+		apbridgeDevice313->AddBridgePort(apDevices313.Get(portIter));
+	}
+
+	ns3::Ptr<ns3::Node> aoNode314 = wifiApNode314.Get(0);
+	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice314 = ns3::CreateObject<
+			ns3::BridgeNetDevice>();
+	aoNode314->AddDevice(apbridgeDevice314);
+
+	for (int portIter = 0; portIter < apdevices314.GetN(); ++portIter) {
+		apbridgeDevice314->AddBridgePort(apdevices314.Get(portIter));
+	}
+
+	for (int portIter = 0; portIter < apDevices314.GetN(); ++portIter) {
+		apbridgeDevice314->AddBridgePort(apDevices314.Get(portIter));
+	}
+
+//    aoNode315 = wifiApNode315.Get(0)
+//    apbridgeDevice315 = ns3::BridgeNetDevice();
+//    aoNode315.AddDevice(apbridgeDevice315)
+//
+//    for portIter in range(apdevices315.GetN()):
+//       apbridgeDevice315.AddBridgePort(apdevices315.Get(portIter))
+//
+//    for portIter in range(apDevices315.GetN()):
+//       apbridgeDevice315.AddBridgePort(apDevices315.Get(portIter))
+//
+
 	return EXIT_SUCCESS;
 } //main
