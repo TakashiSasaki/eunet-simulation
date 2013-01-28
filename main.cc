@@ -61,7 +61,7 @@ int main(int argc, char** argv) {
 //csmaSwitchtarumi = ns3::NodeContainer()
 	csmaSwitchtarumi.Create(1);
 
-	TerminalSets terminal_sets(348);
+	TerminalSets terminal_sets(350);
 
 	WifiStaNodeSets wifi_sta_node_sets(350);
 	WifiApNodes wifi_ap_nodes(350);
