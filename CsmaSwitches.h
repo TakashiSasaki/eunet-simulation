@@ -11,8 +11,9 @@
 #include <vector>
 
 void createCsmaSwitch(std::vector<ns3::Ptr<ns3::NodeContainer> >::iterator i) {
-	i = ns3::CreateObject<ns3::NodeContainer>();
-	ns3::NodeContainer &x = &i;
+	ns3::Ptr<ns3::NodeContainer> & p = * i;
+	p = ns3::CreateObject<ns3::NodeContainer>();
+	ns3::NodeContainer & x = * p;
 	x.Create(1);
 }
 
@@ -20,7 +21,8 @@ class CsmaSwitches {
 	std::vector<ns3::Ptr<ns3::NodeContainer> > csmaSwitches;
 public:
 	const ns3::NodeContainer& operator[](const int index) const {
-		const ns3::NodeContainer& x = this->csmaSwitches[index];
+		const ns3::Ptr<ns3::NodeContainer> & p = this->csmaSwitches[index];
+		const ns3::NodeContainer & x = p.operator *();
 		return x;
 	}
 
