@@ -1,4 +1,4 @@
-CXXFLAGS=-v -Wall -I/usr/include/ns3.14.1 -O0
+#CXXFLAGS=-v -Wall -I/usr/include/ns3.14.1 -O0
 
 default: main.o
 
