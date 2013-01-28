@@ -27,11 +27,11 @@
 #include "DefaultMobilityHelper.h"
 #include "WifiPhys.h"
 
-NS_LOG_COMPONENT_DEFINE("OnOffApplication");
+//NS_LOG_COMPONENT_DEFINE("OnOffApplication");
 
 int main(int argc, char** argv) {
 	std::cout << "entered in main function." << std::endl;
-	ns3::LogComponentEnable("CsmaBridgeOneHopExample", ns3::LOG_LEVEL_INFO);
+	//ns3::LogComponentEnable("CsmaBridgeOneHopExample", ns3::LOG_LEVEL_INFO);
 	ns3::CommandLine cmd;
 	cmd.Parse(argc, argv);
 
