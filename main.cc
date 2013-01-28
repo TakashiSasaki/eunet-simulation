@@ -54,1021 +54,8 @@ int main(int argc, char** argv) {
 //csmaSwitchtarumi = ns3::NodeContainer()
 	csmaSwitchtarumi.Create(1);
 
-//csmaSwitch5 nodes
-	ns3::NodeContainer terminals5;
-	terminals5.Create(15);
-//csmaSwitch6 nodes
-	ns3::NodeContainer terminals6;
-	terminals6.Create(15);
-//csmaSwitch7 nodes
-	ns3::NodeContainer terminals7;
-	terminals7.Create(15);
-//csmaSwitch8 nodes
-	ns3::NodeContainer terminals8;
-	terminals8.Create(15);
-//csmaSwitch9 nodes
-	ns3::NodeContainer terminals9;
-	terminals9.Create(15);
-//csmaSwitch10 nodes
-	ns3::NodeContainer terminals10;
-	terminals10.Create(15);
-//csmaSwitch11 nodes
-	ns3::NodeContainer terminals11;
-	terminals11.Create(15);
-//csmaSwitch12 nodes
-	ns3::NodeContainer terminals12;
-	terminals12.Create(15);
-//csmaSwitch13 nodes
-	ns3::NodeContainer terminals13;
-	terminals13.Create(15);
-//csmaSwitch14 nodes
-	ns3::NodeContainer terminals14;
-	terminals14.Create(15);
-//csmaSwitch15 nodes
-	ns3::NodeContainer terminals15;
-	terminals15.Create(15);
-//csmaSwitch16 nodes
-	ns3::NodeContainer terminals16;
-	terminals16.Create(15);
-//csmaSwitch17 nodes
-	ns3::NodeContainer terminals17;
-	terminals17.Create(15);
-//csmaSwitch18 nodes
-	ns3::NodeContainer terminals18;
-	terminals18.Create(15);
-//csmaSwitch19 nodes
-	ns3::NodeContainer terminals19;
-	terminals19.Create(15);
-//csmaSwitch20 nodes
-	ns3::NodeContainer terminals20;
-	terminals20.Create(15);
-//csmaSwitch21 nodes
-	ns3::NodeContainer terminals21;
-	terminals21.Create(15);
-//csmaSwitch22 nodes
-	ns3::NodeContainer terminals22;
-	terminals22.Create(15);
-//csmaSwitch23 nodes
-	ns3::NodeContainer terminals23;
-	terminals23.Create(15);
-//csmaSwitch24 nodes
-	ns3::NodeContainer terminals24;
-	terminals24.Create(15);
-//csmaSwitch25 nodes
-	ns3::NodeContainer terminals25;
-	terminals25.Create(15);
-//csmaSwitch26 nodes
-	ns3::NodeContainer terminals26;
-	terminals26.Create(15);
-//csmaSwitch27 nodes
-	ns3::NodeContainer terminals27;
-	terminals27.Create(15);
-//csmaSwitch28 nodes
-	ns3::NodeContainer terminals28;
-	terminals28.Create(15);
-//csmaSwitch29 nodes
-	ns3::NodeContainer terminals29;
-	terminals29.Create(15);
-//csmaSwitch30 nodes
-	ns3::NodeContainer terminals30;
-	terminals30.Create(15);
-//csmaSwitch31 nodes
-	ns3::NodeContainer terminals31;
-	terminals31.Create(15);
-//csmaSwitch32 nodes
-	ns3::NodeContainer terminals32;
-	terminals32.Create(15);
-//csmaSwitch33 nodes
-	ns3::NodeContainer terminals33;
-	terminals33.Create(15);
-//csmaSwitch34 nodes
-	ns3::NodeContainer terminals34;
-	terminals34.Create(15);
-//csmaSwitch35 nodes
-	ns3::NodeContainer terminals35;
-	terminals35.Create(15);
-//csmaSwitch36 nodes
-	ns3::NodeContainer terminals36;
-	terminals36.Create(15);
-//csmaSwitch37 nodes
-	ns3::NodeContainer terminals37;
-	terminals37.Create(15);
-//csmaSwitch38 nodes
-	ns3::NodeContainer terminals38;
-	terminals38.Create(15);
-//csmaSwitch39 nodes
-	ns3::NodeContainer terminals39;
-	terminals39.Create(15);
-//csmaSwitch40 nodes
-	ns3::NodeContainer terminals40;
-	terminals40.Create(15);
-//csmaSwitch41 nodes
-	ns3::NodeContainer terminals41;
-	terminals41.Create(15);
-//csmaSwitch42 nodes
-	ns3::NodeContainer terminals42;
-	terminals42.Create(15);
-//csmaSwitch43 nodes
-	ns3::NodeContainer terminals43;
-	terminals43.Create(15);
-//csmaSwitch44 nodes
-	ns3::NodeContainer terminals44;
-	terminals44.Create(15);
-//csmaSwitch45 nodes
-	ns3::NodeContainer terminals45;
-	terminals45.Create(15);
-//csmaSwitch46 nodes
-	ns3::NodeContainer terminals46;
-	terminals46.Create(15);
-//csmaSwitch47 nodes
-	ns3::NodeContainer terminals47;
-	terminals47.Create(15);
-//csmaSwitch48 nodes
-	ns3::NodeContainer terminals48;
-	terminals48.Create(15);
-//csmaSwitch49 nodes
-	ns3::NodeContainer terminals49;
-	terminals49.Create(15);
-//csmaSwitch50 nodes
-	ns3::NodeContainer terminals50;
-	terminals50.Create(15);
-//csmaSwitch51 nodes
-	ns3::NodeContainer terminals51;
-	terminals51.Create(15);
-//csmaSwitch52 nodes
-	ns3::NodeContainer terminals52;
-	terminals52.Create(15);
-//csmaSwitch53 nodes
-	ns3::NodeContainer terminals53;
-	terminals53.Create(15);
-//csmaSwitch54 nodes
-	ns3::NodeContainer terminals54;
-	terminals54.Create(15);
-//csmaSwitch55 nodes
-	ns3::NodeContainer terminals55;
-	terminals55.Create(15);
-//csmaSwitch56 nodes
-	ns3::NodeContainer terminals56;
-	terminals56.Create(15);
-//csmaSwitch57 nodes
-	ns3::NodeContainer terminals57;
-	terminals57.Create(15);
-//csmaSwitch58 nodes
-	ns3::NodeContainer terminals58;
-	terminals58.Create(15);
-//csmaSwitch59 nodes
-	ns3::NodeContainer terminals59;
-	terminals59.Create(15);
-//csmaSwitch60 nodes
-	ns3::NodeContainer terminals60;
-	terminals60.Create(15);
-//csmaSwitch61 nodes
-	ns3::NodeContainer terminals61;
-	terminals61.Create(15);
-//csmaSwitch62 nodes
-	ns3::NodeContainer terminals62;
-	terminals62.Create(15);
-//csmaSwitch63 nodes
-	ns3::NodeContainer terminals63;
-	terminals63.Create(15);
-//csmaSwitch64 nodes
-	ns3::NodeContainer terminals64;
-	terminals64.Create(15);
-//csmaSwitch65 nodes
-	ns3::NodeContainer terminals65;
-	terminals65.Create(15);
-//csmaSwitch66 nodes
-	ns3::NodeContainer terminals66;
-	terminals66.Create(15);
-//csmaSwitch67 nodes
-	ns3::NodeContainer terminals67;
-	terminals67.Create(15);
-//csmaSwitch68 nodes
-	ns3::NodeContainer terminals68;
-	terminals68.Create(15);
-//csmaSwitch69 nodes
-	ns3::NodeContainer terminals69;
-	terminals69.Create(15);
-//csmaSwitch70 nodes
-	ns3::NodeContainer terminals70;
-	terminals70.Create(15);
-//csmaSwitch71 nodes
-	ns3::NodeContainer terminals71;
-	terminals71.Create(15);
-//csmaSwitch72 nodes
-	ns3::NodeContainer terminals72;
-	terminals72.Create(15);
-//csmaSwitch73 nodes
-	ns3::NodeContainer terminals73;
-	terminals73.Create(15);
-//csmaSwitch74 nodes
-	ns3::NodeContainer terminals74;
-	terminals74.Create(15);
-//csmaSwitch75 nodes
-	ns3::NodeContainer terminals75;
-	terminals75.Create(15);
-//csmaSwitch76 nodes
-	ns3::NodeContainer terminals76;
-	terminals76.Create(15);
-//csmaSwitch77 nodes
-	ns3::NodeContainer terminals77;
-	terminals77.Create(15);
-//csmaSwitch78 nodes
-	ns3::NodeContainer terminals78;
-	terminals78.Create(15);
-//csmaSwitch79 nodes
-	ns3::NodeContainer terminals79;
-	terminals79.Create(15);
-//csmaSwitch81 nodes
-	ns3::NodeContainer terminals81;
-	terminals81.Create(15);
-//csmaSwitch82 nodes
-	ns3::NodeContainer terminals82;
-	terminals82.Create(15);
-//csmaSwitch83 nodes
-	ns3::NodeContainer terminals83;
-	terminals83.Create(15);
-//csmaSwitch84 nodes
-	ns3::NodeContainer terminals84;
-	terminals84.Create(15);
-//csmaSwitch85 nodes
-	ns3::NodeContainer terminals85;
-	terminals85.Create(15);
-//csmaSwitch86 nodes
-	ns3::NodeContainer terminals86;
-	terminals86.Create(15);
-//csmaSwitch87 nodes
-	ns3::NodeContainer terminals87;
-	terminals87.Create(15);
-//csmaSwitch88 nodes
-	ns3::NodeContainer terminals88;
-	terminals88.Create(15);
-//csmaSwitch89 nodes
-	ns3::NodeContainer terminals89;
-	terminals89.Create(15);
-//csmaSwitch90 nodes
-	ns3::NodeContainer terminals90;
-	terminals90.Create(15);
-//csmaSwitch91 nodes
-	ns3::NodeContainer terminals91;
-	terminals91.Create(15);
-//csmaSwitch92 nodes
-	ns3::NodeContainer terminals92;
-	terminals92.Create(15);
-//csmaSwitch93 nodes
-	ns3::NodeContainer terminals93;
-	terminals93.Create(15);
-//csmaSwitch94 nodes
-	ns3::NodeContainer terminals94;
-	terminals94.Create(15);
-//csmaSwitch95 nodes
-	ns3::NodeContainer terminals95;
-	terminals95.Create(15);
-//csmaSwitch96 nodes
-	ns3::NodeContainer terminals96;
-	terminals96.Create(15);
-//csmaSwitch97 nodes
-	ns3::NodeContainer terminals97;
-	terminals97.Create(15);
-//csmaSwitch98 nodes
-	ns3::NodeContainer terminals98;
-	terminals98.Create(15);
-//csmaSwitch99 nodes
-	ns3::NodeContainer terminals99;
-	terminals99.Create(15);
-//csmaSwitch100 nodes
-	ns3::NodeContainer terminals100;
-	terminals100.Create(15);
-//csmaSwitch101 nodes
-	ns3::NodeContainer terminals101;
-	terminals101.Create(15);
-//csmaSwitch102 nodes
-	ns3::NodeContainer terminals102;
-	terminals102.Create(15);
-//csmaSwitch103 nodes
-	ns3::NodeContainer terminals103;
-	terminals103.Create(15);
-//csmaSwitch104 nodes
-	ns3::NodeContainer terminals104;
-	terminals104.Create(15);
-//csmaSwitch105 nodes
-	ns3::NodeContainer terminals105;
-	terminals105.Create(15);
-//csmaSwitch106 nodes
-	ns3::NodeContainer terminals106;
-	terminals106.Create(15);
-//csmaSwitch107 nodes
-	ns3::NodeContainer terminals107;
-	terminals107.Create(15);
-//csmaSwitch108 nodes
-	ns3::NodeContainer terminals108;
-	terminals108.Create(15);
-//csmaSwitch109 nodes
-	ns3::NodeContainer terminals109;
-	terminals109.Create(15);
-//csmaSwitch110 nodes
-	ns3::NodeContainer terminals110;
-	terminals110.Create(15);
-//csmaSwitch111 nodes
-	ns3::NodeContainer terminals111;
-	terminals111.Create(15);
-//csmaSwitch112 nodes
-	ns3::NodeContainer terminals112;
-	terminals112.Create(15);
-//csmaSwitch114 nodes
-	ns3::NodeContainer terminals114;
-	terminals114.Create(15);
-//csmaSwitch115 nodes
-	ns3::NodeContainer terminals115;
-	terminals115.Create(15);
-//csmaSwitch116 nodes
-	ns3::NodeContainer terminals116;
-	terminals116.Create(15);
-//csmaSwitch117 nodes
-	ns3::NodeContainer terminals117;
-	terminals117.Create(15);
-//csmaSwitch118 nodes
-	ns3::NodeContainer terminals118;
-	terminals118.Create(15);
-//csmaSwitch119 nodes
-	ns3::NodeContainer terminals119;
-	terminals119.Create(15);
-//csmaSwitch120 nodes
-	ns3::NodeContainer terminals120;
-	terminals120.Create(15);
-//csmaSwitch121 nodes
-	ns3::NodeContainer terminals121;
-	terminals121.Create(15);
-//csmaSwitch122 nodes
-	ns3::NodeContainer terminals122;
-	terminals122.Create(15);
-//csmaSwitch123 nodes
-	ns3::NodeContainer terminals123;
-	terminals123.Create(15);
-//csmaSwitch124 nodes
-	ns3::NodeContainer terminals124;
-	terminals124.Create(15);
-//csmaSwitch125 nodes
-	ns3::NodeContainer terminals125;
-	terminals125.Create(15);
-//csmaSwitch126 nodes
-	ns3::NodeContainer terminals126;
-	terminals126.Create(15);
-//csmaSwitch127 nodes
-	ns3::NodeContainer terminals127;
-	terminals127.Create(15);
-//csmaSwitch128nodes
-	ns3::NodeContainer terminals128;
-	terminals128.Create(15);
-//csmaSwitch129 nodes
-	ns3::NodeContainer terminals129;
-	terminals129.Create(15);
-//csmaSwitch130 nodes
-	ns3::NodeContainer terminals130;
-	terminals130.Create(15);
-//csmaSwitch131 nodes
-	ns3::NodeContainer terminals131;
-	terminals131.Create(15);
-//csmaSwitch132 nodes
-	ns3::NodeContainer terminals132;
-	terminals132.Create(15);
-//csmaSwitch133 nodes
-	ns3::NodeContainer terminals133;
-	terminals133.Create(15);
-//csmaSwitch134 nodes
-	ns3::NodeContainer terminals134;
-	terminals134.Create(15);
-//csmaSwitch135 nodes
-	ns3::NodeContainer terminals135;
-	terminals135.Create(15);
-//csmaSwitch136 nodes
-	ns3::NodeContainer terminals136;
-	terminals136.Create(15);
-//csmaSwitch137 nodes
-	ns3::NodeContainer terminals137;
-	terminals137.Create(15);
-//csmaSwitch138 nodes
-	ns3::NodeContainer terminals138;
-	terminals138.Create(15);
-//csmaSwitch139 nodes
-	ns3::NodeContainer terminals139;
-	terminals139.Create(15);
-//csmaSwitch140 nodes
-	ns3::NodeContainer terminals140;
-	terminals140.Create(15);
-//csmaSwitch141 nodes
-	ns3::NodeContainer terminals141;
-	terminals141.Create(15);
-//csmaSwitch142 nodes
-	ns3::NodeContainer terminals142;
-	terminals142.Create(15);
-//csmaSwitch143 nodes
-	ns3::NodeContainer terminals143;
-	terminals143.Create(15);
-//csmaSwitch144 nodes
-	ns3::NodeContainer terminals144;
-	terminals144.Create(15);
-//csmaSwitch145 nodes
-	ns3::NodeContainer terminals145;
-	terminals145.Create(15);
-//csmaSwitch146 nodes
-	ns3::NodeContainer terminals146;
-	terminals146.Create(15);
-//csmaSwitch147 nodes
-	ns3::NodeContainer terminals147;
-	terminals147.Create(15);
-//csmaSwitch148 nodes
-	ns3::NodeContainer terminals148;
-	terminals148.Create(15);
-//csmaSwitch149 nodes
-	ns3::NodeContainer terminals149;
-	terminals149.Create(15);
-//csmaSwitch150 nodes
-	ns3::NodeContainer terminals150;
-	terminals150.Create(15);
-//csmaSwitch151 nodes
-	ns3::NodeContainer terminals151;
-	terminals151.Create(15);
-//csmaSwitch152 nodes
-	ns3::NodeContainer terminals152;
-	terminals152.Create(15);
-//csmaSwitch153 nodes
-	ns3::NodeContainer terminals153;
-	terminals153.Create(15);
-//csmaSwitch154 nodes
-	ns3::NodeContainer terminals154;
-	terminals154.Create(15);
-//csmaSwitch155 nodes
-	ns3::NodeContainer terminals155;
-	terminals155.Create(15);
-//csmaSwitch156 nodes
-	ns3::NodeContainer terminals156;
-	terminals156.Create(15);
-//csmaSwitch157 nodes
-	ns3::NodeContainer terminals157;
-	terminals157.Create(15);
-//csmaSwitch158 nodes
-	ns3::NodeContainer terminals158;
-	terminals158.Create(15);
-//csmaSwitch159 nodes
-	ns3::NodeContainer terminals159;
-	terminals159.Create(15);
-//kougakubu--sougoukenkyu
-//csmaSwitch161 nodes
-	ns3::NodeContainer terminals161;
-	terminals161.Create(15);
-//csmaSwitch162 nodes
-	ns3::NodeContainer terminals162;
-	terminals162.Create(15);
-//csmaSwitch163 nodes
-	ns3::NodeContainer terminals163;
-	terminals163.Create(15);
-//csmaSwitch164 nodes
-	ns3::NodeContainer terminals164;
-	terminals164.Create(15);
-//csmaSwitch165 nodes
-	ns3::NodeContainer terminals165;
-	terminals165.Create(15);
-//csmaSwitch166 nodes
-	ns3::NodeContainer terminals166;
-	terminals166.Create(15);
-//csmaSwitch167 nodes
-	ns3::NodeContainer terminals167;
-	terminals167.Create(15);
-//csmaSwitch168 nodes
-	ns3::NodeContainer terminals168;
-	terminals168.Create(15);
-//csmaSwitch169 nodes
-	ns3::NodeContainer terminals169;
-	terminals169.Create(15);
-//csmaSwitch170 nodes
-	ns3::NodeContainer terminals170;
-	terminals170.Create(15);
-//csmaSwitch171 nodes
-	ns3::NodeContainer terminals171;
-	terminals171.Create(15);
-//csmaSwitch172 nodes
-	ns3::NodeContainer terminals172;
-	terminals172.Create(15);
-//csmaSwitch173 nodes
-	ns3::NodeContainer terminals173;
-	terminals173.Create(15);
-//csmaSwitch174 nodes
-	ns3::NodeContainer terminals174;
-	terminals174.Create(15);
-//csmaSwitch175 nodes
-	ns3::NodeContainer terminals175;
-	terminals175.Create(15);
-//csmaSwitch176 nodes
-	ns3::NodeContainer terminals176;
-	terminals176.Create(15);
-//csmaSwitch177 nodes
-	ns3::NodeContainer terminals177;
-	terminals177.Create(15);
-//csmaSwitch178 nodes
-	ns3::NodeContainer terminals178;
-	terminals178.Create(15);
-//csmaSwitch179 nodes
-	ns3::NodeContainer terminals179;
-	terminals179.Create(15);
-//csmaSwitch180 nodes
-	ns3::NodeContainer terminals180;
-	terminals180.Create(15);
-//csmaSwitch181 nodes
-	ns3::NodeContainer terminals181;
-	terminals181.Create(15);
-//csmaSwitch182 nodes
-	ns3::NodeContainer terminals182;
-	terminals182.Create(15);
-//csmaSwitch183 nodes
-	ns3::NodeContainer terminals183;
-	terminals183.Create(15);
-//csmaSwitch184 nodes
-	ns3::NodeContainer terminals184;
-	terminals184.Create(15);
-//csmaSwitch185 nodes
-	ns3::NodeContainer terminals185;
-	terminals185.Create(15);
-//csmaSwitch186 nodes
-	ns3::NodeContainer terminals186;
-	terminals186.Create(15);
-//csmaSwitch187 nodes
-	ns3::NodeContainer terminals187;
-	terminals187.Create(15);
-//csmaSwitch188 nodes
-	ns3::NodeContainer terminals188;
-	terminals188.Create(15);
-//csmaSwitch189 nodes
-	ns3::NodeContainer terminals189;
-	terminals189.Create(15);
-//csmaSwitch190 nodes
-	ns3::NodeContainer terminals190;
-	terminals190.Create(15);
-//csmaSwitch191 nodes
-	ns3::NodeContainer terminals191;
-	terminals191.Create(15);
-//csmaSwitch192 nodes
-	ns3::NodeContainer terminals192;
-	terminals192.Create(15);
-//csmaSwitch193 nodes
-	ns3::NodeContainer terminals193;
-	terminals193.Create(15);
-//csmaSwitch194 nodes
-	ns3::NodeContainer terminals194;
-	terminals194.Create(15);
-//csmaSwitch195 nodes
-	ns3::NodeContainer terminals195;
-	terminals195.Create(15);
-//csmaSwitch196 nodes
-	ns3::NodeContainer terminals196;
-	terminals196.Create(15);
-//csmaSwitch197 nodes
-	ns3::NodeContainer terminals197;
-	terminals197.Create(15);
-//csmaSwitch198 nodes
-	ns3::NodeContainer terminals198;
-	terminals198.Create(15);
-//csmaSwitch199 nodes
-	ns3::NodeContainer terminals199;
-	terminals199.Create(15);
-//csmaSwitch200 nodes
-	ns3::NodeContainer terminals200;
-	terminals200.Create(15);
-//csmaSwitch201 nodes
-	ns3::NodeContainer terminals201;
-	terminals201.Create(15);
-//csmaSwitch202 nodes
-	ns3::NodeContainer terminals202;
-	terminals202.Create(15);
-//csmaSwitch203 nodes
-	ns3::NodeContainer terminals203;
-	terminals203.Create(15);
-//csmaSwitch204 nodes
-	ns3::NodeContainer terminals204;
-	terminals204.Create(15);
-//csmaSwitch205 nodes
-	ns3::NodeContainer terminals205;
-	terminals205.Create(15);
-//csmaSwitch206 nodes
-	ns3::NodeContainer terminals206;
-	terminals206.Create(15);
-//csmaSwitch207 nodes
-	ns3::NodeContainer terminals207;
-	terminals207.Create(15);
-//csmaSwitch208 nodes
-	ns3::NodeContainer terminals208;
-	terminals208.Create(15);
-//csmaSwitch209 nodes
-	ns3::NodeContainer terminals209;
-	terminals209.Create(15);
-//csmaSwitch210 nodes
-	ns3::NodeContainer terminals210;
-	terminals210.Create(15);
-//csmaSwitch211 nodes
-	ns3::NodeContainer terminals211;
-	terminals211.Create(15);
-//csmaSwitch212 nodes
-	ns3::NodeContainer terminals212;
-	terminals212.Create(15);
-//csmaSwitch214 nodes
-	ns3::NodeContainer terminals214;
-	terminals214.Create(15);
-//csmaSwitch215 nodes
-	ns3::NodeContainer terminals215;
-	terminals215.Create(15);
-//csmaSwitch216 nodes
-	ns3::NodeContainer terminals216;
-	terminals216.Create(15);
-//csmaSwitch217 nodes
-	ns3::NodeContainer terminals217;
-	terminals217.Create(15);
-//csmaSwitch218 nodes
-	ns3::NodeContainer terminals218;
-	terminals218.Create(15);
-//csmaSwitch219 nodes
-	ns3::NodeContainer terminals219;
-	terminals219.Create(15);
-//csmaSwitch220 nodes
-	ns3::NodeContainer terminals220;
-	terminals220.Create(15);
-//csmaSwitch221 nodes
-	ns3::NodeContainer terminals221;
-	terminals221.Create(15);
-//csmaSwitch222 nodes
-	ns3::NodeContainer terminals222;
-	terminals222.Create(15);
-//csmaSwitch223 nodes
-	ns3::NodeContainer terminals223;
-	terminals223.Create(15);
-//csmaSwitch224 nodes
-	ns3::NodeContainer terminals224;
-	terminals224.Create(15);
-//csmaSwitch225 nodes
-	ns3::NodeContainer terminals225;
-	terminals225.Create(15);
-//csmaSwitch226 nodes
-	ns3::NodeContainer terminals226;
-	terminals226.Create(15);
-//csmaSwitch227 nodes
-	ns3::NodeContainer terminals227;
-	terminals227.Create(15);
-//csmaSwitch228 nodes
-	ns3::NodeContainer terminals228;
-	terminals228.Create(15);
-//csmaSwitch229 nodes
-	ns3::NodeContainer terminals229;
-	terminals229.Create(15);
-//csmaSwitch230 nodes
-	ns3::NodeContainer terminals230;
-	terminals230.Create(15);
-//csmaSwitch231 nodes
-	ns3::NodeContainer terminals231;
-	terminals231.Create(15);
-//csmaSwitch232 nodes
-	ns3::NodeContainer terminals232;
-	terminals232.Create(15);
-//csmaSwitch233 nodes
-	ns3::NodeContainer terminals233;
-	terminals233.Create(15);
-//csmaSwitch234 nodes
-	ns3::NodeContainer terminals234;
-	terminals234.Create(15);
-//csmaSwitch235 nodes
-	ns3::NodeContainer terminals235;
-	terminals235.Create(15);
-//csmaSwitch236 nodes
-	ns3::NodeContainer terminals236;
-	terminals236.Create(15);
-//csmaSwitch237 nodes
-	ns3::NodeContainer terminals237;
-	terminals237.Create(15);
-//csmaSwitch238 nodes
-	ns3::NodeContainer terminals238;
-	terminals238.Create(15);
-//csmaSwitch239 nodes
-	ns3::NodeContainer terminals239;
-	terminals239.Create(15);
-//csmaSwitch240 nodes
-	ns3::NodeContainer terminals240;
-	terminals240.Create(15);
-//csmaSwitch241 nodes
-	ns3::NodeContainer terminals241;
-	terminals241.Create(15);
-//csmaSwitch242 nodes
-	ns3::NodeContainer terminals242;
-	terminals242.Create(15);
-//csmaSwitch243 nodes
-	ns3::NodeContainer terminals243;
-	terminals243.Create(15);
-//csmaSwitch244 nodes
-	ns3::NodeContainer terminals244;
-	terminals244.Create(15);
-//csmaSwitch245 nodes
-	ns3::NodeContainer terminals245;
-	terminals245.Create(15);
-//csmaSwitch246 nodes
-	ns3::NodeContainer terminals246;
-	terminals246.Create(15);
-//csmaSwitch247 nodes
-	ns3::NodeContainer terminals247;
-	terminals247.Create(15);
-//csmaSwitch248 nodes
-	ns3::NodeContainer terminals248;
-	terminals248.Create(15);
-//csmaSwitch284 nodes
-	ns3::NodeContainer terminals284;
-	terminals284.Create(15);
-//csmaSwitch249 nodes
-	ns3::NodeContainer terminals249;
-	terminals249.Create(15);
-//csmaSwitch250 nodes
-	ns3::NodeContainer terminals250;
-	terminals250.Create(15);
-//csmaSwitch251 nodes
-	ns3::NodeContainer terminals251;
-	terminals251.Create(15);
-//csmaSwitch252 nodes
-	ns3::NodeContainer terminals252;
-	terminals252.Create(15);
-//csmaSwitch253 nodes
-	ns3::NodeContainer terminals253;
-	terminals253.Create(15);
-//csmaSwitch254 nodes
-	ns3::NodeContainer terminals254;
-	terminals254.Create(15);
-//csmaSwitch255 nodes
-	ns3::NodeContainer terminals255;
-	terminals255.Create(15);
-//csmaSwitch256 nodes
-	ns3::NodeContainer terminals256;
-	terminals256.Create(15);
-//csmaSwitch257 nodes
-	ns3::NodeContainer terminals257;
-	terminals257.Create(15);
-//csmaSwitch258 nodes
-	ns3::NodeContainer terminals258;
-	terminals258.Create(15);
-//csmaSwitch259 nodes
-	ns3::NodeContainer terminals259;
-	terminals259.Create(15);
-//csmaSwitch260 nodes
-	ns3::NodeContainer terminals260;
-	terminals260.Create(15);
-//csmaSwitch261 nodes
-	ns3::NodeContainer terminals261;
-	terminals261.Create(15);
-//csmaSwitch262 nodes
-	ns3::NodeContainer terminals262;
-	terminals262.Create(15);
-//csmaSwitch263 nodes
-	ns3::NodeContainer terminals263;
-	terminals263.Create(15);
-//csmaSwitch264 nodes
-	ns3::NodeContainer terminals264;
-	terminals264.Create(15);
-//csmaSwitch265 nodes
-	ns3::NodeContainer terminals265;
-	terminals265.Create(15);
-//csmaSwitch266 nodes
-	ns3::NodeContainer terminals266;
-	terminals266.Create(15);
-//csmaSwitch267 nodes
-	ns3::NodeContainer terminals267;
-	terminals267.Create(15);
-//csmaSwitch268 nodes
-	ns3::NodeContainer terminals268;
-	terminals268.Create(15);
-//csmaSwitch269 nodes
-	ns3::NodeContainer terminals269;
-	terminals269.Create(15);
-//csmaSwitch270 nodes
-	ns3::NodeContainer terminals270;
-	terminals270.Create(15);
-//csmaSwitch272 nodes
-	ns3::NodeContainer terminals272;
-	terminals272.Create(15);
-//csmaSwitch273 nodes
-	ns3::NodeContainer terminals273;
-	terminals273.Create(15);
-//csmaSwitch274 nodes
-	ns3::NodeContainer terminals274;
-	terminals274.Create(15);
-//csmaSwitch275 nodes
-	ns3::NodeContainer terminals275;
-	terminals275.Create(15);
-//csmaSwitch276 nodes
-	ns3::NodeContainer terminals276;
-	terminals276.Create(15);
-//csmaSwitch277 nodes
-	ns3::NodeContainer terminals277;
-	terminals277.Create(15);
-//csmaSwitch278 nodes
-	ns3::NodeContainer terminals278;
-	terminals278.Create(15);
-//csmaSwitch279 nodes
-	ns3::NodeContainer terminals279;
-	terminals279.Create(15);
-//csmaSwitch280 nodes
-	ns3::NodeContainer terminals280;
-	terminals280.Create(15);
-//csmaSwitch281 nodes
-	ns3::NodeContainer terminals281;
-	terminals281.Create(15);
-//csmaSwitch282 nodes
-	ns3::NodeContainer terminals282;
-	terminals282.Create(15);
-//csmaSwitch283 nodes
-	ns3::NodeContainer terminals283;
-	terminals283.Create(15);
-//csmaSwitch285 nodes
-	ns3::NodeContainer terminals285;
-	terminals285.Create(15);
-//csmaSwitch286 nodes
-	ns3::NodeContainer terminals286;
-	terminals286.Create(15);
-//csmaSwitch287 nodes
-	ns3::NodeContainer terminals287;
-	terminals287.Create(15);
-//csmaSwitch288 nodes
-	ns3::NodeContainer terminals288;
-	terminals288.Create(15);
-//csmaSwitch289 nodes
-	ns3::NodeContainer terminals289;
-	terminals289.Create(15);
-//csmaSwitch290 nodes
-	ns3::NodeContainer terminals290;
-	terminals290.Create(15);
-//csmaSwitch291 nodes
-	ns3::NodeContainer terminals291;
-	terminals291.Create(15);
-//csmaSwitch292 nodes
-	ns3::NodeContainer terminals292;
-	terminals292.Create(15);
-//csmaSwitch293 nodes
-	ns3::NodeContainer terminals293;
-	terminals293.Create(15);
-//csmaSwitch294 nodes
-	ns3::NodeContainer terminals294;
-	terminals294.Create(15);
-//csmaSwitch295 nodes
-	ns3::NodeContainer terminals295;
-	terminals295.Create(15);
-//csmaSwitch296 nodes
-	ns3::NodeContainer terminals296;
-	terminals296.Create(15);
-//csmaSwitch297 nodes
-	ns3::NodeContainer terminals297;
-	terminals297.Create(15);
-//csmaSwitch298 nodes
-	ns3::NodeContainer terminals298;
-	terminals298.Create(15);
-//csmaSwitch299 nodes
-	ns3::NodeContainer terminals299;
-	terminals299.Create(15);
-//csmaSwitch300 nodes
-	ns3::NodeContainer terminals300;
-	terminals300.Create(15);
-//csmaSwitch301 nodes
-	ns3::NodeContainer terminals301;
-	terminals301.Create(15);
-//csmaSwitch302 nodes
-	ns3::NodeContainer terminals302;
-	terminals302.Create(15);
-//csmaSwitch303 nodes
-	ns3::NodeContainer terminals303;
-	terminals303.Create(15);
-//csmaSwitch304 nodes
-	ns3::NodeContainer terminals304;
-	terminals304.Create(15);
-//csmaSwitch305 nodes
-	ns3::NodeContainer terminals305;
-	terminals305.Create(15);
-//csmaSwitch306 nodes
-	ns3::NodeContainer terminals306;
-	terminals306.Create(15);
-//csmaSwitch307 nodes
-	ns3::NodeContainer terminals307;
-	terminals307.Create(15);
-//csmaSwitch308 nodes
-	ns3::NodeContainer terminals308;
-	terminals308.Create(15);
-//csmaSwitch309 nodes
-	ns3::NodeContainer terminals309;
-	terminals309.Create(15);
-//csmaSwitch310 nodes
-	ns3::NodeContainer terminals310;
-	terminals310.Create(15);
-//csmaSwitch311 nodes
-	ns3::NodeContainer terminals311;
-	terminals311.Create(15);
-//csmaSwitch312 nodes
-	ns3::NodeContainer terminals312;
-	terminals312.Create(15);
-//csmaSwitch313 nodes
-	ns3::NodeContainer terminals313;
-	terminals313.Create(15);
-//csmaSwitch314 nodes
-	ns3::NodeContainer terminals314;
-	terminals314.Create(15);
-//csmaSwitch315 nodes
-	ns3::NodeContainer terminals315;
-	terminals315.Create(15);
-//csmaSwitch316 nodes
-	ns3::NodeContainer terminals316;
-	terminals316.Create(15);
-//csmaSwitch317 nodes
-	ns3::NodeContainer terminals317;
-	terminals317.Create(15);
-//csmaSwitch318 nodes
-	ns3::NodeContainer terminals318;
-	terminals318.Create(15);
-//csmaSwitch319 nodes
-	ns3::NodeContainer terminals319;
-	terminals319.Create(15);
-//csmaSwitch320 nodes
-	ns3::NodeContainer terminals320;
-	terminals320.Create(15);
-//csmaSwitch321 nodes
-	ns3::NodeContainer terminals321;
-	terminals321.Create(15);
-//csmaSwitch322 nodes
-	ns3::NodeContainer terminals322;
-	terminals322.Create(15);
-//csmaSwitch323 nodes
-	ns3::NodeContainer terminals323;
-	terminals323.Create(15);
-//csmaSwitch324 nodes
-	ns3::NodeContainer terminals324;
-	terminals324.Create(15);
-//csmaSwitch325 nodes
-	ns3::NodeContainer terminals325;
-	terminals325.Create(15);
-//csmaSwitch326 nodes
-	ns3::NodeContainer terminals326;
-	terminals326.Create(15);
-//csmaSwitch327 nodes
-	ns3::NodeContainer terminals327;
-	terminals327.Create(15);
-//csmaSwitch328 nodes
-	ns3::NodeContainer terminals328;
-	terminals328.Create(15);
-//csmaSwitch329 nodes
-	ns3::NodeContainer terminals329;
-	terminals329.Create(15);
-//csmaSwitch330 nodes
-	ns3::NodeContainer terminals330;
-	terminals330.Create(15);
-//csmaSwitch331 nodes
-	ns3::NodeContainer terminals331;
-	terminals331.Create(15);
-//csmaSwitch332 nodes
-	ns3::NodeContainer terminals332;
-	terminals332.Create(15);
-//csmaSwitch334 nodes
-	ns3::NodeContainer terminals334;
-	terminals334.Create(15);
-//csmaSwitch335 nodes
-	ns3::NodeContainer terminals335;
-	terminals335.Create(15);
-//csmaSwitch336 nodes
-	ns3::NodeContainer terminals336;
-	terminals336.Create(15);
-//csmaSwitch337 nodes
-	ns3::NodeContainer terminals337;
-	terminals337.Create(15);
-//csmaSwitch338 nodes
-	ns3::NodeContainer terminals338;
-	terminals338.Create(15);
-//csmaSwitch339 nodes
-	ns3::NodeContainer terminals339;
-	terminals339.Create(15);
-//csmaSwitch340 nodes
-	ns3::NodeContainer terminals340;
-	terminals340.Create(15);
-//csmaSwitch341 nodes
-	ns3::NodeContainer terminals341;
-	terminals341.Create(15);
-//csmaSwitch342 nodes
-	ns3::NodeContainer terminals342;
-	terminals342.Create(15);
-//csmaSwitch343 nodes
-	ns3::NodeContainer terminals343;
-	terminals343.Create(15);
-//csmaSwitch344 nodes
-	ns3::NodeContainer terminals344;
-	terminals344.Create(15);
-//csmaSwitch345 nodes
-	ns3::NodeContainer terminals345;
-	terminals345.Create(15);
-//csmaSwitch346 nodes
-	ns3::NodeContainer terminals346;
-	terminals346.Create(15);
-//csmaSwitch347 nodes
-	ns3::NodeContainer terminals347;
-	terminals347.Create(15);
-//csmaSwitch348 nodes
-	ns3::NodeContainer terminals348;
-	terminals348.Create(15);
+	TerminalSets terminal_sets(348);
+
 
 //AP Sta nodes define
 	ns3::NodeContainer wifiStaNodes1;
@@ -9904,7 +8891,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink5;
 		nodelink5 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals5.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[5].Get(i)),
 						csmaSwitches[5]));
 		switch_devices[5]->Add(nodelink5.Get(1));
 		terminaldevices5.Add(nodelink5.Get(0));
@@ -9913,7 +8900,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink6;
 		nodelink6 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals6.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[6].Get(i)),
 						csmaSwitches[6]));
 		switch_devices[6]->Add(nodelink6.Get(1));
 		terminaldevices6.Add(nodelink6.Get(0));
@@ -9922,7 +8909,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink7;
 		nodelink7 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals7.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[7].Get(i)),
 						csmaSwitches[7]));
 		switch_devices[7]->Add(nodelink7.Get(1));
 		terminaldevices7.Add(nodelink7.Get(0));
@@ -9931,7 +8918,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink8;
 		nodelink8 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals8.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[8].Get(i)),
 						csmaSwitches[8]));
 		switch_devices[8]->Add(nodelink8.Get(1));
 		terminaldevices8.Add(nodelink8.Get(0));
@@ -9940,7 +8927,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink9;
 		nodelink9 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals9.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[9].Get(i)),
 						csmaSwitches[9]));
 		switch_devices[9]->Add(nodelink9.Get(1));
 		terminaldevices9.Add(nodelink9.Get(0));
@@ -9949,7 +8936,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink10;
 		nodelink10 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals10.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[10].Get(i)),
 						csmaSwitches[10]));
 		switch_devices[10]->Add(nodelink10.Get(1));
 		terminaldevices10.Add(nodelink10.Get(0));
@@ -9958,7 +8945,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink11;
 		nodelink11 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals11.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[11].Get(i)),
 						csmaSwitches[11]));
 		switch_devices[11]->Add(nodelink11.Get(1));
 		terminaldevices11.Add(nodelink11.Get(0));
@@ -9967,7 +8954,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink12;
 		nodelink12 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals12.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[12].Get(i)),
 						csmaSwitches[12]));
 		switch_devices[12]->Add(nodelink12.Get(1));
 		terminaldevices12.Add(nodelink12.Get(0));
@@ -9976,7 +8963,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink13;
 		nodelink13 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals13.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[13].Get(i)),
 						csmaSwitches[13]));
 		switch_devices[13]->Add(nodelink13.Get(1));
 		terminaldevices13.Add(nodelink13.Get(0));
@@ -9985,7 +8972,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink14;
 		nodelink14 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals14.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[14].Get(i)),
 						csmaSwitches[14]));
 		switch_devices[14]->Add(nodelink14.Get(1));
 		terminaldevices14.Add(nodelink14.Get(0));
@@ -9994,7 +8981,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink15;
 		nodelink15 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals15.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[15].Get(i)),
 						csmaSwitches[15]));
 		switch_devices[15]->Add(nodelink15.Get(1));
 		terminaldevices15.Add(nodelink15.Get(0));
@@ -10003,7 +8990,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink16;
 		nodelink16 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals16.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[16].Get(i)),
 						csmaSwitches[16]));
 		switch_devices[16]->Add(nodelink16.Get(1));
 		terminaldevices16.Add(nodelink16.Get(0));
@@ -10012,7 +8999,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink17;
 		nodelink17 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals17.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[17].Get(i)),
 						csmaSwitches[17]));
 		switch_devices[17]->Add(nodelink17.Get(1));
 		terminaldevices17.Add(nodelink17.Get(0));
@@ -10021,7 +9008,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink18;
 		nodelink18 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals18.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[18].Get(i)),
 						csmaSwitches[18]));
 		switch_devices[18]->Add(nodelink18.Get(1));
 		terminaldevices18.Add(nodelink18.Get(0));
@@ -10030,7 +9017,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink19;
 		nodelink19 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals19.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[19].Get(i)),
 						csmaSwitches[19]));
 		switch_devices[19]->Add(nodelink19.Get(1));
 		terminaldevices19.Add(nodelink19.Get(0));
@@ -10039,7 +9026,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink20;
 		nodelink20 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals20.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[20].Get(i)),
 						csmaSwitches[20]));
 		switch_devices[20]->Add(nodelink20.Get(1));
 		terminaldevices20.Add(nodelink20.Get(0));
@@ -10048,7 +9035,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink21;
 		nodelink21 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals21.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[21].Get(i)),
 						csmaSwitches[21]));
 		switch_devices[21]->Add(nodelink21.Get(1));
 		terminaldevices21.Add(nodelink21.Get(0));
@@ -10057,7 +9044,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink22;
 		nodelink22 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals22.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[22].Get(i)),
 						csmaSwitches[22]));
 		switch_devices[22]->Add(nodelink22.Get(1));
 		terminaldevices22.Add(nodelink22.Get(0));
@@ -10066,7 +9053,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink23;
 		nodelink23 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals23.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[23].Get(i)),
 						csmaSwitches[23]));
 		switch_devices[23]->Add(nodelink23.Get(1));
 		terminaldevices23.Add(nodelink23.Get(0));
@@ -10075,7 +9062,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink24;
 		nodelink24 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals24.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[24].Get(i)),
 						csmaSwitches[24]));
 		switch_devices[24]->Add(nodelink24.Get(1));
 		terminaldevices24.Add(nodelink24.Get(0));
@@ -10084,7 +9071,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink25;
 		nodelink25 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals25.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[25].Get(i)),
 						csmaSwitches[25]));
 		switch_devices[25]->Add(nodelink25.Get(1));
 		terminaldevices25.Add(nodelink25.Get(0));
@@ -10093,7 +9080,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink26;
 		nodelink26 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals26.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[26].Get(i)),
 						csmaSwitches[26]));
 		switch_devices[26]->Add(nodelink26.Get(1));
 		terminaldevices26.Add(nodelink26.Get(0));
@@ -10102,7 +9089,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink27;
 		nodelink27 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals27.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[27].Get(i)),
 						csmaSwitches[27]));
 		switch_devices[27]->Add(nodelink27.Get(1));
 		terminaldevices27.Add(nodelink27.Get(0));
@@ -10111,7 +9098,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink28;
 		nodelink28 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals28.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[28].Get(i)),
 						csmaSwitches[28]));
 		switch_devices[28]->Add(nodelink28.Get(1));
 		terminaldevices28.Add(nodelink28.Get(0));
@@ -10120,7 +9107,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink29;
 		nodelink29 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals29.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[29].Get(i)),
 						csmaSwitches[29]));
 		switch_devices[29]->Add(nodelink29.Get(1));
 		terminaldevices29.Add(nodelink29.Get(0));
@@ -10129,7 +9116,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink30;
 		nodelink30 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals30.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[30].Get(i)),
 						csmaSwitches[30]));
 		switch_devices[30]->Add(nodelink30.Get(1));
 		terminaldevices30.Add(nodelink30.Get(0));
@@ -10138,7 +9125,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink31;
 		nodelink31 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals31.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[31].Get(i)),
 						csmaSwitches[31]));
 		switch_devices[31]->Add(nodelink31.Get(1));
 		terminaldevices31.Add(nodelink31.Get(0));
@@ -10147,7 +9134,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink32;
 		nodelink32 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals32.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[32].Get(i)),
 						csmaSwitches[32]));
 		switch_devices[32]->Add(nodelink32.Get(1));
 		terminaldevices32.Add(nodelink32.Get(0));
@@ -10156,7 +9143,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink33;
 		nodelink33 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals33.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[33].Get(i)),
 						csmaSwitches[33]));
 		switch_devices[33]->Add(nodelink33.Get(1));
 		terminaldevices33.Add(nodelink33.Get(0));
@@ -10165,7 +9152,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink34;
 		nodelink34 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals34.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[34].Get(i)),
 						csmaSwitches[34]));
 		switch_devices[34]->Add(nodelink34.Get(1));
 		terminaldevices34.Add(nodelink34.Get(0));
@@ -10174,7 +9161,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink35;
 		nodelink35 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals35.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[35].Get(i)),
 						csmaSwitches[35]));
 		switch_devices[35]->Add(nodelink35.Get(1));
 		terminaldevices35.Add(nodelink35.Get(0));
@@ -10183,7 +9170,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink36;
 		nodelink36 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals36.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[36].Get(i)),
 						csmaSwitches[36]));
 		switch_devices[36]->Add(nodelink36.Get(1));
 		terminaldevices36.Add(nodelink36.Get(0));
@@ -10192,7 +9179,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink37;
 		nodelink37 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals37.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[37].Get(i)),
 						csmaSwitches[37]));
 		switch_devices[37]->Add(nodelink37.Get(1));
 		terminaldevices37.Add(nodelink37.Get(0));
@@ -10201,7 +9188,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink38;
 		nodelink38 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals38.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[38].Get(i)),
 						csmaSwitches[38]));
 		switch_devices[38]->Add(nodelink38.Get(1));
 		terminaldevices38.Add(nodelink38.Get(0));
@@ -10210,7 +9197,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink39;
 		nodelink39 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals39.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[39].Get(i)),
 						csmaSwitches[39]));
 		switch_devices[39]->Add(nodelink39.Get(1));
 		terminaldevices39.Add(nodelink39.Get(0));
@@ -10219,7 +9206,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink40;
 		nodelink40 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals40.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[40].Get(i)),
 						csmaSwitches[40]));
 		switch_devices[40]->Add(nodelink40.Get(1));
 		terminaldevices40.Add(nodelink40.Get(0));
@@ -10228,7 +9215,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink41;
 		nodelink41 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals41.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[41].Get(i)),
 						csmaSwitches[41]));
 		switch_devices[41]->Add(nodelink41.Get(1));
 		terminaldevices41.Add(nodelink41.Get(0));
@@ -10237,7 +9224,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink42;
 		nodelink42 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals42.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[42].Get(i)),
 						csmaSwitches[42]));
 		switch_devices[42]->Add(nodelink42.Get(1));
 		terminaldevices42.Add(nodelink42.Get(0));
@@ -10246,7 +9233,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink43;
 		nodelink43 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals43.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[43].Get(i)),
 						csmaSwitches[43]));
 		switch_devices[43]->Add(nodelink43.Get(1));
 		terminaldevices43.Add(nodelink43.Get(0));
@@ -10255,7 +9242,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink44;
 		nodelink44 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals44.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[44].Get(i)),
 						csmaSwitches[44]));
 		switch_devices[44]->Add(nodelink44.Get(1));
 		terminaldevices44.Add(nodelink44.Get(0));
@@ -10264,7 +9251,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink45;
 		nodelink45 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals45.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[45].Get(i)),
 						csmaSwitches[45]));
 		switch_devices[45]->Add(nodelink45.Get(1));
 		terminaldevices45.Add(nodelink45.Get(0));
@@ -10273,7 +9260,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink46;
 		nodelink46 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals46.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[46].Get(i)),
 						csmaSwitches[46]));
 		switch_devices[46]->Add(nodelink46.Get(1));
 		terminaldevices46.Add(nodelink46.Get(0));
@@ -10282,7 +9269,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink47;
 		nodelink47 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals47.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[47].Get(i)),
 						csmaSwitches[47]));
 		switch_devices[47]->Add(nodelink47.Get(1));
 		terminaldevices47.Add(nodelink47.Get(0));
@@ -10291,7 +9278,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink48;
 		nodelink48 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals48.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[48].Get(i)),
 						csmaSwitches[48]));
 		switch_devices[48]->Add(nodelink48.Get(1));
 		terminaldevices48.Add(nodelink48.Get(0));
@@ -10300,7 +9287,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink49;
 		nodelink49 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals49.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[49].Get(i)),
 						csmaSwitches[49]));
 		switch_devices[49]->Add(nodelink49.Get(1));
 		terminaldevices49.Add(nodelink49.Get(0));
@@ -10309,7 +9296,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink50;
 		nodelink50 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals50.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[50].Get(i)),
 						csmaSwitches[50]));
 		switch_devices[50]->Add(nodelink50.Get(1));
 		terminaldevices50.Add(nodelink50.Get(0));
@@ -10318,7 +9305,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink51;
 		nodelink51 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals51.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[51].Get(i)),
 						csmaSwitches[51]));
 		switch_devices[51]->Add(nodelink51.Get(1));
 		terminaldevices51.Add(nodelink51.Get(0));
@@ -10327,7 +9314,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink52;
 		nodelink52 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals52.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[52].Get(i)),
 						csmaSwitches[52]));
 		switch_devices[52]->Add(nodelink52.Get(1));
 		terminaldevices52.Add(nodelink52.Get(0));
@@ -10336,7 +9323,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink53;
 		nodelink53 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals53.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[53].Get(i)),
 						csmaSwitches[53]));
 		switch_devices[53]->Add(nodelink53.Get(1));
 		terminaldevices53.Add(nodelink53.Get(0));
@@ -10345,7 +9332,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink54;
 		nodelink54 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals54.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[54].Get(i)),
 						csmaSwitches[54]));
 		switch_devices[54]->Add(nodelink54.Get(1));
 		terminaldevices54.Add(nodelink54.Get(0));
@@ -10354,7 +9341,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink55;
 		nodelink55 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals55.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[55].Get(i)),
 						csmaSwitches[55]));
 		switch_devices[55]->Add(nodelink55.Get(1));
 		terminaldevices55.Add(nodelink55.Get(0));
@@ -10363,7 +9350,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink56;
 		nodelink56 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals56.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[56].Get(i)),
 						csmaSwitches[56]));
 		switch_devices[56]->Add(nodelink56.Get(1));
 		terminaldevices56.Add(nodelink56.Get(0));
@@ -10372,7 +9359,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink57;
 		nodelink57 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals57.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[57].Get(i)),
 						csmaSwitches[57]));
 		switch_devices[57]->Add(nodelink57.Get(1));
 		terminaldevices57.Add(nodelink57.Get(0));
@@ -10381,7 +9368,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink58;
 		nodelink58 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals58.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[58].Get(i)),
 						csmaSwitches[58]));
 		switch_devices[58]->Add(nodelink58.Get(1));
 		terminaldevices58.Add(nodelink58.Get(0));
@@ -10390,7 +9377,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink59;
 		nodelink59 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals59.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[59].Get(i)),
 						csmaSwitches[59]));
 		switch_devices[59]->Add(nodelink59.Get(1));
 		terminaldevices59.Add(nodelink59.Get(0));
@@ -10399,7 +9386,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink60;
 		nodelink60 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals60.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[60].Get(i)),
 						csmaSwitches[60]));
 		switch_devices[60]->Add(nodelink60.Get(1));
 		terminaldevices60.Add(nodelink60.Get(0));
@@ -10408,7 +9395,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink61;
 		nodelink61 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals61.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[61].Get(i)),
 						csmaSwitches[61]));
 		switch_devices[61]->Add(nodelink61.Get(1));
 		terminaldevices61.Add(nodelink61.Get(0));
@@ -10417,7 +9404,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink62;
 		nodelink62 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals62.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[62].Get(i)),
 						csmaSwitches[62]));
 		switch_devices[62]->Add(nodelink62.Get(1));
 		terminaldevices62.Add(nodelink62.Get(0));
@@ -10426,7 +9413,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink63;
 		nodelink63 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals63.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[63].Get(i)),
 						csmaSwitches[63]));
 		switch_devices[63]->Add(nodelink63.Get(1));
 		terminaldevices63.Add(nodelink63.Get(0));
@@ -10435,7 +9422,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink64;
 		nodelink64 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals64.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[64].Get(i)),
 						csmaSwitches[64]));
 		switch_devices[64]->Add(nodelink64.Get(1));
 		terminaldevices64.Add(nodelink64.Get(0));
@@ -10444,7 +9431,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink65;
 		nodelink65 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals65.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[65].Get(i)),
 						csmaSwitches[65]));
 		switch_devices[65]->Add(nodelink65.Get(1));
 		terminaldevices65.Add(nodelink65.Get(0));
@@ -10453,7 +9440,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink66;
 		nodelink66 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals66.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[66].Get(i)),
 						csmaSwitches[66]));
 		switch_devices[66]->Add(nodelink66.Get(1));
 		terminaldevices66.Add(nodelink66.Get(0));
@@ -10462,7 +9449,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink67;
 		nodelink67 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals67.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[67].Get(i)),
 						csmaSwitches[67]));
 		switch_devices[67]->Add(nodelink67.Get(1));
 		terminaldevices67.Add(nodelink67.Get(0));
@@ -10471,7 +9458,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink68;
 		nodelink68 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals68.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[68].Get(i)),
 						csmaSwitches[68]));
 		switch_devices[68]->Add(nodelink68.Get(1));
 		terminaldevices68.Add(nodelink68.Get(0));
@@ -10480,7 +9467,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink69;
 		nodelink69 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals69.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[69].Get(i)),
 						csmaSwitches[69]));
 		switch_devices[69]->Add(nodelink69.Get(1));
 		terminaldevices69.Add(nodelink69.Get(0));
@@ -10489,7 +9476,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink70;
 		nodelink70 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals70.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[70].Get(i)),
 						csmaSwitches[70]));
 		switch_devices[70]->Add(nodelink70.Get(1));
 		terminaldevices70.Add(nodelink70.Get(0));
@@ -10498,7 +9485,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink71;
 		nodelink71 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals71.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[71].Get(i)),
 						csmaSwitches[71]));
 		switch_devices[71]->Add(nodelink71.Get(1));
 		terminaldevices71.Add(nodelink71.Get(0));
@@ -10507,7 +9494,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink72;
 		nodelink72 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals72.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[72].Get(i)),
 						csmaSwitches[72]));
 		switch_devices[72]->Add(nodelink72.Get(1));
 		terminaldevices72.Add(nodelink72.Get(0));
@@ -10516,7 +9503,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink73;
 		nodelink73 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals73.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[73].Get(i)),
 						csmaSwitches[73]));
 		switch_devices[73]->Add(nodelink73.Get(1));
 		terminaldevices73.Add(nodelink73.Get(0));
@@ -10525,7 +9512,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink74;
 		nodelink74 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals74.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[74].Get(i)),
 						csmaSwitches[74]));
 		switch_devices[74]->Add(nodelink74.Get(1));
 		terminaldevices74.Add(nodelink74.Get(0));
@@ -10534,7 +9521,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink75;
 		nodelink75 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals75.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[75].Get(i)),
 						csmaSwitches[75]));
 		switch_devices[75]->Add(nodelink75.Get(1));
 		terminaldevices75.Add(nodelink75.Get(0));
@@ -10543,7 +9530,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink76;
 		nodelink76 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals76.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[76].Get(i)),
 						csmaSwitches[76]));
 		switch_devices[76]->Add(nodelink76.Get(1));
 		terminaldevices76.Add(nodelink76.Get(0));
@@ -10552,7 +9539,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink77;
 		nodelink77 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals77.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[77].Get(i)),
 						csmaSwitches[77]));
 		switch_devices[77]->Add(nodelink77.Get(1));
 		terminaldevices77.Add(nodelink77.Get(0));
@@ -10561,7 +9548,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink78;
 		nodelink78 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals78.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[78].Get(i)),
 						csmaSwitches[78]));
 		switch_devices[78]->Add(nodelink78.Get(1));
 		terminaldevices78.Add(nodelink78.Get(0));
@@ -10570,7 +9557,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink79;
 		nodelink79 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals79.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[79].Get(i)),
 						csmaSwitches[79]));
 		switch_devices[79]->Add(nodelink79.Get(1));
 		terminaldevices79.Add(nodelink79.Get(0));
@@ -10579,7 +9566,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink81;
 		nodelink81 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals81.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[81].Get(i)),
 						csmaSwitches[81]));
 		switch_devices[81]->Add(nodelink81.Get(1));
 		terminaldevices81.Add(nodelink81.Get(0));
@@ -10588,7 +9575,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink82;
 		nodelink82 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals82.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[82].Get(i)),
 						csmaSwitches[82]));
 		switch_devices[82]->Add(nodelink82.Get(1));
 		terminaldevices82.Add(nodelink82.Get(0));
@@ -10597,7 +9584,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink83;
 		nodelink83 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals83.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[83].Get(i)),
 						csmaSwitches[83]));
 		switch_devices[83]->Add(nodelink83.Get(1));
 		terminaldevices83.Add(nodelink83.Get(0));
@@ -10606,7 +9593,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink84;
 		nodelink84 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals84.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[84].Get(i)),
 						csmaSwitches[84]));
 		switch_devices[84]->Add(nodelink84.Get(1));
 		terminaldevices84.Add(nodelink84.Get(0));
@@ -10615,7 +9602,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink85;
 		nodelink85 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals85.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[85].Get(i)),
 						csmaSwitches[85]));
 		switch_devices[85]->Add(nodelink85.Get(1));
 		terminaldevices85.Add(nodelink85.Get(0));
@@ -10624,7 +9611,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink86;
 		nodelink86 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals86.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[86].Get(i)),
 						csmaSwitches[86]));
 		switch_devices[86]->Add(nodelink86.Get(1));
 		terminaldevices86.Add(nodelink86.Get(0));
@@ -10633,7 +9620,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink87;
 		nodelink87 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals87.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[87].Get(i)),
 						csmaSwitches[87]));
 		switch_devices[87]->Add(nodelink87.Get(1));
 		terminaldevices87.Add(nodelink87.Get(0));
@@ -10642,7 +9629,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink88;
 		nodelink88 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals88.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[88].Get(i)),
 						csmaSwitches[88]));
 		switch_devices[88]->Add(nodelink88.Get(1));
 		terminaldevices88.Add(nodelink88.Get(0));
@@ -10651,7 +9638,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink89;
 		nodelink89 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals89.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[89].Get(i)),
 						csmaSwitches[89]));
 		switch_devices[89]->Add(nodelink89.Get(1));
 		terminaldevices89.Add(nodelink89.Get(0));
@@ -10660,7 +9647,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink90;
 		nodelink90 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals90.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[90].Get(i)),
 						csmaSwitches[90]));
 		switch_devices[90]->Add(nodelink90.Get(1));
 		terminaldevices90.Add(nodelink90.Get(0));
@@ -10669,7 +9656,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink91;
 		nodelink91 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals91.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[91].Get(i)),
 						csmaSwitches[91]));
 		switch_devices[91]->Add(nodelink91.Get(1));
 		terminaldevices91.Add(nodelink91.Get(0));
@@ -10678,7 +9665,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink92;
 		nodelink92 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals92.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[92].Get(i)),
 						csmaSwitches[92]));
 		switch_devices[92]->Add(nodelink92.Get(1));
 		terminaldevices92.Add(nodelink92.Get(0));
@@ -10687,7 +9674,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink93;
 		nodelink93 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals93.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[93].Get(i)),
 						csmaSwitches[93]));
 		switch_devices[93]->Add(nodelink93.Get(1));
 		terminaldevices93.Add(nodelink93.Get(0));
@@ -10696,7 +9683,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink94;
 		nodelink94 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals94.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[94].Get(i)),
 						csmaSwitches[94]));
 		switch_devices[94]->Add(nodelink94.Get(1));
 		terminaldevices94.Add(nodelink94.Get(0));
@@ -10705,7 +9692,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink95;
 		nodelink95 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals95.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[95].Get(i)),
 						csmaSwitches[95]));
 		switch_devices[95]->Add(nodelink95.Get(1));
 		terminaldevices95.Add(nodelink95.Get(0));
@@ -10714,7 +9701,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink96;
 		nodelink96 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals96.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[96].Get(i)),
 						csmaSwitches[96]));
 		switch_devices[96]->Add(nodelink96.Get(1));
 		terminaldevices96.Add(nodelink96.Get(0));
@@ -10723,7 +9710,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink97;
 		nodelink97 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals97.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[97].Get(i)),
 						csmaSwitches[97]));
 		switch_devices[97]->Add(nodelink97.Get(1));
 		terminaldevices97.Add(nodelink97.Get(0));
@@ -10732,7 +9719,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink98;
 		nodelink98 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals98.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[98].Get(i)),
 						csmaSwitches[98]));
 		switch_devices[98]->Add(nodelink98.Get(1));
 		terminaldevices98.Add(nodelink98.Get(0));
@@ -10741,7 +9728,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink99;
 		nodelink99 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals99.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[99].Get(i)),
 						csmaSwitches[99]));
 		switch_devices[99]->Add(nodelink99.Get(1));
 		terminaldevices99.Add(nodelink99.Get(0));
@@ -10750,7 +9737,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink100;
 		nodelink100 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals100.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[100].Get(i)),
 						csmaSwitches[100]));
 		switch_devices[100]->Add(nodelink100.Get(1));
 		terminaldevices100.Add(nodelink100.Get(0));
@@ -10759,7 +9746,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink101;
 		nodelink101 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals101.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[101].Get(i)),
 						csmaSwitches[101]));
 		switch_devices[101]->Add(nodelink101.Get(1));
 		terminaldevices101.Add(nodelink101.Get(0));
@@ -10768,7 +9755,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink102;
 		nodelink102 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals102.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[102].Get(i)),
 						csmaSwitches[102]));
 		switch_devices[102]->Add(nodelink102.Get(1));
 		terminaldevices102.Add(nodelink102.Get(0));
@@ -10777,7 +9764,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink103;
 		nodelink103 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals103.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[103].Get(i)),
 						csmaSwitches[103]));
 		switch_devices[103]->Add(nodelink103.Get(1));
 		terminaldevices103.Add(nodelink103.Get(0));
@@ -10786,7 +9773,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink104;
 		nodelink104 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals104.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[104].Get(i)),
 						csmaSwitches[104]));
 		switch_devices[104]->Add(nodelink104.Get(1));
 		terminaldevices104.Add(nodelink104.Get(0));
@@ -10795,7 +9782,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink105;
 		nodelink105 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals105.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[105].Get(i)),
 						csmaSwitches[105]));
 		switch_devices[105]->Add(nodelink105.Get(1));
 		terminaldevices105.Add(nodelink105.Get(0));
@@ -10804,7 +9791,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink106;
 		nodelink106 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals106.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[106].Get(i)),
 						csmaSwitches[106]));
 		switch_devices[106]->Add(nodelink106.Get(1));
 		terminaldevices106.Add(nodelink106.Get(0));
@@ -10813,7 +9800,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink107;
 		nodelink107 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals107.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[107].Get(i)),
 						csmaSwitches[107]));
 		switch_devices[107]->Add(nodelink107.Get(1));
 		terminaldevices107.Add(nodelink107.Get(0));
@@ -10822,7 +9809,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink108;
 		nodelink108 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals108.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[108].Get(i)),
 						csmaSwitches[108]));
 		switch_devices[108]->Add(nodelink108.Get(1));
 		terminaldevices108.Add(nodelink108.Get(0));
@@ -10831,7 +9818,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink109;
 		nodelink109 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals109.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[109].Get(i)),
 						csmaSwitches[109]));
 		switch_devices[109]->Add(nodelink109.Get(1));
 		terminaldevices109.Add(nodelink109.Get(0));
@@ -10840,7 +9827,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink110;
 		nodelink110 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals110.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[110].Get(i)),
 						csmaSwitches[110]));
 		switch_devices[110]->Add(nodelink110.Get(1));
 		terminaldevices110.Add(nodelink110.Get(0));
@@ -10849,7 +9836,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink111;
 		nodelink111 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals111.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[111].Get(i)),
 						csmaSwitches[111]));
 		switch_devices[111]->Add(nodelink111.Get(1));
 		terminaldevices111.Add(nodelink111.Get(0));
@@ -10858,7 +9845,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink112;
 		nodelink112 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals112.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[112].Get(i)),
 						csmaSwitches[112]));
 		switch_devices[112]->Add(nodelink112.Get(1));
 		terminaldevices112.Add(nodelink112.Get(0));
@@ -10867,7 +9854,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink114;
 		nodelink114 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals114.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[114].Get(i)),
 						csmaSwitches[114]));
 		switch_devices[114]->Add(nodelink114.Get(1));
 		terminaldevices114.Add(nodelink114.Get(0));
@@ -10876,7 +9863,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink115;
 		nodelink115 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals115.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[115].Get(i)),
 						csmaSwitches[115]));
 		switch_devices[115]->Add(nodelink115.Get(1));
 		terminaldevices115.Add(nodelink115.Get(0));
@@ -10885,7 +9872,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink116;
 		nodelink116 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals116.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[116].Get(i)),
 						csmaSwitches[116]));
 		switch_devices[116]->Add(nodelink116.Get(1));
 		terminaldevices116.Add(nodelink116.Get(0));
@@ -10894,7 +9881,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink117;
 		nodelink117 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals117.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[117].Get(i)),
 						csmaSwitches[117]));
 		switch_devices[117]->Add(nodelink117.Get(1));
 		terminaldevices117.Add(nodelink117.Get(0));
@@ -10903,7 +9890,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink118;
 		nodelink118 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals118.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[118].Get(i)),
 						csmaSwitches[118]));
 		switch_devices[118]->Add(nodelink118.Get(1));
 		terminaldevices118.Add(nodelink118.Get(0));
@@ -10912,7 +9899,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink119;
 		nodelink119 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals119.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[119].Get(i)),
 						csmaSwitches[119]));
 		switch_devices[119]->Add(nodelink119.Get(1));
 		terminaldevices119.Add(nodelink119.Get(0));
@@ -10921,7 +9908,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink120;
 		nodelink120 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals120.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[120].Get(i)),
 						csmaSwitches[120]));
 		switch_devices[120]->Add(nodelink120.Get(1));
 		terminaldevices120.Add(nodelink120.Get(0));
@@ -10930,7 +9917,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink121;
 		nodelink121 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals121.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[121].Get(i)),
 						csmaSwitches[121]));
 		switch_devices[121]->Add(nodelink121.Get(1));
 		terminaldevices121.Add(nodelink121.Get(0));
@@ -10939,7 +9926,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink122;
 		nodelink122 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals122.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[122].Get(i)),
 						csmaSwitches[122]));
 		switch_devices[122]->Add(nodelink122.Get(1));
 		terminaldevices122.Add(nodelink122.Get(0));
@@ -10948,7 +9935,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink123;
 		nodelink123 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals123.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[123].Get(i)),
 						csmaSwitches[123]));
 		switch_devices[123]->Add(nodelink123.Get(1));
 		terminaldevices123.Add(nodelink123.Get(0));
@@ -10957,7 +9944,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink124;
 		nodelink124 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals124.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[124].Get(i)),
 						csmaSwitches[124]));
 		switch_devices[124]->Add(nodelink124.Get(1));
 		terminaldevices124.Add(nodelink124.Get(0));
@@ -10966,7 +9953,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink125;
 		nodelink125 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals125.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[125].Get(i)),
 						csmaSwitches[125]));
 		switch_devices[125]->Add(nodelink125.Get(1));
 		terminaldevices125.Add(nodelink125.Get(0));
@@ -10975,7 +9962,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink126;
 		nodelink126 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals126.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[126].Get(i)),
 						csmaSwitches[126]));
 		switch_devices[126]->Add(nodelink126.Get(1));
 		terminaldevices126.Add(nodelink126.Get(0));
@@ -10984,7 +9971,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink127;
 		nodelink127 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals127.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[127].Get(i)),
 						csmaSwitches[127]));
 		switch_devices[127]->Add(nodelink127.Get(1));
 		terminaldevices127.Add(nodelink127.Get(0));
@@ -10993,7 +9980,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink128;
 		nodelink128 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals128.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[128].Get(i)),
 						csmaSwitches[128]));
 		switch_devices[128]->Add(nodelink128.Get(1));
 		terminaldevices128.Add(nodelink128.Get(0));
@@ -11002,7 +9989,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink129;
 		nodelink129 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals129.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[129].Get(i)),
 						csmaSwitches[129]));
 		switch_devices[129]->Add(nodelink129.Get(1));
 		terminaldevices129.Add(nodelink129.Get(0));
@@ -11011,7 +9998,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink130;
 		nodelink130 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals130.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[130].Get(i)),
 						csmaSwitches[130]));
 		switch_devices[130]->Add(nodelink130.Get(1));
 		terminaldevices130.Add(nodelink130.Get(0));
@@ -11020,7 +10007,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink131;
 		nodelink131 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals131.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[131].Get(i)),
 						csmaSwitches[131]));
 		switch_devices[131]->Add(nodelink131.Get(1));
 		terminaldevices131.Add(nodelink131.Get(0));
@@ -11029,7 +10016,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink132;
 		nodelink132 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals132.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[132].Get(i)),
 						csmaSwitches[132]));
 		switch_devices[132]->Add(nodelink132.Get(1));
 		terminaldevices132.Add(nodelink132.Get(0));
@@ -11038,7 +10025,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink133;
 		nodelink133 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals133.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[133].Get(i)),
 						csmaSwitches[133]));
 		switch_devices[133]->Add(nodelink133.Get(1));
 		terminaldevices133.Add(nodelink133.Get(0));
@@ -11047,7 +10034,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink134;
 		nodelink134 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals134.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[134].Get(i)),
 						csmaSwitches[134]));
 		switch_devices[134]->Add(nodelink134.Get(1));
 		terminaldevices134.Add(nodelink134.Get(0));
@@ -11056,7 +10043,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink135;
 		nodelink135 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals135.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[135].Get(i)),
 						csmaSwitches[135]));
 		switch_devices[135]->Add(nodelink135.Get(1));
 		terminaldevices135.Add(nodelink135.Get(0));
@@ -11065,7 +10052,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink136;
 		nodelink136 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals136.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[136].Get(i)),
 						csmaSwitches[136]));
 		switch_devices[136]->Add(nodelink136.Get(1));
 		terminaldevices136.Add(nodelink136.Get(0));
@@ -11074,7 +10061,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink137;
 		nodelink137 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals137.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[137].Get(i)),
 						csmaSwitches[137]));
 		switch_devices[137]->Add(nodelink137.Get(1));
 		terminaldevices137.Add(nodelink137.Get(0));
@@ -11083,7 +10070,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink138;
 		nodelink138 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals138.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[138].Get(i)),
 						csmaSwitches[138]));
 		switch_devices[138]->Add(nodelink138.Get(1));
 		terminaldevices138.Add(nodelink138.Get(0));
@@ -11092,7 +10079,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink139;
 		nodelink139 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals139.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[139].Get(i)),
 						csmaSwitches[139]));
 		switch_devices[139]->Add(nodelink139.Get(1));
 		terminaldevices139.Add(nodelink139.Get(0));
@@ -11101,7 +10088,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink140;
 		nodelink140 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals140.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[140].Get(i)),
 						csmaSwitches[140]));
 		switch_devices[140]->Add(nodelink140.Get(1));
 		terminaldevices140.Add(nodelink140.Get(0));
@@ -11110,7 +10097,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink141;
 		nodelink141 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals141.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[141].Get(i)),
 						csmaSwitches[141]));
 		switch_devices[141]->Add(nodelink141.Get(1));
 		terminaldevices141.Add(nodelink141.Get(0));
@@ -11119,7 +10106,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink142;
 		nodelink142 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals142.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[142].Get(i)),
 						csmaSwitches[142]));
 		switch_devices[142]->Add(nodelink142.Get(1));
 		terminaldevices142.Add(nodelink142.Get(0));
@@ -11128,7 +10115,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink143;
 		nodelink143 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals143.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[143].Get(i)),
 						csmaSwitches[143]));
 		switch_devices[143]->Add(nodelink143.Get(1));
 		terminaldevices143.Add(nodelink143.Get(0));
@@ -11137,7 +10124,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink144;
 		nodelink144 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals144.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[144].Get(i)),
 						csmaSwitches[144]));
 		switch_devices[144]->Add(nodelink144.Get(1));
 		terminaldevices144.Add(nodelink144.Get(0));
@@ -11146,7 +10133,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink145;
 		nodelink145 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals145.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[145].Get(i)),
 						csmaSwitches[145]));
 		switch_devices[145]->Add(nodelink145.Get(1));
 		terminaldevices145.Add(nodelink145.Get(0));
@@ -11155,7 +10142,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink146;
 		nodelink146 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals146.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[146].Get(i)),
 						csmaSwitches[146]));
 		switch_devices[146]->Add(nodelink146.Get(1));
 		terminaldevices146.Add(nodelink146.Get(0));
@@ -11164,7 +10151,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink147;
 		nodelink147 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals147.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[147].Get(i)),
 						csmaSwitches[147]));
 		switch_devices[147]->Add(nodelink147.Get(1));
 		terminaldevices147.Add(nodelink147.Get(0));
@@ -11173,7 +10160,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink148;
 		nodelink148 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals148.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[148].Get(i)),
 						csmaSwitches[148]));
 		switch_devices[148]->Add(nodelink148.Get(1));
 		terminaldevices148.Add(nodelink148.Get(0));
@@ -11182,7 +10169,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink149;
 		nodelink149 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals149.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[149].Get(i)),
 						csmaSwitches[149]));
 		switch_devices[149]->Add(nodelink149.Get(1));
 		terminaldevices149.Add(nodelink149.Get(0));
@@ -11191,7 +10178,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink150;
 		nodelink150 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals150.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[150].Get(i)),
 						csmaSwitches[150]));
 		switch_devices[150]->Add(nodelink150.Get(1));
 		terminaldevices150.Add(nodelink150.Get(0));
@@ -11200,7 +10187,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink151;
 		nodelink151 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals151.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[151].Get(i)),
 						csmaSwitches[151]));
 		switch_devices[151]->Add(nodelink151.Get(1));
 		terminaldevices151.Add(nodelink151.Get(0));
@@ -11209,7 +10196,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink152;
 		nodelink152 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals152.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[152].Get(i)),
 						csmaSwitches[152]));
 		switch_devices[152]->Add(nodelink152.Get(1));
 		terminaldevices152.Add(nodelink152.Get(0));
@@ -11218,7 +10205,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink153;
 		nodelink153 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals153.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[153].Get(i)),
 						csmaSwitches[153]));
 		switch_devices[153]->Add(nodelink153.Get(1));
 		terminaldevices153.Add(nodelink153.Get(0));
@@ -11227,7 +10214,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink154;
 		nodelink154 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals154.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[154].Get(i)),
 						csmaSwitches[154]));
 		switch_devices[154]->Add(nodelink154.Get(1));
 		terminaldevices154.Add(nodelink154.Get(0));
@@ -11236,7 +10223,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink155;
 		nodelink155 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals155.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[155].Get(i)),
 						csmaSwitches[155]));
 		switch_devices[155]->Add(nodelink155.Get(1));
 		terminaldevices155.Add(nodelink155.Get(0));
@@ -11245,7 +10232,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink156;
 		nodelink156 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals156.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[156].Get(i)),
 						csmaSwitches[156]));
 		switch_devices[156]->Add(nodelink156.Get(1));
 		terminaldevices156.Add(nodelink156.Get(0));
@@ -11254,7 +10241,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink157;
 		nodelink157 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals157.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[157].Get(i)),
 						csmaSwitches[157]));
 		switch_devices[157]->Add(nodelink157.Get(1));
 		terminaldevices157.Add(nodelink157.Get(0));
@@ -11263,7 +10250,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink158;
 		nodelink158 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals158.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[158].Get(i)),
 						csmaSwitches[158]));
 		switch_devices[158]->Add(nodelink158.Get(1));
 		terminaldevices158.Add(nodelink158.Get(0));
@@ -11272,7 +10259,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink159;
 		nodelink159 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals159.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[159].Get(i)),
 						csmaSwitches[159]));
 		switch_devices[159]->Add(nodelink159.Get(1));
 		terminaldevices159.Add(nodelink159.Get(0));
@@ -11281,7 +10268,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink161;
 		nodelink161 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals161.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[161].Get(i)),
 						csmaSwitches[161]));
 		switch_devices[161]->Add(nodelink161.Get(1));
 		terminaldevices161.Add(nodelink161.Get(0));
@@ -11290,7 +10277,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink162;
 		nodelink162 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals162.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[162].Get(i)),
 						csmaSwitches[162]));
 		switch_devices[162]->Add(nodelink162.Get(1));
 		terminaldevices162.Add(nodelink162.Get(0));
@@ -11299,7 +10286,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink163;
 		nodelink163 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals163.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[163].Get(i)),
 						csmaSwitches[163]));
 		switch_devices[163]->Add(nodelink163.Get(1));
 		terminaldevices163.Add(nodelink163.Get(0));
@@ -11308,7 +10295,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink164;
 		nodelink164 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals164.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[164].Get(i)),
 						csmaSwitches[164]));
 		switch_devices[164]->Add(nodelink164.Get(1));
 		terminaldevices164.Add(nodelink164.Get(0));
@@ -11317,7 +10304,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink165;
 		nodelink165 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals165.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[165].Get(i)),
 						csmaSwitches[165]));
 		switch_devices[165]->Add(nodelink165.Get(1));
 		terminaldevices165.Add(nodelink165.Get(0));
@@ -11326,7 +10313,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink166;
 		nodelink166 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals166.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[166].Get(i)),
 						csmaSwitches[166]));
 		switch_devices[166]->Add(nodelink166.Get(1));
 		terminaldevices166.Add(nodelink166.Get(0));
@@ -11335,7 +10322,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink167;
 		nodelink167 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals167.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[167].Get(i)),
 						csmaSwitches[167]));
 		switch_devices[167]->Add(nodelink167.Get(1));
 		terminaldevices167.Add(nodelink167.Get(0));
@@ -11344,7 +10331,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink168;
 		nodelink168 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals168.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[168].Get(i)),
 						csmaSwitches[168]));
 		switch_devices[168]->Add(nodelink168.Get(1));
 		terminaldevices168.Add(nodelink168.Get(0));
@@ -11353,7 +10340,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink169;
 		nodelink169 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals169.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[169].Get(i)),
 						csmaSwitches[169]));
 		switch_devices[169]->Add(nodelink169.Get(1));
 		terminaldevices169.Add(nodelink169.Get(0));
@@ -11362,7 +10349,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink170;
 		nodelink170 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals170.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[170].Get(i)),
 						csmaSwitches[170]));
 		switch_devices[170]->Add(nodelink170.Get(1));
 		terminaldevices170.Add(nodelink170.Get(0));
@@ -11371,7 +10358,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink171;
 		nodelink171 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals171.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[171].Get(i)),
 						csmaSwitches[171]));
 		switch_devices[171]->Add(nodelink171.Get(1));
 		terminaldevices171.Add(nodelink171.Get(0));
@@ -11380,7 +10367,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink172;
 		nodelink172 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals172.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[172].Get(i)),
 						csmaSwitches[172]));
 		switch_devices[172]->Add(nodelink172.Get(1));
 		terminaldevices172.Add(nodelink172.Get(0));
@@ -11389,7 +10376,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink173;
 		nodelink173 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals173.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[173].Get(i)),
 						csmaSwitches[173]));
 		switch_devices[173]->Add(nodelink173.Get(1));
 		terminaldevices173.Add(nodelink173.Get(0));
@@ -11398,7 +10385,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink174;
 		nodelink174 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals174.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[174].Get(i)),
 						csmaSwitches[174]));
 		switch_devices[174]->Add(nodelink174.Get(1));
 		terminaldevices174.Add(nodelink174.Get(0));
@@ -11407,7 +10394,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink175;
 		nodelink175 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals175.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[175].Get(i)),
 						csmaSwitches[175]));
 		switch_devices[175]->Add(nodelink175.Get(1));
 		terminaldevices175.Add(nodelink175.Get(0));
@@ -11416,7 +10403,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink176;
 		nodelink176 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals176.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[176].Get(i)),
 						csmaSwitches[176]));
 		switch_devices[176]->Add(nodelink176.Get(1));
 		terminaldevices176.Add(nodelink176.Get(0));
@@ -11425,7 +10412,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink177;
 		nodelink177 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals177.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[177].Get(i)),
 						csmaSwitches[177]));
 		switch_devices[177]->Add(nodelink177.Get(1));
 		terminaldevices177.Add(nodelink177.Get(0));
@@ -11434,7 +10421,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink178;
 		nodelink178 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals178.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[178].Get(i)),
 						csmaSwitches[178]));
 		switch_devices[178]->Add(nodelink178.Get(1));
 		terminaldevices178.Add(nodelink178.Get(0));
@@ -11443,7 +10430,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink179;
 		nodelink179 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals179.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[179].Get(i)),
 						csmaSwitches[179]));
 		switch_devices[179]->Add(nodelink179.Get(1));
 		terminaldevices179.Add(nodelink179.Get(0));
@@ -11452,7 +10439,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink180;
 		nodelink180 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals180.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[180].Get(i)),
 						csmaSwitches[180]));
 		switch_devices[180]->Add(nodelink180.Get(1));
 		terminaldevices180.Add(nodelink180.Get(0));
@@ -11461,7 +10448,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink181;
 		nodelink181 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals181.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[181].Get(i)),
 						csmaSwitches[181]));
 		switch_devices[181]->Add(nodelink181.Get(1));
 		terminaldevices181.Add(nodelink181.Get(0));
@@ -11470,7 +10457,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink182;
 		nodelink182 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals182.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[182].Get(i)),
 						csmaSwitches[182]));
 		switch_devices[182]->Add(nodelink182.Get(1));
 		terminaldevices182.Add(nodelink182.Get(0));
@@ -11479,7 +10466,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink183;
 		nodelink183 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals183.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[183].Get(i)),
 						csmaSwitches[183]));
 		switch_devices[183]->Add(nodelink183.Get(1));
 		terminaldevices183.Add(nodelink183.Get(0));
@@ -11488,7 +10475,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink184;
 		nodelink184 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals184.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[184].Get(i)),
 						csmaSwitches[184]));
 		switch_devices[184]->Add(nodelink184.Get(1));
 		terminaldevices184.Add(nodelink184.Get(0));
@@ -11497,7 +10484,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink185;
 		nodelink185 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals185.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[185].Get(i)),
 						csmaSwitches[185]));
 		switch_devices[185]->Add(nodelink185.Get(1));
 		terminaldevices185.Add(nodelink185.Get(0));
@@ -11506,7 +10493,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink186;
 		nodelink186 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals186.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[186].Get(i)),
 						csmaSwitches[186]));
 		switch_devices[186]->Add(nodelink186.Get(1));
 		terminaldevices186.Add(nodelink186.Get(0));
@@ -11515,7 +10502,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink187;
 		nodelink187 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals187.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[187].Get(i)),
 						csmaSwitches[187]));
 		switch_devices[187]->Add(nodelink187.Get(1));
 		terminaldevices187.Add(nodelink187.Get(0));
@@ -11524,7 +10511,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink188;
 		nodelink188 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals188.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[188].Get(i)),
 						csmaSwitches[188]));
 		switch_devices[188]->Add(nodelink188.Get(1));
 		terminaldevices188.Add(nodelink188.Get(0));
@@ -11533,7 +10520,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink189;
 		nodelink189 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals189.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[189].Get(i)),
 						csmaSwitches[189]));
 		switch_devices[189]->Add(nodelink189.Get(1));
 		terminaldevices189.Add(nodelink189.Get(0));
@@ -11542,7 +10529,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink190;
 		nodelink190 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals190.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[190].Get(i)),
 						csmaSwitches[190]));
 		switch_devices[190]->Add(nodelink190.Get(1));
 		terminaldevices190.Add(nodelink190.Get(0));
@@ -11551,7 +10538,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink191;
 		nodelink191 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals191.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[191].Get(i)),
 						csmaSwitches[191]));
 		switch_devices[191]->Add(nodelink191.Get(1));
 		terminaldevices191.Add(nodelink191.Get(0));
@@ -11560,7 +10547,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink192;
 		nodelink192 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals192.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[192].Get(i)),
 						csmaSwitches[192]));
 		switch_devices[192]->Add(nodelink192.Get(1));
 		terminaldevices192.Add(nodelink192.Get(0));
@@ -11569,7 +10556,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink193;
 		nodelink193 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals193.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[193].Get(i)),
 						csmaSwitches[193]));
 		switch_devices[193]->Add(nodelink193.Get(1));
 		terminaldevices193.Add(nodelink193.Get(0));
@@ -11578,7 +10565,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink194;
 		nodelink194 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals194.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[194].Get(i)),
 						csmaSwitches[194]));
 		switch_devices[194]->Add(nodelink194.Get(1));
 		terminaldevices194.Add(nodelink194.Get(0));
@@ -11587,7 +10574,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink195;
 		nodelink195 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals195.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[195].Get(i)),
 						csmaSwitches[195]));
 		switch_devices[195]->Add(nodelink195.Get(1));
 		terminaldevices195.Add(nodelink195.Get(0));
@@ -11596,7 +10583,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink196;
 		nodelink196 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals196.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[196].Get(i)),
 						csmaSwitches[196]));
 		switch_devices[196]->Add(nodelink196.Get(1));
 		terminaldevices196.Add(nodelink196.Get(0));
@@ -11605,7 +10592,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink197;
 		nodelink197 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals197.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[197].Get(i)),
 						csmaSwitches[197]));
 		switch_devices[197]->Add(nodelink197.Get(1));
 		terminaldevices197.Add(nodelink197.Get(0));
@@ -11614,7 +10601,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink198;
 		nodelink198 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals198.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[198].Get(i)),
 						csmaSwitches[198]));
 		switch_devices[198]->Add(nodelink198.Get(1));
 		terminaldevices198.Add(nodelink198.Get(0));
@@ -11623,7 +10610,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink199;
 		nodelink199 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals199.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[199].Get(i)),
 						csmaSwitches[199]));
 		switch_devices[199]->Add(nodelink199.Get(1));
 		terminaldevices199.Add(nodelink199.Get(0));
@@ -11632,7 +10619,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink200;
 		nodelink200 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals200.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[200].Get(i)),
 						csmaSwitches[200]));
 		switch_devices[200]->Add(nodelink200.Get(1));
 		terminaldevices200.Add(nodelink200.Get(0));
@@ -11641,7 +10628,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink201;
 		nodelink201 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals201.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[201].Get(i)),
 						csmaSwitches[201]));
 		switch_devices[201]->Add(nodelink201.Get(1));
 		terminaldevices201.Add(nodelink201.Get(0));
@@ -11650,7 +10637,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink202;
 		nodelink202 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals202.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[202].Get(i)),
 						csmaSwitches[202]));
 		switch_devices[202]->Add(nodelink202.Get(1));
 		terminaldevices202.Add(nodelink202.Get(0));
@@ -11659,7 +10646,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink203;
 		nodelink203 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals203.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[203].Get(i)),
 						csmaSwitches[203]));
 		switch_devices[203]->Add(nodelink203.Get(1));
 		terminaldevices203.Add(nodelink203.Get(0));
@@ -11668,7 +10655,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink204;
 		nodelink204 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals204.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[204].Get(i)),
 						csmaSwitches[204]));
 		switch_devices[204]->Add(nodelink204.Get(1));
 		terminaldevices204.Add(nodelink204.Get(0));
@@ -11677,7 +10664,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink205;
 		nodelink205 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals205.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[205].Get(i)),
 						csmaSwitches[205]));
 		switch_devices[205]->Add(nodelink205.Get(1));
 		terminaldevices205.Add(nodelink205.Get(0));
@@ -11686,7 +10673,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink206;
 		nodelink206 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals206.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[206].Get(i)),
 						csmaSwitches[206]));
 		switch_devices[206]->Add(nodelink206.Get(1));
 		terminaldevices206.Add(nodelink206.Get(0));
@@ -11695,7 +10682,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink207;
 		nodelink207 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals207.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[207].Get(i)),
 						csmaSwitches[207]));
 		switch_devices[207]->Add(nodelink207.Get(1));
 		terminaldevices207.Add(nodelink207.Get(0));
@@ -11704,7 +10691,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink208;
 		nodelink208 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals208.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[208].Get(i)),
 						csmaSwitches[208]));
 		switch_devices[208]->Add(nodelink208.Get(1));
 		terminaldevices208.Add(nodelink208.Get(0));
@@ -11713,7 +10700,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink209;
 		nodelink209 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals209.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[209].Get(i)),
 						csmaSwitches[209]));
 		switch_devices[209]->Add(nodelink209.Get(1));
 		terminaldevices209.Add(nodelink209.Get(0));
@@ -11722,7 +10709,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink210;
 		nodelink210 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals210.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[210].Get(i)),
 						csmaSwitches[210]));
 		switch_devices[210]->Add(nodelink210.Get(1));
 		terminaldevices210.Add(nodelink210.Get(0));
@@ -11731,7 +10718,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink211;
 		nodelink211 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals211.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[211].Get(i)),
 						csmaSwitches[211]));
 		switch_devices[211]->Add(nodelink211.Get(1));
 		terminaldevices211.Add(nodelink211.Get(0));
@@ -11740,7 +10727,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink212;
 		nodelink212 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals212.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[212].Get(i)),
 						csmaSwitches[212]));
 		switch_devices[212]->Add(nodelink212.Get(1));
 		terminaldevices212.Add(nodelink212.Get(0));
@@ -11749,7 +10736,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink214;
 		nodelink214 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals214.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[214].Get(i)),
 						csmaSwitches[214]));
 		switch_devices[214]->Add(nodelink214.Get(1));
 		terminaldevices214.Add(nodelink214.Get(0));
@@ -11758,7 +10745,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink215;
 		nodelink215 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals215.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[215].Get(i)),
 						csmaSwitches[215]));
 		switch_devices[215]->Add(nodelink215.Get(1));
 		terminaldevices215.Add(nodelink215.Get(0));
@@ -11767,7 +10754,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink216;
 		nodelink216 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals216.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[216].Get(i)),
 						csmaSwitches[216]));
 		switch_devices[216]->Add(nodelink216.Get(1));
 		terminaldevices216.Add(nodelink216.Get(0));
@@ -11776,7 +10763,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink217;
 		nodelink217 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals217.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[217].Get(i)),
 						csmaSwitches[217]));
 		switch_devices[217]->Add(nodelink217.Get(1));
 		terminaldevices217.Add(nodelink217.Get(0));
@@ -11785,7 +10772,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink218;
 		nodelink218 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals218.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[218].Get(i)),
 						csmaSwitches[218]));
 		switch_devices[218]->Add(nodelink218.Get(1));
 		terminaldevices218.Add(nodelink218.Get(0));
@@ -11794,7 +10781,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink219;
 		nodelink219 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals219.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[219].Get(i)),
 						csmaSwitches[219]));
 		switch_devices[219]->Add(nodelink219.Get(1));
 		terminaldevices219.Add(nodelink219.Get(0));
@@ -11803,7 +10790,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink220;
 		nodelink220 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals220.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[220].Get(i)),
 						csmaSwitches[220]));
 		switch_devices[220]->Add(nodelink220.Get(1));
 		terminaldevices220.Add(nodelink220.Get(0));
@@ -11812,7 +10799,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink221;
 		nodelink221 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals221.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[221].Get(i)),
 						csmaSwitches[221]));
 		switch_devices[221]->Add(nodelink221.Get(1));
 		terminaldevices221.Add(nodelink221.Get(0));
@@ -11821,7 +10808,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink222;
 		nodelink222 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals222.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[222].Get(i)),
 						csmaSwitches[222]));
 		switch_devices[222]->Add(nodelink222.Get(1));
 		terminaldevices222.Add(nodelink222.Get(0));
@@ -11830,7 +10817,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink223;
 		nodelink223 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals223.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[223].Get(i)),
 						csmaSwitches[223]));
 		switch_devices[223]->Add(nodelink223.Get(1));
 		terminaldevices223.Add(nodelink223.Get(0));
@@ -11839,7 +10826,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink224;
 		nodelink224 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals224.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[224].Get(i)),
 						csmaSwitches[224]));
 		switch_devices[224]->Add(nodelink224.Get(1));
 		terminaldevices224.Add(nodelink224.Get(0));
@@ -11848,7 +10835,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink225;
 		nodelink225 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals225.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[225].Get(i)),
 						csmaSwitches[225]));
 		switch_devices[225]->Add(nodelink225.Get(1));
 		terminaldevices225.Add(nodelink225.Get(0));
@@ -11857,7 +10844,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink226;
 		nodelink226 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals226.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[226].Get(i)),
 						csmaSwitches[226]));
 		switch_devices[226]->Add(nodelink226.Get(1));
 		terminaldevices226.Add(nodelink226.Get(0));
@@ -11866,7 +10853,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink227;
 		nodelink227 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals227.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[227].Get(i)),
 						csmaSwitches[227]));
 		switch_devices[227]->Add(nodelink227.Get(1));
 		terminaldevices227.Add(nodelink227.Get(0));
@@ -11875,7 +10862,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink228;
 		nodelink228 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals228.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[228].Get(i)),
 						csmaSwitches[228]));
 		switch_devices[228]->Add(nodelink228.Get(1));
 		terminaldevices228.Add(nodelink228.Get(0));
@@ -11884,7 +10871,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink229;
 		nodelink229 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals229.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[229].Get(i)),
 						csmaSwitches[229]));
 		switch_devices[229]->Add(nodelink229.Get(1));
 		terminaldevices229.Add(nodelink229.Get(0));
@@ -11893,7 +10880,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink230;
 		nodelink230 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals230.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[230].Get(i)),
 						csmaSwitches[230]));
 		switch_devices[230]->Add(nodelink230.Get(1));
 		terminaldevices230.Add(nodelink230.Get(0));
@@ -11902,7 +10889,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink231;
 		nodelink231 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals231.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[231].Get(i)),
 						csmaSwitches[231]));
 		switch_devices[231]->Add(nodelink231.Get(1));
 		terminaldevices231.Add(nodelink231.Get(0));
@@ -11911,7 +10898,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink232;
 		nodelink232 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals232.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[232].Get(i)),
 						csmaSwitches[232]));
 		switch_devices[232]->Add(nodelink232.Get(1));
 		terminaldevices232.Add(nodelink232.Get(0));
@@ -11920,7 +10907,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink233;
 		nodelink233 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals233.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[233].Get(i)),
 						csmaSwitches[233]));
 		switch_devices[233]->Add(nodelink233.Get(1));
 		terminaldevices233.Add(nodelink233.Get(0));
@@ -11929,7 +10916,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink234;
 		nodelink234 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals234.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[234].Get(i)),
 						csmaSwitches[234]));
 		switch_devices[234]->Add(nodelink234.Get(1));
 		terminaldevices234.Add(nodelink234.Get(0));
@@ -11938,7 +10925,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink235;
 		nodelink235 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals235.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[235].Get(i)),
 						csmaSwitches[235]));
 		switch_devices[235]->Add(nodelink235.Get(1));
 		terminaldevices235.Add(nodelink235.Get(0));
@@ -11947,7 +10934,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink236;
 		nodelink236 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals236.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[236].Get(i)),
 						csmaSwitches[236]));
 		switch_devices[236]->Add(nodelink236.Get(1));
 		terminaldevices236.Add(nodelink236.Get(0));
@@ -11956,7 +10943,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink237;
 		nodelink237 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals237.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[237].Get(i)),
 						csmaSwitches[237]));
 		switch_devices[237]->Add(nodelink237.Get(1));
 		terminaldevices237.Add(nodelink237.Get(0));
@@ -11965,7 +10952,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink238;
 		nodelink238 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals238.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[238].Get(i)),
 						csmaSwitches[238]));
 		switch_devices[238]->Add(nodelink238.Get(1));
 		terminaldevices238.Add(nodelink238.Get(0));
@@ -11974,7 +10961,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink239;
 		nodelink239 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals239.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[239].Get(i)),
 						csmaSwitches[239]));
 		switch_devices[239]->Add(nodelink239.Get(1));
 		terminaldevices239.Add(nodelink239.Get(0));
@@ -11983,7 +10970,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink240;
 		nodelink240 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals240.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[240].Get(i)),
 						csmaSwitches[240]));
 		switch_devices[240]->Add(nodelink240.Get(1));
 		terminaldevices240.Add(nodelink240.Get(0));
@@ -11992,7 +10979,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink241;
 		nodelink241 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals241.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[241].Get(i)),
 						csmaSwitches[241]));
 		switch_devices[241]->Add(nodelink241.Get(1));
 		terminaldevices241.Add(nodelink241.Get(0));
@@ -12001,7 +10988,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink242;
 		nodelink242 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals242.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[242].Get(i)),
 						csmaSwitches[242]));
 		switch_devices[242]->Add(nodelink242.Get(1));
 		terminaldevices242.Add(nodelink242.Get(0));
@@ -12010,7 +10997,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink243;
 		nodelink243 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals243.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[243].Get(i)),
 						csmaSwitches[243]));
 		switch_devices[243]->Add(nodelink243.Get(1));
 		terminaldevices243.Add(nodelink243.Get(0));
@@ -12019,7 +11006,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink244;
 		nodelink244 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals244.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[244].Get(i)),
 						csmaSwitches[244]));
 		switch_devices[244]->Add(nodelink244.Get(1));
 		terminaldevices244.Add(nodelink244.Get(0));
@@ -12028,7 +11015,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink245;
 		nodelink245 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals245.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[245].Get(i)),
 						csmaSwitches[245]));
 		switch_devices[245]->Add(nodelink245.Get(1));
 		terminaldevices245.Add(nodelink245.Get(0));
@@ -12037,7 +11024,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink246;
 		nodelink246 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals246.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[246].Get(i)),
 						csmaSwitches[246]));
 		switch_devices[246]->Add(nodelink246.Get(1));
 		terminaldevices246.Add(nodelink246.Get(0));
@@ -12046,7 +11033,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink247;
 		nodelink247 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals247.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[247].Get(i)),
 						csmaSwitches[247]));
 		switch_devices[247]->Add(nodelink247.Get(1));
 		terminaldevices247.Add(nodelink247.Get(0));
@@ -12055,7 +11042,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink248;
 		nodelink248 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals248.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[248].Get(i)),
 						csmaSwitches[248]));
 		switch_devices[248]->Add(nodelink248.Get(1));
 		terminaldevices248.Add(nodelink248.Get(0));
@@ -12064,7 +11051,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink284;
 		nodelink284 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals284.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[284].Get(i)),
 						csmaSwitches[284]));
 		switch_devices[284]->Add(nodelink284.Get(1));
 		terminaldevices284.Add(nodelink284.Get(0));
@@ -12073,7 +11060,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink249;
 		nodelink249 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals249.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[249].Get(i)),
 						csmaSwitches[249]));
 		switch_devices[249]->Add(nodelink249.Get(1));
 		terminaldevices249.Add(nodelink249.Get(0));
@@ -12082,7 +11069,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink250;
 		nodelink250 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals250.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[250].Get(i)),
 						csmaSwitches[250]));
 		switch_devices[250]->Add(nodelink250.Get(1));
 		terminaldevices250.Add(nodelink250.Get(0));
@@ -12091,7 +11078,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink251;
 		nodelink251 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals251.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[251].Get(i)),
 						csmaSwitches[251]));
 		switch_devices[251]->Add(nodelink251.Get(1));
 		terminaldevices251.Add(nodelink251.Get(0));
@@ -12100,7 +11087,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink252;
 		nodelink252 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals252.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[252].Get(i)),
 						csmaSwitches[252]));
 		switch_devices[252]->Add(nodelink252.Get(1));
 		terminaldevices252.Add(nodelink252.Get(0));
@@ -12109,7 +11096,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink253;
 		nodelink253 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals253.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[253].Get(i)),
 						csmaSwitches[253]));
 		switch_devices[253]->Add(nodelink253.Get(1));
 		terminaldevices253.Add(nodelink253.Get(0));
@@ -12118,7 +11105,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink254;
 		nodelink254 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals254.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[254].Get(i)),
 						csmaSwitches[254]));
 		switch_devices[254]->Add(nodelink254.Get(1));
 		terminaldevices254.Add(nodelink254.Get(0));
@@ -12127,7 +11114,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink255;
 		nodelink255 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals255.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[255].Get(i)),
 						csmaSwitches[255]));
 		switch_devices[255]->Add(nodelink255.Get(1));
 		terminaldevices255.Add(nodelink255.Get(0));
@@ -12136,7 +11123,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink256;
 		nodelink256 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals256.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[256].Get(i)),
 						csmaSwitches[256]));
 		switch_devices[256]->Add(nodelink256.Get(1));
 		terminaldevices256.Add(nodelink256.Get(0));
@@ -12145,7 +11132,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink257;
 		nodelink257 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals257.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[257].Get(i)),
 						csmaSwitches[257]));
 		switch_devices[257]->Add(nodelink257.Get(1));
 		terminaldevices257.Add(nodelink257.Get(0));
@@ -12154,7 +11141,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink258;
 		nodelink258 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals258.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[258].Get(i)),
 						csmaSwitches[258]));
 		switch_devices[258]->Add(nodelink258.Get(1));
 		terminaldevices258.Add(nodelink258.Get(0));
@@ -12163,7 +11150,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink259;
 		nodelink259 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals259.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[259].Get(i)),
 						csmaSwitches[259]));
 		switch_devices[259]->Add(nodelink259.Get(1));
 		terminaldevices259.Add(nodelink259.Get(0));
@@ -12172,7 +11159,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink260;
 		nodelink260 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals260.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[260].Get(i)),
 						csmaSwitches[260]));
 		switch_devices[260]->Add(nodelink260.Get(1));
 		terminaldevices260.Add(nodelink260.Get(0));
@@ -12181,7 +11168,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink261;
 		nodelink261 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals261.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[261].Get(i)),
 						csmaSwitches[261]));
 		switch_devices[261]->Add(nodelink261.Get(1));
 		terminaldevices261.Add(nodelink261.Get(0));
@@ -12190,7 +11177,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink262;
 		nodelink262 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals262.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[262].Get(i)),
 						csmaSwitches[262]));
 		switch_devices[262]->Add(nodelink262.Get(1));
 		terminaldevices262.Add(nodelink262.Get(0));
@@ -12199,7 +11186,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink263;
 		nodelink263 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals263.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[263].Get(i)),
 						csmaSwitches[263]));
 		switch_devices[263]->Add(nodelink263.Get(1));
 		terminaldevices263.Add(nodelink263.Get(0));
@@ -12208,7 +11195,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink264;
 		nodelink264 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals264.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[264].Get(i)),
 						csmaSwitches[264]));
 		switch_devices[264]->Add(nodelink264.Get(1));
 		terminaldevices264.Add(nodelink264.Get(0));
@@ -12217,7 +11204,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink265;
 		nodelink265 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals265.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[265].Get(i)),
 						csmaSwitches[265]));
 		switch_devices[265]->Add(nodelink265.Get(1));
 		terminaldevices265.Add(nodelink265.Get(0));
@@ -12226,7 +11213,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink266;
 		nodelink266 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals266.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[266].Get(i)),
 						csmaSwitches[266]));
 		switch_devices[266]->Add(nodelink266.Get(1));
 		terminaldevices266.Add(nodelink266.Get(0));
@@ -12235,7 +11222,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink267;
 		nodelink267 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals267.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[267].Get(i)),
 						csmaSwitches[267]));
 		switch_devices[267]->Add(nodelink267.Get(1));
 		terminaldevices267.Add(nodelink267.Get(0));
@@ -12244,7 +11231,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink268;
 		nodelink268 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals268.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[268].Get(i)),
 						csmaSwitches[268]));
 		switch_devices[268]->Add(nodelink268.Get(1));
 		terminaldevices268.Add(nodelink268.Get(0));
@@ -12253,7 +11240,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink269;
 		nodelink269 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals269.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[269].Get(i)),
 						csmaSwitches[269]));
 		switch_devices[269]->Add(nodelink269.Get(1));
 		terminaldevices269.Add(nodelink269.Get(0));
@@ -12262,7 +11249,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink270;
 		nodelink270 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals270.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[270].Get(i)),
 						csmaSwitches[270]));
 		switch_devices[270]->Add(nodelink270.Get(1));
 		terminaldevices270.Add(nodelink270.Get(0));
@@ -12271,7 +11258,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink272;
 		nodelink272 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals272.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[272].Get(i)),
 						csmaSwitches[272]));
 		switch_devices[272]->Add(nodelink272.Get(1));
 		terminaldevices272.Add(nodelink272.Get(0));
@@ -12280,7 +11267,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink273;
 		nodelink273 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals273.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[273].Get(i)),
 						csmaSwitches[273]));
 		switch_devices[273]->Add(nodelink273.Get(1));
 		terminaldevices273.Add(nodelink273.Get(0));
@@ -12289,7 +11276,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink274;
 		nodelink274 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals274.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[274].Get(i)),
 						csmaSwitches[274]));
 		switch_devices[274]->Add(nodelink274.Get(1));
 		terminaldevices274.Add(nodelink274.Get(0));
@@ -12298,7 +11285,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink275;
 		nodelink275 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals275.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[275].Get(i)),
 						csmaSwitches[275]));
 		switch_devices[275]->Add(nodelink275.Get(1));
 		terminaldevices275.Add(nodelink275.Get(0));
@@ -12307,7 +11294,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink276;
 		nodelink276 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals276.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[276].Get(i)),
 						csmaSwitches[276]));
 		switch_devices[276]->Add(nodelink276.Get(1));
 		terminaldevices276.Add(nodelink276.Get(0));
@@ -12316,7 +11303,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink277;
 		nodelink277 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals277.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[277].Get(i)),
 						csmaSwitches[277]));
 		switch_devices[277]->Add(nodelink277.Get(1));
 		terminaldevices277.Add(nodelink277.Get(0));
@@ -12325,7 +11312,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink278;
 		nodelink278 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals278.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[278].Get(i)),
 						csmaSwitches[278]));
 		switch_devices[278]->Add(nodelink278.Get(1));
 		terminaldevices278.Add(nodelink278.Get(0));
@@ -12334,7 +11321,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink279;
 		nodelink279 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals279.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[279].Get(i)),
 						csmaSwitches[279]));
 		switch_devices[279]->Add(nodelink279.Get(1));
 		terminaldevices279.Add(nodelink279.Get(0));
@@ -12343,7 +11330,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink280;
 		nodelink280 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals280.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[280].Get(i)),
 						csmaSwitches[280]));
 		switch_devices[280]->Add(nodelink280.Get(1));
 		terminaldevices280.Add(nodelink280.Get(0));
@@ -12352,7 +11339,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink281;
 		nodelink281 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals281.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[281].Get(i)),
 						csmaSwitches[281]));
 		switch_devices[281]->Add(nodelink281.Get(1));
 		terminaldevices281.Add(nodelink281.Get(0));
@@ -12361,7 +11348,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink282;
 		nodelink282 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals282.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[282].Get(i)),
 						csmaSwitches[282]));
 		switch_devices[282]->Add(nodelink282.Get(1));
 		terminaldevices282.Add(nodelink282.Get(0));
@@ -12370,7 +11357,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink283;
 		nodelink283 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals283.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[283].Get(i)),
 						csmaSwitches[283]));
 		switch_devices[283]->Add(nodelink283.Get(1));
 		terminaldevices283.Add(nodelink283.Get(0));
@@ -12379,7 +11366,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink285;
 		nodelink285 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals285.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[285].Get(i)),
 						csmaSwitches[285]));
 		switch_devices[285]->Add(nodelink285.Get(1));
 		terminaldevices285.Add(nodelink285.Get(0));
@@ -12388,7 +11375,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink286;
 		nodelink286 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals286.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[286].Get(i)),
 						csmaSwitches[286]));
 		switch_devices[286]->Add(nodelink286.Get(1));
 		terminaldevices286.Add(nodelink286.Get(0));
@@ -12397,7 +11384,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink287;
 		nodelink287 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals287.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[287].Get(i)),
 						csmaSwitches[287]));
 		switch_devices[287]->Add(nodelink287.Get(1));
 		terminaldevices287.Add(nodelink287.Get(0));
@@ -12406,7 +11393,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink288;
 		nodelink288 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals288.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[288].Get(i)),
 						csmaSwitches[288]));
 		switch_devices[288]->Add(nodelink288.Get(1));
 		terminaldevices288.Add(nodelink288.Get(0));
@@ -12415,7 +11402,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink289;
 		nodelink289 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals289.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[289].Get(i)),
 						csmaSwitches[289]));
 		switch_devices[289]->Add(nodelink289.Get(1));
 		terminaldevices289.Add(nodelink289.Get(0));
@@ -12424,7 +11411,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink290;
 		nodelink290 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals290.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[290].Get(i)),
 						csmaSwitches[290]));
 		switch_devices[290]->Add(nodelink290.Get(1));
 		terminaldevices290.Add(nodelink290.Get(0));
@@ -12433,7 +11420,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink291;
 		nodelink291 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals291.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[291].Get(i)),
 						csmaSwitches[291]));
 		switch_devices[291]->Add(nodelink291.Get(1));
 		terminaldevices291.Add(nodelink291.Get(0));
@@ -12442,7 +11429,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink292;
 		nodelink292 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals292.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[292].Get(i)),
 						csmaSwitches[292]));
 		switch_devices[292]->Add(nodelink292.Get(1));
 		terminaldevices292.Add(nodelink292.Get(0));
@@ -12451,7 +11438,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink293;
 		nodelink293 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals293.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[293].Get(i)),
 						csmaSwitches[293]));
 		switch_devices[293]->Add(nodelink293.Get(1));
 		terminaldevices293.Add(nodelink293.Get(0));
@@ -12460,7 +11447,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink294;
 		nodelink294 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals294.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[294].Get(i)),
 						csmaSwitches[294]));
 		switch_devices[294]->Add(nodelink294.Get(1));
 		terminaldevices294.Add(nodelink294.Get(0));
@@ -12469,7 +11456,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink295;
 		nodelink295 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals295.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[295].Get(i)),
 						csmaSwitches[295]));
 		switch_devices[295]->Add(nodelink295.Get(1));
 		terminaldevices295.Add(nodelink295.Get(0));
@@ -12478,7 +11465,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink296;
 		nodelink296 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals296.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[296].Get(i)),
 						csmaSwitches[296]));
 		switch_devices[296]->Add(nodelink296.Get(1));
 		terminaldevices296.Add(nodelink296.Get(0));
@@ -12487,7 +11474,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink297;
 		nodelink297 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals297.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[297].Get(i)),
 						csmaSwitches[297]));
 		switch_devices[297]->Add(nodelink297.Get(1));
 		terminaldevices297.Add(nodelink297.Get(0));
@@ -12496,7 +11483,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink298;
 		nodelink298 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals298.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[298].Get(i)),
 						csmaSwitches[298]));
 		switch_devices[298]->Add(nodelink298.Get(1));
 		terminaldevices298.Add(nodelink298.Get(0));
@@ -12505,7 +11492,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink299;
 		nodelink299 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals299.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[299].Get(i)),
 						csmaSwitches[299]));
 		switch_devices[299]->Add(nodelink299.Get(1));
 		terminaldevices299.Add(nodelink299.Get(0));
@@ -12514,7 +11501,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink300;
 		nodelink300 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals300.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[300].Get(i)),
 						csmaSwitches[300]));
 		switch_devices[300]->Add(nodelink300.Get(1));
 		terminaldevices300.Add(nodelink300.Get(0));
@@ -12523,7 +11510,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink301;
 		nodelink301 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals301.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[301].Get(i)),
 						csmaSwitches[301]));
 		switch_devices[301]->Add(nodelink301.Get(1));
 		terminaldevices301.Add(nodelink301.Get(0));
@@ -12532,7 +11519,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink302;
 		nodelink302 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals302.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[302].Get(i)),
 						csmaSwitches[302]));
 		switch_devices[302]->Add(nodelink302.Get(1));
 		terminaldevices302.Add(nodelink302.Get(0));
@@ -12541,7 +11528,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink303;
 		nodelink303 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals303.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[303].Get(i)),
 						csmaSwitches[303]));
 		switch_devices[303]->Add(nodelink303.Get(1));
 		terminaldevices303.Add(nodelink303.Get(0));
@@ -12550,7 +11537,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink304;
 		nodelink304 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals304.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[304].Get(i)),
 						csmaSwitches[304]));
 		switch_devices[304]->Add(nodelink304.Get(1));
 		terminaldevices304.Add(nodelink304.Get(0));
@@ -12559,7 +11546,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink305;
 		nodelink305 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals305.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[305].Get(i)),
 						csmaSwitches[305]));
 		switch_devices[305]->Add(nodelink305.Get(1));
 		terminaldevices305.Add(nodelink305.Get(0));
@@ -12568,7 +11555,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink306;
 		nodelink306 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals306.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[306].Get(i)),
 						csmaSwitches[306]));
 		switch_devices[306]->Add(nodelink306.Get(1));
 		terminaldevices306.Add(nodelink306.Get(0));
@@ -12577,7 +11564,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink307;
 		nodelink307 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals307.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[307].Get(i)),
 						csmaSwitches[307]));
 		switch_devices[307]->Add(nodelink307.Get(1));
 		terminaldevices307.Add(nodelink307.Get(0));
@@ -12586,7 +11573,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink308;
 		nodelink308 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals308.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[308].Get(i)),
 						csmaSwitches[308]));
 		switch_devices[308]->Add(nodelink308.Get(1));
 		terminaldevices308.Add(nodelink308.Get(0));
@@ -12595,7 +11582,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink309;
 		nodelink309 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals309.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[309].Get(i)),
 						csmaSwitches[309]));
 		switch_devices[309]->Add(nodelink309.Get(1));
 		terminaldevices309.Add(nodelink309.Get(0));
@@ -12604,7 +11591,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink310;
 		nodelink310 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals310.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[310].Get(i)),
 						csmaSwitches[310]));
 		switch_devices[310]->Add(nodelink310.Get(1));
 		terminaldevices310.Add(nodelink310.Get(0));
@@ -12613,7 +11600,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink311;
 		nodelink311 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals311.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[311].Get(i)),
 						csmaSwitches[311]));
 		switch_devices[311]->Add(nodelink311.Get(1));
 		terminaldevices311.Add(nodelink311.Get(0));
@@ -12622,7 +11609,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink312;
 		nodelink312 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals312.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[312].Get(i)),
 						csmaSwitches[312]));
 		switch_devices[312]->Add(nodelink312.Get(1));
 		terminaldevices312.Add(nodelink312.Get(0));
@@ -12631,7 +11618,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink313;
 		nodelink313 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals313.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[313].Get(i)),
 						csmaSwitches[313]));
 		switch_devices[313]->Add(nodelink313.Get(1));
 		terminaldevices313.Add(nodelink313.Get(0));
@@ -12640,7 +11627,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink314;
 		nodelink314 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals314.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[314].Get(i)),
 						csmaSwitches[314]));
 		switch_devices[314]->Add(nodelink314.Get(1));
 		terminaldevices314.Add(nodelink314.Get(0));
@@ -12649,7 +11636,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink315;
 		nodelink315 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals315.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[315].Get(i)),
 						csmaSwitches[315]));
 		switch_devices[315]->Add(nodelink315.Get(1));
 		terminaldevices315.Add(nodelink315.Get(0));
@@ -12658,7 +11645,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink316;
 		nodelink316 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals316.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[316].Get(i)),
 						csmaSwitches[316]));
 		switch_devices[316]->Add(nodelink316.Get(1));
 		terminaldevices316.Add(nodelink316.Get(0));
@@ -12667,7 +11654,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink317;
 		nodelink317 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals317.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[317].Get(i)),
 						csmaSwitches[317]));
 		switch_devices[317]->Add(nodelink317.Get(1));
 		terminaldevices317.Add(nodelink317.Get(0));
@@ -12676,7 +11663,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink318;
 		nodelink318 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals318.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[318].Get(i)),
 						csmaSwitches[318]));
 		switch_devices[318]->Add(nodelink318.Get(1));
 		terminaldevices318.Add(nodelink318.Get(0));
@@ -12685,7 +11672,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink319;
 		nodelink319 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals319.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[319].Get(i)),
 						csmaSwitches[319]));
 		switch_devices[319]->Add(nodelink319.Get(1));
 		terminaldevices319.Add(nodelink319.Get(0));
@@ -12694,7 +11681,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink320;
 		nodelink320 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals320.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[320].Get(i)),
 						csmaSwitches[320]));
 		switch_devices[320]->Add(nodelink320.Get(1));
 		terminaldevices320.Add(nodelink320.Get(0));
@@ -12703,7 +11690,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink321;
 		nodelink321 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals321.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[321].Get(i)),
 						csmaSwitches[321]));
 		switch_devices[321]->Add(nodelink321.Get(1));
 		terminaldevices321.Add(nodelink321.Get(0));
@@ -12712,7 +11699,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink322;
 		nodelink322 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals322.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[322].Get(i)),
 						csmaSwitches[322]));
 		switch_devices[322]->Add(nodelink322.Get(1));
 		terminaldevices322.Add(nodelink322.Get(0));
@@ -12721,7 +11708,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink323;
 		nodelink323 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals323.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[323].Get(i)),
 						csmaSwitches[323]));
 		switch_devices[323]->Add(nodelink323.Get(1));
 		terminaldevices323.Add(nodelink323.Get(0));
@@ -12730,7 +11717,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink324;
 		nodelink324 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals324.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[324].Get(i)),
 						csmaSwitches[324]));
 		switch_devices[324]->Add(nodelink324.Get(1));
 		terminaldevices324.Add(nodelink324.Get(0));
@@ -12739,7 +11726,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink325;
 		nodelink325 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals325.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[325].Get(i)),
 						csmaSwitches[325]));
 		switch_devices[325]->Add(nodelink325.Get(1));
 		terminaldevices325.Add(nodelink325.Get(0));
@@ -12748,7 +11735,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink326;
 		nodelink326 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals326.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[326].Get(i)),
 						csmaSwitches[326]));
 		switch_devices[326]->Add(nodelink326.Get(1));
 		terminaldevices326.Add(nodelink326.Get(0));
@@ -12757,7 +11744,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink327;
 		nodelink327 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals327.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[327].Get(i)),
 						csmaSwitches[327]));
 		switch_devices[327]->Add(nodelink327.Get(1));
 		terminaldevices327.Add(nodelink327.Get(0));
@@ -12766,7 +11753,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink328;
 		nodelink328 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals328.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[328].Get(i)),
 						csmaSwitches[328]));
 		switch_devices[328]->Add(nodelink328.Get(1));
 		terminaldevices328.Add(nodelink328.Get(0));
@@ -12775,7 +11762,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink329;
 		nodelink329 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals329.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[329].Get(i)),
 						csmaSwitches[329]));
 		switch_devices[329]->Add(nodelink329.Get(1));
 		terminaldevices329.Add(nodelink329.Get(0));
@@ -12784,7 +11771,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink330;
 		nodelink330 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals330.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[330].Get(i)),
 						csmaSwitches[330]));
 		switch_devices[330]->Add(nodelink330.Get(1));
 		terminaldevices330.Add(nodelink330.Get(0));
@@ -12793,7 +11780,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink331;
 		nodelink331 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals331.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[331].Get(i)),
 						csmaSwitches[331]));
 		switch_devices[331]->Add(nodelink331.Get(1));
 		terminaldevices331.Add(nodelink331.Get(0));
@@ -12802,7 +11789,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink332;
 		nodelink332 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals332.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[332].Get(i)),
 						csmaSwitches[332]));
 		switch_devices[332]->Add(nodelink332.Get(1));
 		terminaldevices332.Add(nodelink332.Get(0));
@@ -12811,7 +11798,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink334;
 		nodelink334 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals334.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[334].Get(i)),
 						csmaSwitches[334]));
 		switch_devices[334]->Add(nodelink334.Get(1));
 		terminaldevices334.Add(nodelink334.Get(0));
@@ -12820,7 +11807,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink335;
 		nodelink335 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals335.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[335].Get(i)),
 						csmaSwitches[335]));
 		switch_devices[335]->Add(nodelink335.Get(1));
 		terminaldevices335.Add(nodelink335.Get(0));
@@ -12829,7 +11816,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink336;
 		nodelink336 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals336.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[336].Get(i)),
 						csmaSwitches[336]));
 		switch_devices[336]->Add(nodelink336.Get(1));
 		terminaldevices336.Add(nodelink336.Get(0));
@@ -12838,7 +11825,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink337;
 		nodelink337 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals337.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[337].Get(i)),
 						csmaSwitches[337]));
 		switch_devices[337]->Add(nodelink337.Get(1));
 		terminaldevices337.Add(nodelink337.Get(0));
@@ -12847,7 +11834,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink338;
 		nodelink338 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals338.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[338].Get(i)),
 						csmaSwitches[338]));
 		switch_devices[338]->Add(nodelink338.Get(1));
 		terminaldevices338.Add(nodelink338.Get(0));
@@ -12856,7 +11843,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink339;
 		nodelink339 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals339.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[339].Get(i)),
 						csmaSwitches[339]));
 		switch_devices[339]->Add(nodelink339.Get(1));
 		terminaldevices339.Add(nodelink339.Get(0));
@@ -12865,7 +11852,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink340;
 		nodelink340 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals340.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[340].Get(i)),
 						csmaSwitches[340]));
 		switch_devices[340]->Add(nodelink340.Get(1));
 		terminaldevices340.Add(nodelink340.Get(0));
@@ -12874,7 +11861,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink341;
 		nodelink341 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals341.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[341].Get(i)),
 						csmaSwitches[341]));
 		switch_devices[341]->Add(nodelink341.Get(1));
 		terminaldevices341.Add(nodelink341.Get(0));
@@ -12883,7 +11870,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink342;
 		nodelink342 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals342.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[342].Get(i)),
 						csmaSwitches[342]));
 		switch_devices[342]->Add(nodelink342.Get(1));
 		terminaldevices342.Add(nodelink342.Get(0));
@@ -12892,7 +11879,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink343;
 		nodelink343 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals343.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[343].Get(i)),
 						csmaSwitches[343]));
 		switch_devices[343]->Add(nodelink343.Get(1));
 		terminaldevices343.Add(nodelink343.Get(0));
@@ -12901,7 +11888,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 15; ++i) {
 		ns3::NetDeviceContainer nodelink344;
 		nodelink344 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals344.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[344].Get(i)),
 						csmaSwitches[344]));
 		switch_devices[344]->Add(nodelink344.Get(1));
 		terminaldevices344.Add(nodelink344.Get(0));
@@ -12910,7 +11897,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 5; ++i) {
 		ns3::NetDeviceContainer nodelink345;
 		nodelink345 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals345.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[345].Get(i)),
 						csmaSwitches[345]));
 		switch_devices[345]->Add(nodelink345.Get(1));
 		terminaldevices345.Add(nodelink345.Get(0));
@@ -12919,7 +11906,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 5; ++i) {
 		ns3::NetDeviceContainer nodelink346;
 		nodelink346 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals346.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[346].Get(i)),
 						csmaSwitches[346]));
 		switch_devices[346]->Add(nodelink346.Get(1));
 		terminaldevices346.Add(nodelink346.Get(0));
@@ -12928,7 +11915,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 5; ++i) {
 		ns3::NetDeviceContainer nodelink347;
 		nodelink347 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals347.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[347].Get(i)),
 						csmaSwitches[347]));
 		switch_devices[347]->Add(nodelink347.Get(1));
 		terminaldevices347.Add(nodelink347.Get(0));
@@ -12937,7 +11924,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 5; ++i) {
 		ns3::NetDeviceContainer nodelink348;
 		nodelink348 = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminals348.Get(i)),
+				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[348].Get(i)),
 						csmaSwitches[348]));
 		switch_devices[348]->Add(nodelink348.Get(1));
 		terminaldevices348.Add(nodelink348.Get(0));
@@ -24934,344 +23921,344 @@ int main(int argc, char** argv) {
 	}
 	internet.Install(csmaSwitchsigenobu.Get(0));
 
-	internet.Install(terminals5);
-	internet.Install(terminals6);
-	internet.Install(terminals7);
-	internet.Install(terminals8);
-	internet.Install(terminals9);
-	internet.Install(terminals10);
-	internet.Install(terminals11);
-	internet.Install(terminals12);
-	internet.Install(terminals13);
-	internet.Install(terminals14);
-	internet.Install(terminals15);
-	internet.Install(terminals16);
-	internet.Install(terminals17);
-	internet.Install(terminals18);
-	internet.Install(terminals19);
-	internet.Install(terminals20);
-	internet.Install(terminals21);
-	internet.Install(terminals22);
-	internet.Install(terminals23);
-	internet.Install(terminals24);
-	internet.Install(terminals25);
-	internet.Install(terminals26);
-	internet.Install(terminals27);
-	internet.Install(terminals28);
-	internet.Install(terminals29);
-	internet.Install(terminals30);
-	internet.Install(terminals31);
-	internet.Install(terminals32);
-	internet.Install(terminals33);
-	internet.Install(terminals34);
-	internet.Install(terminals35);
-	internet.Install(terminals36);
-	internet.Install(terminals37);
-	internet.Install(terminals38);
-	internet.Install(terminals39);
-	internet.Install(terminals40);
-	internet.Install(terminals41);
-	internet.Install(terminals42);
-	internet.Install(terminals43);
-	internet.Install(terminals44);
-	internet.Install(terminals45);
-	internet.Install(terminals46);
-	internet.Install(terminals47);
-	internet.Install(terminals48);
-	internet.Install(terminals49);
-	internet.Install(terminals50);
-	internet.Install(terminals51);
-	internet.Install(terminals52);
-	internet.Install(terminals53);
-	internet.Install(terminals54);
-	internet.Install(terminals55);
-	internet.Install(terminals56);
-	internet.Install(terminals57);
-	internet.Install(terminals58);
-	internet.Install(terminals59);
-	internet.Install(terminals60);
-	internet.Install(terminals61);
-	internet.Install(terminals62);
-	internet.Install(terminals63);
-	internet.Install(terminals64);
-	internet.Install(terminals65);
-	internet.Install(terminals66);
-	internet.Install(terminals67);
-	internet.Install(terminals68);
-	internet.Install(terminals69);
-	internet.Install(terminals70);
-	internet.Install(terminals71);
-	internet.Install(terminals72);
-	internet.Install(terminals73);
-	internet.Install(terminals74);
-	internet.Install(terminals75);
-	internet.Install(terminals76);
-	internet.Install(terminals77);
-	internet.Install(terminals78);
-	internet.Install(terminals79);
-	internet.Install(terminals81);
-	internet.Install(terminals82);
-	internet.Install(terminals83);
-	internet.Install(terminals84);
-	internet.Install(terminals85);
-	internet.Install(terminals86);
-	internet.Install(terminals87);
-	internet.Install(terminals88);
-	internet.Install(terminals89);
-	internet.Install(terminals90);
-	internet.Install(terminals91);
-	internet.Install(terminals92);
-	internet.Install(terminals93);
-	internet.Install(terminals94);
-	internet.Install(terminals95);
-	internet.Install(terminals96);
-	internet.Install(terminals97);
-	internet.Install(terminals98);
-	internet.Install(terminals99);
-	internet.Install(terminals100);
-	internet.Install(terminals101);
-	internet.Install(terminals102);
-	internet.Install(terminals103);
-	internet.Install(terminals104);
-	internet.Install(terminals105);
-	internet.Install(terminals106);
-	internet.Install(terminals107);
-	internet.Install(terminals108);
-	internet.Install(terminals109);
-	internet.Install(terminals110);
-	internet.Install(terminals111);
-	internet.Install(terminals112);
-	internet.Install(terminals114);
-	internet.Install(terminals115);
-	internet.Install(terminals116);
-	internet.Install(terminals117);
-	internet.Install(terminals118);
-	internet.Install(terminals119);
-	internet.Install(terminals120);
-	internet.Install(terminals121);
-	internet.Install(terminals122);
-	internet.Install(terminals123);
-	internet.Install(terminals124);
-	internet.Install(terminals125);
-	internet.Install(terminals126);
-	internet.Install(terminals127);
-	internet.Install(terminals128);
-	internet.Install(terminals129);
-	internet.Install(terminals130);
-	internet.Install(terminals131);
-	internet.Install(terminals132);
-	internet.Install(terminals133);
-	internet.Install(terminals134);
-	internet.Install(terminals135);
-	internet.Install(terminals136);
-	internet.Install(terminals137);
-	internet.Install(terminals138);
-	internet.Install(terminals139);
-	internet.Install(terminals140);
-	internet.Install(terminals141);
-	internet.Install(terminals142);
-	internet.Install(terminals143);
-	internet.Install(terminals144);
-	internet.Install(terminals145);
-	internet.Install(terminals146);
-	internet.Install(terminals147);
-	internet.Install(terminals148);
-	internet.Install(terminals149);
-	internet.Install(terminals150);
-	internet.Install(terminals151);
-	internet.Install(terminals152);
-	internet.Install(terminals153);
-	internet.Install(terminals154);
-	internet.Install(terminals155);
-	internet.Install(terminals156);
-	internet.Install(terminals157);
-	internet.Install(terminals158);
-	internet.Install(terminals159);
-	internet.Install(terminals161);
-	internet.Install(terminals162);
-	internet.Install(terminals163);
-	internet.Install(terminals164);
-	internet.Install(terminals165);
-	internet.Install(terminals166);
-	internet.Install(terminals167);
-	internet.Install(terminals168);
-	internet.Install(terminals169);
-	internet.Install(terminals170);
-	internet.Install(terminals171);
-	internet.Install(terminals172);
-	internet.Install(terminals173);
-	internet.Install(terminals174);
-	internet.Install(terminals175);
-	internet.Install(terminals176);
-	internet.Install(terminals177);
-	internet.Install(terminals178);
-	internet.Install(terminals179);
-	internet.Install(terminals180);
-	internet.Install(terminals181);
-	internet.Install(terminals182);
-	internet.Install(terminals183);
-	internet.Install(terminals184);
-	internet.Install(terminals185);
-	internet.Install(terminals186);
-	internet.Install(terminals187);
-	internet.Install(terminals188);
-	internet.Install(terminals189);
-	internet.Install(terminals190);
-	internet.Install(terminals191);
-	internet.Install(terminals192);
-	internet.Install(terminals193);
-	internet.Install(terminals194);
-	internet.Install(terminals195);
-	internet.Install(terminals196);
-	internet.Install(terminals197);
-	internet.Install(terminals198);
-	internet.Install(terminals199);
-	internet.Install(terminals200);
-	internet.Install(terminals201);
-	internet.Install(terminals202);
-	internet.Install(terminals203);
-	internet.Install(terminals204);
-	internet.Install(terminals205);
-	internet.Install(terminals206);
-	internet.Install(terminals207);
-	internet.Install(terminals208);
-	internet.Install(terminals209);
-	internet.Install(terminals210);
-	internet.Install(terminals211);
-	internet.Install(terminals212);
-	internet.Install(terminals214);
-	internet.Install(terminals215);
-	internet.Install(terminals216);
-	internet.Install(terminals217);
-	internet.Install(terminals218);
-	internet.Install(terminals219);
-	internet.Install(terminals220);
-	internet.Install(terminals221);
-	internet.Install(terminals222);
-	internet.Install(terminals223);
-	internet.Install(terminals224);
-	internet.Install(terminals225);
-	internet.Install(terminals226);
-	internet.Install(terminals227);
-	internet.Install(terminals228);
-	internet.Install(terminals229);
-	internet.Install(terminals230);
-	internet.Install(terminals231);
-	internet.Install(terminals232);
-	internet.Install(terminals233);
-	internet.Install(terminals234);
-	internet.Install(terminals235);
-	internet.Install(terminals236);
-	internet.Install(terminals237);
-	internet.Install(terminals238);
-	internet.Install(terminals239);
-	internet.Install(terminals240);
-	internet.Install(terminals241);
-	internet.Install(terminals242);
-	internet.Install(terminals243);
-	internet.Install(terminals244);
-	internet.Install(terminals245);
-	internet.Install(terminals246);
-	internet.Install(terminals247);
-	internet.Install(terminals248);
-	internet.Install(terminals284);
-	internet.Install(terminals249);
-	internet.Install(terminals250);
-	internet.Install(terminals251);
-	internet.Install(terminals252);
-	internet.Install(terminals253);
-	internet.Install(terminals254);
-	internet.Install(terminals255);
-	internet.Install(terminals256);
-	internet.Install(terminals257);
-	internet.Install(terminals258);
-	internet.Install(terminals259);
-	internet.Install(terminals260);
-	internet.Install(terminals261);
-	internet.Install(terminals262);
-	internet.Install(terminals263);
-	internet.Install(terminals264);
-	internet.Install(terminals265);
-	internet.Install(terminals266);
-	internet.Install(terminals267);
-	internet.Install(terminals268);
-	internet.Install(terminals269);
-	internet.Install(terminals270);
-	internet.Install(terminals272);
-	internet.Install(terminals273);
-	internet.Install(terminals274);
-	internet.Install(terminals275);
-	internet.Install(terminals276);
-	internet.Install(terminals277);
-	internet.Install(terminals278);
-	internet.Install(terminals279);
-	internet.Install(terminals280);
-	internet.Install(terminals281);
-	internet.Install(terminals282);
-	internet.Install(terminals283);
-	internet.Install(terminals285);
-	internet.Install(terminals286);
-	internet.Install(terminals287);
-	internet.Install(terminals288);
-	internet.Install(terminals289);
-	internet.Install(terminals290);
-	internet.Install(terminals291);
-	internet.Install(terminals292);
-	internet.Install(terminals293);
-	internet.Install(terminals294);
-	internet.Install(terminals295);
-	internet.Install(terminals296);
-	internet.Install(terminals297);
-	internet.Install(terminals298);
-	internet.Install(terminals299);
-	internet.Install(terminals300);
-	internet.Install(terminals301);
-	internet.Install(terminals302);
-	internet.Install(terminals303);
-	internet.Install(terminals304);
-	internet.Install(terminals305);
-	internet.Install(terminals306);
-	internet.Install(terminals307);
-	internet.Install(terminals308);
-	internet.Install(terminals309);
-	internet.Install(terminals310);
-	internet.Install(terminals311);
-	internet.Install(terminals312);
-	internet.Install(terminals313);
-	internet.Install(terminals314);
-	internet.Install(terminals315);
-	internet.Install(terminals316);
-	internet.Install(terminals317);
-	internet.Install(terminals318);
-	internet.Install(terminals319);
-	internet.Install(terminals320);
-	internet.Install(terminals321);
-	internet.Install(terminals322);
-	internet.Install(terminals323);
-	internet.Install(terminals324);
-	internet.Install(terminals325);
-	internet.Install(terminals326);
-	internet.Install(terminals327);
-	internet.Install(terminals328);
-	internet.Install(terminals329);
-	internet.Install(terminals330);
-	internet.Install(terminals331);
-	internet.Install(terminals332);
-	internet.Install(terminals334);
-	internet.Install(terminals335);
-	internet.Install(terminals336);
-	internet.Install(terminals337);
-	internet.Install(terminals338);
-	internet.Install(terminals339);
-	internet.Install(terminals340);
-	internet.Install(terminals341);
-	internet.Install(terminals342);
-	internet.Install(terminals343);
-	internet.Install(terminals344);
-	internet.Install(terminals345);
-	internet.Install(terminals346);
-	internet.Install(terminals347);
-	internet.Install(terminals348);
+	internet.Install(terminal_sets[5]);
+	internet.Install(terminal_sets[6]);
+	internet.Install(terminal_sets[7]);
+	internet.Install(terminal_sets[8]);
+	internet.Install(terminal_sets[9]);
+	internet.Install(terminal_sets[10]);
+	internet.Install(terminal_sets[11]);
+	internet.Install(terminal_sets[12]);
+	internet.Install(terminal_sets[13]);
+	internet.Install(terminal_sets[14]);
+	internet.Install(terminal_sets[15]);
+	internet.Install(terminal_sets[16]);
+	internet.Install(terminal_sets[17]);
+	internet.Install(terminal_sets[18]);
+	internet.Install(terminal_sets[19]);
+	internet.Install(terminal_sets[20]);
+	internet.Install(terminal_sets[21]);
+	internet.Install(terminal_sets[22]);
+	internet.Install(terminal_sets[23]);
+	internet.Install(terminal_sets[24]);
+	internet.Install(terminal_sets[25]);
+	internet.Install(terminal_sets[26]);
+	internet.Install(terminal_sets[27]);
+	internet.Install(terminal_sets[28]);
+	internet.Install(terminal_sets[29]);
+	internet.Install(terminal_sets[30]);
+	internet.Install(terminal_sets[31]);
+	internet.Install(terminal_sets[32]);
+	internet.Install(terminal_sets[33]);
+	internet.Install(terminal_sets[34]);
+	internet.Install(terminal_sets[35]);
+	internet.Install(terminal_sets[36]);
+	internet.Install(terminal_sets[37]);
+	internet.Install(terminal_sets[38]);
+	internet.Install(terminal_sets[39]);
+	internet.Install(terminal_sets[40]);
+	internet.Install(terminal_sets[41]);
+	internet.Install(terminal_sets[42]);
+	internet.Install(terminal_sets[43]);
+	internet.Install(terminal_sets[44]);
+	internet.Install(terminal_sets[45]);
+	internet.Install(terminal_sets[46]);
+	internet.Install(terminal_sets[47]);
+	internet.Install(terminal_sets[48]);
+	internet.Install(terminal_sets[49]);
+	internet.Install(terminal_sets[50]);
+	internet.Install(terminal_sets[51]);
+	internet.Install(terminal_sets[52]);
+	internet.Install(terminal_sets[53]);
+	internet.Install(terminal_sets[54]);
+	internet.Install(terminal_sets[55]);
+	internet.Install(terminal_sets[56]);
+	internet.Install(terminal_sets[57]);
+	internet.Install(terminal_sets[58]);
+	internet.Install(terminal_sets[59]);
+	internet.Install(terminal_sets[60]);
+	internet.Install(terminal_sets[61]);
+	internet.Install(terminal_sets[62]);
+	internet.Install(terminal_sets[63]);
+	internet.Install(terminal_sets[64]);
+	internet.Install(terminal_sets[65]);
+	internet.Install(terminal_sets[66]);
+	internet.Install(terminal_sets[67]);
+	internet.Install(terminal_sets[68]);
+	internet.Install(terminal_sets[69]);
+	internet.Install(terminal_sets[70]);
+	internet.Install(terminal_sets[71]);
+	internet.Install(terminal_sets[72]);
+	internet.Install(terminal_sets[73]);
+	internet.Install(terminal_sets[74]);
+	internet.Install(terminal_sets[75]);
+	internet.Install(terminal_sets[76]);
+	internet.Install(terminal_sets[77]);
+	internet.Install(terminal_sets[78]);
+	internet.Install(terminal_sets[79]);
+	internet.Install(terminal_sets[81]);
+	internet.Install(terminal_sets[82]);
+	internet.Install(terminal_sets[83]);
+	internet.Install(terminal_sets[84]);
+	internet.Install(terminal_sets[85]);
+	internet.Install(terminal_sets[86]);
+	internet.Install(terminal_sets[87]);
+	internet.Install(terminal_sets[88]);
+	internet.Install(terminal_sets[89]);
+	internet.Install(terminal_sets[90]);
+	internet.Install(terminal_sets[91]);
+	internet.Install(terminal_sets[92]);
+	internet.Install(terminal_sets[93]);
+	internet.Install(terminal_sets[94]);
+	internet.Install(terminal_sets[95]);
+	internet.Install(terminal_sets[96]);
+	internet.Install(terminal_sets[97]);
+	internet.Install(terminal_sets[98]);
+	internet.Install(terminal_sets[99]);
+	internet.Install(terminal_sets[100]);
+	internet.Install(terminal_sets[101]);
+	internet.Install(terminal_sets[102]);
+	internet.Install(terminal_sets[103]);
+	internet.Install(terminal_sets[104]);
+	internet.Install(terminal_sets[105]);
+	internet.Install(terminal_sets[106]);
+	internet.Install(terminal_sets[107]);
+	internet.Install(terminal_sets[108]);
+	internet.Install(terminal_sets[109]);
+	internet.Install(terminal_sets[110]);
+	internet.Install(terminal_sets[111]);
+	internet.Install(terminal_sets[112]);
+	internet.Install(terminal_sets[114]);
+	internet.Install(terminal_sets[115]);
+	internet.Install(terminal_sets[116]);
+	internet.Install(terminal_sets[117]);
+	internet.Install(terminal_sets[118]);
+	internet.Install(terminal_sets[119]);
+	internet.Install(terminal_sets[120]);
+	internet.Install(terminal_sets[121]);
+	internet.Install(terminal_sets[122]);
+	internet.Install(terminal_sets[123]);
+	internet.Install(terminal_sets[124]);
+	internet.Install(terminal_sets[125]);
+	internet.Install(terminal_sets[126]);
+	internet.Install(terminal_sets[127]);
+	internet.Install(terminal_sets[128]);
+	internet.Install(terminal_sets[129]);
+	internet.Install(terminal_sets[130]);
+	internet.Install(terminal_sets[131]);
+	internet.Install(terminal_sets[132]);
+	internet.Install(terminal_sets[133]);
+	internet.Install(terminal_sets[134]);
+	internet.Install(terminal_sets[135]);
+	internet.Install(terminal_sets[136]);
+	internet.Install(terminal_sets[137]);
+	internet.Install(terminal_sets[138]);
+	internet.Install(terminal_sets[139]);
+	internet.Install(terminal_sets[140]);
+	internet.Install(terminal_sets[141]);
+	internet.Install(terminal_sets[142]);
+	internet.Install(terminal_sets[143]);
+	internet.Install(terminal_sets[144]);
+	internet.Install(terminal_sets[145]);
+	internet.Install(terminal_sets[146]);
+	internet.Install(terminal_sets[147]);
+	internet.Install(terminal_sets[148]);
+	internet.Install(terminal_sets[149]);
+	internet.Install(terminal_sets[150]);
+	internet.Install(terminal_sets[151]);
+	internet.Install(terminal_sets[152]);
+	internet.Install(terminal_sets[153]);
+	internet.Install(terminal_sets[154]);
+	internet.Install(terminal_sets[155]);
+	internet.Install(terminal_sets[156]);
+	internet.Install(terminal_sets[157]);
+	internet.Install(terminal_sets[158]);
+	internet.Install(terminal_sets[159]);
+	internet.Install(terminal_sets[161]);
+	internet.Install(terminal_sets[162]);
+	internet.Install(terminal_sets[163]);
+	internet.Install(terminal_sets[164]);
+	internet.Install(terminal_sets[165]);
+	internet.Install(terminal_sets[166]);
+	internet.Install(terminal_sets[167]);
+	internet.Install(terminal_sets[168]);
+	internet.Install(terminal_sets[169]);
+	internet.Install(terminal_sets[170]);
+	internet.Install(terminal_sets[171]);
+	internet.Install(terminal_sets[172]);
+	internet.Install(terminal_sets[173]);
+	internet.Install(terminal_sets[174]);
+	internet.Install(terminal_sets[175]);
+	internet.Install(terminal_sets[176]);
+	internet.Install(terminal_sets[177]);
+	internet.Install(terminal_sets[178]);
+	internet.Install(terminal_sets[179]);
+	internet.Install(terminal_sets[180]);
+	internet.Install(terminal_sets[181]);
+	internet.Install(terminal_sets[182]);
+	internet.Install(terminal_sets[183]);
+	internet.Install(terminal_sets[184]);
+	internet.Install(terminal_sets[185]);
+	internet.Install(terminal_sets[186]);
+	internet.Install(terminal_sets[187]);
+	internet.Install(terminal_sets[188]);
+	internet.Install(terminal_sets[189]);
+	internet.Install(terminal_sets[190]);
+	internet.Install(terminal_sets[191]);
+	internet.Install(terminal_sets[192]);
+	internet.Install(terminal_sets[193]);
+	internet.Install(terminal_sets[194]);
+	internet.Install(terminal_sets[195]);
+	internet.Install(terminal_sets[196]);
+	internet.Install(terminal_sets[197]);
+	internet.Install(terminal_sets[198]);
+	internet.Install(terminal_sets[199]);
+	internet.Install(terminal_sets[200]);
+	internet.Install(terminal_sets[201]);
+	internet.Install(terminal_sets[202]);
+	internet.Install(terminal_sets[203]);
+	internet.Install(terminal_sets[204]);
+	internet.Install(terminal_sets[205]);
+	internet.Install(terminal_sets[206]);
+	internet.Install(terminal_sets[207]);
+	internet.Install(terminal_sets[208]);
+	internet.Install(terminal_sets[209]);
+	internet.Install(terminal_sets[210]);
+	internet.Install(terminal_sets[211]);
+	internet.Install(terminal_sets[212]);
+	internet.Install(terminal_sets[214]);
+	internet.Install(terminal_sets[215]);
+	internet.Install(terminal_sets[216]);
+	internet.Install(terminal_sets[217]);
+	internet.Install(terminal_sets[218]);
+	internet.Install(terminal_sets[219]);
+	internet.Install(terminal_sets[220]);
+	internet.Install(terminal_sets[221]);
+	internet.Install(terminal_sets[222]);
+	internet.Install(terminal_sets[223]);
+	internet.Install(terminal_sets[224]);
+	internet.Install(terminal_sets[225]);
+	internet.Install(terminal_sets[226]);
+	internet.Install(terminal_sets[227]);
+	internet.Install(terminal_sets[228]);
+	internet.Install(terminal_sets[229]);
+	internet.Install(terminal_sets[230]);
+	internet.Install(terminal_sets[231]);
+	internet.Install(terminal_sets[232]);
+	internet.Install(terminal_sets[233]);
+	internet.Install(terminal_sets[234]);
+	internet.Install(terminal_sets[235]);
+	internet.Install(terminal_sets[236]);
+	internet.Install(terminal_sets[237]);
+	internet.Install(terminal_sets[238]);
+	internet.Install(terminal_sets[239]);
+	internet.Install(terminal_sets[240]);
+	internet.Install(terminal_sets[241]);
+	internet.Install(terminal_sets[242]);
+	internet.Install(terminal_sets[243]);
+	internet.Install(terminal_sets[244]);
+	internet.Install(terminal_sets[245]);
+	internet.Install(terminal_sets[246]);
+	internet.Install(terminal_sets[247]);
+	internet.Install(terminal_sets[248]);
+	internet.Install(terminal_sets[284]);
+	internet.Install(terminal_sets[249]);
+	internet.Install(terminal_sets[250]);
+	internet.Install(terminal_sets[251]);
+	internet.Install(terminal_sets[252]);
+	internet.Install(terminal_sets[253]);
+	internet.Install(terminal_sets[254]);
+	internet.Install(terminal_sets[255]);
+	internet.Install(terminal_sets[256]);
+	internet.Install(terminal_sets[257]);
+	internet.Install(terminal_sets[258]);
+	internet.Install(terminal_sets[259]);
+	internet.Install(terminal_sets[260]);
+	internet.Install(terminal_sets[261]);
+	internet.Install(terminal_sets[262]);
+	internet.Install(terminal_sets[263]);
+	internet.Install(terminal_sets[264]);
+	internet.Install(terminal_sets[265]);
+	internet.Install(terminal_sets[266]);
+	internet.Install(terminal_sets[267]);
+	internet.Install(terminal_sets[268]);
+	internet.Install(terminal_sets[269]);
+	internet.Install(terminal_sets[270]);
+	internet.Install(terminal_sets[272]);
+	internet.Install(terminal_sets[273]);
+	internet.Install(terminal_sets[274]);
+	internet.Install(terminal_sets[275]);
+	internet.Install(terminal_sets[276]);
+	internet.Install(terminal_sets[277]);
+	internet.Install(terminal_sets[278]);
+	internet.Install(terminal_sets[279]);
+	internet.Install(terminal_sets[280]);
+	internet.Install(terminal_sets[281]);
+	internet.Install(terminal_sets[282]);
+	internet.Install(terminal_sets[283]);
+	internet.Install(terminal_sets[285]);
+	internet.Install(terminal_sets[286]);
+	internet.Install(terminal_sets[287]);
+	internet.Install(terminal_sets[288]);
+	internet.Install(terminal_sets[289]);
+	internet.Install(terminal_sets[290]);
+	internet.Install(terminal_sets[291]);
+	internet.Install(terminal_sets[292]);
+	internet.Install(terminal_sets[293]);
+	internet.Install(terminal_sets[294]);
+	internet.Install(terminal_sets[295]);
+	internet.Install(terminal_sets[296]);
+	internet.Install(terminal_sets[297]);
+	internet.Install(terminal_sets[298]);
+	internet.Install(terminal_sets[299]);
+	internet.Install(terminal_sets[300]);
+	internet.Install(terminal_sets[301]);
+	internet.Install(terminal_sets[302]);
+	internet.Install(terminal_sets[303]);
+	internet.Install(terminal_sets[304]);
+	internet.Install(terminal_sets[305]);
+	internet.Install(terminal_sets[306]);
+	internet.Install(terminal_sets[307]);
+	internet.Install(terminal_sets[308]);
+	internet.Install(terminal_sets[309]);
+	internet.Install(terminal_sets[310]);
+	internet.Install(terminal_sets[311]);
+	internet.Install(terminal_sets[312]);
+	internet.Install(terminal_sets[313]);
+	internet.Install(terminal_sets[314]);
+	internet.Install(terminal_sets[315]);
+	internet.Install(terminal_sets[316]);
+	internet.Install(terminal_sets[317]);
+	internet.Install(terminal_sets[318]);
+	internet.Install(terminal_sets[319]);
+	internet.Install(terminal_sets[320]);
+	internet.Install(terminal_sets[321]);
+	internet.Install(terminal_sets[322]);
+	internet.Install(terminal_sets[323]);
+	internet.Install(terminal_sets[324]);
+	internet.Install(terminal_sets[325]);
+	internet.Install(terminal_sets[326]);
+	internet.Install(terminal_sets[327]);
+	internet.Install(terminal_sets[328]);
+	internet.Install(terminal_sets[329]);
+	internet.Install(terminal_sets[330]);
+	internet.Install(terminal_sets[331]);
+	internet.Install(terminal_sets[332]);
+	internet.Install(terminal_sets[334]);
+	internet.Install(terminal_sets[335]);
+	internet.Install(terminal_sets[336]);
+	internet.Install(terminal_sets[337]);
+	internet.Install(terminal_sets[338]);
+	internet.Install(terminal_sets[339]);
+	internet.Install(terminal_sets[340]);
+	internet.Install(terminal_sets[341]);
+	internet.Install(terminal_sets[342]);
+	internet.Install(terminal_sets[343]);
+	internet.Install(terminal_sets[344]);
+	internet.Install(terminal_sets[345]);
+	internet.Install(terminal_sets[346]);
+	internet.Install(terminal_sets[347]);
+	internet.Install(terminal_sets[348]);
 	internet.Install(wifiApNode1);
 	internet.Install(wifiApNode2);
 	internet.Install(wifiApNode3);
@@ -26916,7 +25903,7 @@ int main(int argc, char** argv) {
 	apps.Stop(ns3::Seconds(10.0));
 	ns3::PacketSinkHelper sink("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	ns3::ApplicationContainer appsink = sink.Install(terminals5.Get(0));
+	ns3::ApplicationContainer appsink = sink.Install(terminal_sets[5].Get(0));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 
@@ -26943,7 +25930,7 @@ int main(int argc, char** argv) {
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminals5.Get(1));
+	appsink = sink.Install(terminal_sets[5].Get(1));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 //UDPecho
@@ -26969,7 +25956,7 @@ int main(int argc, char** argv) {
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminals5.Get(2));
+	appsink = sink.Install(terminal_sets[5].Get(2));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 //UDPecho
@@ -26995,7 +25982,7 @@ int main(int argc, char** argv) {
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminals5.Get(3));
+	appsink = sink.Install(terminal_sets[5].Get(3));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 //UDPecho
@@ -27021,7 +26008,7 @@ int main(int argc, char** argv) {
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminals5.Get(4));
+	appsink = sink.Install(terminal_sets[5].Get(4));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 	//int port = 9;
@@ -27046,7 +26033,7 @@ int main(int argc, char** argv) {
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminals6.Get(0));
+	appsink = sink.Install(terminal_sets[6].Get(0));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 //UDPecho
@@ -27072,7 +26059,7 @@ int main(int argc, char** argv) {
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminals6.Get(1));
+	appsink = sink.Install(terminal_sets[6].Get(1));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 //UDPecho
@@ -27098,7 +26085,7 @@ int main(int argc, char** argv) {
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminals6.Get(2));
+	appsink = sink.Install(terminal_sets[6].Get(2));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 //UDPecho
@@ -27124,7 +26111,7 @@ int main(int argc, char** argv) {
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminals6.Get(3));
+	appsink = sink.Install(terminal_sets[6].Get(3));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 //UDPecho
@@ -27150,7 +26137,7 @@ int main(int argc, char** argv) {
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminals6.Get(4));
+	appsink = sink.Install(terminal_sets[6].Get(4));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 
