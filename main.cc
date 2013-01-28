@@ -87,7 +87,6 @@ int main(int argc, char** argv) {
 //wifi channel
 	WifiPhys wifiPhys(315);
 
-
 //stanodes mac
 	ns3::NqosWifiMacHelper mac;
 	mac = ns3::NqosWifiMacHelper::Default();
@@ -99,10 +98,12 @@ int main(int argc, char** argv) {
 			"ActiveProbing", ns3::BooleanValue(false));
 
 	std::vector<ns3::NetDeviceContainer> staDeviceSets(316);
-	for(int i=1; i<=315; ++i){
-		if(i==298||i==299||i==306||i==315) continue;
-		staDeviceSets[i] = Wifi.Install(wifiPhys[i], mac, wifi_sta_node_sets[i]);
-	}//for
+	for (int i = 1; i <= 315; ++i) {
+		if (i == 298 || i == 299 || i == 306 || i == 315)
+			continue;
+		staDeviceSets[i] = Wifi.Install(wifiPhys[i], mac,
+				wifi_sta_node_sets[i]);
+	}	//for
 
 // apnodes mac
 	mac.SetType("ns3::ApWifiMac", "Ssid", ns3::SsidValue(ssid),
@@ -110,15 +111,17 @@ int main(int argc, char** argv) {
 			ns3::TimeValue(ns3::Seconds(2.5)));
 
 	std::vector<ns3::NetDeviceContainer> apDeviceSets(316);
-	for(int i=1; i<=315; ++i){
-		if(i==298||i==299||i==306||i==315) continue;
+	for (int i = 1; i <= 315; ++i) {
+		if (i == 298 || i == 299 || i == 306 || i == 315)
+			continue;
 		apDeviceSets[i] = Wifi.Install(wifiPhys[i], mac, wifi_ap_nodes[i]);
-	}//for
+	}	//for
 
 //wifi area
 	std::vector<DefaultMobilityHelper> mobilities(316);
-	for(int i=1; i<=315; ++i){
-		if(i==298||i==299||i==306||i==315) continue;
+	for (int i = 1; i <= 315; ++i) {
+		if (i == 298 || i == 299 || i == 306 || i == 315)
+			continue;
 		mobilities[i].Install(wifi_sta_node_sets[i]);
 	}
 
@@ -144,18 +147,19 @@ int main(int argc, char** argv) {
 			ns3::DataRateValue(ns3::DataRate(5000000)));
 	csma.SetChannelAttribute("Delay", ns3::TimeValue(ns3::MilliSeconds(2)));
 
-	for (int j = 5; j <= 348; ++j){
-		if( j == 80 || j == 113 || j == 160 || j == 213 || j == 271 || j == 333) continue;
-	for (int i = 0; i < 15; ++i) {
-		ns3::NetDeviceContainer net_device_container;
-		net_device_container = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[5].Get(i)),
-						csmaSwitches[5]));
-		switch_devices[5].Add(net_device_container.Get(1));
-		terminal_device_sets[5].Add(net_device_container.Get(0));
+	for (int j = 5; j <= 348; ++j) {
+		if (j == 80 || j == 113 || j == 160 || j == 213 || j == 271 || j == 333)
+			continue;
+		for (int i = 0; i < 15; ++i) {
+			ns3::NetDeviceContainer net_device_container;
+			net_device_container = csma.Install(
+					ns3::NodeContainer(
+							ns3::NodeContainer(terminal_sets[5].Get(i)),
+							csmaSwitches[5]));
+			switch_devices[5].Add(net_device_container.Get(1));
+			terminal_device_sets[5].Add(net_device_container.Get(0));
+		}
 	}
-	}
-
 
 //#channel define
 	csma = ns3::CsmaHelper();
@@ -4197,8 +4201,9 @@ int main(int argc, char** argv) {
 		bridgeDevice6506E->AddBridgePort(switchDevices6506E.Get(portIter));
 	}
 
-	for(int i=5; i<=348; ++i){
-		if(i==271) continue;
+	for (int i = 5; i <= 348; ++i) {
+		if (i == 271)
+			continue;
 		ns3::Ptr<ns3::Node> p_node = csmaSwitches[i].Get(0);
 		ns3::Ptr<ns3::BridgeNetDevice> p_bridge_net_device = ns3::CreateObject<
 				ns3::BridgeNetDevice>();
@@ -4229,23 +4234,25 @@ int main(int argc, char** argv) {
 		bridgeDevicetarumi->AddBridgePort(switchDevicestarumi.Get(portIter));
 	}
 
-
 //apDevices switchDevices setuzoku
-	for(int i=1; i<=315; ++i){
-		if(i==298||i==299||i==306||i==315)continue;
+	for (int i = 1; i <= 315; ++i) {
+		if (i == 298 || i == 299 || i == 306 || i == 315)
+			continue;
 		ns3::Ptr<ns3::Node> p_node = wifi_ap_nodes[i].Get(0);
 		ns3::Ptr<ns3::BridgeNetDevice> p_bridge_net_device = ns3::CreateObject<
 				ns3::BridgeNetDevice>();
 		p_node->AddDevice(p_bridge_net_device);
 
-		for (unsigned int portIter = 0; portIter < ap_device_sets[i].GetN(); ++portIter) {
+		for (unsigned int portIter = 0; portIter < ap_device_sets[i].GetN();
+				++portIter) {
 			p_bridge_net_device->AddBridgePort(ap_device_sets[i].Get(portIter));
 		}
 
-		for (unsigned int portIter = 0; portIter < apDeviceSets[i].GetN(); ++portIter) {
+		for (unsigned int portIter = 0; portIter < apDeviceSets[i].GetN();
+				++portIter) {
 			p_bridge_net_device->AddBridgePort(apDeviceSets[i].Get(portIter));
 		}
-	}//for
+	}	//for
 
 // Add internet stack to the terminals
 	ns3::InternetStackHelper internet;
@@ -4292,14 +4299,16 @@ int main(int argc, char** argv) {
 	ns3::Ipv4AddressHelper ipv4;
 	ipv4.SetBase(ns3::Ipv4Address("133.71.0.0"), ns3::Ipv4Mask("255.255.0.0"));
 	std::vector<ns3::Ipv4InterfaceContainer> p2p_interface_sets(350);
-	for(int i=5; i<=348; ++i){
-		if(i==80||i==113||i==160||i==213||i==271||i==333)continue;
+	for (int i = 5; i <= 348; ++i) {
+		if (i == 80 || i == 113 || i == 160 || i == 213 || i == 271 || i == 333)
+			continue;
 		p2p_interface_sets[i] = ipv4.Assign(terminal_device_sets[81]);
 	}
 
 	std::vector<ns3::Ipv4InterfaceContainer> apinterface_sets(320);
-	for(int i=1; i<=315; ++i){
-		if(i==298||i==299||i==306||i==315) continue;
+	for (int i = 1; i <= 315; ++i) {
+		if (i == 298 || i == 299 || i == 306 || i == 315)
+			continue;
 		apinterface_sets[i] = ipv4.Assign(staDeviceSets[i]);
 	}
 
