@@ -58,1374 +58,8 @@ int main(int argc, char** argv) {
 
 	TerminalSets terminal_sets(348);
 
-
-//AP Sta nodes define
-	ns3::NodeContainer wifiStaNodes1;
-	wifiStaNodes1.Create(15);
-	ns3::NodeContainer wifiApNode1;
-	wifiApNode1.Create(1);
-	ns3::NodeContainer wifiStaNodes2;
-	wifiStaNodes2.Create(15);
-	ns3::NodeContainer wifiApNode2;
-	wifiApNode2.Create(1);
-	ns3::NodeContainer wifiStaNodes3;
-	wifiStaNodes3.Create(15);
-	ns3::NodeContainer wifiApNode3;
-	wifiApNode3.Create(1);
-	ns3::NodeContainer wifiStaNodes4;
-	wifiStaNodes4.Create(15);
-	ns3::NodeContainer wifiApNode4;
-	wifiApNode4.Create(1);
-	ns3::NodeContainer wifiStaNodes5;
-	wifiStaNodes5.Create(15);
-	ns3::NodeContainer wifiApNode5;
-	wifiApNode5.Create(1);
-	ns3::NodeContainer wifiStaNodes6;
-	wifiStaNodes6.Create(15);
-	ns3::NodeContainer wifiApNode6;
-	wifiApNode6.Create(1);
-	ns3::NodeContainer wifiStaNodes7;
-	wifiStaNodes7.Create(15);
-	ns3::NodeContainer wifiApNode7;
-	wifiApNode7.Create(1);
-	ns3::NodeContainer wifiStaNodes8;
-	wifiStaNodes8.Create(15);
-	ns3::NodeContainer wifiApNode8;
-	wifiApNode8.Create(1);
-	ns3::NodeContainer wifiStaNodes9;
-	wifiStaNodes9.Create(15);
-	ns3::NodeContainer wifiApNode9;
-	wifiApNode9.Create(1);
-	ns3::NodeContainer wifiStaNodes10;
-	wifiStaNodes10.Create(15);
-	ns3::NodeContainer wifiApNode10;
-	wifiApNode10.Create(1);
-	ns3::NodeContainer wifiStaNodes11;
-	wifiStaNodes11.Create(15);
-	ns3::NodeContainer wifiApNode11;
-	wifiApNode11.Create(1);
-	ns3::NodeContainer wifiStaNodes12;
-	wifiStaNodes12.Create(15);
-	ns3::NodeContainer wifiApNode12;
-	wifiApNode12.Create(1);
-	ns3::NodeContainer wifiStaNodes13;
-	wifiStaNodes13.Create(15);
-	ns3::NodeContainer wifiApNode13;
-	wifiApNode13.Create(1);
-	ns3::NodeContainer wifiStaNodes14;
-	wifiStaNodes14.Create(15);
-	ns3::NodeContainer wifiApNode14;
-	wifiApNode14.Create(1);
-	ns3::NodeContainer wifiStaNodes15;
-	wifiStaNodes15.Create(15);
-	ns3::NodeContainer wifiApNode15;
-	wifiApNode15.Create(1);
-	ns3::NodeContainer wifiStaNodes16;
-	wifiStaNodes16.Create(15);
-	ns3::NodeContainer wifiApNode16;
-	wifiApNode16.Create(1);
-	ns3::NodeContainer wifiStaNodes17;
-	wifiStaNodes17.Create(15);
-	ns3::NodeContainer wifiApNode17;
-	wifiApNode17.Create(1);
-	ns3::NodeContainer wifiStaNodes18;
-	wifiStaNodes18.Create(15);
-	ns3::NodeContainer wifiApNode18;
-	wifiApNode18.Create(1);
-	ns3::NodeContainer wifiStaNodes19;
-	wifiStaNodes19.Create(15);
-	ns3::NodeContainer wifiApNode19;
-	wifiApNode19.Create(1);
-	ns3::NodeContainer wifiStaNodes20;
-	wifiStaNodes20.Create(15);
-	ns3::NodeContainer wifiApNode20;
-	wifiApNode20.Create(1);
-	ns3::NodeContainer wifiStaNodes21;
-	wifiStaNodes21.Create(15);
-	ns3::NodeContainer wifiApNode21;
-	wifiApNode21.Create(1);
-	ns3::NodeContainer wifiStaNodes22;
-	wifiStaNodes22.Create(15);
-	ns3::NodeContainer wifiApNode22;
-	wifiApNode22.Create(1);
-	ns3::NodeContainer wifiStaNodes23;
-	wifiStaNodes23.Create(15);
-	ns3::NodeContainer wifiApNode23;
-	wifiApNode23.Create(1);
-	ns3::NodeContainer wifiStaNodes24;
-	wifiStaNodes24.Create(15);
-	ns3::NodeContainer wifiApNode24;
-	wifiApNode24.Create(1);
-	ns3::NodeContainer wifiStaNodes25;
-	wifiStaNodes25.Create(15);
-	ns3::NodeContainer wifiApNode25;
-	wifiApNode25.Create(1);
-	ns3::NodeContainer wifiStaNodes26;
-	wifiStaNodes26.Create(15);
-	ns3::NodeContainer wifiApNode26;
-	wifiApNode26.Create(1);
-	ns3::NodeContainer wifiStaNodes27;
-	wifiStaNodes27.Create(15);
-	ns3::NodeContainer wifiApNode27;
-	wifiApNode27.Create(1);
-	ns3::NodeContainer wifiStaNodes28;
-	wifiStaNodes28.Create(15);
-	ns3::NodeContainer wifiApNode28;
-	wifiApNode28.Create(1);
-	ns3::NodeContainer wifiStaNodes29;
-	wifiStaNodes29.Create(15);
-	ns3::NodeContainer wifiApNode29;
-	wifiApNode29.Create(1);
-	ns3::NodeContainer wifiStaNodes30;
-	wifiStaNodes30.Create(15);
-	ns3::NodeContainer wifiApNode30;
-	wifiApNode30.Create(1);
-	ns3::NodeContainer wifiStaNodes31;
-	wifiStaNodes31.Create(15);
-	ns3::NodeContainer wifiApNode31;
-	wifiApNode31.Create(1);
-	ns3::NodeContainer wifiStaNodes32;
-	wifiStaNodes32.Create(15);
-	ns3::NodeContainer wifiApNode32;
-	wifiApNode32.Create(1);
-	ns3::NodeContainer wifiStaNodes33;
-	wifiStaNodes33.Create(15);
-	ns3::NodeContainer wifiApNode33;
-	wifiApNode33.Create(1);
-	ns3::NodeContainer wifiStaNodes34;
-	wifiStaNodes34.Create(15);
-	ns3::NodeContainer wifiApNode34;
-	wifiApNode34.Create(1);
-	ns3::NodeContainer wifiStaNodes35;
-	wifiStaNodes35.Create(15);
-	ns3::NodeContainer wifiApNode35;
-	wifiApNode35.Create(1);
-	ns3::NodeContainer wifiStaNodes36;
-	wifiStaNodes36.Create(15);
-	ns3::NodeContainer wifiApNode36;
-	wifiApNode36.Create(1);
-	ns3::NodeContainer wifiStaNodes37;
-	wifiStaNodes37.Create(15);
-	ns3::NodeContainer wifiApNode37;
-	wifiApNode37.Create(1);
-	ns3::NodeContainer wifiStaNodes38;
-	wifiStaNodes38.Create(15);
-	ns3::NodeContainer wifiApNode38;
-	wifiApNode38.Create(1);
-	ns3::NodeContainer wifiStaNodes39;
-	wifiStaNodes39.Create(15);
-	ns3::NodeContainer wifiApNode39;
-	wifiApNode39.Create(1);
-	ns3::NodeContainer wifiStaNodes40;
-	wifiStaNodes40.Create(15);
-	ns3::NodeContainer wifiApNode40;
-	wifiApNode40.Create(1);
-	ns3::NodeContainer wifiStaNodes41;
-	wifiStaNodes41.Create(15);
-	ns3::NodeContainer wifiApNode41;
-	wifiApNode41.Create(1);
-	ns3::NodeContainer wifiStaNodes42;
-	wifiStaNodes42.Create(15);
-	ns3::NodeContainer wifiApNode42;
-	wifiApNode42.Create(1);
-	ns3::NodeContainer wifiStaNodes43;
-	wifiStaNodes43.Create(15);
-	ns3::NodeContainer wifiApNode43;
-	wifiApNode43.Create(1);
-	ns3::NodeContainer wifiStaNodes44;
-	wifiStaNodes44.Create(15);
-	ns3::NodeContainer wifiApNode44;
-	wifiApNode44.Create(1);
-	ns3::NodeContainer wifiStaNodes45;
-	wifiStaNodes45.Create(15);
-	ns3::NodeContainer wifiApNode45;
-	wifiApNode45.Create(1);
-	ns3::NodeContainer wifiStaNodes46;
-	wifiStaNodes46.Create(15);
-	ns3::NodeContainer wifiApNode46;
-	wifiApNode46.Create(1);
-	ns3::NodeContainer wifiStaNodes47;
-	wifiStaNodes47.Create(15);
-	ns3::NodeContainer wifiApNode47;
-	wifiApNode47.Create(1);
-	ns3::NodeContainer wifiStaNodes48;
-	wifiStaNodes48.Create(15);
-	ns3::NodeContainer wifiApNode48;
-	wifiApNode48.Create(1);
-	ns3::NodeContainer wifiStaNodes49;
-	wifiStaNodes49.Create(15);
-	ns3::NodeContainer wifiApNode49;
-	wifiApNode49.Create(1);
-	ns3::NodeContainer wifiStaNodes50;
-	wifiStaNodes50.Create(15);
-	ns3::NodeContainer wifiApNode50;
-	wifiApNode50.Create(1);
-	ns3::NodeContainer wifiStaNodes51;
-	wifiStaNodes51.Create(15);
-	ns3::NodeContainer wifiApNode51;
-	wifiApNode51.Create(1);
-	ns3::NodeContainer wifiStaNodes52;
-	wifiStaNodes52.Create(15);
-	ns3::NodeContainer wifiApNode52;
-	wifiApNode52.Create(1);
-	ns3::NodeContainer wifiStaNodes53;
-	wifiStaNodes53.Create(15);
-	ns3::NodeContainer wifiApNode53;
-	wifiApNode53.Create(1);
-	ns3::NodeContainer wifiStaNodes54;
-	wifiStaNodes54.Create(15);
-	ns3::NodeContainer wifiApNode54;
-	wifiApNode54.Create(1);
-	ns3::NodeContainer wifiStaNodes55;
-	wifiStaNodes55.Create(15);
-	ns3::NodeContainer wifiApNode55;
-	wifiApNode55.Create(1);
-	ns3::NodeContainer wifiStaNodes56;
-	wifiStaNodes56.Create(15);
-	ns3::NodeContainer wifiApNode56;
-	wifiApNode56.Create(1);
-	ns3::NodeContainer wifiStaNodes57;
-	wifiStaNodes57.Create(15);
-	ns3::NodeContainer wifiApNode57;
-	wifiApNode57.Create(1);
-	ns3::NodeContainer wifiStaNodes58;
-	wifiStaNodes58.Create(15);
-	ns3::NodeContainer wifiApNode58;
-	wifiApNode58.Create(1);
-	ns3::NodeContainer wifiStaNodes59;
-	wifiStaNodes59.Create(15);
-	ns3::NodeContainer wifiApNode59;
-	wifiApNode59.Create(1);
-	ns3::NodeContainer wifiStaNodes60;
-	wifiStaNodes60.Create(15);
-	ns3::NodeContainer wifiApNode60;
-	wifiApNode60.Create(1);
-	ns3::NodeContainer wifiStaNodes61;
-	wifiStaNodes61.Create(15);
-	ns3::NodeContainer wifiApNode61;
-	wifiApNode61.Create(1);
-	ns3::NodeContainer wifiStaNodes62;
-	wifiStaNodes62.Create(15);
-	ns3::NodeContainer wifiApNode62;
-	wifiApNode62.Create(1);
-	ns3::NodeContainer wifiStaNodes63;
-	wifiStaNodes63.Create(15);
-	ns3::NodeContainer wifiApNode63;
-	wifiApNode63.Create(1);
-	ns3::NodeContainer wifiStaNodes64;
-	wifiStaNodes64.Create(15);
-	ns3::NodeContainer wifiApNode64;
-	wifiApNode64.Create(1);
-	ns3::NodeContainer wifiStaNodes65;
-	wifiStaNodes65.Create(15);
-	ns3::NodeContainer wifiApNode65;
-	wifiApNode65.Create(1);
-	ns3::NodeContainer wifiStaNodes66;
-	wifiStaNodes66.Create(15);
-	ns3::NodeContainer wifiApNode66;
-	wifiApNode66.Create(1);
-	ns3::NodeContainer wifiStaNodes67;
-	wifiStaNodes67.Create(15);
-	ns3::NodeContainer wifiApNode67;
-	wifiApNode67.Create(1);
-	ns3::NodeContainer wifiStaNodes68;
-	wifiStaNodes68.Create(15);
-	ns3::NodeContainer wifiApNode68;
-	wifiApNode68.Create(1);
-	ns3::NodeContainer wifiStaNodes69;
-	wifiStaNodes69.Create(15);
-	ns3::NodeContainer wifiApNode69;
-	wifiApNode69.Create(1);
-	ns3::NodeContainer wifiStaNodes70;
-	wifiStaNodes70.Create(15);
-	ns3::NodeContainer wifiApNode70;
-	wifiApNode70.Create(1);
-	ns3::NodeContainer wifiStaNodes71;
-	wifiStaNodes71.Create(15);
-	ns3::NodeContainer wifiApNode71;
-	wifiApNode71.Create(1);
-	ns3::NodeContainer wifiStaNodes72;
-	wifiStaNodes72.Create(15);
-	ns3::NodeContainer wifiApNode72;
-	wifiApNode72.Create(1);
-	ns3::NodeContainer wifiStaNodes73;
-	wifiStaNodes73.Create(15);
-	ns3::NodeContainer wifiApNode73;
-	wifiApNode73.Create(1);
-	ns3::NodeContainer wifiStaNodes74;
-	wifiStaNodes74.Create(15);
-	ns3::NodeContainer wifiApNode74;
-	wifiApNode74.Create(1);
-	ns3::NodeContainer wifiStaNodes75;
-	wifiStaNodes75.Create(15);
-	ns3::NodeContainer wifiApNode75;
-	wifiApNode75.Create(1);
-	ns3::NodeContainer wifiStaNodes76;
-	wifiStaNodes76.Create(15);
-	ns3::NodeContainer wifiApNode76;
-	wifiApNode76.Create(1);
-	ns3::NodeContainer wifiStaNodes77;
-	wifiStaNodes77.Create(15);
-	ns3::NodeContainer wifiApNode77;
-	wifiApNode77.Create(1);
-	ns3::NodeContainer wifiStaNodes78;
-	wifiStaNodes78.Create(15);
-	ns3::NodeContainer wifiApNode78;
-	wifiApNode78.Create(1);
-	ns3::NodeContainer wifiStaNodes79;
-	wifiStaNodes79.Create(15);
-	ns3::NodeContainer wifiApNode79;
-	wifiApNode79.Create(1);
-	ns3::NodeContainer wifiStaNodes80;
-	wifiStaNodes80.Create(15);
-	ns3::NodeContainer wifiApNode80;
-	wifiApNode80.Create(1);
-	ns3::NodeContainer wifiStaNodes81;
-	wifiStaNodes81.Create(15);
-	ns3::NodeContainer wifiApNode81;
-	wifiApNode81.Create(1);
-	ns3::NodeContainer wifiStaNodes82;
-	wifiStaNodes82.Create(15);
-	ns3::NodeContainer wifiApNode82;
-	wifiApNode82.Create(1);
-	ns3::NodeContainer wifiStaNodes83;
-	wifiStaNodes83.Create(15);
-	ns3::NodeContainer wifiApNode83;
-	wifiApNode83.Create(1);
-	ns3::NodeContainer wifiStaNodes84;
-	wifiStaNodes84.Create(15);
-	ns3::NodeContainer wifiApNode84;
-	wifiApNode84.Create(1);
-	ns3::NodeContainer wifiStaNodes85;
-	wifiStaNodes85.Create(15);
-	ns3::NodeContainer wifiApNode85;
-	wifiApNode85.Create(1);
-	ns3::NodeContainer wifiStaNodes86;
-	wifiStaNodes86.Create(15);
-	ns3::NodeContainer wifiApNode86;
-	wifiApNode86.Create(1);
-	ns3::NodeContainer wifiStaNodes87;
-	wifiStaNodes87.Create(15);
-	ns3::NodeContainer wifiApNode87;
-	wifiApNode87.Create(1);
-	ns3::NodeContainer wifiStaNodes88;
-	wifiStaNodes88.Create(15);
-	ns3::NodeContainer wifiApNode88;
-	wifiApNode88.Create(1);
-	ns3::NodeContainer wifiStaNodes89;
-	wifiStaNodes89.Create(15);
-	ns3::NodeContainer wifiApNode89;
-	wifiApNode89.Create(1);
-	ns3::NodeContainer wifiStaNodes90;
-	wifiStaNodes90.Create(15);
-	ns3::NodeContainer wifiApNode90;
-	wifiApNode90.Create(1);
-	ns3::NodeContainer wifiStaNodes91;
-	wifiStaNodes91.Create(15);
-	ns3::NodeContainer wifiApNode91;
-	wifiApNode91.Create(1);
-	ns3::NodeContainer wifiStaNodes92;
-	wifiStaNodes92.Create(15);
-	ns3::NodeContainer wifiApNode92;
-	wifiApNode92.Create(1);
-	ns3::NodeContainer wifiStaNodes93;
-	wifiStaNodes93.Create(15);
-	ns3::NodeContainer wifiApNode93;
-	wifiApNode93.Create(1);
-	ns3::NodeContainer wifiStaNodes94;
-	wifiStaNodes94.Create(15);
-	ns3::NodeContainer wifiApNode94;
-	wifiApNode94.Create(1);
-	ns3::NodeContainer wifiStaNodes95;
-	wifiStaNodes95.Create(15);
-	ns3::NodeContainer wifiApNode95;
-	wifiApNode95.Create(1);
-	ns3::NodeContainer wifiStaNodes96;
-	wifiStaNodes96.Create(15);
-	ns3::NodeContainer wifiApNode96;
-	wifiApNode96.Create(1);
-	ns3::NodeContainer wifiStaNodes97;
-	wifiStaNodes97.Create(15);
-	ns3::NodeContainer wifiApNode97;
-	wifiApNode97.Create(1);
-	ns3::NodeContainer wifiStaNodes98;
-	wifiStaNodes98.Create(15);
-	ns3::NodeContainer wifiApNode98;
-	wifiApNode98.Create(1);
-	ns3::NodeContainer wifiStaNodes99;
-	wifiStaNodes99.Create(15);
-	ns3::NodeContainer wifiApNode99;
-	wifiApNode99.Create(1);
-	ns3::NodeContainer wifiStaNodes100;
-	wifiStaNodes100.Create(15);
-	ns3::NodeContainer wifiApNode100;
-	wifiApNode100.Create(1);
-	ns3::NodeContainer wifiStaNodes101;
-	wifiStaNodes101.Create(15);
-	ns3::NodeContainer wifiApNode101;
-	wifiApNode101.Create(1);
-	ns3::NodeContainer wifiStaNodes102;
-	wifiStaNodes102.Create(15);
-	ns3::NodeContainer wifiApNode102;
-	wifiApNode102.Create(1);
-	ns3::NodeContainer wifiStaNodes103;
-	wifiStaNodes103.Create(15);
-	ns3::NodeContainer wifiApNode103;
-	wifiApNode103.Create(1);
-	ns3::NodeContainer wifiStaNodes104;
-	wifiStaNodes104.Create(15);
-	ns3::NodeContainer wifiApNode104;
-	wifiApNode104.Create(1);
-	ns3::NodeContainer wifiStaNodes105;
-	wifiStaNodes105.Create(15);
-	ns3::NodeContainer wifiApNode105;
-	wifiApNode105.Create(1);
-	ns3::NodeContainer wifiStaNodes106;
-	wifiStaNodes106.Create(15);
-	ns3::NodeContainer wifiApNode106;
-	wifiApNode106.Create(1);
-	ns3::NodeContainer wifiStaNodes107;
-	wifiStaNodes107.Create(15);
-	ns3::NodeContainer wifiApNode107;
-	wifiApNode107.Create(1);
-	ns3::NodeContainer wifiStaNodes108;
-	wifiStaNodes108.Create(15);
-	ns3::NodeContainer wifiApNode108;
-	wifiApNode108.Create(1);
-	ns3::NodeContainer wifiStaNodes109;
-	wifiStaNodes109.Create(15);
-	ns3::NodeContainer wifiApNode109;
-	wifiApNode109.Create(1);
-	ns3::NodeContainer wifiStaNodes110;
-	wifiStaNodes110.Create(15);
-	ns3::NodeContainer wifiApNode110;
-	wifiApNode110.Create(1);
-	ns3::NodeContainer wifiStaNodes111;
-	wifiStaNodes111.Create(15);
-	ns3::NodeContainer wifiApNode111;
-	wifiApNode111.Create(1);
-	ns3::NodeContainer wifiStaNodes112;
-	wifiStaNodes112.Create(15);
-	ns3::NodeContainer wifiApNode112;
-	wifiApNode112.Create(1);
-	ns3::NodeContainer wifiStaNodes113;
-	wifiStaNodes113.Create(15);
-	ns3::NodeContainer wifiApNode113;
-	wifiApNode113.Create(1);
-	ns3::NodeContainer wifiStaNodes114;
-	wifiStaNodes114.Create(15);
-	ns3::NodeContainer wifiApNode114;
-	wifiApNode114.Create(1);
-	ns3::NodeContainer wifiStaNodes115;
-	wifiStaNodes115.Create(15);
-	ns3::NodeContainer wifiApNode115;
-	wifiApNode115.Create(1);
-	ns3::NodeContainer wifiStaNodes116;
-	wifiStaNodes116.Create(15);
-	ns3::NodeContainer wifiApNode116;
-	wifiApNode116.Create(1);
-	ns3::NodeContainer wifiStaNodes117;
-	wifiStaNodes117.Create(15);
-	ns3::NodeContainer wifiApNode117;
-	wifiApNode117.Create(1);
-	ns3::NodeContainer wifiStaNodes118;
-	wifiStaNodes118.Create(15);
-	ns3::NodeContainer wifiApNode118;
-	wifiApNode118.Create(1);
-	ns3::NodeContainer wifiStaNodes119;
-	wifiStaNodes119.Create(15);
-	ns3::NodeContainer wifiApNode119;
-	wifiApNode119.Create(1);
-	ns3::NodeContainer wifiStaNodes120;
-	wifiStaNodes120.Create(15);
-	ns3::NodeContainer wifiApNode120;
-	wifiApNode120.Create(1);
-	ns3::NodeContainer wifiStaNodes121;
-	wifiStaNodes121.Create(15);
-	ns3::NodeContainer wifiApNode121;
-	wifiApNode121.Create(1);
-	ns3::NodeContainer wifiStaNodes122;
-	wifiStaNodes122.Create(15);
-	ns3::NodeContainer wifiApNode122;
-	wifiApNode122.Create(1);
-	ns3::NodeContainer wifiStaNodes123;
-	wifiStaNodes123.Create(15);
-	ns3::NodeContainer wifiApNode123;
-	wifiApNode123.Create(1);
-	ns3::NodeContainer wifiStaNodes124;
-	wifiStaNodes124.Create(15);
-	ns3::NodeContainer wifiApNode124;
-	wifiApNode124.Create(1);
-	ns3::NodeContainer wifiStaNodes125;
-	wifiStaNodes125.Create(15);
-	ns3::NodeContainer wifiApNode125;
-	wifiApNode125.Create(1);
-	ns3::NodeContainer wifiStaNodes126;
-	wifiStaNodes126.Create(15);
-	ns3::NodeContainer wifiApNode126;
-	wifiApNode126.Create(1);
-	ns3::NodeContainer wifiStaNodes127;
-	wifiStaNodes127.Create(15);
-	ns3::NodeContainer wifiApNode127;
-	wifiApNode127.Create(1);
-	ns3::NodeContainer wifiStaNodes128;
-	wifiStaNodes128.Create(15);
-	ns3::NodeContainer wifiApNode128;
-	wifiApNode128.Create(1);
-	ns3::NodeContainer wifiStaNodes129;
-	wifiStaNodes129.Create(15);
-	ns3::NodeContainer wifiApNode129;
-	wifiApNode129.Create(1);
-	ns3::NodeContainer wifiStaNodes130;
-	wifiStaNodes130.Create(15);
-	ns3::NodeContainer wifiApNode130;
-	wifiApNode130.Create(1);
-	ns3::NodeContainer wifiStaNodes131;
-	wifiStaNodes131.Create(15);
-	ns3::NodeContainer wifiApNode131;
-	wifiApNode131.Create(1);
-	ns3::NodeContainer wifiStaNodes132;
-	wifiStaNodes132.Create(15);
-	ns3::NodeContainer wifiApNode132;
-	wifiApNode132.Create(1);
-	ns3::NodeContainer wifiStaNodes133;
-	wifiStaNodes133.Create(15);
-	ns3::NodeContainer wifiApNode133;
-	wifiApNode133.Create(1);
-	ns3::NodeContainer wifiStaNodes134;
-	wifiStaNodes134.Create(15);
-	ns3::NodeContainer wifiApNode134;
-	wifiApNode134.Create(1);
-	ns3::NodeContainer wifiStaNodes135;
-	wifiStaNodes135.Create(15);
-	ns3::NodeContainer wifiApNode135;
-	wifiApNode135.Create(1);
-	ns3::NodeContainer wifiStaNodes136;
-	wifiStaNodes136.Create(15);
-	ns3::NodeContainer wifiApNode136;
-	wifiApNode136.Create(1);
-	ns3::NodeContainer wifiStaNodes137;
-	wifiStaNodes137.Create(15);
-	ns3::NodeContainer wifiApNode137;
-	wifiApNode137.Create(1);
-	ns3::NodeContainer wifiStaNodes138;
-	wifiStaNodes138.Create(15);
-	ns3::NodeContainer wifiApNode138;
-	wifiApNode138.Create(1);
-	ns3::NodeContainer wifiStaNodes139;
-	wifiStaNodes139.Create(15);
-	ns3::NodeContainer wifiApNode139;
-	wifiApNode139.Create(1);
-	ns3::NodeContainer wifiStaNodes140;
-	wifiStaNodes140.Create(15);
-	ns3::NodeContainer wifiApNode140;
-	wifiApNode140.Create(1);
-	ns3::NodeContainer wifiStaNodes141;
-	wifiStaNodes141.Create(15);
-	ns3::NodeContainer wifiApNode141;
-	wifiApNode141.Create(1);
-	ns3::NodeContainer wifiStaNodes142;
-	wifiStaNodes142.Create(15);
-	ns3::NodeContainer wifiApNode142;
-	wifiApNode142.Create(1);
-	ns3::NodeContainer wifiStaNodes143;
-	wifiStaNodes143.Create(15);
-	ns3::NodeContainer wifiApNode143;
-	wifiApNode143.Create(1);
-	ns3::NodeContainer wifiStaNodes144;
-	wifiStaNodes144.Create(15);
-	ns3::NodeContainer wifiApNode144;
-	wifiApNode144.Create(1);
-	ns3::NodeContainer wifiStaNodes145;
-	wifiStaNodes145.Create(15);
-	ns3::NodeContainer wifiApNode145;
-	wifiApNode145.Create(1);
-	ns3::NodeContainer wifiStaNodes146;
-	wifiStaNodes146.Create(15);
-	ns3::NodeContainer wifiApNode146;
-	wifiApNode146.Create(1);
-	ns3::NodeContainer wifiStaNodes147;
-	wifiStaNodes147.Create(15);
-	ns3::NodeContainer wifiApNode147;
-	wifiApNode147.Create(1);
-	ns3::NodeContainer wifiStaNodes148;
-	wifiStaNodes148.Create(15);
-	ns3::NodeContainer wifiApNode148;
-	wifiApNode148.Create(1);
-	ns3::NodeContainer wifiStaNodes149;
-	wifiStaNodes149.Create(15);
-	ns3::NodeContainer wifiApNode149;
-	wifiApNode149.Create(1);
-	ns3::NodeContainer wifiStaNodes150;
-	wifiStaNodes150.Create(15);
-	ns3::NodeContainer wifiApNode150;
-	wifiApNode150.Create(1);
-	ns3::NodeContainer wifiStaNodes151;
-	wifiStaNodes151.Create(15);
-	ns3::NodeContainer wifiApNode151;
-	wifiApNode151.Create(1);
-	ns3::NodeContainer wifiStaNodes152;
-	wifiStaNodes152.Create(15);
-	ns3::NodeContainer wifiApNode152;
-	wifiApNode152.Create(1);
-	ns3::NodeContainer wifiStaNodes153;
-	wifiStaNodes153.Create(15);
-	ns3::NodeContainer wifiApNode153;
-	wifiApNode153.Create(1);
-	ns3::NodeContainer wifiStaNodes154;
-	wifiStaNodes154.Create(15);
-	ns3::NodeContainer wifiApNode154;
-	wifiApNode154.Create(1);
-	ns3::NodeContainer wifiStaNodes155;
-	wifiStaNodes155.Create(15);
-	ns3::NodeContainer wifiApNode155;
-	wifiApNode155.Create(1);
-	ns3::NodeContainer wifiStaNodes156;
-	wifiStaNodes156.Create(15);
-	ns3::NodeContainer wifiApNode156;
-	wifiApNode156.Create(1);
-	ns3::NodeContainer wifiStaNodes157;
-	wifiStaNodes157.Create(15);
-	ns3::NodeContainer wifiApNode157;
-	wifiApNode157.Create(1);
-	ns3::NodeContainer wifiStaNodes158;
-	wifiStaNodes158.Create(15);
-	ns3::NodeContainer wifiApNode158;
-	wifiApNode158.Create(1);
-	ns3::NodeContainer wifiStaNodes159;
-	wifiStaNodes159.Create(15);
-	ns3::NodeContainer wifiApNode159;
-	wifiApNode159.Create(1);
-	ns3::NodeContainer wifiStaNodes160;
-	wifiStaNodes160.Create(15);
-	ns3::NodeContainer wifiApNode160;
-	wifiApNode160.Create(1);
-	ns3::NodeContainer wifiStaNodes161;
-	wifiStaNodes161.Create(15);
-	ns3::NodeContainer wifiApNode161;
-	wifiApNode161.Create(1);
-	ns3::NodeContainer wifiStaNodes162;
-	wifiStaNodes162.Create(15);
-	ns3::NodeContainer wifiApNode162;
-	wifiApNode162.Create(1);
-	ns3::NodeContainer wifiStaNodes163;
-	wifiStaNodes163.Create(15);
-	ns3::NodeContainer wifiApNode163;
-	wifiApNode163.Create(1);
-	ns3::NodeContainer wifiStaNodes164;
-	wifiStaNodes164.Create(15);
-	ns3::NodeContainer wifiApNode164;
-	wifiApNode164.Create(1);
-	ns3::NodeContainer wifiStaNodes165;
-	wifiStaNodes165.Create(15);
-	ns3::NodeContainer wifiApNode165;
-	wifiApNode165.Create(1);
-	ns3::NodeContainer wifiStaNodes166;
-	wifiStaNodes166.Create(15);
-	ns3::NodeContainer wifiApNode166;
-	wifiApNode166.Create(1);
-	ns3::NodeContainer wifiStaNodes167;
-	wifiStaNodes167.Create(15);
-	ns3::NodeContainer wifiApNode167;
-	wifiApNode167.Create(1);
-	ns3::NodeContainer wifiStaNodes168;
-	wifiStaNodes168.Create(15);
-	ns3::NodeContainer wifiApNode168;
-	wifiApNode168.Create(1);
-	ns3::NodeContainer wifiStaNodes169;
-	wifiStaNodes169.Create(15);
-	ns3::NodeContainer wifiApNode169;
-	wifiApNode169.Create(1);
-	ns3::NodeContainer wifiStaNodes170;
-	wifiStaNodes170.Create(15);
-	ns3::NodeContainer wifiApNode170;
-	wifiApNode170.Create(1);
-	ns3::NodeContainer wifiStaNodes171;
-	wifiStaNodes171.Create(15);
-	ns3::NodeContainer wifiApNode171;
-	wifiApNode171.Create(1);
-	ns3::NodeContainer wifiStaNodes172;
-	wifiStaNodes172.Create(15);
-	ns3::NodeContainer wifiApNode172;
-	wifiApNode172.Create(1);
-	ns3::NodeContainer wifiStaNodes173;
-	wifiStaNodes173.Create(15);
-	ns3::NodeContainer wifiApNode173;
-	wifiApNode173.Create(1);
-	ns3::NodeContainer wifiStaNodes174;
-	wifiStaNodes174.Create(15);
-	ns3::NodeContainer wifiApNode174;
-	wifiApNode174.Create(1);
-	ns3::NodeContainer wifiStaNodes175;
-	wifiStaNodes175.Create(15);
-	ns3::NodeContainer wifiApNode175;
-	wifiApNode175.Create(1);
-	ns3::NodeContainer wifiStaNodes176;
-	wifiStaNodes176.Create(15);
-	ns3::NodeContainer wifiApNode176;
-	wifiApNode176.Create(1);
-	ns3::NodeContainer wifiStaNodes177;
-	wifiStaNodes177.Create(15);
-	ns3::NodeContainer wifiApNode177;
-	wifiApNode177.Create(1);
-	ns3::NodeContainer wifiStaNodes178;
-	wifiStaNodes178.Create(15);
-	ns3::NodeContainer wifiApNode178;
-	wifiApNode178.Create(1);
-	ns3::NodeContainer wifiStaNodes179;
-	wifiStaNodes179.Create(15);
-	ns3::NodeContainer wifiApNode179;
-	wifiApNode179.Create(1);
-	ns3::NodeContainer wifiStaNodes180;
-	wifiStaNodes180.Create(15);
-	ns3::NodeContainer wifiApNode180;
-	wifiApNode180.Create(1);
-	ns3::NodeContainer wifiStaNodes181;
-	wifiStaNodes181.Create(15);
-	ns3::NodeContainer wifiApNode181;
-	wifiApNode181.Create(1);
-	ns3::NodeContainer wifiStaNodes182;
-	wifiStaNodes182.Create(15);
-	ns3::NodeContainer wifiApNode182;
-	wifiApNode182.Create(1);
-	ns3::NodeContainer wifiStaNodes183;
-	wifiStaNodes183.Create(15);
-	ns3::NodeContainer wifiApNode183;
-	wifiApNode183.Create(1);
-	ns3::NodeContainer wifiStaNodes184;
-	wifiStaNodes184.Create(15);
-	ns3::NodeContainer wifiApNode184;
-	wifiApNode184.Create(1);
-	ns3::NodeContainer wifiStaNodes185;
-	wifiStaNodes185.Create(15);
-	ns3::NodeContainer wifiApNode185;
-	wifiApNode185.Create(1);
-	ns3::NodeContainer wifiStaNodes186;
-	wifiStaNodes186.Create(15);
-	ns3::NodeContainer wifiApNode186;
-	wifiApNode186.Create(1);
-	ns3::NodeContainer wifiStaNodes187;
-	wifiStaNodes187.Create(15);
-	ns3::NodeContainer wifiApNode187;
-	wifiApNode187.Create(1);
-	ns3::NodeContainer wifiStaNodes188;
-	wifiStaNodes188.Create(15);
-	ns3::NodeContainer wifiApNode188;
-	wifiApNode188.Create(1);
-	ns3::NodeContainer wifiStaNodes189;
-	wifiStaNodes189.Create(15);
-	ns3::NodeContainer wifiApNode189;
-	wifiApNode189.Create(1);
-	ns3::NodeContainer wifiStaNodes190;
-	wifiStaNodes190.Create(15);
-	ns3::NodeContainer wifiApNode190;
-	wifiApNode190.Create(1);
-	ns3::NodeContainer wifiStaNodes191;
-	wifiStaNodes191.Create(15);
-	ns3::NodeContainer wifiApNode191;
-	wifiApNode191.Create(1);
-	ns3::NodeContainer wifiStaNodes192;
-	wifiStaNodes192.Create(15);
-	ns3::NodeContainer wifiApNode192;
-	wifiApNode192.Create(1);
-	ns3::NodeContainer wifiStaNodes193;
-	wifiStaNodes193.Create(15);
-	ns3::NodeContainer wifiApNode193;
-	wifiApNode193.Create(1);
-	ns3::NodeContainer wifiStaNodes194;
-	wifiStaNodes194.Create(15);
-	ns3::NodeContainer wifiApNode194;
-	wifiApNode194.Create(1);
-	ns3::NodeContainer wifiStaNodes195;
-	wifiStaNodes195.Create(15);
-	ns3::NodeContainer wifiApNode195;
-	wifiApNode195.Create(1);
-	ns3::NodeContainer wifiStaNodes196;
-	wifiStaNodes196.Create(15);
-	ns3::NodeContainer wifiApNode196;
-	wifiApNode196.Create(1);
-	ns3::NodeContainer wifiStaNodes197;
-	wifiStaNodes197.Create(15);
-	ns3::NodeContainer wifiApNode197;
-	wifiApNode197.Create(1);
-	ns3::NodeContainer wifiStaNodes198;
-	wifiStaNodes198.Create(15);
-	ns3::NodeContainer wifiApNode198;
-	wifiApNode198.Create(1);
-	ns3::NodeContainer wifiStaNodes199;
-	wifiStaNodes199.Create(15);
-	ns3::NodeContainer wifiApNode199;
-	wifiApNode199.Create(1);
-	ns3::NodeContainer wifiStaNodes200;
-	wifiStaNodes200.Create(15);
-	ns3::NodeContainer wifiApNode200;
-	wifiApNode200.Create(1);
-	ns3::NodeContainer wifiStaNodes201;
-	wifiStaNodes201.Create(15);
-	ns3::NodeContainer wifiApNode201;
-	wifiApNode201.Create(1);
-	ns3::NodeContainer wifiStaNodes202;
-	wifiStaNodes202.Create(15);
-	ns3::NodeContainer wifiApNode202;
-	wifiApNode202.Create(1);
-	ns3::NodeContainer wifiStaNodes203;
-	wifiStaNodes203.Create(15);
-	ns3::NodeContainer wifiApNode203;
-	wifiApNode203.Create(1);
-	ns3::NodeContainer wifiStaNodes204;
-	wifiStaNodes204.Create(15);
-	ns3::NodeContainer wifiApNode204;
-	wifiApNode204.Create(1);
-	ns3::NodeContainer wifiStaNodes205;
-	wifiStaNodes205.Create(15);
-	ns3::NodeContainer wifiApNode205;
-	wifiApNode205.Create(1);
-	ns3::NodeContainer wifiStaNodes206;
-	wifiStaNodes206.Create(15);
-	ns3::NodeContainer wifiApNode206;
-	wifiApNode206.Create(1);
-	ns3::NodeContainer wifiStaNodes207;
-	wifiStaNodes207.Create(15);
-	ns3::NodeContainer wifiApNode207;
-	wifiApNode207.Create(1);
-	ns3::NodeContainer wifiStaNodes208;
-	wifiStaNodes208.Create(15);
-	ns3::NodeContainer wifiApNode208;
-	wifiApNode208.Create(1);
-	ns3::NodeContainer wifiStaNodes209;
-	wifiStaNodes209.Create(15);
-	ns3::NodeContainer wifiApNode209;
-	wifiApNode209.Create(1);
-	ns3::NodeContainer wifiStaNodes210;
-	wifiStaNodes210.Create(15);
-	ns3::NodeContainer wifiApNode210;
-	wifiApNode210.Create(1);
-	ns3::NodeContainer wifiStaNodes211;
-	wifiStaNodes211.Create(15);
-	ns3::NodeContainer wifiApNode211;
-	wifiApNode211.Create(1);
-	ns3::NodeContainer wifiStaNodes212;
-	wifiStaNodes212.Create(15);
-	ns3::NodeContainer wifiApNode212;
-	wifiApNode212.Create(1);
-	ns3::NodeContainer wifiStaNodes213;
-	wifiStaNodes213.Create(15);
-	ns3::NodeContainer wifiApNode213;
-	wifiApNode213.Create(1);
-	ns3::NodeContainer wifiStaNodes214;
-	wifiStaNodes214.Create(15);
-	ns3::NodeContainer wifiApNode214;
-	wifiApNode214.Create(1);
-	ns3::NodeContainer wifiStaNodes215;
-	wifiStaNodes215.Create(15);
-	ns3::NodeContainer wifiApNode215;
-	wifiApNode215.Create(1);
-	ns3::NodeContainer wifiStaNodes216;
-	wifiStaNodes216.Create(15);
-	ns3::NodeContainer wifiApNode216;
-	wifiApNode216.Create(1);
-	ns3::NodeContainer wifiStaNodes217;
-	wifiStaNodes217.Create(15);
-	ns3::NodeContainer wifiApNode217;
-	wifiApNode217.Create(1);
-	ns3::NodeContainer wifiStaNodes218;
-	wifiStaNodes218.Create(15);
-	ns3::NodeContainer wifiApNode218;
-	wifiApNode218.Create(1);
-	ns3::NodeContainer wifiStaNodes219;
-	wifiStaNodes219.Create(15);
-	ns3::NodeContainer wifiApNode219;
-	wifiApNode219.Create(1);
-	ns3::NodeContainer wifiStaNodes220;
-	wifiStaNodes220.Create(15);
-	ns3::NodeContainer wifiApNode220;
-	wifiApNode220.Create(1);
-	ns3::NodeContainer wifiStaNodes221;
-	wifiStaNodes221.Create(15);
-	ns3::NodeContainer wifiApNode221;
-	wifiApNode221.Create(1);
-	ns3::NodeContainer wifiStaNodes222;
-	wifiStaNodes222.Create(15);
-	ns3::NodeContainer wifiApNode222;
-	wifiApNode222.Create(1);
-	ns3::NodeContainer wifiStaNodes223;
-	wifiStaNodes223.Create(15);
-	ns3::NodeContainer wifiApNode223;
-	wifiApNode223.Create(1);
-	ns3::NodeContainer wifiStaNodes224;
-	wifiStaNodes224.Create(15);
-	ns3::NodeContainer wifiApNode224;
-	wifiApNode224.Create(1);
-	ns3::NodeContainer wifiStaNodes225;
-	wifiStaNodes225.Create(15);
-	ns3::NodeContainer wifiApNode225;
-	wifiApNode225.Create(1);
-	ns3::NodeContainer wifiStaNodes226;
-	wifiStaNodes226.Create(15);
-	ns3::NodeContainer wifiApNode226;
-	wifiApNode226.Create(1);
-	ns3::NodeContainer wifiStaNodes227;
-	wifiStaNodes227.Create(15);
-	ns3::NodeContainer wifiApNode227;
-	wifiApNode227.Create(1);
-	ns3::NodeContainer wifiStaNodes228;
-	wifiStaNodes228.Create(15);
-	ns3::NodeContainer wifiApNode228;
-	wifiApNode228.Create(1);
-	ns3::NodeContainer wifiStaNodes229;
-	wifiStaNodes229.Create(15);
-	ns3::NodeContainer wifiApNode229;
-	wifiApNode229.Create(1);
-	ns3::NodeContainer wifiStaNodes230;
-	wifiStaNodes230.Create(15);
-	ns3::NodeContainer wifiApNode230;
-	wifiApNode230.Create(1);
-	ns3::NodeContainer wifiStaNodes231;
-	wifiStaNodes231.Create(15);
-	ns3::NodeContainer wifiApNode231;
-	wifiApNode231.Create(1);
-	ns3::NodeContainer wifiStaNodes232;
-	wifiStaNodes232.Create(15);
-	ns3::NodeContainer wifiApNode232;
-	wifiApNode232.Create(1);
-	ns3::NodeContainer wifiStaNodes233;
-	wifiStaNodes233.Create(15);
-	ns3::NodeContainer wifiApNode233;
-	wifiApNode233.Create(1);
-	ns3::NodeContainer wifiStaNodes234;
-	wifiStaNodes234.Create(15);
-	ns3::NodeContainer wifiApNode234;
-	wifiApNode234.Create(1);
-	ns3::NodeContainer wifiStaNodes235;
-	wifiStaNodes235.Create(15);
-	ns3::NodeContainer wifiApNode235;
-	wifiApNode235.Create(1);
-	ns3::NodeContainer wifiStaNodes236;
-	wifiStaNodes236.Create(15);
-	ns3::NodeContainer wifiApNode236;
-	wifiApNode236.Create(1);
-	ns3::NodeContainer wifiStaNodes237;
-	wifiStaNodes237.Create(15);
-	ns3::NodeContainer wifiApNode237;
-	wifiApNode237.Create(1);
-	ns3::NodeContainer wifiStaNodes238;
-	wifiStaNodes238.Create(15);
-	ns3::NodeContainer wifiApNode238;
-	wifiApNode238.Create(1);
-	ns3::NodeContainer wifiStaNodes239;
-	wifiStaNodes239.Create(15);
-	ns3::NodeContainer wifiApNode239;
-	wifiApNode239.Create(1);
-	ns3::NodeContainer wifiStaNodes240;
-	wifiStaNodes240.Create(15);
-	ns3::NodeContainer wifiApNode240;
-	wifiApNode240.Create(1);
-	ns3::NodeContainer wifiStaNodes241;
-	wifiStaNodes241.Create(15);
-	ns3::NodeContainer wifiApNode241;
-	wifiApNode241.Create(1);
-	ns3::NodeContainer wifiStaNodes242;
-	wifiStaNodes242.Create(15);
-	ns3::NodeContainer wifiApNode242;
-	wifiApNode242.Create(1);
-	ns3::NodeContainer wifiStaNodes243;
-	wifiStaNodes243.Create(15);
-	ns3::NodeContainer wifiApNode243;
-	wifiApNode243.Create(1);
-	ns3::NodeContainer wifiStaNodes244;
-	wifiStaNodes244.Create(15);
-	ns3::NodeContainer wifiApNode244;
-	wifiApNode244.Create(1);
-	ns3::NodeContainer wifiStaNodes245;
-	wifiStaNodes245.Create(15);
-	ns3::NodeContainer wifiApNode245;
-	wifiApNode245.Create(1);
-	ns3::NodeContainer wifiStaNodes246;
-	wifiStaNodes246.Create(15);
-	ns3::NodeContainer wifiApNode246;
-	wifiApNode246.Create(1);
-	ns3::NodeContainer wifiStaNodes247;
-	wifiStaNodes247.Create(15);
-	ns3::NodeContainer wifiApNode247;
-	wifiApNode247.Create(1);
-	ns3::NodeContainer wifiStaNodes248;
-	wifiStaNodes248.Create(15);
-	ns3::NodeContainer wifiApNode248;
-	wifiApNode248.Create(1);
-	ns3::NodeContainer wifiStaNodes249;
-	wifiStaNodes249.Create(15);
-	ns3::NodeContainer wifiApNode249;
-	wifiApNode249.Create(1);
-	ns3::NodeContainer wifiStaNodes250;
-	wifiStaNodes250.Create(15);
-	ns3::NodeContainer wifiApNode250;
-	wifiApNode250.Create(1);
-	ns3::NodeContainer wifiStaNodes251;
-	wifiStaNodes251.Create(15);
-	ns3::NodeContainer wifiApNode251;
-	wifiApNode251.Create(1);
-	ns3::NodeContainer wifiStaNodes252;
-	wifiStaNodes252.Create(15);
-	ns3::NodeContainer wifiApNode252;
-	wifiApNode252.Create(1);
-	ns3::NodeContainer wifiStaNodes253;
-	wifiStaNodes253.Create(15);
-	ns3::NodeContainer wifiApNode253;
-	wifiApNode253.Create(1);
-	ns3::NodeContainer wifiStaNodes254;
-	wifiStaNodes254.Create(15);
-	ns3::NodeContainer wifiApNode254;
-	wifiApNode254.Create(1);
-	ns3::NodeContainer wifiStaNodes255;
-	wifiStaNodes255.Create(15);
-	ns3::NodeContainer wifiApNode255;
-	wifiApNode255.Create(1);
-	ns3::NodeContainer wifiStaNodes256;
-	wifiStaNodes256.Create(15);
-	ns3::NodeContainer wifiApNode256;
-	wifiApNode256.Create(1);
-	ns3::NodeContainer wifiStaNodes257;
-	wifiStaNodes257.Create(15);
-	ns3::NodeContainer wifiApNode257;
-	wifiApNode257.Create(1);
-	ns3::NodeContainer wifiStaNodes258;
-	wifiStaNodes258.Create(15);
-	ns3::NodeContainer wifiApNode258;
-	wifiApNode258.Create(1);
-	ns3::NodeContainer wifiStaNodes259;
-	wifiStaNodes259.Create(15);
-	ns3::NodeContainer wifiApNode259;
-	wifiApNode259.Create(1);
-	ns3::NodeContainer wifiStaNodes260;
-	wifiStaNodes260.Create(15);
-	ns3::NodeContainer wifiApNode260;
-	wifiApNode260.Create(1);
-	ns3::NodeContainer wifiStaNodes261;
-	wifiStaNodes261.Create(15);
-	ns3::NodeContainer wifiApNode261;
-	wifiApNode261.Create(1);
-	ns3::NodeContainer wifiStaNodes262;
-	wifiStaNodes262.Create(15);
-	ns3::NodeContainer wifiApNode262;
-	wifiApNode262.Create(1);
-	ns3::NodeContainer wifiStaNodes263;
-	wifiStaNodes263.Create(15);
-	ns3::NodeContainer wifiApNode263;
-	wifiApNode263.Create(1);
-	ns3::NodeContainer wifiStaNodes264;
-	wifiStaNodes264.Create(15);
-	ns3::NodeContainer wifiApNode264;
-	wifiApNode264.Create(1);
-	ns3::NodeContainer wifiStaNodes265;
-	wifiStaNodes265.Create(15);
-	ns3::NodeContainer wifiApNode265;
-	wifiApNode265.Create(1);
-	ns3::NodeContainer wifiStaNodes266;
-	wifiStaNodes266.Create(15);
-	ns3::NodeContainer wifiApNode266;
-	wifiApNode266.Create(1);
-	ns3::NodeContainer wifiStaNodes267;
-	wifiStaNodes267.Create(15);
-	ns3::NodeContainer wifiApNode267;
-	wifiApNode267.Create(1);
-	ns3::NodeContainer wifiStaNodes268;
-	wifiStaNodes268.Create(15);
-	ns3::NodeContainer wifiApNode268;
-	wifiApNode268.Create(1);
-	ns3::NodeContainer wifiStaNodes269;
-	wifiStaNodes269.Create(15);
-	ns3::NodeContainer wifiApNode269;
-	wifiApNode269.Create(1);
-	ns3::NodeContainer wifiStaNodes270;
-	wifiStaNodes270.Create(15);
-	ns3::NodeContainer wifiApNode270;
-	wifiApNode270.Create(1);
-	ns3::NodeContainer wifiStaNodes271;
-	wifiStaNodes271.Create(15);
-	ns3::NodeContainer wifiApNode271;
-	wifiApNode271.Create(1);
-	ns3::NodeContainer wifiStaNodes272;
-	wifiStaNodes272.Create(15);
-	ns3::NodeContainer wifiApNode272;
-	wifiApNode272.Create(1);
-	ns3::NodeContainer wifiStaNodes273;
-	wifiStaNodes273.Create(15);
-	ns3::NodeContainer wifiApNode273;
-	wifiApNode273.Create(1);
-	ns3::NodeContainer wifiStaNodes274;
-	wifiStaNodes274.Create(15);
-	ns3::NodeContainer wifiApNode274;
-	wifiApNode274.Create(1);
-	ns3::NodeContainer wifiStaNodes275;
-	wifiStaNodes275.Create(15);
-	ns3::NodeContainer wifiApNode275;
-	wifiApNode275.Create(1);
-	ns3::NodeContainer wifiStaNodes276;
-	wifiStaNodes276.Create(15);
-	ns3::NodeContainer wifiApNode276;
-	wifiApNode276.Create(1);
-	ns3::NodeContainer wifiStaNodes277;
-	wifiStaNodes277.Create(15);
-	ns3::NodeContainer wifiApNode277;
-	wifiApNode277.Create(1);
-	ns3::NodeContainer wifiStaNodes278;
-	wifiStaNodes278.Create(15);
-	ns3::NodeContainer wifiApNode278;
-	wifiApNode278.Create(1);
-	ns3::NodeContainer wifiStaNodes279;
-	wifiStaNodes279.Create(15);
-	ns3::NodeContainer wifiApNode279;
-	wifiApNode279.Create(1);
-	ns3::NodeContainer wifiStaNodes280;
-	wifiStaNodes280.Create(15);
-	ns3::NodeContainer wifiApNode280;
-	wifiApNode280.Create(1);
-	ns3::NodeContainer wifiStaNodes281;
-	wifiStaNodes281.Create(15);
-	ns3::NodeContainer wifiApNode281;
-	wifiApNode281.Create(1);
-	ns3::NodeContainer wifiStaNodes282;
-	wifiStaNodes282.Create(15);
-	ns3::NodeContainer wifiApNode282;
-	wifiApNode282.Create(1);
-	ns3::NodeContainer wifiStaNodes283;
-	wifiStaNodes283.Create(15);
-	ns3::NodeContainer wifiApNode283;
-	wifiApNode283.Create(1);
-	ns3::NodeContainer wifiStaNodes284;
-	wifiStaNodes284.Create(15);
-	ns3::NodeContainer wifiApNode284;
-	wifiApNode284.Create(1);
-	ns3::NodeContainer wifiStaNodes285;
-	wifiStaNodes285.Create(15);
-	ns3::NodeContainer wifiApNode285;
-	wifiApNode285.Create(1);
-	ns3::NodeContainer wifiStaNodes286;
-	wifiStaNodes286.Create(15);
-	ns3::NodeContainer wifiApNode286;
-	wifiApNode286.Create(1);
-	ns3::NodeContainer wifiStaNodes287;
-	wifiStaNodes287.Create(15);
-	ns3::NodeContainer wifiApNode287;
-	wifiApNode287.Create(1);
-	ns3::NodeContainer wifiStaNodes288;
-	wifiStaNodes288.Create(15);
-	ns3::NodeContainer wifiApNode288;
-	wifiApNode288.Create(1);
-	ns3::NodeContainer wifiStaNodes289;
-	wifiStaNodes289.Create(15);
-	ns3::NodeContainer wifiApNode289;
-	wifiApNode289.Create(1);
-	ns3::NodeContainer wifiStaNodes290;
-	wifiStaNodes290.Create(15);
-	ns3::NodeContainer wifiApNode290;
-	wifiApNode290.Create(1);
-	ns3::NodeContainer wifiStaNodes291;
-	wifiStaNodes291.Create(15);
-	ns3::NodeContainer wifiApNode291;
-	wifiApNode291.Create(1);
-	ns3::NodeContainer wifiStaNodes292;
-	wifiStaNodes292.Create(15);
-	ns3::NodeContainer wifiApNode292;
-	wifiApNode292.Create(1);
-	ns3::NodeContainer wifiStaNodes293;
-	wifiStaNodes293.Create(15);
-	ns3::NodeContainer wifiApNode293;
-	wifiApNode293.Create(1);
-	ns3::NodeContainer wifiStaNodes294;
-	wifiStaNodes294.Create(15);
-	ns3::NodeContainer wifiApNode294;
-	wifiApNode294.Create(1);
-	ns3::NodeContainer wifiStaNodes295;
-	wifiStaNodes295.Create(15);
-	ns3::NodeContainer wifiApNode295;
-	wifiApNode295.Create(1);
-	ns3::NodeContainer wifiStaNodes296;
-	wifiStaNodes296.Create(15);
-	ns3::NodeContainer wifiApNode296;
-	wifiApNode296.Create(1);
-	ns3::NodeContainer wifiStaNodes297;
-	wifiStaNodes297.Create(15);
-	ns3::NodeContainer wifiApNode297;
-	wifiApNode297.Create(1);
-	ns3::NodeContainer wifiStaNodes298;
-	wifiStaNodes298.Create(15);
-	ns3::NodeContainer wifiApNode298;
-	wifiApNode298.Create(1);
-	ns3::NodeContainer wifiStaNodes299;
-	wifiStaNodes299.Create(15);
-	ns3::NodeContainer wifiApNode299;
-	wifiApNode299.Create(1);
-	ns3::NodeContainer wifiStaNodes300;
-	wifiStaNodes300.Create(15);
-	ns3::NodeContainer wifiApNode300;
-	wifiApNode300.Create(1);
-	ns3::NodeContainer wifiStaNodes301;
-	wifiStaNodes301.Create(15);
-	ns3::NodeContainer wifiApNode301;
-	wifiApNode301.Create(1);
-	ns3::NodeContainer wifiStaNodes302;
-	wifiStaNodes302.Create(15);
-	ns3::NodeContainer wifiApNode302;
-	wifiApNode302.Create(1);
-	ns3::NodeContainer wifiStaNodes303;
-	wifiStaNodes303.Create(15);
-	ns3::NodeContainer wifiApNode303;
-	wifiApNode303.Create(1);
-	ns3::NodeContainer wifiStaNodes304;
-	wifiStaNodes304.Create(15);
-	ns3::NodeContainer wifiApNode304;
-	wifiApNode304.Create(1);
-	ns3::NodeContainer wifiStaNodes305;
-	wifiStaNodes305.Create(15);
-	ns3::NodeContainer wifiApNode305;
-	wifiApNode305.Create(1);
-//    wifiStaNodes306 = ns3::NodeContainer()
-//    wifiStaNodes306.Create(15)
-//
-//    wifiApNode306= ns3::NodeContainer()
-//    wifiApNode306.Create(1)
-//
-	ns3::NodeContainer wifiStaNodes307;
-	wifiStaNodes307.Create(15);
-	ns3::NodeContainer wifiApNode307;
-	wifiApNode307.Create(1);
-	ns3::NodeContainer wifiStaNodes308;
-	wifiStaNodes308.Create(15);
-	ns3::NodeContainer wifiApNode308;
-	wifiApNode308.Create(1);
-	ns3::NodeContainer wifiStaNodes309;
-	wifiStaNodes309.Create(15);
-	ns3::NodeContainer wifiApNode309;
-	wifiApNode309.Create(1);
-	ns3::NodeContainer wifiStaNodes310;
-	wifiStaNodes310.Create(15);
-	ns3::NodeContainer wifiApNode310;
-	wifiApNode310.Create(1);
-	ns3::NodeContainer wifiStaNodes311;
-	wifiStaNodes311.Create(15);
-	ns3::NodeContainer wifiApNode311;
-	wifiApNode311.Create(1);
-	ns3::NodeContainer wifiStaNodes312;
-	wifiStaNodes312.Create(15);
-	ns3::NodeContainer wifiApNode312;
-	wifiApNode312.Create(1);
-	ns3::NodeContainer wifiStaNodes313;
-	wifiStaNodes313.Create(15);
-	ns3::NodeContainer wifiApNode313;
-	wifiApNode313.Create(1);
-	ns3::NodeContainer wifiStaNodes314;
-	wifiStaNodes314.Create(15);
-	ns3::NodeContainer wifiApNode314;
-	wifiApNode314.Create(1);
-	ns3::NodeContainer wifiStaNodes315;
-	wifiStaNodes315.Create(15);
-	ns3::NodeContainer wifiApNode315;
-	wifiApNode315.Create(1);
-	ns3::NodeContainer wifiStaNodes316;
-	wifiStaNodes316.Create(15);
-	ns3::NodeContainer wifiApNode316;
-	wifiApNode316.Create(1);
-	ns3::NodeContainer wifiStaNodes317;
-	wifiStaNodes317.Create(15);
-	ns3::NodeContainer wifiApNode317;
-	wifiApNode317.Create(1);
-	ns3::NodeContainer wifiStaNodes318;
-	wifiStaNodes318.Create(15);
-	ns3::NodeContainer wifiApNode318;
-	wifiApNode318.Create(1);
-	ns3::NodeContainer wifiStaNodes319;
-	wifiStaNodes319.Create(15);
-	ns3::NodeContainer wifiApNode319;
-	wifiApNode319.Create(1);
-	ns3::NodeContainer wifiStaNodes320;
-	wifiStaNodes320.Create(15);
-	ns3::NodeContainer wifiApNode320;
-	wifiApNode320.Create(1);
-	ns3::NodeContainer wifiStaNodes321;
-	wifiStaNodes321.Create(15);
-	ns3::NodeContainer wifiApNode321;
-	wifiApNode321.Create(1);
-	ns3::NodeContainer wifiStaNodes322;
-	wifiStaNodes322.Create(15);
-	ns3::NodeContainer wifiApNode322;
-	wifiApNode322.Create(1);
-	ns3::NodeContainer wifiStaNodes323;
-	wifiStaNodes323.Create(15);
-	ns3::NodeContainer wifiApNode323;
-	wifiApNode323.Create(1);
-	ns3::NodeContainer wifiStaNodes324;
-	wifiStaNodes324.Create(15);
-	ns3::NodeContainer wifiApNode324;
-	wifiApNode324.Create(1);
-	ns3::NodeContainer wifiStaNodes325;
-	wifiStaNodes325.Create(15);
-	ns3::NodeContainer wifiApNode325;
-	wifiApNode325.Create(1);
-	ns3::NodeContainer wifiStaNodes326;
-	wifiStaNodes326.Create(15);
-	ns3::NodeContainer wifiApNode326;
-	wifiApNode326.Create(1);
-	ns3::NodeContainer wifiStaNodes327;
-	wifiStaNodes327.Create(15);
-	ns3::NodeContainer wifiApNode327;
-	wifiApNode327.Create(1);
-	ns3::NodeContainer wifiStaNodes328;
-	wifiStaNodes328.Create(15);
-	ns3::NodeContainer wifiApNode328;
-	wifiApNode328.Create(1);
-	ns3::NodeContainer wifiStaNodes329;
-	wifiStaNodes329.Create(15);
-	ns3::NodeContainer wifiApNode329;
-	wifiApNode329.Create(1);
-	ns3::NodeContainer wifiStaNodes330;
-	wifiStaNodes330.Create(15);
-	ns3::NodeContainer wifiApNode330;
-	wifiApNode330.Create(1);
-	ns3::NodeContainer wifiStaNodes331;
-	wifiStaNodes331.Create(15);
-	ns3::NodeContainer wifiApNode331;
-	wifiApNode331.Create(1);
-	ns3::NodeContainer wifiStaNodes332;
-	wifiStaNodes332.Create(15);
-	ns3::NodeContainer wifiApNode332;
-	wifiApNode332.Create(1);
-	ns3::NodeContainer wifiStaNodes333;
-	wifiStaNodes333.Create(15);
-	ns3::NodeContainer wifiApNode333;
-	wifiApNode333.Create(1);
-	ns3::NodeContainer wifiStaNodes334;
-	wifiStaNodes334.Create(15);
-	ns3::NodeContainer wifiApNode334;
-	wifiApNode334.Create(1);
-	ns3::NodeContainer wifiStaNodes335;
-	wifiStaNodes335.Create(15);
-	ns3::NodeContainer wifiApNode335;
-	wifiApNode335.Create(1);
-	ns3::NodeContainer wifiStaNodes336;
-	wifiStaNodes336.Create(15);
-	ns3::NodeContainer wifiApNode336;
-	wifiApNode336.Create(1);
-	ns3::NodeContainer wifiStaNodes337;
-	wifiStaNodes337.Create(15);
-	ns3::NodeContainer wifiApNode337;
-	wifiApNode337.Create(1);
-	ns3::NodeContainer wifiStaNodes338;
-	wifiStaNodes338.Create(15);
-	ns3::NodeContainer wifiApNode338;
-	wifiApNode338.Create(1);
-	ns3::NodeContainer wifiStaNodes339;
-	wifiStaNodes339.Create(15);
-	ns3::NodeContainer wifiApNode339;
-	wifiApNode339.Create(1);
-	ns3::NodeContainer wifiStaNodes340;
-	wifiStaNodes340.Create(15);
-	ns3::NodeContainer wifiApNode340;
-	wifiApNode340.Create(1);
-	ns3::NodeContainer wifiStaNodes341;
-	wifiStaNodes341.Create(15);
-	ns3::NodeContainer wifiApNode341;
-	wifiApNode341.Create(1);
+	WifiStaNodeSets wifi_sta_node_sets(350);
+	WifiApNodes wifi_ap_nodes(350);
 
 // Create the csma links, from each terminal to the switch
 
@@ -1435,141 +69,7 @@ int main(int argc, char** argv) {
 	SwitchDevices switch_devices(300);
 
 	ns3::NetDeviceContainer switchDevicessigenobu;
-	ns3::NetDeviceContainer switchDevices214;
-	ns3::NetDeviceContainer switchDevices215;
-	ns3::NetDeviceContainer switchDevices216;
-	ns3::NetDeviceContainer switchDevices217;
-	ns3::NetDeviceContainer switchDevices218;
-	ns3::NetDeviceContainer switchDevices219;
-	ns3::NetDeviceContainer switchDevices220;
-	ns3::NetDeviceContainer switchDevices221;
-	ns3::NetDeviceContainer switchDevices222;
-	ns3::NetDeviceContainer switchDevices223;
-	ns3::NetDeviceContainer switchDevices224;
-	ns3::NetDeviceContainer switchDevices225;
-	ns3::NetDeviceContainer switchDevices226;
-	ns3::NetDeviceContainer switchDevices227;
-	ns3::NetDeviceContainer switchDevices228;
-	ns3::NetDeviceContainer switchDevices229;
-	ns3::NetDeviceContainer switchDevices230;
-	ns3::NetDeviceContainer switchDevices231;
-	ns3::NetDeviceContainer switchDevices232;
-	ns3::NetDeviceContainer switchDevices233;
-	ns3::NetDeviceContainer switchDevices234;
-	ns3::NetDeviceContainer switchDevices235;
-	ns3::NetDeviceContainer switchDevices236;
-	ns3::NetDeviceContainer switchDevices237;
-	ns3::NetDeviceContainer switchDevices238;
-	ns3::NetDeviceContainer switchDevices239;
-	ns3::NetDeviceContainer switchDevices240;
-	ns3::NetDeviceContainer switchDevices241;
-	ns3::NetDeviceContainer switchDevices242;
-	ns3::NetDeviceContainer switchDevices243;
-	ns3::NetDeviceContainer switchDevices244;
-	ns3::NetDeviceContainer switchDevices245;
-	ns3::NetDeviceContainer switchDevices246;
-	ns3::NetDeviceContainer switchDevices247;
-	ns3::NetDeviceContainer switchDevices248;
-	ns3::NetDeviceContainer switchDevices284;
-	ns3::NetDeviceContainer switchDevices249;
-	ns3::NetDeviceContainer switchDevices250;
-	ns3::NetDeviceContainer switchDevices251;
-	ns3::NetDeviceContainer switchDevices252;
-	ns3::NetDeviceContainer switchDevices253;
-	ns3::NetDeviceContainer switchDevices254;
-	ns3::NetDeviceContainer switchDevices255;
-	ns3::NetDeviceContainer switchDevices256;
-	ns3::NetDeviceContainer switchDevices257;
-	ns3::NetDeviceContainer switchDevices258;
-	ns3::NetDeviceContainer switchDevices259;
-	ns3::NetDeviceContainer switchDevices260;
-	ns3::NetDeviceContainer switchDevices261;
-	ns3::NetDeviceContainer switchDevices262;
-	ns3::NetDeviceContainer switchDevices263;
-	ns3::NetDeviceContainer switchDevices264;
-	ns3::NetDeviceContainer switchDevices265;
-	ns3::NetDeviceContainer switchDevices266;
-	ns3::NetDeviceContainer switchDevices267;
-	ns3::NetDeviceContainer switchDevices268;
-	ns3::NetDeviceContainer switchDevices269;
-	ns3::NetDeviceContainer switchDevices270;
-	ns3::NetDeviceContainer switchDevices272;
-	ns3::NetDeviceContainer switchDevices273;
-	ns3::NetDeviceContainer switchDevices274;
-	ns3::NetDeviceContainer switchDevices275;
-	ns3::NetDeviceContainer switchDevices276;
-	ns3::NetDeviceContainer switchDevices277;
-	ns3::NetDeviceContainer switchDevices278;
-	ns3::NetDeviceContainer switchDevices279;
-	ns3::NetDeviceContainer switchDevices280;
-	ns3::NetDeviceContainer switchDevices281;
-	ns3::NetDeviceContainer switchDevices282;
-	ns3::NetDeviceContainer switchDevices283;
 	ns3::NetDeviceContainer switchDevicestarumi;
-	ns3::NetDeviceContainer switchDevices285;
-	ns3::NetDeviceContainer switchDevices286;
-	ns3::NetDeviceContainer switchDevices287;
-	ns3::NetDeviceContainer switchDevices288;
-	ns3::NetDeviceContainer switchDevices289;
-	ns3::NetDeviceContainer switchDevices290;
-	ns3::NetDeviceContainer switchDevices291;
-	ns3::NetDeviceContainer switchDevices292;
-	ns3::NetDeviceContainer switchDevices293;
-	ns3::NetDeviceContainer switchDevices294;
-	ns3::NetDeviceContainer switchDevices295;
-	ns3::NetDeviceContainer switchDevices296;
-	ns3::NetDeviceContainer switchDevices297;
-	ns3::NetDeviceContainer switchDevices298;
-	ns3::NetDeviceContainer switchDevices299;
-	ns3::NetDeviceContainer switchDevices300;
-	ns3::NetDeviceContainer switchDevices301;
-	ns3::NetDeviceContainer switchDevices302;
-	ns3::NetDeviceContainer switchDevices303;
-	ns3::NetDeviceContainer switchDevices304;
-	ns3::NetDeviceContainer switchDevices305;
-	ns3::NetDeviceContainer switchDevices306;
-	ns3::NetDeviceContainer switchDevices307;
-	ns3::NetDeviceContainer switchDevices308;
-	ns3::NetDeviceContainer switchDevices309;
-	ns3::NetDeviceContainer switchDevices310;
-	ns3::NetDeviceContainer switchDevices311;
-	ns3::NetDeviceContainer switchDevices312;
-	ns3::NetDeviceContainer switchDevices313;
-	ns3::NetDeviceContainer switchDevices314;
-	ns3::NetDeviceContainer switchDevices315;
-	ns3::NetDeviceContainer switchDevices316;
-	ns3::NetDeviceContainer switchDevices317;
-	ns3::NetDeviceContainer switchDevices318;
-	ns3::NetDeviceContainer switchDevices319;
-	ns3::NetDeviceContainer switchDevices320;
-	ns3::NetDeviceContainer switchDevices321;
-	ns3::NetDeviceContainer switchDevices322;
-	ns3::NetDeviceContainer switchDevices323;
-	ns3::NetDeviceContainer switchDevices324;
-	ns3::NetDeviceContainer switchDevices325;
-	ns3::NetDeviceContainer switchDevices326;
-	ns3::NetDeviceContainer switchDevices327;
-	ns3::NetDeviceContainer switchDevices328;
-	ns3::NetDeviceContainer switchDevices329;
-	ns3::NetDeviceContainer switchDevices330;
-	ns3::NetDeviceContainer switchDevices331;
-	ns3::NetDeviceContainer switchDevices332;
-	ns3::NetDeviceContainer switchDevices333;
-	ns3::NetDeviceContainer switchDevices334;
-	ns3::NetDeviceContainer switchDevices335;
-	ns3::NetDeviceContainer switchDevices336;
-	ns3::NetDeviceContainer switchDevices337;
-	ns3::NetDeviceContainer switchDevices338;
-	ns3::NetDeviceContainer switchDevices339;
-	ns3::NetDeviceContainer switchDevices340;
-	ns3::NetDeviceContainer switchDevices341;
-	ns3::NetDeviceContainer switchDevices342;
-	ns3::NetDeviceContainer switchDevices343;
-	ns3::NetDeviceContainer switchDevices344;
-	ns3::NetDeviceContainer switchDevices345;
-	ns3::NetDeviceContainer switchDevices346;
-	ns3::NetDeviceContainer switchDevices347;
-	ns3::NetDeviceContainer switchDevices348;
 
 	ns3::NetDeviceContainer terminaldevices5;
 	ns3::NetDeviceContainer terminaldevices6;
@@ -4129,630 +2629,630 @@ int main(int argc, char** argv) {
 			"ActiveProbing", ns3::BooleanValue(false));
 
 	ns3::NetDeviceContainer staDevices1;
-	staDevices1 = Wifi.Install(wifiPhy, mac, wifiStaNodes1);
+	staDevices1 = Wifi.Install(wifiPhy, mac, wifi_sta_node_sets[1]);
 	ns3::NetDeviceContainer staDevices2;
-	staDevices2 = Wifi.Install(wifiPhy2, mac, wifiStaNodes2);
+	staDevices2 = Wifi.Install(wifiPhy2, mac, wifi_sta_node_sets[2]);
 	ns3::NetDeviceContainer staDevices3;
-	staDevices3 = Wifi.Install(wifiPhy3, mac, wifiStaNodes3);
+	staDevices3 = Wifi.Install(wifiPhy3, mac, wifi_sta_node_sets[3]);
 	ns3::NetDeviceContainer staDevices4;
-	staDevices4 = Wifi.Install(wifiPhy4, mac, wifiStaNodes4);
+	staDevices4 = Wifi.Install(wifiPhy4, mac, wifi_sta_node_sets[4]);
 	ns3::NetDeviceContainer staDevices5;
-	staDevices5 = Wifi.Install(wifiPhy5, mac, wifiStaNodes5);
+	staDevices5 = Wifi.Install(wifiPhy5, mac, wifi_sta_node_sets[5]);
 	ns3::NetDeviceContainer staDevices6;
-	staDevices6 = Wifi.Install(wifiPhy6, mac, wifiStaNodes6);
+	staDevices6 = Wifi.Install(wifiPhy6, mac, wifi_sta_node_sets[6]);
 	ns3::NetDeviceContainer staDevices7;
-	staDevices7 = Wifi.Install(wifiPhy7, mac, wifiStaNodes7);
+	staDevices7 = Wifi.Install(wifiPhy7, mac, wifi_sta_node_sets[7]);
 	ns3::NetDeviceContainer staDevices8;
-	staDevices8 = Wifi.Install(wifiPhy8, mac, wifiStaNodes8);
+	staDevices8 = Wifi.Install(wifiPhy8, mac, wifi_sta_node_sets[8]);
 	ns3::NetDeviceContainer staDevices9;
-	staDevices9 = Wifi.Install(wifiPhy9, mac, wifiStaNodes9);
+	staDevices9 = Wifi.Install(wifiPhy9, mac, wifi_sta_node_sets[9]);
 	ns3::NetDeviceContainer staDevices10;
-	staDevices10 = Wifi.Install(wifiPhy10, mac, wifiStaNodes10);
+	staDevices10 = Wifi.Install(wifiPhy10, mac, wifi_sta_node_sets[10]);
 	ns3::NetDeviceContainer staDevices11;
-	staDevices11 = Wifi.Install(wifiPhy11, mac, wifiStaNodes11);
+	staDevices11 = Wifi.Install(wifiPhy11, mac, wifi_sta_node_sets[11]);
 	ns3::NetDeviceContainer staDevices12;
-	staDevices12 = Wifi.Install(wifiPhy12, mac, wifiStaNodes12);
+	staDevices12 = Wifi.Install(wifiPhy12, mac, wifi_sta_node_sets[12]);
 	ns3::NetDeviceContainer staDevices13;
-	staDevices13 = Wifi.Install(wifiPhy13, mac, wifiStaNodes13);
+	staDevices13 = Wifi.Install(wifiPhy13, mac, wifi_sta_node_sets[13]);
 	ns3::NetDeviceContainer staDevices14;
-	staDevices14 = Wifi.Install(wifiPhy14, mac, wifiStaNodes14);
+	staDevices14 = Wifi.Install(wifiPhy14, mac, wifi_sta_node_sets[14]);
 	ns3::NetDeviceContainer staDevices15;
-	staDevices15 = Wifi.Install(wifiPhy15, mac, wifiStaNodes15);
+	staDevices15 = Wifi.Install(wifiPhy15, mac, wifi_sta_node_sets[15]);
 	ns3::NetDeviceContainer staDevices16;
-	staDevices16 = Wifi.Install(wifiPhy16, mac, wifiStaNodes16);
+	staDevices16 = Wifi.Install(wifiPhy16, mac, wifi_sta_node_sets[16]);
 	ns3::NetDeviceContainer staDevices17;
-	staDevices17 = Wifi.Install(wifiPhy17, mac, wifiStaNodes17);
+	staDevices17 = Wifi.Install(wifiPhy17, mac, wifi_sta_node_sets[17]);
 	ns3::NetDeviceContainer staDevices18;
-	staDevices18 = Wifi.Install(wifiPhy18, mac, wifiStaNodes18);
+	staDevices18 = Wifi.Install(wifiPhy18, mac, wifi_sta_node_sets[18]);
 	ns3::NetDeviceContainer staDevices19;
-	staDevices19 = Wifi.Install(wifiPhy19, mac, wifiStaNodes19);
+	staDevices19 = Wifi.Install(wifiPhy19, mac, wifi_sta_node_sets[19]);
 	ns3::NetDeviceContainer staDevices20;
-	staDevices20 = Wifi.Install(wifiPhy20, mac, wifiStaNodes20);
+	staDevices20 = Wifi.Install(wifiPhy20, mac, wifi_sta_node_sets[20]);
 	ns3::NetDeviceContainer staDevices21;
-	staDevices21 = Wifi.Install(wifiPhy21, mac, wifiStaNodes21);
+	staDevices21 = Wifi.Install(wifiPhy21, mac, wifi_sta_node_sets[21]);
 	ns3::NetDeviceContainer staDevices22;
-	staDevices22 = Wifi.Install(wifiPhy22, mac, wifiStaNodes22);
+	staDevices22 = Wifi.Install(wifiPhy22, mac, wifi_sta_node_sets[22]);
 	ns3::NetDeviceContainer staDevices23;
-	staDevices23 = Wifi.Install(wifiPhy23, mac, wifiStaNodes23);
+	staDevices23 = Wifi.Install(wifiPhy23, mac, wifi_sta_node_sets[23]);
 	ns3::NetDeviceContainer staDevices24;
-	staDevices24 = Wifi.Install(wifiPhy24, mac, wifiStaNodes24);
+	staDevices24 = Wifi.Install(wifiPhy24, mac, wifi_sta_node_sets[24]);
 	ns3::NetDeviceContainer staDevices25;
-	staDevices25 = Wifi.Install(wifiPhy25, mac, wifiStaNodes25);
+	staDevices25 = Wifi.Install(wifiPhy25, mac, wifi_sta_node_sets[25]);
 	ns3::NetDeviceContainer staDevices26;
-	staDevices26 = Wifi.Install(wifiPhy26, mac, wifiStaNodes26);
+	staDevices26 = Wifi.Install(wifiPhy26, mac, wifi_sta_node_sets[26]);
 	ns3::NetDeviceContainer staDevices27;
-	staDevices27 = Wifi.Install(wifiPhy27, mac, wifiStaNodes27);
+	staDevices27 = Wifi.Install(wifiPhy27, mac, wifi_sta_node_sets[27]);
 	ns3::NetDeviceContainer staDevices28;
-	staDevices28 = Wifi.Install(wifiPhy28, mac, wifiStaNodes28);
+	staDevices28 = Wifi.Install(wifiPhy28, mac, wifi_sta_node_sets[28]);
 	ns3::NetDeviceContainer staDevices29;
-	staDevices29 = Wifi.Install(wifiPhy29, mac, wifiStaNodes29);
+	staDevices29 = Wifi.Install(wifiPhy29, mac, wifi_sta_node_sets[29]);
 	ns3::NetDeviceContainer staDevices30;
-	staDevices30 = Wifi.Install(wifiPhy30, mac, wifiStaNodes30);
+	staDevices30 = Wifi.Install(wifiPhy30, mac, wifi_sta_node_sets[30]);
 	ns3::NetDeviceContainer staDevices31;
-	staDevices31 = Wifi.Install(wifiPhy31, mac, wifiStaNodes31);
+	staDevices31 = Wifi.Install(wifiPhy31, mac, wifi_sta_node_sets[31]);
 	ns3::NetDeviceContainer staDevices32;
-	staDevices32 = Wifi.Install(wifiPhy32, mac, wifiStaNodes32);
+	staDevices32 = Wifi.Install(wifiPhy32, mac, wifi_sta_node_sets[32]);
 	ns3::NetDeviceContainer staDevices33;
-	staDevices33 = Wifi.Install(wifiPhy33, mac, wifiStaNodes33);
+	staDevices33 = Wifi.Install(wifiPhy33, mac, wifi_sta_node_sets[33]);
 	ns3::NetDeviceContainer staDevices34;
-	staDevices34 = Wifi.Install(wifiPhy34, mac, wifiStaNodes34);
+	staDevices34 = Wifi.Install(wifiPhy34, mac, wifi_sta_node_sets[34]);
 	ns3::NetDeviceContainer staDevices35;
-	staDevices35 = Wifi.Install(wifiPhy35, mac, wifiStaNodes35);
+	staDevices35 = Wifi.Install(wifiPhy35, mac, wifi_sta_node_sets[35]);
 	ns3::NetDeviceContainer staDevices36;
-	staDevices36 = Wifi.Install(wifiPhy36, mac, wifiStaNodes36);
+	staDevices36 = Wifi.Install(wifiPhy36, mac, wifi_sta_node_sets[36]);
 	ns3::NetDeviceContainer staDevices37;
-	staDevices37 = Wifi.Install(wifiPhy37, mac, wifiStaNodes37);
+	staDevices37 = Wifi.Install(wifiPhy37, mac, wifi_sta_node_sets[37]);
 	ns3::NetDeviceContainer staDevices38;
-	staDevices38 = Wifi.Install(wifiPhy38, mac, wifiStaNodes38);
+	staDevices38 = Wifi.Install(wifiPhy38, mac, wifi_sta_node_sets[38]);
 	ns3::NetDeviceContainer staDevices39;
-	staDevices39 = Wifi.Install(wifiPhy39, mac, wifiStaNodes39);
+	staDevices39 = Wifi.Install(wifiPhy39, mac, wifi_sta_node_sets[39]);
 	ns3::NetDeviceContainer staDevices40;
-	staDevices40 = Wifi.Install(wifiPhy40, mac, wifiStaNodes40);
+	staDevices40 = Wifi.Install(wifiPhy40, mac, wifi_sta_node_sets[40]);
 	ns3::NetDeviceContainer staDevices41;
-	staDevices41 = Wifi.Install(wifiPhy41, mac, wifiStaNodes41);
+	staDevices41 = Wifi.Install(wifiPhy41, mac, wifi_sta_node_sets[41]);
 	ns3::NetDeviceContainer staDevices42;
-	staDevices42 = Wifi.Install(wifiPhy42, mac, wifiStaNodes42);
+	staDevices42 = Wifi.Install(wifiPhy42, mac, wifi_sta_node_sets[42]);
 	ns3::NetDeviceContainer staDevices43;
-	staDevices43 = Wifi.Install(wifiPhy43, mac, wifiStaNodes43);
+	staDevices43 = Wifi.Install(wifiPhy43, mac, wifi_sta_node_sets[43]);
 	ns3::NetDeviceContainer staDevices44;
-	staDevices44 = Wifi.Install(wifiPhy44, mac, wifiStaNodes44);
+	staDevices44 = Wifi.Install(wifiPhy44, mac, wifi_sta_node_sets[44]);
 	ns3::NetDeviceContainer staDevices45;
-	staDevices45 = Wifi.Install(wifiPhy45, mac, wifiStaNodes45);
+	staDevices45 = Wifi.Install(wifiPhy45, mac, wifi_sta_node_sets[45]);
 	ns3::NetDeviceContainer staDevices46;
-	staDevices46 = Wifi.Install(wifiPhy46, mac, wifiStaNodes46);
+	staDevices46 = Wifi.Install(wifiPhy46, mac, wifi_sta_node_sets[46]);
 	ns3::NetDeviceContainer staDevices47;
-	staDevices47 = Wifi.Install(wifiPhy47, mac, wifiStaNodes47);
+	staDevices47 = Wifi.Install(wifiPhy47, mac, wifi_sta_node_sets[47]);
 	ns3::NetDeviceContainer staDevices48;
-	staDevices48 = Wifi.Install(wifiPhy48, mac, wifiStaNodes48);
+	staDevices48 = Wifi.Install(wifiPhy48, mac, wifi_sta_node_sets[48]);
 	ns3::NetDeviceContainer staDevices49;
-	staDevices49 = Wifi.Install(wifiPhy49, mac, wifiStaNodes49);
+	staDevices49 = Wifi.Install(wifiPhy49, mac, wifi_sta_node_sets[49]);
 	ns3::NetDeviceContainer staDevices50;
-	staDevices50 = Wifi.Install(wifiPhy50, mac, wifiStaNodes50);
+	staDevices50 = Wifi.Install(wifiPhy50, mac, wifi_sta_node_sets[50]);
 	ns3::NetDeviceContainer staDevices51;
-	staDevices51 = Wifi.Install(wifiPhy51, mac, wifiStaNodes51);
+	staDevices51 = Wifi.Install(wifiPhy51, mac, wifi_sta_node_sets[51]);
 	ns3::NetDeviceContainer staDevices52;
-	staDevices52 = Wifi.Install(wifiPhy52, mac, wifiStaNodes52);
+	staDevices52 = Wifi.Install(wifiPhy52, mac, wifi_sta_node_sets[52]);
 	ns3::NetDeviceContainer staDevices53;
-	staDevices53 = Wifi.Install(wifiPhy53, mac, wifiStaNodes53);
+	staDevices53 = Wifi.Install(wifiPhy53, mac, wifi_sta_node_sets[53]);
 	ns3::NetDeviceContainer staDevices54;
-	staDevices54 = Wifi.Install(wifiPhy54, mac, wifiStaNodes54);
+	staDevices54 = Wifi.Install(wifiPhy54, mac, wifi_sta_node_sets[54]);
 	ns3::NetDeviceContainer staDevices55;
-	staDevices55 = Wifi.Install(wifiPhy55, mac, wifiStaNodes55);
+	staDevices55 = Wifi.Install(wifiPhy55, mac, wifi_sta_node_sets[55]);
 	ns3::NetDeviceContainer staDevices56;
-	staDevices56 = Wifi.Install(wifiPhy56, mac, wifiStaNodes56);
+	staDevices56 = Wifi.Install(wifiPhy56, mac, wifi_sta_node_sets[56]);
 	ns3::NetDeviceContainer staDevices57;
-	staDevices57 = Wifi.Install(wifiPhy57, mac, wifiStaNodes57);
+	staDevices57 = Wifi.Install(wifiPhy57, mac, wifi_sta_node_sets[57]);
 	ns3::NetDeviceContainer staDevices58;
-	staDevices58 = Wifi.Install(wifiPhy58, mac, wifiStaNodes58);
+	staDevices58 = Wifi.Install(wifiPhy58, mac, wifi_sta_node_sets[58]);
 	ns3::NetDeviceContainer staDevices59;
-	staDevices59 = Wifi.Install(wifiPhy59, mac, wifiStaNodes59);
+	staDevices59 = Wifi.Install(wifiPhy59, mac, wifi_sta_node_sets[59]);
 	ns3::NetDeviceContainer staDevices60;
-	staDevices60 = Wifi.Install(wifiPhy60, mac, wifiStaNodes60);
+	staDevices60 = Wifi.Install(wifiPhy60, mac, wifi_sta_node_sets[60]);
 	ns3::NetDeviceContainer staDevices61;
-	staDevices61 = Wifi.Install(wifiPhy61, mac, wifiStaNodes61);
+	staDevices61 = Wifi.Install(wifiPhy61, mac, wifi_sta_node_sets[61]);
 	ns3::NetDeviceContainer staDevices62;
-	staDevices62 = Wifi.Install(wifiPhy62, mac, wifiStaNodes62);
+	staDevices62 = Wifi.Install(wifiPhy62, mac, wifi_sta_node_sets[62]);
 	ns3::NetDeviceContainer staDevices63;
-	staDevices63 = Wifi.Install(wifiPhy63, mac, wifiStaNodes63);
+	staDevices63 = Wifi.Install(wifiPhy63, mac, wifi_sta_node_sets[63]);
 	ns3::NetDeviceContainer staDevices64;
-	staDevices64 = Wifi.Install(wifiPhy64, mac, wifiStaNodes64);
+	staDevices64 = Wifi.Install(wifiPhy64, mac, wifi_sta_node_sets[64]);
 	ns3::NetDeviceContainer staDevices65;
-	staDevices65 = Wifi.Install(wifiPhy65, mac, wifiStaNodes65);
+	staDevices65 = Wifi.Install(wifiPhy65, mac, wifi_sta_node_sets[65]);
 	ns3::NetDeviceContainer staDevices66;
-	staDevices66 = Wifi.Install(wifiPhy66, mac, wifiStaNodes66);
+	staDevices66 = Wifi.Install(wifiPhy66, mac, wifi_sta_node_sets[66]);
 	ns3::NetDeviceContainer staDevices67;
-	staDevices67 = Wifi.Install(wifiPhy67, mac, wifiStaNodes67);
+	staDevices67 = Wifi.Install(wifiPhy67, mac, wifi_sta_node_sets[67]);
 	ns3::NetDeviceContainer staDevices68;
-	staDevices68 = Wifi.Install(wifiPhy68, mac, wifiStaNodes68);
+	staDevices68 = Wifi.Install(wifiPhy68, mac, wifi_sta_node_sets[68]);
 	ns3::NetDeviceContainer staDevices69;
-	staDevices69 = Wifi.Install(wifiPhy69, mac, wifiStaNodes69);
+	staDevices69 = Wifi.Install(wifiPhy69, mac, wifi_sta_node_sets[69]);
 	ns3::NetDeviceContainer staDevices70;
-	staDevices70 = Wifi.Install(wifiPhy70, mac, wifiStaNodes70);
+	staDevices70 = Wifi.Install(wifiPhy70, mac, wifi_sta_node_sets[70]);
 	ns3::NetDeviceContainer staDevices71;
-	staDevices71 = Wifi.Install(wifiPhy71, mac, wifiStaNodes71);
+	staDevices71 = Wifi.Install(wifiPhy71, mac, wifi_sta_node_sets[71]);
 	ns3::NetDeviceContainer staDevices72;
-	staDevices72 = Wifi.Install(wifiPhy72, mac, wifiStaNodes72);
+	staDevices72 = Wifi.Install(wifiPhy72, mac, wifi_sta_node_sets[72]);
 	ns3::NetDeviceContainer staDevices73;
-	staDevices73 = Wifi.Install(wifiPhy73, mac, wifiStaNodes73);
+	staDevices73 = Wifi.Install(wifiPhy73, mac, wifi_sta_node_sets[73]);
 	ns3::NetDeviceContainer staDevices74;
-	staDevices74 = Wifi.Install(wifiPhy74, mac, wifiStaNodes74);
+	staDevices74 = Wifi.Install(wifiPhy74, mac, wifi_sta_node_sets[74]);
 	ns3::NetDeviceContainer staDevices75;
-	staDevices75 = Wifi.Install(wifiPhy75, mac, wifiStaNodes75);
+	staDevices75 = Wifi.Install(wifiPhy75, mac, wifi_sta_node_sets[75]);
 	ns3::NetDeviceContainer staDevices76;
-	staDevices76 = Wifi.Install(wifiPhy76, mac, wifiStaNodes76);
+	staDevices76 = Wifi.Install(wifiPhy76, mac, wifi_sta_node_sets[76]);
 	ns3::NetDeviceContainer staDevices77;
-	staDevices77 = Wifi.Install(wifiPhy77, mac, wifiStaNodes77);
+	staDevices77 = Wifi.Install(wifiPhy77, mac, wifi_sta_node_sets[77]);
 	ns3::NetDeviceContainer staDevices78;
-	staDevices78 = Wifi.Install(wifiPhy78, mac, wifiStaNodes78);
+	staDevices78 = Wifi.Install(wifiPhy78, mac, wifi_sta_node_sets[78]);
 	ns3::NetDeviceContainer staDevices79;
-	staDevices79 = Wifi.Install(wifiPhy79, mac, wifiStaNodes79);
+	staDevices79 = Wifi.Install(wifiPhy79, mac, wifi_sta_node_sets[79]);
 	ns3::NetDeviceContainer staDevices80;
-	staDevices80 = Wifi.Install(wifiPhy80, mac, wifiStaNodes80);
+	staDevices80 = Wifi.Install(wifiPhy80, mac, wifi_sta_node_sets[80]);
 	ns3::NetDeviceContainer staDevices81;
-	staDevices81 = Wifi.Install(wifiPhy81, mac, wifiStaNodes81);
+	staDevices81 = Wifi.Install(wifiPhy81, mac, wifi_sta_node_sets[81]);
 	ns3::NetDeviceContainer staDevices82;
-	staDevices82 = Wifi.Install(wifiPhy82, mac, wifiStaNodes82);
+	staDevices82 = Wifi.Install(wifiPhy82, mac, wifi_sta_node_sets[82]);
 	ns3::NetDeviceContainer staDevices83;
-	staDevices83 = Wifi.Install(wifiPhy83, mac, wifiStaNodes83);
+	staDevices83 = Wifi.Install(wifiPhy83, mac, wifi_sta_node_sets[83]);
 	ns3::NetDeviceContainer staDevices84;
-	staDevices84 = Wifi.Install(wifiPhy84, mac, wifiStaNodes84);
+	staDevices84 = Wifi.Install(wifiPhy84, mac, wifi_sta_node_sets[84]);
 	ns3::NetDeviceContainer staDevices85;
-	staDevices85 = Wifi.Install(wifiPhy85, mac, wifiStaNodes85);
+	staDevices85 = Wifi.Install(wifiPhy85, mac, wifi_sta_node_sets[85]);
 	ns3::NetDeviceContainer staDevices86;
-	staDevices86 = Wifi.Install(wifiPhy86, mac, wifiStaNodes86);
+	staDevices86 = Wifi.Install(wifiPhy86, mac, wifi_sta_node_sets[86]);
 	ns3::NetDeviceContainer staDevices87;
-	staDevices87 = Wifi.Install(wifiPhy87, mac, wifiStaNodes87);
+	staDevices87 = Wifi.Install(wifiPhy87, mac, wifi_sta_node_sets[87]);
 	ns3::NetDeviceContainer staDevices88;
-	staDevices88 = Wifi.Install(wifiPhy88, mac, wifiStaNodes88);
+	staDevices88 = Wifi.Install(wifiPhy88, mac, wifi_sta_node_sets[88]);
 	ns3::NetDeviceContainer staDevices89;
-	staDevices89 = Wifi.Install(wifiPhy89, mac, wifiStaNodes89);
+	staDevices89 = Wifi.Install(wifiPhy89, mac, wifi_sta_node_sets[89]);
 	ns3::NetDeviceContainer staDevices90;
-	staDevices90 = Wifi.Install(wifiPhy90, mac, wifiStaNodes90);
+	staDevices90 = Wifi.Install(wifiPhy90, mac, wifi_sta_node_sets[90]);
 	ns3::NetDeviceContainer staDevices91;
-	staDevices91 = Wifi.Install(wifiPhy91, mac, wifiStaNodes91);
+	staDevices91 = Wifi.Install(wifiPhy91, mac, wifi_sta_node_sets[91]);
 	ns3::NetDeviceContainer staDevices92;
-	staDevices92 = Wifi.Install(wifiPhy92, mac, wifiStaNodes92);
+	staDevices92 = Wifi.Install(wifiPhy92, mac, wifi_sta_node_sets[92]);
 	ns3::NetDeviceContainer staDevices93;
-	staDevices93 = Wifi.Install(wifiPhy93, mac, wifiStaNodes93);
+	staDevices93 = Wifi.Install(wifiPhy93, mac, wifi_sta_node_sets[93]);
 	ns3::NetDeviceContainer staDevices94;
-	staDevices94 = Wifi.Install(wifiPhy94, mac, wifiStaNodes94);
+	staDevices94 = Wifi.Install(wifiPhy94, mac, wifi_sta_node_sets[94]);
 	ns3::NetDeviceContainer staDevices95;
-	staDevices95 = Wifi.Install(wifiPhy95, mac, wifiStaNodes95);
+	staDevices95 = Wifi.Install(wifiPhy95, mac, wifi_sta_node_sets[95]);
 	ns3::NetDeviceContainer staDevices96;
-	staDevices96 = Wifi.Install(wifiPhy96, mac, wifiStaNodes96);
+	staDevices96 = Wifi.Install(wifiPhy96, mac, wifi_sta_node_sets[96]);
 	ns3::NetDeviceContainer staDevices97;
-	staDevices97 = Wifi.Install(wifiPhy97, mac, wifiStaNodes97);
+	staDevices97 = Wifi.Install(wifiPhy97, mac, wifi_sta_node_sets[97]);
 	ns3::NetDeviceContainer staDevices98;
-	staDevices98 = Wifi.Install(wifiPhy98, mac, wifiStaNodes98);
+	staDevices98 = Wifi.Install(wifiPhy98, mac, wifi_sta_node_sets[98]);
 	ns3::NetDeviceContainer staDevices99;
-	staDevices99 = Wifi.Install(wifiPhy99, mac, wifiStaNodes99);
+	staDevices99 = Wifi.Install(wifiPhy99, mac, wifi_sta_node_sets[99]);
 	ns3::NetDeviceContainer staDevices100;
-	staDevices100 = Wifi.Install(wifiPhy100, mac, wifiStaNodes100);
+	staDevices100 = Wifi.Install(wifiPhy100, mac, wifi_sta_node_sets[100]);
 	ns3::NetDeviceContainer staDevices101;
-	staDevices101 = Wifi.Install(wifiPhy101, mac, wifiStaNodes101);
+	staDevices101 = Wifi.Install(wifiPhy101, mac, wifi_sta_node_sets[101]);
 	ns3::NetDeviceContainer staDevices102;
-	staDevices102 = Wifi.Install(wifiPhy102, mac, wifiStaNodes102);
+	staDevices102 = Wifi.Install(wifiPhy102, mac, wifi_sta_node_sets[102]);
 	ns3::NetDeviceContainer staDevices103;
-	staDevices103 = Wifi.Install(wifiPhy103, mac, wifiStaNodes103);
+	staDevices103 = Wifi.Install(wifiPhy103, mac, wifi_sta_node_sets[103]);
 	ns3::NetDeviceContainer staDevices104;
-	staDevices104 = Wifi.Install(wifiPhy104, mac, wifiStaNodes104);
+	staDevices104 = Wifi.Install(wifiPhy104, mac, wifi_sta_node_sets[104]);
 	ns3::NetDeviceContainer staDevices105;
-	staDevices105 = Wifi.Install(wifiPhy105, mac, wifiStaNodes105);
+	staDevices105 = Wifi.Install(wifiPhy105, mac, wifi_sta_node_sets[105]);
 	ns3::NetDeviceContainer staDevices106;
-	staDevices106 = Wifi.Install(wifiPhy106, mac, wifiStaNodes106);
+	staDevices106 = Wifi.Install(wifiPhy106, mac, wifi_sta_node_sets[106]);
 	ns3::NetDeviceContainer staDevices107;
-	staDevices107 = Wifi.Install(wifiPhy107, mac, wifiStaNodes107);
+	staDevices107 = Wifi.Install(wifiPhy107, mac, wifi_sta_node_sets[107]);
 	ns3::NetDeviceContainer staDevices108;
-	staDevices108 = Wifi.Install(wifiPhy108, mac, wifiStaNodes108);
+	staDevices108 = Wifi.Install(wifiPhy108, mac, wifi_sta_node_sets[108]);
 	ns3::NetDeviceContainer staDevices109;
-	staDevices109 = Wifi.Install(wifiPhy109, mac, wifiStaNodes109);
+	staDevices109 = Wifi.Install(wifiPhy109, mac, wifi_sta_node_sets[109]);
 	ns3::NetDeviceContainer staDevices110;
-	staDevices110 = Wifi.Install(wifiPhy110, mac, wifiStaNodes110);
+	staDevices110 = Wifi.Install(wifiPhy110, mac, wifi_sta_node_sets[110]);
 	ns3::NetDeviceContainer staDevices111;
-	staDevices111 = Wifi.Install(wifiPhy111, mac, wifiStaNodes111);
+	staDevices111 = Wifi.Install(wifiPhy111, mac, wifi_sta_node_sets[111]);
 	ns3::NetDeviceContainer staDevices112;
-	staDevices112 = Wifi.Install(wifiPhy112, mac, wifiStaNodes112);
+	staDevices112 = Wifi.Install(wifiPhy112, mac, wifi_sta_node_sets[112]);
 	ns3::NetDeviceContainer staDevices113;
-	staDevices113 = Wifi.Install(wifiPhy113, mac, wifiStaNodes113);
+	staDevices113 = Wifi.Install(wifiPhy113, mac, wifi_sta_node_sets[113]);
 	ns3::NetDeviceContainer staDevices114;
-	staDevices114 = Wifi.Install(wifiPhy114, mac, wifiStaNodes114);
+	staDevices114 = Wifi.Install(wifiPhy114, mac, wifi_sta_node_sets[114]);
 	ns3::NetDeviceContainer staDevices115;
-	staDevices115 = Wifi.Install(wifiPhy115, mac, wifiStaNodes115);
+	staDevices115 = Wifi.Install(wifiPhy115, mac, wifi_sta_node_sets[115]);
 	ns3::NetDeviceContainer staDevices116;
-	staDevices116 = Wifi.Install(wifiPhy116, mac, wifiStaNodes116);
+	staDevices116 = Wifi.Install(wifiPhy116, mac, wifi_sta_node_sets[116]);
 	ns3::NetDeviceContainer staDevices117;
-	staDevices117 = Wifi.Install(wifiPhy117, mac, wifiStaNodes117);
+	staDevices117 = Wifi.Install(wifiPhy117, mac, wifi_sta_node_sets[117]);
 	ns3::NetDeviceContainer staDevices118;
-	staDevices118 = Wifi.Install(wifiPhy118, mac, wifiStaNodes118);
+	staDevices118 = Wifi.Install(wifiPhy118, mac, wifi_sta_node_sets[118]);
 	ns3::NetDeviceContainer staDevices119;
-	staDevices119 = Wifi.Install(wifiPhy119, mac, wifiStaNodes119);
+	staDevices119 = Wifi.Install(wifiPhy119, mac, wifi_sta_node_sets[119]);
 	ns3::NetDeviceContainer staDevices120;
-	staDevices120 = Wifi.Install(wifiPhy120, mac, wifiStaNodes120);
+	staDevices120 = Wifi.Install(wifiPhy120, mac, wifi_sta_node_sets[120]);
 	ns3::NetDeviceContainer staDevices121;
-	staDevices121 = Wifi.Install(wifiPhy121, mac, wifiStaNodes121);
+	staDevices121 = Wifi.Install(wifiPhy121, mac, wifi_sta_node_sets[121]);
 	ns3::NetDeviceContainer staDevices122;
-	staDevices122 = Wifi.Install(wifiPhy122, mac, wifiStaNodes122);
+	staDevices122 = Wifi.Install(wifiPhy122, mac, wifi_sta_node_sets[122]);
 	ns3::NetDeviceContainer staDevices123;
-	staDevices123 = Wifi.Install(wifiPhy123, mac, wifiStaNodes123);
+	staDevices123 = Wifi.Install(wifiPhy123, mac, wifi_sta_node_sets[123]);
 	ns3::NetDeviceContainer staDevices124;
-	staDevices124 = Wifi.Install(wifiPhy124, mac, wifiStaNodes124);
+	staDevices124 = Wifi.Install(wifiPhy124, mac, wifi_sta_node_sets[124]);
 	ns3::NetDeviceContainer staDevices125;
-	staDevices125 = Wifi.Install(wifiPhy125, mac, wifiStaNodes125);
+	staDevices125 = Wifi.Install(wifiPhy125, mac, wifi_sta_node_sets[125]);
 	ns3::NetDeviceContainer staDevices126;
-	staDevices126 = Wifi.Install(wifiPhy126, mac, wifiStaNodes126);
+	staDevices126 = Wifi.Install(wifiPhy126, mac, wifi_sta_node_sets[126]);
 	ns3::NetDeviceContainer staDevices127;
-	staDevices127 = Wifi.Install(wifiPhy127, mac, wifiStaNodes127);
+	staDevices127 = Wifi.Install(wifiPhy127, mac, wifi_sta_node_sets[127]);
 	ns3::NetDeviceContainer staDevices128;
-	staDevices128 = Wifi.Install(wifiPhy128, mac, wifiStaNodes128);
+	staDevices128 = Wifi.Install(wifiPhy128, mac, wifi_sta_node_sets[128]);
 	ns3::NetDeviceContainer staDevices129;
-	staDevices129 = Wifi.Install(wifiPhy129, mac, wifiStaNodes129);
+	staDevices129 = Wifi.Install(wifiPhy129, mac, wifi_sta_node_sets[129]);
 	ns3::NetDeviceContainer staDevices130;
-	staDevices130 = Wifi.Install(wifiPhy130, mac, wifiStaNodes130);
+	staDevices130 = Wifi.Install(wifiPhy130, mac, wifi_sta_node_sets[130]);
 	ns3::NetDeviceContainer staDevices131;
-	staDevices131 = Wifi.Install(wifiPhy131, mac, wifiStaNodes131);
+	staDevices131 = Wifi.Install(wifiPhy131, mac, wifi_sta_node_sets[131]);
 	ns3::NetDeviceContainer staDevices132;
-	staDevices132 = Wifi.Install(wifiPhy132, mac, wifiStaNodes132);
+	staDevices132 = Wifi.Install(wifiPhy132, mac, wifi_sta_node_sets[132]);
 	ns3::NetDeviceContainer staDevices133;
-	staDevices133 = Wifi.Install(wifiPhy133, mac, wifiStaNodes133);
+	staDevices133 = Wifi.Install(wifiPhy133, mac, wifi_sta_node_sets[133]);
 	ns3::NetDeviceContainer staDevices134;
-	staDevices134 = Wifi.Install(wifiPhy134, mac, wifiStaNodes134);
+	staDevices134 = Wifi.Install(wifiPhy134, mac, wifi_sta_node_sets[134]);
 	ns3::NetDeviceContainer staDevices135;
-	staDevices135 = Wifi.Install(wifiPhy135, mac, wifiStaNodes135);
+	staDevices135 = Wifi.Install(wifiPhy135, mac, wifi_sta_node_sets[135]);
 	ns3::NetDeviceContainer staDevices136;
-	staDevices136 = Wifi.Install(wifiPhy136, mac, wifiStaNodes136);
+	staDevices136 = Wifi.Install(wifiPhy136, mac, wifi_sta_node_sets[136]);
 	ns3::NetDeviceContainer staDevices137;
-	staDevices137 = Wifi.Install(wifiPhy137, mac, wifiStaNodes137);
+	staDevices137 = Wifi.Install(wifiPhy137, mac, wifi_sta_node_sets[137]);
 	ns3::NetDeviceContainer staDevices138;
-	staDevices138 = Wifi.Install(wifiPhy138, mac, wifiStaNodes138);
+	staDevices138 = Wifi.Install(wifiPhy138, mac, wifi_sta_node_sets[138]);
 	ns3::NetDeviceContainer staDevices139;
-	staDevices139 = Wifi.Install(wifiPhy139, mac, wifiStaNodes139);
+	staDevices139 = Wifi.Install(wifiPhy139, mac, wifi_sta_node_sets[139]);
 	ns3::NetDeviceContainer staDevices140;
-	staDevices140 = Wifi.Install(wifiPhy140, mac, wifiStaNodes140);
+	staDevices140 = Wifi.Install(wifiPhy140, mac, wifi_sta_node_sets[140]);
 	ns3::NetDeviceContainer staDevices141;
-	staDevices141 = Wifi.Install(wifiPhy141, mac, wifiStaNodes141);
+	staDevices141 = Wifi.Install(wifiPhy141, mac, wifi_sta_node_sets[141]);
 	ns3::NetDeviceContainer staDevices142;
-	staDevices142 = Wifi.Install(wifiPhy142, mac, wifiStaNodes142);
+	staDevices142 = Wifi.Install(wifiPhy142, mac, wifi_sta_node_sets[142]);
 	ns3::NetDeviceContainer staDevices143;
-	staDevices143 = Wifi.Install(wifiPhy143, mac, wifiStaNodes143);
+	staDevices143 = Wifi.Install(wifiPhy143, mac, wifi_sta_node_sets[143]);
 	ns3::NetDeviceContainer staDevices144;
-	staDevices144 = Wifi.Install(wifiPhy144, mac, wifiStaNodes144);
+	staDevices144 = Wifi.Install(wifiPhy144, mac, wifi_sta_node_sets[144]);
 	ns3::NetDeviceContainer staDevices145;
-	staDevices145 = Wifi.Install(wifiPhy145, mac, wifiStaNodes145);
+	staDevices145 = Wifi.Install(wifiPhy145, mac, wifi_sta_node_sets[145]);
 	ns3::NetDeviceContainer staDevices146;
-	staDevices146 = Wifi.Install(wifiPhy146, mac, wifiStaNodes146);
+	staDevices146 = Wifi.Install(wifiPhy146, mac, wifi_sta_node_sets[146]);
 	ns3::NetDeviceContainer staDevices147;
-	staDevices147 = Wifi.Install(wifiPhy147, mac, wifiStaNodes147);
+	staDevices147 = Wifi.Install(wifiPhy147, mac, wifi_sta_node_sets[147]);
 	ns3::NetDeviceContainer staDevices148;
-	staDevices148 = Wifi.Install(wifiPhy148, mac, wifiStaNodes148);
+	staDevices148 = Wifi.Install(wifiPhy148, mac, wifi_sta_node_sets[148]);
 	ns3::NetDeviceContainer staDevices149;
-	staDevices149 = Wifi.Install(wifiPhy149, mac, wifiStaNodes149);
+	staDevices149 = Wifi.Install(wifiPhy149, mac, wifi_sta_node_sets[149]);
 	ns3::NetDeviceContainer staDevices150;
-	staDevices150 = Wifi.Install(wifiPhy150, mac, wifiStaNodes150);
+	staDevices150 = Wifi.Install(wifiPhy150, mac, wifi_sta_node_sets[150]);
 	ns3::NetDeviceContainer staDevices151;
-	staDevices151 = Wifi.Install(wifiPhy151, mac, wifiStaNodes151);
+	staDevices151 = Wifi.Install(wifiPhy151, mac, wifi_sta_node_sets[151]);
 	ns3::NetDeviceContainer staDevices152;
-	staDevices152 = Wifi.Install(wifiPhy152, mac, wifiStaNodes152);
+	staDevices152 = Wifi.Install(wifiPhy152, mac, wifi_sta_node_sets[152]);
 	ns3::NetDeviceContainer staDevices153;
-	staDevices153 = Wifi.Install(wifiPhy153, mac, wifiStaNodes153);
+	staDevices153 = Wifi.Install(wifiPhy153, mac, wifi_sta_node_sets[153]);
 	ns3::NetDeviceContainer staDevices154;
-	staDevices154 = Wifi.Install(wifiPhy154, mac, wifiStaNodes154);
+	staDevices154 = Wifi.Install(wifiPhy154, mac, wifi_sta_node_sets[154]);
 	ns3::NetDeviceContainer staDevices155;
-	staDevices155 = Wifi.Install(wifiPhy155, mac, wifiStaNodes155);
+	staDevices155 = Wifi.Install(wifiPhy155, mac, wifi_sta_node_sets[155]);
 	ns3::NetDeviceContainer staDevices156;
-	staDevices156 = Wifi.Install(wifiPhy156, mac, wifiStaNodes156);
+	staDevices156 = Wifi.Install(wifiPhy156, mac, wifi_sta_node_sets[156]);
 	ns3::NetDeviceContainer staDevices157;
-	staDevices157 = Wifi.Install(wifiPhy157, mac, wifiStaNodes157);
+	staDevices157 = Wifi.Install(wifiPhy157, mac, wifi_sta_node_sets[157]);
 	ns3::NetDeviceContainer staDevices158;
-	staDevices158 = Wifi.Install(wifiPhy158, mac, wifiStaNodes158);
+	staDevices158 = Wifi.Install(wifiPhy158, mac, wifi_sta_node_sets[158]);
 	ns3::NetDeviceContainer staDevices159;
-	staDevices159 = Wifi.Install(wifiPhy159, mac, wifiStaNodes159);
+	staDevices159 = Wifi.Install(wifiPhy159, mac, wifi_sta_node_sets[159]);
 	ns3::NetDeviceContainer staDevices160;
-	staDevices160 = Wifi.Install(wifiPhy160, mac, wifiStaNodes160);
+	staDevices160 = Wifi.Install(wifiPhy160, mac, wifi_sta_node_sets[160]);
 	ns3::NetDeviceContainer staDevices161;
-	staDevices161 = Wifi.Install(wifiPhy161, mac, wifiStaNodes161);
+	staDevices161 = Wifi.Install(wifiPhy161, mac, wifi_sta_node_sets[161]);
 	ns3::NetDeviceContainer staDevices162;
-	staDevices162 = Wifi.Install(wifiPhy162, mac, wifiStaNodes162);
+	staDevices162 = Wifi.Install(wifiPhy162, mac, wifi_sta_node_sets[162]);
 	ns3::NetDeviceContainer staDevices163;
-	staDevices163 = Wifi.Install(wifiPhy163, mac, wifiStaNodes163);
+	staDevices163 = Wifi.Install(wifiPhy163, mac, wifi_sta_node_sets[163]);
 	ns3::NetDeviceContainer staDevices164;
-	staDevices164 = Wifi.Install(wifiPhy164, mac, wifiStaNodes164);
+	staDevices164 = Wifi.Install(wifiPhy164, mac, wifi_sta_node_sets[164]);
 	ns3::NetDeviceContainer staDevices165;
-	staDevices165 = Wifi.Install(wifiPhy165, mac, wifiStaNodes165);
+	staDevices165 = Wifi.Install(wifiPhy165, mac, wifi_sta_node_sets[165]);
 	ns3::NetDeviceContainer staDevices166;
-	staDevices166 = Wifi.Install(wifiPhy166, mac, wifiStaNodes166);
+	staDevices166 = Wifi.Install(wifiPhy166, mac, wifi_sta_node_sets[166]);
 	ns3::NetDeviceContainer staDevices167;
-	staDevices167 = Wifi.Install(wifiPhy167, mac, wifiStaNodes167);
+	staDevices167 = Wifi.Install(wifiPhy167, mac, wifi_sta_node_sets[167]);
 	ns3::NetDeviceContainer staDevices168;
-	staDevices168 = Wifi.Install(wifiPhy168, mac, wifiStaNodes168);
+	staDevices168 = Wifi.Install(wifiPhy168, mac, wifi_sta_node_sets[168]);
 	ns3::NetDeviceContainer staDevices169;
-	staDevices169 = Wifi.Install(wifiPhy169, mac, wifiStaNodes169);
+	staDevices169 = Wifi.Install(wifiPhy169, mac, wifi_sta_node_sets[169]);
 	ns3::NetDeviceContainer staDevices170;
-	staDevices170 = Wifi.Install(wifiPhy170, mac, wifiStaNodes170);
+	staDevices170 = Wifi.Install(wifiPhy170, mac, wifi_sta_node_sets[170]);
 	ns3::NetDeviceContainer staDevices171;
-	staDevices171 = Wifi.Install(wifiPhy171, mac, wifiStaNodes171);
+	staDevices171 = Wifi.Install(wifiPhy171, mac, wifi_sta_node_sets[171]);
 	ns3::NetDeviceContainer staDevices172;
-	staDevices172 = Wifi.Install(wifiPhy172, mac, wifiStaNodes172);
+	staDevices172 = Wifi.Install(wifiPhy172, mac, wifi_sta_node_sets[172]);
 	ns3::NetDeviceContainer staDevices173;
-	staDevices173 = Wifi.Install(wifiPhy173, mac, wifiStaNodes173);
+	staDevices173 = Wifi.Install(wifiPhy173, mac, wifi_sta_node_sets[173]);
 	ns3::NetDeviceContainer staDevices174;
-	staDevices174 = Wifi.Install(wifiPhy174, mac, wifiStaNodes174);
+	staDevices174 = Wifi.Install(wifiPhy174, mac, wifi_sta_node_sets[174]);
 	ns3::NetDeviceContainer staDevices175;
-	staDevices175 = Wifi.Install(wifiPhy175, mac, wifiStaNodes175);
+	staDevices175 = Wifi.Install(wifiPhy175, mac, wifi_sta_node_sets[175]);
 	ns3::NetDeviceContainer staDevices176;
-	staDevices176 = Wifi.Install(wifiPhy176, mac, wifiStaNodes176);
+	staDevices176 = Wifi.Install(wifiPhy176, mac, wifi_sta_node_sets[176]);
 	ns3::NetDeviceContainer staDevices177;
-	staDevices177 = Wifi.Install(wifiPhy177, mac, wifiStaNodes177);
+	staDevices177 = Wifi.Install(wifiPhy177, mac, wifi_sta_node_sets[177]);
 	ns3::NetDeviceContainer staDevices178;
-	staDevices178 = Wifi.Install(wifiPhy178, mac, wifiStaNodes178);
+	staDevices178 = Wifi.Install(wifiPhy178, mac, wifi_sta_node_sets[178]);
 	ns3::NetDeviceContainer staDevices179;
-	staDevices179 = Wifi.Install(wifiPhy179, mac, wifiStaNodes179);
+	staDevices179 = Wifi.Install(wifiPhy179, mac, wifi_sta_node_sets[179]);
 	ns3::NetDeviceContainer staDevices180;
-	staDevices180 = Wifi.Install(wifiPhy180, mac, wifiStaNodes180);
+	staDevices180 = Wifi.Install(wifiPhy180, mac, wifi_sta_node_sets[180]);
 	ns3::NetDeviceContainer staDevices181;
-	staDevices181 = Wifi.Install(wifiPhy181, mac, wifiStaNodes181);
+	staDevices181 = Wifi.Install(wifiPhy181, mac, wifi_sta_node_sets[181]);
 	ns3::NetDeviceContainer staDevices182;
-	staDevices182 = Wifi.Install(wifiPhy182, mac, wifiStaNodes182);
+	staDevices182 = Wifi.Install(wifiPhy182, mac, wifi_sta_node_sets[182]);
 	ns3::NetDeviceContainer staDevices183;
-	staDevices183 = Wifi.Install(wifiPhy183, mac, wifiStaNodes183);
+	staDevices183 = Wifi.Install(wifiPhy183, mac, wifi_sta_node_sets[183]);
 	ns3::NetDeviceContainer staDevices184;
-	staDevices184 = Wifi.Install(wifiPhy184, mac, wifiStaNodes184);
+	staDevices184 = Wifi.Install(wifiPhy184, mac, wifi_sta_node_sets[184]);
 	ns3::NetDeviceContainer staDevices185;
-	staDevices185 = Wifi.Install(wifiPhy185, mac, wifiStaNodes185);
+	staDevices185 = Wifi.Install(wifiPhy185, mac, wifi_sta_node_sets[185]);
 	ns3::NetDeviceContainer staDevices186;
-	staDevices186 = Wifi.Install(wifiPhy186, mac, wifiStaNodes186);
+	staDevices186 = Wifi.Install(wifiPhy186, mac, wifi_sta_node_sets[186]);
 	ns3::NetDeviceContainer staDevices187;
-	staDevices187 = Wifi.Install(wifiPhy187, mac, wifiStaNodes187);
+	staDevices187 = Wifi.Install(wifiPhy187, mac, wifi_sta_node_sets[187]);
 	ns3::NetDeviceContainer staDevices188;
-	staDevices188 = Wifi.Install(wifiPhy188, mac, wifiStaNodes188);
+	staDevices188 = Wifi.Install(wifiPhy188, mac, wifi_sta_node_sets[188]);
 	ns3::NetDeviceContainer staDevices189;
-	staDevices189 = Wifi.Install(wifiPhy189, mac, wifiStaNodes189);
+	staDevices189 = Wifi.Install(wifiPhy189, mac, wifi_sta_node_sets[189]);
 	ns3::NetDeviceContainer staDevices190;
-	staDevices190 = Wifi.Install(wifiPhy190, mac, wifiStaNodes190);
+	staDevices190 = Wifi.Install(wifiPhy190, mac, wifi_sta_node_sets[190]);
 	ns3::NetDeviceContainer staDevices191;
-	staDevices191 = Wifi.Install(wifiPhy191, mac, wifiStaNodes191);
+	staDevices191 = Wifi.Install(wifiPhy191, mac, wifi_sta_node_sets[191]);
 	ns3::NetDeviceContainer staDevices192;
-	staDevices192 = Wifi.Install(wifiPhy192, mac, wifiStaNodes192);
+	staDevices192 = Wifi.Install(wifiPhy192, mac, wifi_sta_node_sets[192]);
 	ns3::NetDeviceContainer staDevices193;
-	staDevices193 = Wifi.Install(wifiPhy193, mac, wifiStaNodes193);
+	staDevices193 = Wifi.Install(wifiPhy193, mac, wifi_sta_node_sets[193]);
 	ns3::NetDeviceContainer staDevices194;
-	staDevices194 = Wifi.Install(wifiPhy194, mac, wifiStaNodes194);
+	staDevices194 = Wifi.Install(wifiPhy194, mac, wifi_sta_node_sets[194]);
 	ns3::NetDeviceContainer staDevices195;
-	staDevices195 = Wifi.Install(wifiPhy195, mac, wifiStaNodes195);
+	staDevices195 = Wifi.Install(wifiPhy195, mac, wifi_sta_node_sets[195]);
 	ns3::NetDeviceContainer staDevices196;
-	staDevices196 = Wifi.Install(wifiPhy196, mac, wifiStaNodes196);
+	staDevices196 = Wifi.Install(wifiPhy196, mac, wifi_sta_node_sets[196]);
 	ns3::NetDeviceContainer staDevices197;
-	staDevices197 = Wifi.Install(wifiPhy197, mac, wifiStaNodes197);
+	staDevices197 = Wifi.Install(wifiPhy197, mac, wifi_sta_node_sets[197]);
 	ns3::NetDeviceContainer staDevices198;
-	staDevices198 = Wifi.Install(wifiPhy198, mac, wifiStaNodes198);
+	staDevices198 = Wifi.Install(wifiPhy198, mac, wifi_sta_node_sets[198]);
 	ns3::NetDeviceContainer staDevices199;
-	staDevices199 = Wifi.Install(wifiPhy199, mac, wifiStaNodes199);
+	staDevices199 = Wifi.Install(wifiPhy199, mac, wifi_sta_node_sets[199]);
 	ns3::NetDeviceContainer staDevices200;
-	staDevices200 = Wifi.Install(wifiPhy200, mac, wifiStaNodes200);
+	staDevices200 = Wifi.Install(wifiPhy200, mac, wifi_sta_node_sets[200]);
 	ns3::NetDeviceContainer staDevices201;
-	staDevices201 = Wifi.Install(wifiPhy201, mac, wifiStaNodes201);
+	staDevices201 = Wifi.Install(wifiPhy201, mac, wifi_sta_node_sets[201]);
 	ns3::NetDeviceContainer staDevices202;
-	staDevices202 = Wifi.Install(wifiPhy202, mac, wifiStaNodes202);
+	staDevices202 = Wifi.Install(wifiPhy202, mac, wifi_sta_node_sets[202]);
 	ns3::NetDeviceContainer staDevices203;
-	staDevices203 = Wifi.Install(wifiPhy203, mac, wifiStaNodes203);
+	staDevices203 = Wifi.Install(wifiPhy203, mac, wifi_sta_node_sets[203]);
 	ns3::NetDeviceContainer staDevices204;
-	staDevices204 = Wifi.Install(wifiPhy204, mac, wifiStaNodes204);
+	staDevices204 = Wifi.Install(wifiPhy204, mac, wifi_sta_node_sets[204]);
 	ns3::NetDeviceContainer staDevices205;
-	staDevices205 = Wifi.Install(wifiPhy205, mac, wifiStaNodes205);
+	staDevices205 = Wifi.Install(wifiPhy205, mac, wifi_sta_node_sets[205]);
 	ns3::NetDeviceContainer staDevices206;
-	staDevices206 = Wifi.Install(wifiPhy206, mac, wifiStaNodes206);
+	staDevices206 = Wifi.Install(wifiPhy206, mac, wifi_sta_node_sets[206]);
 	ns3::NetDeviceContainer staDevices207;
-	staDevices207 = Wifi.Install(wifiPhy207, mac, wifiStaNodes207);
+	staDevices207 = Wifi.Install(wifiPhy207, mac, wifi_sta_node_sets[207]);
 	ns3::NetDeviceContainer staDevices208;
-	staDevices208 = Wifi.Install(wifiPhy208, mac, wifiStaNodes208);
+	staDevices208 = Wifi.Install(wifiPhy208, mac, wifi_sta_node_sets[208]);
 	ns3::NetDeviceContainer staDevices209;
-	staDevices209 = Wifi.Install(wifiPhy209, mac, wifiStaNodes209);
+	staDevices209 = Wifi.Install(wifiPhy209, mac, wifi_sta_node_sets[209]);
 	ns3::NetDeviceContainer staDevices210;
-	staDevices210 = Wifi.Install(wifiPhy210, mac, wifiStaNodes210);
+	staDevices210 = Wifi.Install(wifiPhy210, mac, wifi_sta_node_sets[210]);
 	ns3::NetDeviceContainer staDevices211;
-	staDevices211 = Wifi.Install(wifiPhy211, mac, wifiStaNodes211);
+	staDevices211 = Wifi.Install(wifiPhy211, mac, wifi_sta_node_sets[211]);
 	ns3::NetDeviceContainer staDevices212;
-	staDevices212 = Wifi.Install(wifiPhy212, mac, wifiStaNodes212);
+	staDevices212 = Wifi.Install(wifiPhy212, mac, wifi_sta_node_sets[212]);
 	ns3::NetDeviceContainer staDevices213;
-	staDevices213 = Wifi.Install(wifiPhy213, mac, wifiStaNodes213);
+	staDevices213 = Wifi.Install(wifiPhy213, mac, wifi_sta_node_sets[213]);
 	ns3::NetDeviceContainer staDevices214;
-	staDevices214 = Wifi.Install(wifiPhy214, mac, wifiStaNodes214);
+	staDevices214 = Wifi.Install(wifiPhy214, mac, wifi_sta_node_sets[214]);
 	ns3::NetDeviceContainer staDevices215;
-	staDevices215 = Wifi.Install(wifiPhy215, mac, wifiStaNodes215);
+	staDevices215 = Wifi.Install(wifiPhy215, mac, wifi_sta_node_sets[215]);
 	ns3::NetDeviceContainer staDevices216;
-	staDevices216 = Wifi.Install(wifiPhy216, mac, wifiStaNodes216);
+	staDevices216 = Wifi.Install(wifiPhy216, mac, wifi_sta_node_sets[216]);
 	ns3::NetDeviceContainer staDevices217;
-	staDevices217 = Wifi.Install(wifiPhy217, mac, wifiStaNodes217);
+	staDevices217 = Wifi.Install(wifiPhy217, mac, wifi_sta_node_sets[217]);
 	ns3::NetDeviceContainer staDevices218;
-	staDevices218 = Wifi.Install(wifiPhy218, mac, wifiStaNodes218);
+	staDevices218 = Wifi.Install(wifiPhy218, mac, wifi_sta_node_sets[218]);
 	ns3::NetDeviceContainer staDevices219;
-	staDevices219 = Wifi.Install(wifiPhy219, mac, wifiStaNodes219);
+	staDevices219 = Wifi.Install(wifiPhy219, mac, wifi_sta_node_sets[219]);
 	ns3::NetDeviceContainer staDevices220;
-	staDevices220 = Wifi.Install(wifiPhy220, mac, wifiStaNodes220);
+	staDevices220 = Wifi.Install(wifiPhy220, mac, wifi_sta_node_sets[220]);
 	ns3::NetDeviceContainer staDevices221;
-	staDevices221 = Wifi.Install(wifiPhy221, mac, wifiStaNodes221);
+	staDevices221 = Wifi.Install(wifiPhy221, mac, wifi_sta_node_sets[221]);
 	ns3::NetDeviceContainer staDevices222;
-	staDevices222 = Wifi.Install(wifiPhy222, mac, wifiStaNodes222);
+	staDevices222 = Wifi.Install(wifiPhy222, mac, wifi_sta_node_sets[222]);
 	ns3::NetDeviceContainer staDevices223;
-	staDevices223 = Wifi.Install(wifiPhy223, mac, wifiStaNodes223);
+	staDevices223 = Wifi.Install(wifiPhy223, mac, wifi_sta_node_sets[223]);
 	ns3::NetDeviceContainer staDevices224;
-	staDevices224 = Wifi.Install(wifiPhy224, mac, wifiStaNodes224);
+	staDevices224 = Wifi.Install(wifiPhy224, mac, wifi_sta_node_sets[224]);
 	ns3::NetDeviceContainer staDevices225;
-	staDevices225 = Wifi.Install(wifiPhy225, mac, wifiStaNodes225);
+	staDevices225 = Wifi.Install(wifiPhy225, mac, wifi_sta_node_sets[225]);
 	ns3::NetDeviceContainer staDevices226;
-	staDevices226 = Wifi.Install(wifiPhy226, mac, wifiStaNodes226);
+	staDevices226 = Wifi.Install(wifiPhy226, mac, wifi_sta_node_sets[226]);
 	ns3::NetDeviceContainer staDevices227;
-	staDevices227 = Wifi.Install(wifiPhy227, mac, wifiStaNodes227);
+	staDevices227 = Wifi.Install(wifiPhy227, mac, wifi_sta_node_sets[227]);
 	ns3::NetDeviceContainer staDevices228;
-	staDevices228 = Wifi.Install(wifiPhy228, mac, wifiStaNodes228);
+	staDevices228 = Wifi.Install(wifiPhy228, mac, wifi_sta_node_sets[228]);
 	ns3::NetDeviceContainer staDevices229;
-	staDevices229 = Wifi.Install(wifiPhy229, mac, wifiStaNodes229);
+	staDevices229 = Wifi.Install(wifiPhy229, mac, wifi_sta_node_sets[229]);
 	ns3::NetDeviceContainer staDevices230;
-	staDevices230 = Wifi.Install(wifiPhy230, mac, wifiStaNodes230);
+	staDevices230 = Wifi.Install(wifiPhy230, mac, wifi_sta_node_sets[230]);
 	ns3::NetDeviceContainer staDevices231;
-	staDevices231 = Wifi.Install(wifiPhy231, mac, wifiStaNodes231);
+	staDevices231 = Wifi.Install(wifiPhy231, mac, wifi_sta_node_sets[231]);
 	ns3::NetDeviceContainer staDevices232;
-	staDevices232 = Wifi.Install(wifiPhy232, mac, wifiStaNodes232);
+	staDevices232 = Wifi.Install(wifiPhy232, mac, wifi_sta_node_sets[232]);
 	ns3::NetDeviceContainer staDevices233;
-	staDevices233 = Wifi.Install(wifiPhy233, mac, wifiStaNodes233);
+	staDevices233 = Wifi.Install(wifiPhy233, mac, wifi_sta_node_sets[233]);
 	ns3::NetDeviceContainer staDevices234;
-	staDevices234 = Wifi.Install(wifiPhy234, mac, wifiStaNodes234);
+	staDevices234 = Wifi.Install(wifiPhy234, mac, wifi_sta_node_sets[234]);
 	ns3::NetDeviceContainer staDevices235;
-	staDevices235 = Wifi.Install(wifiPhy235, mac, wifiStaNodes235);
+	staDevices235 = Wifi.Install(wifiPhy235, mac, wifi_sta_node_sets[235]);
 	ns3::NetDeviceContainer staDevices236;
-	staDevices236 = Wifi.Install(wifiPhy236, mac, wifiStaNodes236);
+	staDevices236 = Wifi.Install(wifiPhy236, mac, wifi_sta_node_sets[236]);
 	ns3::NetDeviceContainer staDevices237;
-	staDevices237 = Wifi.Install(wifiPhy237, mac, wifiStaNodes237);
+	staDevices237 = Wifi.Install(wifiPhy237, mac, wifi_sta_node_sets[237]);
 	ns3::NetDeviceContainer staDevices238;
-	staDevices238 = Wifi.Install(wifiPhy238, mac, wifiStaNodes238);
+	staDevices238 = Wifi.Install(wifiPhy238, mac, wifi_sta_node_sets[238]);
 	ns3::NetDeviceContainer staDevices239;
-	staDevices239 = Wifi.Install(wifiPhy239, mac, wifiStaNodes239);
+	staDevices239 = Wifi.Install(wifiPhy239, mac, wifi_sta_node_sets[239]);
 	ns3::NetDeviceContainer staDevices240;
-	staDevices240 = Wifi.Install(wifiPhy240, mac, wifiStaNodes240);
+	staDevices240 = Wifi.Install(wifiPhy240, mac, wifi_sta_node_sets[240]);
 	ns3::NetDeviceContainer staDevices241;
-	staDevices241 = Wifi.Install(wifiPhy241, mac, wifiStaNodes241);
+	staDevices241 = Wifi.Install(wifiPhy241, mac, wifi_sta_node_sets[241]);
 	ns3::NetDeviceContainer staDevices242;
-	staDevices242 = Wifi.Install(wifiPhy242, mac, wifiStaNodes242);
+	staDevices242 = Wifi.Install(wifiPhy242, mac, wifi_sta_node_sets[242]);
 	ns3::NetDeviceContainer staDevices243;
-	staDevices243 = Wifi.Install(wifiPhy243, mac, wifiStaNodes243);
+	staDevices243 = Wifi.Install(wifiPhy243, mac, wifi_sta_node_sets[243]);
 	ns3::NetDeviceContainer staDevices244;
-	staDevices244 = Wifi.Install(wifiPhy244, mac, wifiStaNodes244);
+	staDevices244 = Wifi.Install(wifiPhy244, mac, wifi_sta_node_sets[244]);
 	ns3::NetDeviceContainer staDevices245;
-	staDevices245 = Wifi.Install(wifiPhy245, mac, wifiStaNodes245);
+	staDevices245 = Wifi.Install(wifiPhy245, mac, wifi_sta_node_sets[245]);
 	ns3::NetDeviceContainer staDevices246;
-	staDevices246 = Wifi.Install(wifiPhy246, mac, wifiStaNodes246);
+	staDevices246 = Wifi.Install(wifiPhy246, mac, wifi_sta_node_sets[246]);
 	ns3::NetDeviceContainer staDevices247;
-	staDevices247 = Wifi.Install(wifiPhy247, mac, wifiStaNodes247);
+	staDevices247 = Wifi.Install(wifiPhy247, mac, wifi_sta_node_sets[247]);
 	ns3::NetDeviceContainer staDevices248;
-	staDevices248 = Wifi.Install(wifiPhy248, mac, wifiStaNodes248);
+	staDevices248 = Wifi.Install(wifiPhy248, mac, wifi_sta_node_sets[248]);
 	ns3::NetDeviceContainer staDevices249;
-	staDevices249 = Wifi.Install(wifiPhy249, mac, wifiStaNodes249);
+	staDevices249 = Wifi.Install(wifiPhy249, mac, wifi_sta_node_sets[249]);
 	ns3::NetDeviceContainer staDevices250;
-	staDevices250 = Wifi.Install(wifiPhy250, mac, wifiStaNodes250);
+	staDevices250 = Wifi.Install(wifiPhy250, mac, wifi_sta_node_sets[250]);
 	ns3::NetDeviceContainer staDevices251;
-	staDevices251 = Wifi.Install(wifiPhy251, mac, wifiStaNodes251);
+	staDevices251 = Wifi.Install(wifiPhy251, mac, wifi_sta_node_sets[251]);
 	ns3::NetDeviceContainer staDevices252;
-	staDevices252 = Wifi.Install(wifiPhy252, mac, wifiStaNodes252);
+	staDevices252 = Wifi.Install(wifiPhy252, mac, wifi_sta_node_sets[252]);
 	ns3::NetDeviceContainer staDevices253;
-	staDevices253 = Wifi.Install(wifiPhy253, mac, wifiStaNodes253);
+	staDevices253 = Wifi.Install(wifiPhy253, mac, wifi_sta_node_sets[253]);
 	ns3::NetDeviceContainer staDevices254;
-	staDevices254 = Wifi.Install(wifiPhy254, mac, wifiStaNodes254);
+	staDevices254 = Wifi.Install(wifiPhy254, mac, wifi_sta_node_sets[254]);
 	ns3::NetDeviceContainer staDevices255;
-	staDevices255 = Wifi.Install(wifiPhy255, mac, wifiStaNodes255);
+	staDevices255 = Wifi.Install(wifiPhy255, mac, wifi_sta_node_sets[255]);
 	ns3::NetDeviceContainer staDevices256;
-	staDevices256 = Wifi.Install(wifiPhy256, mac, wifiStaNodes256);
+	staDevices256 = Wifi.Install(wifiPhy256, mac, wifi_sta_node_sets[256]);
 	ns3::NetDeviceContainer staDevices257;
-	staDevices257 = Wifi.Install(wifiPhy257, mac, wifiStaNodes257);
+	staDevices257 = Wifi.Install(wifiPhy257, mac, wifi_sta_node_sets[257]);
 	ns3::NetDeviceContainer staDevices258;
-	staDevices258 = Wifi.Install(wifiPhy258, mac, wifiStaNodes258);
+	staDevices258 = Wifi.Install(wifiPhy258, mac, wifi_sta_node_sets[258]);
 	ns3::NetDeviceContainer staDevices259;
-	staDevices259 = Wifi.Install(wifiPhy259, mac, wifiStaNodes259);
+	staDevices259 = Wifi.Install(wifiPhy259, mac, wifi_sta_node_sets[259]);
 	ns3::NetDeviceContainer staDevices260;
-	staDevices260 = Wifi.Install(wifiPhy260, mac, wifiStaNodes260);
+	staDevices260 = Wifi.Install(wifiPhy260, mac, wifi_sta_node_sets[260]);
 	ns3::NetDeviceContainer staDevices261;
-	staDevices261 = Wifi.Install(wifiPhy261, mac, wifiStaNodes261);
+	staDevices261 = Wifi.Install(wifiPhy261, mac, wifi_sta_node_sets[261]);
 	ns3::NetDeviceContainer staDevices262;
-	staDevices262 = Wifi.Install(wifiPhy262, mac, wifiStaNodes262);
+	staDevices262 = Wifi.Install(wifiPhy262, mac, wifi_sta_node_sets[262]);
 	ns3::NetDeviceContainer staDevices263;
-	staDevices263 = Wifi.Install(wifiPhy263, mac, wifiStaNodes263);
+	staDevices263 = Wifi.Install(wifiPhy263, mac, wifi_sta_node_sets[263]);
 	ns3::NetDeviceContainer staDevices264;
-	staDevices264 = Wifi.Install(wifiPhy264, mac, wifiStaNodes264);
+	staDevices264 = Wifi.Install(wifiPhy264, mac, wifi_sta_node_sets[264]);
 	ns3::NetDeviceContainer staDevices265;
-	staDevices265 = Wifi.Install(wifiPhy265, mac, wifiStaNodes265);
+	staDevices265 = Wifi.Install(wifiPhy265, mac, wifi_sta_node_sets[265]);
 	ns3::NetDeviceContainer staDevices266;
-	staDevices266 = Wifi.Install(wifiPhy266, mac, wifiStaNodes266);
+	staDevices266 = Wifi.Install(wifiPhy266, mac, wifi_sta_node_sets[266]);
 	ns3::NetDeviceContainer staDevices267;
-	staDevices267 = Wifi.Install(wifiPhy267, mac, wifiStaNodes267);
+	staDevices267 = Wifi.Install(wifiPhy267, mac, wifi_sta_node_sets[267]);
 	ns3::NetDeviceContainer staDevices268;
-	staDevices268 = Wifi.Install(wifiPhy268, mac, wifiStaNodes268);
+	staDevices268 = Wifi.Install(wifiPhy268, mac, wifi_sta_node_sets[268]);
 	ns3::NetDeviceContainer staDevices269;
-	staDevices269 = Wifi.Install(wifiPhy269, mac, wifiStaNodes269);
+	staDevices269 = Wifi.Install(wifiPhy269, mac, wifi_sta_node_sets[269]);
 	ns3::NetDeviceContainer staDevices270;
-	staDevices270 = Wifi.Install(wifiPhy270, mac, wifiStaNodes270);
+	staDevices270 = Wifi.Install(wifiPhy270, mac, wifi_sta_node_sets[270]);
 	ns3::NetDeviceContainer staDevices271;
-	staDevices271 = Wifi.Install(wifiPhy271, mac, wifiStaNodes271);
+	staDevices271 = Wifi.Install(wifiPhy271, mac, wifi_sta_node_sets[271]);
 	ns3::NetDeviceContainer staDevices272;
-	staDevices272 = Wifi.Install(wifiPhy272, mac, wifiStaNodes272);
+	staDevices272 = Wifi.Install(wifiPhy272, mac, wifi_sta_node_sets[272]);
 	ns3::NetDeviceContainer staDevices273;
-	staDevices273 = Wifi.Install(wifiPhy273, mac, wifiStaNodes273);
+	staDevices273 = Wifi.Install(wifiPhy273, mac, wifi_sta_node_sets[273]);
 	ns3::NetDeviceContainer staDevices274;
-	staDevices274 = Wifi.Install(wifiPhy274, mac, wifiStaNodes274);
+	staDevices274 = Wifi.Install(wifiPhy274, mac, wifi_sta_node_sets[274]);
 	ns3::NetDeviceContainer staDevices275;
-	staDevices275 = Wifi.Install(wifiPhy275, mac, wifiStaNodes275);
+	staDevices275 = Wifi.Install(wifiPhy275, mac, wifi_sta_node_sets[275]);
 	ns3::NetDeviceContainer staDevices276;
-	staDevices276 = Wifi.Install(wifiPhy276, mac, wifiStaNodes276);
+	staDevices276 = Wifi.Install(wifiPhy276, mac, wifi_sta_node_sets[276]);
 	ns3::NetDeviceContainer staDevices277;
-	staDevices277 = Wifi.Install(wifiPhy277, mac, wifiStaNodes277);
+	staDevices277 = Wifi.Install(wifiPhy277, mac, wifi_sta_node_sets[277]);
 	ns3::NetDeviceContainer staDevices278;
-	staDevices278 = Wifi.Install(wifiPhy278, mac, wifiStaNodes278);
+	staDevices278 = Wifi.Install(wifiPhy278, mac, wifi_sta_node_sets[278]);
 	ns3::NetDeviceContainer staDevices279;
-	staDevices279 = Wifi.Install(wifiPhy279, mac, wifiStaNodes279);
+	staDevices279 = Wifi.Install(wifiPhy279, mac, wifi_sta_node_sets[279]);
 	ns3::NetDeviceContainer staDevices280;
-	staDevices280 = Wifi.Install(wifiPhy280, mac, wifiStaNodes280);
+	staDevices280 = Wifi.Install(wifiPhy280, mac, wifi_sta_node_sets[280]);
 	ns3::NetDeviceContainer staDevices281;
-	staDevices281 = Wifi.Install(wifiPhy281, mac, wifiStaNodes281);
+	staDevices281 = Wifi.Install(wifiPhy281, mac, wifi_sta_node_sets[281]);
 	ns3::NetDeviceContainer staDevices282;
-	staDevices282 = Wifi.Install(wifiPhy282, mac, wifiStaNodes282);
+	staDevices282 = Wifi.Install(wifiPhy282, mac, wifi_sta_node_sets[282]);
 	ns3::NetDeviceContainer staDevices283;
-	staDevices283 = Wifi.Install(wifiPhy283, mac, wifiStaNodes283);
+	staDevices283 = Wifi.Install(wifiPhy283, mac, wifi_sta_node_sets[283]);
 	ns3::NetDeviceContainer staDevices284;
-	staDevices284 = Wifi.Install(wifiPhy284, mac, wifiStaNodes284);
+	staDevices284 = Wifi.Install(wifiPhy284, mac, wifi_sta_node_sets[284]);
 	ns3::NetDeviceContainer staDevices285;
-	staDevices285 = Wifi.Install(wifiPhy285, mac, wifiStaNodes285);
+	staDevices285 = Wifi.Install(wifiPhy285, mac, wifi_sta_node_sets[285]);
 	ns3::NetDeviceContainer staDevices286;
-	staDevices286 = Wifi.Install(wifiPhy286, mac, wifiStaNodes286);
+	staDevices286 = Wifi.Install(wifiPhy286, mac, wifi_sta_node_sets[286]);
 	ns3::NetDeviceContainer staDevices287;
-	staDevices287 = Wifi.Install(wifiPhy287, mac, wifiStaNodes287);
+	staDevices287 = Wifi.Install(wifiPhy287, mac, wifi_sta_node_sets[287]);
 	ns3::NetDeviceContainer staDevices288;
-	staDevices288 = Wifi.Install(wifiPhy288, mac, wifiStaNodes288);
+	staDevices288 = Wifi.Install(wifiPhy288, mac, wifi_sta_node_sets[288]);
 	ns3::NetDeviceContainer staDevices289;
-	staDevices289 = Wifi.Install(wifiPhy289, mac, wifiStaNodes289);
+	staDevices289 = Wifi.Install(wifiPhy289, mac, wifi_sta_node_sets[289]);
 	ns3::NetDeviceContainer staDevices290;
-	staDevices290 = Wifi.Install(wifiPhy290, mac, wifiStaNodes290);
+	staDevices290 = Wifi.Install(wifiPhy290, mac, wifi_sta_node_sets[290]);
 	ns3::NetDeviceContainer staDevices291;
-	staDevices291 = Wifi.Install(wifiPhy291, mac, wifiStaNodes291);
+	staDevices291 = Wifi.Install(wifiPhy291, mac, wifi_sta_node_sets[291]);
 	ns3::NetDeviceContainer staDevices292;
-	staDevices292 = Wifi.Install(wifiPhy292, mac, wifiStaNodes292);
+	staDevices292 = Wifi.Install(wifiPhy292, mac, wifi_sta_node_sets[292]);
 	ns3::NetDeviceContainer staDevices293;
-	staDevices293 = Wifi.Install(wifiPhy293, mac, wifiStaNodes293);
+	staDevices293 = Wifi.Install(wifiPhy293, mac, wifi_sta_node_sets[293]);
 	ns3::NetDeviceContainer staDevices294;
-	staDevices294 = Wifi.Install(wifiPhy294, mac, wifiStaNodes294);
+	staDevices294 = Wifi.Install(wifiPhy294, mac, wifi_sta_node_sets[294]);
 	ns3::NetDeviceContainer staDevices295;
-	staDevices295 = Wifi.Install(wifiPhy295, mac, wifiStaNodes295);
+	staDevices295 = Wifi.Install(wifiPhy295, mac, wifi_sta_node_sets[295]);
 	ns3::NetDeviceContainer staDevices296;
-	staDevices296 = Wifi.Install(wifiPhy296, mac, wifiStaNodes296);
+	staDevices296 = Wifi.Install(wifiPhy296, mac, wifi_sta_node_sets[296]);
 	ns3::NetDeviceContainer staDevices297;
-	staDevices297 = Wifi.Install(wifiPhy297, mac, wifiStaNodes297);
+	staDevices297 = Wifi.Install(wifiPhy297, mac, wifi_sta_node_sets[297]);
 //    staDevices298 = Wifi.Install (wifiPhy298, mac, wifiStaNodes298)
 //    staDevices299 = Wifi.Install (wifiPhy299, mac, wifiStaNodes299)
 	ns3::NetDeviceContainer staDevices300;
-	staDevices300 = Wifi.Install(wifiPhy300, mac, wifiStaNodes300);
+	staDevices300 = Wifi.Install(wifiPhy300, mac, wifi_sta_node_sets[300]);
 	ns3::NetDeviceContainer staDevices301;
-	staDevices301 = Wifi.Install(wifiPhy301, mac, wifiStaNodes301);
+	staDevices301 = Wifi.Install(wifiPhy301, mac, wifi_sta_node_sets[301]);
 	ns3::NetDeviceContainer staDevices302;
-	staDevices302 = Wifi.Install(wifiPhy302, mac, wifiStaNodes302);
+	staDevices302 = Wifi.Install(wifiPhy302, mac, wifi_sta_node_sets[302]);
 	ns3::NetDeviceContainer staDevices303;
-	staDevices303 = Wifi.Install(wifiPhy303, mac, wifiStaNodes303);
+	staDevices303 = Wifi.Install(wifiPhy303, mac, wifi_sta_node_sets[303]);
 	ns3::NetDeviceContainer staDevices304;
-	staDevices304 = Wifi.Install(wifiPhy304, mac, wifiStaNodes304);
+	staDevices304 = Wifi.Install(wifiPhy304, mac, wifi_sta_node_sets[304]);
 	ns3::NetDeviceContainer staDevices305;
-	staDevices305 = Wifi.Install(wifiPhy305, mac, wifiStaNodes305);
+	staDevices305 = Wifi.Install(wifiPhy305, mac, wifi_sta_node_sets[305]);
 //    staDevices306 = Wifi.Install (wifiPhy306, mac, wifiStaNodes306)
 	ns3::NetDeviceContainer staDevices307;
-	staDevices307 = Wifi.Install(wifiPhy307, mac, wifiStaNodes307);
+	staDevices307 = Wifi.Install(wifiPhy307, mac, wifi_sta_node_sets[307]);
 	ns3::NetDeviceContainer staDevices308;
-	staDevices308 = Wifi.Install(wifiPhy308, mac, wifiStaNodes308);
+	staDevices308 = Wifi.Install(wifiPhy308, mac, wifi_sta_node_sets[308]);
 	ns3::NetDeviceContainer staDevices309;
-	staDevices309 = Wifi.Install(wifiPhy309, mac, wifiStaNodes309);
+	staDevices309 = Wifi.Install(wifiPhy309, mac, wifi_sta_node_sets[309]);
 	ns3::NetDeviceContainer staDevices310;
-	staDevices310 = Wifi.Install(wifiPhy310, mac, wifiStaNodes310);
+	staDevices310 = Wifi.Install(wifiPhy310, mac, wifi_sta_node_sets[310]);
 	ns3::NetDeviceContainer staDevices311;
-	staDevices311 = Wifi.Install(wifiPhy311, mac, wifiStaNodes311);
+	staDevices311 = Wifi.Install(wifiPhy311, mac, wifi_sta_node_sets[311]);
 	ns3::NetDeviceContainer staDevices312;
-	staDevices312 = Wifi.Install(wifiPhy312, mac, wifiStaNodes312);
+	staDevices312 = Wifi.Install(wifiPhy312, mac, wifi_sta_node_sets[312]);
 	ns3::NetDeviceContainer staDevices313;
-	staDevices313 = Wifi.Install(wifiPhy313, mac, wifiStaNodes313);
+	staDevices313 = Wifi.Install(wifiPhy313, mac, wifi_sta_node_sets[313]);
 	ns3::NetDeviceContainer staDevices314;
-	staDevices314 = Wifi.Install(wifiPhy314, mac, wifiStaNodes314);
+	staDevices314 = Wifi.Install(wifiPhy314, mac, wifi_sta_node_sets[314]);
 //    staDevices315 = Wifi.Install (wifiPhy315, mac, wifiStaNodes315)
 
 // apnodes mac
@@ -4760,630 +3260,630 @@ int main(int argc, char** argv) {
 			"BeaconGeneration", ns3::BooleanValue(true), "BeaconInterval",
 			ns3::TimeValue(ns3::Seconds(2.5)));
 	ns3::NetDeviceContainer apDevices1;
-	apDevices1 = Wifi.Install(wifiPhy, mac, wifiApNode1);
+	apDevices1 = Wifi.Install(wifiPhy, mac, wifi_ap_nodes[1]);
 	ns3::NetDeviceContainer apDevices2;
-	apDevices2 = Wifi.Install(wifiPhy2, mac, wifiApNode2);
+	apDevices2 = Wifi.Install(wifiPhy2, mac, wifi_ap_nodes[2]);
 	ns3::NetDeviceContainer apDevices3;
-	apDevices3 = Wifi.Install(wifiPhy3, mac, wifiApNode3);
+	apDevices3 = Wifi.Install(wifiPhy3, mac, wifi_ap_nodes[3]);
 	ns3::NetDeviceContainer apDevices4;
-	apDevices4 = Wifi.Install(wifiPhy4, mac, wifiApNode4);
+	apDevices4 = Wifi.Install(wifiPhy4, mac, wifi_ap_nodes[4]);
 	ns3::NetDeviceContainer apDevices5;
-	apDevices5 = Wifi.Install(wifiPhy5, mac, wifiApNode5);
+	apDevices5 = Wifi.Install(wifiPhy5, mac, wifi_ap_nodes[5]);
 	ns3::NetDeviceContainer apDevices6;
-	apDevices6 = Wifi.Install(wifiPhy6, mac, wifiApNode6);
+	apDevices6 = Wifi.Install(wifiPhy6, mac, wifi_ap_nodes[6]);
 	ns3::NetDeviceContainer apDevices7;
-	apDevices7 = Wifi.Install(wifiPhy7, mac, wifiApNode7);
+	apDevices7 = Wifi.Install(wifiPhy7, mac, wifi_ap_nodes[7]);
 	ns3::NetDeviceContainer apDevices8;
-	apDevices8 = Wifi.Install(wifiPhy8, mac, wifiApNode8);
+	apDevices8 = Wifi.Install(wifiPhy8, mac, wifi_ap_nodes[8]);
 	ns3::NetDeviceContainer apDevices9;
-	apDevices9 = Wifi.Install(wifiPhy9, mac, wifiApNode9);
+	apDevices9 = Wifi.Install(wifiPhy9, mac, wifi_ap_nodes[9]);
 	ns3::NetDeviceContainer apDevices10;
-	apDevices10 = Wifi.Install(wifiPhy10, mac, wifiApNode10);
+	apDevices10 = Wifi.Install(wifiPhy10, mac, wifi_ap_nodes[10]);
 	ns3::NetDeviceContainer apDevices11;
-	apDevices11 = Wifi.Install(wifiPhy11, mac, wifiApNode11);
+	apDevices11 = Wifi.Install(wifiPhy11, mac, wifi_ap_nodes[11]);
 	ns3::NetDeviceContainer apDevices12;
-	apDevices12 = Wifi.Install(wifiPhy12, mac, wifiApNode12);
+	apDevices12 = Wifi.Install(wifiPhy12, mac, wifi_ap_nodes[12]);
 	ns3::NetDeviceContainer apDevices13;
-	apDevices13 = Wifi.Install(wifiPhy13, mac, wifiApNode13);
+	apDevices13 = Wifi.Install(wifiPhy13, mac, wifi_ap_nodes[13]);
 	ns3::NetDeviceContainer apDevices14;
-	apDevices14 = Wifi.Install(wifiPhy14, mac, wifiApNode14);
+	apDevices14 = Wifi.Install(wifiPhy14, mac, wifi_ap_nodes[14]);
 	ns3::NetDeviceContainer apDevices15;
-	apDevices15 = Wifi.Install(wifiPhy15, mac, wifiApNode15);
+	apDevices15 = Wifi.Install(wifiPhy15, mac, wifi_ap_nodes[15]);
 	ns3::NetDeviceContainer apDevices16;
-	apDevices16 = Wifi.Install(wifiPhy16, mac, wifiApNode16);
+	apDevices16 = Wifi.Install(wifiPhy16, mac, wifi_ap_nodes[16]);
 	ns3::NetDeviceContainer apDevices17;
-	apDevices17 = Wifi.Install(wifiPhy17, mac, wifiApNode17);
+	apDevices17 = Wifi.Install(wifiPhy17, mac, wifi_ap_nodes[17]);
 	ns3::NetDeviceContainer apDevices18;
-	apDevices18 = Wifi.Install(wifiPhy18, mac, wifiApNode18);
+	apDevices18 = Wifi.Install(wifiPhy18, mac, wifi_ap_nodes[18]);
 	ns3::NetDeviceContainer apDevices19;
-	apDevices19 = Wifi.Install(wifiPhy19, mac, wifiApNode19);
+	apDevices19 = Wifi.Install(wifiPhy19, mac, wifi_ap_nodes[19]);
 	ns3::NetDeviceContainer apDevices20;
-	apDevices20 = Wifi.Install(wifiPhy20, mac, wifiApNode20);
+	apDevices20 = Wifi.Install(wifiPhy20, mac, wifi_ap_nodes[20]);
 	ns3::NetDeviceContainer apDevices21;
-	apDevices21 = Wifi.Install(wifiPhy21, mac, wifiApNode21);
+	apDevices21 = Wifi.Install(wifiPhy21, mac, wifi_ap_nodes[21]);
 	ns3::NetDeviceContainer apDevices22;
-	apDevices22 = Wifi.Install(wifiPhy22, mac, wifiApNode22);
+	apDevices22 = Wifi.Install(wifiPhy22, mac, wifi_ap_nodes[22]);
 	ns3::NetDeviceContainer apDevices23;
-	apDevices23 = Wifi.Install(wifiPhy23, mac, wifiApNode23);
+	apDevices23 = Wifi.Install(wifiPhy23, mac, wifi_ap_nodes[23]);
 	ns3::NetDeviceContainer apDevices24;
-	apDevices24 = Wifi.Install(wifiPhy24, mac, wifiApNode24);
+	apDevices24 = Wifi.Install(wifiPhy24, mac, wifi_ap_nodes[24]);
 	ns3::NetDeviceContainer apDevices25;
-	apDevices25 = Wifi.Install(wifiPhy25, mac, wifiApNode25);
+	apDevices25 = Wifi.Install(wifiPhy25, mac, wifi_ap_nodes[25]);
 	ns3::NetDeviceContainer apDevices26;
-	apDevices26 = Wifi.Install(wifiPhy26, mac, wifiApNode26);
+	apDevices26 = Wifi.Install(wifiPhy26, mac, wifi_ap_nodes[26]);
 	ns3::NetDeviceContainer apDevices27;
-	apDevices27 = Wifi.Install(wifiPhy27, mac, wifiApNode27);
+	apDevices27 = Wifi.Install(wifiPhy27, mac, wifi_ap_nodes[27]);
 	ns3::NetDeviceContainer apDevices28;
-	apDevices28 = Wifi.Install(wifiPhy28, mac, wifiApNode28);
+	apDevices28 = Wifi.Install(wifiPhy28, mac, wifi_ap_nodes[28]);
 	ns3::NetDeviceContainer apDevices29;
-	apDevices29 = Wifi.Install(wifiPhy29, mac, wifiApNode29);
+	apDevices29 = Wifi.Install(wifiPhy29, mac, wifi_ap_nodes[29]);
 	ns3::NetDeviceContainer apDevices30;
-	apDevices30 = Wifi.Install(wifiPhy30, mac, wifiApNode30);
+	apDevices30 = Wifi.Install(wifiPhy30, mac, wifi_ap_nodes[30]);
 	ns3::NetDeviceContainer apDevices31;
-	apDevices31 = Wifi.Install(wifiPhy31, mac, wifiApNode31);
+	apDevices31 = Wifi.Install(wifiPhy31, mac, wifi_ap_nodes[31]);
 	ns3::NetDeviceContainer apDevices32;
-	apDevices32 = Wifi.Install(wifiPhy32, mac, wifiApNode32);
+	apDevices32 = Wifi.Install(wifiPhy32, mac, wifi_ap_nodes[32]);
 	ns3::NetDeviceContainer apDevices33;
-	apDevices33 = Wifi.Install(wifiPhy33, mac, wifiApNode33);
+	apDevices33 = Wifi.Install(wifiPhy33, mac, wifi_ap_nodes[33]);
 	ns3::NetDeviceContainer apDevices34;
-	apDevices34 = Wifi.Install(wifiPhy34, mac, wifiApNode34);
+	apDevices34 = Wifi.Install(wifiPhy34, mac, wifi_ap_nodes[34]);
 	ns3::NetDeviceContainer apDevices35;
-	apDevices35 = Wifi.Install(wifiPhy35, mac, wifiApNode35);
+	apDevices35 = Wifi.Install(wifiPhy35, mac, wifi_ap_nodes[35]);
 	ns3::NetDeviceContainer apDevices36;
-	apDevices36 = Wifi.Install(wifiPhy36, mac, wifiApNode36);
+	apDevices36 = Wifi.Install(wifiPhy36, mac, wifi_ap_nodes[36]);
 	ns3::NetDeviceContainer apDevices37;
-	apDevices37 = Wifi.Install(wifiPhy37, mac, wifiApNode37);
+	apDevices37 = Wifi.Install(wifiPhy37, mac, wifi_ap_nodes[37]);
 	ns3::NetDeviceContainer apDevices38;
-	apDevices38 = Wifi.Install(wifiPhy38, mac, wifiApNode38);
+	apDevices38 = Wifi.Install(wifiPhy38, mac, wifi_ap_nodes[38]);
 	ns3::NetDeviceContainer apDevices39;
-	apDevices39 = Wifi.Install(wifiPhy39, mac, wifiApNode39);
+	apDevices39 = Wifi.Install(wifiPhy39, mac, wifi_ap_nodes[39]);
 	ns3::NetDeviceContainer apDevices40;
-	apDevices40 = Wifi.Install(wifiPhy40, mac, wifiApNode40);
+	apDevices40 = Wifi.Install(wifiPhy40, mac, wifi_ap_nodes[40]);
 	ns3::NetDeviceContainer apDevices41;
-	apDevices41 = Wifi.Install(wifiPhy41, mac, wifiApNode41);
+	apDevices41 = Wifi.Install(wifiPhy41, mac, wifi_ap_nodes[41]);
 	ns3::NetDeviceContainer apDevices42;
-	apDevices42 = Wifi.Install(wifiPhy42, mac, wifiApNode42);
+	apDevices42 = Wifi.Install(wifiPhy42, mac, wifi_ap_nodes[42]);
 	ns3::NetDeviceContainer apDevices43;
-	apDevices43 = Wifi.Install(wifiPhy43, mac, wifiApNode43);
+	apDevices43 = Wifi.Install(wifiPhy43, mac, wifi_ap_nodes[43]);
 	ns3::NetDeviceContainer apDevices44;
-	apDevices44 = Wifi.Install(wifiPhy44, mac, wifiApNode44);
+	apDevices44 = Wifi.Install(wifiPhy44, mac, wifi_ap_nodes[44]);
 	ns3::NetDeviceContainer apDevices45;
-	apDevices45 = Wifi.Install(wifiPhy45, mac, wifiApNode45);
+	apDevices45 = Wifi.Install(wifiPhy45, mac, wifi_ap_nodes[45]);
 	ns3::NetDeviceContainer apDevices46;
-	apDevices46 = Wifi.Install(wifiPhy46, mac, wifiApNode46);
+	apDevices46 = Wifi.Install(wifiPhy46, mac, wifi_ap_nodes[46]);
 	ns3::NetDeviceContainer apDevices47;
-	apDevices47 = Wifi.Install(wifiPhy47, mac, wifiApNode47);
+	apDevices47 = Wifi.Install(wifiPhy47, mac, wifi_ap_nodes[47]);
 	ns3::NetDeviceContainer apDevices48;
-	apDevices48 = Wifi.Install(wifiPhy48, mac, wifiApNode48);
+	apDevices48 = Wifi.Install(wifiPhy48, mac, wifi_ap_nodes[48]);
 	ns3::NetDeviceContainer apDevices49;
-	apDevices49 = Wifi.Install(wifiPhy49, mac, wifiApNode49);
+	apDevices49 = Wifi.Install(wifiPhy49, mac, wifi_ap_nodes[49]);
 	ns3::NetDeviceContainer apDevices50;
-	apDevices50 = Wifi.Install(wifiPhy50, mac, wifiApNode50);
+	apDevices50 = Wifi.Install(wifiPhy50, mac, wifi_ap_nodes[50]);
 	ns3::NetDeviceContainer apDevices51;
-	apDevices51 = Wifi.Install(wifiPhy51, mac, wifiApNode51);
+	apDevices51 = Wifi.Install(wifiPhy51, mac, wifi_ap_nodes[51]);
 	ns3::NetDeviceContainer apDevices52;
-	apDevices52 = Wifi.Install(wifiPhy52, mac, wifiApNode52);
+	apDevices52 = Wifi.Install(wifiPhy52, mac, wifi_ap_nodes[52]);
 	ns3::NetDeviceContainer apDevices53;
-	apDevices53 = Wifi.Install(wifiPhy53, mac, wifiApNode53);
+	apDevices53 = Wifi.Install(wifiPhy53, mac, wifi_ap_nodes[53]);
 	ns3::NetDeviceContainer apDevices54;
-	apDevices54 = Wifi.Install(wifiPhy54, mac, wifiApNode54);
+	apDevices54 = Wifi.Install(wifiPhy54, mac, wifi_ap_nodes[54]);
 	ns3::NetDeviceContainer apDevices55;
-	apDevices55 = Wifi.Install(wifiPhy55, mac, wifiApNode55);
+	apDevices55 = Wifi.Install(wifiPhy55, mac, wifi_ap_nodes[55]);
 	ns3::NetDeviceContainer apDevices56;
-	apDevices56 = Wifi.Install(wifiPhy56, mac, wifiApNode56);
+	apDevices56 = Wifi.Install(wifiPhy56, mac, wifi_ap_nodes[56]);
 	ns3::NetDeviceContainer apDevices57;
-	apDevices57 = Wifi.Install(wifiPhy57, mac, wifiApNode57);
+	apDevices57 = Wifi.Install(wifiPhy57, mac, wifi_ap_nodes[57]);
 	ns3::NetDeviceContainer apDevices58;
-	apDevices58 = Wifi.Install(wifiPhy58, mac, wifiApNode58);
+	apDevices58 = Wifi.Install(wifiPhy58, mac, wifi_ap_nodes[58]);
 	ns3::NetDeviceContainer apDevices59;
-	apDevices59 = Wifi.Install(wifiPhy59, mac, wifiApNode59);
+	apDevices59 = Wifi.Install(wifiPhy59, mac, wifi_ap_nodes[59]);
 	ns3::NetDeviceContainer apDevices60;
-	apDevices60 = Wifi.Install(wifiPhy60, mac, wifiApNode60);
+	apDevices60 = Wifi.Install(wifiPhy60, mac, wifi_ap_nodes[60]);
 	ns3::NetDeviceContainer apDevices61;
-	apDevices61 = Wifi.Install(wifiPhy61, mac, wifiApNode61);
+	apDevices61 = Wifi.Install(wifiPhy61, mac, wifi_ap_nodes[61]);
 	ns3::NetDeviceContainer apDevices62;
-	apDevices62 = Wifi.Install(wifiPhy62, mac, wifiApNode62);
+	apDevices62 = Wifi.Install(wifiPhy62, mac, wifi_ap_nodes[62]);
 	ns3::NetDeviceContainer apDevices63;
-	apDevices63 = Wifi.Install(wifiPhy63, mac, wifiApNode63);
+	apDevices63 = Wifi.Install(wifiPhy63, mac, wifi_ap_nodes[63]);
 	ns3::NetDeviceContainer apDevices64;
-	apDevices64 = Wifi.Install(wifiPhy64, mac, wifiApNode64);
+	apDevices64 = Wifi.Install(wifiPhy64, mac, wifi_ap_nodes[64]);
 	ns3::NetDeviceContainer apDevices65;
-	apDevices65 = Wifi.Install(wifiPhy65, mac, wifiApNode65);
+	apDevices65 = Wifi.Install(wifiPhy65, mac, wifi_ap_nodes[65]);
 	ns3::NetDeviceContainer apDevices66;
-	apDevices66 = Wifi.Install(wifiPhy66, mac, wifiApNode66);
+	apDevices66 = Wifi.Install(wifiPhy66, mac, wifi_ap_nodes[66]);
 	ns3::NetDeviceContainer apDevices67;
-	apDevices67 = Wifi.Install(wifiPhy67, mac, wifiApNode67);
+	apDevices67 = Wifi.Install(wifiPhy67, mac, wifi_ap_nodes[67]);
 	ns3::NetDeviceContainer apDevices68;
-	apDevices68 = Wifi.Install(wifiPhy68, mac, wifiApNode68);
+	apDevices68 = Wifi.Install(wifiPhy68, mac, wifi_ap_nodes[68]);
 	ns3::NetDeviceContainer apDevices69;
-	apDevices69 = Wifi.Install(wifiPhy69, mac, wifiApNode69);
+	apDevices69 = Wifi.Install(wifiPhy69, mac, wifi_ap_nodes[69]);
 	ns3::NetDeviceContainer apDevices70;
-	apDevices70 = Wifi.Install(wifiPhy70, mac, wifiApNode70);
+	apDevices70 = Wifi.Install(wifiPhy70, mac, wifi_ap_nodes[70]);
 	ns3::NetDeviceContainer apDevices71;
-	apDevices71 = Wifi.Install(wifiPhy71, mac, wifiApNode71);
+	apDevices71 = Wifi.Install(wifiPhy71, mac, wifi_ap_nodes[71]);
 	ns3::NetDeviceContainer apDevices72;
-	apDevices72 = Wifi.Install(wifiPhy72, mac, wifiApNode72);
+	apDevices72 = Wifi.Install(wifiPhy72, mac, wifi_ap_nodes[72]);
 	ns3::NetDeviceContainer apDevices73;
-	apDevices73 = Wifi.Install(wifiPhy73, mac, wifiApNode73);
+	apDevices73 = Wifi.Install(wifiPhy73, mac, wifi_ap_nodes[73]);
 	ns3::NetDeviceContainer apDevices74;
-	apDevices74 = Wifi.Install(wifiPhy74, mac, wifiApNode74);
+	apDevices74 = Wifi.Install(wifiPhy74, mac, wifi_ap_nodes[74]);
 	ns3::NetDeviceContainer apDevices75;
-	apDevices75 = Wifi.Install(wifiPhy75, mac, wifiApNode75);
+	apDevices75 = Wifi.Install(wifiPhy75, mac, wifi_ap_nodes[75]);
 	ns3::NetDeviceContainer apDevices76;
-	apDevices76 = Wifi.Install(wifiPhy76, mac, wifiApNode76);
+	apDevices76 = Wifi.Install(wifiPhy76, mac, wifi_ap_nodes[76]);
 	ns3::NetDeviceContainer apDevices77;
-	apDevices77 = Wifi.Install(wifiPhy77, mac, wifiApNode77);
+	apDevices77 = Wifi.Install(wifiPhy77, mac, wifi_ap_nodes[77]);
 	ns3::NetDeviceContainer apDevices78;
-	apDevices78 = Wifi.Install(wifiPhy78, mac, wifiApNode78);
+	apDevices78 = Wifi.Install(wifiPhy78, mac, wifi_ap_nodes[78]);
 	ns3::NetDeviceContainer apDevices79;
-	apDevices79 = Wifi.Install(wifiPhy79, mac, wifiApNode79);
+	apDevices79 = Wifi.Install(wifiPhy79, mac, wifi_ap_nodes[79]);
 	ns3::NetDeviceContainer apDevices80;
-	apDevices80 = Wifi.Install(wifiPhy80, mac, wifiApNode80);
+	apDevices80 = Wifi.Install(wifiPhy80, mac, wifi_ap_nodes[80]);
 	ns3::NetDeviceContainer apDevices81;
-	apDevices81 = Wifi.Install(wifiPhy81, mac, wifiApNode81);
+	apDevices81 = Wifi.Install(wifiPhy81, mac, wifi_ap_nodes[81]);
 	ns3::NetDeviceContainer apDevices82;
-	apDevices82 = Wifi.Install(wifiPhy82, mac, wifiApNode82);
+	apDevices82 = Wifi.Install(wifiPhy82, mac, wifi_ap_nodes[82]);
 	ns3::NetDeviceContainer apDevices83;
-	apDevices83 = Wifi.Install(wifiPhy83, mac, wifiApNode83);
+	apDevices83 = Wifi.Install(wifiPhy83, mac, wifi_ap_nodes[83]);
 	ns3::NetDeviceContainer apDevices84;
-	apDevices84 = Wifi.Install(wifiPhy84, mac, wifiApNode84);
+	apDevices84 = Wifi.Install(wifiPhy84, mac, wifi_ap_nodes[84]);
 	ns3::NetDeviceContainer apDevices85;
-	apDevices85 = Wifi.Install(wifiPhy85, mac, wifiApNode85);
+	apDevices85 = Wifi.Install(wifiPhy85, mac, wifi_ap_nodes[85]);
 	ns3::NetDeviceContainer apDevices86;
-	apDevices86 = Wifi.Install(wifiPhy86, mac, wifiApNode86);
+	apDevices86 = Wifi.Install(wifiPhy86, mac, wifi_ap_nodes[86]);
 	ns3::NetDeviceContainer apDevices87;
-	apDevices87 = Wifi.Install(wifiPhy87, mac, wifiApNode87);
+	apDevices87 = Wifi.Install(wifiPhy87, mac, wifi_ap_nodes[87]);
 	ns3::NetDeviceContainer apDevices88;
-	apDevices88 = Wifi.Install(wifiPhy88, mac, wifiApNode88);
+	apDevices88 = Wifi.Install(wifiPhy88, mac, wifi_ap_nodes[88]);
 	ns3::NetDeviceContainer apDevices89;
-	apDevices89 = Wifi.Install(wifiPhy89, mac, wifiApNode89);
+	apDevices89 = Wifi.Install(wifiPhy89, mac, wifi_ap_nodes[89]);
 	ns3::NetDeviceContainer apDevices90;
-	apDevices90 = Wifi.Install(wifiPhy90, mac, wifiApNode90);
+	apDevices90 = Wifi.Install(wifiPhy90, mac, wifi_ap_nodes[90]);
 	ns3::NetDeviceContainer apDevices91;
-	apDevices91 = Wifi.Install(wifiPhy91, mac, wifiApNode91);
+	apDevices91 = Wifi.Install(wifiPhy91, mac, wifi_ap_nodes[91]);
 	ns3::NetDeviceContainer apDevices92;
-	apDevices92 = Wifi.Install(wifiPhy92, mac, wifiApNode92);
+	apDevices92 = Wifi.Install(wifiPhy92, mac, wifi_ap_nodes[92]);
 	ns3::NetDeviceContainer apDevices93;
-	apDevices93 = Wifi.Install(wifiPhy93, mac, wifiApNode93);
+	apDevices93 = Wifi.Install(wifiPhy93, mac, wifi_ap_nodes[93]);
 	ns3::NetDeviceContainer apDevices94;
-	apDevices94 = Wifi.Install(wifiPhy94, mac, wifiApNode94);
+	apDevices94 = Wifi.Install(wifiPhy94, mac, wifi_ap_nodes[94]);
 	ns3::NetDeviceContainer apDevices95;
-	apDevices95 = Wifi.Install(wifiPhy95, mac, wifiApNode95);
+	apDevices95 = Wifi.Install(wifiPhy95, mac, wifi_ap_nodes[95]);
 	ns3::NetDeviceContainer apDevices96;
-	apDevices96 = Wifi.Install(wifiPhy96, mac, wifiApNode96);
+	apDevices96 = Wifi.Install(wifiPhy96, mac, wifi_ap_nodes[96]);
 	ns3::NetDeviceContainer apDevices97;
-	apDevices97 = Wifi.Install(wifiPhy97, mac, wifiApNode97);
+	apDevices97 = Wifi.Install(wifiPhy97, mac, wifi_ap_nodes[97]);
 	ns3::NetDeviceContainer apDevices98;
-	apDevices98 = Wifi.Install(wifiPhy98, mac, wifiApNode98);
+	apDevices98 = Wifi.Install(wifiPhy98, mac, wifi_ap_nodes[98]);
 	ns3::NetDeviceContainer apDevices99;
-	apDevices99 = Wifi.Install(wifiPhy99, mac, wifiApNode99);
+	apDevices99 = Wifi.Install(wifiPhy99, mac, wifi_ap_nodes[99]);
 	ns3::NetDeviceContainer apDevices100;
-	apDevices100 = Wifi.Install(wifiPhy100, mac, wifiApNode100);
+	apDevices100 = Wifi.Install(wifiPhy100, mac, wifi_ap_nodes[100]);
 	ns3::NetDeviceContainer apDevices101;
-	apDevices101 = Wifi.Install(wifiPhy101, mac, wifiApNode101);
+	apDevices101 = Wifi.Install(wifiPhy101, mac, wifi_ap_nodes[101]);
 	ns3::NetDeviceContainer apDevices102;
-	apDevices102 = Wifi.Install(wifiPhy102, mac, wifiApNode102);
+	apDevices102 = Wifi.Install(wifiPhy102, mac, wifi_ap_nodes[102]);
 	ns3::NetDeviceContainer apDevices103;
-	apDevices103 = Wifi.Install(wifiPhy103, mac, wifiApNode103);
+	apDevices103 = Wifi.Install(wifiPhy103, mac, wifi_ap_nodes[103]);
 	ns3::NetDeviceContainer apDevices104;
-	apDevices104 = Wifi.Install(wifiPhy104, mac, wifiApNode104);
+	apDevices104 = Wifi.Install(wifiPhy104, mac, wifi_ap_nodes[104]);
 	ns3::NetDeviceContainer apDevices105;
-	apDevices105 = Wifi.Install(wifiPhy105, mac, wifiApNode105);
+	apDevices105 = Wifi.Install(wifiPhy105, mac, wifi_ap_nodes[105]);
 	ns3::NetDeviceContainer apDevices106;
-	apDevices106 = Wifi.Install(wifiPhy106, mac, wifiApNode106);
+	apDevices106 = Wifi.Install(wifiPhy106, mac, wifi_ap_nodes[106]);
 	ns3::NetDeviceContainer apDevices107;
-	apDevices107 = Wifi.Install(wifiPhy107, mac, wifiApNode107);
+	apDevices107 = Wifi.Install(wifiPhy107, mac, wifi_ap_nodes[107]);
 	ns3::NetDeviceContainer apDevices108;
-	apDevices108 = Wifi.Install(wifiPhy108, mac, wifiApNode108);
+	apDevices108 = Wifi.Install(wifiPhy108, mac, wifi_ap_nodes[108]);
 	ns3::NetDeviceContainer apDevices109;
-	apDevices109 = Wifi.Install(wifiPhy109, mac, wifiApNode109);
+	apDevices109 = Wifi.Install(wifiPhy109, mac, wifi_ap_nodes[109]);
 	ns3::NetDeviceContainer apDevices110;
-	apDevices110 = Wifi.Install(wifiPhy110, mac, wifiApNode110);
+	apDevices110 = Wifi.Install(wifiPhy110, mac, wifi_ap_nodes[110]);
 	ns3::NetDeviceContainer apDevices111;
-	apDevices111 = Wifi.Install(wifiPhy111, mac, wifiApNode111);
+	apDevices111 = Wifi.Install(wifiPhy111, mac, wifi_ap_nodes[111]);
 	ns3::NetDeviceContainer apDevices112;
-	apDevices112 = Wifi.Install(wifiPhy112, mac, wifiApNode112);
+	apDevices112 = Wifi.Install(wifiPhy112, mac, wifi_ap_nodes[112]);
 	ns3::NetDeviceContainer apDevices113;
-	apDevices113 = Wifi.Install(wifiPhy113, mac, wifiApNode113);
+	apDevices113 = Wifi.Install(wifiPhy113, mac, wifi_ap_nodes[113]);
 	ns3::NetDeviceContainer apDevices114;
-	apDevices114 = Wifi.Install(wifiPhy114, mac, wifiApNode114);
+	apDevices114 = Wifi.Install(wifiPhy114, mac, wifi_ap_nodes[114]);
 	ns3::NetDeviceContainer apDevices115;
-	apDevices115 = Wifi.Install(wifiPhy115, mac, wifiApNode115);
+	apDevices115 = Wifi.Install(wifiPhy115, mac, wifi_ap_nodes[115]);
 	ns3::NetDeviceContainer apDevices116;
-	apDevices116 = Wifi.Install(wifiPhy116, mac, wifiApNode116);
+	apDevices116 = Wifi.Install(wifiPhy116, mac, wifi_ap_nodes[116]);
 	ns3::NetDeviceContainer apDevices117;
-	apDevices117 = Wifi.Install(wifiPhy117, mac, wifiApNode117);
+	apDevices117 = Wifi.Install(wifiPhy117, mac, wifi_ap_nodes[117]);
 	ns3::NetDeviceContainer apDevices118;
-	apDevices118 = Wifi.Install(wifiPhy118, mac, wifiApNode118);
+	apDevices118 = Wifi.Install(wifiPhy118, mac, wifi_ap_nodes[118]);
 	ns3::NetDeviceContainer apDevices119;
-	apDevices119 = Wifi.Install(wifiPhy119, mac, wifiApNode119);
+	apDevices119 = Wifi.Install(wifiPhy119, mac, wifi_ap_nodes[119]);
 	ns3::NetDeviceContainer apDevices120;
-	apDevices120 = Wifi.Install(wifiPhy120, mac, wifiApNode120);
+	apDevices120 = Wifi.Install(wifiPhy120, mac, wifi_ap_nodes[120]);
 	ns3::NetDeviceContainer apDevices121;
-	apDevices121 = Wifi.Install(wifiPhy121, mac, wifiApNode121);
+	apDevices121 = Wifi.Install(wifiPhy121, mac, wifi_ap_nodes[121]);
 	ns3::NetDeviceContainer apDevices122;
-	apDevices122 = Wifi.Install(wifiPhy122, mac, wifiApNode122);
+	apDevices122 = Wifi.Install(wifiPhy122, mac, wifi_ap_nodes[122]);
 	ns3::NetDeviceContainer apDevices123;
-	apDevices123 = Wifi.Install(wifiPhy123, mac, wifiApNode123);
+	apDevices123 = Wifi.Install(wifiPhy123, mac, wifi_ap_nodes[123]);
 	ns3::NetDeviceContainer apDevices124;
-	apDevices124 = Wifi.Install(wifiPhy124, mac, wifiApNode124);
+	apDevices124 = Wifi.Install(wifiPhy124, mac, wifi_ap_nodes[124]);
 	ns3::NetDeviceContainer apDevices125;
-	apDevices125 = Wifi.Install(wifiPhy125, mac, wifiApNode125);
+	apDevices125 = Wifi.Install(wifiPhy125, mac, wifi_ap_nodes[125]);
 	ns3::NetDeviceContainer apDevices126;
-	apDevices126 = Wifi.Install(wifiPhy126, mac, wifiApNode126);
+	apDevices126 = Wifi.Install(wifiPhy126, mac, wifi_ap_nodes[126]);
 	ns3::NetDeviceContainer apDevices127;
-	apDevices127 = Wifi.Install(wifiPhy127, mac, wifiApNode127);
+	apDevices127 = Wifi.Install(wifiPhy127, mac, wifi_ap_nodes[127]);
 	ns3::NetDeviceContainer apDevices128;
-	apDevices128 = Wifi.Install(wifiPhy128, mac, wifiApNode128);
+	apDevices128 = Wifi.Install(wifiPhy128, mac, wifi_ap_nodes[128]);
 	ns3::NetDeviceContainer apDevices129;
-	apDevices129 = Wifi.Install(wifiPhy129, mac, wifiApNode129);
+	apDevices129 = Wifi.Install(wifiPhy129, mac, wifi_ap_nodes[129]);
 	ns3::NetDeviceContainer apDevices130;
-	apDevices130 = Wifi.Install(wifiPhy130, mac, wifiApNode130);
+	apDevices130 = Wifi.Install(wifiPhy130, mac, wifi_ap_nodes[130]);
 	ns3::NetDeviceContainer apDevices131;
-	apDevices131 = Wifi.Install(wifiPhy131, mac, wifiApNode131);
+	apDevices131 = Wifi.Install(wifiPhy131, mac, wifi_ap_nodes[131]);
 	ns3::NetDeviceContainer apDevices132;
-	apDevices132 = Wifi.Install(wifiPhy132, mac, wifiApNode132);
+	apDevices132 = Wifi.Install(wifiPhy132, mac, wifi_ap_nodes[132]);
 	ns3::NetDeviceContainer apDevices133;
-	apDevices133 = Wifi.Install(wifiPhy133, mac, wifiApNode133);
+	apDevices133 = Wifi.Install(wifiPhy133, mac, wifi_ap_nodes[133]);
 	ns3::NetDeviceContainer apDevices134;
-	apDevices134 = Wifi.Install(wifiPhy134, mac, wifiApNode134);
+	apDevices134 = Wifi.Install(wifiPhy134, mac, wifi_ap_nodes[134]);
 	ns3::NetDeviceContainer apDevices135;
-	apDevices135 = Wifi.Install(wifiPhy135, mac, wifiApNode135);
+	apDevices135 = Wifi.Install(wifiPhy135, mac, wifi_ap_nodes[135]);
 	ns3::NetDeviceContainer apDevices136;
-	apDevices136 = Wifi.Install(wifiPhy136, mac, wifiApNode136);
+	apDevices136 = Wifi.Install(wifiPhy136, mac, wifi_ap_nodes[136]);
 	ns3::NetDeviceContainer apDevices137;
-	apDevices137 = Wifi.Install(wifiPhy137, mac, wifiApNode137);
+	apDevices137 = Wifi.Install(wifiPhy137, mac, wifi_ap_nodes[137]);
 	ns3::NetDeviceContainer apDevices138;
-	apDevices138 = Wifi.Install(wifiPhy138, mac, wifiApNode138);
+	apDevices138 = Wifi.Install(wifiPhy138, mac, wifi_ap_nodes[138]);
 	ns3::NetDeviceContainer apDevices139;
-	apDevices139 = Wifi.Install(wifiPhy139, mac, wifiApNode139);
+	apDevices139 = Wifi.Install(wifiPhy139, mac, wifi_ap_nodes[139]);
 	ns3::NetDeviceContainer apDevices140;
-	apDevices140 = Wifi.Install(wifiPhy140, mac, wifiApNode140);
+	apDevices140 = Wifi.Install(wifiPhy140, mac, wifi_ap_nodes[140]);
 	ns3::NetDeviceContainer apDevices141;
-	apDevices141 = Wifi.Install(wifiPhy141, mac, wifiApNode141);
+	apDevices141 = Wifi.Install(wifiPhy141, mac, wifi_ap_nodes[141]);
 	ns3::NetDeviceContainer apDevices142;
-	apDevices142 = Wifi.Install(wifiPhy142, mac, wifiApNode142);
+	apDevices142 = Wifi.Install(wifiPhy142, mac, wifi_ap_nodes[142]);
 	ns3::NetDeviceContainer apDevices143;
-	apDevices143 = Wifi.Install(wifiPhy143, mac, wifiApNode143);
+	apDevices143 = Wifi.Install(wifiPhy143, mac, wifi_ap_nodes[143]);
 	ns3::NetDeviceContainer apDevices144;
-	apDevices144 = Wifi.Install(wifiPhy144, mac, wifiApNode144);
+	apDevices144 = Wifi.Install(wifiPhy144, mac, wifi_ap_nodes[144]);
 	ns3::NetDeviceContainer apDevices145;
-	apDevices145 = Wifi.Install(wifiPhy145, mac, wifiApNode145);
+	apDevices145 = Wifi.Install(wifiPhy145, mac, wifi_ap_nodes[145]);
 	ns3::NetDeviceContainer apDevices146;
-	apDevices146 = Wifi.Install(wifiPhy146, mac, wifiApNode146);
+	apDevices146 = Wifi.Install(wifiPhy146, mac, wifi_ap_nodes[146]);
 	ns3::NetDeviceContainer apDevices147;
-	apDevices147 = Wifi.Install(wifiPhy147, mac, wifiApNode147);
+	apDevices147 = Wifi.Install(wifiPhy147, mac, wifi_ap_nodes[147]);
 	ns3::NetDeviceContainer apDevices148;
-	apDevices148 = Wifi.Install(wifiPhy148, mac, wifiApNode148);
+	apDevices148 = Wifi.Install(wifiPhy148, mac, wifi_ap_nodes[148]);
 	ns3::NetDeviceContainer apDevices149;
-	apDevices149 = Wifi.Install(wifiPhy149, mac, wifiApNode149);
+	apDevices149 = Wifi.Install(wifiPhy149, mac, wifi_ap_nodes[149]);
 	ns3::NetDeviceContainer apDevices150;
-	apDevices150 = Wifi.Install(wifiPhy150, mac, wifiApNode150);
+	apDevices150 = Wifi.Install(wifiPhy150, mac, wifi_ap_nodes[150]);
 	ns3::NetDeviceContainer apDevices151;
-	apDevices151 = Wifi.Install(wifiPhy151, mac, wifiApNode151);
+	apDevices151 = Wifi.Install(wifiPhy151, mac, wifi_ap_nodes[151]);
 	ns3::NetDeviceContainer apDevices152;
-	apDevices152 = Wifi.Install(wifiPhy152, mac, wifiApNode152);
+	apDevices152 = Wifi.Install(wifiPhy152, mac, wifi_ap_nodes[152]);
 	ns3::NetDeviceContainer apDevices153;
-	apDevices153 = Wifi.Install(wifiPhy153, mac, wifiApNode153);
+	apDevices153 = Wifi.Install(wifiPhy153, mac, wifi_ap_nodes[153]);
 	ns3::NetDeviceContainer apDevices154;
-	apDevices154 = Wifi.Install(wifiPhy154, mac, wifiApNode154);
+	apDevices154 = Wifi.Install(wifiPhy154, mac, wifi_ap_nodes[154]);
 	ns3::NetDeviceContainer apDevices155;
-	apDevices155 = Wifi.Install(wifiPhy155, mac, wifiApNode155);
+	apDevices155 = Wifi.Install(wifiPhy155, mac, wifi_ap_nodes[155]);
 	ns3::NetDeviceContainer apDevices156;
-	apDevices156 = Wifi.Install(wifiPhy156, mac, wifiApNode156);
+	apDevices156 = Wifi.Install(wifiPhy156, mac, wifi_ap_nodes[156]);
 	ns3::NetDeviceContainer apDevices157;
-	apDevices157 = Wifi.Install(wifiPhy157, mac, wifiApNode157);
+	apDevices157 = Wifi.Install(wifiPhy157, mac, wifi_ap_nodes[157]);
 	ns3::NetDeviceContainer apDevices158;
-	apDevices158 = Wifi.Install(wifiPhy158, mac, wifiApNode158);
+	apDevices158 = Wifi.Install(wifiPhy158, mac, wifi_ap_nodes[158]);
 	ns3::NetDeviceContainer apDevices159;
-	apDevices159 = Wifi.Install(wifiPhy159, mac, wifiApNode159);
+	apDevices159 = Wifi.Install(wifiPhy159, mac, wifi_ap_nodes[159]);
 	ns3::NetDeviceContainer apDevices160;
-	apDevices160 = Wifi.Install(wifiPhy160, mac, wifiApNode160);
+	apDevices160 = Wifi.Install(wifiPhy160, mac, wifi_ap_nodes[160]);
 	ns3::NetDeviceContainer apDevices161;
-	apDevices161 = Wifi.Install(wifiPhy161, mac, wifiApNode161);
+	apDevices161 = Wifi.Install(wifiPhy161, mac, wifi_ap_nodes[161]);
 	ns3::NetDeviceContainer apDevices162;
-	apDevices162 = Wifi.Install(wifiPhy162, mac, wifiApNode162);
+	apDevices162 = Wifi.Install(wifiPhy162, mac, wifi_ap_nodes[162]);
 	ns3::NetDeviceContainer apDevices163;
-	apDevices163 = Wifi.Install(wifiPhy163, mac, wifiApNode163);
+	apDevices163 = Wifi.Install(wifiPhy163, mac, wifi_ap_nodes[163]);
 	ns3::NetDeviceContainer apDevices164;
-	apDevices164 = Wifi.Install(wifiPhy164, mac, wifiApNode164);
+	apDevices164 = Wifi.Install(wifiPhy164, mac, wifi_ap_nodes[164]);
 	ns3::NetDeviceContainer apDevices165;
-	apDevices165 = Wifi.Install(wifiPhy165, mac, wifiApNode165);
+	apDevices165 = Wifi.Install(wifiPhy165, mac, wifi_ap_nodes[165]);
 	ns3::NetDeviceContainer apDevices166;
-	apDevices166 = Wifi.Install(wifiPhy166, mac, wifiApNode166);
+	apDevices166 = Wifi.Install(wifiPhy166, mac, wifi_ap_nodes[166]);
 	ns3::NetDeviceContainer apDevices167;
-	apDevices167 = Wifi.Install(wifiPhy167, mac, wifiApNode167);
+	apDevices167 = Wifi.Install(wifiPhy167, mac, wifi_ap_nodes[167]);
 	ns3::NetDeviceContainer apDevices168;
-	apDevices168 = Wifi.Install(wifiPhy168, mac, wifiApNode168);
+	apDevices168 = Wifi.Install(wifiPhy168, mac, wifi_ap_nodes[168]);
 	ns3::NetDeviceContainer apDevices169;
-	apDevices169 = Wifi.Install(wifiPhy169, mac, wifiApNode169);
+	apDevices169 = Wifi.Install(wifiPhy169, mac, wifi_ap_nodes[169]);
 	ns3::NetDeviceContainer apDevices170;
-	apDevices170 = Wifi.Install(wifiPhy170, mac, wifiApNode170);
+	apDevices170 = Wifi.Install(wifiPhy170, mac, wifi_ap_nodes[170]);
 	ns3::NetDeviceContainer apDevices171;
-	apDevices171 = Wifi.Install(wifiPhy171, mac, wifiApNode171);
+	apDevices171 = Wifi.Install(wifiPhy171, mac, wifi_ap_nodes[171]);
 	ns3::NetDeviceContainer apDevices172;
-	apDevices172 = Wifi.Install(wifiPhy172, mac, wifiApNode172);
+	apDevices172 = Wifi.Install(wifiPhy172, mac, wifi_ap_nodes[172]);
 	ns3::NetDeviceContainer apDevices173;
-	apDevices173 = Wifi.Install(wifiPhy173, mac, wifiApNode173);
+	apDevices173 = Wifi.Install(wifiPhy173, mac, wifi_ap_nodes[173]);
 	ns3::NetDeviceContainer apDevices174;
-	apDevices174 = Wifi.Install(wifiPhy174, mac, wifiApNode174);
+	apDevices174 = Wifi.Install(wifiPhy174, mac, wifi_ap_nodes[174]);
 	ns3::NetDeviceContainer apDevices175;
-	apDevices175 = Wifi.Install(wifiPhy175, mac, wifiApNode175);
+	apDevices175 = Wifi.Install(wifiPhy175, mac, wifi_ap_nodes[175]);
 	ns3::NetDeviceContainer apDevices176;
-	apDevices176 = Wifi.Install(wifiPhy176, mac, wifiApNode176);
+	apDevices176 = Wifi.Install(wifiPhy176, mac, wifi_ap_nodes[176]);
 	ns3::NetDeviceContainer apDevices177;
-	apDevices177 = Wifi.Install(wifiPhy177, mac, wifiApNode177);
+	apDevices177 = Wifi.Install(wifiPhy177, mac, wifi_ap_nodes[177]);
 	ns3::NetDeviceContainer apDevices178;
-	apDevices178 = Wifi.Install(wifiPhy178, mac, wifiApNode178);
+	apDevices178 = Wifi.Install(wifiPhy178, mac, wifi_ap_nodes[178]);
 	ns3::NetDeviceContainer apDevices179;
-	apDevices179 = Wifi.Install(wifiPhy179, mac, wifiApNode179);
+	apDevices179 = Wifi.Install(wifiPhy179, mac, wifi_ap_nodes[179]);
 	ns3::NetDeviceContainer apDevices180;
-	apDevices180 = Wifi.Install(wifiPhy180, mac, wifiApNode180);
+	apDevices180 = Wifi.Install(wifiPhy180, mac, wifi_ap_nodes[180]);
 	ns3::NetDeviceContainer apDevices181;
-	apDevices181 = Wifi.Install(wifiPhy181, mac, wifiApNode181);
+	apDevices181 = Wifi.Install(wifiPhy181, mac, wifi_ap_nodes[181]);
 	ns3::NetDeviceContainer apDevices182;
-	apDevices182 = Wifi.Install(wifiPhy182, mac, wifiApNode182);
+	apDevices182 = Wifi.Install(wifiPhy182, mac, wifi_ap_nodes[182]);
 	ns3::NetDeviceContainer apDevices183;
-	apDevices183 = Wifi.Install(wifiPhy183, mac, wifiApNode183);
+	apDevices183 = Wifi.Install(wifiPhy183, mac, wifi_ap_nodes[183]);
 	ns3::NetDeviceContainer apDevices184;
-	apDevices184 = Wifi.Install(wifiPhy184, mac, wifiApNode184);
+	apDevices184 = Wifi.Install(wifiPhy184, mac, wifi_ap_nodes[184]);
 	ns3::NetDeviceContainer apDevices185;
-	apDevices185 = Wifi.Install(wifiPhy185, mac, wifiApNode185);
+	apDevices185 = Wifi.Install(wifiPhy185, mac, wifi_ap_nodes[185]);
 	ns3::NetDeviceContainer apDevices186;
-	apDevices186 = Wifi.Install(wifiPhy186, mac, wifiApNode186);
+	apDevices186 = Wifi.Install(wifiPhy186, mac, wifi_ap_nodes[186]);
 	ns3::NetDeviceContainer apDevices187;
-	apDevices187 = Wifi.Install(wifiPhy187, mac, wifiApNode187);
+	apDevices187 = Wifi.Install(wifiPhy187, mac, wifi_ap_nodes[187]);
 	ns3::NetDeviceContainer apDevices188;
-	apDevices188 = Wifi.Install(wifiPhy188, mac, wifiApNode188);
+	apDevices188 = Wifi.Install(wifiPhy188, mac, wifi_ap_nodes[188]);
 	ns3::NetDeviceContainer apDevices189;
-	apDevices189 = Wifi.Install(wifiPhy189, mac, wifiApNode189);
+	apDevices189 = Wifi.Install(wifiPhy189, mac, wifi_ap_nodes[189]);
 	ns3::NetDeviceContainer apDevices190;
-	apDevices190 = Wifi.Install(wifiPhy190, mac, wifiApNode190);
+	apDevices190 = Wifi.Install(wifiPhy190, mac, wifi_ap_nodes[190]);
 	ns3::NetDeviceContainer apDevices191;
-	apDevices191 = Wifi.Install(wifiPhy191, mac, wifiApNode191);
+	apDevices191 = Wifi.Install(wifiPhy191, mac, wifi_ap_nodes[191]);
 	ns3::NetDeviceContainer apDevices192;
-	apDevices192 = Wifi.Install(wifiPhy192, mac, wifiApNode192);
+	apDevices192 = Wifi.Install(wifiPhy192, mac, wifi_ap_nodes[192]);
 	ns3::NetDeviceContainer apDevices193;
-	apDevices193 = Wifi.Install(wifiPhy193, mac, wifiApNode193);
+	apDevices193 = Wifi.Install(wifiPhy193, mac, wifi_ap_nodes[193]);
 	ns3::NetDeviceContainer apDevices194;
-	apDevices194 = Wifi.Install(wifiPhy194, mac, wifiApNode194);
+	apDevices194 = Wifi.Install(wifiPhy194, mac, wifi_ap_nodes[194]);
 	ns3::NetDeviceContainer apDevices195;
-	apDevices195 = Wifi.Install(wifiPhy195, mac, wifiApNode195);
+	apDevices195 = Wifi.Install(wifiPhy195, mac, wifi_ap_nodes[195]);
 	ns3::NetDeviceContainer apDevices196;
-	apDevices196 = Wifi.Install(wifiPhy196, mac, wifiApNode196);
+	apDevices196 = Wifi.Install(wifiPhy196, mac, wifi_ap_nodes[196]);
 	ns3::NetDeviceContainer apDevices197;
-	apDevices197 = Wifi.Install(wifiPhy197, mac, wifiApNode197);
+	apDevices197 = Wifi.Install(wifiPhy197, mac, wifi_ap_nodes[197]);
 	ns3::NetDeviceContainer apDevices198;
-	apDevices198 = Wifi.Install(wifiPhy198, mac, wifiApNode198);
+	apDevices198 = Wifi.Install(wifiPhy198, mac, wifi_ap_nodes[198]);
 	ns3::NetDeviceContainer apDevices199;
-	apDevices199 = Wifi.Install(wifiPhy199, mac, wifiApNode199);
+	apDevices199 = Wifi.Install(wifiPhy199, mac, wifi_ap_nodes[199]);
 	ns3::NetDeviceContainer apDevices200;
-	apDevices200 = Wifi.Install(wifiPhy200, mac, wifiApNode200);
+	apDevices200 = Wifi.Install(wifiPhy200, mac, wifi_ap_nodes[200]);
 	ns3::NetDeviceContainer apDevices201;
-	apDevices201 = Wifi.Install(wifiPhy201, mac, wifiApNode201);
+	apDevices201 = Wifi.Install(wifiPhy201, mac, wifi_ap_nodes[201]);
 	ns3::NetDeviceContainer apDevices202;
-	apDevices202 = Wifi.Install(wifiPhy202, mac, wifiApNode202);
+	apDevices202 = Wifi.Install(wifiPhy202, mac, wifi_ap_nodes[202]);
 	ns3::NetDeviceContainer apDevices203;
-	apDevices203 = Wifi.Install(wifiPhy203, mac, wifiApNode203);
+	apDevices203 = Wifi.Install(wifiPhy203, mac, wifi_ap_nodes[203]);
 	ns3::NetDeviceContainer apDevices204;
-	apDevices204 = Wifi.Install(wifiPhy204, mac, wifiApNode204);
+	apDevices204 = Wifi.Install(wifiPhy204, mac, wifi_ap_nodes[204]);
 	ns3::NetDeviceContainer apDevices205;
-	apDevices205 = Wifi.Install(wifiPhy205, mac, wifiApNode205);
+	apDevices205 = Wifi.Install(wifiPhy205, mac, wifi_ap_nodes[205]);
 	ns3::NetDeviceContainer apDevices206;
-	apDevices206 = Wifi.Install(wifiPhy206, mac, wifiApNode206);
+	apDevices206 = Wifi.Install(wifiPhy206, mac, wifi_ap_nodes[206]);
 	ns3::NetDeviceContainer apDevices207;
-	apDevices207 = Wifi.Install(wifiPhy207, mac, wifiApNode207);
+	apDevices207 = Wifi.Install(wifiPhy207, mac, wifi_ap_nodes[207]);
 	ns3::NetDeviceContainer apDevices208;
-	apDevices208 = Wifi.Install(wifiPhy208, mac, wifiApNode208);
+	apDevices208 = Wifi.Install(wifiPhy208, mac, wifi_ap_nodes[208]);
 	ns3::NetDeviceContainer apDevices209;
-	apDevices209 = Wifi.Install(wifiPhy209, mac, wifiApNode209);
+	apDevices209 = Wifi.Install(wifiPhy209, mac, wifi_ap_nodes[209]);
 	ns3::NetDeviceContainer apDevices210;
-	apDevices210 = Wifi.Install(wifiPhy210, mac, wifiApNode210);
+	apDevices210 = Wifi.Install(wifiPhy210, mac, wifi_ap_nodes[210]);
 	ns3::NetDeviceContainer apDevices211;
-	apDevices211 = Wifi.Install(wifiPhy211, mac, wifiApNode211);
+	apDevices211 = Wifi.Install(wifiPhy211, mac, wifi_ap_nodes[211]);
 	ns3::NetDeviceContainer apDevices212;
-	apDevices212 = Wifi.Install(wifiPhy212, mac, wifiApNode212);
+	apDevices212 = Wifi.Install(wifiPhy212, mac, wifi_ap_nodes[212]);
 	ns3::NetDeviceContainer apDevices213;
-	apDevices213 = Wifi.Install(wifiPhy213, mac, wifiApNode213);
+	apDevices213 = Wifi.Install(wifiPhy213, mac, wifi_ap_nodes[213]);
 	ns3::NetDeviceContainer apDevices214;
-	apDevices214 = Wifi.Install(wifiPhy214, mac, wifiApNode214);
+	apDevices214 = Wifi.Install(wifiPhy214, mac, wifi_ap_nodes[214]);
 	ns3::NetDeviceContainer apDevices215;
-	apDevices215 = Wifi.Install(wifiPhy215, mac, wifiApNode215);
+	apDevices215 = Wifi.Install(wifiPhy215, mac, wifi_ap_nodes[215]);
 	ns3::NetDeviceContainer apDevices216;
-	apDevices216 = Wifi.Install(wifiPhy216, mac, wifiApNode216);
+	apDevices216 = Wifi.Install(wifiPhy216, mac, wifi_ap_nodes[216]);
 	ns3::NetDeviceContainer apDevices217;
-	apDevices217 = Wifi.Install(wifiPhy217, mac, wifiApNode217);
+	apDevices217 = Wifi.Install(wifiPhy217, mac, wifi_ap_nodes[217]);
 	ns3::NetDeviceContainer apDevices218;
-	apDevices218 = Wifi.Install(wifiPhy218, mac, wifiApNode218);
+	apDevices218 = Wifi.Install(wifiPhy218, mac, wifi_ap_nodes[218]);
 	ns3::NetDeviceContainer apDevices219;
-	apDevices219 = Wifi.Install(wifiPhy219, mac, wifiApNode219);
+	apDevices219 = Wifi.Install(wifiPhy219, mac, wifi_ap_nodes[219]);
 	ns3::NetDeviceContainer apDevices220;
-	apDevices220 = Wifi.Install(wifiPhy220, mac, wifiApNode220);
+	apDevices220 = Wifi.Install(wifiPhy220, mac, wifi_ap_nodes[220]);
 	ns3::NetDeviceContainer apDevices221;
-	apDevices221 = Wifi.Install(wifiPhy221, mac, wifiApNode221);
+	apDevices221 = Wifi.Install(wifiPhy221, mac, wifi_ap_nodes[221]);
 	ns3::NetDeviceContainer apDevices222;
-	apDevices222 = Wifi.Install(wifiPhy222, mac, wifiApNode222);
+	apDevices222 = Wifi.Install(wifiPhy222, mac, wifi_ap_nodes[222]);
 	ns3::NetDeviceContainer apDevices223;
-	apDevices223 = Wifi.Install(wifiPhy223, mac, wifiApNode223);
+	apDevices223 = Wifi.Install(wifiPhy223, mac, wifi_ap_nodes[223]);
 	ns3::NetDeviceContainer apDevices224;
-	apDevices224 = Wifi.Install(wifiPhy224, mac, wifiApNode224);
+	apDevices224 = Wifi.Install(wifiPhy224, mac, wifi_ap_nodes[224]);
 	ns3::NetDeviceContainer apDevices225;
-	apDevices225 = Wifi.Install(wifiPhy225, mac, wifiApNode225);
+	apDevices225 = Wifi.Install(wifiPhy225, mac, wifi_ap_nodes[225]);
 	ns3::NetDeviceContainer apDevices226;
-	apDevices226 = Wifi.Install(wifiPhy226, mac, wifiApNode226);
+	apDevices226 = Wifi.Install(wifiPhy226, mac, wifi_ap_nodes[226]);
 	ns3::NetDeviceContainer apDevices227;
-	apDevices227 = Wifi.Install(wifiPhy227, mac, wifiApNode227);
+	apDevices227 = Wifi.Install(wifiPhy227, mac, wifi_ap_nodes[227]);
 	ns3::NetDeviceContainer apDevices228;
-	apDevices228 = Wifi.Install(wifiPhy228, mac, wifiApNode228);
+	apDevices228 = Wifi.Install(wifiPhy228, mac, wifi_ap_nodes[228]);
 	ns3::NetDeviceContainer apDevices229;
-	apDevices229 = Wifi.Install(wifiPhy229, mac, wifiApNode229);
+	apDevices229 = Wifi.Install(wifiPhy229, mac, wifi_ap_nodes[229]);
 	ns3::NetDeviceContainer apDevices230;
-	apDevices230 = Wifi.Install(wifiPhy230, mac, wifiApNode230);
+	apDevices230 = Wifi.Install(wifiPhy230, mac, wifi_ap_nodes[230]);
 	ns3::NetDeviceContainer apDevices231;
-	apDevices231 = Wifi.Install(wifiPhy231, mac, wifiApNode231);
+	apDevices231 = Wifi.Install(wifiPhy231, mac, wifi_ap_nodes[231]);
 	ns3::NetDeviceContainer apDevices232;
-	apDevices232 = Wifi.Install(wifiPhy232, mac, wifiApNode232);
+	apDevices232 = Wifi.Install(wifiPhy232, mac, wifi_ap_nodes[232]);
 	ns3::NetDeviceContainer apDevices233;
-	apDevices233 = Wifi.Install(wifiPhy233, mac, wifiApNode233);
+	apDevices233 = Wifi.Install(wifiPhy233, mac, wifi_ap_nodes[233]);
 	ns3::NetDeviceContainer apDevices234;
-	apDevices234 = Wifi.Install(wifiPhy234, mac, wifiApNode234);
+	apDevices234 = Wifi.Install(wifiPhy234, mac, wifi_ap_nodes[234]);
 	ns3::NetDeviceContainer apDevices235;
-	apDevices235 = Wifi.Install(wifiPhy235, mac, wifiApNode235);
+	apDevices235 = Wifi.Install(wifiPhy235, mac, wifi_ap_nodes[235]);
 	ns3::NetDeviceContainer apDevices236;
-	apDevices236 = Wifi.Install(wifiPhy236, mac, wifiApNode236);
+	apDevices236 = Wifi.Install(wifiPhy236, mac, wifi_ap_nodes[236]);
 	ns3::NetDeviceContainer apDevices237;
-	apDevices237 = Wifi.Install(wifiPhy237, mac, wifiApNode237);
+	apDevices237 = Wifi.Install(wifiPhy237, mac, wifi_ap_nodes[237]);
 	ns3::NetDeviceContainer apDevices238;
-	apDevices238 = Wifi.Install(wifiPhy238, mac, wifiApNode238);
+	apDevices238 = Wifi.Install(wifiPhy238, mac, wifi_ap_nodes[238]);
 	ns3::NetDeviceContainer apDevices239;
-	apDevices239 = Wifi.Install(wifiPhy239, mac, wifiApNode239);
+	apDevices239 = Wifi.Install(wifiPhy239, mac, wifi_ap_nodes[239]);
 	ns3::NetDeviceContainer apDevices240;
-	apDevices240 = Wifi.Install(wifiPhy240, mac, wifiApNode240);
+	apDevices240 = Wifi.Install(wifiPhy240, mac, wifi_ap_nodes[240]);
 	ns3::NetDeviceContainer apDevices241;
-	apDevices241 = Wifi.Install(wifiPhy241, mac, wifiApNode241);
+	apDevices241 = Wifi.Install(wifiPhy241, mac, wifi_ap_nodes[241]);
 	ns3::NetDeviceContainer apDevices242;
-	apDevices242 = Wifi.Install(wifiPhy242, mac, wifiApNode242);
+	apDevices242 = Wifi.Install(wifiPhy242, mac, wifi_ap_nodes[242]);
 	ns3::NetDeviceContainer apDevices243;
-	apDevices243 = Wifi.Install(wifiPhy243, mac, wifiApNode243);
+	apDevices243 = Wifi.Install(wifiPhy243, mac, wifi_ap_nodes[243]);
 	ns3::NetDeviceContainer apDevices244;
-	apDevices244 = Wifi.Install(wifiPhy244, mac, wifiApNode244);
+	apDevices244 = Wifi.Install(wifiPhy244, mac, wifi_ap_nodes[244]);
 	ns3::NetDeviceContainer apDevices245;
-	apDevices245 = Wifi.Install(wifiPhy245, mac, wifiApNode245);
+	apDevices245 = Wifi.Install(wifiPhy245, mac, wifi_ap_nodes[245]);
 	ns3::NetDeviceContainer apDevices246;
-	apDevices246 = Wifi.Install(wifiPhy246, mac, wifiApNode246);
+	apDevices246 = Wifi.Install(wifiPhy246, mac, wifi_ap_nodes[246]);
 	ns3::NetDeviceContainer apDevices247;
-	apDevices247 = Wifi.Install(wifiPhy247, mac, wifiApNode247);
+	apDevices247 = Wifi.Install(wifiPhy247, mac, wifi_ap_nodes[247]);
 	ns3::NetDeviceContainer apDevices248;
-	apDevices248 = Wifi.Install(wifiPhy248, mac, wifiApNode248);
+	apDevices248 = Wifi.Install(wifiPhy248, mac, wifi_ap_nodes[248]);
 	ns3::NetDeviceContainer apDevices249;
-	apDevices249 = Wifi.Install(wifiPhy249, mac, wifiApNode249);
+	apDevices249 = Wifi.Install(wifiPhy249, mac, wifi_ap_nodes[249]);
 	ns3::NetDeviceContainer apDevices250;
-	apDevices250 = Wifi.Install(wifiPhy250, mac, wifiApNode250);
+	apDevices250 = Wifi.Install(wifiPhy250, mac, wifi_ap_nodes[250]);
 	ns3::NetDeviceContainer apDevices251;
-	apDevices251 = Wifi.Install(wifiPhy251, mac, wifiApNode251);
+	apDevices251 = Wifi.Install(wifiPhy251, mac, wifi_ap_nodes[251]);
 	ns3::NetDeviceContainer apDevices252;
-	apDevices252 = Wifi.Install(wifiPhy252, mac, wifiApNode252);
+	apDevices252 = Wifi.Install(wifiPhy252, mac, wifi_ap_nodes[252]);
 	ns3::NetDeviceContainer apDevices253;
-	apDevices253 = Wifi.Install(wifiPhy253, mac, wifiApNode253);
+	apDevices253 = Wifi.Install(wifiPhy253, mac, wifi_ap_nodes[253]);
 	ns3::NetDeviceContainer apDevices254;
-	apDevices254 = Wifi.Install(wifiPhy254, mac, wifiApNode254);
+	apDevices254 = Wifi.Install(wifiPhy254, mac, wifi_ap_nodes[254]);
 	ns3::NetDeviceContainer apDevices255;
-	apDevices255 = Wifi.Install(wifiPhy255, mac, wifiApNode255);
+	apDevices255 = Wifi.Install(wifiPhy255, mac, wifi_ap_nodes[255]);
 	ns3::NetDeviceContainer apDevices256;
-	apDevices256 = Wifi.Install(wifiPhy256, mac, wifiApNode256);
+	apDevices256 = Wifi.Install(wifiPhy256, mac, wifi_ap_nodes[256]);
 	ns3::NetDeviceContainer apDevices257;
-	apDevices257 = Wifi.Install(wifiPhy257, mac, wifiApNode257);
+	apDevices257 = Wifi.Install(wifiPhy257, mac, wifi_ap_nodes[257]);
 	ns3::NetDeviceContainer apDevices258;
-	apDevices258 = Wifi.Install(wifiPhy258, mac, wifiApNode258);
+	apDevices258 = Wifi.Install(wifiPhy258, mac, wifi_ap_nodes[258]);
 	ns3::NetDeviceContainer apDevices259;
-	apDevices259 = Wifi.Install(wifiPhy259, mac, wifiApNode259);
+	apDevices259 = Wifi.Install(wifiPhy259, mac, wifi_ap_nodes[259]);
 	ns3::NetDeviceContainer apDevices260;
-	apDevices260 = Wifi.Install(wifiPhy260, mac, wifiApNode260);
+	apDevices260 = Wifi.Install(wifiPhy260, mac, wifi_ap_nodes[260]);
 	ns3::NetDeviceContainer apDevices261;
-	apDevices261 = Wifi.Install(wifiPhy261, mac, wifiApNode261);
+	apDevices261 = Wifi.Install(wifiPhy261, mac, wifi_ap_nodes[261]);
 	ns3::NetDeviceContainer apDevices262;
-	apDevices262 = Wifi.Install(wifiPhy262, mac, wifiApNode262);
+	apDevices262 = Wifi.Install(wifiPhy262, mac, wifi_ap_nodes[262]);
 	ns3::NetDeviceContainer apDevices263;
-	apDevices263 = Wifi.Install(wifiPhy263, mac, wifiApNode263);
+	apDevices263 = Wifi.Install(wifiPhy263, mac, wifi_ap_nodes[263]);
 	ns3::NetDeviceContainer apDevices264;
-	apDevices264 = Wifi.Install(wifiPhy264, mac, wifiApNode264);
+	apDevices264 = Wifi.Install(wifiPhy264, mac, wifi_ap_nodes[264]);
 	ns3::NetDeviceContainer apDevices265;
-	apDevices265 = Wifi.Install(wifiPhy265, mac, wifiApNode265);
+	apDevices265 = Wifi.Install(wifiPhy265, mac, wifi_ap_nodes[265]);
 	ns3::NetDeviceContainer apDevices266;
-	apDevices266 = Wifi.Install(wifiPhy266, mac, wifiApNode266);
+	apDevices266 = Wifi.Install(wifiPhy266, mac, wifi_ap_nodes[266]);
 	ns3::NetDeviceContainer apDevices267;
-	apDevices267 = Wifi.Install(wifiPhy267, mac, wifiApNode267);
+	apDevices267 = Wifi.Install(wifiPhy267, mac, wifi_ap_nodes[267]);
 	ns3::NetDeviceContainer apDevices268;
-	apDevices268 = Wifi.Install(wifiPhy268, mac, wifiApNode268);
+	apDevices268 = Wifi.Install(wifiPhy268, mac, wifi_ap_nodes[268]);
 	ns3::NetDeviceContainer apDevices269;
-	apDevices269 = Wifi.Install(wifiPhy269, mac, wifiApNode269);
+	apDevices269 = Wifi.Install(wifiPhy269, mac, wifi_ap_nodes[269]);
 	ns3::NetDeviceContainer apDevices270;
-	apDevices270 = Wifi.Install(wifiPhy270, mac, wifiApNode270);
+	apDevices270 = Wifi.Install(wifiPhy270, mac, wifi_ap_nodes[270]);
 	ns3::NetDeviceContainer apDevices271;
-	apDevices271 = Wifi.Install(wifiPhy271, mac, wifiApNode271);
+	apDevices271 = Wifi.Install(wifiPhy271, mac, wifi_ap_nodes[271]);
 	ns3::NetDeviceContainer apDevices272;
-	apDevices272 = Wifi.Install(wifiPhy272, mac, wifiApNode272);
+	apDevices272 = Wifi.Install(wifiPhy272, mac, wifi_ap_nodes[272]);
 	ns3::NetDeviceContainer apDevices273;
-	apDevices273 = Wifi.Install(wifiPhy273, mac, wifiApNode273);
+	apDevices273 = Wifi.Install(wifiPhy273, mac, wifi_ap_nodes[273]);
 	ns3::NetDeviceContainer apDevices274;
-	apDevices274 = Wifi.Install(wifiPhy274, mac, wifiApNode274);
+	apDevices274 = Wifi.Install(wifiPhy274, mac, wifi_ap_nodes[274]);
 	ns3::NetDeviceContainer apDevices275;
-	apDevices275 = Wifi.Install(wifiPhy275, mac, wifiApNode275);
+	apDevices275 = Wifi.Install(wifiPhy275, mac, wifi_ap_nodes[275]);
 	ns3::NetDeviceContainer apDevices276;
-	apDevices276 = Wifi.Install(wifiPhy276, mac, wifiApNode276);
+	apDevices276 = Wifi.Install(wifiPhy276, mac, wifi_ap_nodes[276]);
 	ns3::NetDeviceContainer apDevices277;
-	apDevices277 = Wifi.Install(wifiPhy277, mac, wifiApNode277);
+	apDevices277 = Wifi.Install(wifiPhy277, mac, wifi_ap_nodes[277]);
 	ns3::NetDeviceContainer apDevices278;
-	apDevices278 = Wifi.Install(wifiPhy278, mac, wifiApNode278);
+	apDevices278 = Wifi.Install(wifiPhy278, mac, wifi_ap_nodes[278]);
 	ns3::NetDeviceContainer apDevices279;
-	apDevices279 = Wifi.Install(wifiPhy279, mac, wifiApNode279);
+	apDevices279 = Wifi.Install(wifiPhy279, mac, wifi_ap_nodes[279]);
 	ns3::NetDeviceContainer apDevices280;
-	apDevices280 = Wifi.Install(wifiPhy280, mac, wifiApNode280);
+	apDevices280 = Wifi.Install(wifiPhy280, mac, wifi_ap_nodes[280]);
 	ns3::NetDeviceContainer apDevices281;
-	apDevices281 = Wifi.Install(wifiPhy281, mac, wifiApNode281);
+	apDevices281 = Wifi.Install(wifiPhy281, mac, wifi_ap_nodes[281]);
 	ns3::NetDeviceContainer apDevices282;
-	apDevices282 = Wifi.Install(wifiPhy282, mac, wifiApNode282);
+	apDevices282 = Wifi.Install(wifiPhy282, mac, wifi_ap_nodes[282]);
 	ns3::NetDeviceContainer apDevices283;
-	apDevices283 = Wifi.Install(wifiPhy283, mac, wifiApNode283);
+	apDevices283 = Wifi.Install(wifiPhy283, mac, wifi_ap_nodes[283]);
 	ns3::NetDeviceContainer apDevices284;
-	apDevices284 = Wifi.Install(wifiPhy284, mac, wifiApNode284);
+	apDevices284 = Wifi.Install(wifiPhy284, mac, wifi_ap_nodes[284]);
 	ns3::NetDeviceContainer apDevices285;
-	apDevices285 = Wifi.Install(wifiPhy285, mac, wifiApNode285);
+	apDevices285 = Wifi.Install(wifiPhy285, mac, wifi_ap_nodes[285]);
 	ns3::NetDeviceContainer apDevices286;
-	apDevices286 = Wifi.Install(wifiPhy286, mac, wifiApNode286);
+	apDevices286 = Wifi.Install(wifiPhy286, mac, wifi_ap_nodes[286]);
 	ns3::NetDeviceContainer apDevices287;
-	apDevices287 = Wifi.Install(wifiPhy287, mac, wifiApNode287);
+	apDevices287 = Wifi.Install(wifiPhy287, mac, wifi_ap_nodes[287]);
 	ns3::NetDeviceContainer apDevices288;
-	apDevices288 = Wifi.Install(wifiPhy288, mac, wifiApNode288);
+	apDevices288 = Wifi.Install(wifiPhy288, mac, wifi_ap_nodes[288]);
 	ns3::NetDeviceContainer apDevices289;
-	apDevices289 = Wifi.Install(wifiPhy289, mac, wifiApNode289);
+	apDevices289 = Wifi.Install(wifiPhy289, mac, wifi_ap_nodes[289]);
 	ns3::NetDeviceContainer apDevices290;
-	apDevices290 = Wifi.Install(wifiPhy290, mac, wifiApNode290);
+	apDevices290 = Wifi.Install(wifiPhy290, mac, wifi_ap_nodes[290]);
 	ns3::NetDeviceContainer apDevices291;
-	apDevices291 = Wifi.Install(wifiPhy291, mac, wifiApNode291);
+	apDevices291 = Wifi.Install(wifiPhy291, mac, wifi_ap_nodes[291]);
 	ns3::NetDeviceContainer apDevices292;
-	apDevices292 = Wifi.Install(wifiPhy292, mac, wifiApNode292);
+	apDevices292 = Wifi.Install(wifiPhy292, mac, wifi_ap_nodes[292]);
 	ns3::NetDeviceContainer apDevices293;
-	apDevices293 = Wifi.Install(wifiPhy293, mac, wifiApNode293);
+	apDevices293 = Wifi.Install(wifiPhy293, mac, wifi_ap_nodes[293]);
 	ns3::NetDeviceContainer apDevices294;
-	apDevices294 = Wifi.Install(wifiPhy294, mac, wifiApNode294);
+	apDevices294 = Wifi.Install(wifiPhy294, mac, wifi_ap_nodes[294]);
 	ns3::NetDeviceContainer apDevices295;
-	apDevices295 = Wifi.Install(wifiPhy295, mac, wifiApNode295);
+	apDevices295 = Wifi.Install(wifiPhy295, mac, wifi_ap_nodes[295]);
 	ns3::NetDeviceContainer apDevices296;
-	apDevices296 = Wifi.Install(wifiPhy296, mac, wifiApNode296);
+	apDevices296 = Wifi.Install(wifiPhy296, mac, wifi_ap_nodes[296]);
 	ns3::NetDeviceContainer apDevices297;
-	apDevices297 = Wifi.Install(wifiPhy297, mac, wifiApNode297);
+	apDevices297 = Wifi.Install(wifiPhy297, mac, wifi_ap_nodes[297]);
 //    apDevices298 = Wifi.Install (wifiPhy298, mac, wifiApNode298)
 //    apDevices299 = Wifi.Install (wifiPhy299, mac, wifiApNode299)
 	ns3::NetDeviceContainer apDevices300;
-	apDevices300 = Wifi.Install(wifiPhy300, mac, wifiApNode300);
+	apDevices300 = Wifi.Install(wifiPhy300, mac, wifi_ap_nodes[300]);
 	ns3::NetDeviceContainer apDevices301;
-	apDevices301 = Wifi.Install(wifiPhy301, mac, wifiApNode301);
+	apDevices301 = Wifi.Install(wifiPhy301, mac, wifi_ap_nodes[301]);
 	ns3::NetDeviceContainer apDevices302;
-	apDevices302 = Wifi.Install(wifiPhy302, mac, wifiApNode302);
+	apDevices302 = Wifi.Install(wifiPhy302, mac, wifi_ap_nodes[302]);
 	ns3::NetDeviceContainer apDevices303;
-	apDevices303 = Wifi.Install(wifiPhy303, mac, wifiApNode303);
+	apDevices303 = Wifi.Install(wifiPhy303, mac, wifi_ap_nodes[303]);
 	ns3::NetDeviceContainer apDevices304;
-	apDevices304 = Wifi.Install(wifiPhy304, mac, wifiApNode304);
+	apDevices304 = Wifi.Install(wifiPhy304, mac, wifi_ap_nodes[304]);
 	ns3::NetDeviceContainer apDevices305;
-	apDevices305 = Wifi.Install(wifiPhy305, mac, wifiApNode305);
+	apDevices305 = Wifi.Install(wifiPhy305, mac, wifi_ap_nodes[305]);
 //    apDevices306 = Wifi.Install (wifiPhy306, mac, wifiApNode306)
 	ns3::NetDeviceContainer apDevices307;
-	apDevices307 = Wifi.Install(wifiPhy307, mac, wifiApNode307);
+	apDevices307 = Wifi.Install(wifiPhy307, mac, wifi_ap_nodes[307]);
 	ns3::NetDeviceContainer apDevices308;
-	apDevices308 = Wifi.Install(wifiPhy308, mac, wifiApNode308);
+	apDevices308 = Wifi.Install(wifiPhy308, mac, wifi_ap_nodes[308]);
 	ns3::NetDeviceContainer apDevices309;
-	apDevices309 = Wifi.Install(wifiPhy309, mac, wifiApNode309);
+	apDevices309 = Wifi.Install(wifiPhy309, mac, wifi_ap_nodes[309]);
 	ns3::NetDeviceContainer apDevices310;
-	apDevices310 = Wifi.Install(wifiPhy310, mac, wifiApNode310);
+	apDevices310 = Wifi.Install(wifiPhy310, mac, wifi_ap_nodes[310]);
 	ns3::NetDeviceContainer apDevices311;
-	apDevices311 = Wifi.Install(wifiPhy311, mac, wifiApNode311);
+	apDevices311 = Wifi.Install(wifiPhy311, mac, wifi_ap_nodes[311]);
 	ns3::NetDeviceContainer apDevices312;
-	apDevices312 = Wifi.Install(wifiPhy312, mac, wifiApNode312);
+	apDevices312 = Wifi.Install(wifiPhy312, mac, wifi_ap_nodes[312]);
 	ns3::NetDeviceContainer apDevices313;
-	apDevices313 = Wifi.Install(wifiPhy313, mac, wifiApNode313);
+	apDevices313 = Wifi.Install(wifiPhy313, mac, wifi_ap_nodes[313]);
 	ns3::NetDeviceContainer apDevices314;
-	apDevices314 = Wifi.Install(wifiPhy314, mac, wifiApNode314);
+	apDevices314 = Wifi.Install(wifiPhy314, mac, wifi_ap_nodes[314]);
 //    apDevices315 = Wifi.Install (wifiPhy315, mac, wifiApNode315)
 
 //wifi area
@@ -5396,7 +3896,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility.Install(wifiStaNodes1);
+	mobility.Install(wifi_sta_node_sets[1]);
 //wifi area
 	ns3::MobilityHelper mobility2;
 	mobility2.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5406,7 +3906,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility2.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility2.Install(wifiStaNodes2);
+	mobility2.Install(wifi_sta_node_sets[2]);
 //wifi area
 	ns3::MobilityHelper mobility3;
 	mobility3.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5416,7 +3916,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility3.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility3.Install(wifiStaNodes3);
+	mobility3.Install(wifi_sta_node_sets[3]);
 //wifi area
 	ns3::MobilityHelper mobility4;
 	mobility4.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5426,7 +3926,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility4.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility4.Install(wifiStaNodes4);
+	mobility4.Install(wifi_sta_node_sets[4]);
 //wifi area
 	ns3::MobilityHelper mobility5;
 	mobility5.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5436,7 +3936,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility5.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility5.Install(wifiStaNodes5);
+	mobility5.Install(wifi_sta_node_sets[5]);
 //wifi area
 	ns3::MobilityHelper mobility6;
 	mobility6.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5446,7 +3946,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility6.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility6.Install(wifiStaNodes6);
+	mobility6.Install(wifi_sta_node_sets[6]);
 //wifi area
 	ns3::MobilityHelper mobility7;
 	mobility7.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5456,7 +3956,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility7.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility7.Install(wifiStaNodes7);
+	mobility7.Install(wifi_sta_node_sets[7]);
 //wifi area
 	ns3::MobilityHelper mobility8;
 	mobility8.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5466,7 +3966,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility8.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility8.Install(wifiStaNodes8);
+	mobility8.Install(wifi_sta_node_sets[8]);
 //wifi area
 	ns3::MobilityHelper mobility9;
 	mobility9.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5476,7 +3976,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility9.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility9.Install(wifiStaNodes9);
+	mobility9.Install(wifi_sta_node_sets[9]);
 //wifi area
 	ns3::MobilityHelper mobility10;
 	mobility10.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5486,7 +3986,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility10.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility10.Install(wifiStaNodes10);
+	mobility10.Install(wifi_sta_node_sets[10]);
 //wifi area
 	ns3::MobilityHelper mobility11;
 	mobility11.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5496,7 +3996,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility11.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility11.Install(wifiStaNodes11);
+	mobility11.Install(wifi_sta_node_sets[11]);
 //wifi area
 	ns3::MobilityHelper mobility12;
 	mobility12.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5506,7 +4006,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility12.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility12.Install(wifiStaNodes12);
+	mobility12.Install(wifi_sta_node_sets[12]);
 //wifi area
 	ns3::MobilityHelper mobility13;
 	mobility13.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5516,7 +4016,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility13.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility13.Install(wifiStaNodes13);
+	mobility13.Install(wifi_sta_node_sets[13]);
 //wifi area
 	ns3::MobilityHelper mobility14;
 	mobility14.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5526,7 +4026,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility14.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility14.Install(wifiStaNodes14);
+	mobility14.Install(wifi_sta_node_sets[14]);
 //wifi area
 	ns3::MobilityHelper mobility15;
 	mobility15.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5536,7 +4036,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility15.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility15.Install(wifiStaNodes15);
+	mobility15.Install(wifi_sta_node_sets[15]);
 //wifi area
 	ns3::MobilityHelper mobility16;
 	mobility16.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5546,7 +4046,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility16.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility16.Install(wifiStaNodes16);
+	mobility16.Install(wifi_sta_node_sets[16]);
 //wifi area
 	ns3::MobilityHelper mobility17;
 	mobility17.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5556,7 +4056,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility17.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility17.Install(wifiStaNodes17);
+	mobility17.Install(wifi_sta_node_sets[17]);
 //wifi area
 	ns3::MobilityHelper mobility18;
 	mobility18.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5566,7 +4066,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility18.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility18.Install(wifiStaNodes18);
+	mobility18.Install(wifi_sta_node_sets[18]);
 //wifi area
 	ns3::MobilityHelper mobility19;
 	mobility19.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5576,7 +4076,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility19.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility19.Install(wifiStaNodes19);
+	mobility19.Install(wifi_sta_node_sets[19]);
 //wifi area
 	ns3::MobilityHelper mobility20;
 	mobility20.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5586,7 +4086,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility20.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility20.Install(wifiStaNodes20);
+	mobility20.Install(wifi_sta_node_sets[20]);
 //wifi area
 	ns3::MobilityHelper mobility21;
 	mobility21.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5596,7 +4096,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility21.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility21.Install(wifiStaNodes21);
+	mobility21.Install(wifi_sta_node_sets[21]);
 //wifi area
 	ns3::MobilityHelper mobility22;
 	mobility22.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5606,7 +4106,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility22.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility22.Install(wifiStaNodes22);
+	mobility22.Install(wifi_sta_node_sets[22]);
 //wifi area
 	ns3::MobilityHelper mobility23;
 	mobility23.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5616,7 +4116,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility23.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility23.Install(wifiStaNodes23);
+	mobility23.Install(wifi_sta_node_sets[23]);
 //wifi area
 	ns3::MobilityHelper mobility24;
 	mobility24.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5626,7 +4126,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility24.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility24.Install(wifiStaNodes24);
+	mobility24.Install(wifi_sta_node_sets[24]);
 //wifi area
 	ns3::MobilityHelper mobility25;
 	mobility25.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5636,7 +4136,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility25.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility25.Install(wifiStaNodes25);
+	mobility25.Install(wifi_sta_node_sets[25]);
 //wifi area
 	ns3::MobilityHelper mobility26;
 	mobility26.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5646,7 +4146,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility26.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility26.Install(wifiStaNodes26);
+	mobility26.Install(wifi_sta_node_sets[26]);
 //wifi area
 	ns3::MobilityHelper mobility27;
 	mobility27.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5656,7 +4156,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility27.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility27.Install(wifiStaNodes27);
+	mobility27.Install(wifi_sta_node_sets[27]);
 //wifi area
 	ns3::MobilityHelper mobility28;
 	mobility28.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5666,7 +4166,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility28.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility28.Install(wifiStaNodes28);
+	mobility28.Install(wifi_sta_node_sets[28]);
 //wifi area
 	ns3::MobilityHelper mobility29;
 	mobility29.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5676,7 +4176,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility29.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility29.Install(wifiStaNodes29);
+	mobility29.Install(wifi_sta_node_sets[29]);
 //wifi area
 	ns3::MobilityHelper mobility30;
 	mobility30.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5686,7 +4186,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility30.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility30.Install(wifiStaNodes30);
+	mobility30.Install(wifi_sta_node_sets[30]);
 //wifi area
 	ns3::MobilityHelper mobility31;
 	mobility31.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5696,7 +4196,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility31.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility31.Install(wifiStaNodes31);
+	mobility31.Install(wifi_sta_node_sets[31]);
 //wifi area
 	ns3::MobilityHelper mobility32;
 	mobility32.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5706,7 +4206,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility32.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility32.Install(wifiStaNodes32);
+	mobility32.Install(wifi_sta_node_sets[32]);
 //wifi area
 	ns3::MobilityHelper mobility33;
 	mobility33.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5716,7 +4216,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility33.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility33.Install(wifiStaNodes33);
+	mobility33.Install(wifi_sta_node_sets[33]);
 //wifi area
 	ns3::MobilityHelper mobility34;
 	mobility34.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5726,7 +4226,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility34.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility34.Install(wifiStaNodes34);
+	mobility34.Install(wifi_sta_node_sets[34]);
 //wifi area
 	ns3::MobilityHelper mobility35;
 	mobility35.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5736,7 +4236,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility35.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility35.Install(wifiStaNodes35);
+	mobility35.Install(wifi_sta_node_sets[35]);
 //wifi area
 	ns3::MobilityHelper mobility36;
 	mobility36.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5746,7 +4246,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility36.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility36.Install(wifiStaNodes36);
+	mobility36.Install(wifi_sta_node_sets[36]);
 //wifi area
 	ns3::MobilityHelper mobility37;
 	mobility37.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5756,7 +4256,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility37.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility37.Install(wifiStaNodes37);
+	mobility37.Install(wifi_sta_node_sets[37]);
 //wifi area
 	ns3::MobilityHelper mobility38;
 	mobility38.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5766,7 +4266,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility38.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility38.Install(wifiStaNodes38);
+	mobility38.Install(wifi_sta_node_sets[38]);
 //wifi area
 	ns3::MobilityHelper mobility39;
 	mobility39.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5776,7 +4276,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility39.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility39.Install(wifiStaNodes39);
+	mobility39.Install(wifi_sta_node_sets[39]);
 //wifi area
 	ns3::MobilityHelper mobility40;
 	mobility40.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5786,7 +4286,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility40.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility40.Install(wifiStaNodes40);
+	mobility40.Install(wifi_sta_node_sets[40]);
 //wifi area
 	ns3::MobilityHelper mobility41;
 	mobility41.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5796,7 +4296,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility41.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility41.Install(wifiStaNodes41);
+	mobility41.Install(wifi_sta_node_sets[41]);
 //wifi area
 	ns3::MobilityHelper mobility42;
 	mobility42.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5806,7 +4306,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility42.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility42.Install(wifiStaNodes42);
+	mobility42.Install(wifi_sta_node_sets[42]);
 //wifi area
 	ns3::MobilityHelper mobility43;
 	mobility43.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5816,7 +4316,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility43.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility43.Install(wifiStaNodes43);
+	mobility43.Install(wifi_sta_node_sets[43]);
 //wifi area
 	ns3::MobilityHelper mobility44;
 	mobility44.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5826,7 +4326,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility44.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility44.Install(wifiStaNodes44);
+	mobility44.Install(wifi_sta_node_sets[44]);
 //wifi area
 	ns3::MobilityHelper mobility45;
 	mobility45.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5836,7 +4336,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility45.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility45.Install(wifiStaNodes45);
+	mobility45.Install(wifi_sta_node_sets[45]);
 //wifi area
 	ns3::MobilityHelper mobility46;
 	mobility46.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5846,7 +4346,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility46.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility46.Install(wifiStaNodes46);
+	mobility46.Install(wifi_sta_node_sets[46]);
 //wifi area
 	ns3::MobilityHelper mobility47;
 	mobility47.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5856,7 +4356,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility47.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility47.Install(wifiStaNodes47);
+	mobility47.Install(wifi_sta_node_sets[47]);
 //wifi area
 	ns3::MobilityHelper mobility48;
 	mobility48.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5866,7 +4366,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility48.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility48.Install(wifiStaNodes48);
+	mobility48.Install(wifi_sta_node_sets[48]);
 //wifi area
 	ns3::MobilityHelper mobility49;
 	mobility49.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5876,7 +4376,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility49.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility49.Install(wifiStaNodes49);
+	mobility49.Install(wifi_sta_node_sets[49]);
 //wifi area
 	ns3::MobilityHelper mobility50;
 	mobility50.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5886,7 +4386,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility50.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility50.Install(wifiStaNodes50);
+	mobility50.Install(wifi_sta_node_sets[50]);
 //wifi area
 	ns3::MobilityHelper mobility51;
 	mobility51.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5896,7 +4396,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility51.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility51.Install(wifiStaNodes51);
+	mobility51.Install(wifi_sta_node_sets[51]);
 
 //wifi area
 	ns3::MobilityHelper mobility52;
@@ -5907,7 +4407,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility52.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility52.Install(wifiStaNodes52);
+	mobility52.Install(wifi_sta_node_sets[52]);
 //wifi area
 	ns3::MobilityHelper mobility53;
 	mobility53.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5917,7 +4417,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility53.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility53.Install(wifiStaNodes53);
+	mobility53.Install(wifi_sta_node_sets[53]);
 //wifi area
 	ns3::MobilityHelper mobility54;
 	mobility54.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5927,7 +4427,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility54.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility54.Install(wifiStaNodes54);
+	mobility54.Install(wifi_sta_node_sets[54]);
 //wifi area
 	ns3::MobilityHelper mobility55;
 	mobility55.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5937,7 +4437,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility55.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility55.Install(wifiStaNodes55);
+	mobility55.Install(wifi_sta_node_sets[55]);
 //wifi area
 	ns3::MobilityHelper mobility56;
 	mobility56.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5947,7 +4447,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility56.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility56.Install(wifiStaNodes56);
+	mobility56.Install(wifi_sta_node_sets[56]);
 //wifi area
 	ns3::MobilityHelper mobility57;
 	mobility57.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5957,7 +4457,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility57.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility57.Install(wifiStaNodes57);
+	mobility57.Install(wifi_sta_node_sets[57]);
 //wifi area
 	ns3::MobilityHelper mobility58;
 	mobility58.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5967,7 +4467,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility58.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility58.Install(wifiStaNodes58);
+	mobility58.Install(wifi_sta_node_sets[58]);
 //wifi area
 	ns3::MobilityHelper mobility59;
 	mobility59.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5977,7 +4477,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility59.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility59.Install(wifiStaNodes59);
+	mobility59.Install(wifi_sta_node_sets[59]);
 //wifi area
 	ns3::MobilityHelper mobility60;
 	mobility60.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5987,7 +4487,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility60.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility60.Install(wifiStaNodes60);
+	mobility60.Install(wifi_sta_node_sets[60]);
 //wifi area
 	ns3::MobilityHelper mobility61;
 	mobility61.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -5997,7 +4497,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility61.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility61.Install(wifiStaNodes61);
+	mobility61.Install(wifi_sta_node_sets[61]);
 //wifi area
 	ns3::MobilityHelper mobility62;
 	mobility62.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6007,7 +4507,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility62.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility62.Install(wifiStaNodes62);
+	mobility62.Install(wifi_sta_node_sets[62]);
 //wifi area
 	ns3::MobilityHelper mobility63;
 	mobility63.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6017,7 +4517,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility63.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility63.Install(wifiStaNodes63);
+	mobility63.Install(wifi_sta_node_sets[63]);
 //wifi area
 	ns3::MobilityHelper mobility64;
 	mobility64.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6027,7 +4527,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility64.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility64.Install(wifiStaNodes64);
+	mobility64.Install(wifi_sta_node_sets[64]);
 //wifi area
 	ns3::MobilityHelper mobility65;
 	mobility65.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6037,7 +4537,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility65.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility65.Install(wifiStaNodes65);
+	mobility65.Install(wifi_sta_node_sets[65]);
 //wifi area
 	ns3::MobilityHelper mobility66;
 	mobility66.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6047,7 +4547,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility66.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility66.Install(wifiStaNodes66);
+	mobility66.Install(wifi_sta_node_sets[66]);
 //wifi area
 	ns3::MobilityHelper mobility67;
 	mobility67.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6057,7 +4557,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility67.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility67.Install(wifiStaNodes67);
+	mobility67.Install(wifi_sta_node_sets[67]);
 //wifi area
 	ns3::MobilityHelper mobility68;
 	mobility68.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6067,7 +4567,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility68.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility68.Install(wifiStaNodes68);
+	mobility68.Install(wifi_sta_node_sets[68]);
 //wifi area
 	ns3::MobilityHelper mobility69;
 	mobility69.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6077,7 +4577,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility69.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility69.Install(wifiStaNodes69);
+	mobility69.Install(wifi_sta_node_sets[69]);
 //wifi area
 	ns3::MobilityHelper mobility70;
 	mobility70.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6087,7 +4587,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility70.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility70.Install(wifiStaNodes70);
+	mobility70.Install(wifi_sta_node_sets[70]);
 //wifi area
 	ns3::MobilityHelper mobility71;
 	mobility71.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6097,7 +4597,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility71.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility71.Install(wifiStaNodes71);
+	mobility71.Install(wifi_sta_node_sets[71]);
 //wifi area
 	ns3::MobilityHelper mobility72;
 	mobility72.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6107,7 +4607,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility72.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility72.Install(wifiStaNodes72);
+	mobility72.Install(wifi_sta_node_sets[72]);
 //wifi area
 	ns3::MobilityHelper mobility73;
 	mobility73.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6117,7 +4617,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility73.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility73.Install(wifiStaNodes73);
+	mobility73.Install(wifi_sta_node_sets[73]);
 //wifi area
 	ns3::MobilityHelper mobility74;
 	mobility74.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6127,7 +4627,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility74.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility74.Install(wifiStaNodes74);
+	mobility74.Install(wifi_sta_node_sets[74]);
 //wifi area
 	ns3::MobilityHelper mobility75;
 	mobility75.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6137,7 +4637,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility75.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility75.Install(wifiStaNodes75);
+	mobility75.Install(wifi_sta_node_sets[75]);
 //wifi area
 	ns3::MobilityHelper mobility76;
 	mobility76.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6147,7 +4647,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility76.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility76.Install(wifiStaNodes76);
+	mobility76.Install(wifi_sta_node_sets[76]);
 //wifi area
 	ns3::MobilityHelper mobility77;
 	mobility77.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6157,7 +4657,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility77.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility77.Install(wifiStaNodes77);
+	mobility77.Install(wifi_sta_node_sets[77]);
 //wifi area
 	ns3::MobilityHelper mobility78;
 	mobility78.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6167,7 +4667,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility78.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility78.Install(wifiStaNodes78);
+	mobility78.Install(wifi_sta_node_sets[78]);
 //wifi area
 	ns3::MobilityHelper mobility79;
 	mobility79.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6177,7 +4677,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility79.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility79.Install(wifiStaNodes79);
+	mobility79.Install(wifi_sta_node_sets[79]);
 //wifi area
 	ns3::MobilityHelper mobility80;
 	mobility80.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6187,7 +4687,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility80.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility80.Install(wifiStaNodes80);
+	mobility80.Install(wifi_sta_node_sets[80]);
 //wifi area
 	ns3::MobilityHelper mobility81;
 	mobility81.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6197,7 +4697,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility81.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility81.Install(wifiStaNodes81);
+	mobility81.Install(wifi_sta_node_sets[81]);
 //wifi area
 	ns3::MobilityHelper mobility82;
 	mobility82.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6207,7 +4707,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility82.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility82.Install(wifiStaNodes82);
+	mobility82.Install(wifi_sta_node_sets[82]);
 //wifi area
 	ns3::MobilityHelper mobility83;
 	mobility83.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6217,7 +4717,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility83.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility83.Install(wifiStaNodes83);
+	mobility83.Install(wifi_sta_node_sets[83]);
 //wifi area
 	ns3::MobilityHelper mobility84;
 	mobility84.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6227,7 +4727,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility84.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility84.Install(wifiStaNodes84);
+	mobility84.Install(wifi_sta_node_sets[84]);
 //wifi area
 	ns3::MobilityHelper mobility85;
 	mobility85.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6237,7 +4737,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility85.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility85.Install(wifiStaNodes85);
+	mobility85.Install(wifi_sta_node_sets[85]);
 //wifi area
 	ns3::MobilityHelper mobility86;
 	mobility86.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6247,7 +4747,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility86.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility86.Install(wifiStaNodes86);
+	mobility86.Install(wifi_sta_node_sets[86]);
 //wifi area
 	ns3::MobilityHelper mobility87;
 	mobility87.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6257,7 +4757,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility87.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility87.Install(wifiStaNodes87);
+	mobility87.Install(wifi_sta_node_sets[87]);
 //wifi area
 	ns3::MobilityHelper mobility88;
 	mobility88.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6267,7 +4767,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility88.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility88.Install(wifiStaNodes88);
+	mobility88.Install(wifi_sta_node_sets[88]);
 //wifi area
 	ns3::MobilityHelper mobility89;
 	mobility89.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6277,7 +4777,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility89.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility89.Install(wifiStaNodes89);
+	mobility89.Install(wifi_sta_node_sets[89]);
 //wifi area
 	ns3::MobilityHelper mobility90;
 	mobility90.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6287,7 +4787,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility90.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility90.Install(wifiStaNodes90);
+	mobility90.Install(wifi_sta_node_sets[90]);
 //wifi area
 	ns3::MobilityHelper mobility91;
 	mobility91.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6297,7 +4797,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility91.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility91.Install(wifiStaNodes91);
+	mobility91.Install(wifi_sta_node_sets[91]);
 //wifi area
 	ns3::MobilityHelper mobility92;
 	mobility92.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6307,7 +4807,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility92.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility92.Install(wifiStaNodes92);
+	mobility92.Install(wifi_sta_node_sets[92]);
 //wifi area
 	ns3::MobilityHelper mobility93;
 	mobility93.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6317,7 +4817,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility93.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility93.Install(wifiStaNodes93);
+	mobility93.Install(wifi_sta_node_sets[93]);
 //wifi area
 	ns3::MobilityHelper mobility94;
 	mobility94.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6327,7 +4827,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility94.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility94.Install(wifiStaNodes94);
+	mobility94.Install(wifi_sta_node_sets[94]);
 //wifi area
 	ns3::MobilityHelper mobility95;
 	mobility95.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6337,7 +4837,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility95.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility95.Install(wifiStaNodes95);
+	mobility95.Install(wifi_sta_node_sets[95]);
 //wifi area
 	ns3::MobilityHelper mobility96;
 	mobility96.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6347,7 +4847,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility96.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility96.Install(wifiStaNodes96);
+	mobility96.Install(wifi_sta_node_sets[96]);
 //wifi area
 	ns3::MobilityHelper mobility97;
 	mobility97.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6357,7 +4857,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility97.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility97.Install(wifiStaNodes97);
+	mobility97.Install(wifi_sta_node_sets[97]);
 //wifi area
 	ns3::MobilityHelper mobility98;
 	mobility98.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6367,7 +4867,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility98.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility98.Install(wifiStaNodes98);
+	mobility98.Install(wifi_sta_node_sets[98]);
 //wifi area
 	ns3::MobilityHelper mobility99;
 	mobility99.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6377,7 +4877,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility99.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility99.Install(wifiStaNodes99);
+	mobility99.Install(wifi_sta_node_sets[99]);
 //wifi area
 	ns3::MobilityHelper mobility100;
 	mobility100.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6387,7 +4887,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility100.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility100.Install(wifiStaNodes100);
+	mobility100.Install(wifi_sta_node_sets[100]);
 //wifi area
 	ns3::MobilityHelper mobility101;
 	mobility101.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6397,7 +4897,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility101.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility101.Install(wifiStaNodes101);
+	mobility101.Install(wifi_sta_node_sets[101]);
 //wifi area
 	ns3::MobilityHelper mobility102;
 	mobility102.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6407,7 +4907,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility102.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility102.Install(wifiStaNodes102);
+	mobility102.Install(wifi_sta_node_sets[102]);
 //wifi area
 	ns3::MobilityHelper mobility103;
 	mobility103.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6417,7 +4917,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility103.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility103.Install(wifiStaNodes103);
+	mobility103.Install(wifi_sta_node_sets[103]);
 //wifi area
 	ns3::MobilityHelper mobility104;
 	mobility104.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6427,7 +4927,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility104.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility104.Install(wifiStaNodes104);
+	mobility104.Install(wifi_sta_node_sets[104]);
 //wifi area
 	ns3::MobilityHelper mobility105;
 	mobility105.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6437,7 +4937,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility105.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility105.Install(wifiStaNodes105);
+	mobility105.Install(wifi_sta_node_sets[105]);
 //wifi area
 	ns3::MobilityHelper mobility106;
 	mobility106.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6447,7 +4947,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility106.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility106.Install(wifiStaNodes106);
+	mobility106.Install(wifi_sta_node_sets[106]);
 //wifi area
 	ns3::MobilityHelper mobility107;
 	mobility107.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6457,7 +4957,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility107.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility107.Install(wifiStaNodes107);
+	mobility107.Install(wifi_sta_node_sets[107]);
 //wifi area
 	ns3::MobilityHelper mobility108;
 	mobility108.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6467,7 +4967,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility108.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility108.Install(wifiStaNodes108);
+	mobility108.Install(wifi_sta_node_sets[108]);
 //wifi area
 	ns3::MobilityHelper mobility109;
 	mobility109.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6477,7 +4977,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility109.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility109.Install(wifiStaNodes109);
+	mobility109.Install(wifi_sta_node_sets[109]);
 //wifi area
 	ns3::MobilityHelper mobility110;
 	mobility110.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6487,7 +4987,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility110.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility110.Install(wifiStaNodes110);
+	mobility110.Install(wifi_sta_node_sets[110]);
 //wifi area
 	ns3::MobilityHelper mobility111;
 	mobility111.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6497,7 +4997,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility111.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility111.Install(wifiStaNodes111);
+	mobility111.Install(wifi_sta_node_sets[111]);
 //wifi area
 	ns3::MobilityHelper mobility112;
 	mobility112.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6507,7 +5007,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility112.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility112.Install(wifiStaNodes112);
+	mobility112.Install(wifi_sta_node_sets[112]);
 //wifi area
 	ns3::MobilityHelper mobility113;
 	mobility113.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6517,7 +5017,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility113.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility113.Install(wifiStaNodes113);
+	mobility113.Install(wifi_sta_node_sets[113]);
 //wifi area
 	ns3::MobilityHelper mobility114;
 	mobility114.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6527,7 +5027,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility114.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility114.Install(wifiStaNodes114);
+	mobility114.Install(wifi_sta_node_sets[114]);
 //wifi area
 	ns3::MobilityHelper mobility115;
 	mobility115.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6537,7 +5037,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility115.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility115.Install(wifiStaNodes115);
+	mobility115.Install(wifi_sta_node_sets[115]);
 //wifi area
 	ns3::MobilityHelper mobility116;
 	mobility116.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6547,7 +5047,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility116.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility116.Install(wifiStaNodes116);
+	mobility116.Install(wifi_sta_node_sets[116]);
 //wifi area
 	ns3::MobilityHelper mobility117;
 	mobility117.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6557,7 +5057,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility117.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility117.Install(wifiStaNodes117);
+	mobility117.Install(wifi_sta_node_sets[117]);
 //wifi area
 	ns3::MobilityHelper mobility118;
 	mobility118.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6567,7 +5067,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility118.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility118.Install(wifiStaNodes118);
+	mobility118.Install(wifi_sta_node_sets[118]);
 //wifi area
 	ns3::MobilityHelper mobility119;
 	mobility119.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6577,7 +5077,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility119.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility119.Install(wifiStaNodes119);
+	mobility119.Install(wifi_sta_node_sets[119]);
 //wifi area
 	ns3::MobilityHelper mobility120;
 	mobility120.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6587,7 +5087,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility120.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility120.Install(wifiStaNodes120);
+	mobility120.Install(wifi_sta_node_sets[120]);
 //wifi area
 	ns3::MobilityHelper mobility121;
 	mobility121.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6597,7 +5097,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility121.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility121.Install(wifiStaNodes121);
+	mobility121.Install(wifi_sta_node_sets[121]);
 //wifi area
 	ns3::MobilityHelper mobility122;
 	mobility122.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6607,7 +5107,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility122.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility122.Install(wifiStaNodes122);
+	mobility122.Install(wifi_sta_node_sets[122]);
 //wifi area
 	ns3::MobilityHelper mobility123;
 	mobility123.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6617,7 +5117,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility123.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility123.Install(wifiStaNodes123);
+	mobility123.Install(wifi_sta_node_sets[123]);
 //wifi area
 	ns3::MobilityHelper mobility124;
 	mobility124.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6627,7 +5127,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility124.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility124.Install(wifiStaNodes124);
+	mobility124.Install(wifi_sta_node_sets[124]);
 //wifi area
 	ns3::MobilityHelper mobility125;
 	mobility125.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6637,7 +5137,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility125.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility125.Install(wifiStaNodes125);
+	mobility125.Install(wifi_sta_node_sets[125]);
 //wifi area
 	ns3::MobilityHelper mobility126;
 	mobility126.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6647,7 +5147,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility126.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility126.Install(wifiStaNodes126);
+	mobility126.Install(wifi_sta_node_sets[126]);
 //wifi area
 	ns3::MobilityHelper mobility127;
 	mobility127.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6657,7 +5157,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility127.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility127.Install(wifiStaNodes127);
+	mobility127.Install(wifi_sta_node_sets[127]);
 //wifi area
 	ns3::MobilityHelper mobility128;
 	mobility128.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6667,7 +5167,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility128.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility128.Install(wifiStaNodes128);
+	mobility128.Install(wifi_sta_node_sets[128]);
 //wifi area
 	ns3::MobilityHelper mobility129;
 	mobility129.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6677,7 +5177,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility129.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility129.Install(wifiStaNodes129);
+	mobility129.Install(wifi_sta_node_sets[129]);
 //wifi area
 	ns3::MobilityHelper mobility130;
 	mobility130.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6687,7 +5187,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility130.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility130.Install(wifiStaNodes130);
+	mobility130.Install(wifi_sta_node_sets[130]);
 //wifi area
 	ns3::MobilityHelper mobility131;
 	mobility131.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6697,7 +5197,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility131.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility131.Install(wifiStaNodes131);
+	mobility131.Install(wifi_sta_node_sets[131]);
 //wifi area
 	ns3::MobilityHelper mobility132;
 	mobility132.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6707,7 +5207,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility132.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility132.Install(wifiStaNodes132);
+	mobility132.Install(wifi_sta_node_sets[132]);
 //wifi area
 	ns3::MobilityHelper mobility133;
 	mobility133.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6717,7 +5217,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility133.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility133.Install(wifiStaNodes133);
+	mobility133.Install(wifi_sta_node_sets[133]);
 //wifi area
 	ns3::MobilityHelper mobility134;
 	mobility134.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6727,7 +5227,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility134.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility134.Install(wifiStaNodes134);
+	mobility134.Install(wifi_sta_node_sets[134]);
 //wifi area
 	ns3::MobilityHelper mobility135;
 	mobility135.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6737,7 +5237,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility135.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility135.Install(wifiStaNodes135);
+	mobility135.Install(wifi_sta_node_sets[135]);
 //wifi area
 	ns3::MobilityHelper mobility136;
 	mobility136.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6747,7 +5247,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility136.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility136.Install(wifiStaNodes136);
+	mobility136.Install(wifi_sta_node_sets[136]);
 //wifi area
 	ns3::MobilityHelper mobility137;
 	mobility137.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6757,7 +5257,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility137.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility137.Install(wifiStaNodes137);
+	mobility137.Install(wifi_sta_node_sets[137]);
 //wifi area
 	ns3::MobilityHelper mobility138;
 	mobility138.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6767,7 +5267,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility138.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility138.Install(wifiStaNodes138);
+	mobility138.Install(wifi_sta_node_sets[138]);
 //wifi area
 	ns3::MobilityHelper mobility139;
 	mobility139.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6777,7 +5277,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility139.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility139.Install(wifiStaNodes139);
+	mobility139.Install(wifi_sta_node_sets[139]);
 //wifi area
 	ns3::MobilityHelper mobility140;
 	mobility140.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6787,7 +5287,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility140.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility140.Install(wifiStaNodes140);
+	mobility140.Install(wifi_sta_node_sets[140]);
 //wifi area
 	ns3::MobilityHelper mobility141;
 	mobility141.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6797,7 +5297,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility141.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility141.Install(wifiStaNodes141);
+	mobility141.Install(wifi_sta_node_sets[141]);
 //wifi area
 	ns3::MobilityHelper mobility142;
 	mobility142.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6807,7 +5307,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility142.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility142.Install(wifiStaNodes142);
+	mobility142.Install(wifi_sta_node_sets[142]);
 //wifi area
 	ns3::MobilityHelper mobility143;
 	mobility143.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6817,7 +5317,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility143.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility143.Install(wifiStaNodes143);
+	mobility143.Install(wifi_sta_node_sets[143]);
 //wifi area
 	ns3::MobilityHelper mobility144;
 	mobility144.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6827,7 +5327,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility144.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility144.Install(wifiStaNodes144);
+	mobility144.Install(wifi_sta_node_sets[144]);
 //wifi area
 	ns3::MobilityHelper mobility145;
 	mobility145.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6837,7 +5337,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility145.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility145.Install(wifiStaNodes145);
+	mobility145.Install(wifi_sta_node_sets[145]);
 //wifi area
 	ns3::MobilityHelper mobility146;
 	mobility146.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6847,7 +5347,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility146.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility146.Install(wifiStaNodes146);
+	mobility146.Install(wifi_sta_node_sets[146]);
 //wifi area
 	ns3::MobilityHelper mobility147;
 	mobility147.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6857,7 +5357,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility147.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility147.Install(wifiStaNodes147);
+	mobility147.Install(wifi_sta_node_sets[147]);
 //wifi area
 	ns3::MobilityHelper mobility148;
 	mobility148.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6867,7 +5367,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility148.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility148.Install(wifiStaNodes148);
+	mobility148.Install(wifi_sta_node_sets[148]);
 //wifi area
 	ns3::MobilityHelper mobility149;
 	mobility149.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6877,7 +5377,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility149.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility149.Install(wifiStaNodes149);
+	mobility149.Install(wifi_sta_node_sets[149]);
 //wifi area
 	ns3::MobilityHelper mobility150;
 	mobility150.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6887,7 +5387,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility150.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility150.Install(wifiStaNodes150);
+	mobility150.Install(wifi_sta_node_sets[150]);
 //wifi area
 	ns3::MobilityHelper mobility151;
 	mobility151.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6897,7 +5397,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility151.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility151.Install(wifiStaNodes151);
+	mobility151.Install(wifi_sta_node_sets[151]);
 //wifi area
 	ns3::MobilityHelper mobility152;
 	mobility152.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6907,7 +5407,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility152.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility152.Install(wifiStaNodes152);
+	mobility152.Install(wifi_sta_node_sets[152]);
 //wifi area
 	ns3::MobilityHelper mobility153;
 	mobility153.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6917,7 +5417,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility153.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility153.Install(wifiStaNodes153);
+	mobility153.Install(wifi_sta_node_sets[153]);
 //wifi area
 	ns3::MobilityHelper mobility154;
 	mobility154.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6927,7 +5427,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility154.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility154.Install(wifiStaNodes154);
+	mobility154.Install(wifi_sta_node_sets[154]);
 //wifi area
 	ns3::MobilityHelper mobility155;
 	mobility155.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6937,7 +5437,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility155.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility155.Install(wifiStaNodes155);
+	mobility155.Install(wifi_sta_node_sets[155]);
 //wifi area
 	ns3::MobilityHelper mobility156;
 	mobility156.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6947,7 +5447,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility156.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility156.Install(wifiStaNodes156);
+	mobility156.Install(wifi_sta_node_sets[156]);
 //wifi area
 	ns3::MobilityHelper mobility157;
 	mobility157.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6957,7 +5457,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility157.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility157.Install(wifiStaNodes157);
+	mobility157.Install(wifi_sta_node_sets[157]);
 //wifi area
 	ns3::MobilityHelper mobility158;
 	mobility158.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6967,7 +5467,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility158.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility158.Install(wifiStaNodes158);
+	mobility158.Install(wifi_sta_node_sets[158]);
 //wifi area
 	ns3::MobilityHelper mobility159;
 	mobility159.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6977,7 +5477,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility159.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility159.Install(wifiStaNodes159);
+	mobility159.Install(wifi_sta_node_sets[159]);
 //wifi area
 	ns3::MobilityHelper mobility160;
 	mobility160.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6987,7 +5487,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility160.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility160.Install(wifiStaNodes160);
+	mobility160.Install(wifi_sta_node_sets[160]);
 //wifi area
 	ns3::MobilityHelper mobility161;
 	mobility161.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -6997,7 +5497,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility161.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility161.Install(wifiStaNodes161);
+	mobility161.Install(wifi_sta_node_sets[161]);
 //wifi area
 	ns3::MobilityHelper mobility162;
 	mobility162.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7007,7 +5507,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility162.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility162.Install(wifiStaNodes162);
+	mobility162.Install(wifi_sta_node_sets[162]);
 //wifi area
 	ns3::MobilityHelper mobility163;
 	mobility163.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7017,7 +5517,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility163.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility163.Install(wifiStaNodes163);
+	mobility163.Install(wifi_sta_node_sets[163]);
 //wifi area
 	ns3::MobilityHelper mobility164;
 	mobility164.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7027,7 +5527,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility164.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility164.Install(wifiStaNodes164);
+	mobility164.Install(wifi_sta_node_sets[164]);
 //wifi area
 	ns3::MobilityHelper mobility165;
 	mobility165.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7037,7 +5537,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility165.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility165.Install(wifiStaNodes165);
+	mobility165.Install(wifi_sta_node_sets[165]);
 //wifi area
 	ns3::MobilityHelper mobility166;
 	mobility166.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7047,7 +5547,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility166.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility166.Install(wifiStaNodes166);
+	mobility166.Install(wifi_sta_node_sets[166]);
 //wifi area
 	ns3::MobilityHelper mobility167;
 	mobility167.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7057,7 +5557,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility167.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility167.Install(wifiStaNodes167);
+	mobility167.Install(wifi_sta_node_sets[167]);
 //wifi area
 	ns3::MobilityHelper mobility168;
 	mobility168.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7067,7 +5567,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility168.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility168.Install(wifiStaNodes168);
+	mobility168.Install(wifi_sta_node_sets[168]);
 //wifi area
 	ns3::MobilityHelper mobility169;
 	mobility169.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7077,7 +5577,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility169.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility169.Install(wifiStaNodes169);
+	mobility169.Install(wifi_sta_node_sets[169]);
 //wifi area
 	ns3::MobilityHelper mobility170;
 	mobility170.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7087,7 +5587,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility170.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility170.Install(wifiStaNodes170);
+	mobility170.Install(wifi_sta_node_sets[170]);
 //wifi area
 	ns3::MobilityHelper mobility171;
 	mobility171.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7097,7 +5597,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility171.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility171.Install(wifiStaNodes171);
+	mobility171.Install(wifi_sta_node_sets[171]);
 //wifi area
 	ns3::MobilityHelper mobility172;
 	mobility172.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7108,7 +5608,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility172.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility172.Install(wifiStaNodes172);
+	mobility172.Install(wifi_sta_node_sets[172]);
 //wifi area
 	ns3::MobilityHelper mobility173;
 	mobility173.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7118,7 +5618,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility173.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility173.Install(wifiStaNodes173);
+	mobility173.Install(wifi_sta_node_sets[173]);
 //wifi area
 	ns3::MobilityHelper mobility174;
 	mobility174.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7128,7 +5628,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility174.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility174.Install(wifiStaNodes174);
+	mobility174.Install(wifi_sta_node_sets[174]);
 //wifi area
 	ns3::MobilityHelper mobility175;
 	mobility175.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7138,7 +5638,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility175.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility175.Install(wifiStaNodes175);
+	mobility175.Install(wifi_sta_node_sets[175]);
 //wifi area
 	ns3::MobilityHelper mobility176;
 	mobility176.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7148,7 +5648,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility176.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility176.Install(wifiStaNodes176);
+	mobility176.Install(wifi_sta_node_sets[176]);
 //wifi area
 	ns3::MobilityHelper mobility177;
 	mobility177.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7158,7 +5658,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility177.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility177.Install(wifiStaNodes177);
+	mobility177.Install(wifi_sta_node_sets[177]);
 //wifi area
 	ns3::MobilityHelper mobility178;
 	mobility178.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7168,7 +5668,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility178.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility178.Install(wifiStaNodes178);
+	mobility178.Install(wifi_sta_node_sets[178]);
 //wifi area
 	ns3::MobilityHelper mobility179;
 	mobility179.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7178,7 +5678,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility179.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility179.Install(wifiStaNodes179);
+	mobility179.Install(wifi_sta_node_sets[179]);
 //wifi area
 	ns3::MobilityHelper mobility180;
 	mobility180.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7188,7 +5688,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility180.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility180.Install(wifiStaNodes180);
+	mobility180.Install(wifi_sta_node_sets[180]);
 //wifi area
 	ns3::MobilityHelper mobility181;
 	mobility181.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7198,7 +5698,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility181.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility181.Install(wifiStaNodes181);
+	mobility181.Install(wifi_sta_node_sets[181]);
 //wifi area
 	ns3::MobilityHelper mobility182;
 	mobility182.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7208,7 +5708,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility182.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility182.Install(wifiStaNodes182);
+	mobility182.Install(wifi_sta_node_sets[182]);
 //wifi area
 	ns3::MobilityHelper mobility183;
 	mobility183.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7218,7 +5718,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility183.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility183.Install(wifiStaNodes183);
+	mobility183.Install(wifi_sta_node_sets[183]);
 //wifi area
 	ns3::MobilityHelper mobility184;
 	mobility184.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7228,7 +5728,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility184.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility184.Install(wifiStaNodes184);
+	mobility184.Install(wifi_sta_node_sets[184]);
 //wifi area
 	ns3::MobilityHelper mobility185;
 	mobility185.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7238,7 +5738,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility185.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility185.Install(wifiStaNodes185);
+	mobility185.Install(wifi_sta_node_sets[185]);
 //wifi area
 	ns3::MobilityHelper mobility186;
 	mobility186.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7248,7 +5748,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility186.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility186.Install(wifiStaNodes186);
+	mobility186.Install(wifi_sta_node_sets[186]);
 //wifi area
 	ns3::MobilityHelper mobility187;
 	mobility187.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7258,7 +5758,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility187.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility187.Install(wifiStaNodes187);
+	mobility187.Install(wifi_sta_node_sets[187]);
 //wifi area
 	ns3::MobilityHelper mobility188;
 	mobility188.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7268,7 +5768,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility188.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility188.Install(wifiStaNodes188);
+	mobility188.Install(wifi_sta_node_sets[188]);
 //wifi area
 	ns3::MobilityHelper mobility189;
 	mobility189.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7278,7 +5778,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility189.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility189.Install(wifiStaNodes189);
+	mobility189.Install(wifi_sta_node_sets[189]);
 //wifi area
 	ns3::MobilityHelper mobility190;
 	mobility190.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7288,7 +5788,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility190.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility190.Install(wifiStaNodes190);
+	mobility190.Install(wifi_sta_node_sets[190]);
 //wifi area
 	ns3::MobilityHelper mobility191;
 	mobility191.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7298,7 +5798,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility191.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility191.Install(wifiStaNodes191);
+	mobility191.Install(wifi_sta_node_sets[191]);
 //wifi area
 	ns3::MobilityHelper mobility192;
 	mobility192.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7308,7 +5808,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility192.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility192.Install(wifiStaNodes192);
+	mobility192.Install(wifi_sta_node_sets[192]);
 //wifi area
 	ns3::MobilityHelper mobility193;
 	mobility193.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7318,7 +5818,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility193.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility193.Install(wifiStaNodes193);
+	mobility193.Install(wifi_sta_node_sets[193]);
 //wifi area
 	ns3::MobilityHelper mobility194;
 	mobility194.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7328,7 +5828,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility194.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility194.Install(wifiStaNodes194);
+	mobility194.Install(wifi_sta_node_sets[194]);
 //wifi area
 	ns3::MobilityHelper mobility195;
 	mobility195.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7338,7 +5838,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility195.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility195.Install(wifiStaNodes195);
+	mobility195.Install(wifi_sta_node_sets[195]);
 //wifi area
 	ns3::MobilityHelper mobility196;
 	mobility196.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7348,7 +5848,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility196.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility196.Install(wifiStaNodes196);
+	mobility196.Install(wifi_sta_node_sets[196]);
 //wifi area
 	ns3::MobilityHelper mobility197;
 	mobility197.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7358,7 +5858,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility197.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility197.Install(wifiStaNodes197);
+	mobility197.Install(wifi_sta_node_sets[197]);
 //wifi area
 	ns3::MobilityHelper mobility198;
 	mobility198.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7368,7 +5868,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility198.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility198.Install(wifiStaNodes198);
+	mobility198.Install(wifi_sta_node_sets[198]);
 //wifi area
 	ns3::MobilityHelper mobility199;
 	mobility199.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7378,7 +5878,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility199.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility199.Install(wifiStaNodes199);
+	mobility199.Install(wifi_sta_node_sets[199]);
 //wifi area
 	ns3::MobilityHelper mobility200;
 	mobility200.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7388,7 +5888,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility200.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility200.Install(wifiStaNodes200);
+	mobility200.Install(wifi_sta_node_sets[200]);
 //wifi area
 	ns3::MobilityHelper mobility201;
 	mobility201.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7398,7 +5898,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility201.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility201.Install(wifiStaNodes201);
+	mobility201.Install(wifi_sta_node_sets[201]);
 //wifi area
 	ns3::MobilityHelper mobility202;
 	mobility202.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7408,7 +5908,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility202.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility202.Install(wifiStaNodes202);
+	mobility202.Install(wifi_sta_node_sets[202]);
 //wifi area
 	ns3::MobilityHelper mobility203;
 	mobility203.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7418,7 +5918,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility203.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility203.Install(wifiStaNodes203);
+	mobility203.Install(wifi_sta_node_sets[203]);
 //wifi area
 	ns3::MobilityHelper mobility204;
 	mobility204.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7428,7 +5928,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility204.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility204.Install(wifiStaNodes204);
+	mobility204.Install(wifi_sta_node_sets[204]);
 //wifi area
 	ns3::MobilityHelper mobility205;
 	mobility205.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7438,7 +5938,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility205.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility205.Install(wifiStaNodes205);
+	mobility205.Install(wifi_sta_node_sets[205]);
 //wifi area
 	ns3::MobilityHelper mobility206;
 	mobility206.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7448,7 +5948,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility206.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility206.Install(wifiStaNodes206);
+	mobility206.Install(wifi_sta_node_sets[206]);
 //wifi area
 	ns3::MobilityHelper mobility207;
 	mobility207.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7458,7 +5958,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility207.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility207.Install(wifiStaNodes207);
+	mobility207.Install(wifi_sta_node_sets[207]);
 //wifi area
 	ns3::MobilityHelper mobility208;
 	mobility208.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7468,7 +5968,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility208.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility208.Install(wifiStaNodes208);
+	mobility208.Install(wifi_sta_node_sets[208]);
 //wifi area
 	ns3::MobilityHelper mobility209;
 	mobility209.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7478,7 +5978,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility209.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility209.Install(wifiStaNodes209);
+	mobility209.Install(wifi_sta_node_sets[209]);
 //wifi area
 	ns3::MobilityHelper mobility210;
 	mobility210.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7488,7 +5988,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility210.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility210.Install(wifiStaNodes210);
+	mobility210.Install(wifi_sta_node_sets[210]);
 //wifi area
 	ns3::MobilityHelper mobility211;
 	mobility211.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7498,7 +5998,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility211.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility211.Install(wifiStaNodes211);
+	mobility211.Install(wifi_sta_node_sets[211]);
 //wifi area
 	ns3::MobilityHelper mobility212;
 	mobility212.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7508,7 +6008,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility212.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility212.Install(wifiStaNodes212);
+	mobility212.Install(wifi_sta_node_sets[212]);
 //wifi area
 	ns3::MobilityHelper mobility213;
 	mobility213.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7518,7 +6018,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility213.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility213.Install(wifiStaNodes213);
+	mobility213.Install(wifi_sta_node_sets[213]);
 //wifi area
 	ns3::MobilityHelper mobility214;
 	mobility214.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7528,7 +6028,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility214.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility214.Install(wifiStaNodes214);
+	mobility214.Install(wifi_sta_node_sets[214]);
 //wifi area
 	ns3::MobilityHelper mobility215;
 	mobility215.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7538,7 +6038,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility215.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility215.Install(wifiStaNodes215);
+	mobility215.Install(wifi_sta_node_sets[215]);
 //wifi area
 	ns3::MobilityHelper mobility216;
 	mobility216.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7548,7 +6048,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility216.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility216.Install(wifiStaNodes216);
+	mobility216.Install(wifi_sta_node_sets[216]);
 //wifi area
 	ns3::MobilityHelper mobility217;
 	mobility217.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7558,7 +6058,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility217.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility217.Install(wifiStaNodes217);
+	mobility217.Install(wifi_sta_node_sets[217]);
 //wifi area
 	ns3::MobilityHelper mobility218;
 	mobility218.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7568,7 +6068,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility218.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility218.Install(wifiStaNodes218);
+	mobility218.Install(wifi_sta_node_sets[218]);
 //wifi area
 	ns3::MobilityHelper mobility219;
 	mobility219.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7578,7 +6078,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility219.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility219.Install(wifiStaNodes219);
+	mobility219.Install(wifi_sta_node_sets[219]);
 //wifi area
 	ns3::MobilityHelper mobility220;
 	mobility220.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7588,7 +6088,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility220.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility220.Install(wifiStaNodes220);
+	mobility220.Install(wifi_sta_node_sets[220]);
 //wifi area
 	ns3::MobilityHelper mobility221;
 	mobility221.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7598,7 +6098,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility221.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility221.Install(wifiStaNodes221);
+	mobility221.Install(wifi_sta_node_sets[221]);
 //wifi area
 	ns3::MobilityHelper mobility222;
 	mobility222.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7608,7 +6108,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility222.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility222.Install(wifiStaNodes222);
+	mobility222.Install(wifi_sta_node_sets[222]);
 //wifi area
 	ns3::MobilityHelper mobility223;
 	mobility223.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7618,7 +6118,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility223.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility223.Install(wifiStaNodes223);
+	mobility223.Install(wifi_sta_node_sets[223]);
 //wifi area
 	ns3::MobilityHelper mobility224;
 	mobility224.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7628,7 +6128,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility224.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility224.Install(wifiStaNodes224);
+	mobility224.Install(wifi_sta_node_sets[224]);
 //wifi area
 	ns3::MobilityHelper mobility225;
 	mobility225.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7638,7 +6138,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility225.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility225.Install(wifiStaNodes225);
+	mobility225.Install(wifi_sta_node_sets[225]);
 //wifi area
 	ns3::MobilityHelper mobility226;
 	mobility226.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7648,7 +6148,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility226.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility226.Install(wifiStaNodes226);
+	mobility226.Install(wifi_sta_node_sets[226]);
 //wifi area
 	ns3::MobilityHelper mobility227;
 	mobility227.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7658,7 +6158,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility227.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility227.Install(wifiStaNodes227);
+	mobility227.Install(wifi_sta_node_sets[227]);
 //wifi area
 	ns3::MobilityHelper mobility228;
 	mobility228.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7668,7 +6168,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility228.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility228.Install(wifiStaNodes228);
+	mobility228.Install(wifi_sta_node_sets[228]);
 //wifi area
 	ns3::MobilityHelper mobility229;
 	mobility229.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7678,7 +6178,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility229.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility229.Install(wifiStaNodes229);
+	mobility229.Install(wifi_sta_node_sets[229]);
 //wifi area
 	ns3::MobilityHelper mobility230;
 	mobility230.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7688,7 +6188,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility230.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility230.Install(wifiStaNodes230);
+	mobility230.Install(wifi_sta_node_sets[230]);
 //wifi area
 	ns3::MobilityHelper mobility231;
 	mobility231.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7698,7 +6198,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility231.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility231.Install(wifiStaNodes231);
+	mobility231.Install(wifi_sta_node_sets[231]);
 //wifi area
 	ns3::MobilityHelper mobility232;
 	mobility232.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7708,7 +6208,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility232.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility232.Install(wifiStaNodes232);
+	mobility232.Install(wifi_sta_node_sets[232]);
 //wifi area
 	ns3::MobilityHelper mobility233;
 	mobility233.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7718,7 +6218,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility233.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility233.Install(wifiStaNodes233);
+	mobility233.Install(wifi_sta_node_sets[233]);
 //wifi area
 	ns3::MobilityHelper mobility234;
 	mobility234.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7728,7 +6228,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility234.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility234.Install(wifiStaNodes234);
+	mobility234.Install(wifi_sta_node_sets[234]);
 //wifi area
 	ns3::MobilityHelper mobility235;
 	mobility235.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7738,7 +6238,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility235.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility235.Install(wifiStaNodes235);
+	mobility235.Install(wifi_sta_node_sets[235]);
 //wifi area
 	ns3::MobilityHelper mobility236;
 	mobility236.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7748,7 +6248,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility236.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility236.Install(wifiStaNodes236);
+	mobility236.Install(wifi_sta_node_sets[236]);
 //wifi area
 	ns3::MobilityHelper mobility237;
 	mobility237.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7758,7 +6258,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility237.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility237.Install(wifiStaNodes237);
+	mobility237.Install(wifi_sta_node_sets[237]);
 //wifi area
 	ns3::MobilityHelper mobility238;
 	mobility238.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7768,7 +6268,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility238.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility238.Install(wifiStaNodes238);
+	mobility238.Install(wifi_sta_node_sets[238]);
 //wifi area
 	ns3::MobilityHelper mobility239;
 	mobility239.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7778,7 +6278,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility239.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility239.Install(wifiStaNodes239);
+	mobility239.Install(wifi_sta_node_sets[239]);
 //wifi area
 	ns3::MobilityHelper mobility240;
 	mobility240.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7788,7 +6288,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility240.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility240.Install(wifiStaNodes240);
+	mobility240.Install(wifi_sta_node_sets[240]);
 //wifi area
 	ns3::MobilityHelper mobility241;
 	mobility241.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7798,7 +6298,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility241.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility241.Install(wifiStaNodes241);
+	mobility241.Install(wifi_sta_node_sets[241]);
 //wifi area
 	ns3::MobilityHelper mobility242;
 	mobility242.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7808,7 +6308,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility242.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility242.Install(wifiStaNodes242);
+	mobility242.Install(wifi_sta_node_sets[242]);
 //wifi area
 	ns3::MobilityHelper mobility243;
 	mobility243.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7818,7 +6318,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility243.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility243.Install(wifiStaNodes243);
+	mobility243.Install(wifi_sta_node_sets[243]);
 //wifi area
 	ns3::MobilityHelper mobility244;
 	mobility244.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7828,7 +6328,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility244.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility244.Install(wifiStaNodes244);
+	mobility244.Install(wifi_sta_node_sets[244]);
 //wifi area
 	ns3::MobilityHelper mobility245;
 	mobility245.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7838,7 +6338,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility245.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility245.Install(wifiStaNodes245);
+	mobility245.Install(wifi_sta_node_sets[245]);
 //wifi area
 	ns3::MobilityHelper mobility246;
 	mobility246.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7848,7 +6348,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility246.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility246.Install(wifiStaNodes246);
+	mobility246.Install(wifi_sta_node_sets[246]);
 //wifi area
 	ns3::MobilityHelper mobility247;
 	mobility247.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7858,7 +6358,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility247.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility247.Install(wifiStaNodes247);
+	mobility247.Install(wifi_sta_node_sets[247]);
 //wifi area
 	ns3::MobilityHelper mobility248;
 	mobility248.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7868,7 +6368,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility248.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility248.Install(wifiStaNodes248);
+	mobility248.Install(wifi_sta_node_sets[248]);
 //wifi area
 	ns3::MobilityHelper mobility249;
 	mobility249.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7878,7 +6378,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility249.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility249.Install(wifiStaNodes249);
+	mobility249.Install(wifi_sta_node_sets[249]);
 //wifi area
 	ns3::MobilityHelper mobility250;
 	mobility250.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7888,7 +6388,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility250.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility250.Install(wifiStaNodes250);
+	mobility250.Install(wifi_sta_node_sets[250]);
 //wifi area
 	ns3::MobilityHelper mobility251;
 	mobility251.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7898,7 +6398,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility251.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility251.Install(wifiStaNodes251);
+	mobility251.Install(wifi_sta_node_sets[251]);
 //wifi area
 	ns3::MobilityHelper mobility252;
 	mobility252.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7908,7 +6408,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility252.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility252.Install(wifiStaNodes252);
+	mobility252.Install(wifi_sta_node_sets[252]);
 //wifi area
 	ns3::MobilityHelper mobility253;
 	mobility253.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7918,7 +6418,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility253.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility253.Install(wifiStaNodes253);
+	mobility253.Install(wifi_sta_node_sets[253]);
 //wifi area
 	ns3::MobilityHelper mobility254;
 	mobility254.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7928,7 +6428,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility254.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility254.Install(wifiStaNodes254);
+	mobility254.Install(wifi_sta_node_sets[254]);
 //wifi area
 	ns3::MobilityHelper mobility255;
 	mobility255.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7938,7 +6438,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility255.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility255.Install(wifiStaNodes255);
+	mobility255.Install(wifi_sta_node_sets[255]);
 //wifi area
 	ns3::MobilityHelper mobility256;
 	mobility256.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7948,7 +6448,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility256.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility256.Install(wifiStaNodes256);
+	mobility256.Install(wifi_sta_node_sets[256]);
 //wifi area
 	ns3::MobilityHelper mobility257;
 	mobility257.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7958,7 +6458,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility257.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility257.Install(wifiStaNodes257);
+	mobility257.Install(wifi_sta_node_sets[257]);
 //wifi area
 	ns3::MobilityHelper mobility258;
 	mobility258.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7968,7 +6468,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility258.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility258.Install(wifiStaNodes258);
+	mobility258.Install(wifi_sta_node_sets[258]);
 //wifi area
 	ns3::MobilityHelper mobility259;
 	mobility259.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7978,7 +6478,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility259.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility259.Install(wifiStaNodes259);
+	mobility259.Install(wifi_sta_node_sets[259]);
 //wifi area
 	ns3::MobilityHelper mobility260;
 	mobility260.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7988,7 +6488,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility260.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility260.Install(wifiStaNodes260);
+	mobility260.Install(wifi_sta_node_sets[260]);
 //wifi area
 	ns3::MobilityHelper mobility261;
 	mobility261.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -7998,7 +6498,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility261.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility261.Install(wifiStaNodes261);
+	mobility261.Install(wifi_sta_node_sets[261]);
 //wifi area
 	ns3::MobilityHelper mobility262;
 	mobility262.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8008,7 +6508,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility262.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility262.Install(wifiStaNodes262);
+	mobility262.Install(wifi_sta_node_sets[262]);
 //wifi area
 	ns3::MobilityHelper mobility263;
 	mobility263.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8018,7 +6518,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility263.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility263.Install(wifiStaNodes263);
+	mobility263.Install(wifi_sta_node_sets[263]);
 //wifi area
 	ns3::MobilityHelper mobility264;
 	mobility264.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8028,7 +6528,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility264.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility264.Install(wifiStaNodes264);
+	mobility264.Install(wifi_sta_node_sets[264]);
 //wifi area
 	ns3::MobilityHelper mobility265;
 	mobility265.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8038,7 +6538,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility265.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility265.Install(wifiStaNodes265);
+	mobility265.Install(wifi_sta_node_sets[265]);
 //wifi area
 	ns3::MobilityHelper mobility266;
 	mobility266.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8048,7 +6548,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility266.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility266.Install(wifiStaNodes266);
+	mobility266.Install(wifi_sta_node_sets[266]);
 //wifi area
 	ns3::MobilityHelper mobility267;
 	mobility267.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8058,7 +6558,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility267.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility267.Install(wifiStaNodes267);
+	mobility267.Install(wifi_sta_node_sets[267]);
 //wifi area
 	ns3::MobilityHelper mobility268;
 	mobility268.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8068,7 +6568,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility268.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility268.Install(wifiStaNodes268);
+	mobility268.Install(wifi_sta_node_sets[268]);
 //wifi area
 	ns3::MobilityHelper mobility269;
 	mobility269.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8078,7 +6578,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility269.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility269.Install(wifiStaNodes269);
+	mobility269.Install(wifi_sta_node_sets[269]);
 //wifi area
 	ns3::MobilityHelper mobility270;
 	mobility270.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8088,7 +6588,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility270.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility270.Install(wifiStaNodes270);
+	mobility270.Install(wifi_sta_node_sets[270]);
 //wifi area
 	ns3::MobilityHelper mobility271;
 	mobility271.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8098,7 +6598,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility271.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility271.Install(wifiStaNodes271);
+	mobility271.Install(wifi_sta_node_sets[271]);
 //wifi area
 	ns3::MobilityHelper mobility272;
 	mobility272.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8109,7 +6609,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility272.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility272.Install(wifiStaNodes272);
+	mobility272.Install(wifi_sta_node_sets[272]);
 //wifi area
 	ns3::MobilityHelper mobility273;
 	mobility273.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8119,7 +6619,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility273.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility273.Install(wifiStaNodes273);
+	mobility273.Install(wifi_sta_node_sets[273]);
 //wifi area
 	ns3::MobilityHelper mobility274;
 	mobility274.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8129,7 +6629,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility274.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility274.Install(wifiStaNodes274);
+	mobility274.Install(wifi_sta_node_sets[274]);
 //wifi area
 	ns3::MobilityHelper mobility275;
 	mobility275.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8139,7 +6639,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility275.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility275.Install(wifiStaNodes275);
+	mobility275.Install(wifi_sta_node_sets[275]);
 //wifi area
 	ns3::MobilityHelper mobility276;
 	mobility276.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8149,7 +6649,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility276.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility276.Install(wifiStaNodes276);
+	mobility276.Install(wifi_sta_node_sets[276]);
 //wifi area
 	ns3::MobilityHelper mobility277;
 	mobility277.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8159,7 +6659,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility277.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility277.Install(wifiStaNodes277);
+	mobility277.Install(wifi_sta_node_sets[277]);
 //wifi area
 	ns3::MobilityHelper mobility278;
 	mobility278.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8169,7 +6669,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility278.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility278.Install(wifiStaNodes278);
+	mobility278.Install(wifi_sta_node_sets[278]);
 //wifi area
 	ns3::MobilityHelper mobility279;
 	mobility279.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8179,7 +6679,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility279.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility279.Install(wifiStaNodes279);
+	mobility279.Install(wifi_sta_node_sets[279]);
 //wifi area
 	ns3::MobilityHelper mobility280;
 	mobility280.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8189,7 +6689,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility280.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility280.Install(wifiStaNodes280);
+	mobility280.Install(wifi_sta_node_sets[280]);
 //wifi area
 	ns3::MobilityHelper mobility281;
 	mobility281.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8199,7 +6699,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility281.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility281.Install(wifiStaNodes281);
+	mobility281.Install(wifi_sta_node_sets[281]);
 //wifi area
 	ns3::MobilityHelper mobility282;
 	mobility282.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8209,7 +6709,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility282.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility282.Install(wifiStaNodes282);
+	mobility282.Install(wifi_sta_node_sets[282]);
 //wifi area
 	ns3::MobilityHelper mobility283;
 	mobility283.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8219,7 +6719,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility283.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility283.Install(wifiStaNodes283);
+	mobility283.Install(wifi_sta_node_sets[283]);
 //wifi area
 	ns3::MobilityHelper mobility284;
 	mobility284.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8229,7 +6729,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility284.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility284.Install(wifiStaNodes284);
+	mobility284.Install(wifi_sta_node_sets[284]);
 //wifi area
 	ns3::MobilityHelper mobility285;
 	mobility285.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8239,7 +6739,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility285.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility285.Install(wifiStaNodes285);
+	mobility285.Install(wifi_sta_node_sets[285]);
 //wifi area
 	ns3::MobilityHelper mobility286;
 	mobility286.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8249,7 +6749,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility286.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility286.Install(wifiStaNodes286);
+	mobility286.Install(wifi_sta_node_sets[286]);
 //wifi area
 	ns3::MobilityHelper mobility287;
 	mobility287.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8259,7 +6759,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility287.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility287.Install(wifiStaNodes287);
+	mobility287.Install(wifi_sta_node_sets[287]);
 //wifi area
 	ns3::MobilityHelper mobility288;
 	mobility288.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8269,7 +6769,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility288.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility288.Install(wifiStaNodes288);
+	mobility288.Install(wifi_sta_node_sets[288]);
 //wifi area
 	ns3::MobilityHelper mobility289;
 	mobility289.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8279,7 +6779,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility289.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility289.Install(wifiStaNodes289);
+	mobility289.Install(wifi_sta_node_sets[289]);
 //wifi area
 	ns3::MobilityHelper mobility290;
 	mobility290.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8289,7 +6789,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility290.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility290.Install(wifiStaNodes290);
+	mobility290.Install(wifi_sta_node_sets[290]);
 //wifi area
 	ns3::MobilityHelper mobility291;
 	mobility291.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8299,7 +6799,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility291.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility291.Install(wifiStaNodes291);
+	mobility291.Install(wifi_sta_node_sets[291]);
 //wifi area
 	ns3::MobilityHelper mobility292;
 	mobility292.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8309,7 +6809,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility292.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility292.Install(wifiStaNodes292);
+	mobility292.Install(wifi_sta_node_sets[292]);
 //wifi area
 	ns3::MobilityHelper mobility293;
 	mobility293.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8319,7 +6819,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility293.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility293.Install(wifiStaNodes293);
+	mobility293.Install(wifi_sta_node_sets[293]);
 //wifi area
 	ns3::MobilityHelper mobility294;
 	mobility294.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8329,7 +6829,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility294.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility294.Install(wifiStaNodes294);
+	mobility294.Install(wifi_sta_node_sets[294]);
 //wifi area
 	ns3::MobilityHelper mobility295;
 	mobility295.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8339,7 +6839,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility295.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility295.Install(wifiStaNodes295);
+	mobility295.Install(wifi_sta_node_sets[295]);
 //wifi area
 	ns3::MobilityHelper mobility296;
 	mobility296.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8349,7 +6849,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility296.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility296.Install(wifiStaNodes296);
+	mobility296.Install(wifi_sta_node_sets[296]);
 //wifi area
 	ns3::MobilityHelper mobility297;
 	mobility297.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8359,7 +6859,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility297.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility297.Install(wifiStaNodes297);
+	mobility297.Install(wifi_sta_node_sets[297]);
 // #wifi area
 //    mobility298 = ns3::MobilityHelper()
 //    mobility298.SetPositionAllocator ("ns3::GridPositionAllocator",
@@ -8393,7 +6893,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility300.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility300.Install(wifiStaNodes300);
+	mobility300.Install(wifi_sta_node_sets[300]);
 //wifi area
 	ns3::MobilityHelper mobility301;
 	mobility301.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8403,7 +6903,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility301.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility301.Install(wifiStaNodes301);
+	mobility301.Install(wifi_sta_node_sets[301]);
 //wifi area
 	ns3::MobilityHelper mobility302;
 	mobility302.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8413,7 +6913,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility302.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility302.Install(wifiStaNodes302);
+	mobility302.Install(wifi_sta_node_sets[302]);
 //wifi area
 	ns3::MobilityHelper mobility303;
 	mobility303.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8423,7 +6923,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility303.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility303.Install(wifiStaNodes303);
+	mobility303.Install(wifi_sta_node_sets[303]);
 //wifi area
 	ns3::MobilityHelper mobility304;
 	mobility304.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8433,7 +6933,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility304.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility304.Install(wifiStaNodes304);
+	mobility304.Install(wifi_sta_node_sets[304]);
 //wifi area
 	ns3::MobilityHelper mobility305;
 	mobility305.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8443,7 +6943,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility305.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility305.Install(wifiStaNodes305);
+	mobility305.Install(wifi_sta_node_sets[305]);
 // #wifi area
 //    mobility306 = ns3::MobilityHelper()
 //    mobility306.SetPositionAllocator ("ns3::GridPositionAllocator",
@@ -8465,7 +6965,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility307.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility307.Install(wifiStaNodes307);
+	mobility307.Install(wifi_sta_node_sets[307]);
 //wifi area
 	ns3::MobilityHelper mobility308;
 	mobility308.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8475,7 +6975,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility308.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility308.Install(wifiStaNodes308);
+	mobility308.Install(wifi_sta_node_sets[308]);
 //wifi area
 	ns3::MobilityHelper mobility309;
 	mobility309.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8485,7 +6985,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility309.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility309.Install(wifiStaNodes309);
+	mobility309.Install(wifi_sta_node_sets[309]);
 //wifi area
 	ns3::MobilityHelper mobility310;
 	mobility310.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8495,7 +6995,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility310.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility310.Install(wifiStaNodes310);
+	mobility310.Install(wifi_sta_node_sets[310]);
 //wifi area
 	ns3::MobilityHelper mobility311;
 	mobility311.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8505,7 +7005,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility311.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility311.Install(wifiStaNodes311);
+	mobility311.Install(wifi_sta_node_sets[311]);
 //wifi area
 	ns3::MobilityHelper mobility312;
 	mobility312.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8515,7 +7015,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility312.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility312.Install(wifiStaNodes312);
+	mobility312.Install(wifi_sta_node_sets[312]);
 //wifi area
 	ns3::MobilityHelper mobility313;
 	mobility313.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8525,7 +7025,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility313.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility313.Install(wifiStaNodes313);
+	mobility313.Install(wifi_sta_node_sets[313]);
 //wifi area
 	ns3::MobilityHelper mobility314;
 	mobility314.SetPositionAllocator("ns3::GridPositionAllocator", "MinX",
@@ -8535,7 +7035,7 @@ int main(int argc, char** argv) {
 //stanodes mobility
 	mobility314.SetMobilityModel("ns3::RandomWalk2dMobilityModel", "Bounds",
 			ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
-	mobility314.Install(wifiStaNodes314);
+	mobility314.Install(wifi_sta_node_sets[314]);
 // #wifi area
 //    mobility315 = ns3::MobilityHelper()
 //    mobility315.SetPositionAllocator ("ns3::GridPositionAllocator",
@@ -8552,320 +7052,320 @@ int main(int argc, char** argv) {
 
 // apnodes mobility
 	mobility.SetMobilityModel("ns3::ConstantPositionMobilityModel");
-	mobility.Install(wifiApNode1);
-	mobility.Install(wifiApNode2);
-	mobility.Install(wifiApNode3);
-	mobility.Install(wifiApNode4);
-	mobility.Install(wifiApNode5);
-	mobility.Install(wifiApNode6);
-	mobility.Install(wifiApNode7);
-	mobility.Install(wifiApNode8);
-	mobility.Install(wifiApNode9);
-	mobility.Install(wifiApNode10);
-	mobility.Install(wifiApNode11);
-	mobility.Install(wifiApNode12);
-	mobility.Install(wifiApNode13);
-	mobility.Install(wifiApNode14);
-	mobility.Install(wifiApNode15);
-	mobility.Install(wifiApNode16);
-	mobility.Install(wifiApNode17);
-	mobility.Install(wifiApNode18);
-	mobility.Install(wifiApNode19);
-	mobility.Install(wifiApNode20);
-	mobility.Install(wifiApNode21);
-	mobility.Install(wifiApNode22);
-	mobility.Install(wifiApNode23);
-	mobility.Install(wifiApNode24);
-	mobility.Install(wifiApNode25);
-	mobility.Install(wifiApNode26);
-	mobility.Install(wifiApNode27);
-	mobility.Install(wifiApNode28);
-	mobility.Install(wifiApNode29);
-	mobility.Install(wifiApNode30);
-	mobility.Install(wifiApNode31);
-	mobility.Install(wifiApNode32);
-	mobility.Install(wifiApNode33);
-	mobility.Install(wifiApNode34);
-	mobility.Install(wifiApNode35);
-	mobility.Install(wifiApNode36);
-	mobility.Install(wifiApNode37);
-	mobility.Install(wifiApNode38);
-	mobility.Install(wifiApNode39);
-	mobility.Install(wifiApNode40);
-	mobility.Install(wifiApNode41);
-	mobility.Install(wifiApNode42);
-	mobility.Install(wifiApNode43);
-	mobility.Install(wifiApNode44);
-	mobility.Install(wifiApNode45);
-	mobility.Install(wifiApNode46);
-	mobility.Install(wifiApNode47);
-	mobility.Install(wifiApNode48);
-	mobility.Install(wifiApNode49);
-	mobility.Install(wifiApNode50);
-	mobility.Install(wifiApNode51);
-	mobility.Install(wifiApNode52);
-	mobility.Install(wifiApNode53);
-	mobility.Install(wifiApNode54);
-	mobility.Install(wifiApNode55);
-	mobility.Install(wifiApNode56);
-	mobility.Install(wifiApNode57);
-	mobility.Install(wifiApNode58);
-	mobility.Install(wifiApNode59);
-	mobility.Install(wifiApNode60);
-	mobility.Install(wifiApNode61);
-	mobility.Install(wifiApNode62);
-	mobility.Install(wifiApNode63);
-	mobility.Install(wifiApNode64);
-	mobility.Install(wifiApNode65);
-	mobility.Install(wifiApNode66);
-	mobility.Install(wifiApNode67);
-	mobility.Install(wifiApNode68);
-	mobility.Install(wifiApNode69);
-	mobility.Install(wifiApNode70);
-	mobility.Install(wifiApNode71);
-	mobility.Install(wifiApNode72);
-	mobility.Install(wifiApNode73);
-	mobility.Install(wifiApNode74);
-	mobility.Install(wifiApNode75);
-	mobility.Install(wifiApNode76);
-	mobility.Install(wifiApNode77);
-	mobility.Install(wifiApNode78);
-	mobility.Install(wifiApNode79);
-	mobility.Install(wifiApNode80);
-	mobility.Install(wifiApNode81);
-	mobility.Install(wifiApNode82);
-	mobility.Install(wifiApNode83);
-	mobility.Install(wifiApNode84);
-	mobility.Install(wifiApNode85);
-	mobility.Install(wifiApNode86);
-	mobility.Install(wifiApNode87);
-	mobility.Install(wifiApNode88);
-	mobility.Install(wifiApNode89);
-	mobility.Install(wifiApNode90);
-	mobility.Install(wifiApNode91);
-	mobility.Install(wifiApNode92);
-	mobility.Install(wifiApNode93);
-	mobility.Install(wifiApNode94);
-	mobility.Install(wifiApNode95);
-	mobility.Install(wifiApNode96);
-	mobility.Install(wifiApNode97);
-	mobility.Install(wifiApNode98);
-	mobility.Install(wifiApNode99);
-	mobility.Install(wifiApNode100);
-	mobility.Install(wifiApNode101);
-	mobility.Install(wifiApNode102);
-	mobility.Install(wifiApNode103);
-	mobility.Install(wifiApNode104);
-	mobility.Install(wifiApNode105);
-	mobility.Install(wifiApNode106);
-	mobility.Install(wifiApNode107);
-	mobility.Install(wifiApNode108);
-	mobility.Install(wifiApNode109);
-	mobility.Install(wifiApNode110);
-	mobility.Install(wifiApNode111);
-	mobility.Install(wifiApNode112);
-	mobility.Install(wifiApNode113);
-	mobility.Install(wifiApNode114);
-	mobility.Install(wifiApNode115);
-	mobility.Install(wifiApNode116);
-	mobility.Install(wifiApNode117);
-	mobility.Install(wifiApNode118);
-	mobility.Install(wifiApNode119);
-	mobility.Install(wifiApNode120);
-	mobility.Install(wifiApNode121);
-	mobility.Install(wifiApNode122);
-	mobility.Install(wifiApNode123);
-	mobility.Install(wifiApNode124);
-	mobility.Install(wifiApNode125);
-	mobility.Install(wifiApNode126);
-	mobility.Install(wifiApNode127);
-	mobility.Install(wifiApNode128);
-	mobility.Install(wifiApNode129);
-	mobility.Install(wifiApNode130);
-	mobility.Install(wifiApNode131);
-	mobility.Install(wifiApNode132);
-	mobility.Install(wifiApNode133);
-	mobility.Install(wifiApNode134);
-	mobility.Install(wifiApNode135);
-	mobility.Install(wifiApNode136);
-	mobility.Install(wifiApNode137);
-	mobility.Install(wifiApNode138);
-	mobility.Install(wifiApNode139);
-	mobility.Install(wifiApNode140);
-	mobility.Install(wifiApNode141);
-	mobility.Install(wifiApNode142);
-	mobility.Install(wifiApNode143);
-	mobility.Install(wifiApNode144);
-	mobility.Install(wifiApNode145);
-	mobility.Install(wifiApNode146);
-	mobility.Install(wifiApNode147);
-	mobility.Install(wifiApNode148);
-	mobility.Install(wifiApNode149);
-	mobility.Install(wifiApNode150);
-	mobility.Install(wifiApNode151);
-	mobility.Install(wifiApNode152);
-	mobility.Install(wifiApNode153);
-	mobility.Install(wifiApNode154);
-	mobility.Install(wifiApNode155);
-	mobility.Install(wifiApNode156);
-	mobility.Install(wifiApNode157);
-	mobility.Install(wifiApNode158);
-	mobility.Install(wifiApNode159);
-	mobility.Install(wifiApNode160);
-	mobility.Install(wifiApNode161);
-	mobility.Install(wifiApNode162);
-	mobility.Install(wifiApNode163);
-	mobility.Install(wifiApNode164);
-	mobility.Install(wifiApNode165);
-	mobility.Install(wifiApNode166);
-	mobility.Install(wifiApNode167);
-	mobility.Install(wifiApNode168);
-	mobility.Install(wifiApNode169);
-	mobility.Install(wifiApNode170);
-	mobility.Install(wifiApNode171);
-	mobility.Install(wifiApNode172);
-	mobility.Install(wifiApNode173);
-	mobility.Install(wifiApNode174);
-	mobility.Install(wifiApNode175);
-	mobility.Install(wifiApNode176);
-	mobility.Install(wifiApNode177);
-	mobility.Install(wifiApNode178);
-	mobility.Install(wifiApNode179);
-	mobility.Install(wifiApNode180);
-	mobility.Install(wifiApNode181);
-	mobility.Install(wifiApNode182);
-	mobility.Install(wifiApNode183);
-	mobility.Install(wifiApNode184);
-	mobility.Install(wifiApNode185);
-	mobility.Install(wifiApNode186);
-	mobility.Install(wifiApNode187);
-	mobility.Install(wifiApNode188);
-	mobility.Install(wifiApNode189);
-	mobility.Install(wifiApNode190);
-	mobility.Install(wifiApNode191);
-	mobility.Install(wifiApNode192);
-	mobility.Install(wifiApNode193);
-	mobility.Install(wifiApNode194);
-	mobility.Install(wifiApNode195);
-	mobility.Install(wifiApNode196);
-	mobility.Install(wifiApNode197);
-	mobility.Install(wifiApNode198);
-	mobility.Install(wifiApNode199);
-	mobility.Install(wifiApNode200);
-	mobility.Install(wifiApNode201);
-	mobility.Install(wifiApNode202);
-	mobility.Install(wifiApNode203);
-	mobility.Install(wifiApNode204);
-	mobility.Install(wifiApNode205);
-	mobility.Install(wifiApNode206);
-	mobility.Install(wifiApNode207);
-	mobility.Install(wifiApNode208);
-	mobility.Install(wifiApNode209);
-	mobility.Install(wifiApNode210);
-	mobility.Install(wifiApNode211);
-	mobility.Install(wifiApNode212);
-	mobility.Install(wifiApNode213);
-	mobility.Install(wifiApNode214);
-	mobility.Install(wifiApNode215);
-	mobility.Install(wifiApNode216);
-	mobility.Install(wifiApNode217);
-	mobility.Install(wifiApNode218);
-	mobility.Install(wifiApNode219);
-	mobility.Install(wifiApNode220);
-	mobility.Install(wifiApNode221);
-	mobility.Install(wifiApNode222);
-	mobility.Install(wifiApNode223);
-	mobility.Install(wifiApNode224);
-	mobility.Install(wifiApNode225);
-	mobility.Install(wifiApNode226);
-	mobility.Install(wifiApNode227);
-	mobility.Install(wifiApNode228);
-	mobility.Install(wifiApNode229);
-	mobility.Install(wifiApNode230);
-	mobility.Install(wifiApNode231);
-	mobility.Install(wifiApNode232);
-	mobility.Install(wifiApNode233);
-	mobility.Install(wifiApNode234);
-	mobility.Install(wifiApNode235);
-	mobility.Install(wifiApNode236);
-	mobility.Install(wifiApNode237);
-	mobility.Install(wifiApNode238);
-	mobility.Install(wifiApNode239);
-	mobility.Install(wifiApNode240);
-	mobility.Install(wifiApNode241);
-	mobility.Install(wifiApNode242);
-	mobility.Install(wifiApNode243);
-	mobility.Install(wifiApNode244);
-	mobility.Install(wifiApNode245);
-	mobility.Install(wifiApNode246);
-	mobility.Install(wifiApNode247);
-	mobility.Install(wifiApNode248);
-	mobility.Install(wifiApNode249);
-	mobility.Install(wifiApNode250);
-	mobility.Install(wifiApNode251);
-	mobility.Install(wifiApNode252);
-	mobility.Install(wifiApNode253);
-	mobility.Install(wifiApNode254);
-	mobility.Install(wifiApNode255);
-	mobility.Install(wifiApNode256);
-	mobility.Install(wifiApNode257);
-	mobility.Install(wifiApNode258);
-	mobility.Install(wifiApNode259);
-	mobility.Install(wifiApNode260);
-	mobility.Install(wifiApNode261);
-	mobility.Install(wifiApNode262);
-	mobility.Install(wifiApNode263);
-	mobility.Install(wifiApNode264);
-	mobility.Install(wifiApNode265);
-	mobility.Install(wifiApNode266);
-	mobility.Install(wifiApNode267);
-	mobility.Install(wifiApNode268);
-	mobility.Install(wifiApNode269);
-	mobility.Install(wifiApNode270);
-	mobility.Install(wifiApNode271);
-	mobility.Install(wifiApNode272);
-	mobility.Install(wifiApNode273);
-	mobility.Install(wifiApNode274);
-	mobility.Install(wifiApNode275);
-	mobility.Install(wifiApNode276);
-	mobility.Install(wifiApNode277);
-	mobility.Install(wifiApNode278);
-	mobility.Install(wifiApNode279);
-	mobility.Install(wifiApNode280);
-	mobility.Install(wifiApNode281);
-	mobility.Install(wifiApNode282);
-	mobility.Install(wifiApNode283);
-	mobility.Install(wifiApNode284);
-	mobility.Install(wifiApNode285);
-	mobility.Install(wifiApNode286);
-	mobility.Install(wifiApNode287);
-	mobility.Install(wifiApNode288);
-	mobility.Install(wifiApNode289);
-	mobility.Install(wifiApNode290);
-	mobility.Install(wifiApNode291);
-	mobility.Install(wifiApNode292);
-	mobility.Install(wifiApNode293);
-	mobility.Install(wifiApNode294);
-	mobility.Install(wifiApNode295);
-	mobility.Install(wifiApNode296);
-	mobility.Install(wifiApNode297);
+	mobility.Install(wifi_ap_nodes[1]);
+	mobility.Install(wifi_ap_nodes[2]);
+	mobility.Install(wifi_ap_nodes[3]);
+	mobility.Install(wifi_ap_nodes[4]);
+	mobility.Install(wifi_ap_nodes[5]);
+	mobility.Install(wifi_ap_nodes[6]);
+	mobility.Install(wifi_ap_nodes[7]);
+	mobility.Install(wifi_ap_nodes[8]);
+	mobility.Install(wifi_ap_nodes[9]);
+	mobility.Install(wifi_ap_nodes[10]);
+	mobility.Install(wifi_ap_nodes[11]);
+	mobility.Install(wifi_ap_nodes[12]);
+	mobility.Install(wifi_ap_nodes[13]);
+	mobility.Install(wifi_ap_nodes[14]);
+	mobility.Install(wifi_ap_nodes[15]);
+	mobility.Install(wifi_ap_nodes[16]);
+	mobility.Install(wifi_ap_nodes[17]);
+	mobility.Install(wifi_ap_nodes[18]);
+	mobility.Install(wifi_ap_nodes[19]);
+	mobility.Install(wifi_ap_nodes[20]);
+	mobility.Install(wifi_ap_nodes[21]);
+	mobility.Install(wifi_ap_nodes[22]);
+	mobility.Install(wifi_ap_nodes[23]);
+	mobility.Install(wifi_ap_nodes[24]);
+	mobility.Install(wifi_ap_nodes[25]);
+	mobility.Install(wifi_ap_nodes[26]);
+	mobility.Install(wifi_ap_nodes[27]);
+	mobility.Install(wifi_ap_nodes[28]);
+	mobility.Install(wifi_ap_nodes[29]);
+	mobility.Install(wifi_ap_nodes[30]);
+	mobility.Install(wifi_ap_nodes[31]);
+	mobility.Install(wifi_ap_nodes[32]);
+	mobility.Install(wifi_ap_nodes[33]);
+	mobility.Install(wifi_ap_nodes[34]);
+	mobility.Install(wifi_ap_nodes[35]);
+	mobility.Install(wifi_ap_nodes[36]);
+	mobility.Install(wifi_ap_nodes[37]);
+	mobility.Install(wifi_ap_nodes[38]);
+	mobility.Install(wifi_ap_nodes[39]);
+	mobility.Install(wifi_ap_nodes[40]);
+	mobility.Install(wifi_ap_nodes[41]);
+	mobility.Install(wifi_ap_nodes[42]);
+	mobility.Install(wifi_ap_nodes[43]);
+	mobility.Install(wifi_ap_nodes[44]);
+	mobility.Install(wifi_ap_nodes[45]);
+	mobility.Install(wifi_ap_nodes[46]);
+	mobility.Install(wifi_ap_nodes[47]);
+	mobility.Install(wifi_ap_nodes[48]);
+	mobility.Install(wifi_ap_nodes[49]);
+	mobility.Install(wifi_ap_nodes[50]);
+	mobility.Install(wifi_ap_nodes[51]);
+	mobility.Install(wifi_ap_nodes[52]);
+	mobility.Install(wifi_ap_nodes[53]);
+	mobility.Install(wifi_ap_nodes[54]);
+	mobility.Install(wifi_ap_nodes[55]);
+	mobility.Install(wifi_ap_nodes[56]);
+	mobility.Install(wifi_ap_nodes[57]);
+	mobility.Install(wifi_ap_nodes[58]);
+	mobility.Install(wifi_ap_nodes[59]);
+	mobility.Install(wifi_ap_nodes[60]);
+	mobility.Install(wifi_ap_nodes[61]);
+	mobility.Install(wifi_ap_nodes[62]);
+	mobility.Install(wifi_ap_nodes[63]);
+	mobility.Install(wifi_ap_nodes[64]);
+	mobility.Install(wifi_ap_nodes[65]);
+	mobility.Install(wifi_ap_nodes[66]);
+	mobility.Install(wifi_ap_nodes[67]);
+	mobility.Install(wifi_ap_nodes[68]);
+	mobility.Install(wifi_ap_nodes[69]);
+	mobility.Install(wifi_ap_nodes[70]);
+	mobility.Install(wifi_ap_nodes[71]);
+	mobility.Install(wifi_ap_nodes[72]);
+	mobility.Install(wifi_ap_nodes[73]);
+	mobility.Install(wifi_ap_nodes[74]);
+	mobility.Install(wifi_ap_nodes[75]);
+	mobility.Install(wifi_ap_nodes[76]);
+	mobility.Install(wifi_ap_nodes[77]);
+	mobility.Install(wifi_ap_nodes[78]);
+	mobility.Install(wifi_ap_nodes[79]);
+	mobility.Install(wifi_ap_nodes[80]);
+	mobility.Install(wifi_ap_nodes[81]);
+	mobility.Install(wifi_ap_nodes[82]);
+	mobility.Install(wifi_ap_nodes[83]);
+	mobility.Install(wifi_ap_nodes[84]);
+	mobility.Install(wifi_ap_nodes[85]);
+	mobility.Install(wifi_ap_nodes[86]);
+	mobility.Install(wifi_ap_nodes[87]);
+	mobility.Install(wifi_ap_nodes[88]);
+	mobility.Install(wifi_ap_nodes[89]);
+	mobility.Install(wifi_ap_nodes[90]);
+	mobility.Install(wifi_ap_nodes[91]);
+	mobility.Install(wifi_ap_nodes[92]);
+	mobility.Install(wifi_ap_nodes[93]);
+	mobility.Install(wifi_ap_nodes[94]);
+	mobility.Install(wifi_ap_nodes[95]);
+	mobility.Install(wifi_ap_nodes[96]);
+	mobility.Install(wifi_ap_nodes[97]);
+	mobility.Install(wifi_ap_nodes[98]);
+	mobility.Install(wifi_ap_nodes[99]);
+	mobility.Install(wifi_ap_nodes[100]);
+	mobility.Install(wifi_ap_nodes[101]);
+	mobility.Install(wifi_ap_nodes[102]);
+	mobility.Install(wifi_ap_nodes[103]);
+	mobility.Install(wifi_ap_nodes[104]);
+	mobility.Install(wifi_ap_nodes[105]);
+	mobility.Install(wifi_ap_nodes[106]);
+	mobility.Install(wifi_ap_nodes[107]);
+	mobility.Install(wifi_ap_nodes[108]);
+	mobility.Install(wifi_ap_nodes[109]);
+	mobility.Install(wifi_ap_nodes[110]);
+	mobility.Install(wifi_ap_nodes[111]);
+	mobility.Install(wifi_ap_nodes[112]);
+	mobility.Install(wifi_ap_nodes[113]);
+	mobility.Install(wifi_ap_nodes[114]);
+	mobility.Install(wifi_ap_nodes[115]);
+	mobility.Install(wifi_ap_nodes[116]);
+	mobility.Install(wifi_ap_nodes[117]);
+	mobility.Install(wifi_ap_nodes[118]);
+	mobility.Install(wifi_ap_nodes[119]);
+	mobility.Install(wifi_ap_nodes[120]);
+	mobility.Install(wifi_ap_nodes[121]);
+	mobility.Install(wifi_ap_nodes[122]);
+	mobility.Install(wifi_ap_nodes[123]);
+	mobility.Install(wifi_ap_nodes[124]);
+	mobility.Install(wifi_ap_nodes[125]);
+	mobility.Install(wifi_ap_nodes[126]);
+	mobility.Install(wifi_ap_nodes[127]);
+	mobility.Install(wifi_ap_nodes[128]);
+	mobility.Install(wifi_ap_nodes[129]);
+	mobility.Install(wifi_ap_nodes[130]);
+	mobility.Install(wifi_ap_nodes[131]);
+	mobility.Install(wifi_ap_nodes[132]);
+	mobility.Install(wifi_ap_nodes[133]);
+	mobility.Install(wifi_ap_nodes[134]);
+	mobility.Install(wifi_ap_nodes[135]);
+	mobility.Install(wifi_ap_nodes[136]);
+	mobility.Install(wifi_ap_nodes[137]);
+	mobility.Install(wifi_ap_nodes[138]);
+	mobility.Install(wifi_ap_nodes[139]);
+	mobility.Install(wifi_ap_nodes[140]);
+	mobility.Install(wifi_ap_nodes[141]);
+	mobility.Install(wifi_ap_nodes[142]);
+	mobility.Install(wifi_ap_nodes[143]);
+	mobility.Install(wifi_ap_nodes[144]);
+	mobility.Install(wifi_ap_nodes[145]);
+	mobility.Install(wifi_ap_nodes[146]);
+	mobility.Install(wifi_ap_nodes[147]);
+	mobility.Install(wifi_ap_nodes[148]);
+	mobility.Install(wifi_ap_nodes[149]);
+	mobility.Install(wifi_ap_nodes[150]);
+	mobility.Install(wifi_ap_nodes[151]);
+	mobility.Install(wifi_ap_nodes[152]);
+	mobility.Install(wifi_ap_nodes[153]);
+	mobility.Install(wifi_ap_nodes[154]);
+	mobility.Install(wifi_ap_nodes[155]);
+	mobility.Install(wifi_ap_nodes[156]);
+	mobility.Install(wifi_ap_nodes[157]);
+	mobility.Install(wifi_ap_nodes[158]);
+	mobility.Install(wifi_ap_nodes[159]);
+	mobility.Install(wifi_ap_nodes[160]);
+	mobility.Install(wifi_ap_nodes[161]);
+	mobility.Install(wifi_ap_nodes[162]);
+	mobility.Install(wifi_ap_nodes[163]);
+	mobility.Install(wifi_ap_nodes[164]);
+	mobility.Install(wifi_ap_nodes[165]);
+	mobility.Install(wifi_ap_nodes[166]);
+	mobility.Install(wifi_ap_nodes[167]);
+	mobility.Install(wifi_ap_nodes[168]);
+	mobility.Install(wifi_ap_nodes[169]);
+	mobility.Install(wifi_ap_nodes[170]);
+	mobility.Install(wifi_ap_nodes[171]);
+	mobility.Install(wifi_ap_nodes[172]);
+	mobility.Install(wifi_ap_nodes[173]);
+	mobility.Install(wifi_ap_nodes[174]);
+	mobility.Install(wifi_ap_nodes[175]);
+	mobility.Install(wifi_ap_nodes[176]);
+	mobility.Install(wifi_ap_nodes[177]);
+	mobility.Install(wifi_ap_nodes[178]);
+	mobility.Install(wifi_ap_nodes[179]);
+	mobility.Install(wifi_ap_nodes[180]);
+	mobility.Install(wifi_ap_nodes[181]);
+	mobility.Install(wifi_ap_nodes[182]);
+	mobility.Install(wifi_ap_nodes[183]);
+	mobility.Install(wifi_ap_nodes[184]);
+	mobility.Install(wifi_ap_nodes[185]);
+	mobility.Install(wifi_ap_nodes[186]);
+	mobility.Install(wifi_ap_nodes[187]);
+	mobility.Install(wifi_ap_nodes[188]);
+	mobility.Install(wifi_ap_nodes[189]);
+	mobility.Install(wifi_ap_nodes[190]);
+	mobility.Install(wifi_ap_nodes[191]);
+	mobility.Install(wifi_ap_nodes[192]);
+	mobility.Install(wifi_ap_nodes[193]);
+	mobility.Install(wifi_ap_nodes[194]);
+	mobility.Install(wifi_ap_nodes[195]);
+	mobility.Install(wifi_ap_nodes[196]);
+	mobility.Install(wifi_ap_nodes[197]);
+	mobility.Install(wifi_ap_nodes[198]);
+	mobility.Install(wifi_ap_nodes[199]);
+	mobility.Install(wifi_ap_nodes[200]);
+	mobility.Install(wifi_ap_nodes[201]);
+	mobility.Install(wifi_ap_nodes[202]);
+	mobility.Install(wifi_ap_nodes[203]);
+	mobility.Install(wifi_ap_nodes[204]);
+	mobility.Install(wifi_ap_nodes[205]);
+	mobility.Install(wifi_ap_nodes[206]);
+	mobility.Install(wifi_ap_nodes[207]);
+	mobility.Install(wifi_ap_nodes[208]);
+	mobility.Install(wifi_ap_nodes[209]);
+	mobility.Install(wifi_ap_nodes[210]);
+	mobility.Install(wifi_ap_nodes[211]);
+	mobility.Install(wifi_ap_nodes[212]);
+	mobility.Install(wifi_ap_nodes[213]);
+	mobility.Install(wifi_ap_nodes[214]);
+	mobility.Install(wifi_ap_nodes[215]);
+	mobility.Install(wifi_ap_nodes[216]);
+	mobility.Install(wifi_ap_nodes[217]);
+	mobility.Install(wifi_ap_nodes[218]);
+	mobility.Install(wifi_ap_nodes[219]);
+	mobility.Install(wifi_ap_nodes[220]);
+	mobility.Install(wifi_ap_nodes[221]);
+	mobility.Install(wifi_ap_nodes[222]);
+	mobility.Install(wifi_ap_nodes[223]);
+	mobility.Install(wifi_ap_nodes[224]);
+	mobility.Install(wifi_ap_nodes[225]);
+	mobility.Install(wifi_ap_nodes[226]);
+	mobility.Install(wifi_ap_nodes[227]);
+	mobility.Install(wifi_ap_nodes[228]);
+	mobility.Install(wifi_ap_nodes[229]);
+	mobility.Install(wifi_ap_nodes[230]);
+	mobility.Install(wifi_ap_nodes[231]);
+	mobility.Install(wifi_ap_nodes[232]);
+	mobility.Install(wifi_ap_nodes[233]);
+	mobility.Install(wifi_ap_nodes[234]);
+	mobility.Install(wifi_ap_nodes[235]);
+	mobility.Install(wifi_ap_nodes[236]);
+	mobility.Install(wifi_ap_nodes[237]);
+	mobility.Install(wifi_ap_nodes[238]);
+	mobility.Install(wifi_ap_nodes[239]);
+	mobility.Install(wifi_ap_nodes[240]);
+	mobility.Install(wifi_ap_nodes[241]);
+	mobility.Install(wifi_ap_nodes[242]);
+	mobility.Install(wifi_ap_nodes[243]);
+	mobility.Install(wifi_ap_nodes[244]);
+	mobility.Install(wifi_ap_nodes[245]);
+	mobility.Install(wifi_ap_nodes[246]);
+	mobility.Install(wifi_ap_nodes[247]);
+	mobility.Install(wifi_ap_nodes[248]);
+	mobility.Install(wifi_ap_nodes[249]);
+	mobility.Install(wifi_ap_nodes[250]);
+	mobility.Install(wifi_ap_nodes[251]);
+	mobility.Install(wifi_ap_nodes[252]);
+	mobility.Install(wifi_ap_nodes[253]);
+	mobility.Install(wifi_ap_nodes[254]);
+	mobility.Install(wifi_ap_nodes[255]);
+	mobility.Install(wifi_ap_nodes[256]);
+	mobility.Install(wifi_ap_nodes[257]);
+	mobility.Install(wifi_ap_nodes[258]);
+	mobility.Install(wifi_ap_nodes[259]);
+	mobility.Install(wifi_ap_nodes[260]);
+	mobility.Install(wifi_ap_nodes[261]);
+	mobility.Install(wifi_ap_nodes[262]);
+	mobility.Install(wifi_ap_nodes[263]);
+	mobility.Install(wifi_ap_nodes[264]);
+	mobility.Install(wifi_ap_nodes[265]);
+	mobility.Install(wifi_ap_nodes[266]);
+	mobility.Install(wifi_ap_nodes[267]);
+	mobility.Install(wifi_ap_nodes[268]);
+	mobility.Install(wifi_ap_nodes[269]);
+	mobility.Install(wifi_ap_nodes[270]);
+	mobility.Install(wifi_ap_nodes[271]);
+	mobility.Install(wifi_ap_nodes[272]);
+	mobility.Install(wifi_ap_nodes[273]);
+	mobility.Install(wifi_ap_nodes[274]);
+	mobility.Install(wifi_ap_nodes[275]);
+	mobility.Install(wifi_ap_nodes[276]);
+	mobility.Install(wifi_ap_nodes[277]);
+	mobility.Install(wifi_ap_nodes[278]);
+	mobility.Install(wifi_ap_nodes[279]);
+	mobility.Install(wifi_ap_nodes[280]);
+	mobility.Install(wifi_ap_nodes[281]);
+	mobility.Install(wifi_ap_nodes[282]);
+	mobility.Install(wifi_ap_nodes[283]);
+	mobility.Install(wifi_ap_nodes[284]);
+	mobility.Install(wifi_ap_nodes[285]);
+	mobility.Install(wifi_ap_nodes[286]);
+	mobility.Install(wifi_ap_nodes[287]);
+	mobility.Install(wifi_ap_nodes[288]);
+	mobility.Install(wifi_ap_nodes[289]);
+	mobility.Install(wifi_ap_nodes[290]);
+	mobility.Install(wifi_ap_nodes[291]);
+	mobility.Install(wifi_ap_nodes[292]);
+	mobility.Install(wifi_ap_nodes[293]);
+	mobility.Install(wifi_ap_nodes[294]);
+	mobility.Install(wifi_ap_nodes[295]);
+	mobility.Install(wifi_ap_nodes[296]);
+	mobility.Install(wifi_ap_nodes[297]);
 //    mobility.Install (wifiApNode298)
 //    mobility.Install (wifiApNode299)
-	mobility.Install(wifiApNode300);
-	mobility.Install(wifiApNode301);
-	mobility.Install(wifiApNode302);
-	mobility.Install(wifiApNode303);
-	mobility.Install(wifiApNode304);
-	mobility.Install(wifiApNode305);
+	mobility.Install(wifi_ap_nodes[300]);
+	mobility.Install(wifi_ap_nodes[301]);
+	mobility.Install(wifi_ap_nodes[302]);
+	mobility.Install(wifi_ap_nodes[303]);
+	mobility.Install(wifi_ap_nodes[304]);
+	mobility.Install(wifi_ap_nodes[305]);
 //    mobility.Install (wifiApNode306)
-	mobility.Install(wifiApNode307);
-	mobility.Install(wifiApNode308);
-	mobility.Install(wifiApNode309);
-	mobility.Install(wifiApNode310);
-	mobility.Install(wifiApNode311);
-	mobility.Install(wifiApNode312);
-	mobility.Install(wifiApNode313);
-	mobility.Install(wifiApNode314);
+	mobility.Install(wifi_ap_nodes[307]);
+	mobility.Install(wifi_ap_nodes[308]);
+	mobility.Install(wifi_ap_nodes[309]);
+	mobility.Install(wifi_ap_nodes[310]);
+	mobility.Install(wifi_ap_nodes[311]);
+	mobility.Install(wifi_ap_nodes[312]);
+	mobility.Install(wifi_ap_nodes[313]);
+	mobility.Install(wifi_ap_nodes[314]);
 //    mobility.Install (wifiApNode315)
 
 //channel define
@@ -12149,1864 +10649,1864 @@ int main(int argc, char** argv) {
 	csma.SetChannelAttribute("Delay", ns3::TimeValue(ns3::MilliSeconds(2)));
 
 	ns3::NetDeviceContainer aplink1;
-	aplink1 = csma.Install(ns3::NodeContainer(csmaSwitches[81], wifiApNode1));
+	aplink1 = csma.Install(ns3::NodeContainer(csmaSwitches[81], wifi_ap_nodes[1]));
 	switch_devices[81].Add(aplink1.Get(0));
 	apdevices1.Add(aplink1.Get(1));
 
 	ns3::NetDeviceContainer aplink2;
-	aplink2 = csma.Install(ns3::NodeContainer(csmaSwitches[82], wifiApNode2));
+	aplink2 = csma.Install(ns3::NodeContainer(csmaSwitches[82], wifi_ap_nodes[2]));
 	switch_devices[82].Add(aplink2.Get(0));
 	apdevices2.Add(aplink2.Get(1));
 
 	ns3::NetDeviceContainer aplink3;
-	aplink3 = csma.Install(ns3::NodeContainer(csmaSwitches[83], wifiApNode3));
+	aplink3 = csma.Install(ns3::NodeContainer(csmaSwitches[83], wifi_ap_nodes[3]));
 	switch_devices[83].Add(aplink3.Get(0));
 	apdevices3.Add(aplink3.Get(1));
 
 	ns3::NetDeviceContainer aplink4;
-	aplink4 = csma.Install(ns3::NodeContainer(csmaSwitches[85], wifiApNode4));
+	aplink4 = csma.Install(ns3::NodeContainer(csmaSwitches[85], wifi_ap_nodes[4]));
 	switch_devices[85].Add(aplink4.Get(0));
 	apdevices4.Add(aplink4.Get(1));
 
 	ns3::NetDeviceContainer aplink5;
-	aplink5 = csma.Install(ns3::NodeContainer(csmaSwitches[108], wifiApNode5));
+	aplink5 = csma.Install(ns3::NodeContainer(csmaSwitches[108], wifi_ap_nodes[5]));
 	switch_devices[108].Add(aplink5.Get(0));
 	apdevices5.Add(aplink5.Get(1));
 
 	ns3::NetDeviceContainer aplink6;
-	aplink6 = csma.Install(ns3::NodeContainer(csmaSwitches[86], wifiApNode6));
+	aplink6 = csma.Install(ns3::NodeContainer(csmaSwitches[86], wifi_ap_nodes[6]));
 	switch_devices[86].Add(aplink6.Get(0));
 	apdevices6.Add(aplink6.Get(1));
 
 	ns3::NetDeviceContainer aplink7;
-	aplink7 = csma.Install(ns3::NodeContainer(csmaSwitches[86], wifiApNode7));
+	aplink7 = csma.Install(ns3::NodeContainer(csmaSwitches[86], wifi_ap_nodes[7]));
 	switch_devices[86].Add(aplink7.Get(0));
 	apdevices7.Add(aplink7.Get(1));
 
 	ns3::NetDeviceContainer aplink8;
-	aplink8 = csma.Install(ns3::NodeContainer(csmaSwitches[87], wifiApNode8));
+	aplink8 = csma.Install(ns3::NodeContainer(csmaSwitches[87], wifi_ap_nodes[8]));
 	switch_devices[87].Add(aplink8.Get(0));
 	apdevices8.Add(aplink8.Get(1));
 
 	ns3::NetDeviceContainer aplink9;
-	aplink9 = csma.Install(ns3::NodeContainer(csmaSwitches[109], wifiApNode9));
+	aplink9 = csma.Install(ns3::NodeContainer(csmaSwitches[109], wifi_ap_nodes[9]));
 	switch_devices[109].Add(aplink9.Get(0));
 	apdevices9.Add(aplink9.Get(1));
 
 	ns3::NetDeviceContainer aplink10;
-	aplink10 = csma.Install(ns3::NodeContainer(csmaSwitches[88], wifiApNode10));
+	aplink10 = csma.Install(ns3::NodeContainer(csmaSwitches[88], wifi_ap_nodes[10]));
 	switch_devices[88].Add(aplink10.Get(0));
 	apdevices10.Add(aplink10.Get(1));
 
 	ns3::NetDeviceContainer aplink11;
-	aplink11 = csma.Install(ns3::NodeContainer(csmaSwitches[88], wifiApNode11));
+	aplink11 = csma.Install(ns3::NodeContainer(csmaSwitches[88], wifi_ap_nodes[11]));
 	switch_devices[88].Add(aplink11.Get(0));
 	apdevices11.Add(aplink11.Get(1));
 
 	ns3::NetDeviceContainer aplink12;
 	aplink12 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[111], wifiApNode12));
+			ns3::NodeContainer(csmaSwitches[111], wifi_ap_nodes[12]));
 	switch_devices[111].Add(aplink12.Get(0));
 	apdevices12.Add(aplink12.Get(1));
 
 	ns3::NetDeviceContainer aplink13;
 	aplink13 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[111], wifiApNode13));
+			ns3::NodeContainer(csmaSwitches[111], wifi_ap_nodes[13]));
 	switch_devices[111].Add(aplink13.Get(0));
 	apdevices13.Add(aplink13.Get(1));
 
 	ns3::NetDeviceContainer aplink14;
-	aplink14 = csma.Install(ns3::NodeContainer(csmaSwitches[89], wifiApNode14));
+	aplink14 = csma.Install(ns3::NodeContainer(csmaSwitches[89], wifi_ap_nodes[14]));
 	switch_devices[89].Add(aplink14.Get(0));
 	apdevices14.Add(aplink14.Get(1));
 
 	ns3::NetDeviceContainer aplink15;
-	aplink15 = csma.Install(ns3::NodeContainer(csmaSwitches[92], wifiApNode15));
+	aplink15 = csma.Install(ns3::NodeContainer(csmaSwitches[92], wifi_ap_nodes[15]));
 	switch_devices[92].Add(aplink15.Get(0));
 	apdevices15.Add(aplink15.Get(1));
 
 	ns3::NetDeviceContainer aplink16;
 	aplink16 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[101], wifiApNode16));
+			ns3::NodeContainer(csmaSwitches[101], wifi_ap_nodes[16]));
 	switch_devices[101].Add(aplink16.Get(0));
 	apdevices16.Add(aplink16.Get(1));
 
 	ns3::NetDeviceContainer aplink17;
-	aplink17 = csma.Install(ns3::NodeContainer(csmaSwitches[94], wifiApNode17));
+	aplink17 = csma.Install(ns3::NodeContainer(csmaSwitches[94], wifi_ap_nodes[17]));
 	switch_devices[94].Add(aplink17.Get(0));
 	apdevices17.Add(aplink17.Get(1));
 
 	ns3::NetDeviceContainer aplink18;
-	aplink18 = csma.Install(ns3::NodeContainer(csmaSwitches[94], wifiApNode18));
+	aplink18 = csma.Install(ns3::NodeContainer(csmaSwitches[94], wifi_ap_nodes[18]));
 	switch_devices[94].Add(aplink18.Get(0));
 	apdevices18.Add(aplink18.Get(1));
 
 	ns3::NetDeviceContainer aplink19;
-	aplink19 = csma.Install(ns3::NodeContainer(csmaSwitches[95], wifiApNode19));
+	aplink19 = csma.Install(ns3::NodeContainer(csmaSwitches[95], wifi_ap_nodes[19]));
 	switch_devices[95].Add(aplink19.Get(0));
 	apdevices19.Add(aplink19.Get(1));
 
 	ns3::NetDeviceContainer aplink20;
 	aplink20 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[103], wifiApNode20));
+			ns3::NodeContainer(csmaSwitches[103], wifi_ap_nodes[20]));
 	switch_devices[103].Add(aplink20.Get(0));
 	apdevices20.Add(aplink20.Get(1));
 
 	ns3::NetDeviceContainer aplink21;
-	aplink21 = csma.Install(ns3::NodeContainer(csmaSwitches[97], wifiApNode21));
+	aplink21 = csma.Install(ns3::NodeContainer(csmaSwitches[97], wifi_ap_nodes[21]));
 	switch_devices[97].Add(aplink21.Get(0));
 	apdevices21.Add(aplink21.Get(1));
 
 	ns3::NetDeviceContainer aplink22;
 	aplink22 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[105], wifiApNode22));
+			ns3::NodeContainer(csmaSwitches[105], wifi_ap_nodes[22]));
 	switch_devices[105].Add(aplink22.Get(0));
 	apdevices22.Add(aplink22.Get(1));
 
 	ns3::NetDeviceContainer aplink23;
-	aplink23 = csma.Install(ns3::NodeContainer(csmaSwitches[85], wifiApNode23));
+	aplink23 = csma.Install(ns3::NodeContainer(csmaSwitches[85], wifi_ap_nodes[23]));
 	switch_devices[85].Add(aplink23.Get(0));
 	apdevices23.Add(aplink23.Get(1));
 
 	ns3::NetDeviceContainer aplink24;
-	aplink24 = csma.Install(ns3::NodeContainer(csmaSwitches[86], wifiApNode24));
+	aplink24 = csma.Install(ns3::NodeContainer(csmaSwitches[86], wifi_ap_nodes[24]));
 	switch_devices[86].Add(aplink24.Get(0));
 	apdevices24.Add(aplink24.Get(1));
 
 	ns3::NetDeviceContainer aplink25;
-	aplink25 = csma.Install(ns3::NodeContainer(csmaSwitches[87], wifiApNode25));
+	aplink25 = csma.Install(ns3::NodeContainer(csmaSwitches[87], wifi_ap_nodes[25]));
 	switch_devices[87].Add(aplink25.Get(0));
 	apdevices25.Add(aplink25.Get(1));
 
 	ns3::NetDeviceContainer aplink26;
 	aplink26 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[162], wifiApNode26));
+			ns3::NodeContainer(csmaSwitches[162], wifi_ap_nodes[26]));
 	switch_devices[162].Add(aplink26.Get(0));
 	apdevices26.Add(aplink26.Get(1));
 
 	ns3::NetDeviceContainer aplink27;
 	aplink27 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[162], wifiApNode27));
+			ns3::NodeContainer(csmaSwitches[162], wifi_ap_nodes[27]));
 	switch_devices[162].Add(aplink27.Get(0));
 	apdevices27.Add(aplink27.Get(1));
 
 	ns3::NetDeviceContainer aplink28;
 	aplink28 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[162], wifiApNode28));
+			ns3::NodeContainer(csmaSwitches[162], wifi_ap_nodes[28]));
 	switch_devices[162].Add(aplink28.Get(0));
 	apdevices28.Add(aplink28.Get(1));
 
 	ns3::NetDeviceContainer aplink29;
 	aplink29 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[161], wifiApNode29));
+			ns3::NodeContainer(csmaSwitches[161], wifi_ap_nodes[29]));
 	switch_devices[161].Add(aplink29.Get(0));
 	apdevices29.Add(aplink29.Get(1));
 
 	ns3::NetDeviceContainer aplink30;
 	aplink30 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[163], wifiApNode30));
+			ns3::NodeContainer(csmaSwitches[163], wifi_ap_nodes[30]));
 	switch_devices[163].Add(aplink30.Get(0));
 	apdevices30.Add(aplink30.Get(1));
 
 	ns3::NetDeviceContainer aplink31;
 	aplink31 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[164], wifiApNode31));
+			ns3::NodeContainer(csmaSwitches[164], wifi_ap_nodes[31]));
 	switch_devices[164].Add(aplink31.Get(0));
 	apdevices31.Add(aplink31.Get(1));
 
 	ns3::NetDeviceContainer aplink32;
 	aplink32 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[165], wifiApNode32));
+			ns3::NodeContainer(csmaSwitches[165], wifi_ap_nodes[32]));
 	switch_devices[165].Add(aplink32.Get(0));
 	apdevices32.Add(aplink32.Get(1));
 
 	ns3::NetDeviceContainer aplink33;
 	aplink33 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[165], wifiApNode33));
+			ns3::NodeContainer(csmaSwitches[165], wifi_ap_nodes[33]));
 	switch_devices[165].Add(aplink33.Get(0));
 	apdevices33.Add(aplink33.Get(1));
 
 	ns3::NetDeviceContainer aplink34;
 	aplink34 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[165], wifiApNode34));
+			ns3::NodeContainer(csmaSwitches[165], wifi_ap_nodes[34]));
 	switch_devices[165].Add(aplink34.Get(0));
 	apdevices34.Add(aplink34.Get(1));
 
 	ns3::NetDeviceContainer aplink35;
 	aplink35 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[169], wifiApNode35));
+			ns3::NodeContainer(csmaSwitches[169], wifi_ap_nodes[35]));
 	switch_devices[169].Add(aplink35.Get(0));
 	apdevices35.Add(aplink35.Get(1));
 
 	ns3::NetDeviceContainer aplink36;
 	aplink36 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[169], wifiApNode36));
+			ns3::NodeContainer(csmaSwitches[169], wifi_ap_nodes[36]));
 	switch_devices[169].Add(aplink36.Get(0));
 	apdevices36.Add(aplink36.Get(1));
 
 	ns3::NetDeviceContainer aplink37;
 	aplink37 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[180], wifiApNode37));
+			ns3::NodeContainer(csmaSwitches[180], wifi_ap_nodes[37]));
 	switch_devices[180].Add(aplink37.Get(0));
 	apdevices37.Add(aplink37.Get(1));
 
 	ns3::NetDeviceContainer aplink38;
 	aplink38 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[180], wifiApNode38));
+			ns3::NodeContainer(csmaSwitches[180], wifi_ap_nodes[38]));
 	switch_devices[180].Add(aplink38.Get(0));
 	apdevices38.Add(aplink38.Get(1));
 
 	ns3::NetDeviceContainer aplink313;
 	aplink313 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[182], wifiApNode313));
+			ns3::NodeContainer(csmaSwitches[182], wifi_ap_nodes[313]));
 	switch_devices[182].Add(aplink313.Get(0));
 	apdevices313.Add(aplink313.Get(1));
 
 	ns3::NetDeviceContainer aplink39;
 	aplink39 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[183], wifiApNode39));
+			ns3::NodeContainer(csmaSwitches[183], wifi_ap_nodes[39]));
 	switch_devices[183].Add(aplink39.Get(0));
 	apdevices39.Add(aplink39.Get(1));
 
 	ns3::NetDeviceContainer aplink40;
 	aplink40 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[185], wifiApNode40));
+			ns3::NodeContainer(csmaSwitches[185], wifi_ap_nodes[40]));
 	switch_devices[185].Add(aplink40.Get(0));
 	apdevices40.Add(aplink40.Get(1));
 
 	ns3::NetDeviceContainer aplink41;
 	aplink41 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[187], wifiApNode41));
+			ns3::NodeContainer(csmaSwitches[187], wifi_ap_nodes[41]));
 	switch_devices[187].Add(aplink41.Get(0));
 	apdevices41.Add(aplink41.Get(1));
 
 	ns3::NetDeviceContainer aplink42;
 	aplink42 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[189], wifiApNode42));
+			ns3::NodeContainer(csmaSwitches[189], wifi_ap_nodes[42]));
 	switch_devices[189].Add(aplink42.Get(0));
 	apdevices42.Add(aplink42.Get(1));
 
 	ns3::NetDeviceContainer aplink43;
 	aplink43 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[191], wifiApNode43));
+			ns3::NodeContainer(csmaSwitches[191], wifi_ap_nodes[43]));
 	switch_devices[191].Add(aplink43.Get(0));
 	apdevices43.Add(aplink43.Get(1));
 
 	ns3::NetDeviceContainer aplink44;
 	aplink44 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[194], wifiApNode44));
+			ns3::NodeContainer(csmaSwitches[194], wifi_ap_nodes[44]));
 	switch_devices[194].Add(aplink44.Get(0));
 	apdevices44.Add(aplink44.Get(1));
 
 	ns3::NetDeviceContainer aplink45;
 	aplink45 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[195], wifiApNode45));
+			ns3::NodeContainer(csmaSwitches[195], wifi_ap_nodes[45]));
 	switch_devices[195].Add(aplink45.Get(0));
 	apdevices45.Add(aplink45.Get(1));
 
 	ns3::NetDeviceContainer aplink46;
 	aplink46 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[196], wifiApNode46));
+			ns3::NodeContainer(csmaSwitches[196], wifi_ap_nodes[46]));
 	switch_devices[196].Add(aplink46.Get(0));
 	apdevices46.Add(aplink46.Get(1));
 
 	ns3::NetDeviceContainer aplink47;
 	aplink47 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[196], wifiApNode47));
+			ns3::NodeContainer(csmaSwitches[196], wifi_ap_nodes[47]));
 	switch_devices[196].Add(aplink47.Get(0));
 	apdevices47.Add(aplink47.Get(1));
 
 	ns3::NetDeviceContainer aplink48;
 	aplink48 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[343], wifiApNode48));
+			ns3::NodeContainer(csmaSwitches[343], wifi_ap_nodes[48]));
 	switch_devices[343].Add(aplink48.Get(0));
 	apdevices48.Add(aplink48.Get(1));
 
 	ns3::NetDeviceContainer aplink49;
 	aplink49 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[343], wifiApNode49));
+			ns3::NodeContainer(csmaSwitches[343], wifi_ap_nodes[49]));
 	switch_devices[343].Add(aplink49.Get(0));
 	apdevices49.Add(aplink49.Get(1));
 
 	ns3::NetDeviceContainer aplink50;
 	aplink50 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[343], wifiApNode50));
+			ns3::NodeContainer(csmaSwitches[343], wifi_ap_nodes[50]));
 	switch_devices[343].Add(aplink50.Get(0));
 	apdevices50.Add(aplink50.Get(1));
 
 	ns3::NetDeviceContainer aplink51;
 	aplink51 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[343], wifiApNode51));
+			ns3::NodeContainer(csmaSwitches[343], wifi_ap_nodes[51]));
 	switch_devices[343].Add(aplink51.Get(0));
 	apdevices51.Add(aplink51.Get(1));
 
 	ns3::NetDeviceContainer aplink52;
 	aplink52 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[343], wifiApNode52));
+			ns3::NodeContainer(csmaSwitches[343], wifi_ap_nodes[52]));
 	switch_devices[343].Add(aplink52.Get(0));
 	apdevices52.Add(aplink52.Get(1));
 
 	ns3::NetDeviceContainer aplink53;
 	aplink53 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[343], wifiApNode53));
+			ns3::NodeContainer(csmaSwitches[343], wifi_ap_nodes[53]));
 	switch_devices[343].Add(aplink53.Get(0));
 	apdevices53.Add(aplink53.Get(1));
 
 	ns3::NetDeviceContainer aplink54;
 	aplink54 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[206], wifiApNode54));
+			ns3::NodeContainer(csmaSwitches[206], wifi_ap_nodes[54]));
 	switch_devices[206].Add(aplink54.Get(0));
 	apdevices54.Add(aplink54.Get(1));
 
 	ns3::NetDeviceContainer aplink55;
 	aplink55 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[205], wifiApNode55));
+			ns3::NodeContainer(csmaSwitches[205], wifi_ap_nodes[55]));
 	switch_devices[205].Add(aplink55.Get(0));
 	apdevices55.Add(aplink55.Get(1));
 
 	ns3::NetDeviceContainer aplink56;
 	aplink56 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[205], wifiApNode56));
+			ns3::NodeContainer(csmaSwitches[205], wifi_ap_nodes[56]));
 	switch_devices[205].Add(aplink56.Get(0));
 	apdevices56.Add(aplink56.Get(1));
 
 	ns3::NetDeviceContainer aplink57;
 	aplink57 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[204], wifiApNode57));
+			ns3::NodeContainer(csmaSwitches[204], wifi_ap_nodes[57]));
 	switch_devices[204].Add(aplink57.Get(0));
 	apdevices57.Add(aplink57.Get(1));
 
 	ns3::NetDeviceContainer aplink58;
 	aplink58 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[204], wifiApNode58));
+			ns3::NodeContainer(csmaSwitches[204], wifi_ap_nodes[58]));
 	switch_devices[204].Add(aplink58.Get(0));
 	apdevices58.Add(aplink58.Get(1));
 
 	ns3::NetDeviceContainer aplink59;
 	aplink59 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[211], wifiApNode59));
+			ns3::NodeContainer(csmaSwitches[211], wifi_ap_nodes[59]));
 	switch_devices[211].Add(aplink59.Get(0));
 	apdevices59.Add(aplink59.Get(1));
 
 	ns3::NetDeviceContainer aplink60;
 	aplink60 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[295], wifiApNode60));
+			ns3::NodeContainer(csmaSwitches[295], wifi_ap_nodes[60]));
 	switch_devices[295].Add(aplink60.Get(0));
 	apdevices60.Add(aplink60.Get(1));
 
 	ns3::NetDeviceContainer aplink61;
 	aplink61 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[295], wifiApNode61));
+			ns3::NodeContainer(csmaSwitches[295], wifi_ap_nodes[61]));
 	switch_devices[295].Add(aplink61.Get(0));
 	apdevices61.Add(aplink61.Get(1));
 
 	ns3::NetDeviceContainer aplink62;
 	aplink62 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[295], wifiApNode62));
+			ns3::NodeContainer(csmaSwitches[295], wifi_ap_nodes[62]));
 	switch_devices[295].Add(aplink62.Get(0));
 	apdevices62.Add(aplink62.Get(1));
 
 	ns3::NetDeviceContainer aplink63;
 	aplink63 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[295], wifiApNode63));
+			ns3::NodeContainer(csmaSwitches[295], wifi_ap_nodes[63]));
 	switch_devices[295].Add(aplink63.Get(0));
 	apdevices63.Add(aplink63.Get(1));
 
 	ns3::NetDeviceContainer aplink64;
 	aplink64 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[295], wifiApNode64));
+			ns3::NodeContainer(csmaSwitches[295], wifi_ap_nodes[64]));
 	switch_devices[295].Add(aplink64.Get(0));
 	apdevices64.Add(aplink64.Get(1));
 
 	ns3::NetDeviceContainer aplink65;
 	aplink65 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[295], wifiApNode65));
+			ns3::NodeContainer(csmaSwitches[295], wifi_ap_nodes[65]));
 	switch_devices[295].Add(aplink65.Get(0));
 	apdevices65.Add(aplink65.Get(1));
 
 	ns3::NetDeviceContainer aplink66;
 	aplink66 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[294], wifiApNode66));
+			ns3::NodeContainer(csmaSwitches[294], wifi_ap_nodes[66]));
 	switch_devices[294].Add(aplink66.Get(0));
 	apdevices66.Add(aplink66.Get(1));
 
 	ns3::NetDeviceContainer aplink67;
 	aplink67 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[294], wifiApNode67));
+			ns3::NodeContainer(csmaSwitches[294], wifi_ap_nodes[67]));
 	switch_devices[294].Add(aplink67.Get(0));
 	apdevices67.Add(aplink67.Get(1));
 
 	ns3::NetDeviceContainer aplink68;
 	aplink68 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[288], wifiApNode68));
+			ns3::NodeContainer(csmaSwitches[288], wifi_ap_nodes[68]));
 	switch_devices[288].Add(aplink68.Get(0));
 	apdevices68.Add(aplink68.Get(1));
 
 	ns3::NetDeviceContainer aplink69;
 	aplink69 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[288], wifiApNode69));
+			ns3::NodeContainer(csmaSwitches[288], wifi_ap_nodes[69]));
 	switch_devices[288].Add(aplink69.Get(0));
 	apdevices69.Add(aplink69.Get(1));
 
 	ns3::NetDeviceContainer aplink70;
 	aplink70 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[288], wifiApNode70));
+			ns3::NodeContainer(csmaSwitches[288], wifi_ap_nodes[70]));
 	switch_devices[288].Add(aplink70.Get(0));
 	apdevices70.Add(aplink70.Get(1));
 
 	ns3::NetDeviceContainer aplink71;
 	aplink71 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[300], wifiApNode71));
+			ns3::NodeContainer(csmaSwitches[300], wifi_ap_nodes[71]));
 	switch_devices[300].Add(aplink71.Get(0));
 	apdevices71.Add(aplink71.Get(1));
 
 	ns3::NetDeviceContainer aplink72;
 	aplink72 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[299], wifiApNode72));
+			ns3::NodeContainer(csmaSwitches[299], wifi_ap_nodes[72]));
 	switch_devices[299].Add(aplink72.Get(0));
 	apdevices72.Add(aplink72.Get(1));
 
 	ns3::NetDeviceContainer aplink73;
 	aplink73 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[302], wifiApNode73));
+			ns3::NodeContainer(csmaSwitches[302], wifi_ap_nodes[73]));
 	switch_devices[302].Add(aplink73.Get(0));
 	apdevices73.Add(aplink73.Get(1));
 
 	ns3::NetDeviceContainer aplink74;
 	aplink74 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[301], wifiApNode74));
+			ns3::NodeContainer(csmaSwitches[301], wifi_ap_nodes[74]));
 	switch_devices[301].Add(aplink74.Get(0));
 	apdevices74.Add(aplink74.Get(1));
 
 	ns3::NetDeviceContainer aplink75;
 	aplink75 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[318], wifiApNode75));
+			ns3::NodeContainer(csmaSwitches[318], wifi_ap_nodes[75]));
 	switch_devices[318].Add(aplink75.Get(0));
 	apdevices75.Add(aplink75.Get(1));
 
 	ns3::NetDeviceContainer aplink76;
 	aplink76 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[318], wifiApNode76));
+			ns3::NodeContainer(csmaSwitches[318], wifi_ap_nodes[76]));
 	switch_devices[318].Add(aplink76.Get(0));
 	apdevices76.Add(aplink76.Get(1));
 
 	ns3::NetDeviceContainer aplink77;
 	aplink77 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[319], wifiApNode77));
+			ns3::NodeContainer(csmaSwitches[319], wifi_ap_nodes[77]));
 	switch_devices[319].Add(aplink77.Get(0));
 	apdevices77.Add(aplink77.Get(1));
 
 	ns3::NetDeviceContainer aplink78;
 	aplink78 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[320], wifiApNode78));
+			ns3::NodeContainer(csmaSwitches[320], wifi_ap_nodes[78]));
 	switch_devices[320].Add(aplink78.Get(0));
 	apdevices78.Add(aplink78.Get(1));
 
 	ns3::NetDeviceContainer aplink79;
 	aplink79 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[322], wifiApNode79));
+			ns3::NodeContainer(csmaSwitches[322], wifi_ap_nodes[79]));
 	switch_devices[322].Add(aplink79.Get(0));
 	apdevices79.Add(aplink79.Get(1));
 
 	ns3::NetDeviceContainer aplink80;
 	aplink80 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[308], wifiApNode80));
+			ns3::NodeContainer(csmaSwitches[308], wifi_ap_nodes[80]));
 	switch_devices[308].Add(aplink80.Get(0));
 	apdevices80.Add(aplink80.Get(1));
 
 	ns3::NetDeviceContainer aplink81;
 	aplink81 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[323], wifiApNode81));
+			ns3::NodeContainer(csmaSwitches[323], wifi_ap_nodes[81]));
 	switch_devices[323].Add(aplink81.Get(0));
 	apdevices81.Add(aplink81.Get(1));
 
 	ns3::NetDeviceContainer aplink82;
 	aplink82 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[324], wifiApNode82));
+			ns3::NodeContainer(csmaSwitches[324], wifi_ap_nodes[82]));
 	switch_devices[324].Add(aplink82.Get(0));
 	apdevices82.Add(aplink82.Get(1));
 
 	ns3::NetDeviceContainer aplink83;
 	aplink83 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[311], wifiApNode83));
+			ns3::NodeContainer(csmaSwitches[311], wifi_ap_nodes[83]));
 	switch_devices[311].Add(aplink83.Get(0));
 	apdevices83.Add(aplink83.Get(1));
 
 	ns3::NetDeviceContainer aplink84;
 	aplink84 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[311], wifiApNode84));
+			ns3::NodeContainer(csmaSwitches[311], wifi_ap_nodes[84]));
 	switch_devices[311].Add(aplink84.Get(0));
 	apdevices84.Add(aplink84.Get(1));
 
 	ns3::NetDeviceContainer aplink85;
 	aplink85 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[311], wifiApNode85));
+			ns3::NodeContainer(csmaSwitches[311], wifi_ap_nodes[85]));
 	switch_devices[311].Add(aplink85.Get(0));
 	apdevices85.Add(aplink85.Get(1));
 
 	ns3::NetDeviceContainer aplink86;
 	aplink86 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[313], wifiApNode86));
+			ns3::NodeContainer(csmaSwitches[313], wifi_ap_nodes[86]));
 	switch_devices[313].Add(aplink86.Get(0));
 	apdevices86.Add(aplink86.Get(1));
 
 	ns3::NetDeviceContainer aplink87;
 	aplink87 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[312], wifiApNode87));
+			ns3::NodeContainer(csmaSwitches[312], wifi_ap_nodes[87]));
 	switch_devices[312].Add(aplink87.Get(0));
 	apdevices87.Add(aplink87.Get(1));
 
 	ns3::NetDeviceContainer aplink88;
 	aplink88 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[312], wifiApNode88));
+			ns3::NodeContainer(csmaSwitches[312], wifi_ap_nodes[88]));
 	switch_devices[312].Add(aplink88.Get(0));
 	apdevices88.Add(aplink88.Get(1));
 
 	ns3::NetDeviceContainer aplink89;
 	aplink89 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[314], wifiApNode89));
+			ns3::NodeContainer(csmaSwitches[314], wifi_ap_nodes[89]));
 	switch_devices[314].Add(aplink89.Get(0));
 	apdevices89.Add(aplink89.Get(1));
 
 	ns3::NetDeviceContainer aplink90;
 	aplink90 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[314], wifiApNode90));
+			ns3::NodeContainer(csmaSwitches[314], wifi_ap_nodes[90]));
 	switch_devices[314].Add(aplink90.Get(0));
 	apdevices90.Add(aplink90.Get(1));
 
 	ns3::NetDeviceContainer aplink91;
 	aplink91 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[315], wifiApNode91));
+			ns3::NodeContainer(csmaSwitches[315], wifi_ap_nodes[91]));
 	switch_devices[315].Add(aplink91.Get(0));
 	apdevices91.Add(aplink91.Get(1));
 
 	ns3::NetDeviceContainer aplink92;
 	aplink92 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[315], wifiApNode92));
+			ns3::NodeContainer(csmaSwitches[315], wifi_ap_nodes[92]));
 	switch_devices[315].Add(aplink92.Get(0));
 	apdevices92.Add(aplink92.Get(1));
 
 	ns3::NetDeviceContainer aplink93;
 	aplink93 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[330], wifiApNode93));
+			ns3::NodeContainer(csmaSwitches[330], wifi_ap_nodes[93]));
 	switch_devices[330].Add(aplink93.Get(0));
 	apdevices93.Add(aplink93.Get(1));
 
 	ns3::NetDeviceContainer aplink94;
 	aplink94 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[330], wifiApNode94));
+			ns3::NodeContainer(csmaSwitches[330], wifi_ap_nodes[94]));
 	switch_devices[330].Add(aplink94.Get(0));
 	apdevices94.Add(aplink94.Get(1));
 
 	ns3::NetDeviceContainer aplink95;
 	aplink95 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[330], wifiApNode95));
+			ns3::NodeContainer(csmaSwitches[330], wifi_ap_nodes[95]));
 	switch_devices[330].Add(aplink95.Get(0));
 	apdevices95.Add(aplink95.Get(1));
 
 	ns3::NetDeviceContainer aplink96;
 	aplink96 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[330], wifiApNode96));
+			ns3::NodeContainer(csmaSwitches[330], wifi_ap_nodes[96]));
 	switch_devices[330].Add(aplink96.Get(0));
 	apdevices96.Add(aplink96.Get(1));
 
 	ns3::NetDeviceContainer aplink97;
 	aplink97 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[330], wifiApNode97));
+			ns3::NodeContainer(csmaSwitches[330], wifi_ap_nodes[97]));
 	switch_devices[330].Add(aplink97.Get(0));
 	apdevices97.Add(aplink97.Get(1));
 
 	ns3::NetDeviceContainer aplink98;
 	aplink98 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[330], wifiApNode98));
+			ns3::NodeContainer(csmaSwitches[330], wifi_ap_nodes[98]));
 	switch_devices[330].Add(aplink98.Get(0));
 	apdevices98.Add(aplink98.Get(1));
 
 	ns3::NetDeviceContainer aplink99;
 	aplink99 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[331], wifiApNode99));
+			ns3::NodeContainer(csmaSwitches[331], wifi_ap_nodes[99]));
 	switch_devices[331].Add(aplink99.Get(0));
 	apdevices99.Add(aplink99.Get(1));
 
 	ns3::NetDeviceContainer aplink100;
 	aplink100 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[331], wifiApNode100));
+			ns3::NodeContainer(csmaSwitches[331], wifi_ap_nodes[100]));
 	switch_devices[331].Add(aplink100.Get(0));
 	apdevices100.Add(aplink100.Get(1));
 
 	ns3::NetDeviceContainer aplink101;
 	aplink101 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[332], wifiApNode101));
+			ns3::NodeContainer(csmaSwitches[332], wifi_ap_nodes[101]));
 	switch_devices[332].Add(aplink101.Get(0));
 	apdevices101.Add(aplink101.Get(1));
 
 	ns3::NetDeviceContainer aplink102;
 	aplink102 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[332], wifiApNode102));
+			ns3::NodeContainer(csmaSwitches[332], wifi_ap_nodes[102]));
 	switch_devices[332].Add(aplink102.Get(0));
 	apdevices102.Add(aplink102.Get(1));
 
 	ns3::NetDeviceContainer aplink103;
 	aplink103 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[315], wifiApNode103));
+			ns3::NodeContainer(csmaSwitches[315], wifi_ap_nodes[103]));
 	switch_devices[315].Add(aplink103.Get(0));
 	apdevices103.Add(aplink103.Get(1));
 
 	ns3::NetDeviceContainer aplink104;
 	aplink104 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[315], wifiApNode104));
+			ns3::NodeContainer(csmaSwitches[315], wifi_ap_nodes[104]));
 	switch_devices[315].Add(aplink104.Get(0));
 	apdevices104.Add(aplink104.Get(1));
 
 	ns3::NetDeviceContainer aplink105;
 	aplink105 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[328], wifiApNode105));
+			ns3::NodeContainer(csmaSwitches[328], wifi_ap_nodes[105]));
 	switch_devices[328].Add(aplink105.Get(0));
 	apdevices105.Add(aplink105.Get(1));
 
 	ns3::NetDeviceContainer aplink106;
 	aplink106 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[328], wifiApNode106));
+			ns3::NodeContainer(csmaSwitches[328], wifi_ap_nodes[106]));
 	switch_devices[328].Add(aplink106.Get(0));
 	apdevices106.Add(aplink106.Get(1));
 
 	ns3::NetDeviceContainer aplink107;
 	aplink107 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[328], wifiApNode107));
+			ns3::NodeContainer(csmaSwitches[328], wifi_ap_nodes[107]));
 	switch_devices[328].Add(aplink107.Get(0));
 	apdevices107.Add(aplink107.Get(1));
 
 	ns3::NetDeviceContainer aplink108;
 	aplink108 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[328], wifiApNode108));
+			ns3::NodeContainer(csmaSwitches[328], wifi_ap_nodes[108]));
 	switch_devices[328].Add(aplink108.Get(0));
 	apdevices108.Add(aplink108.Get(1));
 
 	ns3::NetDeviceContainer aplink109;
 	aplink109 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[328], wifiApNode109));
+			ns3::NodeContainer(csmaSwitches[328], wifi_ap_nodes[109]));
 	switch_devices[328].Add(aplink109.Get(0));
 	apdevices109.Add(aplink109.Get(1));
 
 	ns3::NetDeviceContainer aplink110;
 	aplink110 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[326], wifiApNode110));
+			ns3::NodeContainer(csmaSwitches[326], wifi_ap_nodes[110]));
 	switch_devices[326].Add(aplink110.Get(0));
 	apdevices110.Add(aplink110.Get(1));
 
 	ns3::NetDeviceContainer aplink111;
 	aplink111 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[326], wifiApNode111));
+			ns3::NodeContainer(csmaSwitches[326], wifi_ap_nodes[111]));
 	switch_devices[326].Add(aplink111.Get(0));
 	apdevices111.Add(aplink111.Get(1));
 
 	ns3::NetDeviceContainer aplink112;
 	aplink112 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[326], wifiApNode112));
+			ns3::NodeContainer(csmaSwitches[326], wifi_ap_nodes[112]));
 	switch_devices[326].Add(aplink112.Get(0));
 	apdevices112.Add(aplink112.Get(1));
 
 	ns3::NetDeviceContainer aplink113;
 	aplink113 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[326], wifiApNode113));
+			ns3::NodeContainer(csmaSwitches[326], wifi_ap_nodes[113]));
 	switch_devices[326].Add(aplink113.Get(0));
 	apdevices113.Add(aplink113.Get(1));
 
 	ns3::NetDeviceContainer aplink114;
 	aplink114 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[327], wifiApNode114));
+			ns3::NodeContainer(csmaSwitches[327], wifi_ap_nodes[114]));
 	switch_devices[327].Add(aplink114.Get(0));
 	apdevices114.Add(aplink114.Get(1));
 
 	ns3::NetDeviceContainer aplink115;
 	aplink115 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[327], wifiApNode115));
+			ns3::NodeContainer(csmaSwitches[327], wifi_ap_nodes[115]));
 	switch_devices[327].Add(aplink115.Get(0));
 	apdevices115.Add(aplink115.Get(1));
 
 	ns3::NetDeviceContainer aplink116;
 	aplink116 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[327], wifiApNode116));
+			ns3::NodeContainer(csmaSwitches[327], wifi_ap_nodes[116]));
 	switch_devices[327].Add(aplink116.Get(0));
 	apdevices116.Add(aplink116.Get(1));
 
 	ns3::NetDeviceContainer aplink117;
 	aplink117 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[326], wifiApNode117));
+			ns3::NodeContainer(csmaSwitches[326], wifi_ap_nodes[117]));
 	switch_devices[326].Add(aplink117.Get(0));
 	apdevices117.Add(aplink117.Get(1));
 
 	ns3::NetDeviceContainer aplink118;
 	aplink118 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[326], wifiApNode118));
+			ns3::NodeContainer(csmaSwitches[326], wifi_ap_nodes[118]));
 	switch_devices[326].Add(aplink118.Get(0));
 	apdevices118.Add(aplink118.Get(1));
 
 	ns3::NetDeviceContainer aplink119;
 	aplink119 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[326], wifiApNode119));
+			ns3::NodeContainer(csmaSwitches[326], wifi_ap_nodes[119]));
 	switch_devices[326].Add(aplink119.Get(0));
 	apdevices119.Add(aplink119.Get(1));
 
 	ns3::NetDeviceContainer aplink120;
 	aplink120 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[326], wifiApNode120));
+			ns3::NodeContainer(csmaSwitches[326], wifi_ap_nodes[120]));
 	switch_devices[326].Add(aplink120.Get(0));
 	apdevices120.Add(aplink120.Get(1));
 
 	ns3::NetDeviceContainer aplink121;
 	aplink121 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[326], wifiApNode121));
+			ns3::NodeContainer(csmaSwitches[326], wifi_ap_nodes[121]));
 	switch_devices[326].Add(aplink121.Get(0));
 	apdevices121.Add(aplink121.Get(1));
 
 	ns3::NetDeviceContainer aplink122;
 	aplink122 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[326], wifiApNode122));
+			ns3::NodeContainer(csmaSwitches[326], wifi_ap_nodes[122]));
 	switch_devices[326].Add(aplink122.Get(0));
 	apdevices122.Add(aplink122.Get(1));
 
 	ns3::NetDeviceContainer aplink123;
 	aplink123 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[326], wifiApNode123));
+			ns3::NodeContainer(csmaSwitches[326], wifi_ap_nodes[123]));
 	switch_devices[326].Add(aplink123.Get(0));
 	apdevices123.Add(aplink123.Get(1));
 
 	ns3::NetDeviceContainer aplink124;
 	aplink124 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[294], wifiApNode124));
+			ns3::NodeContainer(csmaSwitches[294], wifi_ap_nodes[124]));
 	switch_devices[294].Add(aplink124.Get(0));
 	apdevices124.Add(aplink124.Get(1));
 
 	ns3::NetDeviceContainer aplink125;
 	aplink125 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[332], wifiApNode125));
+			ns3::NodeContainer(csmaSwitches[332], wifi_ap_nodes[125]));
 	switch_devices[332].Add(aplink125.Get(0));
 	apdevices125.Add(aplink125.Get(1));
 
 	ns3::NetDeviceContainer aplink126;
 	aplink126 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[332], wifiApNode126));
+			ns3::NodeContainer(csmaSwitches[332], wifi_ap_nodes[126]));
 	switch_devices[332].Add(aplink126.Get(0));
 	apdevices126.Add(aplink126.Get(1));
 
 	ns3::NetDeviceContainer aplink127;
 	aplink127 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[332], wifiApNode127));
+			ns3::NodeContainer(csmaSwitches[332], wifi_ap_nodes[127]));
 	switch_devices[332].Add(aplink127.Get(0));
 	apdevices127.Add(aplink127.Get(1));
 
 	ns3::NetDeviceContainer aplink128;
 	aplink128 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[332], wifiApNode128));
+			ns3::NodeContainer(csmaSwitches[332], wifi_ap_nodes[128]));
 	switch_devices[332].Add(aplink128.Get(0));
 	apdevices128.Add(aplink128.Get(1));
 
 	ns3::NetDeviceContainer aplink129;
 	aplink129 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[215], wifiApNode129));
+			ns3::NodeContainer(csmaSwitches[215], wifi_ap_nodes[129]));
 	switch_devices[215].Add(aplink129.Get(0));
 	apdevices129.Add(aplink129.Get(1));
 
 	ns3::NetDeviceContainer aplink130;
 	aplink130 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[217], wifiApNode130));
+			ns3::NodeContainer(csmaSwitches[217], wifi_ap_nodes[130]));
 	switch_devices[217].Add(aplink130.Get(0));
 	apdevices130.Add(aplink130.Get(1));
 
 	ns3::NetDeviceContainer aplink131;
 	aplink131 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[218], wifiApNode131));
+			ns3::NodeContainer(csmaSwitches[218], wifi_ap_nodes[131]));
 	switch_devices[218].Add(aplink131.Get(0));
 	apdevices131.Add(aplink131.Get(1));
 
 	ns3::NetDeviceContainer aplink132;
 	aplink132 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[219], wifiApNode132));
+			ns3::NodeContainer(csmaSwitches[219], wifi_ap_nodes[132]));
 	switch_devices[219].Add(aplink132.Get(0));
 	apdevices132.Add(aplink132.Get(1));
 
 	ns3::NetDeviceContainer aplink133;
 	aplink133 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[221], wifiApNode133));
+			ns3::NodeContainer(csmaSwitches[221], wifi_ap_nodes[133]));
 	switch_devices[221].Add(aplink133.Get(0));
 	apdevices133.Add(aplink133.Get(1));
 
 	ns3::NetDeviceContainer aplink134;
 	aplink134 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[221], wifiApNode134));
+			ns3::NodeContainer(csmaSwitches[221], wifi_ap_nodes[134]));
 	switch_devices[221].Add(aplink134.Get(0));
 	apdevices134.Add(aplink134.Get(1));
 
 	ns3::NetDeviceContainer aplink135;
 	aplink135 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[222], wifiApNode135));
+			ns3::NodeContainer(csmaSwitches[222], wifi_ap_nodes[135]));
 	switch_devices[222].Add(aplink135.Get(0));
 	apdevices135.Add(aplink135.Get(1));
 
 	ns3::NetDeviceContainer aplink136;
 	aplink136 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[222], wifiApNode136));
+			ns3::NodeContainer(csmaSwitches[222], wifi_ap_nodes[136]));
 	switch_devices[222].Add(aplink136.Get(0));
 	apdevices136.Add(aplink136.Get(1));
 
 	ns3::NetDeviceContainer aplink137;
 	aplink137 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[220], wifiApNode137));
+			ns3::NodeContainer(csmaSwitches[220], wifi_ap_nodes[137]));
 	switch_devices[220].Add(aplink137.Get(0));
 	apdevices137.Add(aplink137.Get(1));
 
 	ns3::NetDeviceContainer aplink138;
 	aplink138 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[220], wifiApNode138));
+			ns3::NodeContainer(csmaSwitches[220], wifi_ap_nodes[138]));
 	switch_devices[220].Add(aplink138.Get(0));
 	apdevices138.Add(aplink138.Get(1));
 
 	ns3::NetDeviceContainer aplink139;
 	aplink139 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[227], wifiApNode139));
+			ns3::NodeContainer(csmaSwitches[227], wifi_ap_nodes[139]));
 	switch_devices[227].Add(aplink139.Get(0));
 	apdevices139.Add(aplink139.Get(1));
 
 	ns3::NetDeviceContainer aplink140;
 	aplink140 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[228], wifiApNode140));
+			ns3::NodeContainer(csmaSwitches[228], wifi_ap_nodes[140]));
 	switch_devices[228].Add(aplink140.Get(0));
 	apdevices140.Add(aplink140.Get(1));
 
 	ns3::NetDeviceContainer aplink141;
 	aplink141 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[224], wifiApNode141));
+			ns3::NodeContainer(csmaSwitches[224], wifi_ap_nodes[141]));
 	switch_devices[224].Add(aplink141.Get(0));
 	apdevices141.Add(aplink141.Get(1));
 
 	ns3::NetDeviceContainer aplink142;
 	aplink142 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[225], wifiApNode142));
+			ns3::NodeContainer(csmaSwitches[225], wifi_ap_nodes[142]));
 	switch_devices[225].Add(aplink142.Get(0));
 	apdevices142.Add(aplink142.Get(1));
 
 	ns3::NetDeviceContainer aplink143;
 	aplink143 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[225], wifiApNode143));
+			ns3::NodeContainer(csmaSwitches[225], wifi_ap_nodes[143]));
 	switch_devices[225].Add(aplink143.Get(0));
 	apdevices143.Add(aplink143.Get(1));
 
 	ns3::NetDeviceContainer aplink144;
 	aplink144 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[284], wifiApNode144));
+			ns3::NodeContainer(csmaSwitches[284], wifi_ap_nodes[144]));
 	switch_devices[284].Add(aplink144.Get(0));
 	apdevices144.Add(aplink144.Get(1));
 
 	ns3::NetDeviceContainer aplink145;
 	aplink145 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[259], wifiApNode145));
+			ns3::NodeContainer(csmaSwitches[259], wifi_ap_nodes[145]));
 	switch_devices[259].Add(aplink145.Get(0));
 	apdevices145.Add(aplink145.Get(1));
 
 	ns3::NetDeviceContainer aplink146;
 	aplink146 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[259], wifiApNode146));
+			ns3::NodeContainer(csmaSwitches[259], wifi_ap_nodes[146]));
 	switch_devices[259].Add(aplink146.Get(0));
 	apdevices146.Add(aplink146.Get(1));
 
 	ns3::NetDeviceContainer aplink147;
 	aplink147 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[260], wifiApNode147));
+			ns3::NodeContainer(csmaSwitches[260], wifi_ap_nodes[147]));
 	switch_devices[260].Add(aplink147.Get(0));
 	apdevices147.Add(aplink147.Get(1));
 
 	ns3::NetDeviceContainer aplink148;
 	aplink148 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[260], wifiApNode148));
+			ns3::NodeContainer(csmaSwitches[260], wifi_ap_nodes[148]));
 	switch_devices[260].Add(aplink148.Get(0));
 	apdevices148.Add(aplink148.Get(1));
 
 	ns3::NetDeviceContainer aplink149;
 	aplink149 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[261], wifiApNode149));
+			ns3::NodeContainer(csmaSwitches[261], wifi_ap_nodes[149]));
 	switch_devices[261].Add(aplink149.Get(0));
 	apdevices149.Add(aplink149.Get(1));
 
 	ns3::NetDeviceContainer aplink150;
 	aplink150 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[262], wifiApNode150));
+			ns3::NodeContainer(csmaSwitches[262], wifi_ap_nodes[150]));
 	switch_devices[262].Add(aplink150.Get(0));
 	apdevices150.Add(aplink150.Get(1));
 
 	ns3::NetDeviceContainer aplink151;
 	aplink151 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[262], wifiApNode151));
+			ns3::NodeContainer(csmaSwitches[262], wifi_ap_nodes[151]));
 	switch_devices[262].Add(aplink151.Get(0));
 	apdevices151.Add(aplink151.Get(1));
 
 	ns3::NetDeviceContainer aplink152;
 	aplink152 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[268], wifiApNode152));
+			ns3::NodeContainer(csmaSwitches[268], wifi_ap_nodes[152]));
 	switch_devices[268].Add(aplink152.Get(0));
 	apdevices152.Add(aplink152.Get(1));
 
 	ns3::NetDeviceContainer aplink153;
 	aplink153 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[268], wifiApNode153));
+			ns3::NodeContainer(csmaSwitches[268], wifi_ap_nodes[153]));
 	switch_devices[268].Add(aplink153.Get(0));
 	apdevices153.Add(aplink153.Get(1));
 
 	ns3::NetDeviceContainer aplink154;
 	aplink154 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[268], wifiApNode154));
+			ns3::NodeContainer(csmaSwitches[268], wifi_ap_nodes[154]));
 	switch_devices[268].Add(aplink154.Get(0));
 	apdevices154.Add(aplink154.Get(1));
 
 	ns3::NetDeviceContainer aplink155;
 	aplink155 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[268], wifiApNode155));
+			ns3::NodeContainer(csmaSwitches[268], wifi_ap_nodes[155]));
 	switch_devices[268].Add(aplink155.Get(0));
 	apdevices155.Add(aplink155.Get(1));
 
 	ns3::NetDeviceContainer aplink156;
 	aplink156 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[268], wifiApNode156));
+			ns3::NodeContainer(csmaSwitches[268], wifi_ap_nodes[156]));
 	switch_devices[268].Add(aplink156.Get(0));
 	apdevices156.Add(aplink156.Get(1));
 
 	ns3::NetDeviceContainer aplink157;
 	aplink157 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[214], wifiApNode157));
+			ns3::NodeContainer(csmaSwitches[214], wifi_ap_nodes[157]));
 	switch_devices[214].Add(aplink157.Get(0));
 	apdevices157.Add(aplink157.Get(1));
 
 	ns3::NetDeviceContainer aplink158;
 	aplink158 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[214], wifiApNode158));
+			ns3::NodeContainer(csmaSwitches[214], wifi_ap_nodes[158]));
 	switch_devices[214].Add(aplink158.Get(0));
 	apdevices158.Add(aplink158.Get(1));
 
 	ns3::NetDeviceContainer aplink159;
 	aplink159 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[214], wifiApNode159));
+			ns3::NodeContainer(csmaSwitches[214], wifi_ap_nodes[159]));
 	switch_devices[214].Add(aplink159.Get(0));
 	apdevices159.Add(aplink159.Get(1));
 
 	ns3::NetDeviceContainer aplink160;
 	aplink160 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[214], wifiApNode160));
+			ns3::NodeContainer(csmaSwitches[214], wifi_ap_nodes[160]));
 	switch_devices[214].Add(aplink160.Get(0));
 	apdevices160.Add(aplink160.Get(1));
 
 	ns3::NetDeviceContainer aplink161;
 	aplink161 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[214], wifiApNode161));
+			ns3::NodeContainer(csmaSwitches[214], wifi_ap_nodes[161]));
 	switch_devices[214].Add(aplink161.Get(0));
 	apdevices161.Add(aplink161.Get(1));
 
 	ns3::NetDeviceContainer aplink162;
 	aplink162 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[214], wifiApNode162));
+			ns3::NodeContainer(csmaSwitches[214], wifi_ap_nodes[162]));
 	switch_devices[214].Add(aplink162.Get(0));
 	apdevices162.Add(aplink162.Get(1));
 
 	ns3::NetDeviceContainer aplink163;
 	aplink163 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[214], wifiApNode163));
+			ns3::NodeContainer(csmaSwitches[214], wifi_ap_nodes[163]));
 	switch_devices[214].Add(aplink163.Get(0));
 	apdevices163.Add(aplink163.Get(1));
 
 	ns3::NetDeviceContainer aplink164;
 	aplink164 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[269], wifiApNode164));
+			ns3::NodeContainer(csmaSwitches[269], wifi_ap_nodes[164]));
 	switch_devices[269].Add(aplink164.Get(0));
 	apdevices164.Add(aplink164.Get(1));
 
 	ns3::NetDeviceContainer aplink165;
 	aplink165 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[270], wifiApNode165));
+			ns3::NodeContainer(csmaSwitches[270], wifi_ap_nodes[165]));
 	switch_devices[270].Add(aplink165.Get(0));
 	apdevices165.Add(aplink165.Get(1));
 
 	ns3::NetDeviceContainer aplink166;
 	aplink166 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[273], wifiApNode166));
+			ns3::NodeContainer(csmaSwitches[273], wifi_ap_nodes[166]));
 	switch_devices[273].Add(aplink166.Get(0));
 	apdevices166.Add(aplink166.Get(1));
 
 	ns3::NetDeviceContainer aplink167;
 	aplink167 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[277], wifiApNode167));
+			ns3::NodeContainer(csmaSwitches[277], wifi_ap_nodes[167]));
 	switch_devices[277].Add(aplink167.Get(0));
 	apdevices167.Add(aplink167.Get(1));
 
 	ns3::NetDeviceContainer aplink168;
 	aplink168 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[278], wifiApNode168));
+			ns3::NodeContainer(csmaSwitches[278], wifi_ap_nodes[168]));
 	switch_devices[278].Add(aplink168.Get(0));
 	apdevices168.Add(aplink168.Get(1));
 
 	ns3::NetDeviceContainer aplink169;
 	aplink169 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[280], wifiApNode169));
+			ns3::NodeContainer(csmaSwitches[280], wifi_ap_nodes[169]));
 	switch_devices[280].Add(aplink169.Get(0));
 	apdevices169.Add(aplink169.Get(1));
 
 	ns3::NetDeviceContainer aplink170;
 	aplink170 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[282], wifiApNode170));
+			ns3::NodeContainer(csmaSwitches[282], wifi_ap_nodes[170]));
 	switch_devices[282].Add(aplink170.Get(0));
 	apdevices170.Add(aplink170.Get(1));
 
 	ns3::NetDeviceContainer aplink171;
 	aplink171 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[263], wifiApNode171));
+			ns3::NodeContainer(csmaSwitches[263], wifi_ap_nodes[171]));
 	switch_devices[263].Add(aplink171.Get(0));
 	apdevices171.Add(aplink171.Get(1));
 
 	ns3::NetDeviceContainer aplink172;
 	aplink172 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[238], wifiApNode172));
+			ns3::NodeContainer(csmaSwitches[238], wifi_ap_nodes[172]));
 	switch_devices[238].Add(aplink172.Get(0));
 	apdevices172.Add(aplink172.Get(1));
 
 	ns3::NetDeviceContainer aplink173;
 	aplink173 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[238], wifiApNode173));
+			ns3::NodeContainer(csmaSwitches[238], wifi_ap_nodes[173]));
 	switch_devices[238].Add(aplink173.Get(0));
 	apdevices173.Add(aplink173.Get(1));
 
 	ns3::NetDeviceContainer aplink174;
 	aplink174 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[268], wifiApNode174));
+			ns3::NodeContainer(csmaSwitches[268], wifi_ap_nodes[174]));
 	switch_devices[268].Add(aplink174.Get(0));
 	apdevices174.Add(aplink174.Get(1));
 
 	ns3::NetDeviceContainer aplink175;
 	aplink175 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[268], wifiApNode175));
+			ns3::NodeContainer(csmaSwitches[268], wifi_ap_nodes[175]));
 	switch_devices[268].Add(aplink175.Get(0));
 	apdevices175.Add(aplink175.Get(1));
 
 	ns3::NetDeviceContainer aplink176;
 	aplink176 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[268], wifiApNode176));
+			ns3::NodeContainer(csmaSwitches[268], wifi_ap_nodes[176]));
 	switch_devices[268].Add(aplink176.Get(0));
 	apdevices176.Add(aplink176.Get(1));
 
 	ns3::NetDeviceContainer aplink177;
 	aplink177 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[260], wifiApNode177));
+			ns3::NodeContainer(csmaSwitches[260], wifi_ap_nodes[177]));
 	switch_devices[260].Add(aplink177.Get(0));
 	apdevices177.Add(aplink177.Get(1));
 
 	ns3::NetDeviceContainer aplink178;
 	aplink178 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[260], wifiApNode178));
+			ns3::NodeContainer(csmaSwitches[260], wifi_ap_nodes[178]));
 	switch_devices[260].Add(aplink178.Get(0));
 	apdevices178.Add(aplink178.Get(1));
 
 	ns3::NetDeviceContainer aplink179;
 	aplink179 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[260], wifiApNode179));
+			ns3::NodeContainer(csmaSwitches[260], wifi_ap_nodes[179]));
 	switch_devices[260].Add(aplink179.Get(0));
 	apdevices179.Add(aplink179.Get(1));
 
 	ns3::NetDeviceContainer aplink180;
 	aplink180 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[260], wifiApNode180));
+			ns3::NodeContainer(csmaSwitches[260], wifi_ap_nodes[180]));
 	switch_devices[260].Add(aplink180.Get(0));
 	apdevices180.Add(aplink180.Get(1));
 
 	ns3::NetDeviceContainer aplink181;
 	aplink181 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[268], wifiApNode181));
+			ns3::NodeContainer(csmaSwitches[268], wifi_ap_nodes[181]));
 	switch_devices[268].Add(aplink181.Get(0));
 	apdevices181.Add(aplink181.Get(1));
 
 	ns3::NetDeviceContainer aplink182;
 	aplink182 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[234], wifiApNode182));
+			ns3::NodeContainer(csmaSwitches[234], wifi_ap_nodes[182]));
 	switch_devices[234].Add(aplink182.Get(0));
 	apdevices182.Add(aplink182.Get(1));
 
 	ns3::NetDeviceContainer aplink183;
 	aplink183 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[235], wifiApNode183));
+			ns3::NodeContainer(csmaSwitches[235], wifi_ap_nodes[183]));
 	switch_devices[235].Add(aplink183.Get(0));
 	apdevices183.Add(aplink183.Get(1));
 
 	ns3::NetDeviceContainer aplink184;
 	aplink184 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[235], wifiApNode184));
+			ns3::NodeContainer(csmaSwitches[235], wifi_ap_nodes[184]));
 	switch_devices[235].Add(aplink184.Get(0));
 	apdevices184.Add(aplink184.Get(1));
 
 	ns3::NetDeviceContainer aplink185;
 	aplink185 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[231], wifiApNode185));
+			ns3::NodeContainer(csmaSwitches[231], wifi_ap_nodes[185]));
 	switch_devices[231].Add(aplink185.Get(0));
 	apdevices185.Add(aplink185.Get(1));
 
 	ns3::NetDeviceContainer aplink186;
 	aplink186 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[231], wifiApNode186));
+			ns3::NodeContainer(csmaSwitches[231], wifi_ap_nodes[186]));
 	switch_devices[231].Add(aplink186.Get(0));
 	apdevices186.Add(aplink186.Get(1));
 
 	ns3::NetDeviceContainer aplink187;
 	aplink187 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[231], wifiApNode187));
+			ns3::NodeContainer(csmaSwitches[231], wifi_ap_nodes[187]));
 	switch_devices[231].Add(aplink187.Get(0));
 	apdevices187.Add(aplink187.Get(1));
 
 	ns3::NetDeviceContainer aplink188;
 	aplink188 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[231], wifiApNode188));
+			ns3::NodeContainer(csmaSwitches[231], wifi_ap_nodes[188]));
 	switch_devices[231].Add(aplink188.Get(0));
 	apdevices188.Add(aplink188.Get(1));
 
 	ns3::NetDeviceContainer aplink189;
 	aplink189 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[138], wifiApNode189));
+			ns3::NodeContainer(csmaSwitches[138], wifi_ap_nodes[189]));
 	switch_devices[138].Add(aplink189.Get(0));
 	apdevices189.Add(aplink189.Get(1));
 
 	ns3::NetDeviceContainer aplink190;
 	aplink190 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[138], wifiApNode190));
+			ns3::NodeContainer(csmaSwitches[138], wifi_ap_nodes[190]));
 	switch_devices[138].Add(aplink190.Get(0));
 	apdevices190.Add(aplink190.Get(1));
 
 	ns3::NetDeviceContainer aplink191;
 	aplink191 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[139], wifiApNode191));
+			ns3::NodeContainer(csmaSwitches[139], wifi_ap_nodes[191]));
 	switch_devices[139].Add(aplink191.Get(0));
 	apdevices191.Add(aplink191.Get(1));
 
 	ns3::NetDeviceContainer aplink192;
 	aplink192 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[139], wifiApNode192));
+			ns3::NodeContainer(csmaSwitches[139], wifi_ap_nodes[192]));
 	switch_devices[139].Add(aplink192.Get(0));
 	apdevices192.Add(aplink192.Get(1));
 
 	ns3::NetDeviceContainer aplink193;
 	aplink193 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[140], wifiApNode193));
+			ns3::NodeContainer(csmaSwitches[140], wifi_ap_nodes[193]));
 	switch_devices[140].Add(aplink193.Get(0));
 	apdevices193.Add(aplink193.Get(1));
 
 	ns3::NetDeviceContainer aplink194;
 	aplink194 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[140], wifiApNode194));
+			ns3::NodeContainer(csmaSwitches[140], wifi_ap_nodes[194]));
 	switch_devices[140].Add(aplink194.Get(0));
 	apdevices194.Add(aplink194.Get(1));
 
 	ns3::NetDeviceContainer aplink195;
 	aplink195 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[140], wifiApNode195));
+			ns3::NodeContainer(csmaSwitches[140], wifi_ap_nodes[195]));
 	switch_devices[140].Add(aplink195.Get(0));
 	apdevices195.Add(aplink195.Get(1));
 
 	ns3::NetDeviceContainer aplink196;
 	aplink196 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[140], wifiApNode196));
+			ns3::NodeContainer(csmaSwitches[140], wifi_ap_nodes[196]));
 	switch_devices[140].Add(aplink196.Get(0));
 	apdevices196.Add(aplink196.Get(1));
 
 	ns3::NetDeviceContainer aplink197;
 	aplink197 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[126], wifiApNode197));
+			ns3::NodeContainer(csmaSwitches[126], wifi_ap_nodes[197]));
 	switch_devices[126].Add(aplink197.Get(0));
 	apdevices197.Add(aplink197.Get(1));
 
 	ns3::NetDeviceContainer aplink198;
 	aplink198 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[129], wifiApNode198));
+			ns3::NodeContainer(csmaSwitches[129], wifi_ap_nodes[198]));
 	switch_devices[129].Add(aplink198.Get(0));
 	apdevices198.Add(aplink198.Get(1));
 
 	ns3::NetDeviceContainer aplink199;
 	aplink199 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[129], wifiApNode199));
+			ns3::NodeContainer(csmaSwitches[129], wifi_ap_nodes[199]));
 	switch_devices[129].Add(aplink199.Get(0));
 	apdevices199.Add(aplink199.Get(1));
 
 	ns3::NetDeviceContainer aplink200;
 	aplink200 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[130], wifiApNode200));
+			ns3::NodeContainer(csmaSwitches[130], wifi_ap_nodes[200]));
 	switch_devices[130].Add(aplink200.Get(0));
 	apdevices200.Add(aplink200.Get(1));
 
 	ns3::NetDeviceContainer aplink201;
 	aplink201 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[136], wifiApNode201));
+			ns3::NodeContainer(csmaSwitches[136], wifi_ap_nodes[201]));
 	switch_devices[136].Add(aplink201.Get(0));
 	apdevices201.Add(aplink201.Get(1));
 
 	ns3::NetDeviceContainer aplink202;
 	aplink202 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[142], wifiApNode202));
+			ns3::NodeContainer(csmaSwitches[142], wifi_ap_nodes[202]));
 	switch_devices[142].Add(aplink202.Get(0));
 	apdevices202.Add(aplink202.Get(1));
 
 	ns3::NetDeviceContainer aplink203;
 	aplink203 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[142], wifiApNode203));
+			ns3::NodeContainer(csmaSwitches[142], wifi_ap_nodes[203]));
 	switch_devices[142].Add(aplink203.Get(0));
 	apdevices203.Add(aplink203.Get(1));
 
 	ns3::NetDeviceContainer aplink204;
 	aplink204 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[150], wifiApNode204));
+			ns3::NodeContainer(csmaSwitches[150], wifi_ap_nodes[204]));
 	switch_devices[150].Add(aplink204.Get(0));
 	apdevices204.Add(aplink204.Get(1));
 
 	ns3::NetDeviceContainer aplink205;
 	aplink205 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[150], wifiApNode205));
+			ns3::NodeContainer(csmaSwitches[150], wifi_ap_nodes[205]));
 	switch_devices[150].Add(aplink205.Get(0));
 	apdevices205.Add(aplink205.Get(1));
 
 	ns3::NetDeviceContainer aplink206;
 	aplink206 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[150], wifiApNode206));
+			ns3::NodeContainer(csmaSwitches[150], wifi_ap_nodes[206]));
 	switch_devices[150].Add(aplink206.Get(0));
 	apdevices206.Add(aplink206.Get(1));
 
 	ns3::NetDeviceContainer aplink207;
 	aplink207 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[147], wifiApNode207));
+			ns3::NodeContainer(csmaSwitches[147], wifi_ap_nodes[207]));
 	switch_devices[147].Add(aplink207.Get(0));
 	apdevices207.Add(aplink207.Get(1));
 
 	ns3::NetDeviceContainer aplink208;
 	aplink208 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[147], wifiApNode208));
+			ns3::NodeContainer(csmaSwitches[147], wifi_ap_nodes[208]));
 	switch_devices[147].Add(aplink208.Get(0));
 	apdevices208.Add(aplink208.Get(1));
 
 	ns3::NetDeviceContainer aplink209;
 	aplink209 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[146], wifiApNode209));
+			ns3::NodeContainer(csmaSwitches[146], wifi_ap_nodes[209]));
 	switch_devices[146].Add(aplink209.Get(0));
 	apdevices209.Add(aplink209.Get(1));
 
 	ns3::NetDeviceContainer aplink210;
 	aplink210 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[146], wifiApNode210));
+			ns3::NodeContainer(csmaSwitches[146], wifi_ap_nodes[210]));
 	switch_devices[146].Add(aplink210.Get(0));
 	apdevices210.Add(aplink210.Get(1));
 
 	ns3::NetDeviceContainer aplink211;
 	aplink211 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[151], wifiApNode211));
+			ns3::NodeContainer(csmaSwitches[151], wifi_ap_nodes[211]));
 	switch_devices[151].Add(aplink211.Get(0));
 	apdevices211.Add(aplink211.Get(1));
 
 	ns3::NetDeviceContainer aplink212;
 	aplink212 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[151], wifiApNode212));
+			ns3::NodeContainer(csmaSwitches[151], wifi_ap_nodes[212]));
 	switch_devices[151].Add(aplink212.Get(0));
 	apdevices212.Add(aplink212.Get(1));
 
 	ns3::NetDeviceContainer aplink213;
 	aplink213 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[148], wifiApNode213));
+			ns3::NodeContainer(csmaSwitches[148], wifi_ap_nodes[213]));
 	switch_devices[148].Add(aplink213.Get(0));
 	apdevices213.Add(aplink213.Get(1));
 
 	ns3::NetDeviceContainer aplink214;
 	aplink214 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[148], wifiApNode214));
+			ns3::NodeContainer(csmaSwitches[148], wifi_ap_nodes[214]));
 	switch_devices[148].Add(aplink214.Get(0));
 	apdevices214.Add(aplink214.Get(1));
 
 	ns3::NetDeviceContainer aplink215;
 	aplink215 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[144], wifiApNode215));
+			ns3::NodeContainer(csmaSwitches[144], wifi_ap_nodes[215]));
 	switch_devices[144].Add(aplink215.Get(0));
 	apdevices215.Add(aplink215.Get(1));
 
 	ns3::NetDeviceContainer aplink216;
 	aplink216 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[144], wifiApNode216));
+			ns3::NodeContainer(csmaSwitches[144], wifi_ap_nodes[216]));
 	switch_devices[144].Add(aplink216.Get(0));
 	apdevices216.Add(aplink216.Get(1));
 
 	ns3::NetDeviceContainer aplink217;
 	aplink217 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[144], wifiApNode217));
+			ns3::NodeContainer(csmaSwitches[144], wifi_ap_nodes[217]));
 	switch_devices[144].Add(aplink217.Get(0));
 	apdevices217.Add(aplink217.Get(1));
 
 	ns3::NetDeviceContainer aplink218;
 	aplink218 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[157], wifiApNode218));
+			ns3::NodeContainer(csmaSwitches[157], wifi_ap_nodes[218]));
 	switch_devices[157].Add(aplink218.Get(0));
 	apdevices218.Add(aplink218.Get(1));
 
 	ns3::NetDeviceContainer aplink219;
 	aplink219 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[149], wifiApNode219));
+			ns3::NodeContainer(csmaSwitches[149], wifi_ap_nodes[219]));
 	switch_devices[149].Add(aplink219.Get(0));
 	apdevices219.Add(aplink219.Get(1));
 
 	ns3::NetDeviceContainer aplink220;
 	aplink220 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[149], wifiApNode220));
+			ns3::NodeContainer(csmaSwitches[149], wifi_ap_nodes[220]));
 	switch_devices[149].Add(aplink220.Get(0));
 	apdevices220.Add(aplink220.Get(1));
 
 	ns3::NetDeviceContainer aplink221;
 	aplink221 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[158], wifiApNode221));
+			ns3::NodeContainer(csmaSwitches[158], wifi_ap_nodes[221]));
 	switch_devices[158].Add(aplink221.Get(0));
 	apdevices221.Add(aplink221.Get(1));
 
 	ns3::NetDeviceContainer aplink222;
 	aplink222 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[158], wifiApNode222));
+			ns3::NodeContainer(csmaSwitches[158], wifi_ap_nodes[222]));
 	switch_devices[158].Add(aplink222.Get(0));
 	apdevices222.Add(aplink222.Get(1));
 
 	ns3::NetDeviceContainer aplink223;
 	aplink223 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[158], wifiApNode223));
+			ns3::NodeContainer(csmaSwitches[158], wifi_ap_nodes[223]));
 	switch_devices[158].Add(aplink223.Get(0));
 	apdevices223.Add(aplink223.Get(1));
 
 	ns3::NetDeviceContainer aplink224;
 	aplink224 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[158], wifiApNode224));
+			ns3::NodeContainer(csmaSwitches[158], wifi_ap_nodes[224]));
 	switch_devices[158].Add(aplink224.Get(0));
 	apdevices224.Add(aplink224.Get(1));
 
 	ns3::NetDeviceContainer aplink225;
 	aplink225 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[158], wifiApNode225));
+			ns3::NodeContainer(csmaSwitches[158], wifi_ap_nodes[225]));
 	switch_devices[158].Add(aplink225.Get(0));
 	apdevices225.Add(aplink225.Get(1));
 
 	ns3::NetDeviceContainer aplink226;
 	aplink226 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[158], wifiApNode226));
+			ns3::NodeContainer(csmaSwitches[158], wifi_ap_nodes[226]));
 	switch_devices[158].Add(aplink226.Get(0));
 	apdevices226.Add(aplink226.Get(1));
 
 	ns3::NetDeviceContainer aplink227;
 	aplink227 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[158], wifiApNode227));
+			ns3::NodeContainer(csmaSwitches[158], wifi_ap_nodes[227]));
 	switch_devices[158].Add(aplink227.Get(0));
 	apdevices227.Add(aplink227.Get(1));
 
 	ns3::NetDeviceContainer aplink228;
 	aplink228 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[158], wifiApNode228));
+			ns3::NodeContainer(csmaSwitches[158], wifi_ap_nodes[228]));
 	switch_devices[158].Add(aplink228.Get(0));
 	apdevices228.Add(aplink228.Get(1));
 
 	ns3::NetDeviceContainer aplink229;
 	aplink229 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[158], wifiApNode229));
+			ns3::NodeContainer(csmaSwitches[158], wifi_ap_nodes[229]));
 	switch_devices[158].Add(aplink229.Get(0));
 	apdevices229.Add(aplink229.Get(1));
 
 	ns3::NetDeviceContainer aplink230;
 	aplink230 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[158], wifiApNode230));
+			ns3::NodeContainer(csmaSwitches[158], wifi_ap_nodes[230]));
 	switch_devices[158].Add(aplink230.Get(0));
 	apdevices230.Add(aplink230.Get(1));
 
 	ns3::NetDeviceContainer aplink231;
 	aplink231 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[117], wifiApNode231));
+			ns3::NodeContainer(csmaSwitches[117], wifi_ap_nodes[231]));
 	switch_devices[117].Add(aplink231.Get(0));
 	apdevices231.Add(aplink231.Get(1));
 
 	ns3::NetDeviceContainer aplink232;
 	aplink232 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[121], wifiApNode232));
+			ns3::NodeContainer(csmaSwitches[121], wifi_ap_nodes[232]));
 	switch_devices[121].Add(aplink232.Get(0));
 	apdevices232.Add(aplink232.Get(1));
 
 	ns3::NetDeviceContainer aplink233;
 	aplink233 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[122], wifiApNode233));
+			ns3::NodeContainer(csmaSwitches[122], wifi_ap_nodes[233]));
 	switch_devices[122].Add(aplink233.Get(0));
 	apdevices233.Add(aplink233.Get(1));
 
 	ns3::NetDeviceContainer aplink234;
 	aplink234 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[119], wifiApNode234));
+			ns3::NodeContainer(csmaSwitches[119], wifi_ap_nodes[234]));
 	switch_devices[119].Add(aplink234.Get(0));
 	apdevices234.Add(aplink234.Get(1));
 
 	ns3::NetDeviceContainer aplink235;
 	aplink235 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[51], wifiApNode235));
+			ns3::NodeContainer(csmaSwitches[51], wifi_ap_nodes[235]));
 	switch_devices[51].Add(aplink235.Get(0));
 	apdevices235.Add(aplink235.Get(1));
 
 	ns3::NetDeviceContainer aplink236;
 	aplink236 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[51], wifiApNode236));
+			ns3::NodeContainer(csmaSwitches[51], wifi_ap_nodes[236]));
 	switch_devices[51].Add(aplink236.Get(0));
 	apdevices236.Add(aplink236.Get(1));
 
 	ns3::NetDeviceContainer aplink237;
 	aplink237 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[52], wifiApNode237));
+			ns3::NodeContainer(csmaSwitches[52], wifi_ap_nodes[237]));
 	switch_devices[52].Add(aplink237.Get(0));
 	apdevices237.Add(aplink237.Get(1));
 
 	ns3::NetDeviceContainer aplink238;
 	aplink238 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[52], wifiApNode238));
+			ns3::NodeContainer(csmaSwitches[52], wifi_ap_nodes[238]));
 	switch_devices[52].Add(aplink238.Get(0));
 	apdevices238.Add(aplink238.Get(1));
 
 	ns3::NetDeviceContainer aplink239;
 	aplink239 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[52], wifiApNode239));
+			ns3::NodeContainer(csmaSwitches[52], wifi_ap_nodes[239]));
 	switch_devices[52].Add(aplink239.Get(0));
 	apdevices239.Add(aplink239.Get(1));
 
 	ns3::NetDeviceContainer aplink240;
 	aplink240 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[54], wifiApNode240));
+			ns3::NodeContainer(csmaSwitches[54], wifi_ap_nodes[240]));
 	switch_devices[54].Add(aplink240.Get(0));
 	apdevices240.Add(aplink240.Get(1));
 
 	ns3::NetDeviceContainer aplink241;
 	aplink241 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[56], wifiApNode241));
+			ns3::NodeContainer(csmaSwitches[56], wifi_ap_nodes[241]));
 	switch_devices[56].Add(aplink241.Get(0));
 	apdevices241.Add(aplink241.Get(1));
 
 	ns3::NetDeviceContainer aplink242;
 	aplink242 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[56], wifiApNode242));
+			ns3::NodeContainer(csmaSwitches[56], wifi_ap_nodes[242]));
 	switch_devices[56].Add(aplink242.Get(0));
 	apdevices242.Add(aplink242.Get(1));
 
 	ns3::NetDeviceContainer aplink243;
 	aplink243 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[57], wifiApNode243));
+			ns3::NodeContainer(csmaSwitches[57], wifi_ap_nodes[243]));
 	switch_devices[57].Add(aplink243.Get(0));
 	apdevices243.Add(aplink243.Get(1));
 
 	ns3::NetDeviceContainer aplink244;
 	aplink244 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[71], wifiApNode244));
+			ns3::NodeContainer(csmaSwitches[71], wifi_ap_nodes[244]));
 	switch_devices[71].Add(aplink244.Get(0));
 	apdevices244.Add(aplink244.Get(1));
 
 	ns3::NetDeviceContainer aplink245;
 	aplink245 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[71], wifiApNode245));
+			ns3::NodeContainer(csmaSwitches[71], wifi_ap_nodes[245]));
 	switch_devices[71].Add(aplink245.Get(0));
 	apdevices245.Add(aplink245.Get(1));
 
 	ns3::NetDeviceContainer aplink246;
 	aplink246 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[71], wifiApNode246));
+			ns3::NodeContainer(csmaSwitches[71], wifi_ap_nodes[246]));
 	switch_devices[71].Add(aplink246.Get(0));
 	apdevices246.Add(aplink246.Get(1));
 
 	ns3::NetDeviceContainer aplink247;
 	aplink247 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[70], wifiApNode247));
+			ns3::NodeContainer(csmaSwitches[70], wifi_ap_nodes[247]));
 	switch_devices[70].Add(aplink247.Get(0));
 	apdevices247.Add(aplink247.Get(1));
 
 	ns3::NetDeviceContainer aplink248;
 	aplink248 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[77], wifiApNode248));
+			ns3::NodeContainer(csmaSwitches[77], wifi_ap_nodes[248]));
 	switch_devices[77].Add(aplink248.Get(0));
 	apdevices248.Add(aplink248.Get(1));
 
 	ns3::NetDeviceContainer aplink249;
 	aplink249 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[77], wifiApNode249));
+			ns3::NodeContainer(csmaSwitches[77], wifi_ap_nodes[249]));
 	switch_devices[77].Add(aplink249.Get(0));
 	apdevices249.Add(aplink249.Get(1));
 
 	ns3::NetDeviceContainer aplink250;
 	aplink250 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[78], wifiApNode250));
+			ns3::NodeContainer(csmaSwitches[78], wifi_ap_nodes[250]));
 	switch_devices[78].Add(aplink250.Get(0));
 	apdevices250.Add(aplink250.Get(1));
 
 	ns3::NetDeviceContainer aplink251;
 	aplink251 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[65], wifiApNode251));
+			ns3::NodeContainer(csmaSwitches[65], wifi_ap_nodes[251]));
 	switch_devices[65].Add(aplink251.Get(0));
 	apdevices251.Add(aplink251.Get(1));
 
 	ns3::NetDeviceContainer aplink252;
 	aplink252 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[66], wifiApNode252));
+			ns3::NodeContainer(csmaSwitches[66], wifi_ap_nodes[252]));
 	switch_devices[66].Add(aplink252.Get(0));
 	apdevices252.Add(aplink252.Get(1));
 
 	ns3::NetDeviceContainer aplink253;
 	aplink253 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[69], wifiApNode253));
+			ns3::NodeContainer(csmaSwitches[69], wifi_ap_nodes[253]));
 	switch_devices[69].Add(aplink253.Get(0));
 	apdevices253.Add(aplink253.Get(1));
 
 	ns3::NetDeviceContainer aplink254;
 	aplink254 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[69], wifiApNode254));
+			ns3::NodeContainer(csmaSwitches[69], wifi_ap_nodes[254]));
 	switch_devices[69].Add(aplink254.Get(0));
 	apdevices254.Add(aplink254.Get(1));
 
 	ns3::NetDeviceContainer aplink255;
 	aplink255 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[79], wifiApNode255));
+			ns3::NodeContainer(csmaSwitches[79], wifi_ap_nodes[255]));
 	switch_devices[79].Add(aplink255.Get(0));
 	apdevices255.Add(aplink255.Get(1));
 
 	ns3::NetDeviceContainer aplink256;
 	aplink256 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[79], wifiApNode256));
+			ns3::NodeContainer(csmaSwitches[79], wifi_ap_nodes[256]));
 	switch_devices[79].Add(aplink256.Get(0));
 	apdevices256.Add(aplink256.Get(1));
 
 	ns3::NetDeviceContainer aplink257;
 	aplink257 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[41], wifiApNode257));
+			ns3::NodeContainer(csmaSwitches[41], wifi_ap_nodes[257]));
 	switch_devices[41].Add(aplink257.Get(0));
 	apdevices257.Add(aplink257.Get(1));
 
 	ns3::NetDeviceContainer aplink258;
 	aplink258 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[45], wifiApNode258));
+			ns3::NodeContainer(csmaSwitches[45], wifi_ap_nodes[258]));
 	switch_devices[45].Add(aplink258.Get(0));
 	apdevices258.Add(aplink258.Get(1));
 
 	ns3::NetDeviceContainer aplink259;
 	aplink259 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[47], wifiApNode259));
+			ns3::NodeContainer(csmaSwitches[47], wifi_ap_nodes[259]));
 	switch_devices[47].Add(aplink259.Get(0));
 	apdevices259.Add(aplink259.Get(1));
 
 	ns3::NetDeviceContainer aplink260;
 	aplink260 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[42], wifiApNode260));
+			ns3::NodeContainer(csmaSwitches[42], wifi_ap_nodes[260]));
 	switch_devices[42].Add(aplink260.Get(0));
 	apdevices260.Add(aplink260.Get(1));
 
 	ns3::NetDeviceContainer aplink261;
 	aplink261 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[49], wifiApNode261));
+			ns3::NodeContainer(csmaSwitches[49], wifi_ap_nodes[261]));
 	switch_devices[49].Add(aplink261.Get(0));
 	apdevices261.Add(aplink261.Get(1));
 
 	ns3::NetDeviceContainer aplink262;
 	aplink262 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[49], wifiApNode262));
+			ns3::NodeContainer(csmaSwitches[49], wifi_ap_nodes[262]));
 	switch_devices[49].Add(aplink262.Get(0));
 	apdevices262.Add(aplink262.Get(1));
 
 	ns3::NetDeviceContainer aplink263;
 	aplink263 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[44], wifiApNode263));
+			ns3::NodeContainer(csmaSwitches[44], wifi_ap_nodes[263]));
 	switch_devices[44].Add(aplink263.Get(0));
 	apdevices263.Add(aplink263.Get(1));
 
 	ns3::NetDeviceContainer aplink264;
 	aplink264 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[344], wifiApNode264));
+			ns3::NodeContainer(csmaSwitches[344], wifi_ap_nodes[264]));
 	switch_devices[344].Add(aplink264.Get(0));
 	apdevices264.Add(aplink264.Get(1));
 
 	ns3::NetDeviceContainer aplink265;
 	aplink265 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[345], wifiApNode265));
+			ns3::NodeContainer(csmaSwitches[345], wifi_ap_nodes[265]));
 	switch_devices[345].Add(aplink265.Get(0));
 	apdevices265.Add(aplink265.Get(1));
 
 	ns3::NetDeviceContainer aplink266;
 	aplink266 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[345], wifiApNode266));
+			ns3::NodeContainer(csmaSwitches[345], wifi_ap_nodes[266]));
 	switch_devices[345].Add(aplink266.Get(0));
 	apdevices266.Add(aplink266.Get(1));
 
 	ns3::NetDeviceContainer aplink267;
 	aplink267 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[18], wifiApNode267));
+			ns3::NodeContainer(csmaSwitches[18], wifi_ap_nodes[267]));
 	switch_devices[18].Add(aplink267.Get(0));
 	apdevices267.Add(aplink267.Get(1));
 
 	ns3::NetDeviceContainer aplink268;
 	aplink268 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[18], wifiApNode268));
+			ns3::NodeContainer(csmaSwitches[18], wifi_ap_nodes[268]));
 	switch_devices[18].Add(aplink268.Get(0));
 	apdevices268.Add(aplink268.Get(1));
 
 	ns3::NetDeviceContainer aplink269;
 	aplink269 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[18], wifiApNode269));
+			ns3::NodeContainer(csmaSwitches[18], wifi_ap_nodes[269]));
 	switch_devices[18].Add(aplink269.Get(0));
 	apdevices269.Add(aplink269.Get(1));
 
 	ns3::NetDeviceContainer aplink270;
 	aplink270 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[19], wifiApNode270));
+			ns3::NodeContainer(csmaSwitches[19], wifi_ap_nodes[270]));
 	switch_devices[19].Add(aplink270.Get(0));
 	apdevices270.Add(aplink270.Get(1));
 
 	ns3::NetDeviceContainer aplink271;
 	aplink271 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[27], wifiApNode271));
+			ns3::NodeContainer(csmaSwitches[27], wifi_ap_nodes[271]));
 	switch_devices[27].Add(aplink271.Get(0));
 	apdevices271.Add(aplink271.Get(1));
 
 	ns3::NetDeviceContainer aplink272;
 	aplink272 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[346], wifiApNode272));
+			ns3::NodeContainer(csmaSwitches[346], wifi_ap_nodes[272]));
 	switch_devices[346].Add(aplink272.Get(0));
 	apdevices272.Add(aplink272.Get(1));
 
 	ns3::NetDeviceContainer aplink273;
 	aplink273 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[346], wifiApNode273));
+			ns3::NodeContainer(csmaSwitches[346], wifi_ap_nodes[273]));
 	switch_devices[346].Add(aplink273.Get(0));
 	apdevices273.Add(aplink273.Get(1));
 
 	ns3::NetDeviceContainer aplink274;
 	aplink274 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[79], wifiApNode274));
+			ns3::NodeContainer(csmaSwitches[79], wifi_ap_nodes[274]));
 	switch_devices[79].Add(aplink274.Get(0));
 	apdevices274.Add(aplink274.Get(1));
 
 	ns3::NetDeviceContainer aplink275;
 	aplink275 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[79], wifiApNode275));
+			ns3::NodeContainer(csmaSwitches[79], wifi_ap_nodes[275]));
 	switch_devices[79].Add(aplink275.Get(0));
 	apdevices275.Add(aplink275.Get(1));
 
 	ns3::NetDeviceContainer aplink276;
 	aplink276 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[51], wifiApNode276));
+			ns3::NodeContainer(csmaSwitches[51], wifi_ap_nodes[276]));
 	switch_devices[51].Add(aplink276.Get(0));
 	apdevices276.Add(aplink276.Get(1));
 
 	ns3::NetDeviceContainer aplink277;
 	aplink277 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[51], wifiApNode277));
+			ns3::NodeContainer(csmaSwitches[51], wifi_ap_nodes[277]));
 	switch_devices[51].Add(aplink277.Get(0));
 	apdevices277.Add(aplink277.Get(1));
 
 	ns3::NetDeviceContainer aplink278;
 	aplink278 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[51], wifiApNode278));
+			ns3::NodeContainer(csmaSwitches[51], wifi_ap_nodes[278]));
 	switch_devices[51].Add(aplink278.Get(0));
 	apdevices278.Add(aplink278.Get(1));
 
 	ns3::NetDeviceContainer aplink279;
 	aplink279 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[51], wifiApNode279));
+			ns3::NodeContainer(csmaSwitches[51], wifi_ap_nodes[279]));
 	switch_devices[51].Add(aplink279.Get(0));
 	apdevices279.Add(aplink279.Get(1));
 
 	ns3::NetDeviceContainer aplink280;
 	aplink280 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[114], wifiApNode280));
+			ns3::NodeContainer(csmaSwitches[114], wifi_ap_nodes[280]));
 	switch_devices[114].Add(aplink280.Get(0));
 	apdevices280.Add(aplink280.Get(1));
 
 	ns3::NetDeviceContainer aplink281;
 	aplink281 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[114], wifiApNode281));
+			ns3::NodeContainer(csmaSwitches[114], wifi_ap_nodes[281]));
 	switch_devices[114].Add(aplink281.Get(0));
 	apdevices281.Add(aplink281.Get(1));
 
 	ns3::NetDeviceContainer aplink282;
 	aplink282 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[114], wifiApNode282));
+			ns3::NodeContainer(csmaSwitches[114], wifi_ap_nodes[282]));
 	switch_devices[114].Add(aplink282.Get(0));
 	apdevices282.Add(aplink282.Get(1));
 
 	ns3::NetDeviceContainer aplink283;
 	aplink283 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[114], wifiApNode283));
+			ns3::NodeContainer(csmaSwitches[114], wifi_ap_nodes[283]));
 	switch_devices[114].Add(aplink283.Get(0));
 	apdevices283.Add(aplink283.Get(1));
 
 	ns3::NetDeviceContainer aplink284;
 	aplink284 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[114], wifiApNode284));
+			ns3::NodeContainer(csmaSwitches[114], wifi_ap_nodes[284]));
 	switch_devices[114].Add(aplink284.Get(0));
 	apdevices284.Add(aplink284.Get(1));
 
 	ns3::NetDeviceContainer aplink285;
 	aplink285 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[57], wifiApNode285));
+			ns3::NodeContainer(csmaSwitches[57], wifi_ap_nodes[285]));
 	switch_devices[57].Add(aplink285.Get(0));
 	apdevices285.Add(aplink285.Get(1));
 
 	ns3::NetDeviceContainer aplink286;
 	aplink286 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[59], wifiApNode286));
+			ns3::NodeContainer(csmaSwitches[59], wifi_ap_nodes[286]));
 	switch_devices[59].Add(aplink286.Get(0));
 	apdevices286.Add(aplink286.Get(1));
 
 	ns3::NetDeviceContainer aplink287;
 	aplink287 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[58], wifiApNode287));
+			ns3::NodeContainer(csmaSwitches[58], wifi_ap_nodes[287]));
 	switch_devices[58].Add(aplink287.Get(0));
 	apdevices287.Add(aplink287.Get(1));
 
 	ns3::NetDeviceContainer aplink288;
 	aplink288 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[58], wifiApNode288));
+			ns3::NodeContainer(csmaSwitches[58], wifi_ap_nodes[288]));
 	switch_devices[58].Add(aplink288.Get(0));
 	apdevices288.Add(aplink288.Get(1));
 
 	ns3::NetDeviceContainer aplink289;
 	aplink289 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[114], wifiApNode289));
+			ns3::NodeContainer(csmaSwitches[114], wifi_ap_nodes[289]));
 	switch_devices[114].Add(aplink289.Get(0));
 	apdevices289.Add(aplink289.Get(1));
 
 	ns3::NetDeviceContainer aplink290;
 	aplink290 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[114], wifiApNode290));
+			ns3::NodeContainer(csmaSwitches[114], wifi_ap_nodes[290]));
 	switch_devices[114].Add(aplink290.Get(0));
 	apdevices290.Add(aplink290.Get(1));
 
 	ns3::NetDeviceContainer aplink291;
 	aplink291 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[114], wifiApNode291));
+			ns3::NodeContainer(csmaSwitches[114], wifi_ap_nodes[291]));
 	switch_devices[114].Add(aplink291.Get(0));
 	apdevices291.Add(aplink291.Get(1));
 
 	ns3::NetDeviceContainer aplink292;
 	aplink292 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[114], wifiApNode292));
+			ns3::NodeContainer(csmaSwitches[114], wifi_ap_nodes[292]));
 	switch_devices[114].Add(aplink292.Get(0));
 	apdevices292.Add(aplink292.Get(1));
 
 	ns3::NetDeviceContainer aplink293;
 	aplink293 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[347], wifiApNode293));
+			ns3::NodeContainer(csmaSwitches[347], wifi_ap_nodes[293]));
 	switch_devices[347].Add(aplink293.Get(0));
 	apdevices293.Add(aplink293.Get(1));
 
 	ns3::NetDeviceContainer aplink294;
 	aplink294 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[348], wifiApNode294));
+			ns3::NodeContainer(csmaSwitches[348], wifi_ap_nodes[294]));
 	switch_devices[348].Add(aplink294.Get(0));
 	apdevices294.Add(aplink294.Get(1));
 
 	ns3::NetDeviceContainer aplink295;
 	aplink295 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[65], wifiApNode295));
+			ns3::NodeContainer(csmaSwitches[65], wifi_ap_nodes[295]));
 	switch_devices[65].Add(aplink295.Get(0));
 	apdevices295.Add(aplink295.Get(1));
 
 	ns3::NetDeviceContainer aplink296;
 	aplink296 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[346], wifiApNode296));
+			ns3::NodeContainer(csmaSwitches[346], wifi_ap_nodes[296]));
 	switch_devices[346].Add(aplink296.Get(0));
 	apdevices296.Add(aplink296.Get(1));
 
 	ns3::NetDeviceContainer aplink297;
 	aplink297 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[346], wifiApNode297));
+			ns3::NodeContainer(csmaSwitches[346], wifi_ap_nodes[297]));
 	switch_devices[346].Add(aplink297.Get(0));
 	apdevices297.Add(aplink297.Get(1));
 
-//    aplink298 = csma.Install(ns3::NodeContainer(csmaSwitches[10],wifiApNode298));
+//    aplink298 = csma.Install(ns3::NodeContainer(csmaSwitches[10],wifi_ap_nodes[298]));
 //    switch_devices[20].Add(aplink298.Get(0));
 //    apdevices298.Add(aplink298.Get(1));
 //
-//    aplink299 = csma.Install(ns3::NodeContainer(csmaSwitches[11],wifiApNode299));
+//    aplink299 = csma.Install(ns3::NodeContainer(csmaSwitches[11],wifi_ap_nodes[299]));
 //    switch_devices[21].Add(aplink299.Get(0));
 //    apdevices299.Add(aplink299.Get(1));
 //
 	ns3::NetDeviceContainer aplink300;
 	aplink300 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[339], wifiApNode300));
+			ns3::NodeContainer(csmaSwitches[339], wifi_ap_nodes[300]));
 	switch_devices[339].Add(aplink300.Get(0));
 	apdevices300.Add(aplink300.Get(1));
 
 	ns3::NetDeviceContainer aplink301;
 	aplink301 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[338], wifiApNode301));
+			ns3::NodeContainer(csmaSwitches[338], wifi_ap_nodes[301]));
 	switch_devices[338].Add(aplink301.Get(0));
 	apdevices301.Add(aplink301.Get(1));
 
 	ns3::NetDeviceContainer aplink302;
 	aplink302 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[338], wifiApNode302));
+			ns3::NodeContainer(csmaSwitches[338], wifi_ap_nodes[302]));
 	switch_devices[338].Add(aplink302.Get(0));
 	apdevices302.Add(aplink302.Get(1));
 
 	ns3::NetDeviceContainer aplink303;
 	aplink303 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[335], wifiApNode303));
+			ns3::NodeContainer(csmaSwitches[335], wifi_ap_nodes[303]));
 	switch_devices[335].Add(aplink303.Get(0));
 	apdevices303.Add(aplink303.Get(1));
 
 	ns3::NetDeviceContainer aplink304;
 	aplink304 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[335], wifiApNode304));
+			ns3::NodeContainer(csmaSwitches[335], wifi_ap_nodes[304]));
 	switch_devices[335].Add(aplink304.Get(0));
 	apdevices304.Add(aplink304.Get(1));
 
 	ns3::NetDeviceContainer aplink305;
 	aplink305 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[335], wifiApNode305));
+			ns3::NodeContainer(csmaSwitches[335], wifi_ap_nodes[305]));
 	switch_devices[335].Add(aplink305.Get(0));
 	apdevices305.Add(aplink305.Get(1));
 
-//    aplink306 = csma.Install(ns3::NodeContainer(csmaSwitches[335],wifiApNode306));
+//    aplink306 = csma.Install(ns3::NodeContainer(csmaSwitches[335],wifi_ap_nodes[306]));
 //    switch_devices[335].Add(aplink306.Get(0));
 //    apdevices306.Add(aplink306.Get(1));
 
 	ns3::NetDeviceContainer aplink307;
 	aplink307 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[335], wifiApNode307));
+			ns3::NodeContainer(csmaSwitches[335], wifi_ap_nodes[307]));
 	switch_devices[335].Add(aplink307.Get(0));
 	apdevices307.Add(aplink307.Get(1));
 
 	ns3::NetDeviceContainer aplink308;
 	aplink308 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[335], wifiApNode308));
+			ns3::NodeContainer(csmaSwitches[335], wifi_ap_nodes[308]));
 	switch_devices[335].Add(aplink308.Get(0));
 	apdevices308.Add(aplink308.Get(1));
 
 	ns3::NetDeviceContainer aplink309;
 	aplink309 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[342], wifiApNode309));
+			ns3::NodeContainer(csmaSwitches[342], wifi_ap_nodes[309]));
 	switch_devices[342].Add(aplink309.Get(0));
 	apdevices309.Add(aplink309.Get(1));
 
 	ns3::NetDeviceContainer aplink310;
 	aplink310 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[338], wifiApNode310));
+			ns3::NodeContainer(csmaSwitches[338], wifi_ap_nodes[310]));
 	switch_devices[338].Add(aplink310.Get(0));
 	apdevices310.Add(aplink310.Get(1));
 
 	ns3::NetDeviceContainer aplink311;
 	aplink311 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[339], wifiApNode311));
+			ns3::NodeContainer(csmaSwitches[339], wifi_ap_nodes[311]));
 	switch_devices[339].Add(aplink311.Get(0));
 	apdevices311.Add(aplink311.Get(1));
 
 	ns3::NetDeviceContainer aplink312;
 	aplink312 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[339], wifiApNode312));
+			ns3::NodeContainer(csmaSwitches[339], wifi_ap_nodes[312]));
 	switch_devices[339].Add(aplink312.Get(0));
 	apdevices312.Add(aplink312.Get(1));
 
 	ns3::NetDeviceContainer aplink314;
 	aplink314 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[342], wifiApNode314));
+			ns3::NodeContainer(csmaSwitches[342], wifi_ap_nodes[314]));
 	switch_devices[342].Add(aplink314.Get(0));
 	apdevices314.Add(aplink314.Get(1));
 
-//    aplink315 = csma.Install(ns3::NodeContainer(csmaSwitches[05],wifiApNode315));
+//    aplink315 = csma.Install(ns3::NodeContainer(csmaSwitches[05],wifi_ap_nodes[315]));
 //    switch_devices[05].Add(aplink315.Get(0));
 //    apdevices315.Add(aplink315.Get(1));
 
@@ -19404,7 +17904,7 @@ int main(int argc, char** argv) {
 	}
 
 //apDevices switchDevices setuzoku
-	ns3::Ptr<ns3::Node> aoNode1 = wifiApNode1.Get(0);
+	ns3::Ptr<ns3::Node> aoNode1 = wifi_ap_nodes[1].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice1 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode1->AddDevice(apbridgeDevice1);
@@ -19417,7 +17917,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice1->AddBridgePort(apDevices1.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode2 = wifiApNode2.Get(0);
+	ns3::Ptr<ns3::Node> aoNode2 = wifi_ap_nodes[2].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice2 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode2->AddDevice(apbridgeDevice2);
@@ -19430,7 +17930,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice2->AddBridgePort(apDevices2.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode3 = wifiApNode3.Get(0);
+	ns3::Ptr<ns3::Node> aoNode3 = wifi_ap_nodes[3].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice3 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode3->AddDevice(apbridgeDevice3);
@@ -19443,7 +17943,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice3->AddBridgePort(apDevices3.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode4 = wifiApNode4.Get(0);
+	ns3::Ptr<ns3::Node> aoNode4 = wifi_ap_nodes[4].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice4 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode4->AddDevice(apbridgeDevice4);
@@ -19456,7 +17956,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice4->AddBridgePort(apDevices4.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode5 = wifiApNode5.Get(0);
+	ns3::Ptr<ns3::Node> aoNode5 = wifi_ap_nodes[5].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice5 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode5->AddDevice(apbridgeDevice5);
@@ -19469,7 +17969,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice5->AddBridgePort(apDevices5.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode6 = wifiApNode6.Get(0);
+	ns3::Ptr<ns3::Node> aoNode6 = wifi_ap_nodes[6].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice6 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode6->AddDevice(apbridgeDevice6);
@@ -19482,7 +17982,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice6->AddBridgePort(apDevices6.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode7 = wifiApNode7.Get(0);
+	ns3::Ptr<ns3::Node> aoNode7 = wifi_ap_nodes[7].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice7 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode7->AddDevice(apbridgeDevice7);
@@ -19495,7 +17995,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice7->AddBridgePort(apDevices7.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode8 = wifiApNode8.Get(0);
+	ns3::Ptr<ns3::Node> aoNode8 = wifi_ap_nodes[8].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice8 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode8->AddDevice(apbridgeDevice8);
@@ -19508,7 +18008,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice8->AddBridgePort(apDevices8.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode9 = wifiApNode9.Get(0);
+	ns3::Ptr<ns3::Node> aoNode9 = wifi_ap_nodes[9].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice9 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode9->AddDevice(apbridgeDevice9);
@@ -19521,7 +18021,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice9->AddBridgePort(apDevices9.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode10 = wifiApNode10.Get(0);
+	ns3::Ptr<ns3::Node> aoNode10 = wifi_ap_nodes[10].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice10 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode10->AddDevice(apbridgeDevice10);
@@ -19534,7 +18034,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice10->AddBridgePort(apDevices10.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode11 = wifiApNode11.Get(0);
+	ns3::Ptr<ns3::Node> aoNode11 = wifi_ap_nodes[11].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice11 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode11->AddDevice(apbridgeDevice11);
@@ -19547,7 +18047,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice11->AddBridgePort(apDevices11.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode12 = wifiApNode12.Get(0);
+	ns3::Ptr<ns3::Node> aoNode12 = wifi_ap_nodes[12].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice12 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode12->AddDevice(apbridgeDevice12);
@@ -19560,7 +18060,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice12->AddBridgePort(apDevices12.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode13 = wifiApNode13.Get(0);
+	ns3::Ptr<ns3::Node> aoNode13 = wifi_ap_nodes[13].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice13 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode13->AddDevice(apbridgeDevice13);
@@ -19573,7 +18073,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice13->AddBridgePort(apDevices13.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode14 = wifiApNode14.Get(0);
+	ns3::Ptr<ns3::Node> aoNode14 = wifi_ap_nodes[14].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice14 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode14->AddDevice(apbridgeDevice14);
@@ -19586,7 +18086,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice14->AddBridgePort(apDevices14.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode15 = wifiApNode15.Get(0);
+	ns3::Ptr<ns3::Node> aoNode15 = wifi_ap_nodes[15].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice15 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode15->AddDevice(apbridgeDevice15);
@@ -19599,7 +18099,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice15->AddBridgePort(apDevices15.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode16 = wifiApNode16.Get(0);
+	ns3::Ptr<ns3::Node> aoNode16 = wifi_ap_nodes[16].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice16 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode16->AddDevice(apbridgeDevice16);
@@ -19612,7 +18112,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice16->AddBridgePort(apDevices16.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode17 = wifiApNode17.Get(0);
+	ns3::Ptr<ns3::Node> aoNode17 = wifi_ap_nodes[17].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice17 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode17->AddDevice(apbridgeDevice17);
@@ -19625,7 +18125,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice17->AddBridgePort(apDevices17.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode18 = wifiApNode18.Get(0);
+	ns3::Ptr<ns3::Node> aoNode18 = wifi_ap_nodes[18].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice18 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode18->AddDevice(apbridgeDevice18);
@@ -19638,7 +18138,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice18->AddBridgePort(apDevices18.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode19 = wifiApNode19.Get(0);
+	ns3::Ptr<ns3::Node> aoNode19 = wifi_ap_nodes[19].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice19 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode19->AddDevice(apbridgeDevice19);
@@ -19651,7 +18151,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice19->AddBridgePort(apDevices19.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode20 = wifiApNode20.Get(0);
+	ns3::Ptr<ns3::Node> aoNode20 = wifi_ap_nodes[20].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice20 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode20->AddDevice(apbridgeDevice20);
@@ -19664,7 +18164,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice20->AddBridgePort(apDevices20.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode21 = wifiApNode21.Get(0);
+	ns3::Ptr<ns3::Node> aoNode21 = wifi_ap_nodes[21].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice21 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode21->AddDevice(apbridgeDevice21);
@@ -19677,7 +18177,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice21->AddBridgePort(apDevices21.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode22 = wifiApNode22.Get(0);
+	ns3::Ptr<ns3::Node> aoNode22 = wifi_ap_nodes[22].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice22 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode22->AddDevice(apbridgeDevice22);
@@ -19690,7 +18190,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice22->AddBridgePort(apDevices22.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode23 = wifiApNode23.Get(0);
+	ns3::Ptr<ns3::Node> aoNode23 = wifi_ap_nodes[23].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice23 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode23->AddDevice(apbridgeDevice23);
@@ -19703,7 +18203,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice23->AddBridgePort(apDevices23.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode24 = wifiApNode24.Get(0);
+	ns3::Ptr<ns3::Node> aoNode24 = wifi_ap_nodes[24].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice24 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode24->AddDevice(apbridgeDevice24);
@@ -19716,7 +18216,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice24->AddBridgePort(apDevices24.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode25 = wifiApNode25.Get(0);
+	ns3::Ptr<ns3::Node> aoNode25 = wifi_ap_nodes[25].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice25 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode25->AddDevice(apbridgeDevice25);
@@ -19729,7 +18229,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice25->AddBridgePort(apDevices25.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode26 = wifiApNode26.Get(0);
+	ns3::Ptr<ns3::Node> aoNode26 = wifi_ap_nodes[26].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice26 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode26->AddDevice(apbridgeDevice26);
@@ -19742,7 +18242,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice26->AddBridgePort(apDevices26.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode27 = wifiApNode27.Get(0);
+	ns3::Ptr<ns3::Node> aoNode27 = wifi_ap_nodes[27].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice27 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode27->AddDevice(apbridgeDevice27);
@@ -19755,7 +18255,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice27->AddBridgePort(apDevices27.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode28 = wifiApNode28.Get(0);
+	ns3::Ptr<ns3::Node> aoNode28 = wifi_ap_nodes[28].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice28 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode28->AddDevice(apbridgeDevice28);
@@ -19768,7 +18268,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice28->AddBridgePort(apDevices28.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode29 = wifiApNode29.Get(0);
+	ns3::Ptr<ns3::Node> aoNode29 = wifi_ap_nodes[29].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice29 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode29->AddDevice(apbridgeDevice29);
@@ -19781,7 +18281,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice29->AddBridgePort(apDevices29.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode30 = wifiApNode30.Get(0);
+	ns3::Ptr<ns3::Node> aoNode30 = wifi_ap_nodes[30].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice30 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode30->AddDevice(apbridgeDevice30);
@@ -19794,7 +18294,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice30->AddBridgePort(apDevices30.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode31 = wifiApNode31.Get(0);
+	ns3::Ptr<ns3::Node> aoNode31 = wifi_ap_nodes[31].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice31 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode31->AddDevice(apbridgeDevice31);
@@ -19807,7 +18307,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice31->AddBridgePort(apDevices31.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode32 = wifiApNode32.Get(0);
+	ns3::Ptr<ns3::Node> aoNode32 = wifi_ap_nodes[32].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice32 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode32->AddDevice(apbridgeDevice32);
@@ -19820,7 +18320,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice32->AddBridgePort(apDevices32.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode33 = wifiApNode33.Get(0);
+	ns3::Ptr<ns3::Node> aoNode33 = wifi_ap_nodes[33].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice33 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode33->AddDevice(apbridgeDevice33);
@@ -19833,7 +18333,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice33->AddBridgePort(apDevices33.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode34 = wifiApNode34.Get(0);
+	ns3::Ptr<ns3::Node> aoNode34 = wifi_ap_nodes[34].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice34 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode34->AddDevice(apbridgeDevice34);
@@ -19846,7 +18346,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice34->AddBridgePort(apDevices34.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode35 = wifiApNode35.Get(0);
+	ns3::Ptr<ns3::Node> aoNode35 = wifi_ap_nodes[35].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice35 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode35->AddDevice(apbridgeDevice35);
@@ -19859,7 +18359,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice35->AddBridgePort(apDevices35.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode36 = wifiApNode36.Get(0);
+	ns3::Ptr<ns3::Node> aoNode36 = wifi_ap_nodes[36].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice36 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode36->AddDevice(apbridgeDevice36);
@@ -19872,7 +18372,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice36->AddBridgePort(apDevices36.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode37 = wifiApNode37.Get(0);
+	ns3::Ptr<ns3::Node> aoNode37 = wifi_ap_nodes[37].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice37 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode37->AddDevice(apbridgeDevice37);
@@ -19885,7 +18385,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice37->AddBridgePort(apDevices37.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode38 = wifiApNode38.Get(0);
+	ns3::Ptr<ns3::Node> aoNode38 = wifi_ap_nodes[38].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice38 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode38->AddDevice(apbridgeDevice38);
@@ -19898,7 +18398,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice38->AddBridgePort(apDevices38.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode39 = wifiApNode39.Get(0);
+	ns3::Ptr<ns3::Node> aoNode39 = wifi_ap_nodes[39].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice39 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode39->AddDevice(apbridgeDevice39);
@@ -19911,7 +18411,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice39->AddBridgePort(apDevices39.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode40 = wifiApNode40.Get(0);
+	ns3::Ptr<ns3::Node> aoNode40 = wifi_ap_nodes[40].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice40 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode40->AddDevice(apbridgeDevice40);
@@ -19924,7 +18424,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice40->AddBridgePort(apDevices40.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode41 = wifiApNode41.Get(0);
+	ns3::Ptr<ns3::Node> aoNode41 = wifi_ap_nodes[41].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice41 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode41->AddDevice(apbridgeDevice41);
@@ -19937,7 +18437,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice41->AddBridgePort(apDevices41.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode42 = wifiApNode42.Get(0);
+	ns3::Ptr<ns3::Node> aoNode42 = wifi_ap_nodes[42].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice42 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode42->AddDevice(apbridgeDevice42);
@@ -19950,7 +18450,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice42->AddBridgePort(apDevices42.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode43 = wifiApNode43.Get(0);
+	ns3::Ptr<ns3::Node> aoNode43 = wifi_ap_nodes[43].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice43 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode43->AddDevice(apbridgeDevice43);
@@ -19963,7 +18463,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice43->AddBridgePort(apDevices43.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode44 = wifiApNode44.Get(0);
+	ns3::Ptr<ns3::Node> aoNode44 = wifi_ap_nodes[44].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice44 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode44->AddDevice(apbridgeDevice44);
@@ -19976,7 +18476,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice44->AddBridgePort(apDevices44.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode45 = wifiApNode45.Get(0);
+	ns3::Ptr<ns3::Node> aoNode45 = wifi_ap_nodes[45].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice45 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode45->AddDevice(apbridgeDevice45);
@@ -19989,7 +18489,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice45->AddBridgePort(apDevices45.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode46 = wifiApNode46.Get(0);
+	ns3::Ptr<ns3::Node> aoNode46 = wifi_ap_nodes[46].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice46 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode46->AddDevice(apbridgeDevice46);
@@ -20002,7 +18502,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice46->AddBridgePort(apDevices46.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode47 = wifiApNode47.Get(0);
+	ns3::Ptr<ns3::Node> aoNode47 = wifi_ap_nodes[47].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice47 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode47->AddDevice(apbridgeDevice47);
@@ -20015,7 +18515,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice47->AddBridgePort(apDevices47.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode48 = wifiApNode48.Get(0);
+	ns3::Ptr<ns3::Node> aoNode48 = wifi_ap_nodes[48].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice48 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode48->AddDevice(apbridgeDevice48);
@@ -20028,7 +18528,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice48->AddBridgePort(apDevices48.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode49 = wifiApNode49.Get(0);
+	ns3::Ptr<ns3::Node> aoNode49 = wifi_ap_nodes[49].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice49 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode49->AddDevice(apbridgeDevice49);
@@ -20041,7 +18541,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice49->AddBridgePort(apDevices49.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode50 = wifiApNode50.Get(0);
+	ns3::Ptr<ns3::Node> aoNode50 = wifi_ap_nodes[50].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice50 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode50->AddDevice(apbridgeDevice50);
@@ -20054,7 +18554,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice50->AddBridgePort(apDevices50.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode51 = wifiApNode51.Get(0);
+	ns3::Ptr<ns3::Node> aoNode51 = wifi_ap_nodes[51].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice51 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode51->AddDevice(apbridgeDevice51);
@@ -20067,7 +18567,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice51->AddBridgePort(apDevices51.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode52 = wifiApNode52.Get(0);
+	ns3::Ptr<ns3::Node> aoNode52 = wifi_ap_nodes[52].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice52 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode52->AddDevice(apbridgeDevice52);
@@ -20080,7 +18580,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice52->AddBridgePort(apDevices52.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode53 = wifiApNode53.Get(0);
+	ns3::Ptr<ns3::Node> aoNode53 = wifi_ap_nodes[53].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice53 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode53->AddDevice(apbridgeDevice53);
@@ -20093,7 +18593,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice53->AddBridgePort(apDevices53.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode54 = wifiApNode54.Get(0);
+	ns3::Ptr<ns3::Node> aoNode54 = wifi_ap_nodes[54].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice54 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode54->AddDevice(apbridgeDevice54);
@@ -20106,7 +18606,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice54->AddBridgePort(apDevices54.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode55 = wifiApNode55.Get(0);
+	ns3::Ptr<ns3::Node> aoNode55 = wifi_ap_nodes[55].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice55 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode55->AddDevice(apbridgeDevice55);
@@ -20119,7 +18619,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice55->AddBridgePort(apDevices55.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode56 = wifiApNode56.Get(0);
+	ns3::Ptr<ns3::Node> aoNode56 = wifi_ap_nodes[56].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice56 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode56->AddDevice(apbridgeDevice56);
@@ -20132,7 +18632,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice56->AddBridgePort(apDevices56.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode57 = wifiApNode57.Get(0);
+	ns3::Ptr<ns3::Node> aoNode57 = wifi_ap_nodes[57].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice57 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode57->AddDevice(apbridgeDevice57);
@@ -20145,7 +18645,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice57->AddBridgePort(apDevices57.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode58 = wifiApNode58.Get(0);
+	ns3::Ptr<ns3::Node> aoNode58 = wifi_ap_nodes[58].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice58 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode58->AddDevice(apbridgeDevice58);
@@ -20158,7 +18658,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice58->AddBridgePort(apDevices58.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode59 = wifiApNode59.Get(0);
+	ns3::Ptr<ns3::Node> aoNode59 = wifi_ap_nodes[59].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice59 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode59->AddDevice(apbridgeDevice59);
@@ -20171,7 +18671,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice59->AddBridgePort(apDevices59.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode60 = wifiApNode60.Get(0);
+	ns3::Ptr<ns3::Node> aoNode60 = wifi_ap_nodes[60].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice60 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode60->AddDevice(apbridgeDevice60);
@@ -20184,7 +18684,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice60->AddBridgePort(apDevices60.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode61 = wifiApNode61.Get(0);
+	ns3::Ptr<ns3::Node> aoNode61 = wifi_ap_nodes[61].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice61 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode61->AddDevice(apbridgeDevice61);
@@ -20197,7 +18697,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice61->AddBridgePort(apDevices61.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode62 = wifiApNode62.Get(0);
+	ns3::Ptr<ns3::Node> aoNode62 = wifi_ap_nodes[62].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice62 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode62->AddDevice(apbridgeDevice62);
@@ -20210,7 +18710,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice62->AddBridgePort(apDevices62.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode63 = wifiApNode63.Get(0);
+	ns3::Ptr<ns3::Node> aoNode63 = wifi_ap_nodes[63].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice63 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode63->AddDevice(apbridgeDevice63);
@@ -20223,7 +18723,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice63->AddBridgePort(apDevices63.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode64 = wifiApNode64.Get(0);
+	ns3::Ptr<ns3::Node> aoNode64 = wifi_ap_nodes[64].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice64 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode64->AddDevice(apbridgeDevice64);
@@ -20236,7 +18736,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice64->AddBridgePort(apDevices64.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode65 = wifiApNode65.Get(0);
+	ns3::Ptr<ns3::Node> aoNode65 = wifi_ap_nodes[65].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice65 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode65->AddDevice(apbridgeDevice65);
@@ -20249,7 +18749,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice65->AddBridgePort(apDevices65.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode66 = wifiApNode66.Get(0);
+	ns3::Ptr<ns3::Node> aoNode66 = wifi_ap_nodes[66].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice66 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode66->AddDevice(apbridgeDevice66);
@@ -20262,7 +18762,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice66->AddBridgePort(apDevices66.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode67 = wifiApNode67.Get(0);
+	ns3::Ptr<ns3::Node> aoNode67 = wifi_ap_nodes[67].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice67 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode67->AddDevice(apbridgeDevice67);
@@ -20275,7 +18775,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice67->AddBridgePort(apDevices67.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode68 = wifiApNode68.Get(0);
+	ns3::Ptr<ns3::Node> aoNode68 = wifi_ap_nodes[68].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice68 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode68->AddDevice(apbridgeDevice68);
@@ -20288,7 +18788,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice68->AddBridgePort(apDevices68.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode69 = wifiApNode69.Get(0);
+	ns3::Ptr<ns3::Node> aoNode69 = wifi_ap_nodes[69].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice69 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode69->AddDevice(apbridgeDevice69);
@@ -20301,7 +18801,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice69->AddBridgePort(apDevices69.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode70 = wifiApNode70.Get(0);
+	ns3::Ptr<ns3::Node> aoNode70 = wifi_ap_nodes[70].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice70 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode70->AddDevice(apbridgeDevice70);
@@ -20314,7 +18814,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice70->AddBridgePort(apDevices70.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode71 = wifiApNode71.Get(0);
+	ns3::Ptr<ns3::Node> aoNode71 = wifi_ap_nodes[71].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice71 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode71->AddDevice(apbridgeDevice71);
@@ -20327,7 +18827,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice71->AddBridgePort(apDevices71.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode72 = wifiApNode72.Get(0);
+	ns3::Ptr<ns3::Node> aoNode72 = wifi_ap_nodes[72].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice72 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode72->AddDevice(apbridgeDevice72);
@@ -20340,7 +18840,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice72->AddBridgePort(apDevices72.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode73 = wifiApNode73.Get(0);
+	ns3::Ptr<ns3::Node> aoNode73 = wifi_ap_nodes[73].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice73 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode73->AddDevice(apbridgeDevice73);
@@ -20353,7 +18853,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice73->AddBridgePort(apDevices73.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode74 = wifiApNode74.Get(0);
+	ns3::Ptr<ns3::Node> aoNode74 = wifi_ap_nodes[74].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice74 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode74->AddDevice(apbridgeDevice74);
@@ -20366,7 +18866,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice74->AddBridgePort(apDevices74.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode75 = wifiApNode75.Get(0);
+	ns3::Ptr<ns3::Node> aoNode75 = wifi_ap_nodes[75].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice75 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode75->AddDevice(apbridgeDevice75);
@@ -20379,7 +18879,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice75->AddBridgePort(apDevices75.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode76 = wifiApNode76.Get(0);
+	ns3::Ptr<ns3::Node> aoNode76 = wifi_ap_nodes[76].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice76 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode76->AddDevice(apbridgeDevice76);
@@ -20392,7 +18892,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice76->AddBridgePort(apDevices76.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode77 = wifiApNode77.Get(0);
+	ns3::Ptr<ns3::Node> aoNode77 = wifi_ap_nodes[77].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice77 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode77->AddDevice(apbridgeDevice77);
@@ -20405,7 +18905,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice77->AddBridgePort(apDevices77.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode78 = wifiApNode78.Get(0);
+	ns3::Ptr<ns3::Node> aoNode78 = wifi_ap_nodes[78].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice78 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode78->AddDevice(apbridgeDevice78);
@@ -20418,7 +18918,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice78->AddBridgePort(apDevices78.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode79 = wifiApNode79.Get(0);
+	ns3::Ptr<ns3::Node> aoNode79 = wifi_ap_nodes[79].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice79 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode79->AddDevice(apbridgeDevice79);
@@ -20431,7 +18931,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice79->AddBridgePort(apDevices79.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode80 = wifiApNode80.Get(0);
+	ns3::Ptr<ns3::Node> aoNode80 = wifi_ap_nodes[80].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice80 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode80->AddDevice(apbridgeDevice80);
@@ -20444,7 +18944,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice80->AddBridgePort(apDevices80.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode81 = wifiApNode81.Get(0);
+	ns3::Ptr<ns3::Node> aoNode81 = wifi_ap_nodes[81].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice81 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode81->AddDevice(apbridgeDevice81);
@@ -20457,7 +18957,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice81->AddBridgePort(apDevices81.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode82 = wifiApNode82.Get(0);
+	ns3::Ptr<ns3::Node> aoNode82 = wifi_ap_nodes[82].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice82 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode82->AddDevice(apbridgeDevice82);
@@ -20470,7 +18970,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice82->AddBridgePort(apDevices82.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode83 = wifiApNode83.Get(0);
+	ns3::Ptr<ns3::Node> aoNode83 = wifi_ap_nodes[83].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice83 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode83->AddDevice(apbridgeDevice83);
@@ -20483,7 +18983,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice83->AddBridgePort(apDevices83.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode84 = wifiApNode84.Get(0);
+	ns3::Ptr<ns3::Node> aoNode84 = wifi_ap_nodes[84].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice84 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode84->AddDevice(apbridgeDevice84);
@@ -20496,7 +18996,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice84->AddBridgePort(apDevices84.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode85 = wifiApNode85.Get(0);
+	ns3::Ptr<ns3::Node> aoNode85 = wifi_ap_nodes[85].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice85 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode85->AddDevice(apbridgeDevice85);
@@ -20509,7 +19009,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice85->AddBridgePort(apDevices85.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode86 = wifiApNode86.Get(0);
+	ns3::Ptr<ns3::Node> aoNode86 = wifi_ap_nodes[86].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice86 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode86->AddDevice(apbridgeDevice86);
@@ -20522,7 +19022,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice86->AddBridgePort(apDevices86.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode87 = wifiApNode87.Get(0);
+	ns3::Ptr<ns3::Node> aoNode87 = wifi_ap_nodes[87].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice87 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode87->AddDevice(apbridgeDevice87);
@@ -20535,7 +19035,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice87->AddBridgePort(apDevices87.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode88 = wifiApNode88.Get(0);
+	ns3::Ptr<ns3::Node> aoNode88 = wifi_ap_nodes[88].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice88 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode88->AddDevice(apbridgeDevice88);
@@ -20548,7 +19048,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice88->AddBridgePort(apDevices88.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode89 = wifiApNode89.Get(0);
+	ns3::Ptr<ns3::Node> aoNode89 = wifi_ap_nodes[89].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice89 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode89->AddDevice(apbridgeDevice89);
@@ -20561,7 +19061,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice89->AddBridgePort(apDevices89.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode90 = wifiApNode90.Get(0);
+	ns3::Ptr<ns3::Node> aoNode90 = wifi_ap_nodes[90].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice90 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode90->AddDevice(apbridgeDevice90);
@@ -20574,7 +19074,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice90->AddBridgePort(apDevices90.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode91 = wifiApNode91.Get(0);
+	ns3::Ptr<ns3::Node> aoNode91 = wifi_ap_nodes[91].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice91 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode91->AddDevice(apbridgeDevice91);
@@ -20587,7 +19087,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice91->AddBridgePort(apDevices91.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode92 = wifiApNode92.Get(0);
+	ns3::Ptr<ns3::Node> aoNode92 = wifi_ap_nodes[92].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice92 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode92->AddDevice(apbridgeDevice92);
@@ -20600,7 +19100,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice92->AddBridgePort(apDevices92.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode93 = wifiApNode93.Get(0);
+	ns3::Ptr<ns3::Node> aoNode93 = wifi_ap_nodes[93].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice93 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode93->AddDevice(apbridgeDevice93);
@@ -20613,7 +19113,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice93->AddBridgePort(apDevices93.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode94 = wifiApNode94.Get(0);
+	ns3::Ptr<ns3::Node> aoNode94 = wifi_ap_nodes[94].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice94 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode94->AddDevice(apbridgeDevice94);
@@ -20626,7 +19126,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice94->AddBridgePort(apDevices94.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode95 = wifiApNode95.Get(0);
+	ns3::Ptr<ns3::Node> aoNode95 = wifi_ap_nodes[95].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice95 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode95->AddDevice(apbridgeDevice95);
@@ -20639,7 +19139,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice95->AddBridgePort(apDevices95.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode96 = wifiApNode96.Get(0);
+	ns3::Ptr<ns3::Node> aoNode96 = wifi_ap_nodes[96].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice96 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode96->AddDevice(apbridgeDevice96);
@@ -20652,7 +19152,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice96->AddBridgePort(apDevices96.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode97 = wifiApNode97.Get(0);
+	ns3::Ptr<ns3::Node> aoNode97 = wifi_ap_nodes[97].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice97 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode97->AddDevice(apbridgeDevice97);
@@ -20665,7 +19165,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice97->AddBridgePort(apDevices97.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode98 = wifiApNode98.Get(0);
+	ns3::Ptr<ns3::Node> aoNode98 = wifi_ap_nodes[98].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice98 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode98->AddDevice(apbridgeDevice98);
@@ -20678,7 +19178,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice98->AddBridgePort(apDevices98.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode99 = wifiApNode99.Get(0);
+	ns3::Ptr<ns3::Node> aoNode99 = wifi_ap_nodes[99].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice99 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode99->AddDevice(apbridgeDevice99);
@@ -20691,7 +19191,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice99->AddBridgePort(apDevices99.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode100 = wifiApNode100.Get(0);
+	ns3::Ptr<ns3::Node> aoNode100 = wifi_ap_nodes[100].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice100 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode100->AddDevice(apbridgeDevice100);
@@ -20706,7 +19206,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice100->AddBridgePort(apDevices100.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode101 = wifiApNode101.Get(0);
+	ns3::Ptr<ns3::Node> aoNode101 = wifi_ap_nodes[101].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice101 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode101->AddDevice(apbridgeDevice101);
@@ -20721,7 +19221,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice101->AddBridgePort(apDevices101.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode102 = wifiApNode102.Get(0);
+	ns3::Ptr<ns3::Node> aoNode102 = wifi_ap_nodes[102].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice102 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode102->AddDevice(apbridgeDevice102);
@@ -20736,7 +19236,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice102->AddBridgePort(apDevices102.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode103 = wifiApNode103.Get(0);
+	ns3::Ptr<ns3::Node> aoNode103 = wifi_ap_nodes[103].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice103 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode103->AddDevice(apbridgeDevice103);
@@ -20751,7 +19251,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice103->AddBridgePort(apDevices103.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode104 = wifiApNode104.Get(0);
+	ns3::Ptr<ns3::Node> aoNode104 = wifi_ap_nodes[104].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice104 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode104->AddDevice(apbridgeDevice104);
@@ -20766,7 +19266,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice104->AddBridgePort(apDevices104.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode105 = wifiApNode105.Get(0);
+	ns3::Ptr<ns3::Node> aoNode105 = wifi_ap_nodes[105].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice105 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode105->AddDevice(apbridgeDevice105);
@@ -20781,7 +19281,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice105->AddBridgePort(apDevices105.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode106 = wifiApNode106.Get(0);
+	ns3::Ptr<ns3::Node> aoNode106 = wifi_ap_nodes[106].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice106 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode106->AddDevice(apbridgeDevice106);
@@ -20796,7 +19296,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice106->AddBridgePort(apDevices106.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode107 = wifiApNode107.Get(0);
+	ns3::Ptr<ns3::Node> aoNode107 = wifi_ap_nodes[107].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice107 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode107->AddDevice(apbridgeDevice107);
@@ -20811,7 +19311,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice107->AddBridgePort(apDevices107.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode108 = wifiApNode108.Get(0);
+	ns3::Ptr<ns3::Node> aoNode108 = wifi_ap_nodes[108].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice108 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode108->AddDevice(apbridgeDevice108);
@@ -20826,7 +19326,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice108->AddBridgePort(apDevices108.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode109 = wifiApNode109.Get(0);
+	ns3::Ptr<ns3::Node> aoNode109 = wifi_ap_nodes[109].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice109 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode109->AddDevice(apbridgeDevice109);
@@ -20841,7 +19341,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice109->AddBridgePort(apDevices109.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode110 = wifiApNode110.Get(0);
+	ns3::Ptr<ns3::Node> aoNode110 = wifi_ap_nodes[110].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice110 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode110->AddDevice(apbridgeDevice110);
@@ -20856,7 +19356,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice110->AddBridgePort(apDevices110.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode111 = wifiApNode111.Get(0);
+	ns3::Ptr<ns3::Node> aoNode111 = wifi_ap_nodes[111].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice111 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode111->AddDevice(apbridgeDevice111);
@@ -20871,7 +19371,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice111->AddBridgePort(apDevices111.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode112 = wifiApNode112.Get(0);
+	ns3::Ptr<ns3::Node> aoNode112 = wifi_ap_nodes[112].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice112 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode112->AddDevice(apbridgeDevice112);
@@ -20886,7 +19386,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice112->AddBridgePort(apDevices112.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode113 = wifiApNode113.Get(0);
+	ns3::Ptr<ns3::Node> aoNode113 = wifi_ap_nodes[113].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice113 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode113->AddDevice(apbridgeDevice113);
@@ -20901,7 +19401,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice113->AddBridgePort(apDevices113.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode114 = wifiApNode114.Get(0);
+	ns3::Ptr<ns3::Node> aoNode114 = wifi_ap_nodes[114].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice114 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode114->AddDevice(apbridgeDevice114);
@@ -20916,7 +19416,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice114->AddBridgePort(apDevices114.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode115 = wifiApNode115.Get(0);
+	ns3::Ptr<ns3::Node> aoNode115 = wifi_ap_nodes[115].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice115 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode115->AddDevice(apbridgeDevice115);
@@ -20931,7 +19431,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice115->AddBridgePort(apDevices115.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode116 = wifiApNode116.Get(0);
+	ns3::Ptr<ns3::Node> aoNode116 = wifi_ap_nodes[116].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice116 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode116->AddDevice(apbridgeDevice116);
@@ -20946,7 +19446,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice116->AddBridgePort(apDevices116.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode117 = wifiApNode117.Get(0);
+	ns3::Ptr<ns3::Node> aoNode117 = wifi_ap_nodes[117].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice117 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode117->AddDevice(apbridgeDevice117);
@@ -20961,7 +19461,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice117->AddBridgePort(apDevices117.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode118 = wifiApNode118.Get(0);
+	ns3::Ptr<ns3::Node> aoNode118 = wifi_ap_nodes[118].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice118 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode118->AddDevice(apbridgeDevice118);
@@ -20976,7 +19476,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice118->AddBridgePort(apDevices118.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode119 = wifiApNode119.Get(0);
+	ns3::Ptr<ns3::Node> aoNode119 = wifi_ap_nodes[119].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice119 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode119->AddDevice(apbridgeDevice119);
@@ -20991,7 +19491,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice119->AddBridgePort(apDevices119.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode120 = wifiApNode120.Get(0);
+	ns3::Ptr<ns3::Node> aoNode120 = wifi_ap_nodes[120].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice120 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode120->AddDevice(apbridgeDevice120);
@@ -21006,7 +19506,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice120->AddBridgePort(apDevices120.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode121 = wifiApNode121.Get(0);
+	ns3::Ptr<ns3::Node> aoNode121 = wifi_ap_nodes[121].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice121 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode121->AddDevice(apbridgeDevice121);
@@ -21021,7 +19521,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice121->AddBridgePort(apDevices121.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode122 = wifiApNode122.Get(0);
+	ns3::Ptr<ns3::Node> aoNode122 = wifi_ap_nodes[122].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice122 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode122->AddDevice(apbridgeDevice122);
@@ -21036,7 +19536,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice122->AddBridgePort(apDevices122.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode123 = wifiApNode123.Get(0);
+	ns3::Ptr<ns3::Node> aoNode123 = wifi_ap_nodes[123].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice123 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode123->AddDevice(apbridgeDevice123);
@@ -21051,7 +19551,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice123->AddBridgePort(apDevices123.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode124 = wifiApNode124.Get(0);
+	ns3::Ptr<ns3::Node> aoNode124 = wifi_ap_nodes[124].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice124 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode124->AddDevice(apbridgeDevice124);
@@ -21066,7 +19566,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice124->AddBridgePort(apDevices124.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode125 = wifiApNode125.Get(0);
+	ns3::Ptr<ns3::Node> aoNode125 = wifi_ap_nodes[125].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice125 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode125->AddDevice(apbridgeDevice125);
@@ -21081,7 +19581,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice125->AddBridgePort(apDevices125.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode126 = wifiApNode126.Get(0);
+	ns3::Ptr<ns3::Node> aoNode126 = wifi_ap_nodes[126].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice126 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode126->AddDevice(apbridgeDevice126);
@@ -21096,7 +19596,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice126->AddBridgePort(apDevices126.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode127 = wifiApNode127.Get(0);
+	ns3::Ptr<ns3::Node> aoNode127 = wifi_ap_nodes[127].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice127 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode127->AddDevice(apbridgeDevice127);
@@ -21111,7 +19611,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice127->AddBridgePort(apDevices127.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode128 = wifiApNode128.Get(0);
+	ns3::Ptr<ns3::Node> aoNode128 = wifi_ap_nodes[128].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice128 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode128->AddDevice(apbridgeDevice128);
@@ -21126,7 +19626,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice128->AddBridgePort(apDevices128.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode129 = wifiApNode129.Get(0);
+	ns3::Ptr<ns3::Node> aoNode129 = wifi_ap_nodes[129].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice129 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode129->AddDevice(apbridgeDevice129);
@@ -21141,7 +19641,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice129->AddBridgePort(apDevices129.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode130 = wifiApNode130.Get(0);
+	ns3::Ptr<ns3::Node> aoNode130 = wifi_ap_nodes[130].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice130 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode130->AddDevice(apbridgeDevice130);
@@ -21156,7 +19656,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice130->AddBridgePort(apDevices130.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode131 = wifiApNode131.Get(0);
+	ns3::Ptr<ns3::Node> aoNode131 = wifi_ap_nodes[131].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice131 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode131->AddDevice(apbridgeDevice131);
@@ -21171,7 +19671,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice131->AddBridgePort(apDevices131.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode132 = wifiApNode132.Get(0);
+	ns3::Ptr<ns3::Node> aoNode132 = wifi_ap_nodes[132].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice132 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode132->AddDevice(apbridgeDevice132);
@@ -21186,7 +19686,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice132->AddBridgePort(apDevices132.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode133 = wifiApNode133.Get(0);
+	ns3::Ptr<ns3::Node> aoNode133 = wifi_ap_nodes[133].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice133 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode133->AddDevice(apbridgeDevice133);
@@ -21201,7 +19701,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice133->AddBridgePort(apDevices133.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode134 = wifiApNode134.Get(0);
+	ns3::Ptr<ns3::Node> aoNode134 = wifi_ap_nodes[134].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice134 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode134->AddDevice(apbridgeDevice134);
@@ -21216,7 +19716,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice134->AddBridgePort(apDevices134.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode135 = wifiApNode135.Get(0);
+	ns3::Ptr<ns3::Node> aoNode135 = wifi_ap_nodes[135].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice135 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode135->AddDevice(apbridgeDevice135);
@@ -21231,7 +19731,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice135->AddBridgePort(apDevices135.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode136 = wifiApNode136.Get(0);
+	ns3::Ptr<ns3::Node> aoNode136 = wifi_ap_nodes[136].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice136 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode136->AddDevice(apbridgeDevice136);
@@ -21246,7 +19746,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice136->AddBridgePort(apDevices136.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode137 = wifiApNode137.Get(0);
+	ns3::Ptr<ns3::Node> aoNode137 = wifi_ap_nodes[137].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice137 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode137->AddDevice(apbridgeDevice137);
@@ -21261,7 +19761,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice137->AddBridgePort(apDevices137.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode138 = wifiApNode138.Get(0);
+	ns3::Ptr<ns3::Node> aoNode138 = wifi_ap_nodes[138].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice138 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode138->AddDevice(apbridgeDevice138);
@@ -21276,7 +19776,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice138->AddBridgePort(apDevices138.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode139 = wifiApNode139.Get(0);
+	ns3::Ptr<ns3::Node> aoNode139 = wifi_ap_nodes[139].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice139 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode139->AddDevice(apbridgeDevice139);
@@ -21291,7 +19791,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice139->AddBridgePort(apDevices139.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode140 = wifiApNode140.Get(0);
+	ns3::Ptr<ns3::Node> aoNode140 = wifi_ap_nodes[140].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice140 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode140->AddDevice(apbridgeDevice140);
@@ -21306,7 +19806,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice140->AddBridgePort(apDevices140.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode141 = wifiApNode141.Get(0);
+	ns3::Ptr<ns3::Node> aoNode141 = wifi_ap_nodes[141].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice141 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode141->AddDevice(apbridgeDevice141);
@@ -21321,7 +19821,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice141->AddBridgePort(apDevices141.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode142 = wifiApNode142.Get(0);
+	ns3::Ptr<ns3::Node> aoNode142 = wifi_ap_nodes[142].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice142 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode142->AddDevice(apbridgeDevice142);
@@ -21336,7 +19836,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice142->AddBridgePort(apDevices142.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode143 = wifiApNode143.Get(0);
+	ns3::Ptr<ns3::Node> aoNode143 = wifi_ap_nodes[143].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice143 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode143->AddDevice(apbridgeDevice143);
@@ -21351,7 +19851,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice143->AddBridgePort(apDevices143.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode144 = wifiApNode144.Get(0);
+	ns3::Ptr<ns3::Node> aoNode144 = wifi_ap_nodes[144].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice144 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode144->AddDevice(apbridgeDevice144);
@@ -21366,7 +19866,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice144->AddBridgePort(apDevices144.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode145 = wifiApNode145.Get(0);
+	ns3::Ptr<ns3::Node> aoNode145 = wifi_ap_nodes[145].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice145 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode145->AddDevice(apbridgeDevice145);
@@ -21381,7 +19881,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice145->AddBridgePort(apDevices145.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode146 = wifiApNode146.Get(0);
+	ns3::Ptr<ns3::Node> aoNode146 = wifi_ap_nodes[146].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice146 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode146->AddDevice(apbridgeDevice146);
@@ -21396,7 +19896,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice146->AddBridgePort(apDevices146.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode147 = wifiApNode147.Get(0);
+	ns3::Ptr<ns3::Node> aoNode147 = wifi_ap_nodes[147].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice147 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode147->AddDevice(apbridgeDevice147);
@@ -21411,7 +19911,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice147->AddBridgePort(apDevices147.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode148 = wifiApNode148.Get(0);
+	ns3::Ptr<ns3::Node> aoNode148 = wifi_ap_nodes[148].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice148 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode148->AddDevice(apbridgeDevice148);
@@ -21426,7 +19926,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice148->AddBridgePort(apDevices148.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode149 = wifiApNode149.Get(0);
+	ns3::Ptr<ns3::Node> aoNode149 = wifi_ap_nodes[149].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice149 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode149->AddDevice(apbridgeDevice149);
@@ -21441,7 +19941,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice149->AddBridgePort(apDevices149.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode150 = wifiApNode150.Get(0);
+	ns3::Ptr<ns3::Node> aoNode150 = wifi_ap_nodes[150].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice150 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode150->AddDevice(apbridgeDevice150);
@@ -21456,7 +19956,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice150->AddBridgePort(apDevices150.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode151 = wifiApNode151.Get(0);
+	ns3::Ptr<ns3::Node> aoNode151 = wifi_ap_nodes[151].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice151 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode151->AddDevice(apbridgeDevice151);
@@ -21471,7 +19971,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice151->AddBridgePort(apDevices151.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode152 = wifiApNode152.Get(0);
+	ns3::Ptr<ns3::Node> aoNode152 = wifi_ap_nodes[152].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice152 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode152->AddDevice(apbridgeDevice152);
@@ -21486,7 +19986,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice152->AddBridgePort(apDevices152.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode153 = wifiApNode153.Get(0);
+	ns3::Ptr<ns3::Node> aoNode153 = wifi_ap_nodes[153].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice153 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode153->AddDevice(apbridgeDevice153);
@@ -21501,7 +20001,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice153->AddBridgePort(apDevices153.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode154 = wifiApNode154.Get(0);
+	ns3::Ptr<ns3::Node> aoNode154 = wifi_ap_nodes[154].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice154 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode154->AddDevice(apbridgeDevice154);
@@ -21516,7 +20016,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice154->AddBridgePort(apDevices154.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode155 = wifiApNode155.Get(0);
+	ns3::Ptr<ns3::Node> aoNode155 = wifi_ap_nodes[155].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice155 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode155->AddDevice(apbridgeDevice155);
@@ -21531,7 +20031,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice155->AddBridgePort(apDevices155.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode156 = wifiApNode156.Get(0);
+	ns3::Ptr<ns3::Node> aoNode156 = wifi_ap_nodes[156].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice156 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode156->AddDevice(apbridgeDevice156);
@@ -21546,7 +20046,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice156->AddBridgePort(apDevices156.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode157 = wifiApNode157.Get(0);
+	ns3::Ptr<ns3::Node> aoNode157 = wifi_ap_nodes[157].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice157 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode157->AddDevice(apbridgeDevice157);
@@ -21561,7 +20061,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice157->AddBridgePort(apDevices157.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode158 = wifiApNode158.Get(0);
+	ns3::Ptr<ns3::Node> aoNode158 = wifi_ap_nodes[158].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice158 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode158->AddDevice(apbridgeDevice158);
@@ -21576,7 +20076,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice158->AddBridgePort(apDevices158.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode159 = wifiApNode159.Get(0);
+	ns3::Ptr<ns3::Node> aoNode159 = wifi_ap_nodes[159].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice159 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode159->AddDevice(apbridgeDevice159);
@@ -21591,7 +20091,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice159->AddBridgePort(apDevices159.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode160 = wifiApNode160.Get(0);
+	ns3::Ptr<ns3::Node> aoNode160 = wifi_ap_nodes[160].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice160 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode160->AddDevice(apbridgeDevice160);
@@ -21606,7 +20106,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice160->AddBridgePort(apDevices160.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode161 = wifiApNode161.Get(0);
+	ns3::Ptr<ns3::Node> aoNode161 = wifi_ap_nodes[161].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice161 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode161->AddDevice(apbridgeDevice161);
@@ -21621,7 +20121,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice161->AddBridgePort(apDevices161.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode162 = wifiApNode162.Get(0);
+	ns3::Ptr<ns3::Node> aoNode162 = wifi_ap_nodes[162].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice162 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode162->AddDevice(apbridgeDevice162);
@@ -21636,7 +20136,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice162->AddBridgePort(apDevices162.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode163 = wifiApNode163.Get(0);
+	ns3::Ptr<ns3::Node> aoNode163 = wifi_ap_nodes[163].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice163 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode163->AddDevice(apbridgeDevice163);
@@ -21651,7 +20151,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice163->AddBridgePort(apDevices163.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode164 = wifiApNode164.Get(0);
+	ns3::Ptr<ns3::Node> aoNode164 = wifi_ap_nodes[164].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice164 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode164->AddDevice(apbridgeDevice164);
@@ -21666,7 +20166,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice164->AddBridgePort(apDevices164.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode165 = wifiApNode165.Get(0);
+	ns3::Ptr<ns3::Node> aoNode165 = wifi_ap_nodes[165].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice165 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode165->AddDevice(apbridgeDevice165);
@@ -21681,7 +20181,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice165->AddBridgePort(apDevices165.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode166 = wifiApNode166.Get(0);
+	ns3::Ptr<ns3::Node> aoNode166 = wifi_ap_nodes[166].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice166 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode166->AddDevice(apbridgeDevice166);
@@ -21696,7 +20196,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice166->AddBridgePort(apDevices166.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode167 = wifiApNode167.Get(0);
+	ns3::Ptr<ns3::Node> aoNode167 = wifi_ap_nodes[167].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice167 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode167->AddDevice(apbridgeDevice167);
@@ -21711,7 +20211,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice167->AddBridgePort(apDevices167.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode168 = wifiApNode168.Get(0);
+	ns3::Ptr<ns3::Node> aoNode168 = wifi_ap_nodes[168].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice168 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode168->AddDevice(apbridgeDevice168);
@@ -21726,7 +20226,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice168->AddBridgePort(apDevices168.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode169 = wifiApNode169.Get(0);
+	ns3::Ptr<ns3::Node> aoNode169 = wifi_ap_nodes[169].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice169 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode169->AddDevice(apbridgeDevice169);
@@ -21741,7 +20241,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice169->AddBridgePort(apDevices169.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode170 = wifiApNode170.Get(0);
+	ns3::Ptr<ns3::Node> aoNode170 = wifi_ap_nodes[170].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice170 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode170->AddDevice(apbridgeDevice170);
@@ -21756,7 +20256,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice170->AddBridgePort(apDevices170.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode171 = wifiApNode171.Get(0);
+	ns3::Ptr<ns3::Node> aoNode171 = wifi_ap_nodes[171].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice171 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode171->AddDevice(apbridgeDevice171);
@@ -21771,7 +20271,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice171->AddBridgePort(apDevices171.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode172 = wifiApNode172.Get(0);
+	ns3::Ptr<ns3::Node> aoNode172 = wifi_ap_nodes[172].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice172 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode172->AddDevice(apbridgeDevice172);
@@ -21786,7 +20286,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice172->AddBridgePort(apDevices172.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode173 = wifiApNode173.Get(0);
+	ns3::Ptr<ns3::Node> aoNode173 = wifi_ap_nodes[173].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice173 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode173->AddDevice(apbridgeDevice173);
@@ -21801,7 +20301,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice173->AddBridgePort(apDevices173.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode174 = wifiApNode174.Get(0);
+	ns3::Ptr<ns3::Node> aoNode174 = wifi_ap_nodes[174].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice174 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode174->AddDevice(apbridgeDevice174);
@@ -21816,7 +20316,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice174->AddBridgePort(apDevices174.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode175 = wifiApNode175.Get(0);
+	ns3::Ptr<ns3::Node> aoNode175 = wifi_ap_nodes[175].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice175 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode175->AddDevice(apbridgeDevice175);
@@ -21831,7 +20331,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice175->AddBridgePort(apDevices175.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode176 = wifiApNode176.Get(0);
+	ns3::Ptr<ns3::Node> aoNode176 = wifi_ap_nodes[176].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice176 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode176->AddDevice(apbridgeDevice176);
@@ -21846,7 +20346,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice176->AddBridgePort(apDevices176.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode177 = wifiApNode177.Get(0);
+	ns3::Ptr<ns3::Node> aoNode177 = wifi_ap_nodes[177].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice177 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode177->AddDevice(apbridgeDevice177);
@@ -21861,7 +20361,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice177->AddBridgePort(apDevices177.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode178 = wifiApNode178.Get(0);
+	ns3::Ptr<ns3::Node> aoNode178 = wifi_ap_nodes[178].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice178 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode178->AddDevice(apbridgeDevice178);
@@ -21876,7 +20376,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice178->AddBridgePort(apDevices178.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode179 = wifiApNode179.Get(0);
+	ns3::Ptr<ns3::Node> aoNode179 = wifi_ap_nodes[179].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice179 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode179->AddDevice(apbridgeDevice179);
@@ -21891,7 +20391,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice179->AddBridgePort(apDevices179.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode180 = wifiApNode180.Get(0);
+	ns3::Ptr<ns3::Node> aoNode180 = wifi_ap_nodes[180].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice180 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode180->AddDevice(apbridgeDevice180);
@@ -21906,7 +20406,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice180->AddBridgePort(apDevices180.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode181 = wifiApNode181.Get(0);
+	ns3::Ptr<ns3::Node> aoNode181 = wifi_ap_nodes[181].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice181 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode181->AddDevice(apbridgeDevice181);
@@ -21921,7 +20421,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice181->AddBridgePort(apDevices181.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode182 = wifiApNode182.Get(0);
+	ns3::Ptr<ns3::Node> aoNode182 = wifi_ap_nodes[182].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice182 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode182->AddDevice(apbridgeDevice182);
@@ -21936,7 +20436,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice182->AddBridgePort(apDevices182.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode183 = wifiApNode183.Get(0);
+	ns3::Ptr<ns3::Node> aoNode183 = wifi_ap_nodes[183].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice183 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode183->AddDevice(apbridgeDevice183);
@@ -21951,7 +20451,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice183->AddBridgePort(apDevices183.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode184 = wifiApNode184.Get(0);
+	ns3::Ptr<ns3::Node> aoNode184 = wifi_ap_nodes[184].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice184 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode184->AddDevice(apbridgeDevice184);
@@ -21966,7 +20466,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice184->AddBridgePort(apDevices184.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode185 = wifiApNode185.Get(0);
+	ns3::Ptr<ns3::Node> aoNode185 = wifi_ap_nodes[185].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice185 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode185->AddDevice(apbridgeDevice185);
@@ -21981,7 +20481,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice185->AddBridgePort(apDevices185.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode186 = wifiApNode186.Get(0);
+	ns3::Ptr<ns3::Node> aoNode186 = wifi_ap_nodes[186].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice186 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode186->AddDevice(apbridgeDevice186);
@@ -21996,7 +20496,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice186->AddBridgePort(apDevices186.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode187 = wifiApNode187.Get(0);
+	ns3::Ptr<ns3::Node> aoNode187 = wifi_ap_nodes[187].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice187 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode187->AddDevice(apbridgeDevice187);
@@ -22011,7 +20511,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice187->AddBridgePort(apDevices187.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode188 = wifiApNode188.Get(0);
+	ns3::Ptr<ns3::Node> aoNode188 = wifi_ap_nodes[188].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice188 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode188->AddDevice(apbridgeDevice188);
@@ -22026,7 +20526,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice188->AddBridgePort(apDevices188.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode189 = wifiApNode189.Get(0);
+	ns3::Ptr<ns3::Node> aoNode189 = wifi_ap_nodes[189].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice189 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode189->AddDevice(apbridgeDevice189);
@@ -22041,7 +20541,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice189->AddBridgePort(apDevices189.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode190 = wifiApNode190.Get(0);
+	ns3::Ptr<ns3::Node> aoNode190 = wifi_ap_nodes[190].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice190 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode190->AddDevice(apbridgeDevice190);
@@ -22056,7 +20556,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice190->AddBridgePort(apDevices190.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode191 = wifiApNode191.Get(0);
+	ns3::Ptr<ns3::Node> aoNode191 = wifi_ap_nodes[191].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice191 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode191->AddDevice(apbridgeDevice191);
@@ -22071,7 +20571,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice191->AddBridgePort(apDevices191.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode192 = wifiApNode192.Get(0);
+	ns3::Ptr<ns3::Node> aoNode192 = wifi_ap_nodes[192].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice192 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode192->AddDevice(apbridgeDevice192);
@@ -22086,7 +20586,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice192->AddBridgePort(apDevices192.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode193 = wifiApNode193.Get(0);
+	ns3::Ptr<ns3::Node> aoNode193 = wifi_ap_nodes[193].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice193 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode193->AddDevice(apbridgeDevice193);
@@ -22101,7 +20601,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice193->AddBridgePort(apDevices193.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode194 = wifiApNode194.Get(0);
+	ns3::Ptr<ns3::Node> aoNode194 = wifi_ap_nodes[194].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice194 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode194->AddDevice(apbridgeDevice194);
@@ -22116,7 +20616,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice194->AddBridgePort(apDevices194.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode195 = wifiApNode195.Get(0);
+	ns3::Ptr<ns3::Node> aoNode195 = wifi_ap_nodes[195].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice195 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode195->AddDevice(apbridgeDevice195);
@@ -22131,7 +20631,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice195->AddBridgePort(apDevices195.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode196 = wifiApNode196.Get(0);
+	ns3::Ptr<ns3::Node> aoNode196 = wifi_ap_nodes[196].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice196 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode196->AddDevice(apbridgeDevice196);
@@ -22146,7 +20646,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice196->AddBridgePort(apDevices196.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode197 = wifiApNode197.Get(0);
+	ns3::Ptr<ns3::Node> aoNode197 = wifi_ap_nodes[197].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice197 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode197->AddDevice(apbridgeDevice197);
@@ -22161,7 +20661,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice197->AddBridgePort(apDevices197.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode198 = wifiApNode198.Get(0);
+	ns3::Ptr<ns3::Node> aoNode198 = wifi_ap_nodes[198].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice198 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode198->AddDevice(apbridgeDevice198);
@@ -22176,7 +20676,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice198->AddBridgePort(apDevices198.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode199 = wifiApNode199.Get(0);
+	ns3::Ptr<ns3::Node> aoNode199 = wifi_ap_nodes[199].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice199 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode199->AddDevice(apbridgeDevice199);
@@ -22191,7 +20691,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice199->AddBridgePort(apDevices199.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode200 = wifiApNode200.Get(0);
+	ns3::Ptr<ns3::Node> aoNode200 = wifi_ap_nodes[200].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice200 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode200->AddDevice(apbridgeDevice200);
@@ -22206,7 +20706,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice200->AddBridgePort(apDevices200.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode201 = wifiApNode201.Get(0);
+	ns3::Ptr<ns3::Node> aoNode201 = wifi_ap_nodes[201].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice201 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode201->AddDevice(apbridgeDevice201);
@@ -22221,7 +20721,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice201->AddBridgePort(apDevices201.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode202 = wifiApNode202.Get(0);
+	ns3::Ptr<ns3::Node> aoNode202 = wifi_ap_nodes[202].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice202 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode202->AddDevice(apbridgeDevice202);
@@ -22236,7 +20736,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice202->AddBridgePort(apDevices202.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode203 = wifiApNode203.Get(0);
+	ns3::Ptr<ns3::Node> aoNode203 = wifi_ap_nodes[203].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice203 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode203->AddDevice(apbridgeDevice203);
@@ -22251,7 +20751,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice203->AddBridgePort(apDevices203.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode204 = wifiApNode204.Get(0);
+	ns3::Ptr<ns3::Node> aoNode204 = wifi_ap_nodes[204].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice204 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode204->AddDevice(apbridgeDevice204);
@@ -22266,7 +20766,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice204->AddBridgePort(apDevices204.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode205 = wifiApNode205.Get(0);
+	ns3::Ptr<ns3::Node> aoNode205 = wifi_ap_nodes[205].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice205 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode205->AddDevice(apbridgeDevice205);
@@ -22281,7 +20781,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice205->AddBridgePort(apDevices205.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode206 = wifiApNode206.Get(0);
+	ns3::Ptr<ns3::Node> aoNode206 = wifi_ap_nodes[206].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice206 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode206->AddDevice(apbridgeDevice206);
@@ -22296,7 +20796,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice206->AddBridgePort(apDevices206.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode207 = wifiApNode207.Get(0);
+	ns3::Ptr<ns3::Node> aoNode207 = wifi_ap_nodes[207].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice207 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode207->AddDevice(apbridgeDevice207);
@@ -22311,7 +20811,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice207->AddBridgePort(apDevices207.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode208 = wifiApNode208.Get(0);
+	ns3::Ptr<ns3::Node> aoNode208 = wifi_ap_nodes[208].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice208 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode208->AddDevice(apbridgeDevice208);
@@ -22326,7 +20826,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice208->AddBridgePort(apDevices208.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode209 = wifiApNode209.Get(0);
+	ns3::Ptr<ns3::Node> aoNode209 = wifi_ap_nodes[209].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice209 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode209->AddDevice(apbridgeDevice209);
@@ -22341,7 +20841,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice209->AddBridgePort(apDevices209.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode210 = wifiApNode210.Get(0);
+	ns3::Ptr<ns3::Node> aoNode210 = wifi_ap_nodes[210].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice210 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode210->AddDevice(apbridgeDevice210);
@@ -22356,7 +20856,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice210->AddBridgePort(apDevices210.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode211 = wifiApNode211.Get(0);
+	ns3::Ptr<ns3::Node> aoNode211 = wifi_ap_nodes[211].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice211 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode211->AddDevice(apbridgeDevice211);
@@ -22371,7 +20871,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice211->AddBridgePort(apDevices211.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode212 = wifiApNode212.Get(0);
+	ns3::Ptr<ns3::Node> aoNode212 = wifi_ap_nodes[212].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice212 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode212->AddDevice(apbridgeDevice212);
@@ -22386,7 +20886,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice212->AddBridgePort(apDevices212.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode213 = wifiApNode213.Get(0);
+	ns3::Ptr<ns3::Node> aoNode213 = wifi_ap_nodes[213].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice213 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode213->AddDevice(apbridgeDevice213);
@@ -22401,7 +20901,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice213->AddBridgePort(apDevices213.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode214 = wifiApNode214.Get(0);
+	ns3::Ptr<ns3::Node> aoNode214 = wifi_ap_nodes[214].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice214 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode214->AddDevice(apbridgeDevice214);
@@ -22416,7 +20916,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice214->AddBridgePort(apDevices214.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode215 = wifiApNode215.Get(0);
+	ns3::Ptr<ns3::Node> aoNode215 = wifi_ap_nodes[215].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice215 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode215->AddDevice(apbridgeDevice215);
@@ -22431,7 +20931,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice215->AddBridgePort(apDevices215.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode216 = wifiApNode216.Get(0);
+	ns3::Ptr<ns3::Node> aoNode216 = wifi_ap_nodes[216].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice216 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode216->AddDevice(apbridgeDevice216);
@@ -22446,7 +20946,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice216->AddBridgePort(apDevices216.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode217 = wifiApNode217.Get(0);
+	ns3::Ptr<ns3::Node> aoNode217 = wifi_ap_nodes[217].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice217 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode217->AddDevice(apbridgeDevice217);
@@ -22461,7 +20961,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice217->AddBridgePort(apDevices217.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode218 = wifiApNode218.Get(0);
+	ns3::Ptr<ns3::Node> aoNode218 = wifi_ap_nodes[218].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice218 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode218->AddDevice(apbridgeDevice218);
@@ -22476,7 +20976,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice218->AddBridgePort(apDevices218.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode219 = wifiApNode219.Get(0);
+	ns3::Ptr<ns3::Node> aoNode219 = wifi_ap_nodes[219].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice219 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode219->AddDevice(apbridgeDevice219);
@@ -22491,7 +20991,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice219->AddBridgePort(apDevices219.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode220 = wifiApNode220.Get(0);
+	ns3::Ptr<ns3::Node> aoNode220 = wifi_ap_nodes[220].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice220 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode220->AddDevice(apbridgeDevice220);
@@ -22506,7 +21006,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice220->AddBridgePort(apDevices220.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode221 = wifiApNode221.Get(0);
+	ns3::Ptr<ns3::Node> aoNode221 = wifi_ap_nodes[221].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice221 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode221->AddDevice(apbridgeDevice221);
@@ -22521,7 +21021,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice221->AddBridgePort(apDevices221.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode222 = wifiApNode222.Get(0);
+	ns3::Ptr<ns3::Node> aoNode222 = wifi_ap_nodes[222].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice222 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode222->AddDevice(apbridgeDevice222);
@@ -22536,7 +21036,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice222->AddBridgePort(apDevices222.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode223 = wifiApNode223.Get(0);
+	ns3::Ptr<ns3::Node> aoNode223 = wifi_ap_nodes[223].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice223 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode223->AddDevice(apbridgeDevice223);
@@ -22551,7 +21051,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice223->AddBridgePort(apDevices223.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode224 = wifiApNode224.Get(0);
+	ns3::Ptr<ns3::Node> aoNode224 = wifi_ap_nodes[224].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice224 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode224->AddDevice(apbridgeDevice224);
@@ -22566,7 +21066,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice224->AddBridgePort(apDevices224.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode225 = wifiApNode225.Get(0);
+	ns3::Ptr<ns3::Node> aoNode225 = wifi_ap_nodes[225].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice225 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode225->AddDevice(apbridgeDevice225);
@@ -22581,7 +21081,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice225->AddBridgePort(apDevices225.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode226 = wifiApNode226.Get(0);
+	ns3::Ptr<ns3::Node> aoNode226 = wifi_ap_nodes[226].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice226 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode226->AddDevice(apbridgeDevice226);
@@ -22596,7 +21096,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice226->AddBridgePort(apDevices226.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode227 = wifiApNode227.Get(0);
+	ns3::Ptr<ns3::Node> aoNode227 = wifi_ap_nodes[227].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice227 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode227->AddDevice(apbridgeDevice227);
@@ -22611,7 +21111,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice227->AddBridgePort(apDevices227.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode228 = wifiApNode228.Get(0);
+	ns3::Ptr<ns3::Node> aoNode228 = wifi_ap_nodes[228].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice228 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode228->AddDevice(apbridgeDevice228);
@@ -22626,7 +21126,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice228->AddBridgePort(apDevices228.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode229 = wifiApNode229.Get(0);
+	ns3::Ptr<ns3::Node> aoNode229 = wifi_ap_nodes[229].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice229 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode229->AddDevice(apbridgeDevice229);
@@ -22641,7 +21141,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice229->AddBridgePort(apDevices229.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode230 = wifiApNode230.Get(0);
+	ns3::Ptr<ns3::Node> aoNode230 = wifi_ap_nodes[230].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice230 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode230->AddDevice(apbridgeDevice230);
@@ -22656,7 +21156,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice230->AddBridgePort(apDevices230.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode231 = wifiApNode231.Get(0);
+	ns3::Ptr<ns3::Node> aoNode231 = wifi_ap_nodes[231].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice231 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode231->AddDevice(apbridgeDevice231);
@@ -22671,7 +21171,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice231->AddBridgePort(apDevices231.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode232 = wifiApNode232.Get(0);
+	ns3::Ptr<ns3::Node> aoNode232 = wifi_ap_nodes[232].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice232 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode232->AddDevice(apbridgeDevice232);
@@ -22686,7 +21186,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice232->AddBridgePort(apDevices232.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode233 = wifiApNode233.Get(0);
+	ns3::Ptr<ns3::Node> aoNode233 = wifi_ap_nodes[233].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice233 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode233->AddDevice(apbridgeDevice233);
@@ -22701,7 +21201,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice233->AddBridgePort(apDevices233.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode234 = wifiApNode234.Get(0);
+	ns3::Ptr<ns3::Node> aoNode234 = wifi_ap_nodes[234].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice234 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode234->AddDevice(apbridgeDevice234);
@@ -22716,7 +21216,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice234->AddBridgePort(apDevices234.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode235 = wifiApNode235.Get(0);
+	ns3::Ptr<ns3::Node> aoNode235 = wifi_ap_nodes[235].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice235 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode235->AddDevice(apbridgeDevice235);
@@ -22731,7 +21231,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice235->AddBridgePort(apDevices235.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode236 = wifiApNode236.Get(0);
+	ns3::Ptr<ns3::Node> aoNode236 = wifi_ap_nodes[236].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice236 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode236->AddDevice(apbridgeDevice236);
@@ -22746,7 +21246,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice236->AddBridgePort(apDevices236.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode237 = wifiApNode237.Get(0);
+	ns3::Ptr<ns3::Node> aoNode237 = wifi_ap_nodes[237].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice237 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode237->AddDevice(apbridgeDevice237);
@@ -22761,7 +21261,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice237->AddBridgePort(apDevices237.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode238 = wifiApNode238.Get(0);
+	ns3::Ptr<ns3::Node> aoNode238 = wifi_ap_nodes[238].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice238 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode238->AddDevice(apbridgeDevice238);
@@ -22776,7 +21276,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice238->AddBridgePort(apDevices238.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode239 = wifiApNode239.Get(0);
+	ns3::Ptr<ns3::Node> aoNode239 = wifi_ap_nodes[239].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice239 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode239->AddDevice(apbridgeDevice239);
@@ -22791,7 +21291,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice239->AddBridgePort(apDevices239.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode240 = wifiApNode240.Get(0);
+	ns3::Ptr<ns3::Node> aoNode240 = wifi_ap_nodes[240].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice240 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode240->AddDevice(apbridgeDevice240);
@@ -22806,7 +21306,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice240->AddBridgePort(apDevices240.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode241 = wifiApNode241.Get(0);
+	ns3::Ptr<ns3::Node> aoNode241 = wifi_ap_nodes[241].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice241 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode241->AddDevice(apbridgeDevice241);
@@ -22821,7 +21321,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice241->AddBridgePort(apDevices241.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode242 = wifiApNode242.Get(0);
+	ns3::Ptr<ns3::Node> aoNode242 = wifi_ap_nodes[242].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice242 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode242->AddDevice(apbridgeDevice242);
@@ -22836,7 +21336,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice242->AddBridgePort(apDevices242.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode243 = wifiApNode243.Get(0);
+	ns3::Ptr<ns3::Node> aoNode243 = wifi_ap_nodes[243].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice243 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode243->AddDevice(apbridgeDevice243);
@@ -22851,7 +21351,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice243->AddBridgePort(apDevices243.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode244 = wifiApNode244.Get(0);
+	ns3::Ptr<ns3::Node> aoNode244 = wifi_ap_nodes[244].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice244 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode244->AddDevice(apbridgeDevice244);
@@ -22866,7 +21366,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice244->AddBridgePort(apDevices244.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode245 = wifiApNode245.Get(0);
+	ns3::Ptr<ns3::Node> aoNode245 = wifi_ap_nodes[245].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice245 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode245->AddDevice(apbridgeDevice245);
@@ -22881,7 +21381,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice245->AddBridgePort(apDevices245.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode246 = wifiApNode246.Get(0);
+	ns3::Ptr<ns3::Node> aoNode246 = wifi_ap_nodes[246].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice246 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode246->AddDevice(apbridgeDevice246);
@@ -22896,7 +21396,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice246->AddBridgePort(apDevices246.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode247 = wifiApNode247.Get(0);
+	ns3::Ptr<ns3::Node> aoNode247 = wifi_ap_nodes[247].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice247 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode247->AddDevice(apbridgeDevice247);
@@ -22911,7 +21411,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice247->AddBridgePort(apDevices247.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode248 = wifiApNode248.Get(0);
+	ns3::Ptr<ns3::Node> aoNode248 = wifi_ap_nodes[248].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice248 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode248->AddDevice(apbridgeDevice248);
@@ -22926,7 +21426,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice248->AddBridgePort(apDevices248.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode249 = wifiApNode249.Get(0);
+	ns3::Ptr<ns3::Node> aoNode249 = wifi_ap_nodes[249].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice249 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode249->AddDevice(apbridgeDevice249);
@@ -22941,7 +21441,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice249->AddBridgePort(apDevices249.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode250 = wifiApNode250.Get(0);
+	ns3::Ptr<ns3::Node> aoNode250 = wifi_ap_nodes[250].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice250 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode250->AddDevice(apbridgeDevice250);
@@ -22956,7 +21456,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice250->AddBridgePort(apDevices250.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode251 = wifiApNode251.Get(0);
+	ns3::Ptr<ns3::Node> aoNode251 = wifi_ap_nodes[251].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice251 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode251->AddDevice(apbridgeDevice251);
@@ -22971,7 +21471,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice251->AddBridgePort(apDevices251.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode252 = wifiApNode252.Get(0);
+	ns3::Ptr<ns3::Node> aoNode252 = wifi_ap_nodes[252].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice252 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode252->AddDevice(apbridgeDevice252);
@@ -22986,7 +21486,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice252->AddBridgePort(apDevices252.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode253 = wifiApNode253.Get(0);
+	ns3::Ptr<ns3::Node> aoNode253 = wifi_ap_nodes[253].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice253 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode253->AddDevice(apbridgeDevice253);
@@ -23001,7 +21501,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice253->AddBridgePort(apDevices253.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode254 = wifiApNode254.Get(0);
+	ns3::Ptr<ns3::Node> aoNode254 = wifi_ap_nodes[254].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice254 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode254->AddDevice(apbridgeDevice254);
@@ -23016,7 +21516,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice254->AddBridgePort(apDevices254.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode255 = wifiApNode255.Get(0);
+	ns3::Ptr<ns3::Node> aoNode255 = wifi_ap_nodes[255].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice255 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode255->AddDevice(apbridgeDevice255);
@@ -23031,7 +21531,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice255->AddBridgePort(apDevices255.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode256 = wifiApNode256.Get(0);
+	ns3::Ptr<ns3::Node> aoNode256 = wifi_ap_nodes[256].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice256 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode256->AddDevice(apbridgeDevice256);
@@ -23046,7 +21546,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice256->AddBridgePort(apDevices256.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode257 = wifiApNode257.Get(0);
+	ns3::Ptr<ns3::Node> aoNode257 = wifi_ap_nodes[257].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice257 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode257->AddDevice(apbridgeDevice257);
@@ -23061,7 +21561,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice257->AddBridgePort(apDevices257.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode258 = wifiApNode258.Get(0);
+	ns3::Ptr<ns3::Node> aoNode258 = wifi_ap_nodes[258].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice258 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode258->AddDevice(apbridgeDevice258);
@@ -23076,7 +21576,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice258->AddBridgePort(apDevices258.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode259 = wifiApNode259.Get(0);
+	ns3::Ptr<ns3::Node> aoNode259 = wifi_ap_nodes[259].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice259 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode259->AddDevice(apbridgeDevice259);
@@ -23091,7 +21591,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice259->AddBridgePort(apDevices259.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode260 = wifiApNode260.Get(0);
+	ns3::Ptr<ns3::Node> aoNode260 = wifi_ap_nodes[260].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice260 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode260->AddDevice(apbridgeDevice260);
@@ -23106,7 +21606,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice260->AddBridgePort(apDevices260.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode261 = wifiApNode261.Get(0);
+	ns3::Ptr<ns3::Node> aoNode261 = wifi_ap_nodes[261].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice261 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode261->AddDevice(apbridgeDevice261);
@@ -23121,7 +21621,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice261->AddBridgePort(apDevices261.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode262 = wifiApNode262.Get(0);
+	ns3::Ptr<ns3::Node> aoNode262 = wifi_ap_nodes[262].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice262 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode262->AddDevice(apbridgeDevice262);
@@ -23136,7 +21636,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice262->AddBridgePort(apDevices262.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode263 = wifiApNode263.Get(0);
+	ns3::Ptr<ns3::Node> aoNode263 = wifi_ap_nodes[263].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice263 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode263->AddDevice(apbridgeDevice263);
@@ -23151,7 +21651,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice263->AddBridgePort(apDevices263.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode264 = wifiApNode264.Get(0);
+	ns3::Ptr<ns3::Node> aoNode264 = wifi_ap_nodes[264].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice264 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode264->AddDevice(apbridgeDevice264);
@@ -23166,7 +21666,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice264->AddBridgePort(apDevices264.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode265 = wifiApNode265.Get(0);
+	ns3::Ptr<ns3::Node> aoNode265 = wifi_ap_nodes[265].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice265 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode265->AddDevice(apbridgeDevice265);
@@ -23181,7 +21681,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice265->AddBridgePort(apDevices265.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode266 = wifiApNode266.Get(0);
+	ns3::Ptr<ns3::Node> aoNode266 = wifi_ap_nodes[266].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice266 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode266->AddDevice(apbridgeDevice266);
@@ -23196,7 +21696,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice266->AddBridgePort(apDevices266.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode267 = wifiApNode267.Get(0);
+	ns3::Ptr<ns3::Node> aoNode267 = wifi_ap_nodes[267].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice267 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode267->AddDevice(apbridgeDevice267);
@@ -23211,7 +21711,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice267->AddBridgePort(apDevices267.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode268 = wifiApNode268.Get(0);
+	ns3::Ptr<ns3::Node> aoNode268 = wifi_ap_nodes[268].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice268 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode268->AddDevice(apbridgeDevice268);
@@ -23226,7 +21726,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice268->AddBridgePort(apDevices268.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode269 = wifiApNode269.Get(0);
+	ns3::Ptr<ns3::Node> aoNode269 = wifi_ap_nodes[269].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice269 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode269->AddDevice(apbridgeDevice269);
@@ -23241,7 +21741,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice269->AddBridgePort(apDevices269.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode270 = wifiApNode270.Get(0);
+	ns3::Ptr<ns3::Node> aoNode270 = wifi_ap_nodes[270].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice270 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode270->AddDevice(apbridgeDevice270);
@@ -23256,7 +21756,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice270->AddBridgePort(apDevices270.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode271 = wifiApNode271.Get(0);
+	ns3::Ptr<ns3::Node> aoNode271 = wifi_ap_nodes[271].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice271 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode271->AddDevice(apbridgeDevice271);
@@ -23271,7 +21771,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice271->AddBridgePort(apDevices271.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode272 = wifiApNode272.Get(0);
+	ns3::Ptr<ns3::Node> aoNode272 = wifi_ap_nodes[272].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice272 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode272->AddDevice(apbridgeDevice272);
@@ -23286,7 +21786,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice272->AddBridgePort(apDevices272.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode273 = wifiApNode273.Get(0);
+	ns3::Ptr<ns3::Node> aoNode273 = wifi_ap_nodes[273].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice273 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode273->AddDevice(apbridgeDevice273);
@@ -23301,7 +21801,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice273->AddBridgePort(apDevices273.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode274 = wifiApNode274.Get(0);
+	ns3::Ptr<ns3::Node> aoNode274 = wifi_ap_nodes[274].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice274 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode274->AddDevice(apbridgeDevice274);
@@ -23316,7 +21816,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice274->AddBridgePort(apDevices274.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode275 = wifiApNode275.Get(0);
+	ns3::Ptr<ns3::Node> aoNode275 = wifi_ap_nodes[275].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice275 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode275->AddDevice(apbridgeDevice275);
@@ -23331,7 +21831,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice275->AddBridgePort(apDevices275.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode276 = wifiApNode276.Get(0);
+	ns3::Ptr<ns3::Node> aoNode276 = wifi_ap_nodes[276].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice276 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode276->AddDevice(apbridgeDevice276);
@@ -23346,7 +21846,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice276->AddBridgePort(apDevices276.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode277 = wifiApNode277.Get(0);
+	ns3::Ptr<ns3::Node> aoNode277 = wifi_ap_nodes[277].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice277 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode277->AddDevice(apbridgeDevice277);
@@ -23361,7 +21861,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice277->AddBridgePort(apDevices277.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode278 = wifiApNode278.Get(0);
+	ns3::Ptr<ns3::Node> aoNode278 = wifi_ap_nodes[278].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice278 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode278->AddDevice(apbridgeDevice278);
@@ -23376,7 +21876,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice278->AddBridgePort(apDevices278.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode279 = wifiApNode279.Get(0);
+	ns3::Ptr<ns3::Node> aoNode279 = wifi_ap_nodes[279].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice279 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode279->AddDevice(apbridgeDevice279);
@@ -23391,7 +21891,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice279->AddBridgePort(apDevices279.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode280 = wifiApNode280.Get(0);
+	ns3::Ptr<ns3::Node> aoNode280 = wifi_ap_nodes[280].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice280 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode280->AddDevice(apbridgeDevice280);
@@ -23406,7 +21906,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice280->AddBridgePort(apDevices280.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode281 = wifiApNode281.Get(0);
+	ns3::Ptr<ns3::Node> aoNode281 = wifi_ap_nodes[281].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice281 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode281->AddDevice(apbridgeDevice281);
@@ -23421,7 +21921,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice281->AddBridgePort(apDevices281.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode282 = wifiApNode282.Get(0);
+	ns3::Ptr<ns3::Node> aoNode282 = wifi_ap_nodes[282].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice282 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode282->AddDevice(apbridgeDevice282);
@@ -23436,7 +21936,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice282->AddBridgePort(apDevices282.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode283 = wifiApNode283.Get(0);
+	ns3::Ptr<ns3::Node> aoNode283 = wifi_ap_nodes[283].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice283 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode283->AddDevice(apbridgeDevice283);
@@ -23451,7 +21951,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice283->AddBridgePort(apDevices283.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode284 = wifiApNode284.Get(0);
+	ns3::Ptr<ns3::Node> aoNode284 = wifi_ap_nodes[284].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice284 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode284->AddDevice(apbridgeDevice284);
@@ -23466,7 +21966,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice284->AddBridgePort(apDevices284.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode285 = wifiApNode285.Get(0);
+	ns3::Ptr<ns3::Node> aoNode285 = wifi_ap_nodes[285].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice285 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode285->AddDevice(apbridgeDevice285);
@@ -23481,7 +21981,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice285->AddBridgePort(apDevices285.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode286 = wifiApNode286.Get(0);
+	ns3::Ptr<ns3::Node> aoNode286 = wifi_ap_nodes[286].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice286 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode286->AddDevice(apbridgeDevice286);
@@ -23496,7 +21996,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice286->AddBridgePort(apDevices286.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode287 = wifiApNode287.Get(0);
+	ns3::Ptr<ns3::Node> aoNode287 = wifi_ap_nodes[287].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice287 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode287->AddDevice(apbridgeDevice287);
@@ -23511,7 +22011,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice287->AddBridgePort(apDevices287.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode288 = wifiApNode288.Get(0);
+	ns3::Ptr<ns3::Node> aoNode288 = wifi_ap_nodes[288].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice288 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode288->AddDevice(apbridgeDevice288);
@@ -23526,7 +22026,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice288->AddBridgePort(apDevices288.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode289 = wifiApNode289.Get(0);
+	ns3::Ptr<ns3::Node> aoNode289 = wifi_ap_nodes[289].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice289 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode289->AddDevice(apbridgeDevice289);
@@ -23541,7 +22041,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice289->AddBridgePort(apDevices289.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode290 = wifiApNode290.Get(0);
+	ns3::Ptr<ns3::Node> aoNode290 = wifi_ap_nodes[290].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice290 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode290->AddDevice(apbridgeDevice290);
@@ -23556,7 +22056,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice290->AddBridgePort(apDevices290.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode291 = wifiApNode291.Get(0);
+	ns3::Ptr<ns3::Node> aoNode291 = wifi_ap_nodes[291].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice291 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode291->AddDevice(apbridgeDevice291);
@@ -23571,7 +22071,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice291->AddBridgePort(apDevices291.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode292 = wifiApNode292.Get(0);
+	ns3::Ptr<ns3::Node> aoNode292 = wifi_ap_nodes[292].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice292 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode292->AddDevice(apbridgeDevice292);
@@ -23586,7 +22086,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice292->AddBridgePort(apDevices292.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode293 = wifiApNode293.Get(0);
+	ns3::Ptr<ns3::Node> aoNode293 = wifi_ap_nodes[293].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice293 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode293->AddDevice(apbridgeDevice293);
@@ -23601,7 +22101,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice293->AddBridgePort(apDevices293.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode294 = wifiApNode294.Get(0);
+	ns3::Ptr<ns3::Node> aoNode294 = wifi_ap_nodes[294].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice294 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode294->AddDevice(apbridgeDevice294);
@@ -23616,7 +22116,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice294->AddBridgePort(apDevices294.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode295 = wifiApNode295.Get(0);
+	ns3::Ptr<ns3::Node> aoNode295 = wifi_ap_nodes[295].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice295 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode295->AddDevice(apbridgeDevice295);
@@ -23631,7 +22131,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice295->AddBridgePort(apDevices295.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode296 = wifiApNode296.Get(0);
+	ns3::Ptr<ns3::Node> aoNode296 = wifi_ap_nodes[296].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice296 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode296->AddDevice(apbridgeDevice296);
@@ -23646,7 +22146,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice296->AddBridgePort(apDevices296.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode297 = wifiApNode297.Get(0);
+	ns3::Ptr<ns3::Node> aoNode297 = wifi_ap_nodes[297].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice297 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode297->AddDevice(apbridgeDevice297);
@@ -23681,7 +22181,7 @@ int main(int argc, char** argv) {
 //    for portIter in range(apDevices299.GetN()):
 //       apbridgeDevice299.AddBridgePort(apDevices299.Get(portIter));
 //
-	ns3::Ptr<ns3::Node> aoNode300 = wifiApNode300.Get(0);
+	ns3::Ptr<ns3::Node> aoNode300 = wifi_ap_nodes[300].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice300 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode300->AddDevice(apbridgeDevice300);
@@ -23696,7 +22196,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice300->AddBridgePort(apDevices300.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode301 = wifiApNode301.Get(0);
+	ns3::Ptr<ns3::Node> aoNode301 = wifi_ap_nodes[301].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice301 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode301->AddDevice(apbridgeDevice301);
@@ -23711,7 +22211,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice301->AddBridgePort(apDevices301.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode302 = wifiApNode302.Get(0);
+	ns3::Ptr<ns3::Node> aoNode302 = wifi_ap_nodes[302].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice302 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode302->AddDevice(apbridgeDevice302);
@@ -23726,7 +22226,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice302->AddBridgePort(apDevices302.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode303 = wifiApNode303.Get(0);
+	ns3::Ptr<ns3::Node> aoNode303 = wifi_ap_nodes[303].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice303 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode303->AddDevice(apbridgeDevice303);
@@ -23741,7 +22241,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice303->AddBridgePort(apDevices303.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode304 = wifiApNode304.Get(0);
+	ns3::Ptr<ns3::Node> aoNode304 = wifi_ap_nodes[304].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice304 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode304->AddDevice(apbridgeDevice304);
@@ -23756,7 +22256,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice304->AddBridgePort(apDevices304.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode305 = wifiApNode305.Get(0);
+	ns3::Ptr<ns3::Node> aoNode305 = wifi_ap_nodes[305].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice305 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode305->AddDevice(apbridgeDevice305);
@@ -23781,7 +22281,7 @@ int main(int argc, char** argv) {
 //    for portIter in range(apDevices306.GetN()):
 //       apbridgeDevice306.AddBridgePort(apDevices306.Get(portIter));
 //
-	ns3::Ptr<ns3::Node> aoNode307 = wifiApNode307.Get(0);
+	ns3::Ptr<ns3::Node> aoNode307 = wifi_ap_nodes[307].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice307 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode307->AddDevice(apbridgeDevice307);
@@ -23796,7 +22296,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice307->AddBridgePort(apDevices307.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode308 = wifiApNode308.Get(0);
+	ns3::Ptr<ns3::Node> aoNode308 = wifi_ap_nodes[308].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice308 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode308->AddDevice(apbridgeDevice308);
@@ -23811,7 +22311,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice308->AddBridgePort(apDevices308.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode309 = wifiApNode309.Get(0);
+	ns3::Ptr<ns3::Node> aoNode309 = wifi_ap_nodes[309].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice309 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode309->AddDevice(apbridgeDevice309);
@@ -23826,7 +22326,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice309->AddBridgePort(apDevices309.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode310 = wifiApNode310.Get(0);
+	ns3::Ptr<ns3::Node> aoNode310 = wifi_ap_nodes[310].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice310 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode310->AddDevice(apbridgeDevice310);
@@ -23841,7 +22341,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice310->AddBridgePort(apDevices310.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode311 = wifiApNode311.Get(0);
+	ns3::Ptr<ns3::Node> aoNode311 = wifi_ap_nodes[311].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice311 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode311->AddDevice(apbridgeDevice311);
@@ -23856,7 +22356,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice311->AddBridgePort(apDevices311.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode312 = wifiApNode312.Get(0);
+	ns3::Ptr<ns3::Node> aoNode312 = wifi_ap_nodes[312].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice312 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode312->AddDevice(apbridgeDevice312);
@@ -23871,7 +22371,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice312->AddBridgePort(apDevices312.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode313 = wifiApNode313.Get(0);
+	ns3::Ptr<ns3::Node> aoNode313 = wifi_ap_nodes[313].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice313 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode313->AddDevice(apbridgeDevice313);
@@ -23886,7 +22386,7 @@ int main(int argc, char** argv) {
 		apbridgeDevice313->AddBridgePort(apDevices313.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> aoNode314 = wifiApNode314.Get(0);
+	ns3::Ptr<ns3::Node> aoNode314 = wifi_ap_nodes[314].Get(0);
 	ns3::Ptr<ns3::BridgeNetDevice> apbridgeDevice314 = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	aoNode314->AddDevice(apbridgeDevice314);
@@ -23927,636 +22427,29 @@ int main(int argc, char** argv) {
 		internet.Install(terminal_sets[i]);
 	}
 
-	internet.Install(wifiApNode1);
-	internet.Install(wifiApNode2);
-	internet.Install(wifiApNode3);
-	internet.Install(wifiApNode4);
-	internet.Install(wifiApNode5);
-	internet.Install(wifiApNode6);
-	internet.Install(wifiApNode7);
-	internet.Install(wifiApNode8);
-	internet.Install(wifiApNode9);
-	internet.Install(wifiApNode10);
-	internet.Install(wifiApNode11);
-	internet.Install(wifiApNode12);
-	internet.Install(wifiApNode13);
-	internet.Install(wifiApNode14);
-	internet.Install(wifiApNode15);
-	internet.Install(wifiApNode16);
-	internet.Install(wifiApNode17);
-	internet.Install(wifiApNode18);
-	internet.Install(wifiApNode19);
-	internet.Install(wifiApNode20);
-	internet.Install(wifiApNode21);
-	internet.Install(wifiApNode22);
-	internet.Install(wifiApNode23);
-	internet.Install(wifiApNode24);
-	internet.Install(wifiApNode25);
-	internet.Install(wifiApNode26);
-	internet.Install(wifiApNode27);
-	internet.Install(wifiApNode28);
-	internet.Install(wifiApNode29);
-	internet.Install(wifiApNode30);
-	internet.Install(wifiApNode31);
-	internet.Install(wifiApNode32);
-	internet.Install(wifiApNode33);
-	internet.Install(wifiApNode34);
-	internet.Install(wifiApNode35);
-	internet.Install(wifiApNode36);
-	internet.Install(wifiApNode37);
-	internet.Install(wifiApNode38);
-	internet.Install(wifiApNode39);
-	internet.Install(wifiApNode40);
-	internet.Install(wifiApNode41);
-	internet.Install(wifiApNode42);
-	internet.Install(wifiApNode43);
-	internet.Install(wifiApNode44);
-	internet.Install(wifiApNode45);
-	internet.Install(wifiApNode46);
-	internet.Install(wifiApNode47);
-	internet.Install(wifiApNode48);
-	internet.Install(wifiApNode49);
-	internet.Install(wifiApNode50);
-	internet.Install(wifiApNode51);
-	internet.Install(wifiApNode52);
-	internet.Install(wifiApNode53);
-	internet.Install(wifiApNode54);
-	internet.Install(wifiApNode55);
-	internet.Install(wifiApNode56);
-	internet.Install(wifiApNode57);
-	internet.Install(wifiApNode58);
-	internet.Install(wifiApNode59);
-	internet.Install(wifiApNode60);
-	internet.Install(wifiApNode61);
-	internet.Install(wifiApNode62);
-	internet.Install(wifiApNode63);
-	internet.Install(wifiApNode64);
-	internet.Install(wifiApNode65);
-	internet.Install(wifiApNode66);
-	internet.Install(wifiApNode67);
-	internet.Install(wifiApNode68);
-	internet.Install(wifiApNode69);
-	internet.Install(wifiApNode70);
-	internet.Install(wifiApNode71);
-	internet.Install(wifiApNode72);
-	internet.Install(wifiApNode73);
-	internet.Install(wifiApNode74);
-	internet.Install(wifiApNode75);
-	internet.Install(wifiApNode76);
-	internet.Install(wifiApNode77);
-	internet.Install(wifiApNode78);
-	internet.Install(wifiApNode79);
-	internet.Install(wifiApNode80);
-	internet.Install(wifiApNode81);
-	internet.Install(wifiApNode82);
-	internet.Install(wifiApNode83);
-	internet.Install(wifiApNode84);
-	internet.Install(wifiApNode85);
-	internet.Install(wifiApNode86);
-	internet.Install(wifiApNode87);
-	internet.Install(wifiApNode88);
-	internet.Install(wifiApNode89);
-	internet.Install(wifiApNode90);
-	internet.Install(wifiApNode91);
-	internet.Install(wifiApNode92);
-	internet.Install(wifiApNode93);
-	internet.Install(wifiApNode94);
-	internet.Install(wifiApNode95);
-	internet.Install(wifiApNode96);
-	internet.Install(wifiApNode97);
-	internet.Install(wifiApNode98);
-	internet.Install(wifiApNode99);
-	internet.Install(wifiApNode100);
-	internet.Install(wifiApNode101);
-	internet.Install(wifiApNode102);
-	internet.Install(wifiApNode103);
-	internet.Install(wifiApNode104);
-	internet.Install(wifiApNode105);
-	internet.Install(wifiApNode106);
-	internet.Install(wifiApNode107);
-	internet.Install(wifiApNode108);
-	internet.Install(wifiApNode109);
-	internet.Install(wifiApNode110);
-	internet.Install(wifiApNode111);
-	internet.Install(wifiApNode112);
-	internet.Install(wifiApNode113);
-	internet.Install(wifiApNode114);
-	internet.Install(wifiApNode115);
-	internet.Install(wifiApNode116);
-	internet.Install(wifiApNode117);
-	internet.Install(wifiApNode118);
-	internet.Install(wifiApNode119);
-	internet.Install(wifiApNode120);
-	internet.Install(wifiApNode121);
-	internet.Install(wifiApNode122);
-	internet.Install(wifiApNode123);
-	internet.Install(wifiApNode124);
-	internet.Install(wifiApNode125);
-	internet.Install(wifiApNode126);
-	internet.Install(wifiApNode127);
-	internet.Install(wifiApNode128);
-	internet.Install(wifiApNode129);
-	internet.Install(wifiApNode130);
-	internet.Install(wifiApNode131);
-	internet.Install(wifiApNode132);
-	internet.Install(wifiApNode133);
-	internet.Install(wifiApNode134);
-	internet.Install(wifiApNode135);
-	internet.Install(wifiApNode136);
-	internet.Install(wifiApNode137);
-	internet.Install(wifiApNode138);
-	internet.Install(wifiApNode139);
-	internet.Install(wifiApNode140);
-	internet.Install(wifiApNode141);
-	internet.Install(wifiApNode142);
-	internet.Install(wifiApNode143);
-	internet.Install(wifiApNode144);
-	internet.Install(wifiApNode145);
-	internet.Install(wifiApNode146);
-	internet.Install(wifiApNode147);
-	internet.Install(wifiApNode148);
-	internet.Install(wifiApNode149);
-	internet.Install(wifiApNode150);
-	internet.Install(wifiApNode151);
-	internet.Install(wifiApNode152);
-	internet.Install(wifiApNode153);
-	internet.Install(wifiApNode154);
-	internet.Install(wifiApNode155);
-	internet.Install(wifiApNode156);
-	internet.Install(wifiApNode157);
-	internet.Install(wifiApNode158);
-	internet.Install(wifiApNode159);
-	internet.Install(wifiApNode160);
-	internet.Install(wifiApNode161);
-	internet.Install(wifiApNode162);
-	internet.Install(wifiApNode163);
-	internet.Install(wifiApNode164);
-	internet.Install(wifiApNode165);
-	internet.Install(wifiApNode166);
-	internet.Install(wifiApNode167);
-	internet.Install(wifiApNode168);
-	internet.Install(wifiApNode169);
-	internet.Install(wifiApNode170);
-	internet.Install(wifiApNode171);
-	internet.Install(wifiApNode172);
-	internet.Install(wifiApNode173);
-	internet.Install(wifiApNode174);
-	internet.Install(wifiApNode175);
-	internet.Install(wifiApNode176);
-	internet.Install(wifiApNode177);
-	internet.Install(wifiApNode178);
-	internet.Install(wifiApNode179);
-	internet.Install(wifiApNode180);
-	internet.Install(wifiApNode181);
-	internet.Install(wifiApNode182);
-	internet.Install(wifiApNode183);
-	internet.Install(wifiApNode184);
-	internet.Install(wifiApNode185);
-	internet.Install(wifiApNode186);
-	internet.Install(wifiApNode187);
-	internet.Install(wifiApNode188);
-	internet.Install(wifiApNode189);
-	internet.Install(wifiApNode190);
-	internet.Install(wifiApNode191);
-	internet.Install(wifiApNode192);
-	internet.Install(wifiApNode193);
-	internet.Install(wifiApNode194);
-	internet.Install(wifiApNode195);
-	internet.Install(wifiApNode196);
-	internet.Install(wifiApNode197);
-	internet.Install(wifiApNode198);
-	internet.Install(wifiApNode199);
-	internet.Install(wifiApNode200);
-	internet.Install(wifiApNode201);
-	internet.Install(wifiApNode202);
-	internet.Install(wifiApNode203);
-	internet.Install(wifiApNode204);
-	internet.Install(wifiApNode205);
-	internet.Install(wifiApNode206);
-	internet.Install(wifiApNode207);
-	internet.Install(wifiApNode208);
-	internet.Install(wifiApNode209);
-	internet.Install(wifiApNode210);
-	internet.Install(wifiApNode211);
-	internet.Install(wifiApNode212);
-	internet.Install(wifiApNode213);
-	internet.Install(wifiApNode214);
-	internet.Install(wifiApNode215);
-	internet.Install(wifiApNode216);
-	internet.Install(wifiApNode217);
-	internet.Install(wifiApNode218);
-	internet.Install(wifiApNode219);
-	internet.Install(wifiApNode220);
-	internet.Install(wifiApNode221);
-	internet.Install(wifiApNode222);
-	internet.Install(wifiApNode223);
-	internet.Install(wifiApNode224);
-	internet.Install(wifiApNode225);
-	internet.Install(wifiApNode226);
-	internet.Install(wifiApNode227);
-	internet.Install(wifiApNode228);
-	internet.Install(wifiApNode229);
-	internet.Install(wifiApNode230);
-	internet.Install(wifiApNode231);
-	internet.Install(wifiApNode232);
-	internet.Install(wifiApNode233);
-	internet.Install(wifiApNode234);
-	internet.Install(wifiApNode235);
-	internet.Install(wifiApNode236);
-	internet.Install(wifiApNode237);
-	internet.Install(wifiApNode238);
-	internet.Install(wifiApNode239);
-	internet.Install(wifiApNode240);
-	internet.Install(wifiApNode241);
-	internet.Install(wifiApNode242);
-	internet.Install(wifiApNode243);
-	internet.Install(wifiApNode244);
-	internet.Install(wifiApNode245);
-	internet.Install(wifiApNode246);
-	internet.Install(wifiApNode247);
-	internet.Install(wifiApNode248);
-	internet.Install(wifiApNode249);
-	internet.Install(wifiApNode250);
-	internet.Install(wifiApNode251);
-	internet.Install(wifiApNode252);
-	internet.Install(wifiApNode253);
-	internet.Install(wifiApNode254);
-	internet.Install(wifiApNode255);
-	internet.Install(wifiApNode256);
-	internet.Install(wifiApNode257);
-	internet.Install(wifiApNode258);
-	internet.Install(wifiApNode259);
-	internet.Install(wifiApNode260);
-	internet.Install(wifiApNode261);
-	internet.Install(wifiApNode262);
-	internet.Install(wifiApNode263);
-	internet.Install(wifiApNode264);
-	internet.Install(wifiApNode265);
-	internet.Install(wifiApNode266);
-	internet.Install(wifiApNode267);
-	internet.Install(wifiApNode268);
-	internet.Install(wifiApNode269);
-	internet.Install(wifiApNode270);
-	internet.Install(wifiApNode271);
-	internet.Install(wifiApNode272);
-	internet.Install(wifiApNode273);
-	internet.Install(wifiApNode274);
-	internet.Install(wifiApNode275);
-	internet.Install(wifiApNode276);
-	internet.Install(wifiApNode277);
-	internet.Install(wifiApNode278);
-	internet.Install(wifiApNode279);
-	internet.Install(wifiApNode280);
-	internet.Install(wifiApNode281);
-	internet.Install(wifiApNode282);
-	internet.Install(wifiApNode283);
-	internet.Install(wifiApNode284);
-	internet.Install(wifiApNode285);
-	internet.Install(wifiApNode286);
-	internet.Install(wifiApNode287);
-	internet.Install(wifiApNode288);
-	internet.Install(wifiApNode289);
-	internet.Install(wifiApNode290);
-	internet.Install(wifiApNode291);
-	internet.Install(wifiApNode292);
-	internet.Install(wifiApNode293);
-	internet.Install(wifiApNode294);
-	internet.Install(wifiApNode295);
-	internet.Install(wifiApNode296);
-	internet.Install(wifiApNode297);
-//    internet.Install(wifiApNode298)
-//    internet.Install(wifiApNode299)
-	internet.Install(wifiApNode300);
-	internet.Install(wifiApNode301);
-	internet.Install(wifiApNode302);
-	internet.Install(wifiApNode303);
-	internet.Install(wifiApNode304);
-	internet.Install(wifiApNode305);
-//    internet.Install(wifiApNode306)
-	internet.Install(wifiApNode307);
-	internet.Install(wifiApNode308);
-	internet.Install(wifiApNode309);
-	internet.Install(wifiApNode310);
-	internet.Install(wifiApNode311);
-	internet.Install(wifiApNode312);
-	internet.Install(wifiApNode313);
-	internet.Install(wifiApNode314);
-//    internet.Install(wifiApNode315)
-	internet.Install(wifiStaNodes1);
-	internet.Install(wifiStaNodes2);
-	internet.Install(wifiStaNodes3);
-	internet.Install(wifiStaNodes4);
-	internet.Install(wifiStaNodes5);
-	internet.Install(wifiStaNodes6);
-	internet.Install(wifiStaNodes7);
-	internet.Install(wifiStaNodes8);
-	internet.Install(wifiStaNodes9);
-	internet.Install(wifiStaNodes10);
-	internet.Install(wifiStaNodes11);
-	internet.Install(wifiStaNodes12);
-	internet.Install(wifiStaNodes13);
-	internet.Install(wifiStaNodes14);
-	internet.Install(wifiStaNodes15);
-	internet.Install(wifiStaNodes16);
-	internet.Install(wifiStaNodes17);
-	internet.Install(wifiStaNodes18);
-	internet.Install(wifiStaNodes19);
-	internet.Install(wifiStaNodes20);
-	internet.Install(wifiStaNodes21);
-	internet.Install(wifiStaNodes22);
-	internet.Install(wifiStaNodes23);
-	internet.Install(wifiStaNodes24);
-	internet.Install(wifiStaNodes25);
-	internet.Install(wifiStaNodes26);
-	internet.Install(wifiStaNodes27);
-	internet.Install(wifiStaNodes28);
-	internet.Install(wifiStaNodes29);
-	internet.Install(wifiStaNodes30);
-	internet.Install(wifiStaNodes31);
-	internet.Install(wifiStaNodes32);
-	internet.Install(wifiStaNodes33);
-	internet.Install(wifiStaNodes34);
-	internet.Install(wifiStaNodes35);
-	internet.Install(wifiStaNodes36);
-	internet.Install(wifiStaNodes37);
-	internet.Install(wifiStaNodes38);
-	internet.Install(wifiStaNodes39);
-	internet.Install(wifiStaNodes40);
-	internet.Install(wifiStaNodes41);
-	internet.Install(wifiStaNodes42);
-	internet.Install(wifiStaNodes43);
-	internet.Install(wifiStaNodes44);
-	internet.Install(wifiStaNodes45);
-	internet.Install(wifiStaNodes46);
-	internet.Install(wifiStaNodes47);
-	internet.Install(wifiStaNodes48);
-	internet.Install(wifiStaNodes49);
-	internet.Install(wifiStaNodes50);
-	internet.Install(wifiStaNodes51);
-	internet.Install(wifiStaNodes52);
-	internet.Install(wifiStaNodes53);
-	internet.Install(wifiStaNodes54);
-	internet.Install(wifiStaNodes55);
-	internet.Install(wifiStaNodes56);
-	internet.Install(wifiStaNodes57);
-	internet.Install(wifiStaNodes58);
-	internet.Install(wifiStaNodes59);
-	internet.Install(wifiStaNodes60);
-	internet.Install(wifiStaNodes61);
-	internet.Install(wifiStaNodes62);
-	internet.Install(wifiStaNodes63);
-	internet.Install(wifiStaNodes64);
-	internet.Install(wifiStaNodes65);
-	internet.Install(wifiStaNodes66);
-	internet.Install(wifiStaNodes67);
-	internet.Install(wifiStaNodes68);
-	internet.Install(wifiStaNodes69);
-	internet.Install(wifiStaNodes70);
-	internet.Install(wifiStaNodes71);
-	internet.Install(wifiStaNodes72);
-	internet.Install(wifiStaNodes73);
-	internet.Install(wifiStaNodes74);
-	internet.Install(wifiStaNodes75);
-	internet.Install(wifiStaNodes76);
-	internet.Install(wifiStaNodes77);
-	internet.Install(wifiStaNodes78);
-	internet.Install(wifiStaNodes79);
-	internet.Install(wifiStaNodes80);
-	internet.Install(wifiStaNodes81);
-	internet.Install(wifiStaNodes82);
-	internet.Install(wifiStaNodes83);
-	internet.Install(wifiStaNodes84);
-	internet.Install(wifiStaNodes85);
-	internet.Install(wifiStaNodes86);
-	internet.Install(wifiStaNodes87);
-	internet.Install(wifiStaNodes88);
-	internet.Install(wifiStaNodes89);
-	internet.Install(wifiStaNodes90);
-	internet.Install(wifiStaNodes91);
-	internet.Install(wifiStaNodes92);
-	internet.Install(wifiStaNodes93);
-	internet.Install(wifiStaNodes94);
-	internet.Install(wifiStaNodes95);
-	internet.Install(wifiStaNodes96);
-	internet.Install(wifiStaNodes97);
-	internet.Install(wifiStaNodes98);
-	internet.Install(wifiStaNodes99);
-	internet.Install(wifiStaNodes100);
-	internet.Install(wifiStaNodes101);
-	internet.Install(wifiStaNodes102);
-	internet.Install(wifiStaNodes103);
-	internet.Install(wifiStaNodes104);
-	internet.Install(wifiStaNodes105);
-	internet.Install(wifiStaNodes106);
-	internet.Install(wifiStaNodes107);
-	internet.Install(wifiStaNodes108);
-	internet.Install(wifiStaNodes109);
-	internet.Install(wifiStaNodes110);
-	internet.Install(wifiStaNodes111);
-	internet.Install(wifiStaNodes112);
-	internet.Install(wifiStaNodes113);
-	internet.Install(wifiStaNodes114);
-	internet.Install(wifiStaNodes115);
-	internet.Install(wifiStaNodes116);
-	internet.Install(wifiStaNodes117);
-	internet.Install(wifiStaNodes118);
-	internet.Install(wifiStaNodes119);
-	internet.Install(wifiStaNodes120);
-	internet.Install(wifiStaNodes121);
-	internet.Install(wifiStaNodes122);
-	internet.Install(wifiStaNodes123);
-	internet.Install(wifiStaNodes124);
-	internet.Install(wifiStaNodes125);
-	internet.Install(wifiStaNodes126);
-	internet.Install(wifiStaNodes127);
-	internet.Install(wifiStaNodes128);
-	internet.Install(wifiStaNodes129);
-	internet.Install(wifiStaNodes130);
-	internet.Install(wifiStaNodes131);
-	internet.Install(wifiStaNodes132);
-	internet.Install(wifiStaNodes133);
-	internet.Install(wifiStaNodes134);
-	internet.Install(wifiStaNodes135);
-	internet.Install(wifiStaNodes136);
-	internet.Install(wifiStaNodes137);
-	internet.Install(wifiStaNodes138);
-	internet.Install(wifiStaNodes139);
-	internet.Install(wifiStaNodes140);
-	internet.Install(wifiStaNodes141);
-	internet.Install(wifiStaNodes142);
-	internet.Install(wifiStaNodes143);
-	internet.Install(wifiStaNodes144);
-	internet.Install(wifiStaNodes145);
-	internet.Install(wifiStaNodes146);
-	internet.Install(wifiStaNodes147);
-	internet.Install(wifiStaNodes148);
-	internet.Install(wifiStaNodes149);
-	internet.Install(wifiStaNodes150);
-	internet.Install(wifiStaNodes151);
-	internet.Install(wifiStaNodes152);
-	internet.Install(wifiStaNodes153);
-	internet.Install(wifiStaNodes154);
-	internet.Install(wifiStaNodes155);
-	internet.Install(wifiStaNodes156);
-	internet.Install(wifiStaNodes157);
-	internet.Install(wifiStaNodes158);
-	internet.Install(wifiStaNodes159);
-	internet.Install(wifiStaNodes160);
-	internet.Install(wifiStaNodes161);
-	internet.Install(wifiStaNodes162);
-	internet.Install(wifiStaNodes163);
-	internet.Install(wifiStaNodes164);
-	internet.Install(wifiStaNodes165);
-	internet.Install(wifiStaNodes166);
-	internet.Install(wifiStaNodes167);
-	internet.Install(wifiStaNodes168);
-	internet.Install(wifiStaNodes169);
-	internet.Install(wifiStaNodes170);
-	internet.Install(wifiStaNodes171);
-	internet.Install(wifiStaNodes172);
-	internet.Install(wifiStaNodes173);
-	internet.Install(wifiStaNodes174);
-	internet.Install(wifiStaNodes175);
-	internet.Install(wifiStaNodes176);
-	internet.Install(wifiStaNodes177);
-	internet.Install(wifiStaNodes178);
-	internet.Install(wifiStaNodes179);
-	internet.Install(wifiStaNodes180);
-	internet.Install(wifiStaNodes181);
-	internet.Install(wifiStaNodes182);
-	internet.Install(wifiStaNodes183);
-	internet.Install(wifiStaNodes184);
-	internet.Install(wifiStaNodes185);
-	internet.Install(wifiStaNodes186);
-	internet.Install(wifiStaNodes187);
-	internet.Install(wifiStaNodes188);
-	internet.Install(wifiStaNodes189);
-	internet.Install(wifiStaNodes190);
-	internet.Install(wifiStaNodes191);
-	internet.Install(wifiStaNodes192);
-	internet.Install(wifiStaNodes193);
-	internet.Install(wifiStaNodes194);
-	internet.Install(wifiStaNodes195);
-	internet.Install(wifiStaNodes196);
-	internet.Install(wifiStaNodes197);
-	internet.Install(wifiStaNodes198);
-	internet.Install(wifiStaNodes199);
-	internet.Install(wifiStaNodes200);
-	internet.Install(wifiStaNodes201);
-	internet.Install(wifiStaNodes202);
-	internet.Install(wifiStaNodes203);
-	internet.Install(wifiStaNodes204);
-	internet.Install(wifiStaNodes205);
-	internet.Install(wifiStaNodes206);
-	internet.Install(wifiStaNodes207);
-	internet.Install(wifiStaNodes208);
-	internet.Install(wifiStaNodes209);
-	internet.Install(wifiStaNodes210);
-	internet.Install(wifiStaNodes211);
-	internet.Install(wifiStaNodes212);
-	internet.Install(wifiStaNodes213);
-	internet.Install(wifiStaNodes214);
-	internet.Install(wifiStaNodes215);
-	internet.Install(wifiStaNodes216);
-	internet.Install(wifiStaNodes217);
-	internet.Install(wifiStaNodes218);
-	internet.Install(wifiStaNodes219);
-	internet.Install(wifiStaNodes220);
-	internet.Install(wifiStaNodes221);
-	internet.Install(wifiStaNodes222);
-	internet.Install(wifiStaNodes223);
-	internet.Install(wifiStaNodes224);
-	internet.Install(wifiStaNodes225);
-	internet.Install(wifiStaNodes226);
-	internet.Install(wifiStaNodes227);
-	internet.Install(wifiStaNodes228);
-	internet.Install(wifiStaNodes229);
-	internet.Install(wifiStaNodes230);
-	internet.Install(wifiStaNodes231);
-	internet.Install(wifiStaNodes232);
-	internet.Install(wifiStaNodes233);
-	internet.Install(wifiStaNodes234);
-	internet.Install(wifiStaNodes235);
-	internet.Install(wifiStaNodes236);
-	internet.Install(wifiStaNodes237);
-	internet.Install(wifiStaNodes238);
-	internet.Install(wifiStaNodes239);
-	internet.Install(wifiStaNodes240);
-	internet.Install(wifiStaNodes241);
-	internet.Install(wifiStaNodes242);
-	internet.Install(wifiStaNodes243);
-	internet.Install(wifiStaNodes244);
-	internet.Install(wifiStaNodes245);
-	internet.Install(wifiStaNodes246);
-	internet.Install(wifiStaNodes247);
-	internet.Install(wifiStaNodes248);
-	internet.Install(wifiStaNodes249);
-	internet.Install(wifiStaNodes250);
-	internet.Install(wifiStaNodes251);
-	internet.Install(wifiStaNodes252);
-	internet.Install(wifiStaNodes253);
-	internet.Install(wifiStaNodes254);
-	internet.Install(wifiStaNodes255);
-	internet.Install(wifiStaNodes256);
-	internet.Install(wifiStaNodes257);
-	internet.Install(wifiStaNodes258);
-	internet.Install(wifiStaNodes259);
-	internet.Install(wifiStaNodes260);
-	internet.Install(wifiStaNodes261);
-	internet.Install(wifiStaNodes262);
-	internet.Install(wifiStaNodes263);
-	internet.Install(wifiStaNodes264);
-	internet.Install(wifiStaNodes265);
-	internet.Install(wifiStaNodes266);
-	internet.Install(wifiStaNodes267);
-	internet.Install(wifiStaNodes268);
-	internet.Install(wifiStaNodes269);
-	internet.Install(wifiStaNodes270);
-	internet.Install(wifiStaNodes271);
-	internet.Install(wifiStaNodes272);
-	internet.Install(wifiStaNodes273);
-	internet.Install(wifiStaNodes274);
-	internet.Install(wifiStaNodes275);
-	internet.Install(wifiStaNodes276);
-	internet.Install(wifiStaNodes277);
-	internet.Install(wifiStaNodes278);
-	internet.Install(wifiStaNodes279);
-	internet.Install(wifiStaNodes280);
-	internet.Install(wifiStaNodes281);
-	internet.Install(wifiStaNodes282);
-	internet.Install(wifiStaNodes283);
-	internet.Install(wifiStaNodes284);
-	internet.Install(wifiStaNodes285);
-	internet.Install(wifiStaNodes286);
-	internet.Install(wifiStaNodes287);
-	internet.Install(wifiStaNodes288);
-	internet.Install(wifiStaNodes289);
-	internet.Install(wifiStaNodes290);
-	internet.Install(wifiStaNodes291);
-	internet.Install(wifiStaNodes292);
-	internet.Install(wifiStaNodes293);
-	internet.Install(wifiStaNodes294);
-	internet.Install(wifiStaNodes295);
-	internet.Install(wifiStaNodes296);
-	internet.Install(wifiStaNodes297);
-//    internet.Install(wifiStaNodes298)
-//    internet.Install(wifiStaNodes299)
-	internet.Install(wifiStaNodes300);
-	internet.Install(wifiStaNodes301);
-	internet.Install(wifiStaNodes302);
-	internet.Install(wifiStaNodes303);
-	internet.Install(wifiStaNodes304);
-	internet.Install(wifiStaNodes305);
-//    internet.Install(wifiStaNodes306)
-	internet.Install(wifiStaNodes307);
-	internet.Install(wifiStaNodes308);
-	internet.Install(wifiStaNodes309);
-	internet.Install(wifiStaNodes310);
-	internet.Install(wifiStaNodes311);
-	internet.Install(wifiStaNodes312);
-	internet.Install(wifiStaNodes313);
-	internet.Install(wifiStaNodes314);
-//    internet.Install(wifiStaNodes315)
+	for(int i=1; i<=287; ++i){
+		internet.Install(wifi_ap_nodes[i]);
+	}
+
+	for(int i=300; i<=305; ++i){
+		internet.Install(wifi_ap_nodes[i]);
+	}
+
+	for(int i=307; i<=314; ++i){
+		internet.Install(wifi_ap_nodes[i]);
+	}
+
+	for(int i=1; i<=299; ++i){
+		internet.Install(wifi_sta_node_sets[i]);
+	}
+
+	for(int i=300; i<=305; ++i){
+		internet.Install(wifi_sta_node_sets[i]);
+	}
+
+	for(int i=307; i<=314; ++i){
+		internet.Install(wifi_sta_node_sets[i]);
+	}
 
 // We've got the "hardware" in place.  Now we need to add IP addresses.
 //
