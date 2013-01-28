@@ -8,7 +8,7 @@ main.s: main.cc
 main.o: main.cc
 
 clean:
-	rm -rf main.s main.o
+	rm -rf main.s main.o hello hello.o
 
 hello: hello.o
 	g++ -o hello $<
