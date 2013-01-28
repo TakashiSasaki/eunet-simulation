@@ -71,7 +71,7 @@ int main(int argc, char** argv) {
 	ns3::NetDeviceContainer internetrouterdevices;
 	ns3::NetDeviceContainer switchDevicesrouter;
 	ns3::NetDeviceContainer switchDevices6506E;
-	SwitchDevices switch_devices(300);
+	SwitchDevices switch_devices(350);
 
 	ns3::NetDeviceContainer switchDevicessigenobu;
 	ns3::NetDeviceContainer switchDevicestarumi;
