@@ -21,6 +21,7 @@
 #include "TerminalSets.h"
 #include "WifiStaNodeSets.h"
 #include "WifiApNodes.h"
+#include "TerminalDeviceSets.h"
 
 NS_LOG_COMPONENT_DEFINE("OnOffApplication");
 
@@ -71,344 +72,9 @@ int main(int argc, char** argv) {
 	ns3::NetDeviceContainer switchDevicessigenobu;
 	ns3::NetDeviceContainer switchDevicestarumi;
 
-	ns3::NetDeviceContainer terminaldevices5;
-	ns3::NetDeviceContainer terminaldevices6;
-	ns3::NetDeviceContainer terminaldevices7;
-	ns3::NetDeviceContainer terminaldevices8;
-	ns3::NetDeviceContainer terminaldevices9;
-	ns3::NetDeviceContainer terminaldevices10;
-	ns3::NetDeviceContainer terminaldevices11;
-	ns3::NetDeviceContainer terminaldevices12;
-	ns3::NetDeviceContainer terminaldevices13;
-	ns3::NetDeviceContainer terminaldevices14;
-	ns3::NetDeviceContainer terminaldevices15;
-	ns3::NetDeviceContainer terminaldevices16;
-	ns3::NetDeviceContainer terminaldevices17;
-	ns3::NetDeviceContainer terminaldevices18;
-	ns3::NetDeviceContainer terminaldevices19;
-	ns3::NetDeviceContainer terminaldevices20;
-	ns3::NetDeviceContainer terminaldevices21;
-	ns3::NetDeviceContainer terminaldevices22;
-	ns3::NetDeviceContainer terminaldevices23;
-	ns3::NetDeviceContainer terminaldevices24;
-	ns3::NetDeviceContainer terminaldevices25;
-	ns3::NetDeviceContainer terminaldevices26;
-	ns3::NetDeviceContainer terminaldevices27;
-	ns3::NetDeviceContainer terminaldevices28;
-	ns3::NetDeviceContainer terminaldevices29;
-	ns3::NetDeviceContainer terminaldevices30;
-	ns3::NetDeviceContainer terminaldevices31;
-	ns3::NetDeviceContainer terminaldevices32;
-	ns3::NetDeviceContainer terminaldevices33;
-	ns3::NetDeviceContainer terminaldevices34;
-	ns3::NetDeviceContainer terminaldevices35;
-	ns3::NetDeviceContainer terminaldevices36;
-	ns3::NetDeviceContainer terminaldevices37;
-	ns3::NetDeviceContainer terminaldevices38;
-	ns3::NetDeviceContainer terminaldevices39;
-	ns3::NetDeviceContainer terminaldevices40;
-	ns3::NetDeviceContainer terminaldevices41;
-	ns3::NetDeviceContainer terminaldevices42;
-	ns3::NetDeviceContainer terminaldevices43;
-	ns3::NetDeviceContainer terminaldevices44;
-	ns3::NetDeviceContainer terminaldevices45;
-	ns3::NetDeviceContainer terminaldevices46;
-	ns3::NetDeviceContainer terminaldevices47;
-	ns3::NetDeviceContainer terminaldevices48;
-	ns3::NetDeviceContainer terminaldevices49;
-	ns3::NetDeviceContainer terminaldevices50;
-	ns3::NetDeviceContainer terminaldevices51;
-	ns3::NetDeviceContainer terminaldevices52;
-	ns3::NetDeviceContainer terminaldevices53;
-	ns3::NetDeviceContainer terminaldevices54;
-	ns3::NetDeviceContainer terminaldevices55;
-	ns3::NetDeviceContainer terminaldevices56;
-	ns3::NetDeviceContainer terminaldevices57;
-	ns3::NetDeviceContainer terminaldevices58;
-	ns3::NetDeviceContainer terminaldevices59;
-	ns3::NetDeviceContainer terminaldevices60;
-	ns3::NetDeviceContainer terminaldevices61;
-	ns3::NetDeviceContainer terminaldevices62;
-	ns3::NetDeviceContainer terminaldevices63;
-	ns3::NetDeviceContainer terminaldevices64;
-	ns3::NetDeviceContainer terminaldevices65;
-	ns3::NetDeviceContainer terminaldevices66;
-	ns3::NetDeviceContainer terminaldevices67;
-	ns3::NetDeviceContainer terminaldevices68;
-	ns3::NetDeviceContainer terminaldevices69;
-	ns3::NetDeviceContainer terminaldevices70;
-	ns3::NetDeviceContainer terminaldevices71;
-	ns3::NetDeviceContainer terminaldevices72;
-	ns3::NetDeviceContainer terminaldevices73;
-	ns3::NetDeviceContainer terminaldevices74;
-	ns3::NetDeviceContainer terminaldevices75;
-	ns3::NetDeviceContainer terminaldevices76;
-	ns3::NetDeviceContainer terminaldevices77;
-	ns3::NetDeviceContainer terminaldevices78;
-	ns3::NetDeviceContainer terminaldevices79;
-	ns3::NetDeviceContainer terminaldevices81;
-	ns3::NetDeviceContainer terminaldevices82;
-	ns3::NetDeviceContainer terminaldevices83;
-	ns3::NetDeviceContainer terminaldevices84;
-	ns3::NetDeviceContainer terminaldevices85;
-	ns3::NetDeviceContainer terminaldevices86;
-	ns3::NetDeviceContainer terminaldevices87;
-	ns3::NetDeviceContainer terminaldevices88;
-	ns3::NetDeviceContainer terminaldevices89;
-	ns3::NetDeviceContainer terminaldevices90;
-	ns3::NetDeviceContainer terminaldevices91;
-	ns3::NetDeviceContainer terminaldevices92;
-	ns3::NetDeviceContainer terminaldevices93;
-	ns3::NetDeviceContainer terminaldevices94;
-	ns3::NetDeviceContainer terminaldevices95;
-	ns3::NetDeviceContainer terminaldevices96;
-	ns3::NetDeviceContainer terminaldevices97;
-	ns3::NetDeviceContainer terminaldevices98;
-	ns3::NetDeviceContainer terminaldevices99;
-	ns3::NetDeviceContainer terminaldevices100;
-	ns3::NetDeviceContainer terminaldevices101;
-	ns3::NetDeviceContainer terminaldevices102;
-	ns3::NetDeviceContainer terminaldevices103;
-	ns3::NetDeviceContainer terminaldevices104;
-	ns3::NetDeviceContainer terminaldevices105;
-	ns3::NetDeviceContainer terminaldevices106;
-	ns3::NetDeviceContainer terminaldevices107;
-	ns3::NetDeviceContainer terminaldevices108;
-	ns3::NetDeviceContainer terminaldevices109;
-	ns3::NetDeviceContainer terminaldevices110;
-	ns3::NetDeviceContainer terminaldevices111;
-	ns3::NetDeviceContainer terminaldevices112;
-	ns3::NetDeviceContainer terminaldevices114;
-	ns3::NetDeviceContainer terminaldevices115;
-	ns3::NetDeviceContainer terminaldevices116;
-	ns3::NetDeviceContainer terminaldevices117;
-	ns3::NetDeviceContainer terminaldevices118;
-	ns3::NetDeviceContainer terminaldevices119;
-	ns3::NetDeviceContainer terminaldevices120;
-	ns3::NetDeviceContainer terminaldevices121;
-	ns3::NetDeviceContainer terminaldevices122;
-	ns3::NetDeviceContainer terminaldevices123;
-	ns3::NetDeviceContainer terminaldevices124;
-	ns3::NetDeviceContainer terminaldevices125;
-	ns3::NetDeviceContainer terminaldevices126;
-	ns3::NetDeviceContainer terminaldevices127;
-	ns3::NetDeviceContainer terminaldevices128;
-	ns3::NetDeviceContainer terminaldevices129;
-	ns3::NetDeviceContainer terminaldevices130;
-	ns3::NetDeviceContainer terminaldevices131;
-	ns3::NetDeviceContainer terminaldevices132;
-	ns3::NetDeviceContainer terminaldevices133;
-	ns3::NetDeviceContainer terminaldevices134;
-	ns3::NetDeviceContainer terminaldevices135;
-	ns3::NetDeviceContainer terminaldevices136;
-	ns3::NetDeviceContainer terminaldevices137;
-	ns3::NetDeviceContainer terminaldevices138;
-	ns3::NetDeviceContainer terminaldevices139;
-	ns3::NetDeviceContainer terminaldevices140;
-	ns3::NetDeviceContainer terminaldevices141;
-	ns3::NetDeviceContainer terminaldevices142;
-	ns3::NetDeviceContainer terminaldevices143;
-	ns3::NetDeviceContainer terminaldevices144;
-	ns3::NetDeviceContainer terminaldevices145;
-	ns3::NetDeviceContainer terminaldevices146;
-	ns3::NetDeviceContainer terminaldevices147;
-	ns3::NetDeviceContainer terminaldevices148;
-	ns3::NetDeviceContainer terminaldevices149;
-	ns3::NetDeviceContainer terminaldevices150;
-	ns3::NetDeviceContainer terminaldevices151;
-	ns3::NetDeviceContainer terminaldevices152;
-	ns3::NetDeviceContainer terminaldevices153;
-	ns3::NetDeviceContainer terminaldevices154;
-	ns3::NetDeviceContainer terminaldevices155;
-	ns3::NetDeviceContainer terminaldevices156;
-	ns3::NetDeviceContainer terminaldevices157;
-	ns3::NetDeviceContainer terminaldevices158;
-	ns3::NetDeviceContainer terminaldevices159;
-	ns3::NetDeviceContainer terminaldevices161;
-	ns3::NetDeviceContainer terminaldevices162;
-	ns3::NetDeviceContainer terminaldevices163;
-	ns3::NetDeviceContainer terminaldevices164;
-	ns3::NetDeviceContainer terminaldevices165;
-	ns3::NetDeviceContainer terminaldevices166;
-	ns3::NetDeviceContainer terminaldevices167;
-	ns3::NetDeviceContainer terminaldevices168;
-	ns3::NetDeviceContainer terminaldevices169;
-	ns3::NetDeviceContainer terminaldevices170;
-	ns3::NetDeviceContainer terminaldevices171;
-	ns3::NetDeviceContainer terminaldevices172;
-	ns3::NetDeviceContainer terminaldevices173;
-	ns3::NetDeviceContainer terminaldevices174;
-	ns3::NetDeviceContainer terminaldevices175;
-	ns3::NetDeviceContainer terminaldevices176;
-	ns3::NetDeviceContainer terminaldevices177;
-	ns3::NetDeviceContainer terminaldevices178;
-	ns3::NetDeviceContainer terminaldevices179;
-	ns3::NetDeviceContainer terminaldevices180;
-	ns3::NetDeviceContainer terminaldevices181;
-	ns3::NetDeviceContainer terminaldevices182;
-	ns3::NetDeviceContainer terminaldevices183;
-	ns3::NetDeviceContainer terminaldevices184;
-	ns3::NetDeviceContainer terminaldevices185;
-	ns3::NetDeviceContainer terminaldevices186;
-	ns3::NetDeviceContainer terminaldevices187;
-	ns3::NetDeviceContainer terminaldevices188;
-	ns3::NetDeviceContainer terminaldevices189;
-	ns3::NetDeviceContainer terminaldevices190;
-	ns3::NetDeviceContainer terminaldevices191;
-	ns3::NetDeviceContainer terminaldevices192;
-	ns3::NetDeviceContainer terminaldevices193;
-	ns3::NetDeviceContainer terminaldevices194;
-	ns3::NetDeviceContainer terminaldevices195;
-	ns3::NetDeviceContainer terminaldevices196;
-	ns3::NetDeviceContainer terminaldevices197;
-	ns3::NetDeviceContainer terminaldevices198;
-	ns3::NetDeviceContainer terminaldevices199;
-	ns3::NetDeviceContainer terminaldevices200;
-	ns3::NetDeviceContainer terminaldevices201;
-	ns3::NetDeviceContainer terminaldevices202;
-	ns3::NetDeviceContainer terminaldevices203;
-	ns3::NetDeviceContainer terminaldevices204;
-	ns3::NetDeviceContainer terminaldevices205;
-	ns3::NetDeviceContainer terminaldevices206;
-	ns3::NetDeviceContainer terminaldevices207;
-	ns3::NetDeviceContainer terminaldevices208;
-	ns3::NetDeviceContainer terminaldevices209;
-	ns3::NetDeviceContainer terminaldevices210;
-	ns3::NetDeviceContainer terminaldevices211;
-	ns3::NetDeviceContainer terminaldevices212;
-	ns3::NetDeviceContainer terminaldevices214;
-	ns3::NetDeviceContainer terminaldevices215;
-	ns3::NetDeviceContainer terminaldevices216;
-	ns3::NetDeviceContainer terminaldevices217;
-	ns3::NetDeviceContainer terminaldevices218;
-	ns3::NetDeviceContainer terminaldevices219;
-	ns3::NetDeviceContainer terminaldevices220;
-	ns3::NetDeviceContainer terminaldevices221;
-	ns3::NetDeviceContainer terminaldevices222;
-	ns3::NetDeviceContainer terminaldevices223;
-	ns3::NetDeviceContainer terminaldevices224;
-	ns3::NetDeviceContainer terminaldevices225;
-	ns3::NetDeviceContainer terminaldevices226;
-	ns3::NetDeviceContainer terminaldevices227;
-	ns3::NetDeviceContainer terminaldevices228;
-	ns3::NetDeviceContainer terminaldevices229;
-	ns3::NetDeviceContainer terminaldevices230;
-	ns3::NetDeviceContainer terminaldevices231;
-	ns3::NetDeviceContainer terminaldevices232;
-	ns3::NetDeviceContainer terminaldevices233;
-	ns3::NetDeviceContainer terminaldevices234;
-	ns3::NetDeviceContainer terminaldevices235;
-	ns3::NetDeviceContainer terminaldevices236;
-	ns3::NetDeviceContainer terminaldevices237;
-	ns3::NetDeviceContainer terminaldevices238;
-	ns3::NetDeviceContainer terminaldevices239;
-	ns3::NetDeviceContainer terminaldevices240;
-	ns3::NetDeviceContainer terminaldevices241;
-	ns3::NetDeviceContainer terminaldevices242;
-	ns3::NetDeviceContainer terminaldevices243;
-	ns3::NetDeviceContainer terminaldevices244;
-	ns3::NetDeviceContainer terminaldevices245;
-	ns3::NetDeviceContainer terminaldevices246;
-	ns3::NetDeviceContainer terminaldevices247;
-	ns3::NetDeviceContainer terminaldevices248;
-	ns3::NetDeviceContainer terminaldevices284;
-	ns3::NetDeviceContainer terminaldevices249;
-	ns3::NetDeviceContainer terminaldevices250;
-	ns3::NetDeviceContainer terminaldevices251;
-	ns3::NetDeviceContainer terminaldevices252;
-	ns3::NetDeviceContainer terminaldevices253;
-	ns3::NetDeviceContainer terminaldevices254;
-	ns3::NetDeviceContainer terminaldevices255;
-	ns3::NetDeviceContainer terminaldevices256;
-	ns3::NetDeviceContainer terminaldevices257;
-	ns3::NetDeviceContainer terminaldevices258;
-	ns3::NetDeviceContainer terminaldevices259;
-	ns3::NetDeviceContainer terminaldevices260;
-	ns3::NetDeviceContainer terminaldevices261;
-	ns3::NetDeviceContainer terminaldevices262;
-	ns3::NetDeviceContainer terminaldevices263;
-	ns3::NetDeviceContainer terminaldevices264;
-	ns3::NetDeviceContainer terminaldevices265;
-	ns3::NetDeviceContainer terminaldevices266;
-	ns3::NetDeviceContainer terminaldevices267;
-	ns3::NetDeviceContainer terminaldevices268;
-	ns3::NetDeviceContainer terminaldevices269;
-	ns3::NetDeviceContainer terminaldevices270;
-	ns3::NetDeviceContainer terminaldevices272;
-	ns3::NetDeviceContainer terminaldevices273;
-	ns3::NetDeviceContainer terminaldevices274;
-	ns3::NetDeviceContainer terminaldevices275;
-	ns3::NetDeviceContainer terminaldevices276;
-	ns3::NetDeviceContainer terminaldevices277;
-	ns3::NetDeviceContainer terminaldevices278;
-	ns3::NetDeviceContainer terminaldevices279;
-	ns3::NetDeviceContainer terminaldevices280;
-	ns3::NetDeviceContainer terminaldevices281;
-	ns3::NetDeviceContainer terminaldevices282;
-	ns3::NetDeviceContainer terminaldevices283;
-	ns3::NetDeviceContainer terminaldevices285;
-	ns3::NetDeviceContainer terminaldevices286;
-	ns3::NetDeviceContainer terminaldevices287;
-	ns3::NetDeviceContainer terminaldevices288;
-	ns3::NetDeviceContainer terminaldevices289;
-	ns3::NetDeviceContainer terminaldevices290;
-	ns3::NetDeviceContainer terminaldevices291;
-	ns3::NetDeviceContainer terminaldevices292;
-	ns3::NetDeviceContainer terminaldevices293;
-	ns3::NetDeviceContainer terminaldevices294;
-	ns3::NetDeviceContainer terminaldevices295;
-	ns3::NetDeviceContainer terminaldevices296;
-	ns3::NetDeviceContainer terminaldevices297;
-	ns3::NetDeviceContainer terminaldevices298;
-	ns3::NetDeviceContainer terminaldevices299;
-	ns3::NetDeviceContainer terminaldevices300;
-	ns3::NetDeviceContainer terminaldevices301;
-	ns3::NetDeviceContainer terminaldevices302;
-	ns3::NetDeviceContainer terminaldevices303;
-	ns3::NetDeviceContainer terminaldevices304;
-	ns3::NetDeviceContainer terminaldevices305;
-	ns3::NetDeviceContainer terminaldevices306;
-	ns3::NetDeviceContainer terminaldevices307;
-	ns3::NetDeviceContainer terminaldevices308;
-	ns3::NetDeviceContainer terminaldevices309;
-	ns3::NetDeviceContainer terminaldevices310;
-	ns3::NetDeviceContainer terminaldevices311;
-	ns3::NetDeviceContainer terminaldevices312;
-	ns3::NetDeviceContainer terminaldevices313;
-	ns3::NetDeviceContainer terminaldevices314;
-	ns3::NetDeviceContainer terminaldevices315;
-	ns3::NetDeviceContainer terminaldevices316;
-	ns3::NetDeviceContainer terminaldevices317;
-	ns3::NetDeviceContainer terminaldevices318;
-	ns3::NetDeviceContainer terminaldevices319;
-	ns3::NetDeviceContainer terminaldevices320;
-	ns3::NetDeviceContainer terminaldevices321;
-	ns3::NetDeviceContainer terminaldevices322;
-	ns3::NetDeviceContainer terminaldevices323;
-	ns3::NetDeviceContainer terminaldevices324;
-	ns3::NetDeviceContainer terminaldevices325;
-	ns3::NetDeviceContainer terminaldevices326;
-	ns3::NetDeviceContainer terminaldevices327;
-	ns3::NetDeviceContainer terminaldevices328;
-	ns3::NetDeviceContainer terminaldevices329;
-	ns3::NetDeviceContainer terminaldevices330;
-	ns3::NetDeviceContainer terminaldevices331;
-	ns3::NetDeviceContainer terminaldevices332;
-	ns3::NetDeviceContainer terminaldevices334;
-	ns3::NetDeviceContainer terminaldevices335;
-	ns3::NetDeviceContainer terminaldevices336;
-	ns3::NetDeviceContainer terminaldevices337;
-	ns3::NetDeviceContainer terminaldevices338;
-	ns3::NetDeviceContainer terminaldevices339;
-	ns3::NetDeviceContainer terminaldevices340;
-	ns3::NetDeviceContainer terminaldevices341;
-	ns3::NetDeviceContainer terminaldevices342;
-	ns3::NetDeviceContainer terminaldevices343;
-	ns3::NetDeviceContainer terminaldevices344;
-	ns3::NetDeviceContainer terminaldevices345;
-	ns3::NetDeviceContainer terminaldevices346;
-	ns3::NetDeviceContainer terminaldevices347;
-	ns3::NetDeviceContainer terminaldevices348;
+	TerminalDeviceSets terminal_device_sets(348);
+
+
 	ns3::NetDeviceContainer apdevices1;
 	ns3::NetDeviceContainer apdevices2;
 	ns3::NetDeviceContainer apdevices3;
@@ -7396,7 +7062,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[5].Get(i)),
 						csmaSwitches[5]));
 		switch_devices[5].Add(nodelink5.Get(1));
-		terminaldevices5.Add(nodelink5.Get(0));
+		terminal_device_sets[5].Add(nodelink5.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7405,7 +7071,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[6].Get(i)),
 						csmaSwitches[6]));
 		switch_devices[6].Add(nodelink6.Get(1));
-		terminaldevices6.Add(nodelink6.Get(0));
+		terminal_device_sets[6].Add(nodelink6.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7414,7 +7080,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[7].Get(i)),
 						csmaSwitches[7]));
 		switch_devices[7].Add(nodelink7.Get(1));
-		terminaldevices7.Add(nodelink7.Get(0));
+		terminal_device_sets[7].Add(nodelink7.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7423,7 +7089,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[8].Get(i)),
 						csmaSwitches[8]));
 		switch_devices[8].Add(nodelink8.Get(1));
-		terminaldevices8.Add(nodelink8.Get(0));
+		terminal_device_sets[8].Add(nodelink8.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7432,7 +7098,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[9].Get(i)),
 						csmaSwitches[9]));
 		switch_devices[9].Add(nodelink9.Get(1));
-		terminaldevices9.Add(nodelink9.Get(0));
+		terminal_device_sets[9].Add(nodelink9.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7441,7 +7107,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[10].Get(i)),
 						csmaSwitches[10]));
 		switch_devices[10].Add(nodelink10.Get(1));
-		terminaldevices10.Add(nodelink10.Get(0));
+		terminal_device_sets[10].Add(nodelink10.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7450,7 +7116,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[11].Get(i)),
 						csmaSwitches[11]));
 		switch_devices[11].Add(nodelink11.Get(1));
-		terminaldevices11.Add(nodelink11.Get(0));
+		terminal_device_sets[11].Add(nodelink11.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7459,7 +7125,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[12].Get(i)),
 						csmaSwitches[12]));
 		switch_devices[12].Add(nodelink12.Get(1));
-		terminaldevices12.Add(nodelink12.Get(0));
+		terminal_device_sets[12].Add(nodelink12.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7468,7 +7134,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[13].Get(i)),
 						csmaSwitches[13]));
 		switch_devices[13].Add(nodelink13.Get(1));
-		terminaldevices13.Add(nodelink13.Get(0));
+		terminal_device_sets[13].Add(nodelink13.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7477,7 +7143,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[14].Get(i)),
 						csmaSwitches[14]));
 		switch_devices[14].Add(nodelink14.Get(1));
-		terminaldevices14.Add(nodelink14.Get(0));
+		terminal_device_sets[14].Add(nodelink14.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7486,7 +7152,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[15].Get(i)),
 						csmaSwitches[15]));
 		switch_devices[15].Add(nodelink15.Get(1));
-		terminaldevices15.Add(nodelink15.Get(0));
+		terminal_device_sets[15].Add(nodelink15.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7495,7 +7161,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[16].Get(i)),
 						csmaSwitches[16]));
 		switch_devices[16].Add(nodelink16.Get(1));
-		terminaldevices16.Add(nodelink16.Get(0));
+		terminal_device_sets[16].Add(nodelink16.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7504,7 +7170,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[17].Get(i)),
 						csmaSwitches[17]));
 		switch_devices[17].Add(nodelink17.Get(1));
-		terminaldevices17.Add(nodelink17.Get(0));
+		terminal_device_sets[17].Add(nodelink17.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7513,7 +7179,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[18].Get(i)),
 						csmaSwitches[18]));
 		switch_devices[18].Add(nodelink18.Get(1));
-		terminaldevices18.Add(nodelink18.Get(0));
+		terminal_device_sets[18].Add(nodelink18.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7522,7 +7188,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[19].Get(i)),
 						csmaSwitches[19]));
 		switch_devices[19].Add(nodelink19.Get(1));
-		terminaldevices19.Add(nodelink19.Get(0));
+		terminal_device_sets[19].Add(nodelink19.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7531,7 +7197,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[20].Get(i)),
 						csmaSwitches[20]));
 		switch_devices[20].Add(nodelink20.Get(1));
-		terminaldevices20.Add(nodelink20.Get(0));
+		terminal_device_sets[20].Add(nodelink20.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7540,7 +7206,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[21].Get(i)),
 						csmaSwitches[21]));
 		switch_devices[21].Add(nodelink21.Get(1));
-		terminaldevices21.Add(nodelink21.Get(0));
+		terminal_device_sets[21].Add(nodelink21.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7549,7 +7215,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[22].Get(i)),
 						csmaSwitches[22]));
 		switch_devices[22].Add(nodelink22.Get(1));
-		terminaldevices22.Add(nodelink22.Get(0));
+		terminal_device_sets[22].Add(nodelink22.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7558,7 +7224,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[23].Get(i)),
 						csmaSwitches[23]));
 		switch_devices[23].Add(nodelink23.Get(1));
-		terminaldevices23.Add(nodelink23.Get(0));
+		terminal_device_sets[23].Add(nodelink23.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7567,7 +7233,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[24].Get(i)),
 						csmaSwitches[24]));
 		switch_devices[24].Add(nodelink24.Get(1));
-		terminaldevices24.Add(nodelink24.Get(0));
+		terminal_device_sets[24].Add(nodelink24.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7576,7 +7242,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[25].Get(i)),
 						csmaSwitches[25]));
 		switch_devices[25].Add(nodelink25.Get(1));
-		terminaldevices25.Add(nodelink25.Get(0));
+		terminal_device_sets[25].Add(nodelink25.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7585,7 +7251,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[26].Get(i)),
 						csmaSwitches[26]));
 		switch_devices[26].Add(nodelink26.Get(1));
-		terminaldevices26.Add(nodelink26.Get(0));
+		terminal_device_sets[26].Add(nodelink26.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7594,7 +7260,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[27].Get(i)),
 						csmaSwitches[27]));
 		switch_devices[27].Add(nodelink27.Get(1));
-		terminaldevices27.Add(nodelink27.Get(0));
+		terminal_device_sets[27].Add(nodelink27.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7603,7 +7269,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[28].Get(i)),
 						csmaSwitches[28]));
 		switch_devices[28].Add(nodelink28.Get(1));
-		terminaldevices28.Add(nodelink28.Get(0));
+		terminal_device_sets[28].Add(nodelink28.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7612,7 +7278,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[29].Get(i)),
 						csmaSwitches[29]));
 		switch_devices[29].Add(nodelink29.Get(1));
-		terminaldevices29.Add(nodelink29.Get(0));
+		terminal_device_sets[29].Add(nodelink29.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7621,7 +7287,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[30].Get(i)),
 						csmaSwitches[30]));
 		switch_devices[30].Add(nodelink30.Get(1));
-		terminaldevices30.Add(nodelink30.Get(0));
+		terminal_device_sets[30].Add(nodelink30.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7630,7 +7296,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[31].Get(i)),
 						csmaSwitches[31]));
 		switch_devices[31].Add(nodelink31.Get(1));
-		terminaldevices31.Add(nodelink31.Get(0));
+		terminal_device_sets[31].Add(nodelink31.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7639,7 +7305,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[32].Get(i)),
 						csmaSwitches[32]));
 		switch_devices[32].Add(nodelink32.Get(1));
-		terminaldevices32.Add(nodelink32.Get(0));
+		terminal_device_sets[32].Add(nodelink32.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7648,7 +7314,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[33].Get(i)),
 						csmaSwitches[33]));
 		switch_devices[33].Add(nodelink33.Get(1));
-		terminaldevices33.Add(nodelink33.Get(0));
+		terminal_device_sets[33].Add(nodelink33.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7657,7 +7323,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[34].Get(i)),
 						csmaSwitches[34]));
 		switch_devices[34].Add(nodelink34.Get(1));
-		terminaldevices34.Add(nodelink34.Get(0));
+		terminal_device_sets[34].Add(nodelink34.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7666,7 +7332,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[35].Get(i)),
 						csmaSwitches[35]));
 		switch_devices[35].Add(nodelink35.Get(1));
-		terminaldevices35.Add(nodelink35.Get(0));
+		terminal_device_sets[35].Add(nodelink35.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7675,7 +7341,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[36].Get(i)),
 						csmaSwitches[36]));
 		switch_devices[36].Add(nodelink36.Get(1));
-		terminaldevices36.Add(nodelink36.Get(0));
+		terminal_device_sets[36].Add(nodelink36.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7684,7 +7350,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[37].Get(i)),
 						csmaSwitches[37]));
 		switch_devices[37].Add(nodelink37.Get(1));
-		terminaldevices37.Add(nodelink37.Get(0));
+		terminal_device_sets[37].Add(nodelink37.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7693,7 +7359,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[38].Get(i)),
 						csmaSwitches[38]));
 		switch_devices[38].Add(nodelink38.Get(1));
-		terminaldevices38.Add(nodelink38.Get(0));
+		terminal_device_sets[38].Add(nodelink38.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7702,7 +7368,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[39].Get(i)),
 						csmaSwitches[39]));
 		switch_devices[39].Add(nodelink39.Get(1));
-		terminaldevices39.Add(nodelink39.Get(0));
+		terminal_device_sets[39].Add(nodelink39.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7711,7 +7377,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[40].Get(i)),
 						csmaSwitches[40]));
 		switch_devices[40].Add(nodelink40.Get(1));
-		terminaldevices40.Add(nodelink40.Get(0));
+		terminal_device_sets[40].Add(nodelink40.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7720,7 +7386,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[41].Get(i)),
 						csmaSwitches[41]));
 		switch_devices[41].Add(nodelink41.Get(1));
-		terminaldevices41.Add(nodelink41.Get(0));
+		terminal_device_sets[41].Add(nodelink41.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7729,7 +7395,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[42].Get(i)),
 						csmaSwitches[42]));
 		switch_devices[42].Add(nodelink42.Get(1));
-		terminaldevices42.Add(nodelink42.Get(0));
+		terminal_device_sets[42].Add(nodelink42.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7738,7 +7404,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[43].Get(i)),
 						csmaSwitches[43]));
 		switch_devices[43].Add(nodelink43.Get(1));
-		terminaldevices43.Add(nodelink43.Get(0));
+		terminal_device_sets[43].Add(nodelink43.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7747,7 +7413,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[44].Get(i)),
 						csmaSwitches[44]));
 		switch_devices[44].Add(nodelink44.Get(1));
-		terminaldevices44.Add(nodelink44.Get(0));
+		terminal_device_sets[44].Add(nodelink44.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7756,7 +7422,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[45].Get(i)),
 						csmaSwitches[45]));
 		switch_devices[45].Add(nodelink45.Get(1));
-		terminaldevices45.Add(nodelink45.Get(0));
+		terminal_device_sets[45].Add(nodelink45.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7765,7 +7431,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[46].Get(i)),
 						csmaSwitches[46]));
 		switch_devices[46].Add(nodelink46.Get(1));
-		terminaldevices46.Add(nodelink46.Get(0));
+		terminal_device_sets[46].Add(nodelink46.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7774,7 +7440,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[47].Get(i)),
 						csmaSwitches[47]));
 		switch_devices[47].Add(nodelink47.Get(1));
-		terminaldevices47.Add(nodelink47.Get(0));
+		terminal_device_sets[47].Add(nodelink47.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7783,7 +7449,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[48].Get(i)),
 						csmaSwitches[48]));
 		switch_devices[48].Add(nodelink48.Get(1));
-		terminaldevices48.Add(nodelink48.Get(0));
+		terminal_device_sets[48].Add(nodelink48.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7792,7 +7458,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[49].Get(i)),
 						csmaSwitches[49]));
 		switch_devices[49].Add(nodelink49.Get(1));
-		terminaldevices49.Add(nodelink49.Get(0));
+		terminal_device_sets[49].Add(nodelink49.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7801,7 +7467,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[50].Get(i)),
 						csmaSwitches[50]));
 		switch_devices[50].Add(nodelink50.Get(1));
-		terminaldevices50.Add(nodelink50.Get(0));
+		terminal_device_sets[50].Add(nodelink50.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7810,7 +7476,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[51].Get(i)),
 						csmaSwitches[51]));
 		switch_devices[51].Add(nodelink51.Get(1));
-		terminaldevices51.Add(nodelink51.Get(0));
+		terminal_device_sets[51].Add(nodelink51.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7819,7 +7485,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[52].Get(i)),
 						csmaSwitches[52]));
 		switch_devices[52].Add(nodelink52.Get(1));
-		terminaldevices52.Add(nodelink52.Get(0));
+		terminal_device_sets[52].Add(nodelink52.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7828,7 +7494,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[53].Get(i)),
 						csmaSwitches[53]));
 		switch_devices[53].Add(nodelink53.Get(1));
-		terminaldevices53.Add(nodelink53.Get(0));
+		terminal_device_sets[53].Add(nodelink53.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7837,7 +7503,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[54].Get(i)),
 						csmaSwitches[54]));
 		switch_devices[54].Add(nodelink54.Get(1));
-		terminaldevices54.Add(nodelink54.Get(0));
+		terminal_device_sets[54].Add(nodelink54.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7846,7 +7512,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[55].Get(i)),
 						csmaSwitches[55]));
 		switch_devices[55].Add(nodelink55.Get(1));
-		terminaldevices55.Add(nodelink55.Get(0));
+		terminal_device_sets[55].Add(nodelink55.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7855,7 +7521,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[56].Get(i)),
 						csmaSwitches[56]));
 		switch_devices[56].Add(nodelink56.Get(1));
-		terminaldevices56.Add(nodelink56.Get(0));
+		terminal_device_sets[56].Add(nodelink56.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7864,7 +7530,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[57].Get(i)),
 						csmaSwitches[57]));
 		switch_devices[57].Add(nodelink57.Get(1));
-		terminaldevices57.Add(nodelink57.Get(0));
+		terminal_device_sets[57].Add(nodelink57.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7873,7 +7539,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[58].Get(i)),
 						csmaSwitches[58]));
 		switch_devices[58].Add(nodelink58.Get(1));
-		terminaldevices58.Add(nodelink58.Get(0));
+		terminal_device_sets[58].Add(nodelink58.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7882,7 +7548,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[59].Get(i)),
 						csmaSwitches[59]));
 		switch_devices[59].Add(nodelink59.Get(1));
-		terminaldevices59.Add(nodelink59.Get(0));
+		terminal_device_sets[59].Add(nodelink59.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7891,7 +7557,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[60].Get(i)),
 						csmaSwitches[60]));
 		switch_devices[60].Add(nodelink60.Get(1));
-		terminaldevices60.Add(nodelink60.Get(0));
+		terminal_device_sets[60].Add(nodelink60.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7900,7 +7566,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[61].Get(i)),
 						csmaSwitches[61]));
 		switch_devices[61].Add(nodelink61.Get(1));
-		terminaldevices61.Add(nodelink61.Get(0));
+		terminal_device_sets[61].Add(nodelink61.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7909,7 +7575,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[62].Get(i)),
 						csmaSwitches[62]));
 		switch_devices[62].Add(nodelink62.Get(1));
-		terminaldevices62.Add(nodelink62.Get(0));
+		terminal_device_sets[62].Add(nodelink62.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7918,7 +7584,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[63].Get(i)),
 						csmaSwitches[63]));
 		switch_devices[63].Add(nodelink63.Get(1));
-		terminaldevices63.Add(nodelink63.Get(0));
+		terminal_device_sets[63].Add(nodelink63.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7927,7 +7593,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[64].Get(i)),
 						csmaSwitches[64]));
 		switch_devices[64].Add(nodelink64.Get(1));
-		terminaldevices64.Add(nodelink64.Get(0));
+		terminal_device_sets[64].Add(nodelink64.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7936,7 +7602,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[65].Get(i)),
 						csmaSwitches[65]));
 		switch_devices[65].Add(nodelink65.Get(1));
-		terminaldevices65.Add(nodelink65.Get(0));
+		terminal_device_sets[65].Add(nodelink65.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7945,7 +7611,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[66].Get(i)),
 						csmaSwitches[66]));
 		switch_devices[66].Add(nodelink66.Get(1));
-		terminaldevices66.Add(nodelink66.Get(0));
+		terminal_device_sets[66].Add(nodelink66.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7954,7 +7620,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[67].Get(i)),
 						csmaSwitches[67]));
 		switch_devices[67].Add(nodelink67.Get(1));
-		terminaldevices67.Add(nodelink67.Get(0));
+		terminal_device_sets[67].Add(nodelink67.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7963,7 +7629,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[68].Get(i)),
 						csmaSwitches[68]));
 		switch_devices[68].Add(nodelink68.Get(1));
-		terminaldevices68.Add(nodelink68.Get(0));
+		terminal_device_sets[68].Add(nodelink68.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7972,7 +7638,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[69].Get(i)),
 						csmaSwitches[69]));
 		switch_devices[69].Add(nodelink69.Get(1));
-		terminaldevices69.Add(nodelink69.Get(0));
+		terminal_device_sets[69].Add(nodelink69.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7981,7 +7647,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[70].Get(i)),
 						csmaSwitches[70]));
 		switch_devices[70].Add(nodelink70.Get(1));
-		terminaldevices70.Add(nodelink70.Get(0));
+		terminal_device_sets[70].Add(nodelink70.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7990,7 +7656,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[71].Get(i)),
 						csmaSwitches[71]));
 		switch_devices[71].Add(nodelink71.Get(1));
-		terminaldevices71.Add(nodelink71.Get(0));
+		terminal_device_sets[71].Add(nodelink71.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -7999,7 +7665,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[72].Get(i)),
 						csmaSwitches[72]));
 		switch_devices[72].Add(nodelink72.Get(1));
-		terminaldevices72.Add(nodelink72.Get(0));
+		terminal_device_sets[72].Add(nodelink72.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8008,7 +7674,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[73].Get(i)),
 						csmaSwitches[73]));
 		switch_devices[73].Add(nodelink73.Get(1));
-		terminaldevices73.Add(nodelink73.Get(0));
+		terminal_device_sets[73].Add(nodelink73.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8017,7 +7683,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[74].Get(i)),
 						csmaSwitches[74]));
 		switch_devices[74].Add(nodelink74.Get(1));
-		terminaldevices74.Add(nodelink74.Get(0));
+		terminal_device_sets[74].Add(nodelink74.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8026,7 +7692,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[75].Get(i)),
 						csmaSwitches[75]));
 		switch_devices[75].Add(nodelink75.Get(1));
-		terminaldevices75.Add(nodelink75.Get(0));
+		terminal_device_sets[75].Add(nodelink75.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8035,7 +7701,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[76].Get(i)),
 						csmaSwitches[76]));
 		switch_devices[76].Add(nodelink76.Get(1));
-		terminaldevices76.Add(nodelink76.Get(0));
+		terminal_device_sets[76].Add(nodelink76.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8044,7 +7710,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[77].Get(i)),
 						csmaSwitches[77]));
 		switch_devices[77].Add(nodelink77.Get(1));
-		terminaldevices77.Add(nodelink77.Get(0));
+		terminal_device_sets[77].Add(nodelink77.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8053,7 +7719,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[78].Get(i)),
 						csmaSwitches[78]));
 		switch_devices[78].Add(nodelink78.Get(1));
-		terminaldevices78.Add(nodelink78.Get(0));
+		terminal_device_sets[78].Add(nodelink78.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8062,7 +7728,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[79].Get(i)),
 						csmaSwitches[79]));
 		switch_devices[79].Add(nodelink79.Get(1));
-		terminaldevices79.Add(nodelink79.Get(0));
+		terminal_device_sets[79].Add(nodelink79.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8071,7 +7737,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[81].Get(i)),
 						csmaSwitches[81]));
 		switch_devices[81].Add(nodelink81.Get(1));
-		terminaldevices81.Add(nodelink81.Get(0));
+		terminal_device_sets[81].Add(nodelink81.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8080,7 +7746,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[82].Get(i)),
 						csmaSwitches[82]));
 		switch_devices[82].Add(nodelink82.Get(1));
-		terminaldevices82.Add(nodelink82.Get(0));
+		terminal_device_sets[82].Add(nodelink82.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8089,7 +7755,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[83].Get(i)),
 						csmaSwitches[83]));
 		switch_devices[83].Add(nodelink83.Get(1));
-		terminaldevices83.Add(nodelink83.Get(0));
+		terminal_device_sets[83].Add(nodelink83.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8098,7 +7764,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[84].Get(i)),
 						csmaSwitches[84]));
 		switch_devices[84].Add(nodelink84.Get(1));
-		terminaldevices84.Add(nodelink84.Get(0));
+		terminal_device_sets[84].Add(nodelink84.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8107,7 +7773,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[85].Get(i)),
 						csmaSwitches[85]));
 		switch_devices[85].Add(nodelink85.Get(1));
-		terminaldevices85.Add(nodelink85.Get(0));
+		terminal_device_sets[85].Add(nodelink85.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8116,7 +7782,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[86].Get(i)),
 						csmaSwitches[86]));
 		switch_devices[86].Add(nodelink86.Get(1));
-		terminaldevices86.Add(nodelink86.Get(0));
+		terminal_device_sets[86].Add(nodelink86.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8125,7 +7791,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[87].Get(i)),
 						csmaSwitches[87]));
 		switch_devices[87].Add(nodelink87.Get(1));
-		terminaldevices87.Add(nodelink87.Get(0));
+		terminal_device_sets[87].Add(nodelink87.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8134,7 +7800,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[88].Get(i)),
 						csmaSwitches[88]));
 		switch_devices[88].Add(nodelink88.Get(1));
-		terminaldevices88.Add(nodelink88.Get(0));
+		terminal_device_sets[88].Add(nodelink88.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8143,7 +7809,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[89].Get(i)),
 						csmaSwitches[89]));
 		switch_devices[89].Add(nodelink89.Get(1));
-		terminaldevices89.Add(nodelink89.Get(0));
+		terminal_device_sets[89].Add(nodelink89.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8152,7 +7818,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[90].Get(i)),
 						csmaSwitches[90]));
 		switch_devices[90].Add(nodelink90.Get(1));
-		terminaldevices90.Add(nodelink90.Get(0));
+		terminal_device_sets[90].Add(nodelink90.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8161,7 +7827,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[91].Get(i)),
 						csmaSwitches[91]));
 		switch_devices[91].Add(nodelink91.Get(1));
-		terminaldevices91.Add(nodelink91.Get(0));
+		terminal_device_sets[91].Add(nodelink91.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8170,7 +7836,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[92].Get(i)),
 						csmaSwitches[92]));
 		switch_devices[92].Add(nodelink92.Get(1));
-		terminaldevices92.Add(nodelink92.Get(0));
+		terminal_device_sets[92].Add(nodelink92.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8179,7 +7845,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[93].Get(i)),
 						csmaSwitches[93]));
 		switch_devices[93].Add(nodelink93.Get(1));
-		terminaldevices93.Add(nodelink93.Get(0));
+		terminal_device_sets[93].Add(nodelink93.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8188,7 +7854,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[94].Get(i)),
 						csmaSwitches[94]));
 		switch_devices[94].Add(nodelink94.Get(1));
-		terminaldevices94.Add(nodelink94.Get(0));
+		terminal_device_sets[94].Add(nodelink94.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8197,7 +7863,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[95].Get(i)),
 						csmaSwitches[95]));
 		switch_devices[95].Add(nodelink95.Get(1));
-		terminaldevices95.Add(nodelink95.Get(0));
+		terminal_device_sets[95].Add(nodelink95.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8206,7 +7872,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[96].Get(i)),
 						csmaSwitches[96]));
 		switch_devices[96].Add(nodelink96.Get(1));
-		terminaldevices96.Add(nodelink96.Get(0));
+		terminal_device_sets[96].Add(nodelink96.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8215,7 +7881,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[97].Get(i)),
 						csmaSwitches[97]));
 		switch_devices[97].Add(nodelink97.Get(1));
-		terminaldevices97.Add(nodelink97.Get(0));
+		terminal_device_sets[97].Add(nodelink97.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8224,7 +7890,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[98].Get(i)),
 						csmaSwitches[98]));
 		switch_devices[98].Add(nodelink98.Get(1));
-		terminaldevices98.Add(nodelink98.Get(0));
+		terminal_device_sets[98].Add(nodelink98.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8233,7 +7899,7 @@ int main(int argc, char** argv) {
 				ns3::NodeContainer(ns3::NodeContainer(terminal_sets[99].Get(i)),
 						csmaSwitches[99]));
 		switch_devices[99].Add(nodelink99.Get(1));
-		terminaldevices99.Add(nodelink99.Get(0));
+		terminal_device_sets[99].Add(nodelink99.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8243,7 +7909,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[100].Get(i)),
 						csmaSwitches[100]));
 		switch_devices[100].Add(nodelink100.Get(1));
-		terminaldevices100.Add(nodelink100.Get(0));
+		terminal_device_sets[100].Add(nodelink100.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8253,7 +7919,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[101].Get(i)),
 						csmaSwitches[101]));
 		switch_devices[101].Add(nodelink101.Get(1));
-		terminaldevices101.Add(nodelink101.Get(0));
+		terminal_device_sets[101].Add(nodelink101.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8263,7 +7929,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[102].Get(i)),
 						csmaSwitches[102]));
 		switch_devices[102].Add(nodelink102.Get(1));
-		terminaldevices102.Add(nodelink102.Get(0));
+		terminal_device_sets[102].Add(nodelink102.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8273,7 +7939,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[103].Get(i)),
 						csmaSwitches[103]));
 		switch_devices[103].Add(nodelink103.Get(1));
-		terminaldevices103.Add(nodelink103.Get(0));
+		terminal_device_sets[103].Add(nodelink103.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8283,7 +7949,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[104].Get(i)),
 						csmaSwitches[104]));
 		switch_devices[104].Add(nodelink104.Get(1));
-		terminaldevices104.Add(nodelink104.Get(0));
+		terminal_device_sets[104].Add(nodelink104.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8293,7 +7959,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[105].Get(i)),
 						csmaSwitches[105]));
 		switch_devices[105].Add(nodelink105.Get(1));
-		terminaldevices105.Add(nodelink105.Get(0));
+		terminal_device_sets[105].Add(nodelink105.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8303,7 +7969,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[106].Get(i)),
 						csmaSwitches[106]));
 		switch_devices[106].Add(nodelink106.Get(1));
-		terminaldevices106.Add(nodelink106.Get(0));
+		terminal_device_sets[106].Add(nodelink106.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8313,7 +7979,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[107].Get(i)),
 						csmaSwitches[107]));
 		switch_devices[107].Add(nodelink107.Get(1));
-		terminaldevices107.Add(nodelink107.Get(0));
+		terminal_device_sets[107].Add(nodelink107.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8323,7 +7989,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[108].Get(i)),
 						csmaSwitches[108]));
 		switch_devices[108].Add(nodelink108.Get(1));
-		terminaldevices108.Add(nodelink108.Get(0));
+		terminal_device_sets[108].Add(nodelink108.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8333,7 +7999,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[109].Get(i)),
 						csmaSwitches[109]));
 		switch_devices[109].Add(nodelink109.Get(1));
-		terminaldevices109.Add(nodelink109.Get(0));
+		terminal_device_sets[109].Add(nodelink109.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8343,7 +8009,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[110].Get(i)),
 						csmaSwitches[110]));
 		switch_devices[110].Add(nodelink110.Get(1));
-		terminaldevices110.Add(nodelink110.Get(0));
+		terminal_device_sets[110].Add(nodelink110.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8353,7 +8019,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[111].Get(i)),
 						csmaSwitches[111]));
 		switch_devices[111].Add(nodelink111.Get(1));
-		terminaldevices111.Add(nodelink111.Get(0));
+		terminal_device_sets[111].Add(nodelink111.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8363,7 +8029,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[112].Get(i)),
 						csmaSwitches[112]));
 		switch_devices[112].Add(nodelink112.Get(1));
-		terminaldevices112.Add(nodelink112.Get(0));
+		terminal_device_sets[112].Add(nodelink112.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8373,7 +8039,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[114].Get(i)),
 						csmaSwitches[114]));
 		switch_devices[114].Add(nodelink114.Get(1));
-		terminaldevices114.Add(nodelink114.Get(0));
+		terminal_device_sets[114].Add(nodelink114.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8383,7 +8049,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[115].Get(i)),
 						csmaSwitches[115]));
 		switch_devices[115].Add(nodelink115.Get(1));
-		terminaldevices115.Add(nodelink115.Get(0));
+		terminal_device_sets[115].Add(nodelink115.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8393,7 +8059,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[116].Get(i)),
 						csmaSwitches[116]));
 		switch_devices[116].Add(nodelink116.Get(1));
-		terminaldevices116.Add(nodelink116.Get(0));
+		terminal_device_sets[116].Add(nodelink116.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8403,7 +8069,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[117].Get(i)),
 						csmaSwitches[117]));
 		switch_devices[117].Add(nodelink117.Get(1));
-		terminaldevices117.Add(nodelink117.Get(0));
+		terminal_device_sets[117].Add(nodelink117.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8413,7 +8079,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[118].Get(i)),
 						csmaSwitches[118]));
 		switch_devices[118].Add(nodelink118.Get(1));
-		terminaldevices118.Add(nodelink118.Get(0));
+		terminal_device_sets[118].Add(nodelink118.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8423,7 +8089,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[119].Get(i)),
 						csmaSwitches[119]));
 		switch_devices[119].Add(nodelink119.Get(1));
-		terminaldevices119.Add(nodelink119.Get(0));
+		terminal_device_sets[119].Add(nodelink119.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8433,7 +8099,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[120].Get(i)),
 						csmaSwitches[120]));
 		switch_devices[120].Add(nodelink120.Get(1));
-		terminaldevices120.Add(nodelink120.Get(0));
+		terminal_device_sets[120].Add(nodelink120.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8443,7 +8109,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[121].Get(i)),
 						csmaSwitches[121]));
 		switch_devices[121].Add(nodelink121.Get(1));
-		terminaldevices121.Add(nodelink121.Get(0));
+		terminal_device_sets[121].Add(nodelink121.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8453,7 +8119,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[122].Get(i)),
 						csmaSwitches[122]));
 		switch_devices[122].Add(nodelink122.Get(1));
-		terminaldevices122.Add(nodelink122.Get(0));
+		terminal_device_sets[122].Add(nodelink122.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8463,7 +8129,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[123].Get(i)),
 						csmaSwitches[123]));
 		switch_devices[123].Add(nodelink123.Get(1));
-		terminaldevices123.Add(nodelink123.Get(0));
+		terminal_device_sets[123].Add(nodelink123.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8473,7 +8139,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[124].Get(i)),
 						csmaSwitches[124]));
 		switch_devices[124].Add(nodelink124.Get(1));
-		terminaldevices124.Add(nodelink124.Get(0));
+		terminal_device_sets[124].Add(nodelink124.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8483,7 +8149,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[125].Get(i)),
 						csmaSwitches[125]));
 		switch_devices[125].Add(nodelink125.Get(1));
-		terminaldevices125.Add(nodelink125.Get(0));
+		terminal_device_sets[125].Add(nodelink125.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8493,7 +8159,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[126].Get(i)),
 						csmaSwitches[126]));
 		switch_devices[126].Add(nodelink126.Get(1));
-		terminaldevices126.Add(nodelink126.Get(0));
+		terminal_device_sets[126].Add(nodelink126.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8503,7 +8169,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[127].Get(i)),
 						csmaSwitches[127]));
 		switch_devices[127].Add(nodelink127.Get(1));
-		terminaldevices127.Add(nodelink127.Get(0));
+		terminal_device_sets[127].Add(nodelink127.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8513,7 +8179,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[128].Get(i)),
 						csmaSwitches[128]));
 		switch_devices[128].Add(nodelink128.Get(1));
-		terminaldevices128.Add(nodelink128.Get(0));
+		terminal_device_sets[128].Add(nodelink128.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8523,7 +8189,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[129].Get(i)),
 						csmaSwitches[129]));
 		switch_devices[129].Add(nodelink129.Get(1));
-		terminaldevices129.Add(nodelink129.Get(0));
+		terminal_device_sets[129].Add(nodelink129.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8533,7 +8199,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[130].Get(i)),
 						csmaSwitches[130]));
 		switch_devices[130].Add(nodelink130.Get(1));
-		terminaldevices130.Add(nodelink130.Get(0));
+		terminal_device_sets[130].Add(nodelink130.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8543,7 +8209,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[131].Get(i)),
 						csmaSwitches[131]));
 		switch_devices[131].Add(nodelink131.Get(1));
-		terminaldevices131.Add(nodelink131.Get(0));
+		terminal_device_sets[131].Add(nodelink131.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8553,7 +8219,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[132].Get(i)),
 						csmaSwitches[132]));
 		switch_devices[132].Add(nodelink132.Get(1));
-		terminaldevices132.Add(nodelink132.Get(0));
+		terminal_device_sets[132].Add(nodelink132.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8563,7 +8229,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[133].Get(i)),
 						csmaSwitches[133]));
 		switch_devices[133].Add(nodelink133.Get(1));
-		terminaldevices133.Add(nodelink133.Get(0));
+		terminal_device_sets[133].Add(nodelink133.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8573,7 +8239,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[134].Get(i)),
 						csmaSwitches[134]));
 		switch_devices[134].Add(nodelink134.Get(1));
-		terminaldevices134.Add(nodelink134.Get(0));
+		terminal_device_sets[134].Add(nodelink134.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8583,7 +8249,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[135].Get(i)),
 						csmaSwitches[135]));
 		switch_devices[135].Add(nodelink135.Get(1));
-		terminaldevices135.Add(nodelink135.Get(0));
+		terminal_device_sets[135].Add(nodelink135.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8593,7 +8259,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[136].Get(i)),
 						csmaSwitches[136]));
 		switch_devices[136].Add(nodelink136.Get(1));
-		terminaldevices136.Add(nodelink136.Get(0));
+		terminal_device_sets[136].Add(nodelink136.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8603,7 +8269,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[137].Get(i)),
 						csmaSwitches[137]));
 		switch_devices[137].Add(nodelink137.Get(1));
-		terminaldevices137.Add(nodelink137.Get(0));
+		terminal_device_sets[137].Add(nodelink137.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8613,7 +8279,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[138].Get(i)),
 						csmaSwitches[138]));
 		switch_devices[138].Add(nodelink138.Get(1));
-		terminaldevices138.Add(nodelink138.Get(0));
+		terminal_device_sets[138].Add(nodelink138.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8623,7 +8289,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[139].Get(i)),
 						csmaSwitches[139]));
 		switch_devices[139].Add(nodelink139.Get(1));
-		terminaldevices139.Add(nodelink139.Get(0));
+		terminal_device_sets[139].Add(nodelink139.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8633,7 +8299,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[140].Get(i)),
 						csmaSwitches[140]));
 		switch_devices[140].Add(nodelink140.Get(1));
-		terminaldevices140.Add(nodelink140.Get(0));
+		terminal_device_sets[140].Add(nodelink140.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8643,7 +8309,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[141].Get(i)),
 						csmaSwitches[141]));
 		switch_devices[141].Add(nodelink141.Get(1));
-		terminaldevices141.Add(nodelink141.Get(0));
+		terminal_device_sets[141].Add(nodelink141.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8653,7 +8319,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[142].Get(i)),
 						csmaSwitches[142]));
 		switch_devices[142].Add(nodelink142.Get(1));
-		terminaldevices142.Add(nodelink142.Get(0));
+		terminal_device_sets[142].Add(nodelink142.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8663,7 +8329,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[143].Get(i)),
 						csmaSwitches[143]));
 		switch_devices[143].Add(nodelink143.Get(1));
-		terminaldevices143.Add(nodelink143.Get(0));
+		terminal_device_sets[143].Add(nodelink143.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8673,7 +8339,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[144].Get(i)),
 						csmaSwitches[144]));
 		switch_devices[144].Add(nodelink144.Get(1));
-		terminaldevices144.Add(nodelink144.Get(0));
+		terminal_device_sets[144].Add(nodelink144.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8683,7 +8349,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[145].Get(i)),
 						csmaSwitches[145]));
 		switch_devices[145].Add(nodelink145.Get(1));
-		terminaldevices145.Add(nodelink145.Get(0));
+		terminal_device_sets[145].Add(nodelink145.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8693,7 +8359,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[146].Get(i)),
 						csmaSwitches[146]));
 		switch_devices[146].Add(nodelink146.Get(1));
-		terminaldevices146.Add(nodelink146.Get(0));
+		terminal_device_sets[146].Add(nodelink146.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8703,7 +8369,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[147].Get(i)),
 						csmaSwitches[147]));
 		switch_devices[147].Add(nodelink147.Get(1));
-		terminaldevices147.Add(nodelink147.Get(0));
+		terminal_device_sets[147].Add(nodelink147.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8713,7 +8379,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[148].Get(i)),
 						csmaSwitches[148]));
 		switch_devices[148].Add(nodelink148.Get(1));
-		terminaldevices148.Add(nodelink148.Get(0));
+		terminal_device_sets[148].Add(nodelink148.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8723,7 +8389,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[149].Get(i)),
 						csmaSwitches[149]));
 		switch_devices[149].Add(nodelink149.Get(1));
-		terminaldevices149.Add(nodelink149.Get(0));
+		terminal_device_sets[149].Add(nodelink149.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8733,7 +8399,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[150].Get(i)),
 						csmaSwitches[150]));
 		switch_devices[150].Add(nodelink150.Get(1));
-		terminaldevices150.Add(nodelink150.Get(0));
+		terminal_device_sets[150].Add(nodelink150.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8743,7 +8409,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[151].Get(i)),
 						csmaSwitches[151]));
 		switch_devices[151].Add(nodelink151.Get(1));
-		terminaldevices151.Add(nodelink151.Get(0));
+		terminal_device_sets[151].Add(nodelink151.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8753,7 +8419,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[152].Get(i)),
 						csmaSwitches[152]));
 		switch_devices[152].Add(nodelink152.Get(1));
-		terminaldevices152.Add(nodelink152.Get(0));
+		terminal_device_sets[152].Add(nodelink152.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8763,7 +8429,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[153].Get(i)),
 						csmaSwitches[153]));
 		switch_devices[153].Add(nodelink153.Get(1));
-		terminaldevices153.Add(nodelink153.Get(0));
+		terminal_device_sets[153].Add(nodelink153.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8773,7 +8439,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[154].Get(i)),
 						csmaSwitches[154]));
 		switch_devices[154].Add(nodelink154.Get(1));
-		terminaldevices154.Add(nodelink154.Get(0));
+		terminal_device_sets[154].Add(nodelink154.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8783,7 +8449,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[155].Get(i)),
 						csmaSwitches[155]));
 		switch_devices[155].Add(nodelink155.Get(1));
-		terminaldevices155.Add(nodelink155.Get(0));
+		terminal_device_sets[155].Add(nodelink155.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8793,7 +8459,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[156].Get(i)),
 						csmaSwitches[156]));
 		switch_devices[156].Add(nodelink156.Get(1));
-		terminaldevices156.Add(nodelink156.Get(0));
+		terminal_device_sets[156].Add(nodelink156.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8803,7 +8469,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[157].Get(i)),
 						csmaSwitches[157]));
 		switch_devices[157].Add(nodelink157.Get(1));
-		terminaldevices157.Add(nodelink157.Get(0));
+		terminal_device_sets[157].Add(nodelink157.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8813,7 +8479,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[158].Get(i)),
 						csmaSwitches[158]));
 		switch_devices[158].Add(nodelink158.Get(1));
-		terminaldevices158.Add(nodelink158.Get(0));
+		terminal_device_sets[158].Add(nodelink158.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8823,7 +8489,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[159].Get(i)),
 						csmaSwitches[159]));
 		switch_devices[159].Add(nodelink159.Get(1));
-		terminaldevices159.Add(nodelink159.Get(0));
+		terminal_device_sets[159].Add(nodelink159.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8833,7 +8499,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[161].Get(i)),
 						csmaSwitches[161]));
 		switch_devices[161].Add(nodelink161.Get(1));
-		terminaldevices161.Add(nodelink161.Get(0));
+		terminal_device_sets[161].Add(nodelink161.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8843,7 +8509,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[162].Get(i)),
 						csmaSwitches[162]));
 		switch_devices[162].Add(nodelink162.Get(1));
-		terminaldevices162.Add(nodelink162.Get(0));
+		terminal_device_sets[162].Add(nodelink162.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8853,7 +8519,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[163].Get(i)),
 						csmaSwitches[163]));
 		switch_devices[163].Add(nodelink163.Get(1));
-		terminaldevices163.Add(nodelink163.Get(0));
+		terminal_device_sets[163].Add(nodelink163.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8863,7 +8529,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[164].Get(i)),
 						csmaSwitches[164]));
 		switch_devices[164].Add(nodelink164.Get(1));
-		terminaldevices164.Add(nodelink164.Get(0));
+		terminal_device_sets[164].Add(nodelink164.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8873,7 +8539,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[165].Get(i)),
 						csmaSwitches[165]));
 		switch_devices[165].Add(nodelink165.Get(1));
-		terminaldevices165.Add(nodelink165.Get(0));
+		terminal_device_sets[165].Add(nodelink165.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8883,7 +8549,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[166].Get(i)),
 						csmaSwitches[166]));
 		switch_devices[166].Add(nodelink166.Get(1));
-		terminaldevices166.Add(nodelink166.Get(0));
+		terminal_device_sets[166].Add(nodelink166.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8893,7 +8559,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[167].Get(i)),
 						csmaSwitches[167]));
 		switch_devices[167].Add(nodelink167.Get(1));
-		terminaldevices167.Add(nodelink167.Get(0));
+		terminal_device_sets[167].Add(nodelink167.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8903,7 +8569,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[168].Get(i)),
 						csmaSwitches[168]));
 		switch_devices[168].Add(nodelink168.Get(1));
-		terminaldevices168.Add(nodelink168.Get(0));
+		terminal_device_sets[168].Add(nodelink168.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8913,7 +8579,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[169].Get(i)),
 						csmaSwitches[169]));
 		switch_devices[169].Add(nodelink169.Get(1));
-		terminaldevices169.Add(nodelink169.Get(0));
+		terminal_device_sets[169].Add(nodelink169.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8923,7 +8589,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[170].Get(i)),
 						csmaSwitches[170]));
 		switch_devices[170].Add(nodelink170.Get(1));
-		terminaldevices170.Add(nodelink170.Get(0));
+		terminal_device_sets[170].Add(nodelink170.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8933,7 +8599,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[171].Get(i)),
 						csmaSwitches[171]));
 		switch_devices[171].Add(nodelink171.Get(1));
-		terminaldevices171.Add(nodelink171.Get(0));
+		terminal_device_sets[171].Add(nodelink171.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8943,7 +8609,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[172].Get(i)),
 						csmaSwitches[172]));
 		switch_devices[172].Add(nodelink172.Get(1));
-		terminaldevices172.Add(nodelink172.Get(0));
+		terminal_device_sets[172].Add(nodelink172.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8953,7 +8619,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[173].Get(i)),
 						csmaSwitches[173]));
 		switch_devices[173].Add(nodelink173.Get(1));
-		terminaldevices173.Add(nodelink173.Get(0));
+		terminal_device_sets[173].Add(nodelink173.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8963,7 +8629,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[174].Get(i)),
 						csmaSwitches[174]));
 		switch_devices[174].Add(nodelink174.Get(1));
-		terminaldevices174.Add(nodelink174.Get(0));
+		terminal_device_sets[174].Add(nodelink174.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8973,7 +8639,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[175].Get(i)),
 						csmaSwitches[175]));
 		switch_devices[175].Add(nodelink175.Get(1));
-		terminaldevices175.Add(nodelink175.Get(0));
+		terminal_device_sets[175].Add(nodelink175.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8983,7 +8649,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[176].Get(i)),
 						csmaSwitches[176]));
 		switch_devices[176].Add(nodelink176.Get(1));
-		terminaldevices176.Add(nodelink176.Get(0));
+		terminal_device_sets[176].Add(nodelink176.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -8993,7 +8659,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[177].Get(i)),
 						csmaSwitches[177]));
 		switch_devices[177].Add(nodelink177.Get(1));
-		terminaldevices177.Add(nodelink177.Get(0));
+		terminal_device_sets[177].Add(nodelink177.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9003,7 +8669,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[178].Get(i)),
 						csmaSwitches[178]));
 		switch_devices[178].Add(nodelink178.Get(1));
-		terminaldevices178.Add(nodelink178.Get(0));
+		terminal_device_sets[178].Add(nodelink178.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9013,7 +8679,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[179].Get(i)),
 						csmaSwitches[179]));
 		switch_devices[179].Add(nodelink179.Get(1));
-		terminaldevices179.Add(nodelink179.Get(0));
+		terminal_device_sets[179].Add(nodelink179.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9023,7 +8689,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[180].Get(i)),
 						csmaSwitches[180]));
 		switch_devices[180].Add(nodelink180.Get(1));
-		terminaldevices180.Add(nodelink180.Get(0));
+		terminal_device_sets[180].Add(nodelink180.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9033,7 +8699,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[181].Get(i)),
 						csmaSwitches[181]));
 		switch_devices[181].Add(nodelink181.Get(1));
-		terminaldevices181.Add(nodelink181.Get(0));
+		terminal_device_sets[181].Add(nodelink181.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9043,7 +8709,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[182].Get(i)),
 						csmaSwitches[182]));
 		switch_devices[182].Add(nodelink182.Get(1));
-		terminaldevices182.Add(nodelink182.Get(0));
+		terminal_device_sets[182].Add(nodelink182.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9053,7 +8719,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[183].Get(i)),
 						csmaSwitches[183]));
 		switch_devices[183].Add(nodelink183.Get(1));
-		terminaldevices183.Add(nodelink183.Get(0));
+		terminal_device_sets[183].Add(nodelink183.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9063,7 +8729,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[184].Get(i)),
 						csmaSwitches[184]));
 		switch_devices[184].Add(nodelink184.Get(1));
-		terminaldevices184.Add(nodelink184.Get(0));
+		terminal_device_sets[184].Add(nodelink184.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9073,7 +8739,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[185].Get(i)),
 						csmaSwitches[185]));
 		switch_devices[185].Add(nodelink185.Get(1));
-		terminaldevices185.Add(nodelink185.Get(0));
+		terminal_device_sets[185].Add(nodelink185.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9083,7 +8749,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[186].Get(i)),
 						csmaSwitches[186]));
 		switch_devices[186].Add(nodelink186.Get(1));
-		terminaldevices186.Add(nodelink186.Get(0));
+		terminal_device_sets[186].Add(nodelink186.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9093,7 +8759,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[187].Get(i)),
 						csmaSwitches[187]));
 		switch_devices[187].Add(nodelink187.Get(1));
-		terminaldevices187.Add(nodelink187.Get(0));
+		terminal_device_sets[187].Add(nodelink187.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9103,7 +8769,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[188].Get(i)),
 						csmaSwitches[188]));
 		switch_devices[188].Add(nodelink188.Get(1));
-		terminaldevices188.Add(nodelink188.Get(0));
+		terminal_device_sets[188].Add(nodelink188.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9113,7 +8779,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[189].Get(i)),
 						csmaSwitches[189]));
 		switch_devices[189].Add(nodelink189.Get(1));
-		terminaldevices189.Add(nodelink189.Get(0));
+		terminal_device_sets[189].Add(nodelink189.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9123,7 +8789,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[190].Get(i)),
 						csmaSwitches[190]));
 		switch_devices[190].Add(nodelink190.Get(1));
-		terminaldevices190.Add(nodelink190.Get(0));
+		terminal_device_sets[190].Add(nodelink190.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9133,7 +8799,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[191].Get(i)),
 						csmaSwitches[191]));
 		switch_devices[191].Add(nodelink191.Get(1));
-		terminaldevices191.Add(nodelink191.Get(0));
+		terminal_device_sets[191].Add(nodelink191.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9143,7 +8809,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[192].Get(i)),
 						csmaSwitches[192]));
 		switch_devices[192].Add(nodelink192.Get(1));
-		terminaldevices192.Add(nodelink192.Get(0));
+		terminal_device_sets[192].Add(nodelink192.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9153,7 +8819,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[193].Get(i)),
 						csmaSwitches[193]));
 		switch_devices[193].Add(nodelink193.Get(1));
-		terminaldevices193.Add(nodelink193.Get(0));
+		terminal_device_sets[193].Add(nodelink193.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9163,7 +8829,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[194].Get(i)),
 						csmaSwitches[194]));
 		switch_devices[194].Add(nodelink194.Get(1));
-		terminaldevices194.Add(nodelink194.Get(0));
+		terminal_device_sets[194].Add(nodelink194.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9173,7 +8839,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[195].Get(i)),
 						csmaSwitches[195]));
 		switch_devices[195].Add(nodelink195.Get(1));
-		terminaldevices195.Add(nodelink195.Get(0));
+		terminal_device_sets[195].Add(nodelink195.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9183,7 +8849,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[196].Get(i)),
 						csmaSwitches[196]));
 		switch_devices[196].Add(nodelink196.Get(1));
-		terminaldevices196.Add(nodelink196.Get(0));
+		terminal_device_sets[196].Add(nodelink196.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9193,7 +8859,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[197].Get(i)),
 						csmaSwitches[197]));
 		switch_devices[197].Add(nodelink197.Get(1));
-		terminaldevices197.Add(nodelink197.Get(0));
+		terminal_device_sets[197].Add(nodelink197.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9203,7 +8869,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[198].Get(i)),
 						csmaSwitches[198]));
 		switch_devices[198].Add(nodelink198.Get(1));
-		terminaldevices198.Add(nodelink198.Get(0));
+		terminal_device_sets[198].Add(nodelink198.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9213,7 +8879,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[199].Get(i)),
 						csmaSwitches[199]));
 		switch_devices[199].Add(nodelink199.Get(1));
-		terminaldevices199.Add(nodelink199.Get(0));
+		terminal_device_sets[199].Add(nodelink199.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9223,7 +8889,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[200].Get(i)),
 						csmaSwitches[200]));
 		switch_devices[200].Add(nodelink200.Get(1));
-		terminaldevices200.Add(nodelink200.Get(0));
+		terminal_device_sets[200].Add(nodelink200.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9233,7 +8899,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[201].Get(i)),
 						csmaSwitches[201]));
 		switch_devices[201].Add(nodelink201.Get(1));
-		terminaldevices201.Add(nodelink201.Get(0));
+		terminal_device_sets[201].Add(nodelink201.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9243,7 +8909,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[202].Get(i)),
 						csmaSwitches[202]));
 		switch_devices[202].Add(nodelink202.Get(1));
-		terminaldevices202.Add(nodelink202.Get(0));
+		terminal_device_sets[202].Add(nodelink202.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9253,7 +8919,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[203].Get(i)),
 						csmaSwitches[203]));
 		switch_devices[203].Add(nodelink203.Get(1));
-		terminaldevices203.Add(nodelink203.Get(0));
+		terminal_device_sets[203].Add(nodelink203.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9263,7 +8929,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[204].Get(i)),
 						csmaSwitches[204]));
 		switch_devices[204].Add(nodelink204.Get(1));
-		terminaldevices204.Add(nodelink204.Get(0));
+		terminal_device_sets[204].Add(nodelink204.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9273,7 +8939,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[205].Get(i)),
 						csmaSwitches[205]));
 		switch_devices[205].Add(nodelink205.Get(1));
-		terminaldevices205.Add(nodelink205.Get(0));
+		terminal_device_sets[205].Add(nodelink205.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9283,7 +8949,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[206].Get(i)),
 						csmaSwitches[206]));
 		switch_devices[206].Add(nodelink206.Get(1));
-		terminaldevices206.Add(nodelink206.Get(0));
+		terminal_device_sets[206].Add(nodelink206.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9293,7 +8959,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[207].Get(i)),
 						csmaSwitches[207]));
 		switch_devices[207].Add(nodelink207.Get(1));
-		terminaldevices207.Add(nodelink207.Get(0));
+		terminal_device_sets[207].Add(nodelink207.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9303,7 +8969,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[208].Get(i)),
 						csmaSwitches[208]));
 		switch_devices[208].Add(nodelink208.Get(1));
-		terminaldevices208.Add(nodelink208.Get(0));
+		terminal_device_sets[208].Add(nodelink208.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9313,7 +8979,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[209].Get(i)),
 						csmaSwitches[209]));
 		switch_devices[209].Add(nodelink209.Get(1));
-		terminaldevices209.Add(nodelink209.Get(0));
+		terminal_device_sets[209].Add(nodelink209.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9323,7 +8989,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[210].Get(i)),
 						csmaSwitches[210]));
 		switch_devices[210].Add(nodelink210.Get(1));
-		terminaldevices210.Add(nodelink210.Get(0));
+		terminal_device_sets[210].Add(nodelink210.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9333,7 +8999,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[211].Get(i)),
 						csmaSwitches[211]));
 		switch_devices[211].Add(nodelink211.Get(1));
-		terminaldevices211.Add(nodelink211.Get(0));
+		terminal_device_sets[211].Add(nodelink211.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9343,7 +9009,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[212].Get(i)),
 						csmaSwitches[212]));
 		switch_devices[212].Add(nodelink212.Get(1));
-		terminaldevices212.Add(nodelink212.Get(0));
+		terminal_device_sets[212].Add(nodelink212.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9353,7 +9019,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[214].Get(i)),
 						csmaSwitches[214]));
 		switch_devices[214].Add(nodelink214.Get(1));
-		terminaldevices214.Add(nodelink214.Get(0));
+		terminal_device_sets[214].Add(nodelink214.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9363,7 +9029,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[215].Get(i)),
 						csmaSwitches[215]));
 		switch_devices[215].Add(nodelink215.Get(1));
-		terminaldevices215.Add(nodelink215.Get(0));
+		terminal_device_sets[215].Add(nodelink215.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9373,7 +9039,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[216].Get(i)),
 						csmaSwitches[216]));
 		switch_devices[216].Add(nodelink216.Get(1));
-		terminaldevices216.Add(nodelink216.Get(0));
+		terminal_device_sets[216].Add(nodelink216.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9383,7 +9049,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[217].Get(i)),
 						csmaSwitches[217]));
 		switch_devices[217].Add(nodelink217.Get(1));
-		terminaldevices217.Add(nodelink217.Get(0));
+		terminal_device_sets[217].Add(nodelink217.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9393,7 +9059,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[218].Get(i)),
 						csmaSwitches[218]));
 		switch_devices[218].Add(nodelink218.Get(1));
-		terminaldevices218.Add(nodelink218.Get(0));
+		terminal_device_sets[218].Add(nodelink218.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9403,7 +9069,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[219].Get(i)),
 						csmaSwitches[219]));
 		switch_devices[219].Add(nodelink219.Get(1));
-		terminaldevices219.Add(nodelink219.Get(0));
+		terminal_device_sets[219].Add(nodelink219.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9413,7 +9079,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[220].Get(i)),
 						csmaSwitches[220]));
 		switch_devices[220].Add(nodelink220.Get(1));
-		terminaldevices220.Add(nodelink220.Get(0));
+		terminal_device_sets[220].Add(nodelink220.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9423,7 +9089,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[221].Get(i)),
 						csmaSwitches[221]));
 		switch_devices[221].Add(nodelink221.Get(1));
-		terminaldevices221.Add(nodelink221.Get(0));
+		terminal_device_sets[221].Add(nodelink221.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9433,7 +9099,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[222].Get(i)),
 						csmaSwitches[222]));
 		switch_devices[222].Add(nodelink222.Get(1));
-		terminaldevices222.Add(nodelink222.Get(0));
+		terminal_device_sets[222].Add(nodelink222.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9443,7 +9109,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[223].Get(i)),
 						csmaSwitches[223]));
 		switch_devices[223].Add(nodelink223.Get(1));
-		terminaldevices223.Add(nodelink223.Get(0));
+		terminal_device_sets[223].Add(nodelink223.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9453,7 +9119,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[224].Get(i)),
 						csmaSwitches[224]));
 		switch_devices[224].Add(nodelink224.Get(1));
-		terminaldevices224.Add(nodelink224.Get(0));
+		terminal_device_sets[224].Add(nodelink224.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9463,7 +9129,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[225].Get(i)),
 						csmaSwitches[225]));
 		switch_devices[225].Add(nodelink225.Get(1));
-		terminaldevices225.Add(nodelink225.Get(0));
+		terminal_device_sets[225].Add(nodelink225.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9473,7 +9139,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[226].Get(i)),
 						csmaSwitches[226]));
 		switch_devices[226].Add(nodelink226.Get(1));
-		terminaldevices226.Add(nodelink226.Get(0));
+		terminal_device_sets[226].Add(nodelink226.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9483,7 +9149,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[227].Get(i)),
 						csmaSwitches[227]));
 		switch_devices[227].Add(nodelink227.Get(1));
-		terminaldevices227.Add(nodelink227.Get(0));
+		terminal_device_sets[227].Add(nodelink227.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9493,7 +9159,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[228].Get(i)),
 						csmaSwitches[228]));
 		switch_devices[228].Add(nodelink228.Get(1));
-		terminaldevices228.Add(nodelink228.Get(0));
+		terminal_device_sets[228].Add(nodelink228.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9503,7 +9169,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[229].Get(i)),
 						csmaSwitches[229]));
 		switch_devices[229].Add(nodelink229.Get(1));
-		terminaldevices229.Add(nodelink229.Get(0));
+		terminal_device_sets[229].Add(nodelink229.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9513,7 +9179,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[230].Get(i)),
 						csmaSwitches[230]));
 		switch_devices[230].Add(nodelink230.Get(1));
-		terminaldevices230.Add(nodelink230.Get(0));
+		terminal_device_sets[230].Add(nodelink230.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9523,7 +9189,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[231].Get(i)),
 						csmaSwitches[231]));
 		switch_devices[231].Add(nodelink231.Get(1));
-		terminaldevices231.Add(nodelink231.Get(0));
+		terminal_device_sets[231].Add(nodelink231.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9533,7 +9199,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[232].Get(i)),
 						csmaSwitches[232]));
 		switch_devices[232].Add(nodelink232.Get(1));
-		terminaldevices232.Add(nodelink232.Get(0));
+		terminal_device_sets[232].Add(nodelink232.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9543,7 +9209,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[233].Get(i)),
 						csmaSwitches[233]));
 		switch_devices[233].Add(nodelink233.Get(1));
-		terminaldevices233.Add(nodelink233.Get(0));
+		terminal_device_sets[233].Add(nodelink233.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9553,7 +9219,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[234].Get(i)),
 						csmaSwitches[234]));
 		switch_devices[234].Add(nodelink234.Get(1));
-		terminaldevices234.Add(nodelink234.Get(0));
+		terminal_device_sets[234].Add(nodelink234.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9563,7 +9229,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[235].Get(i)),
 						csmaSwitches[235]));
 		switch_devices[235].Add(nodelink235.Get(1));
-		terminaldevices235.Add(nodelink235.Get(0));
+		terminal_device_sets[235].Add(nodelink235.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9573,7 +9239,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[236].Get(i)),
 						csmaSwitches[236]));
 		switch_devices[236].Add(nodelink236.Get(1));
-		terminaldevices236.Add(nodelink236.Get(0));
+		terminal_device_sets[236].Add(nodelink236.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9583,7 +9249,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[237].Get(i)),
 						csmaSwitches[237]));
 		switch_devices[237].Add(nodelink237.Get(1));
-		terminaldevices237.Add(nodelink237.Get(0));
+		terminal_device_sets[237].Add(nodelink237.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9593,7 +9259,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[238].Get(i)),
 						csmaSwitches[238]));
 		switch_devices[238].Add(nodelink238.Get(1));
-		terminaldevices238.Add(nodelink238.Get(0));
+		terminal_device_sets[238].Add(nodelink238.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9603,7 +9269,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[239].Get(i)),
 						csmaSwitches[239]));
 		switch_devices[239].Add(nodelink239.Get(1));
-		terminaldevices239.Add(nodelink239.Get(0));
+		terminal_device_sets[239].Add(nodelink239.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9613,7 +9279,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[240].Get(i)),
 						csmaSwitches[240]));
 		switch_devices[240].Add(nodelink240.Get(1));
-		terminaldevices240.Add(nodelink240.Get(0));
+		terminal_device_sets[240].Add(nodelink240.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9623,7 +9289,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[241].Get(i)),
 						csmaSwitches[241]));
 		switch_devices[241].Add(nodelink241.Get(1));
-		terminaldevices241.Add(nodelink241.Get(0));
+		terminal_device_sets[241].Add(nodelink241.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9633,7 +9299,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[242].Get(i)),
 						csmaSwitches[242]));
 		switch_devices[242].Add(nodelink242.Get(1));
-		terminaldevices242.Add(nodelink242.Get(0));
+		terminal_device_sets[242].Add(nodelink242.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9643,7 +9309,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[243].Get(i)),
 						csmaSwitches[243]));
 		switch_devices[243].Add(nodelink243.Get(1));
-		terminaldevices243.Add(nodelink243.Get(0));
+		terminal_device_sets[243].Add(nodelink243.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9653,7 +9319,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[244].Get(i)),
 						csmaSwitches[244]));
 		switch_devices[244].Add(nodelink244.Get(1));
-		terminaldevices244.Add(nodelink244.Get(0));
+		terminal_device_sets[244].Add(nodelink244.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9663,7 +9329,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[245].Get(i)),
 						csmaSwitches[245]));
 		switch_devices[245].Add(nodelink245.Get(1));
-		terminaldevices245.Add(nodelink245.Get(0));
+		terminal_device_sets[245].Add(nodelink245.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9673,7 +9339,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[246].Get(i)),
 						csmaSwitches[246]));
 		switch_devices[246].Add(nodelink246.Get(1));
-		terminaldevices246.Add(nodelink246.Get(0));
+		terminal_device_sets[246].Add(nodelink246.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9683,7 +9349,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[247].Get(i)),
 						csmaSwitches[247]));
 		switch_devices[247].Add(nodelink247.Get(1));
-		terminaldevices247.Add(nodelink247.Get(0));
+		terminal_device_sets[247].Add(nodelink247.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9693,7 +9359,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[248].Get(i)),
 						csmaSwitches[248]));
 		switch_devices[248].Add(nodelink248.Get(1));
-		terminaldevices248.Add(nodelink248.Get(0));
+		terminal_device_sets[248].Add(nodelink248.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9703,7 +9369,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[284].Get(i)),
 						csmaSwitches[284]));
 		switch_devices[284].Add(nodelink284.Get(1));
-		terminaldevices284.Add(nodelink284.Get(0));
+		terminal_device_sets[284].Add(nodelink284.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9713,7 +9379,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[249].Get(i)),
 						csmaSwitches[249]));
 		switch_devices[249].Add(nodelink249.Get(1));
-		terminaldevices249.Add(nodelink249.Get(0));
+		terminal_device_sets[249].Add(nodelink249.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9723,7 +9389,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[250].Get(i)),
 						csmaSwitches[250]));
 		switch_devices[250].Add(nodelink250.Get(1));
-		terminaldevices250.Add(nodelink250.Get(0));
+		terminal_device_sets[250].Add(nodelink250.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9733,7 +9399,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[251].Get(i)),
 						csmaSwitches[251]));
 		switch_devices[251].Add(nodelink251.Get(1));
-		terminaldevices251.Add(nodelink251.Get(0));
+		terminal_device_sets[251].Add(nodelink251.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9743,7 +9409,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[252].Get(i)),
 						csmaSwitches[252]));
 		switch_devices[252].Add(nodelink252.Get(1));
-		terminaldevices252.Add(nodelink252.Get(0));
+		terminal_device_sets[252].Add(nodelink252.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9753,7 +9419,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[253].Get(i)),
 						csmaSwitches[253]));
 		switch_devices[253].Add(nodelink253.Get(1));
-		terminaldevices253.Add(nodelink253.Get(0));
+		terminal_device_sets[253].Add(nodelink253.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9763,7 +9429,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[254].Get(i)),
 						csmaSwitches[254]));
 		switch_devices[254].Add(nodelink254.Get(1));
-		terminaldevices254.Add(nodelink254.Get(0));
+		terminal_device_sets[254].Add(nodelink254.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9773,7 +9439,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[255].Get(i)),
 						csmaSwitches[255]));
 		switch_devices[255].Add(nodelink255.Get(1));
-		terminaldevices255.Add(nodelink255.Get(0));
+		terminal_device_sets[255].Add(nodelink255.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9783,7 +9449,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[256].Get(i)),
 						csmaSwitches[256]));
 		switch_devices[256].Add(nodelink256.Get(1));
-		terminaldevices256.Add(nodelink256.Get(0));
+		terminal_device_sets[256].Add(nodelink256.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9793,7 +9459,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[257].Get(i)),
 						csmaSwitches[257]));
 		switch_devices[257].Add(nodelink257.Get(1));
-		terminaldevices257.Add(nodelink257.Get(0));
+		terminal_device_sets[257].Add(nodelink257.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9803,7 +9469,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[258].Get(i)),
 						csmaSwitches[258]));
 		switch_devices[258].Add(nodelink258.Get(1));
-		terminaldevices258.Add(nodelink258.Get(0));
+		terminal_device_sets[258].Add(nodelink258.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9813,7 +9479,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[259].Get(i)),
 						csmaSwitches[259]));
 		switch_devices[259].Add(nodelink259.Get(1));
-		terminaldevices259.Add(nodelink259.Get(0));
+		terminal_device_sets[259].Add(nodelink259.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9823,7 +9489,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[260].Get(i)),
 						csmaSwitches[260]));
 		switch_devices[260].Add(nodelink260.Get(1));
-		terminaldevices260.Add(nodelink260.Get(0));
+		terminal_device_sets[260].Add(nodelink260.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9833,7 +9499,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[261].Get(i)),
 						csmaSwitches[261]));
 		switch_devices[261].Add(nodelink261.Get(1));
-		terminaldevices261.Add(nodelink261.Get(0));
+		terminal_device_sets[261].Add(nodelink261.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9843,7 +9509,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[262].Get(i)),
 						csmaSwitches[262]));
 		switch_devices[262].Add(nodelink262.Get(1));
-		terminaldevices262.Add(nodelink262.Get(0));
+		terminal_device_sets[262].Add(nodelink262.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9853,7 +9519,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[263].Get(i)),
 						csmaSwitches[263]));
 		switch_devices[263].Add(nodelink263.Get(1));
-		terminaldevices263.Add(nodelink263.Get(0));
+		terminal_device_sets[263].Add(nodelink263.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9863,7 +9529,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[264].Get(i)),
 						csmaSwitches[264]));
 		switch_devices[264].Add(nodelink264.Get(1));
-		terminaldevices264.Add(nodelink264.Get(0));
+		terminal_device_sets[264].Add(nodelink264.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9873,7 +9539,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[265].Get(i)),
 						csmaSwitches[265]));
 		switch_devices[265].Add(nodelink265.Get(1));
-		terminaldevices265.Add(nodelink265.Get(0));
+		terminal_device_sets[265].Add(nodelink265.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9883,7 +9549,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[266].Get(i)),
 						csmaSwitches[266]));
 		switch_devices[266].Add(nodelink266.Get(1));
-		terminaldevices266.Add(nodelink266.Get(0));
+		terminal_device_sets[266].Add(nodelink266.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9893,7 +9559,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[267].Get(i)),
 						csmaSwitches[267]));
 		switch_devices[267].Add(nodelink267.Get(1));
-		terminaldevices267.Add(nodelink267.Get(0));
+		terminal_device_sets[267].Add(nodelink267.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9903,7 +9569,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[268].Get(i)),
 						csmaSwitches[268]));
 		switch_devices[268].Add(nodelink268.Get(1));
-		terminaldevices268.Add(nodelink268.Get(0));
+		terminal_device_sets[268].Add(nodelink268.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9913,7 +9579,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[269].Get(i)),
 						csmaSwitches[269]));
 		switch_devices[269].Add(nodelink269.Get(1));
-		terminaldevices269.Add(nodelink269.Get(0));
+		terminal_device_sets[269].Add(nodelink269.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9923,7 +9589,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[270].Get(i)),
 						csmaSwitches[270]));
 		switch_devices[270].Add(nodelink270.Get(1));
-		terminaldevices270.Add(nodelink270.Get(0));
+		terminal_device_sets[270].Add(nodelink270.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9933,7 +9599,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[272].Get(i)),
 						csmaSwitches[272]));
 		switch_devices[272].Add(nodelink272.Get(1));
-		terminaldevices272.Add(nodelink272.Get(0));
+		terminal_device_sets[272].Add(nodelink272.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9943,7 +9609,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[273].Get(i)),
 						csmaSwitches[273]));
 		switch_devices[273].Add(nodelink273.Get(1));
-		terminaldevices273.Add(nodelink273.Get(0));
+		terminal_device_sets[273].Add(nodelink273.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9953,7 +9619,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[274].Get(i)),
 						csmaSwitches[274]));
 		switch_devices[274].Add(nodelink274.Get(1));
-		terminaldevices274.Add(nodelink274.Get(0));
+		terminal_device_sets[274].Add(nodelink274.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9963,7 +9629,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[275].Get(i)),
 						csmaSwitches[275]));
 		switch_devices[275].Add(nodelink275.Get(1));
-		terminaldevices275.Add(nodelink275.Get(0));
+		terminal_device_sets[275].Add(nodelink275.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9973,7 +9639,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[276].Get(i)),
 						csmaSwitches[276]));
 		switch_devices[276].Add(nodelink276.Get(1));
-		terminaldevices276.Add(nodelink276.Get(0));
+		terminal_device_sets[276].Add(nodelink276.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9983,7 +9649,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[277].Get(i)),
 						csmaSwitches[277]));
 		switch_devices[277].Add(nodelink277.Get(1));
-		terminaldevices277.Add(nodelink277.Get(0));
+		terminal_device_sets[277].Add(nodelink277.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -9993,7 +9659,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[278].Get(i)),
 						csmaSwitches[278]));
 		switch_devices[278].Add(nodelink278.Get(1));
-		terminaldevices278.Add(nodelink278.Get(0));
+		terminal_device_sets[278].Add(nodelink278.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10003,7 +9669,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[279].Get(i)),
 						csmaSwitches[279]));
 		switch_devices[279].Add(nodelink279.Get(1));
-		terminaldevices279.Add(nodelink279.Get(0));
+		terminal_device_sets[279].Add(nodelink279.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10013,7 +9679,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[280].Get(i)),
 						csmaSwitches[280]));
 		switch_devices[280].Add(nodelink280.Get(1));
-		terminaldevices280.Add(nodelink280.Get(0));
+		terminal_device_sets[280].Add(nodelink280.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10023,7 +9689,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[281].Get(i)),
 						csmaSwitches[281]));
 		switch_devices[281].Add(nodelink281.Get(1));
-		terminaldevices281.Add(nodelink281.Get(0));
+		terminal_device_sets[281].Add(nodelink281.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10033,7 +9699,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[282].Get(i)),
 						csmaSwitches[282]));
 		switch_devices[282].Add(nodelink282.Get(1));
-		terminaldevices282.Add(nodelink282.Get(0));
+		terminal_device_sets[282].Add(nodelink282.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10043,7 +9709,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[283].Get(i)),
 						csmaSwitches[283]));
 		switch_devices[283].Add(nodelink283.Get(1));
-		terminaldevices283.Add(nodelink283.Get(0));
+		terminal_device_sets[283].Add(nodelink283.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10053,7 +9719,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[285].Get(i)),
 						csmaSwitches[285]));
 		switch_devices[285].Add(nodelink285.Get(1));
-		terminaldevices285.Add(nodelink285.Get(0));
+		terminal_device_sets[285].Add(nodelink285.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10063,7 +9729,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[286].Get(i)),
 						csmaSwitches[286]));
 		switch_devices[286].Add(nodelink286.Get(1));
-		terminaldevices286.Add(nodelink286.Get(0));
+		terminal_device_sets[286].Add(nodelink286.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10073,7 +9739,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[287].Get(i)),
 						csmaSwitches[287]));
 		switch_devices[287].Add(nodelink287.Get(1));
-		terminaldevices287.Add(nodelink287.Get(0));
+		terminal_device_sets[287].Add(nodelink287.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10083,7 +9749,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[288].Get(i)),
 						csmaSwitches[288]));
 		switch_devices[288].Add(nodelink288.Get(1));
-		terminaldevices288.Add(nodelink288.Get(0));
+		terminal_device_sets[288].Add(nodelink288.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10093,7 +9759,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[289].Get(i)),
 						csmaSwitches[289]));
 		switch_devices[289].Add(nodelink289.Get(1));
-		terminaldevices289.Add(nodelink289.Get(0));
+		terminal_device_sets[289].Add(nodelink289.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10103,7 +9769,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[290].Get(i)),
 						csmaSwitches[290]));
 		switch_devices[290].Add(nodelink290.Get(1));
-		terminaldevices290.Add(nodelink290.Get(0));
+		terminal_device_sets[290].Add(nodelink290.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10113,7 +9779,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[291].Get(i)),
 						csmaSwitches[291]));
 		switch_devices[291].Add(nodelink291.Get(1));
-		terminaldevices291.Add(nodelink291.Get(0));
+		terminal_device_sets[291].Add(nodelink291.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10123,7 +9789,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[292].Get(i)),
 						csmaSwitches[292]));
 		switch_devices[292].Add(nodelink292.Get(1));
-		terminaldevices292.Add(nodelink292.Get(0));
+		terminal_device_sets[292].Add(nodelink292.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10133,7 +9799,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[293].Get(i)),
 						csmaSwitches[293]));
 		switch_devices[293].Add(nodelink293.Get(1));
-		terminaldevices293.Add(nodelink293.Get(0));
+		terminal_device_sets[293].Add(nodelink293.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10143,7 +9809,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[294].Get(i)),
 						csmaSwitches[294]));
 		switch_devices[294].Add(nodelink294.Get(1));
-		terminaldevices294.Add(nodelink294.Get(0));
+		terminal_device_sets[294].Add(nodelink294.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10153,7 +9819,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[295].Get(i)),
 						csmaSwitches[295]));
 		switch_devices[295].Add(nodelink295.Get(1));
-		terminaldevices295.Add(nodelink295.Get(0));
+		terminal_device_sets[295].Add(nodelink295.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10163,7 +9829,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[296].Get(i)),
 						csmaSwitches[296]));
 		switch_devices[296].Add(nodelink296.Get(1));
-		terminaldevices296.Add(nodelink296.Get(0));
+		terminal_device_sets[296].Add(nodelink296.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10173,7 +9839,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[297].Get(i)),
 						csmaSwitches[297]));
 		switch_devices[297].Add(nodelink297.Get(1));
-		terminaldevices297.Add(nodelink297.Get(0));
+		terminal_device_sets[297].Add(nodelink297.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10183,7 +9849,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[298].Get(i)),
 						csmaSwitches[298]));
 		switch_devices[298].Add(nodelink298.Get(1));
-		terminaldevices298.Add(nodelink298.Get(0));
+		terminal_device_sets[298].Add(nodelink298.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10193,7 +9859,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[299].Get(i)),
 						csmaSwitches[299]));
 		switch_devices[299].Add(nodelink299.Get(1));
-		terminaldevices299.Add(nodelink299.Get(0));
+		terminal_device_sets[299].Add(nodelink299.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10203,7 +9869,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[300].Get(i)),
 						csmaSwitches[300]));
 		switch_devices[300].Add(nodelink300.Get(1));
-		terminaldevices300.Add(nodelink300.Get(0));
+		terminal_device_sets[300].Add(nodelink300.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10213,7 +9879,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[301].Get(i)),
 						csmaSwitches[301]));
 		switch_devices[301].Add(nodelink301.Get(1));
-		terminaldevices301.Add(nodelink301.Get(0));
+		terminal_device_sets[301].Add(nodelink301.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10223,7 +9889,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[302].Get(i)),
 						csmaSwitches[302]));
 		switch_devices[302].Add(nodelink302.Get(1));
-		terminaldevices302.Add(nodelink302.Get(0));
+		terminal_device_sets[302].Add(nodelink302.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10233,7 +9899,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[303].Get(i)),
 						csmaSwitches[303]));
 		switch_devices[303].Add(nodelink303.Get(1));
-		terminaldevices303.Add(nodelink303.Get(0));
+		terminal_device_sets[303].Add(nodelink303.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10243,7 +9909,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[304].Get(i)),
 						csmaSwitches[304]));
 		switch_devices[304].Add(nodelink304.Get(1));
-		terminaldevices304.Add(nodelink304.Get(0));
+		terminal_device_sets[304].Add(nodelink304.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10253,7 +9919,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[305].Get(i)),
 						csmaSwitches[305]));
 		switch_devices[305].Add(nodelink305.Get(1));
-		terminaldevices305.Add(nodelink305.Get(0));
+		terminal_device_sets[305].Add(nodelink305.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10263,7 +9929,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[306].Get(i)),
 						csmaSwitches[306]));
 		switch_devices[306].Add(nodelink306.Get(1));
-		terminaldevices306.Add(nodelink306.Get(0));
+		terminal_device_sets[306].Add(nodelink306.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10273,7 +9939,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[307].Get(i)),
 						csmaSwitches[307]));
 		switch_devices[307].Add(nodelink307.Get(1));
-		terminaldevices307.Add(nodelink307.Get(0));
+		terminal_device_sets[307].Add(nodelink307.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10283,7 +9949,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[308].Get(i)),
 						csmaSwitches[308]));
 		switch_devices[308].Add(nodelink308.Get(1));
-		terminaldevices308.Add(nodelink308.Get(0));
+		terminal_device_sets[308].Add(nodelink308.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10293,7 +9959,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[309].Get(i)),
 						csmaSwitches[309]));
 		switch_devices[309].Add(nodelink309.Get(1));
-		terminaldevices309.Add(nodelink309.Get(0));
+		terminal_device_sets[309].Add(nodelink309.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10303,7 +9969,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[310].Get(i)),
 						csmaSwitches[310]));
 		switch_devices[310].Add(nodelink310.Get(1));
-		terminaldevices310.Add(nodelink310.Get(0));
+		terminal_device_sets[310].Add(nodelink310.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10313,7 +9979,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[311].Get(i)),
 						csmaSwitches[311]));
 		switch_devices[311].Add(nodelink311.Get(1));
-		terminaldevices311.Add(nodelink311.Get(0));
+		terminal_device_sets[311].Add(nodelink311.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10323,7 +9989,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[312].Get(i)),
 						csmaSwitches[312]));
 		switch_devices[312].Add(nodelink312.Get(1));
-		terminaldevices312.Add(nodelink312.Get(0));
+		terminal_device_sets[312].Add(nodelink312.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10333,7 +9999,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[313].Get(i)),
 						csmaSwitches[313]));
 		switch_devices[313].Add(nodelink313.Get(1));
-		terminaldevices313.Add(nodelink313.Get(0));
+		terminal_device_sets[313].Add(nodelink313.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10343,7 +10009,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[314].Get(i)),
 						csmaSwitches[314]));
 		switch_devices[314].Add(nodelink314.Get(1));
-		terminaldevices314.Add(nodelink314.Get(0));
+		terminal_device_sets[314].Add(nodelink314.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10353,7 +10019,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[315].Get(i)),
 						csmaSwitches[315]));
 		switch_devices[315].Add(nodelink315.Get(1));
-		terminaldevices315.Add(nodelink315.Get(0));
+		terminal_device_sets[315].Add(nodelink315.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10363,7 +10029,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[316].Get(i)),
 						csmaSwitches[316]));
 		switch_devices[316].Add(nodelink316.Get(1));
-		terminaldevices316.Add(nodelink316.Get(0));
+		terminal_device_sets[316].Add(nodelink316.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10373,7 +10039,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[317].Get(i)),
 						csmaSwitches[317]));
 		switch_devices[317].Add(nodelink317.Get(1));
-		terminaldevices317.Add(nodelink317.Get(0));
+		terminal_device_sets[317].Add(nodelink317.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10383,7 +10049,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[318].Get(i)),
 						csmaSwitches[318]));
 		switch_devices[318].Add(nodelink318.Get(1));
-		terminaldevices318.Add(nodelink318.Get(0));
+		terminal_device_sets[318].Add(nodelink318.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10393,7 +10059,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[319].Get(i)),
 						csmaSwitches[319]));
 		switch_devices[319].Add(nodelink319.Get(1));
-		terminaldevices319.Add(nodelink319.Get(0));
+		terminal_device_sets[319].Add(nodelink319.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10403,7 +10069,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[320].Get(i)),
 						csmaSwitches[320]));
 		switch_devices[320].Add(nodelink320.Get(1));
-		terminaldevices320.Add(nodelink320.Get(0));
+		terminal_device_sets[320].Add(nodelink320.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10413,7 +10079,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[321].Get(i)),
 						csmaSwitches[321]));
 		switch_devices[321].Add(nodelink321.Get(1));
-		terminaldevices321.Add(nodelink321.Get(0));
+		terminal_device_sets[321].Add(nodelink321.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10423,7 +10089,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[322].Get(i)),
 						csmaSwitches[322]));
 		switch_devices[322].Add(nodelink322.Get(1));
-		terminaldevices322.Add(nodelink322.Get(0));
+		terminal_device_sets[322].Add(nodelink322.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10433,7 +10099,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[323].Get(i)),
 						csmaSwitches[323]));
 		switch_devices[323].Add(nodelink323.Get(1));
-		terminaldevices323.Add(nodelink323.Get(0));
+		terminal_device_sets[323].Add(nodelink323.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10443,7 +10109,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[324].Get(i)),
 						csmaSwitches[324]));
 		switch_devices[324].Add(nodelink324.Get(1));
-		terminaldevices324.Add(nodelink324.Get(0));
+		terminal_device_sets[324].Add(nodelink324.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10453,7 +10119,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[325].Get(i)),
 						csmaSwitches[325]));
 		switch_devices[325].Add(nodelink325.Get(1));
-		terminaldevices325.Add(nodelink325.Get(0));
+		terminal_device_sets[325].Add(nodelink325.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10463,7 +10129,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[326].Get(i)),
 						csmaSwitches[326]));
 		switch_devices[326].Add(nodelink326.Get(1));
-		terminaldevices326.Add(nodelink326.Get(0));
+		terminal_device_sets[326].Add(nodelink326.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10473,7 +10139,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[327].Get(i)),
 						csmaSwitches[327]));
 		switch_devices[327].Add(nodelink327.Get(1));
-		terminaldevices327.Add(nodelink327.Get(0));
+		terminal_device_sets[327].Add(nodelink327.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10483,7 +10149,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[328].Get(i)),
 						csmaSwitches[328]));
 		switch_devices[328].Add(nodelink328.Get(1));
-		terminaldevices328.Add(nodelink328.Get(0));
+		terminal_device_sets[328].Add(nodelink328.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10493,7 +10159,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[329].Get(i)),
 						csmaSwitches[329]));
 		switch_devices[329].Add(nodelink329.Get(1));
-		terminaldevices329.Add(nodelink329.Get(0));
+		terminal_device_sets[329].Add(nodelink329.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10503,7 +10169,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[330].Get(i)),
 						csmaSwitches[330]));
 		switch_devices[330].Add(nodelink330.Get(1));
-		terminaldevices330.Add(nodelink330.Get(0));
+		terminal_device_sets[330].Add(nodelink330.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10513,7 +10179,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[331].Get(i)),
 						csmaSwitches[331]));
 		switch_devices[331].Add(nodelink331.Get(1));
-		terminaldevices331.Add(nodelink331.Get(0));
+		terminal_device_sets[331].Add(nodelink331.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10523,7 +10189,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[332].Get(i)),
 						csmaSwitches[332]));
 		switch_devices[332].Add(nodelink332.Get(1));
-		terminaldevices332.Add(nodelink332.Get(0));
+		terminal_device_sets[332].Add(nodelink332.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10533,7 +10199,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[334].Get(i)),
 						csmaSwitches[334]));
 		switch_devices[334].Add(nodelink334.Get(1));
-		terminaldevices334.Add(nodelink334.Get(0));
+		terminal_device_sets[334].Add(nodelink334.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10543,7 +10209,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[335].Get(i)),
 						csmaSwitches[335]));
 		switch_devices[335].Add(nodelink335.Get(1));
-		terminaldevices335.Add(nodelink335.Get(0));
+		terminal_device_sets[335].Add(nodelink335.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10553,7 +10219,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[336].Get(i)),
 						csmaSwitches[336]));
 		switch_devices[336].Add(nodelink336.Get(1));
-		terminaldevices336.Add(nodelink336.Get(0));
+		terminal_device_sets[336].Add(nodelink336.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10563,7 +10229,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[337].Get(i)),
 						csmaSwitches[337]));
 		switch_devices[337].Add(nodelink337.Get(1));
-		terminaldevices337.Add(nodelink337.Get(0));
+		terminal_device_sets[337].Add(nodelink337.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10573,7 +10239,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[338].Get(i)),
 						csmaSwitches[338]));
 		switch_devices[338].Add(nodelink338.Get(1));
-		terminaldevices338.Add(nodelink338.Get(0));
+		terminal_device_sets[338].Add(nodelink338.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10583,7 +10249,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[339].Get(i)),
 						csmaSwitches[339]));
 		switch_devices[339].Add(nodelink339.Get(1));
-		terminaldevices339.Add(nodelink339.Get(0));
+		terminal_device_sets[339].Add(nodelink339.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10593,7 +10259,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[340].Get(i)),
 						csmaSwitches[340]));
 		switch_devices[340].Add(nodelink340.Get(1));
-		terminaldevices340.Add(nodelink340.Get(0));
+		terminal_device_sets[340].Add(nodelink340.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10603,7 +10269,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[341].Get(i)),
 						csmaSwitches[341]));
 		switch_devices[341].Add(nodelink341.Get(1));
-		terminaldevices341.Add(nodelink341.Get(0));
+		terminal_device_sets[341].Add(nodelink341.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10613,7 +10279,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[342].Get(i)),
 						csmaSwitches[342]));
 		switch_devices[342].Add(nodelink342.Get(1));
-		terminaldevices342.Add(nodelink342.Get(0));
+		terminal_device_sets[342].Add(nodelink342.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10623,7 +10289,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[343].Get(i)),
 						csmaSwitches[343]));
 		switch_devices[343].Add(nodelink343.Get(1));
-		terminaldevices343.Add(nodelink343.Get(0));
+		terminal_device_sets[343].Add(nodelink343.Get(0));
 	}
 
 	for (int i; i < 15; ++i) {
@@ -10633,7 +10299,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[344].Get(i)),
 						csmaSwitches[344]));
 		switch_devices[344].Add(nodelink344.Get(1));
-		terminaldevices344.Add(nodelink344.Get(0));
+		terminal_device_sets[344].Add(nodelink344.Get(0));
 	}
 
 	for (int i; i < 5; ++i) {
@@ -10643,7 +10309,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[345].Get(i)),
 						csmaSwitches[345]));
 		switch_devices[345].Add(nodelink345.Get(1));
-		terminaldevices345.Add(nodelink345.Get(0));
+		terminal_device_sets[345].Add(nodelink345.Get(0));
 	}
 
 	for (int i; i < 5; ++i) {
@@ -10653,7 +10319,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[346].Get(i)),
 						csmaSwitches[346]));
 		switch_devices[346].Add(nodelink346.Get(1));
-		terminaldevices346.Add(nodelink346.Get(0));
+		terminal_device_sets[346].Add(nodelink346.Get(0));
 	}
 
 	for (int i; i < 5; ++i) {
@@ -10663,7 +10329,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[347].Get(i)),
 						csmaSwitches[347]));
 		switch_devices[347].Add(nodelink347.Get(1));
-		terminaldevices347.Add(nodelink347.Get(0));
+		terminal_device_sets[347].Add(nodelink347.Get(0));
 	}
 
 	for (int i; i < 5; ++i) {
@@ -10673,7 +10339,7 @@ int main(int argc, char** argv) {
 						ns3::NodeContainer(terminal_sets[348].Get(i)),
 						csmaSwitches[348]));
 		switch_devices[348].Add(nodelink348.Get(1));
-		terminaldevices348.Add(nodelink348.Get(0));
+		terminal_device_sets[348].Add(nodelink348.Get(0));
 	}
 
 //#channel define
@@ -22720,677 +22386,344 @@ int main(int argc, char** argv) {
 //print "Assign IP Addresses."
 	ns3::Ipv4AddressHelper ipv4;
 	ipv4.SetBase(ns3::Ipv4Address("133.71.0.0"), ns3::Ipv4Mask("255.255.0.0"));
-	ns3::Ipv4InterfaceContainer PtoPinterfaces5 = ipv4.Assign(terminaldevices5);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces6 = ipv4.Assign(terminaldevices6);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces7 = ipv4.Assign(terminaldevices7);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces8 = ipv4.Assign(terminaldevices8);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces9 = ipv4.Assign(terminaldevices9);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces10 = ipv4.Assign(
-			terminaldevices10);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces11 = ipv4.Assign(
-			terminaldevices11);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces12 = ipv4.Assign(
-			terminaldevices12);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces13 = ipv4.Assign(
-			terminaldevices13);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces14 = ipv4.Assign(
-			terminaldevices14);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces15 = ipv4.Assign(
-			terminaldevices15);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces16 = ipv4.Assign(
-			terminaldevices16);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces17 = ipv4.Assign(
-			terminaldevices17);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces18 = ipv4.Assign(
-			terminaldevices18);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces19 = ipv4.Assign(
-			terminaldevices19);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces20 = ipv4.Assign(
-			terminaldevices20);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces21 = ipv4.Assign(
-			terminaldevices21);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces22 = ipv4.Assign(
-			terminaldevices22);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces23 = ipv4.Assign(
-			terminaldevices23);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces24 = ipv4.Assign(
-			terminaldevices24);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces25 = ipv4.Assign(
-			terminaldevices25);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces26 = ipv4.Assign(
-			terminaldevices26);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces27 = ipv4.Assign(
-			terminaldevices27);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces28 = ipv4.Assign(
-			terminaldevices28);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces29 = ipv4.Assign(
-			terminaldevices29);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces30 = ipv4.Assign(
-			terminaldevices30);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces31 = ipv4.Assign(
-			terminaldevices31);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces32 = ipv4.Assign(
-			terminaldevices32);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces33 = ipv4.Assign(
-			terminaldevices33);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces34 = ipv4.Assign(
-			terminaldevices34);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces35 = ipv4.Assign(
-			terminaldevices35);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces36 = ipv4.Assign(
-			terminaldevices36);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces37 = ipv4.Assign(
-			terminaldevices37);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces38 = ipv4.Assign(
-			terminaldevices38);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces39 = ipv4.Assign(
-			terminaldevices39);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces40 = ipv4.Assign(
-			terminaldevices40);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces41 = ipv4.Assign(
-			terminaldevices41);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces42 = ipv4.Assign(
-			terminaldevices42);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces43 = ipv4.Assign(
-			terminaldevices43);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces44 = ipv4.Assign(
-			terminaldevices44);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces45 = ipv4.Assign(
-			terminaldevices45);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces46 = ipv4.Assign(
-			terminaldevices46);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces47 = ipv4.Assign(
-			terminaldevices47);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces48 = ipv4.Assign(
-			terminaldevices48);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces49 = ipv4.Assign(
-			terminaldevices49);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces50 = ipv4.Assign(
-			terminaldevices50);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces51 = ipv4.Assign(
-			terminaldevices51);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces52 = ipv4.Assign(
-			terminaldevices52);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces53 = ipv4.Assign(
-			terminaldevices53);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces54 = ipv4.Assign(
-			terminaldevices54);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces55 = ipv4.Assign(
-			terminaldevices55);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces56 = ipv4.Assign(
-			terminaldevices56);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces57 = ipv4.Assign(
-			terminaldevices57);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces58 = ipv4.Assign(
-			terminaldevices58);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces59 = ipv4.Assign(
-			terminaldevices59);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces60 = ipv4.Assign(
-			terminaldevices60);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces61 = ipv4.Assign(
-			terminaldevices61);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces62 = ipv4.Assign(
-			terminaldevices62);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces63 = ipv4.Assign(
-			terminaldevices63);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces64 = ipv4.Assign(
-			terminaldevices64);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces65 = ipv4.Assign(
-			terminaldevices65);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces66 = ipv4.Assign(
-			terminaldevices66);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces67 = ipv4.Assign(
-			terminaldevices67);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces68 = ipv4.Assign(
-			terminaldevices68);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces69 = ipv4.Assign(
-			terminaldevices69);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces70 = ipv4.Assign(
-			terminaldevices70);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces71 = ipv4.Assign(
-			terminaldevices71);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces72 = ipv4.Assign(
-			terminaldevices72);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces73 = ipv4.Assign(
-			terminaldevices73);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces74 = ipv4.Assign(
-			terminaldevices74);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces75 = ipv4.Assign(
-			terminaldevices75);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces76 = ipv4.Assign(
-			terminaldevices76);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces77 = ipv4.Assign(
-			terminaldevices77);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces78 = ipv4.Assign(
-			terminaldevices78);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces79 = ipv4.Assign(
-			terminaldevices79);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces81 = ipv4.Assign(
-			terminaldevices81);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces82 = ipv4.Assign(
-			terminaldevices82);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces83 = ipv4.Assign(
-			terminaldevices83);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces84 = ipv4.Assign(
-			terminaldevices84);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces85 = ipv4.Assign(
-			terminaldevices85);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces86 = ipv4.Assign(
-			terminaldevices86);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces87 = ipv4.Assign(
-			terminaldevices87);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces88 = ipv4.Assign(
-			terminaldevices88);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces89 = ipv4.Assign(
-			terminaldevices89);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces90 = ipv4.Assign(
-			terminaldevices90);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces91 = ipv4.Assign(
-			terminaldevices91);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces92 = ipv4.Assign(
-			terminaldevices92);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces93 = ipv4.Assign(
-			terminaldevices93);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces94 = ipv4.Assign(
-			terminaldevices94);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces95 = ipv4.Assign(
-			terminaldevices95);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces96 = ipv4.Assign(
-			terminaldevices96);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces97 = ipv4.Assign(
-			terminaldevices97);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces98 = ipv4.Assign(
-			terminaldevices98);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces99 = ipv4.Assign(
-			terminaldevices99);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces100 = ipv4.Assign(
-			terminaldevices100);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces101 = ipv4.Assign(
-			terminaldevices101);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces102 = ipv4.Assign(
-			terminaldevices102);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces103 = ipv4.Assign(
-			terminaldevices103);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces104 = ipv4.Assign(
-			terminaldevices104);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces105 = ipv4.Assign(
-			terminaldevices105);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces106 = ipv4.Assign(
-			terminaldevices106);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces107 = ipv4.Assign(
-			terminaldevices107);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces108 = ipv4.Assign(
-			terminaldevices108);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces109 = ipv4.Assign(
-			terminaldevices109);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces110 = ipv4.Assign(
-			terminaldevices110);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces111 = ipv4.Assign(
-			terminaldevices111);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces112 = ipv4.Assign(
-			terminaldevices112);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces114 = ipv4.Assign(
-			terminaldevices114);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces115 = ipv4.Assign(
-			terminaldevices115);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces116 = ipv4.Assign(
-			terminaldevices116);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces117 = ipv4.Assign(
-			terminaldevices117);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces118 = ipv4.Assign(
-			terminaldevices118);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces119 = ipv4.Assign(
-			terminaldevices119);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces120 = ipv4.Assign(
-			terminaldevices120);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces121 = ipv4.Assign(
-			terminaldevices121);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces122 = ipv4.Assign(
-			terminaldevices122);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces123 = ipv4.Assign(
-			terminaldevices123);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces124 = ipv4.Assign(
-			terminaldevices124);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces125 = ipv4.Assign(
-			terminaldevices125);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces126 = ipv4.Assign(
-			terminaldevices126);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces127 = ipv4.Assign(
-			terminaldevices127);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces128 = ipv4.Assign(
-			terminaldevices128);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces129 = ipv4.Assign(
-			terminaldevices129);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces130 = ipv4.Assign(
-			terminaldevices130);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces131 = ipv4.Assign(
-			terminaldevices131);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces132 = ipv4.Assign(
-			terminaldevices132);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces133 = ipv4.Assign(
-			terminaldevices133);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces134 = ipv4.Assign(
-			terminaldevices134);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces135 = ipv4.Assign(
-			terminaldevices135);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces136 = ipv4.Assign(
-			terminaldevices136);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces137 = ipv4.Assign(
-			terminaldevices137);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces138 = ipv4.Assign(
-			terminaldevices138);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces139 = ipv4.Assign(
-			terminaldevices139);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces140 = ipv4.Assign(
-			terminaldevices140);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces141 = ipv4.Assign(
-			terminaldevices141);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces142 = ipv4.Assign(
-			terminaldevices142);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces143 = ipv4.Assign(
-			terminaldevices143);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces144 = ipv4.Assign(
-			terminaldevices144);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces145 = ipv4.Assign(
-			terminaldevices145);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces146 = ipv4.Assign(
-			terminaldevices146);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces147 = ipv4.Assign(
-			terminaldevices147);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces148 = ipv4.Assign(
-			terminaldevices148);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces149 = ipv4.Assign(
-			terminaldevices149);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces150 = ipv4.Assign(
-			terminaldevices150);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces151 = ipv4.Assign(
-			terminaldevices151);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces152 = ipv4.Assign(
-			terminaldevices152);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces153 = ipv4.Assign(
-			terminaldevices153);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces154 = ipv4.Assign(
-			terminaldevices154);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces155 = ipv4.Assign(
-			terminaldevices155);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces156 = ipv4.Assign(
-			terminaldevices156);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces157 = ipv4.Assign(
-			terminaldevices157);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces158 = ipv4.Assign(
-			terminaldevices158);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces159 = ipv4.Assign(
-			terminaldevices159);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces161 = ipv4.Assign(
-			terminaldevices161);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces162 = ipv4.Assign(
-			terminaldevices162);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces163 = ipv4.Assign(
-			terminaldevices163);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces164 = ipv4.Assign(
-			terminaldevices164);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces165 = ipv4.Assign(
-			terminaldevices165);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces166 = ipv4.Assign(
-			terminaldevices166);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces167 = ipv4.Assign(
-			terminaldevices167);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces168 = ipv4.Assign(
-			terminaldevices168);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces169 = ipv4.Assign(
-			terminaldevices169);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces170 = ipv4.Assign(
-			terminaldevices170);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces171 = ipv4.Assign(
-			terminaldevices171);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces172 = ipv4.Assign(
-			terminaldevices172);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces173 = ipv4.Assign(
-			terminaldevices173);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces174 = ipv4.Assign(
-			terminaldevices174);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces175 = ipv4.Assign(
-			terminaldevices175);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces176 = ipv4.Assign(
-			terminaldevices176);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces177 = ipv4.Assign(
-			terminaldevices177);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces178 = ipv4.Assign(
-			terminaldevices178);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces179 = ipv4.Assign(
-			terminaldevices179);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces180 = ipv4.Assign(
-			terminaldevices180);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces181 = ipv4.Assign(
-			terminaldevices181);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces182 = ipv4.Assign(
-			terminaldevices182);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces183 = ipv4.Assign(
-			terminaldevices183);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces184 = ipv4.Assign(
-			terminaldevices184);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces185 = ipv4.Assign(
-			terminaldevices185);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces186 = ipv4.Assign(
-			terminaldevices186);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces187 = ipv4.Assign(
-			terminaldevices187);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces188 = ipv4.Assign(
-			terminaldevices188);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces189 = ipv4.Assign(
-			terminaldevices189);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces190 = ipv4.Assign(
-			terminaldevices190);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces191 = ipv4.Assign(
-			terminaldevices191);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces192 = ipv4.Assign(
-			terminaldevices192);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces193 = ipv4.Assign(
-			terminaldevices193);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces194 = ipv4.Assign(
-			terminaldevices194);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces195 = ipv4.Assign(
-			terminaldevices195);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces196 = ipv4.Assign(
-			terminaldevices196);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces197 = ipv4.Assign(
-			terminaldevices197);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces198 = ipv4.Assign(
-			terminaldevices198);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces199 = ipv4.Assign(
-			terminaldevices199);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces200 = ipv4.Assign(
-			terminaldevices200);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces201 = ipv4.Assign(
-			terminaldevices201);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces202 = ipv4.Assign(
-			terminaldevices202);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces203 = ipv4.Assign(
-			terminaldevices203);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces204 = ipv4.Assign(
-			terminaldevices204);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces205 = ipv4.Assign(
-			terminaldevices205);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces206 = ipv4.Assign(
-			terminaldevices206);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces207 = ipv4.Assign(
-			terminaldevices207);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces208 = ipv4.Assign(
-			terminaldevices208);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces209 = ipv4.Assign(
-			terminaldevices209);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces210 = ipv4.Assign(
-			terminaldevices210);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces211 = ipv4.Assign(
-			terminaldevices211);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces212 = ipv4.Assign(
-			terminaldevices212);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces214 = ipv4.Assign(
-			terminaldevices214);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces215 = ipv4.Assign(
-			terminaldevices215);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces216 = ipv4.Assign(
-			terminaldevices216);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces217 = ipv4.Assign(
-			terminaldevices217);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces218 = ipv4.Assign(
-			terminaldevices218);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces219 = ipv4.Assign(
-			terminaldevices219);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces220 = ipv4.Assign(
-			terminaldevices220);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces221 = ipv4.Assign(
-			terminaldevices221);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces222 = ipv4.Assign(
-			terminaldevices222);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces223 = ipv4.Assign(
-			terminaldevices223);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces224 = ipv4.Assign(
-			terminaldevices224);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces225 = ipv4.Assign(
-			terminaldevices225);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces226 = ipv4.Assign(
-			terminaldevices226);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces227 = ipv4.Assign(
-			terminaldevices227);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces228 = ipv4.Assign(
-			terminaldevices228);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces229 = ipv4.Assign(
-			terminaldevices229);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces230 = ipv4.Assign(
-			terminaldevices230);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces231 = ipv4.Assign(
-			terminaldevices231);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces232 = ipv4.Assign(
-			terminaldevices232);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces233 = ipv4.Assign(
-			terminaldevices233);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces234 = ipv4.Assign(
-			terminaldevices234);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces235 = ipv4.Assign(
-			terminaldevices235);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces236 = ipv4.Assign(
-			terminaldevices236);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces237 = ipv4.Assign(
-			terminaldevices237);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces238 = ipv4.Assign(
-			terminaldevices238);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces239 = ipv4.Assign(
-			terminaldevices239);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces240 = ipv4.Assign(
-			terminaldevices240);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces241 = ipv4.Assign(
-			terminaldevices241);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces242 = ipv4.Assign(
-			terminaldevices242);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces243 = ipv4.Assign(
-			terminaldevices243);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces244 = ipv4.Assign(
-			terminaldevices244);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces245 = ipv4.Assign(
-			terminaldevices245);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces246 = ipv4.Assign(
-			terminaldevices246);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces247 = ipv4.Assign(
-			terminaldevices247);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces248 = ipv4.Assign(
-			terminaldevices248);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces284 = ipv4.Assign(
-			terminaldevices284);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces249 = ipv4.Assign(
-			terminaldevices249);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces250 = ipv4.Assign(
-			terminaldevices250);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces251 = ipv4.Assign(
-			terminaldevices251);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces252 = ipv4.Assign(
-			terminaldevices252);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces253 = ipv4.Assign(
-			terminaldevices253);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces254 = ipv4.Assign(
-			terminaldevices254);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces255 = ipv4.Assign(
-			terminaldevices255);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces256 = ipv4.Assign(
-			terminaldevices256);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces257 = ipv4.Assign(
-			terminaldevices257);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces258 = ipv4.Assign(
-			terminaldevices258);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces259 = ipv4.Assign(
-			terminaldevices259);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces260 = ipv4.Assign(
-			terminaldevices260);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces261 = ipv4.Assign(
-			terminaldevices261);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces262 = ipv4.Assign(
-			terminaldevices262);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces263 = ipv4.Assign(
-			terminaldevices263);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces264 = ipv4.Assign(
-			terminaldevices264);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces265 = ipv4.Assign(
-			terminaldevices265);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces266 = ipv4.Assign(
-			terminaldevices266);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces267 = ipv4.Assign(
-			terminaldevices267);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces268 = ipv4.Assign(
-			terminaldevices268);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces269 = ipv4.Assign(
-			terminaldevices269);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces270 = ipv4.Assign(
-			terminaldevices270);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces272 = ipv4.Assign(
-			terminaldevices272);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces273 = ipv4.Assign(
-			terminaldevices273);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces274 = ipv4.Assign(
-			terminaldevices274);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces275 = ipv4.Assign(
-			terminaldevices275);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces276 = ipv4.Assign(
-			terminaldevices276);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces277 = ipv4.Assign(
-			terminaldevices277);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces278 = ipv4.Assign(
-			terminaldevices278);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces279 = ipv4.Assign(
-			terminaldevices279);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces280 = ipv4.Assign(
-			terminaldevices280);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces281 = ipv4.Assign(
-			terminaldevices281);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces282 = ipv4.Assign(
-			terminaldevices282);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces283 = ipv4.Assign(
-			terminaldevices283);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces285 = ipv4.Assign(
-			terminaldevices285);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces286 = ipv4.Assign(
-			terminaldevices286);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces287 = ipv4.Assign(
-			terminaldevices287);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces288 = ipv4.Assign(
-			terminaldevices288);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces289 = ipv4.Assign(
-			terminaldevices289);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces290 = ipv4.Assign(
-			terminaldevices290);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces291 = ipv4.Assign(
-			terminaldevices291);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces292 = ipv4.Assign(
-			terminaldevices292);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces293 = ipv4.Assign(
-			terminaldevices293);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces294 = ipv4.Assign(
-			terminaldevices294);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces295 = ipv4.Assign(
-			terminaldevices295);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces296 = ipv4.Assign(
-			terminaldevices296);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces297 = ipv4.Assign(
-			terminaldevices297);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces298 = ipv4.Assign(
-			terminaldevices298);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces299 = ipv4.Assign(
-			terminaldevices299);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces300 = ipv4.Assign(
-			terminaldevices300);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces301 = ipv4.Assign(
-			terminaldevices301);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces302 = ipv4.Assign(
-			terminaldevices302);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces303 = ipv4.Assign(
-			terminaldevices303);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces304 = ipv4.Assign(
-			terminaldevices304);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces305 = ipv4.Assign(
-			terminaldevices305);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces306 = ipv4.Assign(
-			terminaldevices306);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces307 = ipv4.Assign(
-			terminaldevices307);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces308 = ipv4.Assign(
-			terminaldevices308);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces309 = ipv4.Assign(
-			terminaldevices309);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces310 = ipv4.Assign(
-			terminaldevices310);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces311 = ipv4.Assign(
-			terminaldevices311);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces312 = ipv4.Assign(
-			terminaldevices312);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces313 = ipv4.Assign(
-			terminaldevices313);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces314 = ipv4.Assign(
-			terminaldevices314);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces315 = ipv4.Assign(
-			terminaldevices315);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces316 = ipv4.Assign(
-			terminaldevices316);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces317 = ipv4.Assign(
-			terminaldevices317);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces318 = ipv4.Assign(
-			terminaldevices318);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces319 = ipv4.Assign(
-			terminaldevices319);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces320 = ipv4.Assign(
-			terminaldevices320);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces321 = ipv4.Assign(
-			terminaldevices321);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces322 = ipv4.Assign(
-			terminaldevices322);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces323 = ipv4.Assign(
-			terminaldevices323);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces324 = ipv4.Assign(
-			terminaldevices324);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces325 = ipv4.Assign(
-			terminaldevices325);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces326 = ipv4.Assign(
-			terminaldevices326);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces327 = ipv4.Assign(
-			terminaldevices327);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces328 = ipv4.Assign(
-			terminaldevices328);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces329 = ipv4.Assign(
-			terminaldevices329);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces330 = ipv4.Assign(
-			terminaldevices330);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces331 = ipv4.Assign(
-			terminaldevices331);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces332 = ipv4.Assign(
-			terminaldevices332);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces334 = ipv4.Assign(
-			terminaldevices334);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces335 = ipv4.Assign(
-			terminaldevices335);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces336 = ipv4.Assign(
-			terminaldevices336);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces337 = ipv4.Assign(
-			terminaldevices337);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces338 = ipv4.Assign(
-			terminaldevices338);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces339 = ipv4.Assign(
-			terminaldevices339);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces340 = ipv4.Assign(
-			terminaldevices340);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces341 = ipv4.Assign(
-			terminaldevices341);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces342 = ipv4.Assign(
-			terminaldevices342);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces343 = ipv4.Assign(
-			terminaldevices343);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces344 = ipv4.Assign(
-			terminaldevices344);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces345 = ipv4.Assign(
-			terminaldevices345);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces346 = ipv4.Assign(
-			terminaldevices346);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces347 = ipv4.Assign(
-			terminaldevices347);
-	ns3::Ipv4InterfaceContainer PtoPinterfaces348 = ipv4.Assign(
-			terminaldevices348);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces5 = ipv4.Assign(terminal_device_sets[5]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces6 = ipv4.Assign(terminal_device_sets[6]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces7 = ipv4.Assign(terminal_device_sets[7]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces8 = ipv4.Assign(terminal_device_sets[8]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces9 = ipv4.Assign(terminal_device_sets[9]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces10 = ipv4.Assign(terminal_device_sets[10]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces11 = ipv4.Assign(terminal_device_sets[11]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces12 = ipv4.Assign(terminal_device_sets[12]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces13 = ipv4.Assign(terminal_device_sets[13]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces14 = ipv4.Assign(terminal_device_sets[14]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces15 = ipv4.Assign(terminal_device_sets[15]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces16 = ipv4.Assign(terminal_device_sets[16]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces17 = ipv4.Assign(terminal_device_sets[17]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces18 = ipv4.Assign(terminal_device_sets[18]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces19 = ipv4.Assign(terminal_device_sets[19]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces20 = ipv4.Assign(terminal_device_sets[20]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces21 = ipv4.Assign(terminal_device_sets[21]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces22 = ipv4.Assign(terminal_device_sets[22]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces23 = ipv4.Assign(terminal_device_sets[23]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces24 = ipv4.Assign(terminal_device_sets[24]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces25 = ipv4.Assign(terminal_device_sets[25]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces26 = ipv4.Assign(terminal_device_sets[26]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces27 = ipv4.Assign(terminal_device_sets[27]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces28 = ipv4.Assign(terminal_device_sets[28]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces29 = ipv4.Assign(terminal_device_sets[29]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces30 = ipv4.Assign(terminal_device_sets[30]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces31 = ipv4.Assign(terminal_device_sets[31]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces32 = ipv4.Assign(terminal_device_sets[32]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces33 = ipv4.Assign(terminal_device_sets[33]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces34 = ipv4.Assign(terminal_device_sets[34]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces35 = ipv4.Assign(terminal_device_sets[35]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces36 = ipv4.Assign(terminal_device_sets[36]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces37 = ipv4.Assign(terminal_device_sets[37]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces38 = ipv4.Assign(terminal_device_sets[38]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces39 = ipv4.Assign(terminal_device_sets[39]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces40 = ipv4.Assign(terminal_device_sets[40]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces41 = ipv4.Assign(terminal_device_sets[41]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces42 = ipv4.Assign(terminal_device_sets[42]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces43 = ipv4.Assign(terminal_device_sets[43]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces44 = ipv4.Assign(terminal_device_sets[44]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces45 = ipv4.Assign(terminal_device_sets[45]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces46 = ipv4.Assign(terminal_device_sets[46]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces47 = ipv4.Assign(terminal_device_sets[47]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces48 = ipv4.Assign(terminal_device_sets[48]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces49 = ipv4.Assign(terminal_device_sets[49]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces50 = ipv4.Assign(terminal_device_sets[50]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces51 = ipv4.Assign(terminal_device_sets[51]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces52 = ipv4.Assign(terminal_device_sets[52]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces53 = ipv4.Assign(terminal_device_sets[53]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces54 = ipv4.Assign(terminal_device_sets[54]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces55 = ipv4.Assign(terminal_device_sets[55]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces56 = ipv4.Assign(terminal_device_sets[56]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces57 = ipv4.Assign(terminal_device_sets[57]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces58 = ipv4.Assign(terminal_device_sets[58]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces59 = ipv4.Assign(terminal_device_sets[59]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces60 = ipv4.Assign(terminal_device_sets[60]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces61 = ipv4.Assign(terminal_device_sets[61]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces62 = ipv4.Assign(terminal_device_sets[62]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces63 = ipv4.Assign(terminal_device_sets[63]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces64 = ipv4.Assign(terminal_device_sets[64]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces65 = ipv4.Assign(terminal_device_sets[65]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces66 = ipv4.Assign(terminal_device_sets[66]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces67 = ipv4.Assign(terminal_device_sets[67]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces68 = ipv4.Assign(terminal_device_sets[68]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces69 = ipv4.Assign(terminal_device_sets[69]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces70 = ipv4.Assign(terminal_device_sets[70]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces71 = ipv4.Assign(terminal_device_sets[71]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces72 = ipv4.Assign(terminal_device_sets[72]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces73 = ipv4.Assign(terminal_device_sets[73]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces74 = ipv4.Assign(terminal_device_sets[74]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces75 = ipv4.Assign(terminal_device_sets[75]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces76 = ipv4.Assign(terminal_device_sets[76]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces77 = ipv4.Assign(terminal_device_sets[77]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces78 = ipv4.Assign(terminal_device_sets[78]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces79 = ipv4.Assign(terminal_device_sets[79]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces81 = ipv4.Assign(terminal_device_sets[81]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces82 = ipv4.Assign(terminal_device_sets[82]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces83 = ipv4.Assign(terminal_device_sets[83]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces84 = ipv4.Assign(terminal_device_sets[84]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces85 = ipv4.Assign(terminal_device_sets[85]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces86 = ipv4.Assign(terminal_device_sets[86]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces87 = ipv4.Assign(terminal_device_sets[87]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces88 = ipv4.Assign(terminal_device_sets[88]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces89 = ipv4.Assign(terminal_device_sets[89]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces90 = ipv4.Assign(terminal_device_sets[90]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces91 = ipv4.Assign(terminal_device_sets[91]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces92 = ipv4.Assign(terminal_device_sets[92]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces93 = ipv4.Assign(terminal_device_sets[93]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces94 = ipv4.Assign(terminal_device_sets[94]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces95 = ipv4.Assign(terminal_device_sets[95]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces96 = ipv4.Assign(terminal_device_sets[96]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces97 = ipv4.Assign(terminal_device_sets[97]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces98 = ipv4.Assign(terminal_device_sets[98]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces99 = ipv4.Assign(terminal_device_sets[99]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces100 = ipv4.Assign(terminal_device_sets[100]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces101 = ipv4.Assign(terminal_device_sets[101]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces102 = ipv4.Assign(terminal_device_sets[102]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces103 = ipv4.Assign(terminal_device_sets[103]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces104 = ipv4.Assign(terminal_device_sets[104]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces105 = ipv4.Assign(terminal_device_sets[105]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces106 = ipv4.Assign(terminal_device_sets[106]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces107 = ipv4.Assign(terminal_device_sets[107]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces108 = ipv4.Assign(terminal_device_sets[108]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces109 = ipv4.Assign(terminal_device_sets[109]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces110 = ipv4.Assign(terminal_device_sets[110]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces111 = ipv4.Assign(terminal_device_sets[111]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces112 = ipv4.Assign(terminal_device_sets[112]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces114 = ipv4.Assign(terminal_device_sets[114]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces115 = ipv4.Assign(terminal_device_sets[115]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces116 = ipv4.Assign(terminal_device_sets[116]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces117 = ipv4.Assign(terminal_device_sets[117]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces118 = ipv4.Assign(terminal_device_sets[118]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces119 = ipv4.Assign(terminal_device_sets[119]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces120 = ipv4.Assign(terminal_device_sets[120]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces121 = ipv4.Assign(terminal_device_sets[121]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces122 = ipv4.Assign(terminal_device_sets[122]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces123 = ipv4.Assign(terminal_device_sets[123]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces124 = ipv4.Assign(terminal_device_sets[124]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces125 = ipv4.Assign(terminal_device_sets[125]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces126 = ipv4.Assign(terminal_device_sets[126]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces127 = ipv4.Assign(terminal_device_sets[127]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces128 = ipv4.Assign(terminal_device_sets[128]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces129 = ipv4.Assign(terminal_device_sets[129]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces130 = ipv4.Assign(terminal_device_sets[130]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces131 = ipv4.Assign(terminal_device_sets[131]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces132 = ipv4.Assign(terminal_device_sets[132]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces133 = ipv4.Assign(terminal_device_sets[133]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces134 = ipv4.Assign(terminal_device_sets[134]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces135 = ipv4.Assign(terminal_device_sets[135]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces136 = ipv4.Assign(terminal_device_sets[136]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces137 = ipv4.Assign(terminal_device_sets[137]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces138 = ipv4.Assign(terminal_device_sets[138]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces139 = ipv4.Assign(terminal_device_sets[139]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces140 = ipv4.Assign(terminal_device_sets[140]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces141 = ipv4.Assign(terminal_device_sets[141]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces142 = ipv4.Assign(terminal_device_sets[142]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces143 = ipv4.Assign(terminal_device_sets[143]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces144 = ipv4.Assign(terminal_device_sets[144]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces145 = ipv4.Assign(terminal_device_sets[145]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces146 = ipv4.Assign(terminal_device_sets[146]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces147 = ipv4.Assign(terminal_device_sets[147]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces148 = ipv4.Assign(terminal_device_sets[148]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces149 = ipv4.Assign(terminal_device_sets[149]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces150 = ipv4.Assign(terminal_device_sets[150]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces151 = ipv4.Assign(terminal_device_sets[151]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces152 = ipv4.Assign(terminal_device_sets[152]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces153 = ipv4.Assign(terminal_device_sets[153]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces154 = ipv4.Assign(terminal_device_sets[154]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces155 = ipv4.Assign(terminal_device_sets[155]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces156 = ipv4.Assign(terminal_device_sets[156]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces157 = ipv4.Assign(terminal_device_sets[157]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces158 = ipv4.Assign(terminal_device_sets[158]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces159 = ipv4.Assign(terminal_device_sets[159]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces161 = ipv4.Assign(terminal_device_sets[161]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces162 = ipv4.Assign(terminal_device_sets[162]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces163 = ipv4.Assign(terminal_device_sets[163]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces164 = ipv4.Assign(terminal_device_sets[164]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces165 = ipv4.Assign(terminal_device_sets[165]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces166 = ipv4.Assign(terminal_device_sets[166]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces167 = ipv4.Assign(terminal_device_sets[167]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces168 = ipv4.Assign(terminal_device_sets[168]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces169 = ipv4.Assign(terminal_device_sets[169]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces170 = ipv4.Assign(terminal_device_sets[170]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces171 = ipv4.Assign(terminal_device_sets[171]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces172 = ipv4.Assign(terminal_device_sets[172]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces173 = ipv4.Assign(terminal_device_sets[173]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces174 = ipv4.Assign(terminal_device_sets[174]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces175 = ipv4.Assign(terminal_device_sets[175]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces176 = ipv4.Assign(terminal_device_sets[176]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces177 = ipv4.Assign(terminal_device_sets[177]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces178 = ipv4.Assign(terminal_device_sets[178]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces179 = ipv4.Assign(terminal_device_sets[179]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces180 = ipv4.Assign(terminal_device_sets[180]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces181 = ipv4.Assign(terminal_device_sets[181]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces182 = ipv4.Assign(terminal_device_sets[182]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces183 = ipv4.Assign(terminal_device_sets[183]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces184 = ipv4.Assign(terminal_device_sets[184]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces185 = ipv4.Assign(terminal_device_sets[185]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces186 = ipv4.Assign(terminal_device_sets[186]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces187 = ipv4.Assign(terminal_device_sets[187]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces188 = ipv4.Assign(terminal_device_sets[188]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces189 = ipv4.Assign(terminal_device_sets[189]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces190 = ipv4.Assign(terminal_device_sets[190]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces191 = ipv4.Assign(terminal_device_sets[191]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces192 = ipv4.Assign(terminal_device_sets[192]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces193 = ipv4.Assign(terminal_device_sets[193]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces194 = ipv4.Assign(terminal_device_sets[194]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces195 = ipv4.Assign(terminal_device_sets[195]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces196 = ipv4.Assign(terminal_device_sets[196]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces197 = ipv4.Assign(terminal_device_sets[197]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces198 = ipv4.Assign(terminal_device_sets[198]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces199 = ipv4.Assign(terminal_device_sets[199]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces200 = ipv4.Assign(terminal_device_sets[200]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces201 = ipv4.Assign(terminal_device_sets[201]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces202 = ipv4.Assign(terminal_device_sets[202]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces203 = ipv4.Assign(terminal_device_sets[203]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces204 = ipv4.Assign(terminal_device_sets[204]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces205 = ipv4.Assign(terminal_device_sets[205]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces206 = ipv4.Assign(terminal_device_sets[206]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces207 = ipv4.Assign(terminal_device_sets[207]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces208 = ipv4.Assign(terminal_device_sets[208]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces209 = ipv4.Assign(terminal_device_sets[209]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces210 = ipv4.Assign(terminal_device_sets[210]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces211 = ipv4.Assign(terminal_device_sets[211]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces212 = ipv4.Assign(terminal_device_sets[212]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces214 = ipv4.Assign(terminal_device_sets[214]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces215 = ipv4.Assign(terminal_device_sets[215]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces216 = ipv4.Assign(terminal_device_sets[216]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces217 = ipv4.Assign(terminal_device_sets[217]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces218 = ipv4.Assign(terminal_device_sets[218]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces219 = ipv4.Assign(terminal_device_sets[219]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces220 = ipv4.Assign(terminal_device_sets[220]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces221 = ipv4.Assign(terminal_device_sets[221]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces222 = ipv4.Assign(terminal_device_sets[222]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces223 = ipv4.Assign(terminal_device_sets[223]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces224 = ipv4.Assign(terminal_device_sets[224]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces225 = ipv4.Assign(terminal_device_sets[225]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces226 = ipv4.Assign(terminal_device_sets[226]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces227 = ipv4.Assign(terminal_device_sets[227]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces228 = ipv4.Assign(terminal_device_sets[228]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces229 = ipv4.Assign(terminal_device_sets[229]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces230 = ipv4.Assign(terminal_device_sets[230]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces231 = ipv4.Assign(terminal_device_sets[231]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces232 = ipv4.Assign(terminal_device_sets[232]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces233 = ipv4.Assign(terminal_device_sets[233]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces234 = ipv4.Assign(terminal_device_sets[234]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces235 = ipv4.Assign(terminal_device_sets[235]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces236 = ipv4.Assign(terminal_device_sets[236]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces237 = ipv4.Assign(terminal_device_sets[237]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces238 = ipv4.Assign(terminal_device_sets[238]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces239 = ipv4.Assign(terminal_device_sets[239]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces240 = ipv4.Assign(terminal_device_sets[240]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces241 = ipv4.Assign(terminal_device_sets[241]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces242 = ipv4.Assign(terminal_device_sets[242]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces243 = ipv4.Assign(terminal_device_sets[243]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces244 = ipv4.Assign(terminal_device_sets[244]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces245 = ipv4.Assign(terminal_device_sets[245]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces246 = ipv4.Assign(terminal_device_sets[246]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces247 = ipv4.Assign(terminal_device_sets[247]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces248 = ipv4.Assign(terminal_device_sets[248]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces284 = ipv4.Assign(terminal_device_sets[284]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces249 = ipv4.Assign(terminal_device_sets[249]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces250 = ipv4.Assign(terminal_device_sets[250]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces251 = ipv4.Assign(terminal_device_sets[251]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces252 = ipv4.Assign(terminal_device_sets[252]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces253 = ipv4.Assign(terminal_device_sets[253]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces254 = ipv4.Assign(terminal_device_sets[254]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces255 = ipv4.Assign(terminal_device_sets[255]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces256 = ipv4.Assign(terminal_device_sets[256]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces257 = ipv4.Assign(terminal_device_sets[257]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces258 = ipv4.Assign(terminal_device_sets[258]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces259 = ipv4.Assign(terminal_device_sets[259]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces260 = ipv4.Assign(terminal_device_sets[260]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces261 = ipv4.Assign(terminal_device_sets[261]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces262 = ipv4.Assign(terminal_device_sets[262]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces263 = ipv4.Assign(terminal_device_sets[263]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces264 = ipv4.Assign(terminal_device_sets[264]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces265 = ipv4.Assign(terminal_device_sets[265]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces266 = ipv4.Assign(terminal_device_sets[266]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces267 = ipv4.Assign(terminal_device_sets[267]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces268 = ipv4.Assign(terminal_device_sets[268]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces269 = ipv4.Assign(terminal_device_sets[269]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces270 = ipv4.Assign(terminal_device_sets[270]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces272 = ipv4.Assign(terminal_device_sets[272]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces273 = ipv4.Assign(terminal_device_sets[273]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces274 = ipv4.Assign(terminal_device_sets[274]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces275 = ipv4.Assign(terminal_device_sets[275]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces276 = ipv4.Assign(terminal_device_sets[276]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces277 = ipv4.Assign(terminal_device_sets[277]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces278 = ipv4.Assign(terminal_device_sets[278]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces279 = ipv4.Assign(terminal_device_sets[279]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces280 = ipv4.Assign(terminal_device_sets[280]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces281 = ipv4.Assign(terminal_device_sets[281]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces282 = ipv4.Assign(terminal_device_sets[282]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces283 = ipv4.Assign(terminal_device_sets[283]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces285 = ipv4.Assign(terminal_device_sets[285]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces286 = ipv4.Assign(terminal_device_sets[286]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces287 = ipv4.Assign(terminal_device_sets[287]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces288 = ipv4.Assign(terminal_device_sets[288]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces289 = ipv4.Assign(terminal_device_sets[289]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces290 = ipv4.Assign(terminal_device_sets[290]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces291 = ipv4.Assign(terminal_device_sets[291]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces292 = ipv4.Assign(terminal_device_sets[292]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces293 = ipv4.Assign(terminal_device_sets[293]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces294 = ipv4.Assign(terminal_device_sets[294]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces295 = ipv4.Assign(terminal_device_sets[295]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces296 = ipv4.Assign(terminal_device_sets[296]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces297 = ipv4.Assign(terminal_device_sets[297]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces298 = ipv4.Assign(terminal_device_sets[298]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces299 = ipv4.Assign(terminal_device_sets[299]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces300 = ipv4.Assign(terminal_device_sets[300]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces301 = ipv4.Assign(terminal_device_sets[301]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces302 = ipv4.Assign(terminal_device_sets[302]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces303 = ipv4.Assign(terminal_device_sets[303]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces304 = ipv4.Assign(terminal_device_sets[304]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces305 = ipv4.Assign(terminal_device_sets[305]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces306 = ipv4.Assign(terminal_device_sets[306]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces307 = ipv4.Assign(terminal_device_sets[307]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces308 = ipv4.Assign(terminal_device_sets[308]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces309 = ipv4.Assign(terminal_device_sets[309]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces310 = ipv4.Assign(terminal_device_sets[310]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces311 = ipv4.Assign(terminal_device_sets[311]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces312 = ipv4.Assign(terminal_device_sets[312]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces313 = ipv4.Assign(terminal_device_sets[313]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces314 = ipv4.Assign(terminal_device_sets[314]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces315 = ipv4.Assign(terminal_device_sets[315]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces316 = ipv4.Assign(terminal_device_sets[316]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces317 = ipv4.Assign(terminal_device_sets[317]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces318 = ipv4.Assign(terminal_device_sets[318]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces319 = ipv4.Assign(terminal_device_sets[319]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces320 = ipv4.Assign(terminal_device_sets[320]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces321 = ipv4.Assign(terminal_device_sets[321]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces322 = ipv4.Assign(terminal_device_sets[322]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces323 = ipv4.Assign(terminal_device_sets[323]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces324 = ipv4.Assign(terminal_device_sets[324]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces325 = ipv4.Assign(terminal_device_sets[325]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces326 = ipv4.Assign(terminal_device_sets[326]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces327 = ipv4.Assign(terminal_device_sets[327]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces328 = ipv4.Assign(terminal_device_sets[328]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces329 = ipv4.Assign(terminal_device_sets[329]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces330 = ipv4.Assign(terminal_device_sets[330]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces331 = ipv4.Assign(terminal_device_sets[331]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces332 = ipv4.Assign(terminal_device_sets[332]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces334 = ipv4.Assign(terminal_device_sets[334]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces335 = ipv4.Assign(terminal_device_sets[335]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces336 = ipv4.Assign(terminal_device_sets[336]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces337 = ipv4.Assign(terminal_device_sets[337]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces338 = ipv4.Assign(terminal_device_sets[338]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces339 = ipv4.Assign(terminal_device_sets[339]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces340 = ipv4.Assign(terminal_device_sets[340]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces341 = ipv4.Assign(terminal_device_sets[341]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces342 = ipv4.Assign(terminal_device_sets[342]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces343 = ipv4.Assign(terminal_device_sets[343]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces344 = ipv4.Assign(terminal_device_sets[344]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces345 = ipv4.Assign(terminal_device_sets[345]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces346 = ipv4.Assign(terminal_device_sets[346]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces347 = ipv4.Assign(terminal_device_sets[347]);
+	ns3::Ipv4InterfaceContainer PtoPinterfaces348 = ipv4.Assign(terminal_device_sets[348]);
 	ns3::Ipv4InterfaceContainer apinterfaces1 = ipv4.Assign(staDevices1);
 	ns3::Ipv4InterfaceContainer apinterfaces2 = ipv4.Assign(staDevices2);
 	ns3::Ipv4InterfaceContainer apinterfaces3 = ipv4.Assign(staDevices3);
