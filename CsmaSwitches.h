@@ -10,20 +10,15 @@
 
 #include <vector>
 
-void createCsmaSwitch(std::vector<ns3::Ptr<ns3::NodeContainer> >::iterator i) {
-	ns3::Ptr<ns3::NodeContainer> & p = * i;
-	p = ns3::CreateObject<ns3::NodeContainer>();
-	ns3::NodeContainer & x = * p;
+void createCsmaSwitch(ns3::NodeContainer &x) {
 	x.Create(1);
 }
 
 class CsmaSwitches {
-	std::vector<ns3::Ptr<ns3::NodeContainer> > csmaSwitches;
+	std::vector<ns3::NodeContainer> csmaSwitches;
 public:
 	const ns3::NodeContainer& operator[](const int index) const {
-		const ns3::Ptr<ns3::NodeContainer> & p = this->csmaSwitches[index];
-		const ns3::NodeContainer & x = p.operator *();
-		return x;
+		return this->csmaSwitches[index];
 	}
 
 	CsmaSwitches(const int number_of_csma_switches) :
@@ -529,318 +524,318 @@ public:
 
 //igakubutou2F
 //2F EPS
-	//csmaSwitches[214]
+//csmaSwitches[214]
 //sougoukagakukenkyusiencenter-sigenobustation
 //2F kagakuzikkensitu
-	//csmaSwitches[215]
+//csmaSwitches[215]
 //1F siryouhokanko1-EPS
-	//csmaSwitches[216]
+//csmaSwitches[216]
 //rinsyoukenkyutou
 //1F seitaijouhoukaisekikenkyusitu
-	//csmaSwitches[217]
+//csmaSwitches[217]
 //2F josyusitu
-	//csmaSwitches[218]
+//csmaSwitches[218]
 //3F kyoukankenkyusitu2
-	//csmaSwitches[219]
+//csmaSwitches[219]
 //kangogakkakousya
 //3F EPS
-	//csmaSwitches[220]
+//csmaSwitches[220]
 //1F EPS
-	//csmaSwitches[221]
+//csmaSwitches[221]
 //2F EPS
-	//csmaSwitches[222]
+//csmaSwitches[222]
 //4F EPS
-	//csmaSwitches[223]
+//csmaSwitches[223]
 //5F EPS
-	//csmaSwitches[224]
+//csmaSwitches[224]
 //6F EPS
-	//csmaSwitches[225]
+//csmaSwitches[225]
 //2F serversitu-mediacenterbunsitu-sub
-	//csmaSwitches[226]
+//csmaSwitches[226]
 //4F ensyusitu
-	//csmaSwitches[227]
+//csmaSwitches[227]
 //4F EPS
-	//csmaSwitches[228]
+//csmaSwitches[228]
 //gairaitou
 //1F housyasenkachouonpakensasitu
-	//csmaSwitches[229]
+//csmaSwitches[229]
 //huzokubyouin1goukan
 //2F denwakoukankisitu
-	//csmaSwitches[230]
+//csmaSwitches[230]
 //gairaitou
 //1F haidensitu1
-	//csmaSwitches[231]
+//csmaSwitches[231]
 //1F haidensitu2
-	//csmaSwitches[232]
+//csmaSwitches[232]
 //3F eiyousidouditu
-	//csmaSwitches[233]
+//csmaSwitches[233]
 //huzokubyouin1goukan
 //1F EPS-nisi
-	//csmaSwitches[234]
+//csmaSwitches[234]
 //1F EPS-higasi
-	//csmaSwitches[235]
+//csmaSwitches[235]
 //2F denwakoukankisitu
-	//csmaSwitches[236]
+//csmaSwitches[236]
 //2F chuoukensasitu
-	//csmaSwitches[237]
+//csmaSwitches[237]
 //2F EPS
-	//csmaSwitches[238]
+//csmaSwitches[238]
 //3F EPS-nisi
-	//csmaSwitches[239]
+//csmaSwitches[239]
 //3F EPS-higasi
-	//csmaSwitches[240]
+//csmaSwitches[240]
 //4F EPS
-	//csmaSwitches[241]
+//csmaSwitches[241]
 //5F EPS
-	//csmaSwitches[242]
+//csmaSwitches[242]
 //6F EPS
-	//csmaSwitches[243]
+//csmaSwitches[243]
 //7F EPS
-	//csmaSwitches[244]
+//csmaSwitches[244]
 //8F EPS
-	//csmaSwitches[245]
+//csmaSwitches[245]
 //9F EPS
-	//csmaSwitches[246]
+//csmaSwitches[246]
 //222F EPS
-	//csmaSwitches[247]
+//csmaSwitches[247]
 
 //huzokubyouin2goukan
 //1F EPS
-	//csmaSwitches[248]
+//csmaSwitches[248]
 //B1F EPS
-	//csmaSwitches[284]
+//csmaSwitches[284]
 //2F EPS
-	//csmaSwitches[249]
+//csmaSwitches[249]
 //3F EPS
-	//csmaSwitches[250]
+//csmaSwitches[250]
 //4F EPS
-	//csmaSwitches[251]
+//csmaSwitches[251]
 //5F EPS
-	//csmaSwitches[252]
+//csmaSwitches[252]
 //6F EPS
-	//csmaSwitches[253]
+//csmaSwitches[253]
 //7F EPS
-	//csmaSwitches[254]
+//csmaSwitches[254]
 //8F EPS
-	//csmaSwitches[255]
+//csmaSwitches[255]
 
 //sougoukyouikutou
 //2F sosikizissyusitu-main
-	//csmaSwitches[256]
+//csmaSwitches[256]
 //2F sosikizissyusitu-sub1
-	//csmaSwitches[257]
+//csmaSwitches[257]
 //2F sosikizissyusitu-sub2
-	//csmaSwitches[258]
+//csmaSwitches[258]
 //2F sosikizissyusitu-sub3
-	//csmaSwitches[259]
+//csmaSwitches[259]
 
 //huzokutosyokan-igakububunya
 //1F kaigisitu
-	//csmaSwitches[260]
+//csmaSwitches[260]
 
 //kanritou
 //2F kenkyukyouryokusitu
-	//csmaSwitches[261]
+//csmaSwitches[261]
 //3F kaigisitu
-	//csmaSwitches[262]
+//csmaSwitches[262]
 //hukurikaikan
 //1F hendensitu
-	//csmaSwitches[263]
+//csmaSwitches[263]
 
 //igakubutou2F
 //2392800G-259TCL
-	//csmaSwitches[264]
+//csmaSwitches[264]
 //2F networktanmatusitu
-	//csmaSwitches[265]
+//csmaSwitches[265]
 
 //2Fserversitu-ue
-	//csmaSwitches[266]
+//csmaSwitches[266]
 // 2392800G-72TCL
-	//csmaSwitches[267]
+//csmaSwitches[267]
 //1F EPS
-	//csmaSwitches[268]
+//csmaSwitches[268]
 //3F EPS
-	//csmaSwitches[269]
+//csmaSwitches[269]
 //4F EPS
-	//csmaSwitches[270]
+//csmaSwitches[270]
 //okyakusamaSW-1
-	//csmaSwitches[272]
+//csmaSwitches[272]
 //5F EPS
-	//csmaSwitches[273]
+//csmaSwitches[273]
 //Wasay buredo-server
-	//csmaSwitches[274]
+//csmaSwitches[274]
 //2F serversitu-buredoserver
-	//csmaSwitches[275]
+//csmaSwitches[275]
 //2Fserversitu-sita
-	//csmaSwitches[276]
+//csmaSwitches[276]
 //6F EPS
-	//csmaSwitches[277]
+//csmaSwitches[277]
 //7F EPS
-	//csmaSwitches[278]
+//csmaSwitches[278]
 //okyakusamaSW-2
-	//csmaSwitches[279]
+//csmaSwitches[279]
 //8F EPS
-	//csmaSwitches[280]
+//csmaSwitches[280]
 //okyakusamaSW-3
-	//csmaSwitches[281]
+//csmaSwitches[281]
 //9F EPS
-	//csmaSwitches[282]
+//csmaSwitches[282]
 
 //igakubumediacenterbunsitu
-	//csmaSwitches[283]
+//csmaSwitches[283]
 
 //nougakubu2goukan-2Fserversitu
 //buredoserver
-	//csmaSwitches[285]
+//csmaSwitches[285]
 //3F mediacenterbunsitu-1
-	//csmaSwitches[286]
+//csmaSwitches[286]
 //3F mediacenterbunsitu-2
-	//csmaSwitches[287]
+//csmaSwitches[287]
 //3F mediacenterbunsitu-3-left
-	//csmaSwitches[288]
+//csmaSwitches[288]
 //3F mediacenterbunsitu-3-right
-	//csmaSwitches[289]
+//csmaSwitches[289]
 //3F mediacenterbunsitu-4
-	//csmaSwitches[290]
+//csmaSwitches[290]
 
 //nougakubu2goukan
 //2F EPS-left
-	//csmaSwitches[291]
+//csmaSwitches[291]
 //3F 317kougisitu
-	//csmaSwitches[292]
+//csmaSwitches[292]
 //2F huzokutosyokan-multimediacorner
-	//csmaSwitches[293]
+//csmaSwitches[293]
 //2F EPS-right
-	//csmaSwitches[294]
+//csmaSwitches[294]
 //nougakubu3goukan
 //4F seibutukankyoujouhousisutemugaku-conpyutasitu-left
-	//csmaSwitches[295]
+//csmaSwitches[295]
 //1F EPS
-	//csmaSwitches[296]
+//csmaSwitches[296]
 //2F EPS-ue
-	//csmaSwitches[297]
+//csmaSwitches[297]
 //nougakubuseigyokazikkensisetu
 //okyakusamaSW
-	//csmaSwitches[298]
+//csmaSwitches[298]
 //2F EPS-sita
-	//csmaSwitches[299]
+//csmaSwitches[299]
 //3F EPS
-	//csmaSwitches[300]
+//csmaSwitches[300]
 //4F seibutukankyoujouhousisutemugaku-computersitu-right
-	//csmaSwitches[301]
+//csmaSwitches[301]
 //5F EPS-ue
-	//csmaSwitches[302]
+//csmaSwitches[302]
 //5F EPS-sita
-	//csmaSwitches[303]
+//csmaSwitches[303]
 
 //nougakubuhonkan-minami
 //3F EPS-left
-	//csmaSwitches[304]
+//csmaSwitches[304]
 //1F EPS
-	//csmaSwitches[305]
+//csmaSwitches[305]
 //2F EPS-ue
-	//csmaSwitches[306]
+//csmaSwitches[306]
 //2F EPS-sita
-	//csmaSwitches[307]
+//csmaSwitches[307]
 //3F EPS
-	//csmaSwitches[308]
+//csmaSwitches[308]
 //4F EPS
-	//csmaSwitches[309]
+//csmaSwitches[309]
 //5F EPS
-	//csmaSwitches[310]
+//csmaSwitches[310]
 //sougoukagakukenkyusiencenter
 //2F EPS
-	//csmaSwitches[311]
+//csmaSwitches[311]
 
 //rengounougakukenkyuka
 //2F inseikenkyusitu
-	//csmaSwitches[312]
+//csmaSwitches[312]
 //1F zimusitu
-	//csmaSwitches[313]
+//csmaSwitches[313]
 //3F senninkyoukanzikkensitu
-	//csmaSwitches[314]
+//csmaSwitches[314]
 
 //yukarikaikan
 //1F zimusitu
-	//csmaSwitches[315]
+//csmaSwitches[315]
 
 //3F serversitu-mediacenterbunsitu-right
-	//csmaSwitches[316]
+//csmaSwitches[316]
 
 //nougakubuhonkan-kita
 //1F EPS-left
-	//csmaSwitches[317]
+//csmaSwitches[317]
 //1F EPS-right
-	//csmaSwitches[318]
+//csmaSwitches[318]
 //2F EPS
-	//csmaSwitches[319]
+//csmaSwitches[319]
 //3F EPS
-	//csmaSwitches[320]
+//csmaSwitches[320]
 //6F EPS-left
-	//csmaSwitches[321]
+//csmaSwitches[321]
 //4F EPS
-	//csmaSwitches[322]
+//csmaSwitches[322]
 //5F EPS
-	//csmaSwitches[323]
+//csmaSwitches[323]
 //6F EPS-right
-	//csmaSwitches[324]
+//csmaSwitches[324]
 
 //mikazikkensitu
 //2F EPS
-	//csmaSwitches[325]
+//csmaSwitches[325]
 
 //huzokukoukousya-minami
 //1F EPS
-	//csmaSwitches[326]
+//csmaSwitches[326]
 //5F jouhousiryousakuseisitu
-	//csmaSwitches[327]
+//csmaSwitches[327]
 
 //huzokukoukousya-kita--huzokukoukousya-naka
 //3F jouhousiryousakuseisitu
-	//csmaSwitches[328]
+//csmaSwitches[328]
 //2F kitarouka
-	//csmaSwitches[329]
+//csmaSwitches[329]
 //2F minamirouka
-	//csmaSwitches[330]
+//csmaSwitches[330]
 
 //kankyousangyoukenkyusisetu
 //1F keisankisitu
-	//csmaSwitches[331]
+//csmaSwitches[331]
 
 //syokubutukoujousama
 //2F serverkisitu
-	//csmaSwitches[332]
+//csmaSwitches[332]
 
 //sougoujouhoumediacenter 2Fnetwork-kanrisituCATV
-	//csmaSwitches[333]
+//csmaSwitches[333]
 
 //huzokusyougakkoukousya
 //1F zimusitu-left
-	//csmaSwitches[334]
+//csmaSwitches[334]
 //1F zimusitu-right
-	//csmaSwitches[335]
+//csmaSwitches[335]
 
 //huzokusyougakkou-centertou 1F bunkensiryousitu
-	//csmaSwitches[336]
+//csmaSwitches[336]
 
 //huzokusyougakkoukousya
 //2F sichoukakusitu
-	//csmaSwitches[337]
+//csmaSwitches[337]
 
 //huzokuchugakkou-honkan
 //2F kaigisitu
-	//csmaSwitches[338]
+//csmaSwitches[338]
 //1F jouhoukyouikusitu
-	//csmaSwitches[339]
+//csmaSwitches[339]
 
 //huzokuyougogakkoukousya
 //1F keisankisitu
-	//csmaSwitches[340]
+//csmaSwitches[340]
 //ehimedaigakuSW
-	//csmaSwitches[341]
+//csmaSwitches[341]
 
 //huzokuyoutienhonkan
 //1F kyoukansitu
-	//csmaSwitches[342]
+//csmaSwitches[342]
 
 #endif /* CSMASWITCH_H_ */

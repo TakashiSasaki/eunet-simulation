@@ -8,22 +8,16 @@
 #ifndef TERMINALSETS_H_
 #define TERMINALSETS_H_
 
-void initTerminalSet(std::vector<ns3::Ptr<ns3::NodeContainer> >::iterator& i) {
-	ns3::Ptr<ns3::NodeContainer> & p = * i;
-	p = ns3::CreateObject<ns3::NodeContainer>();
-	ns3::NodeContainer & x = * p;
+void initTerminalSet(ns3::NodeContainer & x) {
 	x.Create(15);
 }
 
 class TerminalSets {
-	std::vector<ns3::Ptr<ns3::NodeContainer> > terminalSets;
+	std::vector<ns3::NodeContainer>  terminalSets;
 public:
 
 	const ns3::NodeContainer& operator[](const int index) const {
-		const ns3::Ptr<ns3::NodeContainer> & p = terminalSets.operator [](
-				index);
-		const ns3::NodeContainer & x = p.operator *();
-		return x;
+		return terminalSets[index];
 	}
 
 	TerminalSets(const int number_of_terminal_set) :
