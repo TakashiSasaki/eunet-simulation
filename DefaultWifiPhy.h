@@ -18,7 +18,7 @@ public:
 	}
 };
 
-class DefaultWifiPhy: ns3::YansWifiPhyHelper {
+class DefaultWifiPhy: public ns3::YansWifiPhyHelper {
 	DefaultWifiChannelHelper defaultWifiChannelHelper;
 	ns3::Ptr<ns3::YansWifiChannel> pYansWifiChannel;
 public:

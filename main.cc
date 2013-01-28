@@ -23,6 +23,7 @@
 #include "WifiApNodes.h"
 #include "TerminalDeviceSets.h"
 #include "ApDeviceSets.h"
+#include "DefaultWifiPhy.h"
 
 NS_LOG_COMPONENT_DEFINE("OnOffApplication");
 
