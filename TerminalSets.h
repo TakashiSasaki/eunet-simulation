@@ -13,7 +13,7 @@ void initTerminalSet(ns3::NodeContainer & x) {
 }
 
 class TerminalSets {
-	std::vector<ns3::NodeContainer>  terminalSets;
+	std::vector<ns3::NodeContainer> terminalSets;
 public:
 
 	const ns3::NodeContainer& operator[](const int index) const {

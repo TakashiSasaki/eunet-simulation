@@ -11,7 +11,7 @@
 class WifiStaNodeSets {
 	std::vector<ns3::NodeContainer> wifiStaNodeSets;
 
-	void initWifiStaNodeSet(ns3::NodeContainer x) {
+	static void initWifiStaNodeSet(ns3::NodeContainer & x) {
 		x.Create(15);
 	}
 

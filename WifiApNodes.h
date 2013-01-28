@@ -11,7 +11,7 @@
 class WifiApNodes {
 	std::vector<ns3::NodeContainer> wifiApNodes;
 
-	void initWifiApNode(ns3::NodeContainer x) {
+	static void initWifiApNode(ns3::NodeContainer &x) {
 		x.Create(1);
 	}
 

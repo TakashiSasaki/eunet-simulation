@@ -19,6 +19,8 @@
 #include "SwitchDevices.h"
 #include "CsmaSwitches.h"
 #include "TerminalSets.h"
+#include "WifiStaNodeSets.h"
+#include "WifiApNodes.h"
 
 NS_LOG_COMPONENT_DEFINE("OnOffApplication");
 
