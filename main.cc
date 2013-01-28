@@ -82,1791 +82,603 @@ int main(int argc, char** argv) {
 	Wifi.SetRemoteStationManager("ns3::ArfWifiManager");
 
 //wifi channel
-	ns3::YansWifiChannelHelper wifiChannel;
-	wifiChannel = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy;
-	wifiPhy = ns3::YansWifiPhyHelper::Default();
-	wifiPhy.SetChannel(wifiChannel.Create());
+	DefaultWifiPhy wifiPhy;
 
 	//wifiChannel = ns.wifi.YansWifiChannelHelper.Default()
 	//wifiPhy = ns.wifi.YansWifiPhyHelper.Default()
 	//wifiPhy.SetChannel(wifiChannel.Create());
 
-	ns3::YansWifiChannelHelper wifiChannel2;
-	wifiChannel2 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy2;
-	wifiPhy2 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy2.SetChannel(wifiChannel2.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel3;
-	wifiChannel3 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy3;
-	wifiPhy3 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy3.SetChannel(wifiChannel3.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel4;
-	wifiChannel4 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy4;
-	wifiPhy4 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy4.SetChannel(wifiChannel4.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel5;
-	wifiChannel5 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy5;
-	wifiPhy5 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy5.SetChannel(wifiChannel5.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel6;
-	wifiChannel6 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy6;
-	wifiPhy6 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy6.SetChannel(wifiChannel6.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel7;
-	wifiChannel7 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy7;
-	wifiPhy7 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy7.SetChannel(wifiChannel7.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel8;
-	wifiChannel8 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy8;
-	wifiPhy8 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy8.SetChannel(wifiChannel8.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel9;
-	wifiChannel9 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy9;
-	wifiPhy9 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy9.SetChannel(wifiChannel9.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel10;
-	wifiChannel10 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy10;
-	wifiPhy10 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy10.SetChannel(wifiChannel10.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel11;
-	wifiChannel11 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy11;
-	wifiPhy11 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy11.SetChannel(wifiChannel11.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel12;
-	wifiChannel12 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy12;
-	wifiPhy12 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy12.SetChannel(wifiChannel12.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel13;
-	wifiChannel13 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy13;
-	wifiPhy13 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy13.SetChannel(wifiChannel13.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel14;
-	wifiChannel14 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy14;
-	wifiPhy14 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy14.SetChannel(wifiChannel14.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel15;
-	wifiChannel15 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy15;
-	wifiPhy15 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy15.SetChannel(wifiChannel15.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel16;
-	wifiChannel16 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy16;
-	wifiPhy16 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy16.SetChannel(wifiChannel16.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel17;
-	wifiChannel17 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy17;
-	wifiPhy17 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy17.SetChannel(wifiChannel17.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel18;
-	wifiChannel18 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy18;
-	wifiPhy18 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy18.SetChannel(wifiChannel18.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel19;
-	wifiChannel19 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy19;
-	wifiPhy19 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy19.SetChannel(wifiChannel19.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel20;
-	wifiChannel20 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy20;
-	wifiPhy20 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy20.SetChannel(wifiChannel20.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel21;
-	wifiChannel21 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy21;
-	wifiPhy21 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy21.SetChannel(wifiChannel21.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel22;
-	wifiChannel22 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy22;
-	wifiPhy22 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy22.SetChannel(wifiChannel22.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel23;
-	wifiChannel23 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy23;
-	wifiPhy23 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy23.SetChannel(wifiChannel23.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel24;
-	wifiChannel24 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy24;
-	wifiPhy24 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy24.SetChannel(wifiChannel24.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel25;
-	wifiChannel25 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy25;
-	wifiPhy25 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy25.SetChannel(wifiChannel25.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel26;
-	wifiChannel26 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy26;
-	wifiPhy26 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy26.SetChannel(wifiChannel26.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel27;
-	wifiChannel27 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy27;
-	wifiPhy27 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy27.SetChannel(wifiChannel27.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel28;
-	wifiChannel28 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy28;
-	wifiPhy28 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy28.SetChannel(wifiChannel28.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel29;
-	wifiChannel29 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy29;
-	wifiPhy29 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy29.SetChannel(wifiChannel29.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel30;
-	wifiChannel30 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy30;
-	wifiPhy30 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy30.SetChannel(wifiChannel30.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel31;
-	wifiChannel31 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy31;
-	wifiPhy31 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy31.SetChannel(wifiChannel31.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel32;
-	wifiChannel32 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy32;
-	wifiPhy32 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy32.SetChannel(wifiChannel32.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel33;
-	wifiChannel33 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy33;
-	wifiPhy33 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy33.SetChannel(wifiChannel33.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel34;
-	wifiChannel34 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy34;
-	wifiPhy34 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy34.SetChannel(wifiChannel34.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel35;
-	wifiChannel35 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy35;
-	wifiPhy35 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy35.SetChannel(wifiChannel35.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel36;
-	wifiChannel36 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy36;
-	wifiPhy36 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy36.SetChannel(wifiChannel36.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel37;
-	wifiChannel37 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy37;
-	wifiPhy37 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy37.SetChannel(wifiChannel37.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel38;
-	wifiChannel38 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy38;
-	wifiPhy38 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy38.SetChannel(wifiChannel38.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel39;
-	wifiChannel39 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy39;
-	wifiPhy39 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy39.SetChannel(wifiChannel39.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel40;
-	wifiChannel40 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy40;
-	wifiPhy40 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy40.SetChannel(wifiChannel40.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel41;
-	wifiChannel41 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy41;
-	wifiPhy41 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy41.SetChannel(wifiChannel41.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel42;
-	wifiChannel42 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy42;
-	wifiPhy42 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy42.SetChannel(wifiChannel42.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel43;
-	wifiChannel43 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy43;
-	wifiPhy43 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy43.SetChannel(wifiChannel43.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel44;
-	wifiChannel44 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy44;
-	wifiPhy44 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy44.SetChannel(wifiChannel44.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel45;
-	wifiChannel45 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy45;
-	wifiPhy45 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy45.SetChannel(wifiChannel45.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel46;
-	wifiChannel46 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy46;
-	wifiPhy46 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy46.SetChannel(wifiChannel46.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel47;
-	wifiChannel47 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy47;
-	wifiPhy47 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy47.SetChannel(wifiChannel47.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel48;
-	wifiChannel48 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy48;
-	wifiPhy48 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy48.SetChannel(wifiChannel48.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel49;
-	wifiChannel49 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy49;
-	wifiPhy49 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy49.SetChannel(wifiChannel49.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel50;
-	wifiChannel50 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy50;
-	wifiPhy50 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy50.SetChannel(wifiChannel50.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel51;
-	wifiChannel51 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy51;
-	wifiPhy51 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy51.SetChannel(wifiChannel51.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel52;
-	wifiChannel52 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy52;
-	wifiPhy52 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy52.SetChannel(wifiChannel52.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel53;
-	wifiChannel53 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy53;
-	wifiPhy53 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy53.SetChannel(wifiChannel53.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel54;
-	wifiChannel54 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy54;
-	wifiPhy54 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy54.SetChannel(wifiChannel54.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel55;
-	wifiChannel55 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy55;
-	wifiPhy55 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy55.SetChannel(wifiChannel55.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel56;
-	wifiChannel56 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy56;
-	wifiPhy56 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy56.SetChannel(wifiChannel56.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel57;
-	wifiChannel57 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy57;
-	wifiPhy57 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy57.SetChannel(wifiChannel57.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel58;
-	wifiChannel58 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy58;
-	wifiPhy58 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy58.SetChannel(wifiChannel58.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel59;
-	wifiChannel59 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy59;
-	wifiPhy59 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy59.SetChannel(wifiChannel59.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel60;
-	wifiChannel60 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy60;
-	wifiPhy60 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy60.SetChannel(wifiChannel60.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel61;
-	wifiChannel61 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy61;
-	wifiPhy61 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy61.SetChannel(wifiChannel61.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel62;
-	wifiChannel62 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy62;
-	wifiPhy62 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy62.SetChannel(wifiChannel62.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel63;
-	wifiChannel63 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy63;
-	wifiPhy63 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy63.SetChannel(wifiChannel63.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel64;
-	wifiChannel64 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy64;
-	wifiPhy64 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy64.SetChannel(wifiChannel64.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel65;
-	wifiChannel65 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy65;
-	wifiPhy65 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy65.SetChannel(wifiChannel65.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel66;
-	wifiChannel66 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy66;
-	wifiPhy66 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy66.SetChannel(wifiChannel66.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel67;
-	wifiChannel67 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy67;
-	wifiPhy67 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy67.SetChannel(wifiChannel67.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel68;
-	wifiChannel68 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy68;
-	wifiPhy68 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy68.SetChannel(wifiChannel68.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel69;
-	wifiChannel69 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy69;
-	wifiPhy69 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy69.SetChannel(wifiChannel69.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel70;
-	wifiChannel70 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy70;
-	wifiPhy70 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy70.SetChannel(wifiChannel70.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel71;
-	wifiChannel71 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy71;
-	wifiPhy71 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy71.SetChannel(wifiChannel71.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel72;
-	wifiChannel72 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy72;
-	wifiPhy72 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy72.SetChannel(wifiChannel72.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel73;
-	wifiChannel73 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy73;
-	wifiPhy73 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy73.SetChannel(wifiChannel73.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel74;
-	wifiChannel74 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy74;
-	wifiPhy74 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy74.SetChannel(wifiChannel74.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel75;
-	wifiChannel75 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy75;
-	wifiPhy75 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy75.SetChannel(wifiChannel75.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel76;
-	wifiChannel76 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy76;
-	wifiPhy76 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy76.SetChannel(wifiChannel76.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel77;
-	wifiChannel77 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy77;
-	wifiPhy77 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy77.SetChannel(wifiChannel77.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel78;
-	wifiChannel78 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy78;
-	wifiPhy78 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy78.SetChannel(wifiChannel78.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel79;
-	wifiChannel79 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy79;
-	wifiPhy79 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy79.SetChannel(wifiChannel79.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel80;
-	wifiChannel80 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy80;
-	wifiPhy80 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy80.SetChannel(wifiChannel80.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel81;
-	wifiChannel81 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy81;
-	wifiPhy81 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy81.SetChannel(wifiChannel81.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel82;
-	wifiChannel82 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy82;
-	wifiPhy82 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy82.SetChannel(wifiChannel82.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel83;
-	wifiChannel83 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy83;
-	wifiPhy83 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy83.SetChannel(wifiChannel83.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel84;
-	wifiChannel84 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy84;
-	wifiPhy84 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy84.SetChannel(wifiChannel84.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel85;
-	wifiChannel85 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy85;
-	wifiPhy85 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy85.SetChannel(wifiChannel85.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel86;
-	wifiChannel86 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy86;
-	wifiPhy86 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy86.SetChannel(wifiChannel86.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel87;
-	wifiChannel87 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy87;
-	wifiPhy87 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy87.SetChannel(wifiChannel87.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel88;
-	wifiChannel88 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy88;
-	wifiPhy88 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy88.SetChannel(wifiChannel88.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel89;
-	wifiChannel89 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy89;
-	wifiPhy89 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy89.SetChannel(wifiChannel89.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel90;
-	wifiChannel90 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy90;
-	wifiPhy90 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy90.SetChannel(wifiChannel90.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel91;
-	wifiChannel91 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy91;
-	wifiPhy91 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy91.SetChannel(wifiChannel91.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel92;
-	wifiChannel92 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy92;
-	wifiPhy92 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy92.SetChannel(wifiChannel92.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel93;
-	wifiChannel93 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy93;
-	wifiPhy93 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy93.SetChannel(wifiChannel93.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel94;
-	wifiChannel94 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy94;
-	wifiPhy94 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy94.SetChannel(wifiChannel94.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel95;
-	wifiChannel95 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy95;
-	wifiPhy95 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy95.SetChannel(wifiChannel95.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel96;
-	wifiChannel96 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy96;
-	wifiPhy96 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy96.SetChannel(wifiChannel96.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel97;
-	wifiChannel97 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy97;
-	wifiPhy97 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy97.SetChannel(wifiChannel97.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel98;
-	wifiChannel98 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy98;
-	wifiPhy98 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy98.SetChannel(wifiChannel98.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel99;
-	wifiChannel99 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy99;
-	wifiPhy99 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy99.SetChannel(wifiChannel99.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel100;
-	wifiChannel100 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy100;
-	wifiPhy100 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy100.SetChannel(wifiChannel100.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel101;
-	wifiChannel101 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy101;
-	wifiPhy101 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy101.SetChannel(wifiChannel101.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel102;
-	wifiChannel102 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy102;
-	wifiPhy102 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy102.SetChannel(wifiChannel102.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel103;
-	wifiChannel103 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy103;
-	wifiPhy103 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy103.SetChannel(wifiChannel103.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel104;
-	wifiChannel104 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy104;
-	wifiPhy104 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy104.SetChannel(wifiChannel104.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel105;
-	wifiChannel105 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy105;
-	wifiPhy105 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy105.SetChannel(wifiChannel105.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel106;
-	wifiChannel106 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy106;
-	wifiPhy106 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy106.SetChannel(wifiChannel106.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel107;
-	wifiChannel107 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy107;
-	wifiPhy107 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy107.SetChannel(wifiChannel107.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel108;
-	wifiChannel108 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy108;
-	wifiPhy108 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy108.SetChannel(wifiChannel108.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel109;
-	wifiChannel109 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy109;
-	wifiPhy109 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy109.SetChannel(wifiChannel109.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel110;
-	wifiChannel110 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy110;
-	wifiPhy110 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy110.SetChannel(wifiChannel110.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel111;
-	wifiChannel111 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy111;
-	wifiPhy111 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy111.SetChannel(wifiChannel111.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel112;
-	wifiChannel112 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy112;
-	wifiPhy112 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy112.SetChannel(wifiChannel112.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel113;
-	wifiChannel113 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy113;
-	wifiPhy113 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy113.SetChannel(wifiChannel113.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel114;
-	wifiChannel114 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy114;
-	wifiPhy114 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy114.SetChannel(wifiChannel114.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel115;
-	wifiChannel115 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy115;
-	wifiPhy115 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy115.SetChannel(wifiChannel115.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel116;
-	wifiChannel116 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy116;
-	wifiPhy116 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy116.SetChannel(wifiChannel116.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel117;
-	wifiChannel117 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy117;
-	wifiPhy117 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy117.SetChannel(wifiChannel117.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel118;
-	wifiChannel118 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy118;
-	wifiPhy118 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy118.SetChannel(wifiChannel118.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel119;
-	wifiChannel119 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy119;
-	wifiPhy119 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy119.SetChannel(wifiChannel119.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel120;
-	wifiChannel120 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy120;
-	wifiPhy120 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy120.SetChannel(wifiChannel120.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel121;
-	wifiChannel121 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy121;
-	wifiPhy121 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy121.SetChannel(wifiChannel121.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel122;
-	wifiChannel122 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy122;
-	wifiPhy122 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy122.SetChannel(wifiChannel122.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel123;
-	wifiChannel123 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy123;
-	wifiPhy123 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy123.SetChannel(wifiChannel123.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel124;
-	wifiChannel124 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy124;
-	wifiPhy124 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy124.SetChannel(wifiChannel124.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel125;
-	wifiChannel125 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy125;
-	wifiPhy125 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy125.SetChannel(wifiChannel125.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel126;
-	wifiChannel126 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy126;
-	wifiPhy126 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy126.SetChannel(wifiChannel126.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel127;
-	wifiChannel127 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy127;
-	wifiPhy127 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy127.SetChannel(wifiChannel127.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel128;
-	wifiChannel128 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy128;
-	wifiPhy128 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy128.SetChannel(wifiChannel128.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel129;
-	wifiChannel129 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy129;
-	wifiPhy129 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy129.SetChannel(wifiChannel129.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel130;
-	wifiChannel130 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy130;
-	wifiPhy130 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy130.SetChannel(wifiChannel130.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel131;
-	wifiChannel131 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy131;
-	wifiPhy131 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy131.SetChannel(wifiChannel131.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel132;
-	wifiChannel132 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy132;
-	wifiPhy132 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy132.SetChannel(wifiChannel132.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel133;
-	wifiChannel133 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy133;
-	wifiPhy133 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy133.SetChannel(wifiChannel133.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel134;
-	wifiChannel134 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy134;
-	wifiPhy134 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy134.SetChannel(wifiChannel134.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel135;
-	wifiChannel135 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy135;
-	wifiPhy135 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy135.SetChannel(wifiChannel135.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel136;
-	wifiChannel136 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy136;
-	wifiPhy136 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy136.SetChannel(wifiChannel136.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel137;
-	wifiChannel137 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy137;
-	wifiPhy137 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy137.SetChannel(wifiChannel137.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel138;
-	wifiChannel138 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy138;
-	wifiPhy138 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy138.SetChannel(wifiChannel138.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel139;
-	wifiChannel139 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy139;
-	wifiPhy139 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy139.SetChannel(wifiChannel139.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel140;
-	wifiChannel140 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy140;
-	wifiPhy140 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy140.SetChannel(wifiChannel140.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel141;
-	wifiChannel141 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy141;
-	wifiPhy141 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy141.SetChannel(wifiChannel141.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel142;
-	wifiChannel142 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy142;
-	wifiPhy142 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy142.SetChannel(wifiChannel142.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel143;
-	wifiChannel143 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy143;
-	wifiPhy143 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy143.SetChannel(wifiChannel143.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel144;
-	wifiChannel144 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy144;
-	wifiPhy144 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy144.SetChannel(wifiChannel144.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel145;
-	wifiChannel145 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy145;
-	wifiPhy145 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy145.SetChannel(wifiChannel145.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel146;
-	wifiChannel146 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy146;
-	wifiPhy146 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy146.SetChannel(wifiChannel146.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel147;
-	wifiChannel147 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy147;
-	wifiPhy147 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy147.SetChannel(wifiChannel147.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel148;
-	wifiChannel148 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy148;
-	wifiPhy148 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy148.SetChannel(wifiChannel148.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel149;
-	wifiChannel149 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy149;
-	wifiPhy149 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy149.SetChannel(wifiChannel149.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel150;
-	wifiChannel150 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy150;
-	wifiPhy150 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy150.SetChannel(wifiChannel150.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel151;
-	wifiChannel151 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy151;
-	wifiPhy151 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy151.SetChannel(wifiChannel151.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel152;
-	wifiChannel152 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy152;
-	wifiPhy152 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy152.SetChannel(wifiChannel152.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel153;
-	wifiChannel153 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy153;
-	wifiPhy153 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy153.SetChannel(wifiChannel153.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel154;
-	wifiChannel154 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy154;
-	wifiPhy154 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy154.SetChannel(wifiChannel154.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel155;
-	wifiChannel155 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy155;
-	wifiPhy155 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy155.SetChannel(wifiChannel155.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel156;
-	wifiChannel156 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy156;
-	wifiPhy156 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy156.SetChannel(wifiChannel156.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel157;
-	wifiChannel157 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy157;
-	wifiPhy157 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy157.SetChannel(wifiChannel157.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel158;
-	wifiChannel158 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy158;
-	wifiPhy158 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy158.SetChannel(wifiChannel158.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel159;
-	wifiChannel159 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy159;
-	wifiPhy159 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy159.SetChannel(wifiChannel159.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel160;
-	wifiChannel160 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy160;
-	wifiPhy160 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy160.SetChannel(wifiChannel160.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel161;
-	wifiChannel161 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy161;
-	wifiPhy161 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy161.SetChannel(wifiChannel161.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel162;
-	wifiChannel162 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy162;
-	wifiPhy162 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy162.SetChannel(wifiChannel162.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel163;
-	wifiChannel163 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy163;
-	wifiPhy163 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy163.SetChannel(wifiChannel163.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel164;
-	wifiChannel164 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy164;
-	wifiPhy164 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy164.SetChannel(wifiChannel164.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel165;
-	wifiChannel165 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy165;
-	wifiPhy165 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy165.SetChannel(wifiChannel165.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel166;
-	wifiChannel166 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy166;
-	wifiPhy166 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy166.SetChannel(wifiChannel166.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel167;
-	wifiChannel167 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy167;
-	wifiPhy167 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy167.SetChannel(wifiChannel167.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel168;
-	wifiChannel168 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy168;
-	wifiPhy168 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy168.SetChannel(wifiChannel168.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel169;
-	wifiChannel169 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy169;
-	wifiPhy169 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy169.SetChannel(wifiChannel169.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel170;
-	wifiChannel170 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy170;
-	wifiPhy170 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy170.SetChannel(wifiChannel170.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel171;
-	wifiChannel171 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy171;
-	wifiPhy171 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy171.SetChannel(wifiChannel171.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel172;
-	wifiChannel172 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy172;
-	wifiPhy172 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy172.SetChannel(wifiChannel172.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel173;
-	wifiChannel173 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy173;
-	wifiPhy173 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy173.SetChannel(wifiChannel173.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel174;
-	wifiChannel174 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy174;
-	wifiPhy174 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy174.SetChannel(wifiChannel174.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel175;
-	wifiChannel175 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy175;
-	wifiPhy175 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy175.SetChannel(wifiChannel175.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel176;
-	wifiChannel176 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy176;
-	wifiPhy176 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy176.SetChannel(wifiChannel176.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel177;
-	wifiChannel177 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy177;
-	wifiPhy177 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy177.SetChannel(wifiChannel177.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel178;
-	wifiChannel178 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy178;
-	wifiPhy178 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy178.SetChannel(wifiChannel178.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel179;
-	wifiChannel179 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy179;
-	wifiPhy179 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy179.SetChannel(wifiChannel179.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel180;
-	wifiChannel180 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy180;
-	wifiPhy180 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy180.SetChannel(wifiChannel180.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel181;
-	wifiChannel181 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy181;
-	wifiPhy181 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy181.SetChannel(wifiChannel181.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel182;
-	wifiChannel182 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy182;
-	wifiPhy182 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy182.SetChannel(wifiChannel182.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel183;
-	wifiChannel183 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy183;
-	wifiPhy183 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy183.SetChannel(wifiChannel183.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel184;
-	wifiChannel184 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy184;
-	wifiPhy184 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy184.SetChannel(wifiChannel184.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel185;
-	wifiChannel185 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy185;
-	wifiPhy185 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy185.SetChannel(wifiChannel185.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel186;
-	wifiChannel186 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy186;
-	wifiPhy186 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy186.SetChannel(wifiChannel186.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel187;
-	wifiChannel187 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy187;
-	wifiPhy187 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy187.SetChannel(wifiChannel187.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel188;
-	wifiChannel188 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy188;
-	wifiPhy188 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy188.SetChannel(wifiChannel188.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel189;
-	wifiChannel189 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy189;
-	wifiPhy189 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy189.SetChannel(wifiChannel189.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel190;
-	wifiChannel190 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy190;
-	wifiPhy190 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy190.SetChannel(wifiChannel190.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel191;
-	wifiChannel191 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy191;
-	wifiPhy191 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy191.SetChannel(wifiChannel191.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel192;
-	wifiChannel192 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy192;
-	wifiPhy192 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy192.SetChannel(wifiChannel192.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel193;
-	wifiChannel193 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy193;
-	wifiPhy193 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy193.SetChannel(wifiChannel193.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel194;
-	wifiChannel194 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy194;
-	wifiPhy194 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy194.SetChannel(wifiChannel194.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel195;
-	wifiChannel195 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy195;
-	wifiPhy195 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy195.SetChannel(wifiChannel195.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel196;
-	wifiChannel196 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy196;
-	wifiPhy196 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy196.SetChannel(wifiChannel196.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel197;
-	wifiChannel197 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy197;
-	wifiPhy197 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy197.SetChannel(wifiChannel197.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel198;
-	wifiChannel198 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy198;
-	wifiPhy198 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy198.SetChannel(wifiChannel198.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel199;
-	wifiChannel199 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy199;
-	wifiPhy199 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy199.SetChannel(wifiChannel199.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel200;
-	wifiChannel200 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy200;
-	wifiPhy200 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy200.SetChannel(wifiChannel200.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel201;
-	wifiChannel201 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy201;
-	wifiPhy201 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy201.SetChannel(wifiChannel201.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel202;
-	wifiChannel202 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy202;
-	wifiPhy202 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy202.SetChannel(wifiChannel202.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel203;
-	wifiChannel203 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy203;
-	wifiPhy203 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy203.SetChannel(wifiChannel203.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel204;
-	wifiChannel204 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy204;
-	wifiPhy204 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy204.SetChannel(wifiChannel204.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel205;
-	wifiChannel205 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy205;
-	wifiPhy205 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy205.SetChannel(wifiChannel205.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel206;
-	wifiChannel206 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy206;
-	wifiPhy206 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy206.SetChannel(wifiChannel206.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel207;
-	wifiChannel207 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy207;
-	wifiPhy207 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy207.SetChannel(wifiChannel207.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel208;
-	wifiChannel208 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy208;
-	wifiPhy208 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy208.SetChannel(wifiChannel208.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel209;
-	wifiChannel209 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy209;
-	wifiPhy209 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy209.SetChannel(wifiChannel209.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel210;
-	wifiChannel210 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy210;
-	wifiPhy210 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy210.SetChannel(wifiChannel210.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel211;
-	wifiChannel211 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy211;
-	wifiPhy211 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy211.SetChannel(wifiChannel211.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel212;
-	wifiChannel212 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy212;
-	wifiPhy212 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy212.SetChannel(wifiChannel212.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel213;
-	wifiChannel213 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy213;
-	wifiPhy213 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy213.SetChannel(wifiChannel213.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel214;
-	wifiChannel214 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy214;
-	wifiPhy214 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy214.SetChannel(wifiChannel214.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel215;
-	wifiChannel215 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy215;
-	wifiPhy215 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy215.SetChannel(wifiChannel215.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel216;
-	wifiChannel216 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy216;
-	wifiPhy216 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy216.SetChannel(wifiChannel216.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel217;
-	wifiChannel217 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy217;
-	wifiPhy217 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy217.SetChannel(wifiChannel217.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel218;
-	wifiChannel218 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy218;
-	wifiPhy218 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy218.SetChannel(wifiChannel218.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel219;
-	wifiChannel219 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy219;
-	wifiPhy219 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy219.SetChannel(wifiChannel219.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel220;
-	wifiChannel220 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy220;
-	wifiPhy220 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy220.SetChannel(wifiChannel220.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel221;
-	wifiChannel221 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy221;
-	wifiPhy221 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy221.SetChannel(wifiChannel221.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel222;
-	wifiChannel222 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy222;
-	wifiPhy222 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy222.SetChannel(wifiChannel222.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel223;
-	wifiChannel223 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy223;
-	wifiPhy223 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy223.SetChannel(wifiChannel223.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel224;
-	wifiChannel224 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy224;
-	wifiPhy224 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy224.SetChannel(wifiChannel224.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel225;
-	wifiChannel225 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy225;
-	wifiPhy225 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy225.SetChannel(wifiChannel225.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel226;
-	wifiChannel226 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy226;
-	wifiPhy226 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy226.SetChannel(wifiChannel226.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel227;
-	wifiChannel227 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy227;
-	wifiPhy227 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy227.SetChannel(wifiChannel227.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel228;
-	wifiChannel228 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy228;
-	wifiPhy228 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy228.SetChannel(wifiChannel228.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel229;
-	wifiChannel229 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy229;
-	wifiPhy229 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy229.SetChannel(wifiChannel229.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel230;
-	wifiChannel230 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy230;
-	wifiPhy230 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy230.SetChannel(wifiChannel230.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel231;
-	wifiChannel231 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy231;
-	wifiPhy231 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy231.SetChannel(wifiChannel231.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel232;
-	wifiChannel232 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy232;
-	wifiPhy232 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy232.SetChannel(wifiChannel232.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel233;
-	wifiChannel233 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy233;
-	wifiPhy233 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy233.SetChannel(wifiChannel233.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel234;
-	wifiChannel234 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy234;
-	wifiPhy234 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy234.SetChannel(wifiChannel234.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel235;
-	wifiChannel235 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy235;
-	wifiPhy235 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy235.SetChannel(wifiChannel235.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel236;
-	wifiChannel236 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy236;
-	wifiPhy236 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy236.SetChannel(wifiChannel236.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel237;
-	wifiChannel237 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy237;
-	wifiPhy237 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy237.SetChannel(wifiChannel237.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel238;
-	wifiChannel238 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy238;
-	wifiPhy238 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy238.SetChannel(wifiChannel238.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel239;
-	wifiChannel239 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy239;
-	wifiPhy239 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy239.SetChannel(wifiChannel239.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel240;
-	wifiChannel240 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy240;
-	wifiPhy240 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy240.SetChannel(wifiChannel240.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel241;
-	wifiChannel241 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy241;
-	wifiPhy241 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy241.SetChannel(wifiChannel241.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel242;
-	wifiChannel242 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy242;
-	wifiPhy242 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy242.SetChannel(wifiChannel242.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel243;
-	wifiChannel243 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy243;
-	wifiPhy243 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy243.SetChannel(wifiChannel243.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel244;
-	wifiChannel244 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy244;
-	wifiPhy244 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy244.SetChannel(wifiChannel244.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel245;
-	wifiChannel245 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy245;
-	wifiPhy245 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy245.SetChannel(wifiChannel245.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel246;
-	wifiChannel246 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy246;
-	wifiPhy246 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy246.SetChannel(wifiChannel246.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel247;
-	wifiChannel247 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy247;
-	wifiPhy247 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy247.SetChannel(wifiChannel247.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel248;
-	wifiChannel248 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy248;
-	wifiPhy248 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy248.SetChannel(wifiChannel248.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel249;
-	wifiChannel249 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy249;
-	wifiPhy249 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy249.SetChannel(wifiChannel249.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel250;
-	wifiChannel250 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy250;
-	wifiPhy250 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy250.SetChannel(wifiChannel250.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel251;
-	wifiChannel251 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy251;
-	wifiPhy251 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy251.SetChannel(wifiChannel251.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel252;
-	wifiChannel252 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy252;
-	wifiPhy252 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy252.SetChannel(wifiChannel252.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel253;
-	wifiChannel253 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy253;
-	wifiPhy253 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy253.SetChannel(wifiChannel253.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel254;
-	wifiChannel254 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy254;
-	wifiPhy254 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy254.SetChannel(wifiChannel254.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel255;
-	wifiChannel255 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy255;
-	wifiPhy255 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy255.SetChannel(wifiChannel255.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel256;
-	wifiChannel256 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy256;
-	wifiPhy256 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy256.SetChannel(wifiChannel256.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel257;
-	wifiChannel257 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy257;
-	wifiPhy257 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy257.SetChannel(wifiChannel257.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel258;
-	wifiChannel258 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy258;
-	wifiPhy258 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy258.SetChannel(wifiChannel258.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel259;
-	wifiChannel259 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy259;
-	wifiPhy259 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy259.SetChannel(wifiChannel259.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel260;
-	wifiChannel260 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy260;
-	wifiPhy260 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy260.SetChannel(wifiChannel260.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel261;
-	wifiChannel261 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy261;
-	wifiPhy261 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy261.SetChannel(wifiChannel261.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel262;
-	wifiChannel262 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy262;
-	wifiPhy262 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy262.SetChannel(wifiChannel262.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel263;
-	wifiChannel263 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy263;
-	wifiPhy263 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy263.SetChannel(wifiChannel263.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel264;
-	wifiChannel264 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy264;
-	wifiPhy264 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy264.SetChannel(wifiChannel264.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel265;
-	wifiChannel265 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy265;
-	wifiPhy265 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy265.SetChannel(wifiChannel265.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel266;
-	wifiChannel266 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy266;
-	wifiPhy266 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy266.SetChannel(wifiChannel266.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel267;
-	wifiChannel267 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy267;
-	wifiPhy267 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy267.SetChannel(wifiChannel267.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel268;
-	wifiChannel268 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy268;
-	wifiPhy268 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy268.SetChannel(wifiChannel268.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel269;
-	wifiChannel269 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy269;
-	wifiPhy269 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy269.SetChannel(wifiChannel269.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel270;
-	wifiChannel270 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy270;
-	wifiPhy270 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy270.SetChannel(wifiChannel270.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel271;
-	wifiChannel271 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy271;
-	wifiPhy271 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy271.SetChannel(wifiChannel271.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel272;
-	wifiChannel272 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy272;
-	wifiPhy272 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy272.SetChannel(wifiChannel272.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel273;
-	wifiChannel273 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy273;
-	wifiPhy273 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy273.SetChannel(wifiChannel273.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel274;
-	wifiChannel274 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy274;
-	wifiPhy274 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy274.SetChannel(wifiChannel274.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel275;
-	wifiChannel275 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy275;
-	wifiPhy275 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy275.SetChannel(wifiChannel275.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel276;
-	wifiChannel276 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy276;
-	wifiPhy276 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy276.SetChannel(wifiChannel276.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel277;
-	wifiChannel277 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy277;
-	wifiPhy277 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy277.SetChannel(wifiChannel277.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel278;
-	wifiChannel278 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy278;
-	wifiPhy278 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy278.SetChannel(wifiChannel278.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel279;
-	wifiChannel279 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy279;
-	wifiPhy279 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy279.SetChannel(wifiChannel279.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel280;
-	wifiChannel280 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy280;
-	wifiPhy280 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy280.SetChannel(wifiChannel280.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel281;
-	wifiChannel281 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy281;
-	wifiPhy281 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy281.SetChannel(wifiChannel281.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel282;
-	wifiChannel282 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy282;
-	wifiPhy282 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy282.SetChannel(wifiChannel282.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel283;
-	wifiChannel283 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy283;
-	wifiPhy283 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy283.SetChannel(wifiChannel283.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel284;
-	wifiChannel284 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy284;
-	wifiPhy284 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy284.SetChannel(wifiChannel284.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel285;
-	wifiChannel285 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy285;
-	wifiPhy285 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy285.SetChannel(wifiChannel285.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel286;
-	wifiChannel286 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy286;
-	wifiPhy286 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy286.SetChannel(wifiChannel286.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel287;
-	wifiChannel287 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy287;
-	wifiPhy287 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy287.SetChannel(wifiChannel287.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel288;
-	wifiChannel288 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy288;
-	wifiPhy288 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy288.SetChannel(wifiChannel288.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel289;
-	wifiChannel289 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy289;
-	wifiPhy289 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy289.SetChannel(wifiChannel289.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel290;
-	wifiChannel290 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy290;
-	wifiPhy290 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy290.SetChannel(wifiChannel290.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel291;
-	wifiChannel291 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy291;
-	wifiPhy291 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy291.SetChannel(wifiChannel291.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel292;
-	wifiChannel292 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy292;
-	wifiPhy292 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy292.SetChannel(wifiChannel292.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel293;
-	wifiChannel293 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy293;
-	wifiPhy293 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy293.SetChannel(wifiChannel293.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel294;
-	wifiChannel294 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy294;
-	wifiPhy294 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy294.SetChannel(wifiChannel294.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel295;
-	wifiChannel295 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy295;
-	wifiPhy295 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy295.SetChannel(wifiChannel295.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel296;
-	wifiChannel296 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy296;
-	wifiPhy296 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy296.SetChannel(wifiChannel296.Create());
-
-	ns3::YansWifiChannelHelper wifiChannel297;
-	wifiChannel297 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy297;
-	wifiPhy297 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy297.SetChannel(wifiChannel297.Create());
+	DefaultWifiPhy wifiPhy2;
+
+    DefaultWifiPhy wifiPhy3;
+
+    DefaultWifiPhy wifiPhy4;
+
+    DefaultWifiPhy wifiPhy5;
+
+    DefaultWifiPhy wifiPhy6;
+
+    DefaultWifiPhy wifiPhy7;
+
+    DefaultWifiPhy wifiPhy8;
+
+    DefaultWifiPhy wifiPhy9;
+
+    DefaultWifiPhy wifiPhy10;
+
+    DefaultWifiPhy wifiPhy11;
+
+    DefaultWifiPhy wifiPhy12;
+
+    DefaultWifiPhy wifiPhy13;
+
+    DefaultWifiPhy wifiPhy14;
+
+    DefaultWifiPhy wifiPhy15;
+
+    DefaultWifiPhy wifiPhy16;
+
+    DefaultWifiPhy wifiPhy17;
+
+    DefaultWifiPhy wifiPhy18;
+
+    DefaultWifiPhy wifiPhy19;
+
+    DefaultWifiPhy wifiPhy20;
+
+    DefaultWifiPhy wifiPhy21;
+
+    DefaultWifiPhy wifiPhy22;
+
+    DefaultWifiPhy wifiPhy23;
+
+    DefaultWifiPhy wifiPhy24;
+
+    DefaultWifiPhy wifiPhy25;
+
+    DefaultWifiPhy wifiPhy26;
+
+    DefaultWifiPhy wifiPhy27;
+
+    DefaultWifiPhy wifiPhy28;
+
+    DefaultWifiPhy wifiPhy29;
+
+    DefaultWifiPhy wifiPhy30;
+
+    DefaultWifiPhy wifiPhy31;
+
+    DefaultWifiPhy wifiPhy32;
+
+    DefaultWifiPhy wifiPhy33;
+
+    DefaultWifiPhy wifiPhy34;
+
+    DefaultWifiPhy wifiPhy35;
+
+    DefaultWifiPhy wifiPhy36;
+
+    DefaultWifiPhy wifiPhy37;
+
+    DefaultWifiPhy wifiPhy38;
+
+    DefaultWifiPhy wifiPhy39;
+
+    DefaultWifiPhy wifiPhy40;
+
+    DefaultWifiPhy wifiPhy41;
+
+    DefaultWifiPhy wifiPhy42;
+
+    DefaultWifiPhy wifiPhy43;
+
+    DefaultWifiPhy wifiPhy44;
+
+    DefaultWifiPhy wifiPhy45;
+
+    DefaultWifiPhy wifiPhy46;
+
+    DefaultWifiPhy wifiPhy47;
+
+    DefaultWifiPhy wifiPhy48;
+
+    DefaultWifiPhy wifiPhy49;
+
+    DefaultWifiPhy wifiPhy50;
+
+    DefaultWifiPhy wifiPhy51;
+
+    DefaultWifiPhy wifiPhy52;
+
+    DefaultWifiPhy wifiPhy53;
+
+    DefaultWifiPhy wifiPhy54;
+
+    DefaultWifiPhy wifiPhy55;
+
+    DefaultWifiPhy wifiPhy56;
+
+    DefaultWifiPhy wifiPhy57;
+
+    DefaultWifiPhy wifiPhy58;
+
+    DefaultWifiPhy wifiPhy59;
+
+    DefaultWifiPhy wifiPhy60;
+
+    DefaultWifiPhy wifiPhy61;
+
+    DefaultWifiPhy wifiPhy62;
+
+    DefaultWifiPhy wifiPhy63;
+
+    DefaultWifiPhy wifiPhy64;
+
+    DefaultWifiPhy wifiPhy65;
+
+    DefaultWifiPhy wifiPhy66;
+
+    DefaultWifiPhy wifiPhy67;
+
+    DefaultWifiPhy wifiPhy68;
+
+    DefaultWifiPhy wifiPhy69;
+
+    DefaultWifiPhy wifiPhy70;
+
+    DefaultWifiPhy wifiPhy71;
+
+    DefaultWifiPhy wifiPhy72;
+
+    DefaultWifiPhy wifiPhy73;
+
+    DefaultWifiPhy wifiPhy74;
+
+    DefaultWifiPhy wifiPhy75;
+
+    DefaultWifiPhy wifiPhy76;
+
+    DefaultWifiPhy wifiPhy77;
+
+    DefaultWifiPhy wifiPhy78;
+
+    DefaultWifiPhy wifiPhy79;
+
+    DefaultWifiPhy wifiPhy80;
+
+    DefaultWifiPhy wifiPhy81;
+
+    DefaultWifiPhy wifiPhy82;
+
+    DefaultWifiPhy wifiPhy83;
+
+    DefaultWifiPhy wifiPhy84;
+
+    DefaultWifiPhy wifiPhy85;
+
+    DefaultWifiPhy wifiPhy86;
+
+    DefaultWifiPhy wifiPhy87;
+
+    DefaultWifiPhy wifiPhy88;
+
+    DefaultWifiPhy wifiPhy89;
+
+    DefaultWifiPhy wifiPhy90;
+
+    DefaultWifiPhy wifiPhy91;
+
+    DefaultWifiPhy wifiPhy92;
+
+    DefaultWifiPhy wifiPhy93;
+
+    DefaultWifiPhy wifiPhy94;
+
+    DefaultWifiPhy wifiPhy95;
+
+    DefaultWifiPhy wifiPhy96;
+
+    DefaultWifiPhy wifiPhy97;
+
+    DefaultWifiPhy wifiPhy98;
+
+    DefaultWifiPhy wifiPhy99;
+
+    DefaultWifiPhy wifiPhy100;
+
+    DefaultWifiPhy wifiPhy101;
+
+    DefaultWifiPhy wifiPhy102;
+
+    DefaultWifiPhy wifiPhy103;
+
+    DefaultWifiPhy wifiPhy104;
+
+    DefaultWifiPhy wifiPhy105;
+
+    DefaultWifiPhy wifiPhy106;
+
+    DefaultWifiPhy wifiPhy107;
+
+    DefaultWifiPhy wifiPhy108;
+
+    DefaultWifiPhy wifiPhy109;
+
+    DefaultWifiPhy wifiPhy110;
+
+    DefaultWifiPhy wifiPhy111;
+
+    DefaultWifiPhy wifiPhy112;
+
+    DefaultWifiPhy wifiPhy113;
+
+    DefaultWifiPhy wifiPhy114;
+
+    DefaultWifiPhy wifiPhy115;
+
+    DefaultWifiPhy wifiPhy116;
+
+    DefaultWifiPhy wifiPhy117;
+
+    DefaultWifiPhy wifiPhy118;
+
+    DefaultWifiPhy wifiPhy119;
+
+    DefaultWifiPhy wifiPhy120;
+
+    DefaultWifiPhy wifiPhy121;
+
+    DefaultWifiPhy wifiPhy122;
+
+    DefaultWifiPhy wifiPhy123;
+
+    DefaultWifiPhy wifiPhy124;
+
+    DefaultWifiPhy wifiPhy125;
+
+    DefaultWifiPhy wifiPhy126;
+
+    DefaultWifiPhy wifiPhy127;
+
+    DefaultWifiPhy wifiPhy128;
+
+    DefaultWifiPhy wifiPhy129;
+
+    DefaultWifiPhy wifiPhy130;
+
+    DefaultWifiPhy wifiPhy131;
+
+    DefaultWifiPhy wifiPhy132;
+
+    DefaultWifiPhy wifiPhy133;
+
+    DefaultWifiPhy wifiPhy134;
+
+    DefaultWifiPhy wifiPhy135;
+
+    DefaultWifiPhy wifiPhy136;
+
+    DefaultWifiPhy wifiPhy137;
+
+    DefaultWifiPhy wifiPhy138;
+
+    DefaultWifiPhy wifiPhy139;
+
+    DefaultWifiPhy wifiPhy140;
+
+    DefaultWifiPhy wifiPhy141;
+
+    DefaultWifiPhy wifiPhy142;
+
+    DefaultWifiPhy wifiPhy143;
+
+    DefaultWifiPhy wifiPhy144;
+
+    DefaultWifiPhy wifiPhy145;
+
+    DefaultWifiPhy wifiPhy146;
+
+    DefaultWifiPhy wifiPhy147;
+
+    DefaultWifiPhy wifiPhy148;
+
+    DefaultWifiPhy wifiPhy149;
+
+    DefaultWifiPhy wifiPhy150;
+
+    DefaultWifiPhy wifiPhy151;
+
+    DefaultWifiPhy wifiPhy152;
+
+    DefaultWifiPhy wifiPhy153;
+
+    DefaultWifiPhy wifiPhy154;
+
+    DefaultWifiPhy wifiPhy155;
+
+    DefaultWifiPhy wifiPhy156;
+
+    DefaultWifiPhy wifiPhy157;
+
+    DefaultWifiPhy wifiPhy158;
+
+    DefaultWifiPhy wifiPhy159;
+
+    DefaultWifiPhy wifiPhy160;
+
+    DefaultWifiPhy wifiPhy161;
+
+    DefaultWifiPhy wifiPhy162;
+
+    DefaultWifiPhy wifiPhy163;
+
+    DefaultWifiPhy wifiPhy164;
+
+    DefaultWifiPhy wifiPhy165;
+
+    DefaultWifiPhy wifiPhy166;
+
+    DefaultWifiPhy wifiPhy167;
+
+    DefaultWifiPhy wifiPhy168;
+
+    DefaultWifiPhy wifiPhy169;
+
+    DefaultWifiPhy wifiPhy170;
+
+    DefaultWifiPhy wifiPhy171;
+
+    DefaultWifiPhy wifiPhy172;
+
+    DefaultWifiPhy wifiPhy173;
+
+    DefaultWifiPhy wifiPhy174;
+
+    DefaultWifiPhy wifiPhy175;
+
+    DefaultWifiPhy wifiPhy176;
+
+    DefaultWifiPhy wifiPhy177;
+
+    DefaultWifiPhy wifiPhy178;
+
+    DefaultWifiPhy wifiPhy179;
+
+    DefaultWifiPhy wifiPhy180;
+
+    DefaultWifiPhy wifiPhy181;
+
+    DefaultWifiPhy wifiPhy182;
+
+    DefaultWifiPhy wifiPhy183;
+
+    DefaultWifiPhy wifiPhy184;
+
+    DefaultWifiPhy wifiPhy185;
+
+    DefaultWifiPhy wifiPhy186;
+
+    DefaultWifiPhy wifiPhy187;
+
+    DefaultWifiPhy wifiPhy188;
+
+    DefaultWifiPhy wifiPhy189;
+
+    DefaultWifiPhy wifiPhy190;
+
+    DefaultWifiPhy wifiPhy191;
+
+    DefaultWifiPhy wifiPhy192;
+
+    DefaultWifiPhy wifiPhy193;
+
+    DefaultWifiPhy wifiPhy194;
+
+    DefaultWifiPhy wifiPhy195;
+
+    DefaultWifiPhy wifiPhy196;
+
+    DefaultWifiPhy wifiPhy197;
+
+    DefaultWifiPhy wifiPhy198;
+
+    DefaultWifiPhy wifiPhy199;
+
+    DefaultWifiPhy wifiPhy200;
+
+    DefaultWifiPhy wifiPhy201;
+
+    DefaultWifiPhy wifiPhy202;
+
+    DefaultWifiPhy wifiPhy203;
+
+    DefaultWifiPhy wifiPhy204;
+
+    DefaultWifiPhy wifiPhy205;
+
+    DefaultWifiPhy wifiPhy206;
+
+    DefaultWifiPhy wifiPhy207;
+
+    DefaultWifiPhy wifiPhy208;
+
+    DefaultWifiPhy wifiPhy209;
+
+    DefaultWifiPhy wifiPhy210;
+
+    DefaultWifiPhy wifiPhy211;
+
+    DefaultWifiPhy wifiPhy212;
+
+    DefaultWifiPhy wifiPhy213;
+
+    DefaultWifiPhy wifiPhy214;
+
+    DefaultWifiPhy wifiPhy215;
+
+    DefaultWifiPhy wifiPhy216;
+
+    DefaultWifiPhy wifiPhy217;
+
+    DefaultWifiPhy wifiPhy218;
+
+    DefaultWifiPhy wifiPhy219;
+
+    DefaultWifiPhy wifiPhy220;
+
+    DefaultWifiPhy wifiPhy221;
+
+    DefaultWifiPhy wifiPhy222;
+
+    DefaultWifiPhy wifiPhy223;
+
+    DefaultWifiPhy wifiPhy224;
+
+    DefaultWifiPhy wifiPhy225;
+
+    DefaultWifiPhy wifiPhy226;
+
+    DefaultWifiPhy wifiPhy227;
+
+    DefaultWifiPhy wifiPhy228;
+
+    DefaultWifiPhy wifiPhy229;
+
+    DefaultWifiPhy wifiPhy230;
+
+    DefaultWifiPhy wifiPhy231;
+
+    DefaultWifiPhy wifiPhy232;
+
+    DefaultWifiPhy wifiPhy233;
+
+    DefaultWifiPhy wifiPhy234;
+
+    DefaultWifiPhy wifiPhy235;
+
+    DefaultWifiPhy wifiPhy236;
+
+    DefaultWifiPhy wifiPhy237;
+
+    DefaultWifiPhy wifiPhy238;
+
+    DefaultWifiPhy wifiPhy239;
+
+    DefaultWifiPhy wifiPhy240;
+
+    DefaultWifiPhy wifiPhy241;
+
+    DefaultWifiPhy wifiPhy242;
+
+    DefaultWifiPhy wifiPhy243;
+
+    DefaultWifiPhy wifiPhy244;
+
+    DefaultWifiPhy wifiPhy245;
+
+    DefaultWifiPhy wifiPhy246;
+
+    DefaultWifiPhy wifiPhy247;
+
+    DefaultWifiPhy wifiPhy248;
+
+    DefaultWifiPhy wifiPhy249;
+
+    DefaultWifiPhy wifiPhy250;
+
+    DefaultWifiPhy wifiPhy251;
+
+    DefaultWifiPhy wifiPhy252;
+
+    DefaultWifiPhy wifiPhy253;
+
+    DefaultWifiPhy wifiPhy254;
+
+    DefaultWifiPhy wifiPhy255;
+
+    DefaultWifiPhy wifiPhy256;
+
+    DefaultWifiPhy wifiPhy257;
+
+    DefaultWifiPhy wifiPhy258;
+
+    DefaultWifiPhy wifiPhy259;
+
+    DefaultWifiPhy wifiPhy260;
+
+    DefaultWifiPhy wifiPhy261;
+
+    DefaultWifiPhy wifiPhy262;
+
+    DefaultWifiPhy wifiPhy263;
+
+    DefaultWifiPhy wifiPhy264;
+
+    DefaultWifiPhy wifiPhy265;
+
+    DefaultWifiPhy wifiPhy266;
+
+    DefaultWifiPhy wifiPhy267;
+
+    DefaultWifiPhy wifiPhy268;
+
+    DefaultWifiPhy wifiPhy269;
+
+    DefaultWifiPhy wifiPhy270;
+
+    DefaultWifiPhy wifiPhy271;
+
+    DefaultWifiPhy wifiPhy272;
+
+    DefaultWifiPhy wifiPhy273;
+
+    DefaultWifiPhy wifiPhy274;
+
+    DefaultWifiPhy wifiPhy275;
+
+    DefaultWifiPhy wifiPhy276;
+
+    DefaultWifiPhy wifiPhy277;
+
+    DefaultWifiPhy wifiPhy278;
+
+    DefaultWifiPhy wifiPhy279;
+
+    DefaultWifiPhy wifiPhy280;
+
+    DefaultWifiPhy wifiPhy281;
+
+    DefaultWifiPhy wifiPhy282;
+
+    DefaultWifiPhy wifiPhy283;
+
+    DefaultWifiPhy wifiPhy284;
+
+    DefaultWifiPhy wifiPhy285;
+
+    DefaultWifiPhy wifiPhy286;
+
+    DefaultWifiPhy wifiPhy287;
+
+    DefaultWifiPhy wifiPhy288;
+
+    DefaultWifiPhy wifiPhy289;
+
+    DefaultWifiPhy wifiPhy290;
+
+    DefaultWifiPhy wifiPhy291;
+
+    DefaultWifiPhy wifiPhy292;
+
+    DefaultWifiPhy wifiPhy293;
+
+    DefaultWifiPhy wifiPhy294;
+
+    DefaultWifiPhy wifiPhy295;
+
+    DefaultWifiPhy wifiPhy296;
+
+    DefaultWifiPhy wifiPhy297;
 
 //    wifiChannel298 = ns.wifi.YansWifiChannelHelper.Default()
 //    wifiPhy298 = ns.wifi.YansWifiPhyHelper.Default()
@@ -1876,93 +688,37 @@ int main(int argc, char** argv) {
 //    wifiPhy299 = ns.wifi.YansWifiPhyHelper.Default()
 //    wifiPhy299.SetChannel(wifiChannel299.Create());
 //
-	ns3::YansWifiChannelHelper wifiChannel300;
-	wifiChannel300 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy300;
-	wifiPhy300 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy300.SetChannel(wifiChannel300.Create());
+    DefaultWifiPhy wifiPhy300;
 
-	ns3::YansWifiChannelHelper wifiChannel301;
-	wifiChannel301 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy301;
-	wifiPhy301 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy301.SetChannel(wifiChannel301.Create());
+    DefaultWifiPhy wifiPhy301;
 
-	ns3::YansWifiChannelHelper wifiChannel302;
-	wifiChannel302 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy302;
-	wifiPhy302 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy302.SetChannel(wifiChannel302.Create());
+    DefaultWifiPhy wifiPhy302;
 
-	ns3::YansWifiChannelHelper wifiChannel303;
-	wifiChannel303 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy303;
-	wifiPhy303 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy303.SetChannel(wifiChannel303.Create());
+    DefaultWifiPhy wifiPhy303;
 
-	ns3::YansWifiChannelHelper wifiChannel304;
-	wifiChannel304 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy304;
-	wifiPhy304 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy304.SetChannel(wifiChannel304.Create());
+    DefaultWifiPhy wifiPhy304;
 
-	ns3::YansWifiChannelHelper wifiChannel305;
-	wifiChannel305 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy305;
-	wifiPhy305 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy305.SetChannel(wifiChannel305.Create());
+    DefaultWifiPhy wifiPhy305;
 
 //    wifiChannel306 = ns.wifi.YansWifiChannelHelper.Default()
 //    wifiPhy306 = ns.wifi.YansWifiPhyHelper.Default()
 //    wifiPhy306.SetChannel(wifiChannel306.Create());
 //
-	ns3::YansWifiChannelHelper wifiChannel307;
-	wifiChannel307 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy307;
-	wifiPhy307 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy307.SetChannel(wifiChannel307.Create());
+    DefaultWifiPhy wifiPhy307;
 
-	ns3::YansWifiChannelHelper wifiChannel308;
-	wifiChannel308 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy308;
-	wifiPhy308 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy308.SetChannel(wifiChannel308.Create());
+    DefaultWifiPhy wifiPhy308;
 
-	ns3::YansWifiChannelHelper wifiChannel309;
-	wifiChannel309 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy309;
-	wifiPhy309 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy309.SetChannel(wifiChannel309.Create());
+    DefaultWifiPhy wifiPhy309;
 
-	ns3::YansWifiChannelHelper wifiChannel310;
-	wifiChannel310 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy310;
-	wifiPhy310 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy310.SetChannel(wifiChannel310.Create());
+    DefaultWifiPhy wifiPhy310;
 
-	ns3::YansWifiChannelHelper wifiChannel311;
-	wifiChannel311 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy311;
-	wifiPhy311 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy311.SetChannel(wifiChannel311.Create());
+    DefaultWifiPhy wifiPhy311;
 
-	ns3::YansWifiChannelHelper wifiChannel312;
-	wifiChannel312 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy312;
-	wifiPhy312 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy312.SetChannel(wifiChannel312.Create());
+    DefaultWifiPhy wifiPhy312;
 
-	ns3::YansWifiChannelHelper wifiChannel313;
-	wifiChannel313 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy313;
-	wifiPhy313 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy313.SetChannel(wifiChannel313.Create());
+    DefaultWifiPhy wifiPhy313;
 
-	ns3::YansWifiChannelHelper wifiChannel314;
-	wifiChannel314 = ns3::YansWifiChannelHelper::Default();
-	ns3::YansWifiPhyHelper wifiPhy314;
-	wifiPhy314 = ns3::YansWifiPhyHelper::Default();
-	wifiPhy314.SetChannel(wifiChannel314.Create());
+    DefaultWifiPhy wifiPhy314;
 
 //    wifiChannel315 = ns.wifi.YansWifiChannelHelper.Default()
 //    wifiPhy315 = ns.wifi.YansWifiPhyHelper.Default()
@@ -6403,321 +5159,10 @@ int main(int argc, char** argv) {
 
 // apnodes mobility
 	mobility.SetMobilityModel("ns3::ConstantPositionMobilityModel");
-	mobility.Install(wifi_ap_nodes[1]);
-	mobility.Install(wifi_ap_nodes[2]);
-	mobility.Install(wifi_ap_nodes[3]);
-	mobility.Install(wifi_ap_nodes[4]);
-	mobility.Install(wifi_ap_nodes[5]);
-	mobility.Install(wifi_ap_nodes[6]);
-	mobility.Install(wifi_ap_nodes[7]);
-	mobility.Install(wifi_ap_nodes[8]);
-	mobility.Install(wifi_ap_nodes[9]);
-	mobility.Install(wifi_ap_nodes[10]);
-	mobility.Install(wifi_ap_nodes[11]);
-	mobility.Install(wifi_ap_nodes[12]);
-	mobility.Install(wifi_ap_nodes[13]);
-	mobility.Install(wifi_ap_nodes[14]);
-	mobility.Install(wifi_ap_nodes[15]);
-	mobility.Install(wifi_ap_nodes[16]);
-	mobility.Install(wifi_ap_nodes[17]);
-	mobility.Install(wifi_ap_nodes[18]);
-	mobility.Install(wifi_ap_nodes[19]);
-	mobility.Install(wifi_ap_nodes[20]);
-	mobility.Install(wifi_ap_nodes[21]);
-	mobility.Install(wifi_ap_nodes[22]);
-	mobility.Install(wifi_ap_nodes[23]);
-	mobility.Install(wifi_ap_nodes[24]);
-	mobility.Install(wifi_ap_nodes[25]);
-	mobility.Install(wifi_ap_nodes[26]);
-	mobility.Install(wifi_ap_nodes[27]);
-	mobility.Install(wifi_ap_nodes[28]);
-	mobility.Install(wifi_ap_nodes[29]);
-	mobility.Install(wifi_ap_nodes[30]);
-	mobility.Install(wifi_ap_nodes[31]);
-	mobility.Install(wifi_ap_nodes[32]);
-	mobility.Install(wifi_ap_nodes[33]);
-	mobility.Install(wifi_ap_nodes[34]);
-	mobility.Install(wifi_ap_nodes[35]);
-	mobility.Install(wifi_ap_nodes[36]);
-	mobility.Install(wifi_ap_nodes[37]);
-	mobility.Install(wifi_ap_nodes[38]);
-	mobility.Install(wifi_ap_nodes[39]);
-	mobility.Install(wifi_ap_nodes[40]);
-	mobility.Install(wifi_ap_nodes[41]);
-	mobility.Install(wifi_ap_nodes[42]);
-	mobility.Install(wifi_ap_nodes[43]);
-	mobility.Install(wifi_ap_nodes[44]);
-	mobility.Install(wifi_ap_nodes[45]);
-	mobility.Install(wifi_ap_nodes[46]);
-	mobility.Install(wifi_ap_nodes[47]);
-	mobility.Install(wifi_ap_nodes[48]);
-	mobility.Install(wifi_ap_nodes[49]);
-	mobility.Install(wifi_ap_nodes[50]);
-	mobility.Install(wifi_ap_nodes[51]);
-	mobility.Install(wifi_ap_nodes[52]);
-	mobility.Install(wifi_ap_nodes[53]);
-	mobility.Install(wifi_ap_nodes[54]);
-	mobility.Install(wifi_ap_nodes[55]);
-	mobility.Install(wifi_ap_nodes[56]);
-	mobility.Install(wifi_ap_nodes[57]);
-	mobility.Install(wifi_ap_nodes[58]);
-	mobility.Install(wifi_ap_nodes[59]);
-	mobility.Install(wifi_ap_nodes[60]);
-	mobility.Install(wifi_ap_nodes[61]);
-	mobility.Install(wifi_ap_nodes[62]);
-	mobility.Install(wifi_ap_nodes[63]);
-	mobility.Install(wifi_ap_nodes[64]);
-	mobility.Install(wifi_ap_nodes[65]);
-	mobility.Install(wifi_ap_nodes[66]);
-	mobility.Install(wifi_ap_nodes[67]);
-	mobility.Install(wifi_ap_nodes[68]);
-	mobility.Install(wifi_ap_nodes[69]);
-	mobility.Install(wifi_ap_nodes[70]);
-	mobility.Install(wifi_ap_nodes[71]);
-	mobility.Install(wifi_ap_nodes[72]);
-	mobility.Install(wifi_ap_nodes[73]);
-	mobility.Install(wifi_ap_nodes[74]);
-	mobility.Install(wifi_ap_nodes[75]);
-	mobility.Install(wifi_ap_nodes[76]);
-	mobility.Install(wifi_ap_nodes[77]);
-	mobility.Install(wifi_ap_nodes[78]);
-	mobility.Install(wifi_ap_nodes[79]);
-	mobility.Install(wifi_ap_nodes[80]);
-	mobility.Install(wifi_ap_nodes[81]);
-	mobility.Install(wifi_ap_nodes[82]);
-	mobility.Install(wifi_ap_nodes[83]);
-	mobility.Install(wifi_ap_nodes[84]);
-	mobility.Install(wifi_ap_nodes[85]);
-	mobility.Install(wifi_ap_nodes[86]);
-	mobility.Install(wifi_ap_nodes[87]);
-	mobility.Install(wifi_ap_nodes[88]);
-	mobility.Install(wifi_ap_nodes[89]);
-	mobility.Install(wifi_ap_nodes[90]);
-	mobility.Install(wifi_ap_nodes[91]);
-	mobility.Install(wifi_ap_nodes[92]);
-	mobility.Install(wifi_ap_nodes[93]);
-	mobility.Install(wifi_ap_nodes[94]);
-	mobility.Install(wifi_ap_nodes[95]);
-	mobility.Install(wifi_ap_nodes[96]);
-	mobility.Install(wifi_ap_nodes[97]);
-	mobility.Install(wifi_ap_nodes[98]);
-	mobility.Install(wifi_ap_nodes[99]);
-	mobility.Install(wifi_ap_nodes[100]);
-	mobility.Install(wifi_ap_nodes[101]);
-	mobility.Install(wifi_ap_nodes[102]);
-	mobility.Install(wifi_ap_nodes[103]);
-	mobility.Install(wifi_ap_nodes[104]);
-	mobility.Install(wifi_ap_nodes[105]);
-	mobility.Install(wifi_ap_nodes[106]);
-	mobility.Install(wifi_ap_nodes[107]);
-	mobility.Install(wifi_ap_nodes[108]);
-	mobility.Install(wifi_ap_nodes[109]);
-	mobility.Install(wifi_ap_nodes[110]);
-	mobility.Install(wifi_ap_nodes[111]);
-	mobility.Install(wifi_ap_nodes[112]);
-	mobility.Install(wifi_ap_nodes[113]);
-	mobility.Install(wifi_ap_nodes[114]);
-	mobility.Install(wifi_ap_nodes[115]);
-	mobility.Install(wifi_ap_nodes[116]);
-	mobility.Install(wifi_ap_nodes[117]);
-	mobility.Install(wifi_ap_nodes[118]);
-	mobility.Install(wifi_ap_nodes[119]);
-	mobility.Install(wifi_ap_nodes[120]);
-	mobility.Install(wifi_ap_nodes[121]);
-	mobility.Install(wifi_ap_nodes[122]);
-	mobility.Install(wifi_ap_nodes[123]);
-	mobility.Install(wifi_ap_nodes[124]);
-	mobility.Install(wifi_ap_nodes[125]);
-	mobility.Install(wifi_ap_nodes[126]);
-	mobility.Install(wifi_ap_nodes[127]);
-	mobility.Install(wifi_ap_nodes[128]);
-	mobility.Install(wifi_ap_nodes[129]);
-	mobility.Install(wifi_ap_nodes[130]);
-	mobility.Install(wifi_ap_nodes[131]);
-	mobility.Install(wifi_ap_nodes[132]);
-	mobility.Install(wifi_ap_nodes[133]);
-	mobility.Install(wifi_ap_nodes[134]);
-	mobility.Install(wifi_ap_nodes[135]);
-	mobility.Install(wifi_ap_nodes[136]);
-	mobility.Install(wifi_ap_nodes[137]);
-	mobility.Install(wifi_ap_nodes[138]);
-	mobility.Install(wifi_ap_nodes[139]);
-	mobility.Install(wifi_ap_nodes[140]);
-	mobility.Install(wifi_ap_nodes[141]);
-	mobility.Install(wifi_ap_nodes[142]);
-	mobility.Install(wifi_ap_nodes[143]);
-	mobility.Install(wifi_ap_nodes[144]);
-	mobility.Install(wifi_ap_nodes[145]);
-	mobility.Install(wifi_ap_nodes[146]);
-	mobility.Install(wifi_ap_nodes[147]);
-	mobility.Install(wifi_ap_nodes[148]);
-	mobility.Install(wifi_ap_nodes[149]);
-	mobility.Install(wifi_ap_nodes[150]);
-	mobility.Install(wifi_ap_nodes[151]);
-	mobility.Install(wifi_ap_nodes[152]);
-	mobility.Install(wifi_ap_nodes[153]);
-	mobility.Install(wifi_ap_nodes[154]);
-	mobility.Install(wifi_ap_nodes[155]);
-	mobility.Install(wifi_ap_nodes[156]);
-	mobility.Install(wifi_ap_nodes[157]);
-	mobility.Install(wifi_ap_nodes[158]);
-	mobility.Install(wifi_ap_nodes[159]);
-	mobility.Install(wifi_ap_nodes[160]);
-	mobility.Install(wifi_ap_nodes[161]);
-	mobility.Install(wifi_ap_nodes[162]);
-	mobility.Install(wifi_ap_nodes[163]);
-	mobility.Install(wifi_ap_nodes[164]);
-	mobility.Install(wifi_ap_nodes[165]);
-	mobility.Install(wifi_ap_nodes[166]);
-	mobility.Install(wifi_ap_nodes[167]);
-	mobility.Install(wifi_ap_nodes[168]);
-	mobility.Install(wifi_ap_nodes[169]);
-	mobility.Install(wifi_ap_nodes[170]);
-	mobility.Install(wifi_ap_nodes[171]);
-	mobility.Install(wifi_ap_nodes[172]);
-	mobility.Install(wifi_ap_nodes[173]);
-	mobility.Install(wifi_ap_nodes[174]);
-	mobility.Install(wifi_ap_nodes[175]);
-	mobility.Install(wifi_ap_nodes[176]);
-	mobility.Install(wifi_ap_nodes[177]);
-	mobility.Install(wifi_ap_nodes[178]);
-	mobility.Install(wifi_ap_nodes[179]);
-	mobility.Install(wifi_ap_nodes[180]);
-	mobility.Install(wifi_ap_nodes[181]);
-	mobility.Install(wifi_ap_nodes[182]);
-	mobility.Install(wifi_ap_nodes[183]);
-	mobility.Install(wifi_ap_nodes[184]);
-	mobility.Install(wifi_ap_nodes[185]);
-	mobility.Install(wifi_ap_nodes[186]);
-	mobility.Install(wifi_ap_nodes[187]);
-	mobility.Install(wifi_ap_nodes[188]);
-	mobility.Install(wifi_ap_nodes[189]);
-	mobility.Install(wifi_ap_nodes[190]);
-	mobility.Install(wifi_ap_nodes[191]);
-	mobility.Install(wifi_ap_nodes[192]);
-	mobility.Install(wifi_ap_nodes[193]);
-	mobility.Install(wifi_ap_nodes[194]);
-	mobility.Install(wifi_ap_nodes[195]);
-	mobility.Install(wifi_ap_nodes[196]);
-	mobility.Install(wifi_ap_nodes[197]);
-	mobility.Install(wifi_ap_nodes[198]);
-	mobility.Install(wifi_ap_nodes[199]);
-	mobility.Install(wifi_ap_nodes[200]);
-	mobility.Install(wifi_ap_nodes[201]);
-	mobility.Install(wifi_ap_nodes[202]);
-	mobility.Install(wifi_ap_nodes[203]);
-	mobility.Install(wifi_ap_nodes[204]);
-	mobility.Install(wifi_ap_nodes[205]);
-	mobility.Install(wifi_ap_nodes[206]);
-	mobility.Install(wifi_ap_nodes[207]);
-	mobility.Install(wifi_ap_nodes[208]);
-	mobility.Install(wifi_ap_nodes[209]);
-	mobility.Install(wifi_ap_nodes[210]);
-	mobility.Install(wifi_ap_nodes[211]);
-	mobility.Install(wifi_ap_nodes[212]);
-	mobility.Install(wifi_ap_nodes[213]);
-	mobility.Install(wifi_ap_nodes[214]);
-	mobility.Install(wifi_ap_nodes[215]);
-	mobility.Install(wifi_ap_nodes[216]);
-	mobility.Install(wifi_ap_nodes[217]);
-	mobility.Install(wifi_ap_nodes[218]);
-	mobility.Install(wifi_ap_nodes[219]);
-	mobility.Install(wifi_ap_nodes[220]);
-	mobility.Install(wifi_ap_nodes[221]);
-	mobility.Install(wifi_ap_nodes[222]);
-	mobility.Install(wifi_ap_nodes[223]);
-	mobility.Install(wifi_ap_nodes[224]);
-	mobility.Install(wifi_ap_nodes[225]);
-	mobility.Install(wifi_ap_nodes[226]);
-	mobility.Install(wifi_ap_nodes[227]);
-	mobility.Install(wifi_ap_nodes[228]);
-	mobility.Install(wifi_ap_nodes[229]);
-	mobility.Install(wifi_ap_nodes[230]);
-	mobility.Install(wifi_ap_nodes[231]);
-	mobility.Install(wifi_ap_nodes[232]);
-	mobility.Install(wifi_ap_nodes[233]);
-	mobility.Install(wifi_ap_nodes[234]);
-	mobility.Install(wifi_ap_nodes[235]);
-	mobility.Install(wifi_ap_nodes[236]);
-	mobility.Install(wifi_ap_nodes[237]);
-	mobility.Install(wifi_ap_nodes[238]);
-	mobility.Install(wifi_ap_nodes[239]);
-	mobility.Install(wifi_ap_nodes[240]);
-	mobility.Install(wifi_ap_nodes[241]);
-	mobility.Install(wifi_ap_nodes[242]);
-	mobility.Install(wifi_ap_nodes[243]);
-	mobility.Install(wifi_ap_nodes[244]);
-	mobility.Install(wifi_ap_nodes[245]);
-	mobility.Install(wifi_ap_nodes[246]);
-	mobility.Install(wifi_ap_nodes[247]);
-	mobility.Install(wifi_ap_nodes[248]);
-	mobility.Install(wifi_ap_nodes[249]);
-	mobility.Install(wifi_ap_nodes[250]);
-	mobility.Install(wifi_ap_nodes[251]);
-	mobility.Install(wifi_ap_nodes[252]);
-	mobility.Install(wifi_ap_nodes[253]);
-	mobility.Install(wifi_ap_nodes[254]);
-	mobility.Install(wifi_ap_nodes[255]);
-	mobility.Install(wifi_ap_nodes[256]);
-	mobility.Install(wifi_ap_nodes[257]);
-	mobility.Install(wifi_ap_nodes[258]);
-	mobility.Install(wifi_ap_nodes[259]);
-	mobility.Install(wifi_ap_nodes[260]);
-	mobility.Install(wifi_ap_nodes[261]);
-	mobility.Install(wifi_ap_nodes[262]);
-	mobility.Install(wifi_ap_nodes[263]);
-	mobility.Install(wifi_ap_nodes[264]);
-	mobility.Install(wifi_ap_nodes[265]);
-	mobility.Install(wifi_ap_nodes[266]);
-	mobility.Install(wifi_ap_nodes[267]);
-	mobility.Install(wifi_ap_nodes[268]);
-	mobility.Install(wifi_ap_nodes[269]);
-	mobility.Install(wifi_ap_nodes[270]);
-	mobility.Install(wifi_ap_nodes[271]);
-	mobility.Install(wifi_ap_nodes[272]);
-	mobility.Install(wifi_ap_nodes[273]);
-	mobility.Install(wifi_ap_nodes[274]);
-	mobility.Install(wifi_ap_nodes[275]);
-	mobility.Install(wifi_ap_nodes[276]);
-	mobility.Install(wifi_ap_nodes[277]);
-	mobility.Install(wifi_ap_nodes[278]);
-	mobility.Install(wifi_ap_nodes[279]);
-	mobility.Install(wifi_ap_nodes[280]);
-	mobility.Install(wifi_ap_nodes[281]);
-	mobility.Install(wifi_ap_nodes[282]);
-	mobility.Install(wifi_ap_nodes[283]);
-	mobility.Install(wifi_ap_nodes[284]);
-	mobility.Install(wifi_ap_nodes[285]);
-	mobility.Install(wifi_ap_nodes[286]);
-	mobility.Install(wifi_ap_nodes[287]);
-	mobility.Install(wifi_ap_nodes[288]);
-	mobility.Install(wifi_ap_nodes[289]);
-	mobility.Install(wifi_ap_nodes[290]);
-	mobility.Install(wifi_ap_nodes[291]);
-	mobility.Install(wifi_ap_nodes[292]);
-	mobility.Install(wifi_ap_nodes[293]);
-	mobility.Install(wifi_ap_nodes[294]);
-	mobility.Install(wifi_ap_nodes[295]);
-	mobility.Install(wifi_ap_nodes[296]);
-	mobility.Install(wifi_ap_nodes[297]);
-//    mobility.Install (wifiApNode298)
-//    mobility.Install (wifiApNode299)
-	mobility.Install(wifi_ap_nodes[300]);
-	mobility.Install(wifi_ap_nodes[301]);
-	mobility.Install(wifi_ap_nodes[302]);
-	mobility.Install(wifi_ap_nodes[303]);
-	mobility.Install(wifi_ap_nodes[304]);
-	mobility.Install(wifi_ap_nodes[305]);
-//    mobility.Install (wifiApNode306)
-	mobility.Install(wifi_ap_nodes[307]);
-	mobility.Install(wifi_ap_nodes[308]);
-	mobility.Install(wifi_ap_nodes[309]);
-	mobility.Install(wifi_ap_nodes[310]);
-	mobility.Install(wifi_ap_nodes[311]);
-	mobility.Install(wifi_ap_nodes[312]);
-	mobility.Install(wifi_ap_nodes[313]);
-	mobility.Install(wifi_ap_nodes[314]);
-//    mobility.Install (wifiApNode315)
+	for(int i=1; i<=315; ++i) {
+		if (i == 298 || i== 299 || i == 306 || i == 315) continue;
+		mobility.Install(wifi_ap_nodes[i]);
+	}
 
 //channel define
 
