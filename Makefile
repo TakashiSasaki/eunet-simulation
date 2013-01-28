@@ -21,3 +21,6 @@ clean:
 hello: hello.o
 	g++ -o hello $<
 
+debug:
+	(cd ..; ./waf --run main --command-template="gdb --args %s")
+
