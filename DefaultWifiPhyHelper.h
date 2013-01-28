@@ -18,17 +18,17 @@ public:
 	}
 };
 
-class DefaultWifiPhy: public ns3::YansWifiPhyHelper {
+class DefaultWifiPhyHelper: public ns3::YansWifiPhyHelper {
 	DefaultWifiChannelHelper defaultWifiChannelHelper;
 	ns3::Ptr<ns3::YansWifiChannel> pYansWifiChannel;
 public:
-	DefaultWifiPhy() :
+	DefaultWifiPhyHelper() :
 			// Note that the order of initialization of members follows the order of declaration.
 			pYansWifiChannel(defaultWifiChannelHelper.Create()) {
 		this->SetErrorRateModel("ns3::NistErrorRateModel");
 		this->SetChannel(pYansWifiChannel);
 	}
-	virtual ~DefaultWifiPhy() {
+	virtual ~DefaultWifiPhyHelper() {
 	}
 };
 
