@@ -4303,7 +4303,7 @@ int main(int argc, char** argv) {
 	for (int i = 5; i <= 348; ++i) {
 		if (i == 80 || i == 113 || i == 160 || i == 213 || i == 271 || i == 333)
 			continue;
-		p2p_interface_sets[i] = ipv4.Assign(terminal_device_sets[81]);
+		p2p_interface_sets[i] = ipv4.Assign(terminal_device_sets[i]);
 	}
 
 	std::vector<ns3::Ipv4InterfaceContainer> apinterface_sets(320);
