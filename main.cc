@@ -76,7 +76,7 @@ int main(int argc, char** argv) {
 	ns3::NetDeviceContainer switchDevicessigenobu;
 	ns3::NetDeviceContainer switchDevicestarumi;
 
-	TerminalDeviceSets terminal_device_sets(348);
+	TerminalDeviceSets terminal_device_sets(350);
 	ApDeviceSets ap_device_sets(348);
 
 //wifi
