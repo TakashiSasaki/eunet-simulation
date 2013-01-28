@@ -167,11 +167,12 @@ int main(int argc, char** argv) {
 			ns3::DataRateValue(ns3::DataRate(22000000000)));
 	csma.SetChannelAttribute("Delay", ns3::TimeValue(ns3::MilliSeconds(2)));
 
-	ns3::NetDeviceContainer linksigenobu;
-	linksigenobu = csma.Install(
-			ns3::NodeContainer(csmaSwitchrouter, csmaSwitchsigenobu));
-	switchDevicesrouter.Add(linksigenobu.Get(0));
-	switchDevicessigenobu.Add(linksigenobu.Get(1));
+	{
+		ns3::NetDeviceContainer csma_net_devices = csma.Install(
+				ns3::NodeContainer(csmaSwitchrouter, csmaSwitchsigenobu));
+		switchDevicesrouter.Add(csma_net_devices.Get(0));
+		switchDevicessigenobu.Add(csma_net_devices.Get(1));
+	}
 
 	ns3::NetDeviceContainer linktarumi;
 	linktarumi = csma.Install(
