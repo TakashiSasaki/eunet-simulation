@@ -154,12 +154,12 @@ int main(int argc, char** argv) {
 			ns3::NetDeviceContainer net_device_container;
 			net_device_container = csma.Install(
 					ns3::NodeContainer(
-							ns3::NodeContainer(terminal_sets[5].Get(i)),
-							csmaSwitches[5]));
-			switch_devices[5].Add(net_device_container.Get(1));
-			terminal_device_sets[5].Add(net_device_container.Get(0));
-		}
-	}
+							ns3::NodeContainer(terminal_sets[j].Get(i)),
+							csmaSwitches[j]));
+			switch_devices[j].Add(net_device_container.Get(1));
+			terminal_device_sets[j].Add(net_device_container.Get(0));
+		}// for
+	}// for
 
 //#channel define
 	csma = ns3::CsmaHelper();
