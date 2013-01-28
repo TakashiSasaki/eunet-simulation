@@ -39,713 +39,499 @@ int main(int argc, char** argv) {
 	ns3::NodeContainer csmaSwitch6506E;
 	csmaSwitch6506E.Create(1);
 
-	//networkkanrisitu-serversegment-ue
-	ns3::NodeContainer csmaSwitch5;
-	csmaSwitch5.Create(1);
+	CsmaSwitches csmaSwitches(350);
 
+	//networkkanrisitu-serversegment-ue
+	//csmaSwitches[5]
 //2F networkkanrisitu WASSY buredoserver-right
-	ns3::NodeContainer csmaSwitch6;
-	csmaSwitch6.Create(1);
+	//csmaSwitches[6]
 //2F networkkanrisitu buredoserver-left
-	ns3::NodeContainer csmaSwitch7;
-	csmaSwitch7.Create(1);
+	//csmaSwitches[7]
 //2F networkkanrisitu-serversegment-sita
-	ns3::NodeContainer csmaSwitch8;
-	csmaSwitch8.Create(1);
+	//csmaSwitches[8]
 
 //sougoujouhoumediacenter 2F network-kanrisitu-sita
-	ns3::NodeContainer csmaSwitch9;
-	csmaSwitch9.Create(1);
+	//csmaSwitches[9]
 //sougoujouhoumediacenter 2F network-kanrisitu-sub1
-	ns3::NodeContainer csmaSwitch10;
-	csmaSwitch10.Create(1);
+	//csmaSwitches[10]
 //sougoujouhoumediacenter 2F network-kanrisitu-sub2
-	ns3::NodeContainer csmaSwitch11;
-	csmaSwitch11.Create(1);
+	//csmaSwitches[11]
 //RTX1100-1
-	ns3::NodeContainer csmaSwitch12;
-	csmaSwitch12.Create(1);
+	//csmaSwitches[12]
 //RTX1100-2
-	ns3::NodeContainer csmaSwitch13;
-	csmaSwitch13.Create(1);
+	//csmaSwitches[13]
 //2F NWkanrisitu-ehimeCATVsama
-	ns3::NodeContainer csmaSwitch14;
-	csmaSwitch14.Create(1);
+	//csmaSwitches[14]
 //sougoujouhoumediacenter 2F network-kanrisitu-sub3
-	ns3::NodeContainer csmaSwitch15;
-	csmaSwitch15.Create(1);
+	//csmaSwitches[15]
 //RTX1100-3
-	ns3::NodeContainer csmaSwitch16;
-	csmaSwitch16.Create(1);
+	//csmaSwitches[16]
 //sougoujouhoumediacenter 2F network-kanrisitu-sub4
-	ns3::NodeContainer csmaSwitch17;
-	csmaSwitch17.Create(1);
+	//csmaSwitches[17]
 //1F EPS
-	ns3::NodeContainer csmaSwitch18;
-	csmaSwitch18.Create(1);
+	//csmaSwitches[18]
 //1F dai5ensyusitu
-	ns3::NodeContainer csmaSwitch19;
-	csmaSwitch19.Create(1);
+	//csmaSwitches[19]
 //1F serverkisitu-left
-	ns3::NodeContainer csmaSwitch20;
-	csmaSwitch20.Create(1);
+	//csmaSwitches[20]
 //1F serverkisitu-right
-	ns3::NodeContainer csmaSwitch21;
-	csmaSwitch21.Create(1);
+	//csmaSwitches[21]
 //WLC-1
-	ns3::NodeContainer csmaSwitch22;
-	csmaSwitch22.Create(1);
+	//csmaSwitches[22]
 //WLC-2
-	ns3::NodeContainer csmaSwitch23;
-	csmaSwitch23.Create(1);
+	//csmaSwitches[23]
 //2F mediazikkensitu108-main
-	ns3::NodeContainer csmaSwitch24;
-	csmaSwitch24.Create(1);
+	//csmaSwitches[24]
 //2F mediazikkensitu108-sub1
-	ns3::NodeContainer csmaSwitch25;
-	csmaSwitch25.Create(1);
+	//csmaSwitches[25]
 //2F mediazikkensitu108-sub2
-	ns3::NodeContainer csmaSwitch26;
-	csmaSwitch26.Create(1);
+	//csmaSwitches[26]
 //2F mediazikkensitu108-sub3
-	ns3::NodeContainer csmaSwitch27;
-	csmaSwitch27.Create(1);
+	//csmaSwitches[27]
 //1F mediaholeEPS
-	ns3::NodeContainer csmaSwitch28;
-	csmaSwitch28.Create(1);
+	//csmaSwitches[28]
 //2F dai1ensyusitu-left
-	ns3::NodeContainer csmaSwitch29;
-	csmaSwitch29.Create(1);
+	//csmaSwitches[29]
 //2F dai1ensyusitu-right
-	ns3::NodeContainer csmaSwitch30;
-	csmaSwitch30.Create(1);
+	//csmaSwitches[30]
 //3F dai2ensyusitu-left
-	ns3::NodeContainer csmaSwitch31;
-	csmaSwitch31.Create(1);
+	//csmaSwitches[31]
 //3F dai2ensyusitu-right
-	ns3::NodeContainer csmaSwitch32;
-	csmaSwitch32.Create(1);
+	//csmaSwitches[32]
 //3F dai3ensyusitu-left
-	ns3::NodeContainer csmaSwitch33;
-	csmaSwitch33.Create(1);
+	//csmaSwitches[33]
 //3F dai3ensyusitu-right
-	ns3::NodeContainer csmaSwitch34;
-	csmaSwitch34.Create(1);
+	//csmaSwitches[34]
 //4F dai4ensyusitu-left
-	ns3::NodeContainer csmaSwitch35;
-	csmaSwitch35.Create(1);
+	//csmaSwitches[35]
 //4F dai4ensyusitu-right
-	ns3::NodeContainer csmaSwitch36;
-	csmaSwitch36.Create(1);
+	//csmaSwitches[36]
 //4F dai6ensyusitu-left
-	ns3::NodeContainer csmaSwitch37;
-	csmaSwitch37.Create(1);
+	//csmaSwitches[37]
 //4F dai6ensyusitu-right
-	ns3::NodeContainer csmaSwitch38;
-	csmaSwitch38.Create(1);
+	//csmaSwitches[38]
 //4F EPS
-	ns3::NodeContainer csmaSwitch39;
-	csmaSwitch39.Create(1);
+	//csmaSwitches[39]
 
 //huzokujouhoutosyokan
 //2F serversitu
-	ns3::NodeContainer csmaSwitch40;
-	csmaSwitch40.Create(1);
+	//csmaSwitches[40]
 //1F EPS
-	ns3::NodeContainer csmaSwitch41;
-	csmaSwitch41.Create(1);
+	//csmaSwitches[41]
 //2F EPS-nisi
-	ns3::NodeContainer csmaSwitch42;
-	csmaSwitch42.Create(1);
+	//csmaSwitches[42]
 //3F EPS-nisi
-	ns3::NodeContainer csmaSwitch43;
-	csmaSwitch43.Create(1);
+	//csmaSwitches[43]
 //4F EPS-nisi
-	ns3::NodeContainer csmaSwitch44;
-	csmaSwitch44.Create(1);
+	//csmaSwitches[44]
 //6F EPS-nisi
-	ns3::NodeContainer csmaSwitch344;
-	csmaSwitch344.Create(1);
+	//csmaSwitches[344]
 //1F gakuseiservicecenter
-	ns3::NodeContainer csmaSwitch45;
-	csmaSwitch45.Create(1);
+	//csmaSwitches[45]
 //2F EPS-higasi-1
-	ns3::NodeContainer csmaSwitch46;
-	csmaSwitch46.Create(1);
+	//csmaSwitches[46]
 //2F EPS-higasi-2
-	ns3::NodeContainer csmaSwitch47;
-	csmaSwitch47.Create(1);
+	//csmaSwitches[47]
 //3F EPS-higasi
-	ns3::NodeContainer csmaSwitch48;
-	csmaSwitch48.Create(1);
+	//csmaSwitches[48]
 //4F EPS-higasi
-	ns3::NodeContainer csmaSwitch49;
-	csmaSwitch49.Create(1);
+	//csmaSwitches[49]
 //6F EPS-higasi
-	ns3::NodeContainer csmaSwitch345;
-	csmaSwitch345.Create(1);
+	//csmaSwitches[345]
 
 //nankakinenho-ru
-	ns3::NodeContainer csmaSwitch346;
-	csmaSwitch346.Create(1);
+	//csmaSwitches[346]
 
 //kyouikugakubu3goukan
 //2F syoruisitu
-	ns3::NodeContainer csmaSwitch50;
-	csmaSwitch50.Create(1);
+	//csmaSwitches[50]
 
 //kyouikugakubuhonkan
 //1F buppinko
-	ns3::NodeContainer csmaSwitch51;
-	csmaSwitch51.Create(1);
+	//csmaSwitches[51]
 //2F EPS
-	ns3::NodeContainer csmaSwitch52;
-	csmaSwitch52.Create(1);
+	//csmaSwitches[52]
 //3F EPS-left
-	ns3::NodeContainer csmaSwitch53;
-	csmaSwitch53.Create(1);
+	//csmaSwitches[53]
 //3F EPS-right
-	ns3::NodeContainer csmaSwitch54;
-	csmaSwitch54.Create(1);
+	//csmaSwitches[54]
 //4F EPS-left
-	ns3::NodeContainer csmaSwitch55;
-	csmaSwitch55.Create(1);
+	//csmaSwitches[55]
 //4F EPS-right
-	ns3::NodeContainer csmaSwitch56;
-	csmaSwitch56.Create(1);
+	//csmaSwitches[56]
 
 //kyouikugakubu3goukan
 //1F chouzouzissyusitu
-	ns3::NodeContainer csmaSwitch57;
-	csmaSwitch57.Create(1);
+	//csmaSwitches[57]
 //3F gazousyorisitu
-	ns3::NodeContainer csmaSwitch58;
-	csmaSwitch58.Create(1);
+	//csmaSwitches[58]
 //2F syoruisitu
-	ns3::NodeContainer csmaSwitch59;
-	csmaSwitch59.Create(1);
+	//csmaSwitches[59]
 //4F syakaitosyositu
-	ns3::NodeContainer csmaSwitch60;
-	csmaSwitch60.Create(1);
+	//csmaSwitches[60]
 //5F youzikyouikusiryousitu
-	ns3::NodeContainer csmaSwitch61;
-	csmaSwitch61.Create(1);
+	//csmaSwitches[61]
 //6F 601 ongakuzissyusitu
-	ns3::NodeContainer csmaSwitch62;
-	csmaSwitch62.Create(1);
+	//csmaSwitches[62]
 
 //kyouikugakubu4goukan
 //1F serversitu N0.1
-	ns3::NodeContainer csmaSwitch63;
-	csmaSwitch63.Create(1);
+	//csmaSwitches[63]
 //1F serversitu N0.2
-	ns3::NodeContainer csmaSwitch64;
-	csmaSwitch64.Create(1);
+	//csmaSwitches[64]
 //1F serversitu N0.3
-	ns3::NodeContainer csmaSwitch65;
-	csmaSwitch65.Create(1);
+	//csmaSwitches[65]
 //2F tikakunintizikkensitu
-	ns3::NodeContainer csmaSwitch66;
-	csmaSwitch66.Create(1);
+	//csmaSwitches[66]
 //yougo1
-	ns3::NodeContainer csmaSwitch67;
-	csmaSwitch67.Create(1);
+	//csmaSwitches[67]
 //3F chounouzissyusitu
-	ns3::NodeContainer csmaSwitch68;
-	csmaSwitch68.Create(1);
+	//csmaSwitches[68]
 //4F gengokunrenzissyusitu
-	ns3::NodeContainer csmaSwitch69;
-	csmaSwitch69.Create(1);
+	//csmaSwitches[69]
 //kyouikugakubu2goukan
 //2F dai2jouhousyorizissyusitu
-	ns3::NodeContainer csmaSwitch70;
-	csmaSwitch70.Create(1);
+	//csmaSwitches[70]
 //1F kyousyokuinsienroom
-	ns3::NodeContainer csmaSwitch71;
-	csmaSwitch71.Create(1);
+	//csmaSwitches[71]
 //3F dai1jouhousyorizissyusitu-1
-	ns3::NodeContainer csmaSwitch72;
-	csmaSwitch72.Create(1);
+	//csmaSwitches[72]
 //3F dai1jouhousyorizissyusitu-2
-	ns3::NodeContainer csmaSwitch73;
-	csmaSwitch73.Create(1);
+	//csmaSwitches[73]
 //3F buturikenkyusitu-1
-	ns3::NodeContainer csmaSwitch74;
-	csmaSwitch74.Create(1);
+	//csmaSwitches[74]
 //3F buturikenkyusitu-2
-	ns3::NodeContainer csmaSwitch75;
-	csmaSwitch75.Create(1);
+	//csmaSwitches[75]
 //4F jouhoubunkazissyusitu-1
-	ns3::NodeContainer csmaSwitch76;
-	csmaSwitch76.Create(1);
+	//csmaSwitches[76]
 //4F jouhoubunkazissyusitu-2
-	ns3::NodeContainer csmaSwitch77;
-	csmaSwitch77.Create(1);
+	//csmaSwitches[77]
 //5F ongakuensyusitu
-	ns3::NodeContainer csmaSwitch78;
-	csmaSwitch78.Create(1);
+	//csmaSwitches[78]
 //jouhokuzimucenter-1
 //1F EPS
-	ns3::NodeContainer csmaSwitch79;
-	csmaSwitch79.Create(1);
+	//csmaSwitches[79]
 
 //rigakubu
 //rigakubu-80setuzoku-switch
-	ns3::NodeContainer csmaSwitch80;
-	csmaSwitch80.Create(1);
+	//csmaSwitches[80]
 //rigakunu2goukan
 //1F rigakubu2goukan-buturikagakukatosyokan
-	ns3::NodeContainer csmaSwitch81;
-	csmaSwitch81.Create(1);
+	//csmaSwitches[81]
 //2F kyoudoukenkyusitu
-	ns3::NodeContainer csmaSwitch82;
-	csmaSwitch82.Create(1);
+	//csmaSwitches[82]
 //3F keisankisitu
-	ns3::NodeContainer csmaSwitch83;
-	csmaSwitch83.Create(1);
+	//csmaSwitches[83]
 //4F suurisugakukadai2ensyusitu
-	ns3::NodeContainer csmaSwitch84;
-	csmaSwitch84.Create(1);
+	//csmaSwitches[84]
 //rigakubuhonkan-higasi
 //1F EPS
-	ns3::NodeContainer csmaSwitch85;
-	csmaSwitch85.Create(1);
+	//csmaSwitches[85]
 //2F EPS
-	ns3::NodeContainer csmaSwitch86;
-	csmaSwitch86.Create(1);
+	//csmaSwitches[86]
 //3F EPS
-	ns3::NodeContainer csmaSwitch87;
-	csmaSwitch87.Create(1);
+	//csmaSwitches[87]
 //4F EPS
-	ns3::NodeContainer csmaSwitch88;
-	csmaSwitch88.Create(1);
+	//csmaSwitches[88]
 //5F EPS
-	ns3::NodeContainer csmaSwitch89;
-	csmaSwitch89.Create(1);
+	//csmaSwitches[89]
 //5F jouhousyoriaitu
-	ns3::NodeContainer csmaSwitch90;
-	csmaSwitch90.Create(1);
+	//csmaSwitches[90]
 //sougoukenkyutou-nisi--sougoukenkyurou-higasi
 //sougoukenkyutou-nisi-1F EPS
-	ns3::NodeContainer csmaSwitch91;
-	csmaSwitch91.Create(1);
+	//csmaSwitches[91]
 //1F EPS
-	ns3::NodeContainer csmaSwitch92;
-	csmaSwitch92.Create(1);
+	//csmaSwitches[92]
 //2F EPS
-	ns3::NodeContainer csmaSwitch93;
-	csmaSwitch93.Create(1);
+	//csmaSwitches[93]
 //3F EPS
-	ns3::NodeContainer csmaSwitch94;
-	csmaSwitch94.Create(1);
+	//csmaSwitches[94]
 //4F EPS
-	ns3::NodeContainer csmaSwitch95;
-	csmaSwitch95.Create(1);
+	//csmaSwitches[95]
 //5F EPS
-	ns3::NodeContainer csmaSwitch96;
-	csmaSwitch96.Create(1);
+	//csmaSwitches[96]
 //6F EPS
-	ns3::NodeContainer csmaSwitch97;
-	csmaSwitch97.Create(1);
+	//csmaSwitches[97]
 //7F EPS
-	ns3::NodeContainer csmaSwitch98;
-	csmaSwitch98.Create(1);
+	//csmaSwitches[98]
 
 //rigakubuhonkan1F CPUbunsitu
-	ns3::NodeContainer csmaSwitch99;
-	csmaSwitch99.Create(1);
+	//csmaSwitches[99]
 //sougoukenkyutou-nisi-sita
 //1F EPS
-	ns3::NodeContainer csmaSwitch100;
-	csmaSwitch100.Create(1);
+	//csmaSwitches[100]
 //2F EPS
-	ns3::NodeContainer csmaSwitch101;
-	csmaSwitch101.Create(1);
+	//csmaSwitches[101]
 //3F EPS
-	ns3::NodeContainer csmaSwitch102;
-	csmaSwitch102.Create(1);
+	//csmaSwitches[102]
 //4F EPS
-	ns3::NodeContainer csmaSwitch103;
-	csmaSwitch103.Create(1);
+	//csmaSwitches[103]
 //5F EPS
-	ns3::NodeContainer csmaSwitch104;
-	csmaSwitch104.Create(1);
+	//csmaSwitches[104]
 //6F EPS
-	ns3::NodeContainer csmaSwitch105;
-	csmaSwitch105.Create(1);
+	//csmaSwitches[105]
 //7F EPS
-	ns3::NodeContainer csmaSwitch106;
-	csmaSwitch106.Create(1);
+	//csmaSwitches[106]
 
 //rigakubuhonkan-nisi-sita
 //1F EPS
-	ns3::NodeContainer csmaSwitch107;
-	csmaSwitch107.Create(1);
+	//csmaSwitches[107]
 //2F EPS
-	ns3::NodeContainer csmaSwitch108;
-	csmaSwitch108.Create(1);
+	//csmaSwitches[108]
 //3F EPS
-	ns3::NodeContainer csmaSwitch109;
-	csmaSwitch109.Create(1);
+	//csmaSwitches[109]
 //4F EPS
-	ns3::NodeContainer csmaSwitch110;
-	csmaSwitch110.Create(1);
+	//csmaSwitches[110]
 //5F EPS
-	ns3::NodeContainer csmaSwitch111;
-	csmaSwitch111.Create(1);
+	//csmaSwitches[111]
 //sougoukagakukenkyusiencenter-jouhoku-station
-	ns3::NodeContainer csmaSwitch112;
-	csmaSwitch112.Create(1);
+	//csmaSwitches[112]
 //sougoujouhoumediacenter 2Fnetwork-kanrisituCATV
-	ns3::NodeContainer csmaSwitch113;
-	csmaSwitch113.Create(1);
+	//csmaSwitches[113]
 
 //jouhokuhonbu--aidaimyu-zu
 //daigakuhonbu
-	ns3::NodeContainer csmaSwitch114;
-	csmaSwitch114.Create(1);
+	//csmaSwitches[114]
 //seibutukankyousiryoubank
-	ns3::NodeContainer csmaSwitch115;
-	csmaSwitch115.Create(1);
+	//csmaSwitches[115]
 //benchabizinesu+musaibouseimeikagakukenkyucenter
 //1F EPS
-	ns3::NodeContainer csmaSwitch116;
-	csmaSwitch116.Create(1);
+	//csmaSwitches[116]
 //2F bencha-bizinesu EPS
-	ns3::NodeContainer csmaSwitch117;
-	csmaSwitch117.Create(1);
+	//csmaSwitches[117]
 //3F bencha-bizinesu EPS
-	ns3::NodeContainer csmaSwitch118;
-	csmaSwitch118.Create(1);
+	//csmaSwitches[118]
 //4F bencha-bizinesu EPS
-	ns3::NodeContainer csmaSwitch119;
-	csmaSwitch119.Create(1);
+	//csmaSwitches[119]
 //1F musaibouseimeikagaku EPS
-	ns3::NodeContainer csmaSwitch120;
-	csmaSwitch120.Create(1);
+	//csmaSwitches[120]
 //2F musaibouseimeikagaku EPS
-	ns3::NodeContainer csmaSwitch121;
-	csmaSwitch121.Create(1);
+	//csmaSwitches[121]
 //3F musaibouseimeikagaku EPS
-	ns3::NodeContainer csmaSwitch122;
-	csmaSwitch122.Create(1);
+	//csmaSwitches[122]
 
 //sangyoukagakugijutusiencenter
 //1F  EPS
-	ns3::NodeContainer csmaSwitch123;
-	csmaSwitch123.Create(1);
+	//csmaSwitches[123]
 //2F EPS
-	ns3::NodeContainer csmaSwitch124;
-	csmaSwitch124.Create(1);
+	//csmaSwitches[124]
 //3F EPS
-	ns3::NodeContainer csmaSwitch125;
-	csmaSwitch125.Create(1);
+	//csmaSwitches[125]
 
 //hougakubuhonkan
 //1F 108gousitu main
-	ns3::NodeContainer csmaSwitch126;
-	csmaSwitch126.Create(1);
+	//csmaSwitches[126]
 //1F syusyokusoudansitu-1
-	ns3::NodeContainer csmaSwitch127;
-	csmaSwitch127.Create(1);
+	//csmaSwitches[127]
 //1F syusyokusoudansitu-2
-	ns3::NodeContainer csmaSwitch128;
-	csmaSwitch128.Create(1);
+	//csmaSwitches[128]
 //2F EPS
-	ns3::NodeContainer csmaSwitch129;
-	csmaSwitch129.Create(1);
+	//csmaSwitches[129]
 //3F EPS
-	ns3::NodeContainer csmaSwitch130;
-	csmaSwitch130.Create(1);
+	//csmaSwitches[130]
 //4F EPS
-	ns3::NodeContainer csmaSwitch131;
-	csmaSwitch131.Create(1);
+	//csmaSwitches[131]
 //5F EPS-ue
-	ns3::NodeContainer csmaSwitch132;
-	csmaSwitch132.Create(1);
+	//csmaSwitches[132]
 //5F EPS-sita
-	ns3::NodeContainer csmaSwitch133;
-	csmaSwitch133.Create(1);
+	//csmaSwitches[133]
 //6F EPS
-	ns3::NodeContainer csmaSwitch134;
-	csmaSwitch134.Create(1);
+	//csmaSwitches[134]
 //7F EPS
-	ns3::NodeContainer csmaSwitch135;
-	csmaSwitch135.Create(1);
+	//csmaSwitches[135]
 //8F EPS
-	ns3::NodeContainer csmaSwitch136;
-	csmaSwitch136.Create(1);
+	//csmaSwitches[136]
 
 //houbungakubu2goukan
 //1F junbisitu
-	ns3::NodeContainer csmaSwitch137;
-	csmaSwitch137.Create(1);
+	//csmaSwitches[137]
 //1F EPS
-	ns3::NodeContainer csmaSwitch138;
-	csmaSwitch138.Create(1);
+	//csmaSwitches[138]
 //2F EPS
-	ns3::NodeContainer csmaSwitch139;
-	csmaSwitch139.Create(1);
+	//csmaSwitches[139]
 //3F EPS
-	ns3::NodeContainer csmaSwitch140;
-	csmaSwitch140.Create(1);
+	//csmaSwitches[140]
 
 //aidaimyuzu-higasi
 //aidaimyuzu-higasi 1F EPS
-	ns3::NodeContainer csmaSwitch141;
-	csmaSwitch141.Create(1);
+	//csmaSwitches[141]
 //1F EPS
-	ns3::NodeContainer csmaSwitch142;
-	csmaSwitch142.Create(1);
+	//csmaSwitches[142]
 //2F EPS-left
-	ns3::NodeContainer csmaSwitch143;
-	csmaSwitch143.Create(1);
+	//csmaSwitches[143]
 //3F EPS
-	ns3::NodeContainer csmaSwitch144;
-	csmaSwitch144.Create(1);
+	//csmaSwitches[144]
 //4F EPS
-	ns3::NodeContainer csmaSwitch145;
-	csmaSwitch145.Create(1);
+	//csmaSwitches[145]
 //2F EPS-right
-	ns3::NodeContainer csmaSwitch146;
-	csmaSwitch146.Create(1);
+	//csmaSwitches[146]
 
 //aidaimyuzu-minami
 //1F  EPS
-	ns3::NodeContainer csmaSwitch147;
-	csmaSwitch147.Create(1);
+	//csmaSwitches[147]
 //2F EPS
-	ns3::NodeContainer csmaSwitch148;
-	csmaSwitch148.Create(1);
+	//csmaSwitches[148]
 //3F EPS
-	ns3::NodeContainer csmaSwitch149;
-	csmaSwitch149.Create(1);
+	//csmaSwitches[149]
 
 //aidaimyuzu-nisi
 //1F EPS
-	ns3::NodeContainer csmaSwitch150;
-	csmaSwitch150.Create(1);
+	//csmaSwitches[150]
 //2F EPS
-	ns3::NodeContainer csmaSwitch151;
-	csmaSwitch151.Create(1);
+	//csmaSwitches[151]
 //2F M21kyousitu-1
-	ns3::NodeContainer csmaSwitch152;
-	csmaSwitch152.Create(1);
+	//csmaSwitches[152]
 //2F M21kyousitu-2
-	ns3::NodeContainer csmaSwitch153;
-	csmaSwitch153.Create(1);
+	//csmaSwitches[153]
 //3F EPS-left
-	ns3::NodeContainer csmaSwitch154;
-	csmaSwitch154.Create(1);
+	//csmaSwitches[154]
 //3F M31kyousitu-1
-	ns3::NodeContainer csmaSwitch155;
-	csmaSwitch155.Create(1);
+	//csmaSwitches[155]
 //3F M31kyousitu-2
-	ns3::NodeContainer csmaSwitch156;
-	csmaSwitch156.Create(1);
+	//csmaSwitches[156]
 //3F EPS-right
-	ns3::NodeContainer csmaSwitch157;
-	csmaSwitch157.Create(1);
+	//csmaSwitches[157]
 
 //kyotukyoikukougitou 1F zissyusitu--greenhole
 //kyotukyoikukougitou 1F zissyusitu
-	ns3::NodeContainer csmaSwitch158;
-	csmaSwitch158.Create(1);
+	//csmaSwitches[158]
 //greenhole
-	ns3::NodeContainer csmaSwitch159;
-	csmaSwitch159.Create(1);
+	//csmaSwitches[159]
 
 //sougoujouhoumediacenter 2F network kanrisituCATV
-	ns3::NodeContainer csmaSwitch160;
-	csmaSwitch160.Create(1);
+	//csmaSwitches[160]
 
 //kougakubu--sougoukenkyu2
 //kougakubuhonkan 2F EPS
-	ns3::NodeContainer csmaSwitch161;
-	csmaSwitch161.Create(1);
+	//csmaSwitches[161]
 
 //kougakubuhonkan-ue
 //1F EPS
-	ns3::NodeContainer csmaSwitch162;
-	csmaSwitch162.Create(1);
+	//csmaSwitches[162]
 //3F EPS
-	ns3::NodeContainer csmaSwitch163;
-	csmaSwitch163.Create(1);
+	//csmaSwitches[163]
 //4F EPS
-	ns3::NodeContainer csmaSwitch164;
-	csmaSwitch164.Create(1);
+	//csmaSwitches[164]
 //6F EPS
-	ns3::NodeContainer csmaSwitch165;
-	csmaSwitch165.Create(1);
+	//csmaSwitches[165]
 //8F EPS
-	ns3::NodeContainer csmaSwitch166;
-	csmaSwitch166.Create(1);
+	//csmaSwitches[166]
 
 //kougakubu2goukan
 //1F rouka joudan,migi
-	ns3::NodeContainer csmaSwitch167;
-	csmaSwitch167.Create(1);
+	//csmaSwitches[167]
 //1F rouka joudan,hidari
-	ns3::NodeContainer csmaSwitch168;
-	csmaSwitch168.Create(1);
+	//csmaSwitches[168]
 //2F rouka joudan
-	ns3::NodeContainer csmaSwitch169;
-	csmaSwitch169.Create(1);
+	//csmaSwitches[169]
 //3F rouka joudan
-	ns3::NodeContainer csmaSwitch170;
-	csmaSwitch170.Create(1);
+	//csmaSwitches[170]
 //4F rouka joudan
-	ns3::NodeContainer csmaSwitch171;
-	csmaSwitch171.Create(1);
+	//csmaSwitches[171]
 //5F rouka joudan,migi
-	ns3::NodeContainer csmaSwitch172;
-	csmaSwitch172.Create(1);
+	//csmaSwitches[172]
 //okyakusamaSW-1
-	ns3::NodeContainer csmaSwitch173;
-	csmaSwitch173.Create(1);
+	//csmaSwitches[173]
 //5F rouka joudan,hidari
-	ns3::NodeContainer csmaSwitch174;
-	csmaSwitch174.Create(1);
+	//csmaSwitches[174]
 //3F okuakusamaSW-2
-	ns3::NodeContainer csmaSwitch175;
-	csmaSwitch175.Create(1);
+	//csmaSwitches[175]
 //6F rouka,joudan
-	ns3::NodeContainer csmaSwitch176;
-	csmaSwitch176.Create(1);
+	//csmaSwitches[176]
 //okyakusamaSW-3
-	ns3::NodeContainer csmaSwitch177;
-	csmaSwitch177.Create(1);
+	//csmaSwitches[177]
 
 //kougakubu3goukan+kougakubu4goukan
 //kougakubu3goukan
 //3F dai7kenkyusitu-left
-	ns3::NodeContainer csmaSwitch178;
-	csmaSwitch178.Create(1);
+	//csmaSwitches[178]
 //3F dai7kenkyusitu-right
-	ns3::NodeContainer csmaSwitch179;
-	csmaSwitch179.Create(1);
+	//csmaSwitches[179]
 
 //kougakubu4goukan
 //3F EPS
-	ns3::NodeContainer csmaSwitch180;
-	csmaSwitch180.Create(1);
+	//csmaSwitches[180]
 //7F EPS-left
-	ns3::NodeContainer csmaSwitch181;
-	csmaSwitch181.Create(1);
+	//csmaSwitches[181]
 //7F EPS-right
-	ns3::NodeContainer csmaSwitch182;
-	csmaSwitch182.Create(1);
+	//csmaSwitches[182]
 //kougakubu5goukan
 //1F rouka joudan,migi
-	ns3::NodeContainer csmaSwitch183;
-	csmaSwitch183.Create(1);
+	//csmaSwitches[183]
 //2F EPS
-	ns3::NodeContainer csmaSwitch184;
-	csmaSwitch184.Create(1);
+	//csmaSwitches[184]
 //3F EPS
-	ns3::NodeContainer csmaSwitch185;
-	csmaSwitch185.Create(1);
+	//csmaSwitches[185]
 //4F EPS
-	ns3::NodeContainer csmaSwitch186;
-	csmaSwitch186.Create(1);
+	//csmaSwitches[186]
 //5F EPS
-	ns3::NodeContainer csmaSwitch187;
-	csmaSwitch187.Create(1);
+	//csmaSwitches[187]
 //6F EPS
-	ns3::NodeContainer csmaSwitch188;
-	csmaSwitch188.Create(1);
+	//csmaSwitches[188]
 //7F EPS
-	ns3::NodeContainer csmaSwitch189;
-	csmaSwitch189.Create(1);
+	//csmaSwitches[189]
 //8F EPS
-	ns3::NodeContainer csmaSwitch190;
-	csmaSwitch190.Create(1);
+	//csmaSwitches[190]
 //9F EPS
-	ns3::NodeContainer csmaSwitch191;
-	csmaSwitch191.Create(1);
+	//csmaSwitches[191]
 //10F EPS
-	ns3::NodeContainer csmaSwitch192;
-	csmaSwitch192.Create(1);
+	//csmaSwitches[192]
 //kougakubu1goukan
 //1F EPS
-	ns3::NodeContainer csmaSwitch193;
-	csmaSwitch193.Create(1);
+	//csmaSwitches[193]
 //2F EPS
-	ns3::NodeContainer csmaSwitch194;
-	csmaSwitch194.Create(1);
+	//csmaSwitches[194]
 //4F EPS
-	ns3::NodeContainer csmaSwitch195;
-	csmaSwitch195.Create(1);
+	//csmaSwitches[195]
 //6F EPS
-	ns3::NodeContainer csmaSwitch196;
-	csmaSwitch196.Create(1);
+	//csmaSwitches[196]
 //kougakubukougitou
 //1F kisokagakuzikkensitu
-	ns3::NodeContainer csmaSwitch197;
-	csmaSwitch197.Create(1);
+	//csmaSwitches[197]
 //24bankougisitu
-	ns3::NodeContainer csmaSwitch343;
-	csmaSwitch343.Create(1);
+	//csmaSwitches[343]
 //4F Dseizusitu-1
-	ns3::NodeContainer csmaSwitch198;
-	csmaSwitch198.Create(1);
+	//csmaSwitches[198]
 //4F Dseizusitu-2
-	ns3::NodeContainer csmaSwitch199;
-	csmaSwitch199.Create(1);
+	//csmaSwitches[199]
 
 //sougoukenkyutou
 //1F EPS-main
-	ns3::NodeContainer csmaSwitch200;
-	csmaSwitch200.Create(1);
+	//csmaSwitches[200]
 //3F EPS-main
-	ns3::NodeContainer csmaSwitch201;
-	csmaSwitch201.Create(1);
+	//csmaSwitches[201]
 //3F EPS-sub-1
-	ns3::NodeContainer csmaSwitch202;
-	csmaSwitch202.Create(1);
+	//csmaSwitches[202]
 //3F EPS-sub-2
-	ns3::NodeContainer csmaSwitch203;
-	csmaSwitch203.Create(1);
+	//csmaSwitches[203]
 //3F EPS-sub-3
-	ns3::NodeContainer csmaSwitch204;
-	csmaSwitch204.Create(1);
+	//csmaSwitches[204]
 //2F EPS-ue
-	ns3::NodeContainer csmaSwitch205;
-	csmaSwitch205.Create(1);
+	//csmaSwitches[205]
 //1F EPS-sub
-	ns3::NodeContainer csmaSwitch206;
-	csmaSwitch206.Create(1);
+	//csmaSwitches[206]
 //2F EPS-sita
-	ns3::NodeContainer csmaSwitch207;
-	csmaSwitch207.Create(1);
+	//csmaSwitches[207]
 //4F EPS-main
-	ns3::NodeContainer csmaSwitch208;
-	csmaSwitch208.Create(1);
+	//csmaSwitches[208]
 //4F EPS-sub-1
-	ns3::NodeContainer csmaSwitch209;
-	csmaSwitch209.Create(1);
+	//csmaSwitches[209]
 //4F EPS-sub-2
-	ns3::NodeContainer csmaSwitch210;
-	csmaSwitch210.Create(1);
+	//csmaSwitches[210]
 //4F EPS-sub-3
-	ns3::NodeContainer csmaSwitch211;
-	csmaSwitch211.Create(1);
+	//csmaSwitches[211]
 
 //syakairenkeisuisinnkikou
 //1F
-	ns3::NodeContainer csmaSwitch347;
-	csmaSwitch347.Create(1);
+	//csmaSwitches[347]
 //2F
-	ns3::NodeContainer csmaSwitch348;
-	csmaSwitch348.Create(1);
+	//csmaSwitches[348]
 
 //kougakubukikaizissyukoujoutou
 //1F zimusitu
-	ns3::NodeContainer csmaSwitch212;
-	csmaSwitch212.Create(1);
+	//csmaSwitches[212]
 //sougoujouhoumediacenter 2F networkkanrisitu-CATVsama
-	ns3::NodeContainer csmaSwitch213;
-	csmaSwitch213.Create(1);
+	//csmaSwitches[213]
 
 //2F serversitu-mediacenterbunsitu-main
 	ns3::NodeContainer csmaSwitchsigenobu;
@@ -753,235 +539,165 @@ int main(int argc, char** argv) {
 
 //igakubutou2F
 //2F EPS
-	ns3::NodeContainer csmaSwitch214;
-	csmaSwitch214.Create(1);
+	//csmaSwitches[214]
 //sougoukagakukenkyusiencenter-sigenobustation
 //2F kagakuzikkensitu
-	ns3::NodeContainer csmaSwitch215;
-	csmaSwitch215.Create(1);
+	//csmaSwitches[215]
 //1F siryouhokanko1-EPS
-	ns3::NodeContainer csmaSwitch216;
-	csmaSwitch216.Create(1);
+	//csmaSwitches[216]
 //rinsyoukenkyutou
 //1F seitaijouhoukaisekikenkyusitu
-	ns3::NodeContainer csmaSwitch217;
-	csmaSwitch217.Create(1);
+	//csmaSwitches[217]
 //2F josyusitu
-	ns3::NodeContainer csmaSwitch218;
-	csmaSwitch218.Create(1);
+	//csmaSwitches[218]
 //3F kyoukankenkyusitu2
-	ns3::NodeContainer csmaSwitch219;
-	csmaSwitch219.Create(1);
+	//csmaSwitches[219]
 //kangogakkakousya
 //3F EPS
-	ns3::NodeContainer csmaSwitch220;
-	csmaSwitch220.Create(1);
+	//csmaSwitches[220]
 //1F EPS
-	ns3::NodeContainer csmaSwitch221;
-	csmaSwitch221.Create(1);
+	//csmaSwitches[221]
 //2F EPS
-	ns3::NodeContainer csmaSwitch222;
-	csmaSwitch222.Create(1);
+	//csmaSwitches[222]
 //4F EPS
-	ns3::NodeContainer csmaSwitch223;
-	csmaSwitch223.Create(1);
+	//csmaSwitches[223]
 //5F EPS
-	ns3::NodeContainer csmaSwitch224;
-	csmaSwitch224.Create(1);
+	//csmaSwitches[224]
 //6F EPS
-	ns3::NodeContainer csmaSwitch225;
-	csmaSwitch225.Create(1);
+	//csmaSwitches[225]
 //2F serversitu-mediacenterbunsitu-sub
-	ns3::NodeContainer csmaSwitch226;
-	csmaSwitch226.Create(1);
+	//csmaSwitches[226]
 //4F ensyusitu
-	ns3::NodeContainer csmaSwitch227;
-	csmaSwitch227.Create(1);
+	//csmaSwitches[227]
 //4F EPS
-	ns3::NodeContainer csmaSwitch228;
-	csmaSwitch228.Create(1);
+	//csmaSwitches[228]
 //gairaitou
 //1F housyasenkachouonpakensasitu
-	ns3::NodeContainer csmaSwitch229;
-	csmaSwitch229.Create(1);
+	//csmaSwitches[229]
 //huzokubyouin1goukan
 //2F denwakoukankisitu
-	ns3::NodeContainer csmaSwitch230;
-	csmaSwitch230.Create(1);
+	//csmaSwitches[230]
 //gairaitou
 //1F haidensitu1
-	ns3::NodeContainer csmaSwitch231;
-	csmaSwitch231.Create(1);
+	//csmaSwitches[231]
 //1F haidensitu2
-	ns3::NodeContainer csmaSwitch232;
-	csmaSwitch232.Create(1);
+	//csmaSwitches[232]
 //3F eiyousidouditu
-	ns3::NodeContainer csmaSwitch233;
-	csmaSwitch233.Create(1);
+	//csmaSwitches[233]
 //huzokubyouin1goukan
 //1F EPS-nisi
-	ns3::NodeContainer csmaSwitch234;
-	csmaSwitch234.Create(1);
+	//csmaSwitches[234]
 //1F EPS-higasi
-	ns3::NodeContainer csmaSwitch235;
-	csmaSwitch235.Create(1);
+	//csmaSwitches[235]
 //2F denwakoukankisitu
-	ns3::NodeContainer csmaSwitch236;
-	csmaSwitch236.Create(1);
+	//csmaSwitches[236]
 //2F chuoukensasitu
-	ns3::NodeContainer csmaSwitch237;
-	csmaSwitch237.Create(1);
+	//csmaSwitches[237]
 //2F EPS
-	ns3::NodeContainer csmaSwitch238;
-	csmaSwitch238.Create(1);
+	//csmaSwitches[238]
 //3F EPS-nisi
-	ns3::NodeContainer csmaSwitch239;
-	csmaSwitch239.Create(1);
+	//csmaSwitches[239]
 //3F EPS-higasi
-	ns3::NodeContainer csmaSwitch240;
-	csmaSwitch240.Create(1);
+	//csmaSwitches[240]
 //4F EPS
-	ns3::NodeContainer csmaSwitch241;
-	csmaSwitch241.Create(1);
+	//csmaSwitches[241]
 //5F EPS
-	ns3::NodeContainer csmaSwitch242;
-	csmaSwitch242.Create(1);
+	//csmaSwitches[242]
 //6F EPS
-	ns3::NodeContainer csmaSwitch243;
-	csmaSwitch243.Create(1);
+	//csmaSwitches[243]
 //7F EPS
-	ns3::NodeContainer csmaSwitch244;
-	csmaSwitch244.Create(1);
+	//csmaSwitches[244]
 //8F EPS
-	ns3::NodeContainer csmaSwitch245;
-	csmaSwitch245.Create(1);
+	//csmaSwitches[245]
 //9F EPS
-	ns3::NodeContainer csmaSwitch246;
-	csmaSwitch246.Create(1);
+	//csmaSwitches[246]
 //222F EPS
-	ns3::NodeContainer csmaSwitch247;
-	csmaSwitch247.Create(1);
+	//csmaSwitches[247]
 
 //huzokubyouin2goukan
 //1F EPS
-	ns3::NodeContainer csmaSwitch248;
-	csmaSwitch248.Create(1);
+	//csmaSwitches[248]
 //B1F EPS
-	ns3::NodeContainer csmaSwitch284;
-	csmaSwitch284.Create(1);
+	//csmaSwitches[284]
 //2F EPS
-	ns3::NodeContainer csmaSwitch249;
-	csmaSwitch249.Create(1);
+	//csmaSwitches[249]
 //3F EPS
-	ns3::NodeContainer csmaSwitch250;
-	csmaSwitch250.Create(1);
+	//csmaSwitches[250]
 //4F EPS
-	ns3::NodeContainer csmaSwitch251;
-	csmaSwitch251.Create(1);
+	//csmaSwitches[251]
 //5F EPS
-	ns3::NodeContainer csmaSwitch252;
-	csmaSwitch252.Create(1);
+	//csmaSwitches[252]
 //6F EPS
-	ns3::NodeContainer csmaSwitch253;
-	csmaSwitch253.Create(1);
+	//csmaSwitches[253]
 //7F EPS
-	ns3::NodeContainer csmaSwitch254;
-	csmaSwitch254.Create(1);
+	//csmaSwitches[254]
 //8F EPS
-	ns3::NodeContainer csmaSwitch255;
-	csmaSwitch255.Create(1);
+	//csmaSwitches[255]
 
 //sougoukyouikutou
 //2F sosikizissyusitu-main
-	ns3::NodeContainer csmaSwitch256;
-	csmaSwitch256.Create(1);
+	//csmaSwitches[256]
 //2F sosikizissyusitu-sub1
-	ns3::NodeContainer csmaSwitch257;
-	csmaSwitch257.Create(1);
+	//csmaSwitches[257]
 //2F sosikizissyusitu-sub2
-	ns3::NodeContainer csmaSwitch258;
-	csmaSwitch258.Create(1);
+	//csmaSwitches[258]
 //2F sosikizissyusitu-sub3
-	ns3::NodeContainer csmaSwitch259;
-	csmaSwitch259.Create(1);
+	//csmaSwitches[259]
 
 //huzokutosyokan-igakububunya
 //1F kaigisitu
-	ns3::NodeContainer csmaSwitch260;
-	csmaSwitch260.Create(1);
+	//csmaSwitches[260]
 
 //kanritou
 //2F kenkyukyouryokusitu
-	ns3::NodeContainer csmaSwitch261;
-	csmaSwitch261.Create(1);
+	//csmaSwitches[261]
 //3F kaigisitu
-	ns3::NodeContainer csmaSwitch262;
-	csmaSwitch262.Create(1);
+	//csmaSwitches[262]
 //hukurikaikan
 //1F hendensitu
-	ns3::NodeContainer csmaSwitch263;
-	csmaSwitch263.Create(1);
+	//csmaSwitches[263]
 
 //igakubutou2F
 //2392800G-259TCL
-	ns3::NodeContainer csmaSwitch264;
-	csmaSwitch264.Create(1);
+	//csmaSwitches[264]
 //2F networktanmatusitu
-	ns3::NodeContainer csmaSwitch265;
-	csmaSwitch265.Create(1);
+	//csmaSwitches[265]
 
 //2Fserversitu-ue
-	ns3::NodeContainer csmaSwitch266;
-	csmaSwitch266.Create(1);
+	//csmaSwitches[266]
 // 2392800G-72TCL
-	ns3::NodeContainer csmaSwitch267;
-	csmaSwitch267.Create(1);
+	//csmaSwitches[267]
 //1F EPS
-	ns3::NodeContainer csmaSwitch268;
-	csmaSwitch268.Create(1);
+	//csmaSwitches[268]
 //3F EPS
-	ns3::NodeContainer csmaSwitch269;
-	csmaSwitch269.Create(1);
+	//csmaSwitches[269]
 //4F EPS
-	ns3::NodeContainer csmaSwitch270;
-	csmaSwitch270.Create(1);
+	//csmaSwitches[270]
 //okyakusamaSW-1
-	ns3::NodeContainer csmaSwitch272;
-	csmaSwitch272.Create(1);
+	//csmaSwitches[272]
 //5F EPS
-	ns3::NodeContainer csmaSwitch273;
-	csmaSwitch273.Create(1);
+	//csmaSwitches[273]
 //Wasay buredo-server
-	ns3::NodeContainer csmaSwitch274;
-	csmaSwitch274.Create(1);
+	//csmaSwitches[274]
 //2F serversitu-buredoserver
-	ns3::NodeContainer csmaSwitch275;
-	csmaSwitch275.Create(1);
+	//csmaSwitches[275]
 //2Fserversitu-sita
-	ns3::NodeContainer csmaSwitch276;
-	csmaSwitch276.Create(1);
+	//csmaSwitches[276]
 //6F EPS
-	ns3::NodeContainer csmaSwitch277;
-	csmaSwitch277.Create(1);
+	//csmaSwitches[277]
 //7F EPS
-	ns3::NodeContainer csmaSwitch278;
-	csmaSwitch278.Create(1);
+	//csmaSwitches[278]
 //okyakusamaSW-2
-	ns3::NodeContainer csmaSwitch279;
-	csmaSwitch279.Create(1);
+	//csmaSwitches[279]
 //8F EPS
-	ns3::NodeContainer csmaSwitch280;
-	csmaSwitch280.Create(1);
+	//csmaSwitches[280]
 //okyakusamaSW-3
-	ns3::NodeContainer csmaSwitch281;
-	csmaSwitch281.Create(1);
+	//csmaSwitches[281]
 //9F EPS
-	ns3::NodeContainer csmaSwitch282;
-	csmaSwitch282.Create(1);
+	//csmaSwitches[282]
 
 //igakubumediacenterbunsitu
-	ns3::NodeContainer csmaSwitch283;
-	csmaSwitch283.Create(1);
+	//csmaSwitches[283]
 
 //3F serversitu-mediacenterbunsitu-left-main
 	ns3::NodeContainer csmaSwitchtarumi;
@@ -989,215 +705,157 @@ int main(int argc, char** argv) {
 	csmaSwitchtarumi.Create(1);
 //nougakubu2goukan-2Fserversitu
 //buredoserver
-	ns3::NodeContainer csmaSwitch285;
-	csmaSwitch285.Create(1);
+	//csmaSwitches[285]
 //3F mediacenterbunsitu-1
-	ns3::NodeContainer csmaSwitch286;
-	csmaSwitch286.Create(1);
+	//csmaSwitches[286]
 //3F mediacenterbunsitu-2
-	ns3::NodeContainer csmaSwitch287;
-	csmaSwitch287.Create(1);
+	//csmaSwitches[287]
 //3F mediacenterbunsitu-3-left
-	ns3::NodeContainer csmaSwitch288;
-	csmaSwitch288.Create(1);
+	//csmaSwitches[288]
 //3F mediacenterbunsitu-3-right
-	ns3::NodeContainer csmaSwitch289;
-	csmaSwitch289.Create(1);
+	//csmaSwitches[289]
 //3F mediacenterbunsitu-4
-	ns3::NodeContainer csmaSwitch290;
-	csmaSwitch290.Create(1);
+	//csmaSwitches[290]
 
 //nougakubu2goukan
 //2F EPS-left
-	ns3::NodeContainer csmaSwitch291;
-	csmaSwitch291.Create(1);
+	//csmaSwitches[291]
 //3F 317kougisitu
-	ns3::NodeContainer csmaSwitch292;
-	csmaSwitch292.Create(1);
+	//csmaSwitches[292]
 //2F huzokutosyokan-multimediacorner
-	ns3::NodeContainer csmaSwitch293;
-	csmaSwitch293.Create(1);
+	//csmaSwitches[293]
 //2F EPS-right
-	ns3::NodeContainer csmaSwitch294;
-	csmaSwitch294.Create(1);
+	//csmaSwitches[294]
 //nougakubu3goukan
 //4F seibutukankyoujouhousisutemugaku-conpyutasitu-left
-	ns3::NodeContainer csmaSwitch295;
-	csmaSwitch295.Create(1);
+	//csmaSwitches[295]
 //1F EPS
-	ns3::NodeContainer csmaSwitch296;
-	csmaSwitch296.Create(1);
+	//csmaSwitches[296]
 //2F EPS-ue
-	ns3::NodeContainer csmaSwitch297;
-	csmaSwitch297.Create(1);
+	//csmaSwitches[297]
 //nougakubuseigyokazikkensisetu
 //okyakusamaSW
-	ns3::NodeContainer csmaSwitch298;
-	csmaSwitch298.Create(1);
+	//csmaSwitches[298]
 //2F EPS-sita
-	ns3::NodeContainer csmaSwitch299;
-	csmaSwitch299.Create(1);
+	//csmaSwitches[299]
 //3F EPS
-	ns3::NodeContainer csmaSwitch300;
-	csmaSwitch300.Create(1);
+	//csmaSwitches[300]
 //4F seibutukankyoujouhousisutemugaku-computersitu-right
-	ns3::NodeContainer csmaSwitch301;
-	csmaSwitch301.Create(1);
+	//csmaSwitches[301]
 //5F EPS-ue
-	ns3::NodeContainer csmaSwitch302;
-	csmaSwitch302.Create(1);
+	//csmaSwitches[302]
 //5F EPS-sita
-	ns3::NodeContainer csmaSwitch303;
-	csmaSwitch303.Create(1);
+	//csmaSwitches[303]
 
 //nougakubuhonkan-minami
 //3F EPS-left
-	ns3::NodeContainer csmaSwitch304;
-	csmaSwitch304.Create(1);
+	//csmaSwitches[304]
 //1F EPS
-	ns3::NodeContainer csmaSwitch305;
-	csmaSwitch305.Create(1);
+	//csmaSwitches[305]
 //2F EPS-ue
-	ns3::NodeContainer csmaSwitch306;
-	csmaSwitch306.Create(1);
+	//csmaSwitches[306]
 //2F EPS-sita
-	ns3::NodeContainer csmaSwitch307;
-	csmaSwitch307.Create(1);
+	//csmaSwitches[307]
 //3F EPS
-	ns3::NodeContainer csmaSwitch308;
-	csmaSwitch308.Create(1);
+	//csmaSwitches[308]
 //4F EPS
-	ns3::NodeContainer csmaSwitch309;
-	csmaSwitch309.Create(1);
+	//csmaSwitches[309]
 //5F EPS
-	ns3::NodeContainer csmaSwitch310;
-	csmaSwitch310.Create(1);
+	//csmaSwitches[310]
 //sougoukagakukenkyusiencenter
 //2F EPS
-	ns3::NodeContainer csmaSwitch311;
-	csmaSwitch311.Create(1);
+	//csmaSwitches[311]
 
 //rengounougakukenkyuka
 //2F inseikenkyusitu
-	ns3::NodeContainer csmaSwitch312;
-	csmaSwitch312.Create(1);
+	//csmaSwitches[312]
 //1F zimusitu
-	ns3::NodeContainer csmaSwitch313;
-	csmaSwitch313.Create(1);
+	//csmaSwitches[313]
 //3F senninkyoukanzikkensitu
-	ns3::NodeContainer csmaSwitch314;
-	csmaSwitch314.Create(1);
+	//csmaSwitches[314]
 
 //yukarikaikan
 //1F zimusitu
-	ns3::NodeContainer csmaSwitch315;
-	csmaSwitch315.Create(1);
+	//csmaSwitches[315]
 
 //3F serversitu-mediacenterbunsitu-right
-	ns3::NodeContainer csmaSwitch316;
-	csmaSwitch316.Create(1);
+	//csmaSwitches[316]
 
 //nougakubuhonkan-kita
 //1F EPS-left
-	ns3::NodeContainer csmaSwitch317;
-	csmaSwitch317.Create(1);
+	//csmaSwitches[317]
 //1F EPS-right
-	ns3::NodeContainer csmaSwitch318;
-	csmaSwitch318.Create(1);
+	//csmaSwitches[318]
 //2F EPS
-	ns3::NodeContainer csmaSwitch319;
-	csmaSwitch319.Create(1);
+	//csmaSwitches[319]
 //3F EPS
-	ns3::NodeContainer csmaSwitch320;
-	csmaSwitch320.Create(1);
+	//csmaSwitches[320]
 //6F EPS-left
-	ns3::NodeContainer csmaSwitch321;
-	csmaSwitch321.Create(1);
+	//csmaSwitches[321]
 //4F EPS
-	ns3::NodeContainer csmaSwitch322;
-	csmaSwitch322.Create(1);
+	//csmaSwitches[322]
 //5F EPS
-	ns3::NodeContainer csmaSwitch323;
-	csmaSwitch323.Create(1);
+	//csmaSwitches[323]
 //6F EPS-right
-	ns3::NodeContainer csmaSwitch324;
-	csmaSwitch324.Create(1);
+	//csmaSwitches[324]
 
 //mikazikkensitu
 //2F EPS
-	ns3::NodeContainer csmaSwitch325;
-	csmaSwitch325.Create(1);
+	//csmaSwitches[325]
 
 //huzokukoukousya-minami
 //1F EPS
-	ns3::NodeContainer csmaSwitch326;
-	csmaSwitch326.Create(1);
+	//csmaSwitches[326]
 //5F jouhousiryousakuseisitu
-	ns3::NodeContainer csmaSwitch327;
-	csmaSwitch327.Create(1);
+	//csmaSwitches[327]
 
 //huzokukoukousya-kita--huzokukoukousya-naka
 //3F jouhousiryousakuseisitu
-	ns3::NodeContainer csmaSwitch328;
-	csmaSwitch328.Create(1);
+	//csmaSwitches[328]
 //2F kitarouka
-	ns3::NodeContainer csmaSwitch329;
-	csmaSwitch329.Create(1);
+	//csmaSwitches[329]
 //2F minamirouka
-	ns3::NodeContainer csmaSwitch330;
-	csmaSwitch330.Create(1);
+	//csmaSwitches[330]
 
 //kankyousangyoukenkyusisetu
 //1F keisankisitu
-	ns3::NodeContainer csmaSwitch331;
-	csmaSwitch331.Create(1);
+	//csmaSwitches[331]
 
 //syokubutukoujousama
 //2F serverkisitu
-	ns3::NodeContainer csmaSwitch332;
-	csmaSwitch332.Create(1);
+	//csmaSwitches[332]
 
 //sougoujouhoumediacenter 2Fnetwork-kanrisituCATV
-	ns3::NodeContainer csmaSwitch333;
-	csmaSwitch333.Create(1);
+	//csmaSwitches[333]
 
 //huzokusyougakkoukousya
 //1F zimusitu-left
-	ns3::NodeContainer csmaSwitch334;
-	csmaSwitch334.Create(1);
+	//csmaSwitches[334]
 //1F zimusitu-right
-	ns3::NodeContainer csmaSwitch335;
-	csmaSwitch335.Create(1);
+	//csmaSwitches[335]
 
 //huzokusyougakkou-centertou 1F bunkensiryousitu
-	ns3::NodeContainer csmaSwitch336;
-	csmaSwitch336.Create(1);
+	//csmaSwitches[336]
 
 //huzokusyougakkoukousya
 //2F sichoukakusitu
-	ns3::NodeContainer csmaSwitch337;
-	csmaSwitch337.Create(1);
+	//csmaSwitches[337]
 
 //huzokuchugakkou-honkan
 //2F kaigisitu
-	ns3::NodeContainer csmaSwitch338;
-	csmaSwitch338.Create(1);
+	//csmaSwitches[338]
 //1F jouhoukyouikusitu
-	ns3::NodeContainer csmaSwitch339;
-	csmaSwitch339.Create(1);
+	//csmaSwitches[339]
 
 //huzokuyougogakkoukousya
 //1F keisankisitu
-	ns3::NodeContainer csmaSwitch340;
-	csmaSwitch340.Create(1);
+	//csmaSwitches[340]
 //ehimedaigakuSW
-	ns3::NodeContainer csmaSwitch341;
-	csmaSwitch341.Create(1);
+	//csmaSwitches[341]
 
 //huzokuyoutienhonkan
 //1F kyoukansitu
-	ns3::NodeContainer csmaSwitch342;
-	csmaSwitch342.Create(1);
+	//csmaSwitches[342]
 
 //csmaSwitch5 nodes
 	ns3::NodeContainer terminals5;

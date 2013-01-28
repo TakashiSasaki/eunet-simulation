@@ -21,7 +21,8 @@ public:
 		return netDeviceContainers[position];
 	}
 
-	SwitchDevices(const int number_of_devices) {
+	SwitchDevices(const int number_of_devices) :
+			netDeviceContainers(number_of_devices) {
 		this->netDeviceContainers = new std::vector<
 				ns3::Ptr<ns3::NetDeviceContainer> >(number_of_devices);
 		std::for_each(netDeviceContainers.begin(), netDeviceContainers.end(),
