@@ -98,642 +98,21 @@ int main(int argc, char** argv) {
 			"ActiveProbing", ns3::BooleanValue(false));
 
 	std::vector<ns3::NetDeviceContainer> staDeviceSets(316);
-
 	for(int i=1; i<=315; ++i){
 		if(i==298||i==299||i==306||i==315) continue;
-		Wifi.Install(wifiPhys[i], mac, wifi_sta_node_sets[i]);
+		staDeviceSets[i] = Wifi.Install(wifiPhys[i], mac, wifi_sta_node_sets[i]);
 	}//for
 
 // apnodes mac
 	mac.SetType("ns3::ApWifiMac", "Ssid", ns3::SsidValue(ssid),
 			"BeaconGeneration", ns3::BooleanValue(true), "BeaconInterval",
 			ns3::TimeValue(ns3::Seconds(2.5)));
-	ns3::NetDeviceContainer apDevices1;
-	apDevices1 = Wifi.Install(wifiPhys[1], mac, wifi_ap_nodes[1]);
-	ns3::NetDeviceContainer apDevices2;
-	apDevices2 = Wifi.Install(wifiPhys[2], mac, wifi_ap_nodes[2]);
-	ns3::NetDeviceContainer apDevices3;
-	apDevices3 = Wifi.Install(wifiPhys[3], mac, wifi_ap_nodes[3]);
-	ns3::NetDeviceContainer apDevices4;
-	apDevices4 = Wifi.Install(wifiPhys[4], mac, wifi_ap_nodes[4]);
-	ns3::NetDeviceContainer apDevices5;
-	apDevices5 = Wifi.Install(wifiPhys[5], mac, wifi_ap_nodes[5]);
-	ns3::NetDeviceContainer apDevices6;
-	apDevices6 = Wifi.Install(wifiPhys[6], mac, wifi_ap_nodes[6]);
-	ns3::NetDeviceContainer apDevices7;
-	apDevices7 = Wifi.Install(wifiPhys[7], mac, wifi_ap_nodes[7]);
-	ns3::NetDeviceContainer apDevices8;
-	apDevices8 = Wifi.Install(wifiPhys[8], mac, wifi_ap_nodes[8]);
-	ns3::NetDeviceContainer apDevices9;
-	apDevices9 = Wifi.Install(wifiPhys[9], mac, wifi_ap_nodes[9]);
-	ns3::NetDeviceContainer apDevices10;
-	apDevices10 = Wifi.Install(wifiPhys[10], mac, wifi_ap_nodes[10]);
-	ns3::NetDeviceContainer apDevices11;
-	apDevices11 = Wifi.Install(wifiPhys[11], mac, wifi_ap_nodes[11]);
-	ns3::NetDeviceContainer apDevices12;
-	apDevices12 = Wifi.Install(wifiPhys[12], mac, wifi_ap_nodes[12]);
-	ns3::NetDeviceContainer apDevices13;
-	apDevices13 = Wifi.Install(wifiPhys[13], mac, wifi_ap_nodes[13]);
-	ns3::NetDeviceContainer apDevices14;
-	apDevices14 = Wifi.Install(wifiPhys[14], mac, wifi_ap_nodes[14]);
-	ns3::NetDeviceContainer apDevices15;
-	apDevices15 = Wifi.Install(wifiPhys[15], mac, wifi_ap_nodes[15]);
-	ns3::NetDeviceContainer apDevices16;
-	apDevices16 = Wifi.Install(wifiPhys[16], mac, wifi_ap_nodes[16]);
-	ns3::NetDeviceContainer apDevices17;
-	apDevices17 = Wifi.Install(wifiPhys[17], mac, wifi_ap_nodes[17]);
-	ns3::NetDeviceContainer apDevices18;
-	apDevices18 = Wifi.Install(wifiPhys[18], mac, wifi_ap_nodes[18]);
-	ns3::NetDeviceContainer apDevices19;
-	apDevices19 = Wifi.Install(wifiPhys[19], mac, wifi_ap_nodes[19]);
-	ns3::NetDeviceContainer apDevices20;
-	apDevices20 = Wifi.Install(wifiPhys[20], mac, wifi_ap_nodes[20]);
-	ns3::NetDeviceContainer apDevices21;
-	apDevices21 = Wifi.Install(wifiPhys[21], mac, wifi_ap_nodes[21]);
-	ns3::NetDeviceContainer apDevices22;
-	apDevices22 = Wifi.Install(wifiPhys[22], mac, wifi_ap_nodes[22]);
-	ns3::NetDeviceContainer apDevices23;
-	apDevices23 = Wifi.Install(wifiPhys[23], mac, wifi_ap_nodes[23]);
-	ns3::NetDeviceContainer apDevices24;
-	apDevices24 = Wifi.Install(wifiPhys[24], mac, wifi_ap_nodes[24]);
-	ns3::NetDeviceContainer apDevices25;
-	apDevices25 = Wifi.Install(wifiPhys[25], mac, wifi_ap_nodes[25]);
-	ns3::NetDeviceContainer apDevices26;
-	apDevices26 = Wifi.Install(wifiPhys[26], mac, wifi_ap_nodes[26]);
-	ns3::NetDeviceContainer apDevices27;
-	apDevices27 = Wifi.Install(wifiPhys[27], mac, wifi_ap_nodes[27]);
-	ns3::NetDeviceContainer apDevices28;
-	apDevices28 = Wifi.Install(wifiPhys[28], mac, wifi_ap_nodes[28]);
-	ns3::NetDeviceContainer apDevices29;
-	apDevices29 = Wifi.Install(wifiPhys[29], mac, wifi_ap_nodes[29]);
-	ns3::NetDeviceContainer apDevices30;
-	apDevices30 = Wifi.Install(wifiPhys[30], mac, wifi_ap_nodes[30]);
-	ns3::NetDeviceContainer apDevices31;
-	apDevices31 = Wifi.Install(wifiPhys[31], mac, wifi_ap_nodes[31]);
-	ns3::NetDeviceContainer apDevices32;
-	apDevices32 = Wifi.Install(wifiPhys[32], mac, wifi_ap_nodes[32]);
-	ns3::NetDeviceContainer apDevices33;
-	apDevices33 = Wifi.Install(wifiPhys[33], mac, wifi_ap_nodes[33]);
-	ns3::NetDeviceContainer apDevices34;
-	apDevices34 = Wifi.Install(wifiPhys[34], mac, wifi_ap_nodes[34]);
-	ns3::NetDeviceContainer apDevices35;
-	apDevices35 = Wifi.Install(wifiPhys[35], mac, wifi_ap_nodes[35]);
-	ns3::NetDeviceContainer apDevices36;
-	apDevices36 = Wifi.Install(wifiPhys[36], mac, wifi_ap_nodes[36]);
-	ns3::NetDeviceContainer apDevices37;
-	apDevices37 = Wifi.Install(wifiPhys[37], mac, wifi_ap_nodes[37]);
-	ns3::NetDeviceContainer apDevices38;
-	apDevices38 = Wifi.Install(wifiPhys[38], mac, wifi_ap_nodes[38]);
-	ns3::NetDeviceContainer apDevices39;
-	apDevices39 = Wifi.Install(wifiPhys[39], mac, wifi_ap_nodes[39]);
-	ns3::NetDeviceContainer apDevices40;
-	apDevices40 = Wifi.Install(wifiPhys[40], mac, wifi_ap_nodes[40]);
-	ns3::NetDeviceContainer apDevices41;
-	apDevices41 = Wifi.Install(wifiPhys[41], mac, wifi_ap_nodes[41]);
-	ns3::NetDeviceContainer apDevices42;
-	apDevices42 = Wifi.Install(wifiPhys[42], mac, wifi_ap_nodes[42]);
-	ns3::NetDeviceContainer apDevices43;
-	apDevices43 = Wifi.Install(wifiPhys[43], mac, wifi_ap_nodes[43]);
-	ns3::NetDeviceContainer apDevices44;
-	apDevices44 = Wifi.Install(wifiPhys[44], mac, wifi_ap_nodes[44]);
-	ns3::NetDeviceContainer apDevices45;
-	apDevices45 = Wifi.Install(wifiPhys[45], mac, wifi_ap_nodes[45]);
-	ns3::NetDeviceContainer apDevices46;
-	apDevices46 = Wifi.Install(wifiPhys[46], mac, wifi_ap_nodes[46]);
-	ns3::NetDeviceContainer apDevices47;
-	apDevices47 = Wifi.Install(wifiPhys[47], mac, wifi_ap_nodes[47]);
-	ns3::NetDeviceContainer apDevices48;
-	apDevices48 = Wifi.Install(wifiPhys[48], mac, wifi_ap_nodes[48]);
-	ns3::NetDeviceContainer apDevices49;
-	apDevices49 = Wifi.Install(wifiPhys[49], mac, wifi_ap_nodes[49]);
-	ns3::NetDeviceContainer apDevices50;
-	apDevices50 = Wifi.Install(wifiPhys[50], mac, wifi_ap_nodes[50]);
-	ns3::NetDeviceContainer apDevices51;
-	apDevices51 = Wifi.Install(wifiPhys[51], mac, wifi_ap_nodes[51]);
-	ns3::NetDeviceContainer apDevices52;
-	apDevices52 = Wifi.Install(wifiPhys[52], mac, wifi_ap_nodes[52]);
-	ns3::NetDeviceContainer apDevices53;
-	apDevices53 = Wifi.Install(wifiPhys[53], mac, wifi_ap_nodes[53]);
-	ns3::NetDeviceContainer apDevices54;
-	apDevices54 = Wifi.Install(wifiPhys[54], mac, wifi_ap_nodes[54]);
-	ns3::NetDeviceContainer apDevices55;
-	apDevices55 = Wifi.Install(wifiPhys[55], mac, wifi_ap_nodes[55]);
-	ns3::NetDeviceContainer apDevices56;
-	apDevices56 = Wifi.Install(wifiPhys[56], mac, wifi_ap_nodes[56]);
-	ns3::NetDeviceContainer apDevices57;
-	apDevices57 = Wifi.Install(wifiPhys[57], mac, wifi_ap_nodes[57]);
-	ns3::NetDeviceContainer apDevices58;
-	apDevices58 = Wifi.Install(wifiPhys[58], mac, wifi_ap_nodes[58]);
-	ns3::NetDeviceContainer apDevices59;
-	apDevices59 = Wifi.Install(wifiPhys[59], mac, wifi_ap_nodes[59]);
-	ns3::NetDeviceContainer apDevices60;
-	apDevices60 = Wifi.Install(wifiPhys[60], mac, wifi_ap_nodes[60]);
-	ns3::NetDeviceContainer apDevices61;
-	apDevices61 = Wifi.Install(wifiPhys[61], mac, wifi_ap_nodes[61]);
-	ns3::NetDeviceContainer apDevices62;
-	apDevices62 = Wifi.Install(wifiPhys[62], mac, wifi_ap_nodes[62]);
-	ns3::NetDeviceContainer apDevices63;
-	apDevices63 = Wifi.Install(wifiPhys[63], mac, wifi_ap_nodes[63]);
-	ns3::NetDeviceContainer apDevices64;
-	apDevices64 = Wifi.Install(wifiPhys[64], mac, wifi_ap_nodes[64]);
-	ns3::NetDeviceContainer apDevices65;
-	apDevices65 = Wifi.Install(wifiPhys[65], mac, wifi_ap_nodes[65]);
-	ns3::NetDeviceContainer apDevices66;
-	apDevices66 = Wifi.Install(wifiPhys[66], mac, wifi_ap_nodes[66]);
-	ns3::NetDeviceContainer apDevices67;
-	apDevices67 = Wifi.Install(wifiPhys[67], mac, wifi_ap_nodes[67]);
-	ns3::NetDeviceContainer apDevices68;
-	apDevices68 = Wifi.Install(wifiPhys[68], mac, wifi_ap_nodes[68]);
-	ns3::NetDeviceContainer apDevices69;
-	apDevices69 = Wifi.Install(wifiPhys[69], mac, wifi_ap_nodes[69]);
-	ns3::NetDeviceContainer apDevices70;
-	apDevices70 = Wifi.Install(wifiPhys[70], mac, wifi_ap_nodes[70]);
-	ns3::NetDeviceContainer apDevices71;
-	apDevices71 = Wifi.Install(wifiPhys[71], mac, wifi_ap_nodes[71]);
-	ns3::NetDeviceContainer apDevices72;
-	apDevices72 = Wifi.Install(wifiPhys[72], mac, wifi_ap_nodes[72]);
-	ns3::NetDeviceContainer apDevices73;
-	apDevices73 = Wifi.Install(wifiPhys[73], mac, wifi_ap_nodes[73]);
-	ns3::NetDeviceContainer apDevices74;
-	apDevices74 = Wifi.Install(wifiPhys[74], mac, wifi_ap_nodes[74]);
-	ns3::NetDeviceContainer apDevices75;
-	apDevices75 = Wifi.Install(wifiPhys[75], mac, wifi_ap_nodes[75]);
-	ns3::NetDeviceContainer apDevices76;
-	apDevices76 = Wifi.Install(wifiPhys[76], mac, wifi_ap_nodes[76]);
-	ns3::NetDeviceContainer apDevices77;
-	apDevices77 = Wifi.Install(wifiPhys[77], mac, wifi_ap_nodes[77]);
-	ns3::NetDeviceContainer apDevices78;
-	apDevices78 = Wifi.Install(wifiPhys[78], mac, wifi_ap_nodes[78]);
-	ns3::NetDeviceContainer apDevices79;
-	apDevices79 = Wifi.Install(wifiPhys[79], mac, wifi_ap_nodes[79]);
-	ns3::NetDeviceContainer apDevices80;
-	apDevices80 = Wifi.Install(wifiPhys[80], mac, wifi_ap_nodes[80]);
-	ns3::NetDeviceContainer apDevices81;
-	apDevices81 = Wifi.Install(wifiPhys[81], mac, wifi_ap_nodes[81]);
-	ns3::NetDeviceContainer apDevices82;
-	apDevices82 = Wifi.Install(wifiPhys[82], mac, wifi_ap_nodes[82]);
-	ns3::NetDeviceContainer apDevices83;
-	apDevices83 = Wifi.Install(wifiPhys[83], mac, wifi_ap_nodes[83]);
-	ns3::NetDeviceContainer apDevices84;
-	apDevices84 = Wifi.Install(wifiPhys[84], mac, wifi_ap_nodes[84]);
-	ns3::NetDeviceContainer apDevices85;
-	apDevices85 = Wifi.Install(wifiPhys[85], mac, wifi_ap_nodes[85]);
-	ns3::NetDeviceContainer apDevices86;
-	apDevices86 = Wifi.Install(wifiPhys[86], mac, wifi_ap_nodes[86]);
-	ns3::NetDeviceContainer apDevices87;
-	apDevices87 = Wifi.Install(wifiPhys[87], mac, wifi_ap_nodes[87]);
-	ns3::NetDeviceContainer apDevices88;
-	apDevices88 = Wifi.Install(wifiPhys[88], mac, wifi_ap_nodes[88]);
-	ns3::NetDeviceContainer apDevices89;
-	apDevices89 = Wifi.Install(wifiPhys[89], mac, wifi_ap_nodes[89]);
-	ns3::NetDeviceContainer apDevices90;
-	apDevices90 = Wifi.Install(wifiPhys[90], mac, wifi_ap_nodes[90]);
-	ns3::NetDeviceContainer apDevices91;
-	apDevices91 = Wifi.Install(wifiPhys[91], mac, wifi_ap_nodes[91]);
-	ns3::NetDeviceContainer apDevices92;
-	apDevices92 = Wifi.Install(wifiPhys[92], mac, wifi_ap_nodes[92]);
-	ns3::NetDeviceContainer apDevices93;
-	apDevices93 = Wifi.Install(wifiPhys[93], mac, wifi_ap_nodes[93]);
-	ns3::NetDeviceContainer apDevices94;
-	apDevices94 = Wifi.Install(wifiPhys[94], mac, wifi_ap_nodes[94]);
-	ns3::NetDeviceContainer apDevices95;
-	apDevices95 = Wifi.Install(wifiPhys[95], mac, wifi_ap_nodes[95]);
-	ns3::NetDeviceContainer apDevices96;
-	apDevices96 = Wifi.Install(wifiPhys[96], mac, wifi_ap_nodes[96]);
-	ns3::NetDeviceContainer apDevices97;
-	apDevices97 = Wifi.Install(wifiPhys[97], mac, wifi_ap_nodes[97]);
-	ns3::NetDeviceContainer apDevices98;
-	apDevices98 = Wifi.Install(wifiPhys[98], mac, wifi_ap_nodes[98]);
-	ns3::NetDeviceContainer apDevices99;
-	apDevices99 = Wifi.Install(wifiPhys[99], mac, wifi_ap_nodes[99]);
-	ns3::NetDeviceContainer apDevices100;
-	apDevices100 = Wifi.Install(wifiPhys[100], mac, wifi_ap_nodes[100]);
-	ns3::NetDeviceContainer apDevices101;
-	apDevices101 = Wifi.Install(wifiPhys[101], mac, wifi_ap_nodes[101]);
-	ns3::NetDeviceContainer apDevices102;
-	apDevices102 = Wifi.Install(wifiPhys[102], mac, wifi_ap_nodes[102]);
-	ns3::NetDeviceContainer apDevices103;
-	apDevices103 = Wifi.Install(wifiPhys[103], mac, wifi_ap_nodes[103]);
-	ns3::NetDeviceContainer apDevices104;
-	apDevices104 = Wifi.Install(wifiPhys[104], mac, wifi_ap_nodes[104]);
-	ns3::NetDeviceContainer apDevices105;
-	apDevices105 = Wifi.Install(wifiPhys[105], mac, wifi_ap_nodes[105]);
-	ns3::NetDeviceContainer apDevices106;
-	apDevices106 = Wifi.Install(wifiPhys[106], mac, wifi_ap_nodes[106]);
-	ns3::NetDeviceContainer apDevices107;
-	apDevices107 = Wifi.Install(wifiPhys[107], mac, wifi_ap_nodes[107]);
-	ns3::NetDeviceContainer apDevices108;
-	apDevices108 = Wifi.Install(wifiPhys[108], mac, wifi_ap_nodes[108]);
-	ns3::NetDeviceContainer apDevices109;
-	apDevices109 = Wifi.Install(wifiPhys[109], mac, wifi_ap_nodes[109]);
-	ns3::NetDeviceContainer apDevices110;
-	apDevices110 = Wifi.Install(wifiPhys[110], mac, wifi_ap_nodes[110]);
-	ns3::NetDeviceContainer apDevices111;
-	apDevices111 = Wifi.Install(wifiPhys[111], mac, wifi_ap_nodes[111]);
-	ns3::NetDeviceContainer apDevices112;
-	apDevices112 = Wifi.Install(wifiPhys[112], mac, wifi_ap_nodes[112]);
-	ns3::NetDeviceContainer apDevices113;
-	apDevices113 = Wifi.Install(wifiPhys[113], mac, wifi_ap_nodes[113]);
-	ns3::NetDeviceContainer apDevices114;
-	apDevices114 = Wifi.Install(wifiPhys[114], mac, wifi_ap_nodes[114]);
-	ns3::NetDeviceContainer apDevices115;
-	apDevices115 = Wifi.Install(wifiPhys[115], mac, wifi_ap_nodes[115]);
-	ns3::NetDeviceContainer apDevices116;
-	apDevices116 = Wifi.Install(wifiPhys[116], mac, wifi_ap_nodes[116]);
-	ns3::NetDeviceContainer apDevices117;
-	apDevices117 = Wifi.Install(wifiPhys[117], mac, wifi_ap_nodes[117]);
-	ns3::NetDeviceContainer apDevices118;
-	apDevices118 = Wifi.Install(wifiPhys[118], mac, wifi_ap_nodes[118]);
-	ns3::NetDeviceContainer apDevices119;
-	apDevices119 = Wifi.Install(wifiPhys[119], mac, wifi_ap_nodes[119]);
-	ns3::NetDeviceContainer apDevices120;
-	apDevices120 = Wifi.Install(wifiPhys[120], mac, wifi_ap_nodes[120]);
-	ns3::NetDeviceContainer apDevices121;
-	apDevices121 = Wifi.Install(wifiPhys[121], mac, wifi_ap_nodes[121]);
-	ns3::NetDeviceContainer apDevices122;
-	apDevices122 = Wifi.Install(wifiPhys[122], mac, wifi_ap_nodes[122]);
-	ns3::NetDeviceContainer apDevices123;
-	apDevices123 = Wifi.Install(wifiPhys[123], mac, wifi_ap_nodes[123]);
-	ns3::NetDeviceContainer apDevices124;
-	apDevices124 = Wifi.Install(wifiPhys[124], mac, wifi_ap_nodes[124]);
-	ns3::NetDeviceContainer apDevices125;
-	apDevices125 = Wifi.Install(wifiPhys[125], mac, wifi_ap_nodes[125]);
-	ns3::NetDeviceContainer apDevices126;
-	apDevices126 = Wifi.Install(wifiPhys[126], mac, wifi_ap_nodes[126]);
-	ns3::NetDeviceContainer apDevices127;
-	apDevices127 = Wifi.Install(wifiPhys[127], mac, wifi_ap_nodes[127]);
-	ns3::NetDeviceContainer apDevices128;
-	apDevices128 = Wifi.Install(wifiPhys[128], mac, wifi_ap_nodes[128]);
-	ns3::NetDeviceContainer apDevices129;
-	apDevices129 = Wifi.Install(wifiPhys[129], mac, wifi_ap_nodes[129]);
-	ns3::NetDeviceContainer apDevices130;
-	apDevices130 = Wifi.Install(wifiPhys[130], mac, wifi_ap_nodes[130]);
-	ns3::NetDeviceContainer apDevices131;
-	apDevices131 = Wifi.Install(wifiPhys[131], mac, wifi_ap_nodes[131]);
-	ns3::NetDeviceContainer apDevices132;
-	apDevices132 = Wifi.Install(wifiPhys[132], mac, wifi_ap_nodes[132]);
-	ns3::NetDeviceContainer apDevices133;
-	apDevices133 = Wifi.Install(wifiPhys[133], mac, wifi_ap_nodes[133]);
-	ns3::NetDeviceContainer apDevices134;
-	apDevices134 = Wifi.Install(wifiPhys[134], mac, wifi_ap_nodes[134]);
-	ns3::NetDeviceContainer apDevices135;
-	apDevices135 = Wifi.Install(wifiPhys[135], mac, wifi_ap_nodes[135]);
-	ns3::NetDeviceContainer apDevices136;
-	apDevices136 = Wifi.Install(wifiPhys[136], mac, wifi_ap_nodes[136]);
-	ns3::NetDeviceContainer apDevices137;
-	apDevices137 = Wifi.Install(wifiPhys[137], mac, wifi_ap_nodes[137]);
-	ns3::NetDeviceContainer apDevices138;
-	apDevices138 = Wifi.Install(wifiPhys[138], mac, wifi_ap_nodes[138]);
-	ns3::NetDeviceContainer apDevices139;
-	apDevices139 = Wifi.Install(wifiPhys[139], mac, wifi_ap_nodes[139]);
-	ns3::NetDeviceContainer apDevices140;
-	apDevices140 = Wifi.Install(wifiPhys[140], mac, wifi_ap_nodes[140]);
-	ns3::NetDeviceContainer apDevices141;
-	apDevices141 = Wifi.Install(wifiPhys[141], mac, wifi_ap_nodes[141]);
-	ns3::NetDeviceContainer apDevices142;
-	apDevices142 = Wifi.Install(wifiPhys[142], mac, wifi_ap_nodes[142]);
-	ns3::NetDeviceContainer apDevices143;
-	apDevices143 = Wifi.Install(wifiPhys[143], mac, wifi_ap_nodes[143]);
-	ns3::NetDeviceContainer apDevices144;
-	apDevices144 = Wifi.Install(wifiPhys[144], mac, wifi_ap_nodes[144]);
-	ns3::NetDeviceContainer apDevices145;
-	apDevices145 = Wifi.Install(wifiPhys[145], mac, wifi_ap_nodes[145]);
-	ns3::NetDeviceContainer apDevices146;
-	apDevices146 = Wifi.Install(wifiPhys[146], mac, wifi_ap_nodes[146]);
-	ns3::NetDeviceContainer apDevices147;
-	apDevices147 = Wifi.Install(wifiPhys[147], mac, wifi_ap_nodes[147]);
-	ns3::NetDeviceContainer apDevices148;
-	apDevices148 = Wifi.Install(wifiPhys[148], mac, wifi_ap_nodes[148]);
-	ns3::NetDeviceContainer apDevices149;
-	apDevices149 = Wifi.Install(wifiPhys[149], mac, wifi_ap_nodes[149]);
-	ns3::NetDeviceContainer apDevices150;
-	apDevices150 = Wifi.Install(wifiPhys[150], mac, wifi_ap_nodes[150]);
-	ns3::NetDeviceContainer apDevices151;
-	apDevices151 = Wifi.Install(wifiPhys[151], mac, wifi_ap_nodes[151]);
-	ns3::NetDeviceContainer apDevices152;
-	apDevices152 = Wifi.Install(wifiPhys[152], mac, wifi_ap_nodes[152]);
-	ns3::NetDeviceContainer apDevices153;
-	apDevices153 = Wifi.Install(wifiPhys[153], mac, wifi_ap_nodes[153]);
-	ns3::NetDeviceContainer apDevices154;
-	apDevices154 = Wifi.Install(wifiPhys[154], mac, wifi_ap_nodes[154]);
-	ns3::NetDeviceContainer apDevices155;
-	apDevices155 = Wifi.Install(wifiPhys[155], mac, wifi_ap_nodes[155]);
-	ns3::NetDeviceContainer apDevices156;
-	apDevices156 = Wifi.Install(wifiPhys[156], mac, wifi_ap_nodes[156]);
-	ns3::NetDeviceContainer apDevices157;
-	apDevices157 = Wifi.Install(wifiPhys[157], mac, wifi_ap_nodes[157]);
-	ns3::NetDeviceContainer apDevices158;
-	apDevices158 = Wifi.Install(wifiPhys[158], mac, wifi_ap_nodes[158]);
-	ns3::NetDeviceContainer apDevices159;
-	apDevices159 = Wifi.Install(wifiPhys[159], mac, wifi_ap_nodes[159]);
-	ns3::NetDeviceContainer apDevices160;
-	apDevices160 = Wifi.Install(wifiPhys[160], mac, wifi_ap_nodes[160]);
-	ns3::NetDeviceContainer apDevices161;
-	apDevices161 = Wifi.Install(wifiPhys[161], mac, wifi_ap_nodes[161]);
-	ns3::NetDeviceContainer apDevices162;
-	apDevices162 = Wifi.Install(wifiPhys[162], mac, wifi_ap_nodes[162]);
-	ns3::NetDeviceContainer apDevices163;
-	apDevices163 = Wifi.Install(wifiPhys[163], mac, wifi_ap_nodes[163]);
-	ns3::NetDeviceContainer apDevices164;
-	apDevices164 = Wifi.Install(wifiPhys[164], mac, wifi_ap_nodes[164]);
-	ns3::NetDeviceContainer apDevices165;
-	apDevices165 = Wifi.Install(wifiPhys[165], mac, wifi_ap_nodes[165]);
-	ns3::NetDeviceContainer apDevices166;
-	apDevices166 = Wifi.Install(wifiPhys[166], mac, wifi_ap_nodes[166]);
-	ns3::NetDeviceContainer apDevices167;
-	apDevices167 = Wifi.Install(wifiPhys[167], mac, wifi_ap_nodes[167]);
-	ns3::NetDeviceContainer apDevices168;
-	apDevices168 = Wifi.Install(wifiPhys[168], mac, wifi_ap_nodes[168]);
-	ns3::NetDeviceContainer apDevices169;
-	apDevices169 = Wifi.Install(wifiPhys[169], mac, wifi_ap_nodes[169]);
-	ns3::NetDeviceContainer apDevices170;
-	apDevices170 = Wifi.Install(wifiPhys[170], mac, wifi_ap_nodes[170]);
-	ns3::NetDeviceContainer apDevices171;
-	apDevices171 = Wifi.Install(wifiPhys[171], mac, wifi_ap_nodes[171]);
-	ns3::NetDeviceContainer apDevices172;
-	apDevices172 = Wifi.Install(wifiPhys[172], mac, wifi_ap_nodes[172]);
-	ns3::NetDeviceContainer apDevices173;
-	apDevices173 = Wifi.Install(wifiPhys[173], mac, wifi_ap_nodes[173]);
-	ns3::NetDeviceContainer apDevices174;
-	apDevices174 = Wifi.Install(wifiPhys[174], mac, wifi_ap_nodes[174]);
-	ns3::NetDeviceContainer apDevices175;
-	apDevices175 = Wifi.Install(wifiPhys[175], mac, wifi_ap_nodes[175]);
-	ns3::NetDeviceContainer apDevices176;
-	apDevices176 = Wifi.Install(wifiPhys[176], mac, wifi_ap_nodes[176]);
-	ns3::NetDeviceContainer apDevices177;
-	apDevices177 = Wifi.Install(wifiPhys[177], mac, wifi_ap_nodes[177]);
-	ns3::NetDeviceContainer apDevices178;
-	apDevices178 = Wifi.Install(wifiPhys[178], mac, wifi_ap_nodes[178]);
-	ns3::NetDeviceContainer apDevices179;
-	apDevices179 = Wifi.Install(wifiPhys[179], mac, wifi_ap_nodes[179]);
-	ns3::NetDeviceContainer apDevices180;
-	apDevices180 = Wifi.Install(wifiPhys[180], mac, wifi_ap_nodes[180]);
-	ns3::NetDeviceContainer apDevices181;
-	apDevices181 = Wifi.Install(wifiPhys[181], mac, wifi_ap_nodes[181]);
-	ns3::NetDeviceContainer apDevices182;
-	apDevices182 = Wifi.Install(wifiPhys[182], mac, wifi_ap_nodes[182]);
-	ns3::NetDeviceContainer apDevices183;
-	apDevices183 = Wifi.Install(wifiPhys[183], mac, wifi_ap_nodes[183]);
-	ns3::NetDeviceContainer apDevices184;
-	apDevices184 = Wifi.Install(wifiPhys[184], mac, wifi_ap_nodes[184]);
-	ns3::NetDeviceContainer apDevices185;
-	apDevices185 = Wifi.Install(wifiPhys[185], mac, wifi_ap_nodes[185]);
-	ns3::NetDeviceContainer apDevices186;
-	apDevices186 = Wifi.Install(wifiPhys[186], mac, wifi_ap_nodes[186]);
-	ns3::NetDeviceContainer apDevices187;
-	apDevices187 = Wifi.Install(wifiPhys[187], mac, wifi_ap_nodes[187]);
-	ns3::NetDeviceContainer apDevices188;
-	apDevices188 = Wifi.Install(wifiPhys[188], mac, wifi_ap_nodes[188]);
-	ns3::NetDeviceContainer apDevices189;
-	apDevices189 = Wifi.Install(wifiPhys[189], mac, wifi_ap_nodes[189]);
-	ns3::NetDeviceContainer apDevices190;
-	apDevices190 = Wifi.Install(wifiPhys[190], mac, wifi_ap_nodes[190]);
-	ns3::NetDeviceContainer apDevices191;
-	apDevices191 = Wifi.Install(wifiPhys[191], mac, wifi_ap_nodes[191]);
-	ns3::NetDeviceContainer apDevices192;
-	apDevices192 = Wifi.Install(wifiPhys[192], mac, wifi_ap_nodes[192]);
-	ns3::NetDeviceContainer apDevices193;
-	apDevices193 = Wifi.Install(wifiPhys[193], mac, wifi_ap_nodes[193]);
-	ns3::NetDeviceContainer apDevices194;
-	apDevices194 = Wifi.Install(wifiPhys[194], mac, wifi_ap_nodes[194]);
-	ns3::NetDeviceContainer apDevices195;
-	apDevices195 = Wifi.Install(wifiPhys[195], mac, wifi_ap_nodes[195]);
-	ns3::NetDeviceContainer apDevices196;
-	apDevices196 = Wifi.Install(wifiPhys[196], mac, wifi_ap_nodes[196]);
-	ns3::NetDeviceContainer apDevices197;
-	apDevices197 = Wifi.Install(wifiPhys[197], mac, wifi_ap_nodes[197]);
-	ns3::NetDeviceContainer apDevices198;
-	apDevices198 = Wifi.Install(wifiPhys[198], mac, wifi_ap_nodes[198]);
-	ns3::NetDeviceContainer apDevices199;
-	apDevices199 = Wifi.Install(wifiPhys[199], mac, wifi_ap_nodes[199]);
-	ns3::NetDeviceContainer apDevices200;
-	apDevices200 = Wifi.Install(wifiPhys[200], mac, wifi_ap_nodes[200]);
-	ns3::NetDeviceContainer apDevices201;
-	apDevices201 = Wifi.Install(wifiPhys[201], mac, wifi_ap_nodes[201]);
-	ns3::NetDeviceContainer apDevices202;
-	apDevices202 = Wifi.Install(wifiPhys[202], mac, wifi_ap_nodes[202]);
-	ns3::NetDeviceContainer apDevices203;
-	apDevices203 = Wifi.Install(wifiPhys[203], mac, wifi_ap_nodes[203]);
-	ns3::NetDeviceContainer apDevices204;
-	apDevices204 = Wifi.Install(wifiPhys[204], mac, wifi_ap_nodes[204]);
-	ns3::NetDeviceContainer apDevices205;
-	apDevices205 = Wifi.Install(wifiPhys[205], mac, wifi_ap_nodes[205]);
-	ns3::NetDeviceContainer apDevices206;
-	apDevices206 = Wifi.Install(wifiPhys[206], mac, wifi_ap_nodes[206]);
-	ns3::NetDeviceContainer apDevices207;
-	apDevices207 = Wifi.Install(wifiPhys[207], mac, wifi_ap_nodes[207]);
-	ns3::NetDeviceContainer apDevices208;
-	apDevices208 = Wifi.Install(wifiPhys[208], mac, wifi_ap_nodes[208]);
-	ns3::NetDeviceContainer apDevices209;
-	apDevices209 = Wifi.Install(wifiPhys[209], mac, wifi_ap_nodes[209]);
-	ns3::NetDeviceContainer apDevices210;
-	apDevices210 = Wifi.Install(wifiPhys[210], mac, wifi_ap_nodes[210]);
-	ns3::NetDeviceContainer apDevices211;
-	apDevices211 = Wifi.Install(wifiPhys[211], mac, wifi_ap_nodes[211]);
-	ns3::NetDeviceContainer apDevices212;
-	apDevices212 = Wifi.Install(wifiPhys[212], mac, wifi_ap_nodes[212]);
-	ns3::NetDeviceContainer apDevices213;
-	apDevices213 = Wifi.Install(wifiPhys[213], mac, wifi_ap_nodes[213]);
-	ns3::NetDeviceContainer apDevices214;
-	apDevices214 = Wifi.Install(wifiPhys[214], mac, wifi_ap_nodes[214]);
-	ns3::NetDeviceContainer apDevices215;
-	apDevices215 = Wifi.Install(wifiPhys[215], mac, wifi_ap_nodes[215]);
-	ns3::NetDeviceContainer apDevices216;
-	apDevices216 = Wifi.Install(wifiPhys[216], mac, wifi_ap_nodes[216]);
-	ns3::NetDeviceContainer apDevices217;
-	apDevices217 = Wifi.Install(wifiPhys[217], mac, wifi_ap_nodes[217]);
-	ns3::NetDeviceContainer apDevices218;
-	apDevices218 = Wifi.Install(wifiPhys[218], mac, wifi_ap_nodes[218]);
-	ns3::NetDeviceContainer apDevices219;
-	apDevices219 = Wifi.Install(wifiPhys[219], mac, wifi_ap_nodes[219]);
-	ns3::NetDeviceContainer apDevices220;
-	apDevices220 = Wifi.Install(wifiPhys[220], mac, wifi_ap_nodes[220]);
-	ns3::NetDeviceContainer apDevices221;
-	apDevices221 = Wifi.Install(wifiPhys[221], mac, wifi_ap_nodes[221]);
-	ns3::NetDeviceContainer apDevices222;
-	apDevices222 = Wifi.Install(wifiPhys[222], mac, wifi_ap_nodes[222]);
-	ns3::NetDeviceContainer apDevices223;
-	apDevices223 = Wifi.Install(wifiPhys[223], mac, wifi_ap_nodes[223]);
-	ns3::NetDeviceContainer apDevices224;
-	apDevices224 = Wifi.Install(wifiPhys[224], mac, wifi_ap_nodes[224]);
-	ns3::NetDeviceContainer apDevices225;
-	apDevices225 = Wifi.Install(wifiPhys[225], mac, wifi_ap_nodes[225]);
-	ns3::NetDeviceContainer apDevices226;
-	apDevices226 = Wifi.Install(wifiPhys[226], mac, wifi_ap_nodes[226]);
-	ns3::NetDeviceContainer apDevices227;
-	apDevices227 = Wifi.Install(wifiPhys[227], mac, wifi_ap_nodes[227]);
-	ns3::NetDeviceContainer apDevices228;
-	apDevices228 = Wifi.Install(wifiPhys[228], mac, wifi_ap_nodes[228]);
-	ns3::NetDeviceContainer apDevices229;
-	apDevices229 = Wifi.Install(wifiPhys[229], mac, wifi_ap_nodes[229]);
-	ns3::NetDeviceContainer apDevices230;
-	apDevices230 = Wifi.Install(wifiPhys[230], mac, wifi_ap_nodes[230]);
-	ns3::NetDeviceContainer apDevices231;
-	apDevices231 = Wifi.Install(wifiPhys[231], mac, wifi_ap_nodes[231]);
-	ns3::NetDeviceContainer apDevices232;
-	apDevices232 = Wifi.Install(wifiPhys[232], mac, wifi_ap_nodes[232]);
-	ns3::NetDeviceContainer apDevices233;
-	apDevices233 = Wifi.Install(wifiPhys[233], mac, wifi_ap_nodes[233]);
-	ns3::NetDeviceContainer apDevices234;
-	apDevices234 = Wifi.Install(wifiPhys[234], mac, wifi_ap_nodes[234]);
-	ns3::NetDeviceContainer apDevices235;
-	apDevices235 = Wifi.Install(wifiPhys[235], mac, wifi_ap_nodes[235]);
-	ns3::NetDeviceContainer apDevices236;
-	apDevices236 = Wifi.Install(wifiPhys[236], mac, wifi_ap_nodes[236]);
-	ns3::NetDeviceContainer apDevices237;
-	apDevices237 = Wifi.Install(wifiPhys[237], mac, wifi_ap_nodes[237]);
-	ns3::NetDeviceContainer apDevices238;
-	apDevices238 = Wifi.Install(wifiPhys[238], mac, wifi_ap_nodes[238]);
-	ns3::NetDeviceContainer apDevices239;
-	apDevices239 = Wifi.Install(wifiPhys[239], mac, wifi_ap_nodes[239]);
-	ns3::NetDeviceContainer apDevices240;
-	apDevices240 = Wifi.Install(wifiPhys[240], mac, wifi_ap_nodes[240]);
-	ns3::NetDeviceContainer apDevices241;
-	apDevices241 = Wifi.Install(wifiPhys[241], mac, wifi_ap_nodes[241]);
-	ns3::NetDeviceContainer apDevices242;
-	apDevices242 = Wifi.Install(wifiPhys[242], mac, wifi_ap_nodes[242]);
-	ns3::NetDeviceContainer apDevices243;
-	apDevices243 = Wifi.Install(wifiPhys[243], mac, wifi_ap_nodes[243]);
-	ns3::NetDeviceContainer apDevices244;
-	apDevices244 = Wifi.Install(wifiPhys[244], mac, wifi_ap_nodes[244]);
-	ns3::NetDeviceContainer apDevices245;
-	apDevices245 = Wifi.Install(wifiPhys[245], mac, wifi_ap_nodes[245]);
-	ns3::NetDeviceContainer apDevices246;
-	apDevices246 = Wifi.Install(wifiPhys[246], mac, wifi_ap_nodes[246]);
-	ns3::NetDeviceContainer apDevices247;
-	apDevices247 = Wifi.Install(wifiPhys[247], mac, wifi_ap_nodes[247]);
-	ns3::NetDeviceContainer apDevices248;
-	apDevices248 = Wifi.Install(wifiPhys[248], mac, wifi_ap_nodes[248]);
-	ns3::NetDeviceContainer apDevices249;
-	apDevices249 = Wifi.Install(wifiPhys[249], mac, wifi_ap_nodes[249]);
-	ns3::NetDeviceContainer apDevices250;
-	apDevices250 = Wifi.Install(wifiPhys[250], mac, wifi_ap_nodes[250]);
-	ns3::NetDeviceContainer apDevices251;
-	apDevices251 = Wifi.Install(wifiPhys[251], mac, wifi_ap_nodes[251]);
-	ns3::NetDeviceContainer apDevices252;
-	apDevices252 = Wifi.Install(wifiPhys[252], mac, wifi_ap_nodes[252]);
-	ns3::NetDeviceContainer apDevices253;
-	apDevices253 = Wifi.Install(wifiPhys[253], mac, wifi_ap_nodes[253]);
-	ns3::NetDeviceContainer apDevices254;
-	apDevices254 = Wifi.Install(wifiPhys[254], mac, wifi_ap_nodes[254]);
-	ns3::NetDeviceContainer apDevices255;
-	apDevices255 = Wifi.Install(wifiPhys[255], mac, wifi_ap_nodes[255]);
-	ns3::NetDeviceContainer apDevices256;
-	apDevices256 = Wifi.Install(wifiPhys[256], mac, wifi_ap_nodes[256]);
-	ns3::NetDeviceContainer apDevices257;
-	apDevices257 = Wifi.Install(wifiPhys[257], mac, wifi_ap_nodes[257]);
-	ns3::NetDeviceContainer apDevices258;
-	apDevices258 = Wifi.Install(wifiPhys[258], mac, wifi_ap_nodes[258]);
-	ns3::NetDeviceContainer apDevices259;
-	apDevices259 = Wifi.Install(wifiPhys[259], mac, wifi_ap_nodes[259]);
-	ns3::NetDeviceContainer apDevices260;
-	apDevices260 = Wifi.Install(wifiPhys[260], mac, wifi_ap_nodes[260]);
-	ns3::NetDeviceContainer apDevices261;
-	apDevices261 = Wifi.Install(wifiPhys[261], mac, wifi_ap_nodes[261]);
-	ns3::NetDeviceContainer apDevices262;
-	apDevices262 = Wifi.Install(wifiPhys[262], mac, wifi_ap_nodes[262]);
-	ns3::NetDeviceContainer apDevices263;
-	apDevices263 = Wifi.Install(wifiPhys[263], mac, wifi_ap_nodes[263]);
-	ns3::NetDeviceContainer apDevices264;
-	apDevices264 = Wifi.Install(wifiPhys[264], mac, wifi_ap_nodes[264]);
-	ns3::NetDeviceContainer apDevices265;
-	apDevices265 = Wifi.Install(wifiPhys[265], mac, wifi_ap_nodes[265]);
-	ns3::NetDeviceContainer apDevices266;
-	apDevices266 = Wifi.Install(wifiPhys[266], mac, wifi_ap_nodes[266]);
-	ns3::NetDeviceContainer apDevices267;
-	apDevices267 = Wifi.Install(wifiPhys[267], mac, wifi_ap_nodes[267]);
-	ns3::NetDeviceContainer apDevices268;
-	apDevices268 = Wifi.Install(wifiPhys[268], mac, wifi_ap_nodes[268]);
-	ns3::NetDeviceContainer apDevices269;
-	apDevices269 = Wifi.Install(wifiPhys[269], mac, wifi_ap_nodes[269]);
-	ns3::NetDeviceContainer apDevices270;
-	apDevices270 = Wifi.Install(wifiPhys[270], mac, wifi_ap_nodes[270]);
-	ns3::NetDeviceContainer apDevices271;
-	apDevices271 = Wifi.Install(wifiPhys[271], mac, wifi_ap_nodes[271]);
-	ns3::NetDeviceContainer apDevices272;
-	apDevices272 = Wifi.Install(wifiPhys[272], mac, wifi_ap_nodes[272]);
-	ns3::NetDeviceContainer apDevices273;
-	apDevices273 = Wifi.Install(wifiPhys[273], mac, wifi_ap_nodes[273]);
-	ns3::NetDeviceContainer apDevices274;
-	apDevices274 = Wifi.Install(wifiPhys[274], mac, wifi_ap_nodes[274]);
-	ns3::NetDeviceContainer apDevices275;
-	apDevices275 = Wifi.Install(wifiPhys[275], mac, wifi_ap_nodes[275]);
-	ns3::NetDeviceContainer apDevices276;
-	apDevices276 = Wifi.Install(wifiPhys[276], mac, wifi_ap_nodes[276]);
-	ns3::NetDeviceContainer apDevices277;
-	apDevices277 = Wifi.Install(wifiPhys[277], mac, wifi_ap_nodes[277]);
-	ns3::NetDeviceContainer apDevices278;
-	apDevices278 = Wifi.Install(wifiPhys[278], mac, wifi_ap_nodes[278]);
-	ns3::NetDeviceContainer apDevices279;
-	apDevices279 = Wifi.Install(wifiPhys[279], mac, wifi_ap_nodes[279]);
-	ns3::NetDeviceContainer apDevices280;
-	apDevices280 = Wifi.Install(wifiPhys[280], mac, wifi_ap_nodes[280]);
-	ns3::NetDeviceContainer apDevices281;
-	apDevices281 = Wifi.Install(wifiPhys[281], mac, wifi_ap_nodes[281]);
-	ns3::NetDeviceContainer apDevices282;
-	apDevices282 = Wifi.Install(wifiPhys[282], mac, wifi_ap_nodes[282]);
-	ns3::NetDeviceContainer apDevices283;
-	apDevices283 = Wifi.Install(wifiPhys[283], mac, wifi_ap_nodes[283]);
-	ns3::NetDeviceContainer apDevices284;
-	apDevices284 = Wifi.Install(wifiPhys[284], mac, wifi_ap_nodes[284]);
-	ns3::NetDeviceContainer apDevices285;
-	apDevices285 = Wifi.Install(wifiPhys[285], mac, wifi_ap_nodes[285]);
-	ns3::NetDeviceContainer apDevices286;
-	apDevices286 = Wifi.Install(wifiPhys[286], mac, wifi_ap_nodes[286]);
-	ns3::NetDeviceContainer apDevices287;
-	apDevices287 = Wifi.Install(wifiPhys[287], mac, wifi_ap_nodes[287]);
-	ns3::NetDeviceContainer apDevices288;
-	apDevices288 = Wifi.Install(wifiPhys[288], mac, wifi_ap_nodes[288]);
-	ns3::NetDeviceContainer apDevices289;
-	apDevices289 = Wifi.Install(wifiPhys[289], mac, wifi_ap_nodes[289]);
-	ns3::NetDeviceContainer apDevices290;
-	apDevices290 = Wifi.Install(wifiPhys[290], mac, wifi_ap_nodes[290]);
-	ns3::NetDeviceContainer apDevices291;
-	apDevices291 = Wifi.Install(wifiPhys[291], mac, wifi_ap_nodes[291]);
-	ns3::NetDeviceContainer apDevices292;
-	apDevices292 = Wifi.Install(wifiPhys[292], mac, wifi_ap_nodes[292]);
-	ns3::NetDeviceContainer apDevices293;
-	apDevices293 = Wifi.Install(wifiPhys[293], mac, wifi_ap_nodes[293]);
-	ns3::NetDeviceContainer apDevices294;
-	apDevices294 = Wifi.Install(wifiPhys[294], mac, wifi_ap_nodes[294]);
-	ns3::NetDeviceContainer apDevices295;
-	apDevices295 = Wifi.Install(wifiPhys[295], mac, wifi_ap_nodes[295]);
-	ns3::NetDeviceContainer apDevices296;
-	apDevices296 = Wifi.Install(wifiPhys[296], mac, wifi_ap_nodes[296]);
-	ns3::NetDeviceContainer apDevices297;
-	apDevices297 = Wifi.Install(wifiPhys[297], mac, wifi_ap_nodes[297]);
-//    apDevices298 = Wifi.Install (wifiPhy298, mac, wifiApNode298)
-//    apDevices299 = Wifi.Install (wifiPhy299, mac, wifiApNode299)
-	ns3::NetDeviceContainer apDevices300;
-	apDevices300 = Wifi.Install(wifiPhys[300], mac, wifi_ap_nodes[300]);
-	ns3::NetDeviceContainer apDevices301;
-	apDevices301 = Wifi.Install(wifiPhys[301], mac, wifi_ap_nodes[301]);
-	ns3::NetDeviceContainer apDevices302;
-	apDevices302 = Wifi.Install(wifiPhys[302], mac, wifi_ap_nodes[302]);
-	ns3::NetDeviceContainer apDevices303;
-	apDevices303 = Wifi.Install(wifiPhys[303], mac, wifi_ap_nodes[303]);
-	ns3::NetDeviceContainer apDevices304;
-	apDevices304 = Wifi.Install(wifiPhys[304], mac, wifi_ap_nodes[304]);
-	ns3::NetDeviceContainer apDevices305;
-	apDevices305 = Wifi.Install(wifiPhys[305], mac, wifi_ap_nodes[305]);
-//    apDevices306 = Wifi.Install (wifiPhy306, mac, wifiApNode306)
-	ns3::NetDeviceContainer apDevices307;
-	apDevices307 = Wifi.Install(wifiPhys[307], mac, wifi_ap_nodes[307]);
-	ns3::NetDeviceContainer apDevices308;
-	apDevices308 = Wifi.Install(wifiPhys[308], mac, wifi_ap_nodes[308]);
-	ns3::NetDeviceContainer apDevices309;
-	apDevices309 = Wifi.Install(wifiPhys[309], mac, wifi_ap_nodes[309]);
-	ns3::NetDeviceContainer apDevices310;
-	apDevices310 = Wifi.Install(wifiPhys[310], mac, wifi_ap_nodes[310]);
-	ns3::NetDeviceContainer apDevices311;
-	apDevices311 = Wifi.Install(wifiPhys[311], mac, wifi_ap_nodes[311]);
-	ns3::NetDeviceContainer apDevices312;
-	apDevices312 = Wifi.Install(wifiPhys[312], mac, wifi_ap_nodes[312]);
-	ns3::NetDeviceContainer apDevices313;
-	apDevices313 = Wifi.Install(wifiPhys[313], mac, wifi_ap_nodes[313]);
-	ns3::NetDeviceContainer apDevices314;
-	apDevices314 = Wifi.Install(wifiPhys[314], mac, wifi_ap_nodes[314]);
-//    apDevices315 = Wifi.Install (wifiPhy315, mac, wifiApNode315)
+
+	std::vector<ns3::NetDeviceContainer> apDeviceSets(316);
+	for(int i=1; i<=315; ++i){
+		if(i==298||i==299||i==306||i==315) continue;
+		apDeviceSets[i] = Wifi.Install(wifiPhys[i], mac, wifi_ap_nodes[i]);
+	}//for
 
 //wifi area
 	ns3::MobilityHelper mobility;
@@ -11442,8 +10821,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice1->AddBridgePort(ap_device_sets[1].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices1.GetN(); ++portIter) {
-		apbridgeDevice1->AddBridgePort(apDevices1.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[1].GetN(); ++portIter) {
+		apbridgeDevice1->AddBridgePort(apDeviceSets[1].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode2 = wifi_ap_nodes[2].Get(0);
@@ -11455,8 +10834,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice2->AddBridgePort(ap_device_sets[2].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices2.GetN(); ++portIter) {
-		apbridgeDevice2->AddBridgePort(apDevices2.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[2].GetN(); ++portIter) {
+		apbridgeDevice2->AddBridgePort(apDeviceSets[2].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode3 = wifi_ap_nodes[3].Get(0);
@@ -11468,8 +10847,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice3->AddBridgePort(ap_device_sets[3].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices3.GetN(); ++portIter) {
-		apbridgeDevice3->AddBridgePort(apDevices3.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[3].GetN(); ++portIter) {
+		apbridgeDevice3->AddBridgePort(apDeviceSets[3].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode4 = wifi_ap_nodes[4].Get(0);
@@ -11481,8 +10860,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice4->AddBridgePort(ap_device_sets[4].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices4.GetN(); ++portIter) {
-		apbridgeDevice4->AddBridgePort(apDevices4.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[4].GetN(); ++portIter) {
+		apbridgeDevice4->AddBridgePort(apDeviceSets[4].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode5 = wifi_ap_nodes[5].Get(0);
@@ -11494,8 +10873,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice5->AddBridgePort(ap_device_sets[5].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices5.GetN(); ++portIter) {
-		apbridgeDevice5->AddBridgePort(apDevices5.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[5].GetN(); ++portIter) {
+		apbridgeDevice5->AddBridgePort(apDeviceSets[5].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode6 = wifi_ap_nodes[6].Get(0);
@@ -11507,8 +10886,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice6->AddBridgePort(ap_device_sets[6].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices6.GetN(); ++portIter) {
-		apbridgeDevice6->AddBridgePort(apDevices6.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[6].GetN(); ++portIter) {
+		apbridgeDevice6->AddBridgePort(apDeviceSets[6].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode7 = wifi_ap_nodes[7].Get(0);
@@ -11520,8 +10899,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice7->AddBridgePort(ap_device_sets[7].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices7.GetN(); ++portIter) {
-		apbridgeDevice7->AddBridgePort(apDevices7.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[7].GetN(); ++portIter) {
+		apbridgeDevice7->AddBridgePort(apDeviceSets[7].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode8 = wifi_ap_nodes[8].Get(0);
@@ -11533,8 +10912,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice8->AddBridgePort(ap_device_sets[8].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices8.GetN(); ++portIter) {
-		apbridgeDevice8->AddBridgePort(apDevices8.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[8].GetN(); ++portIter) {
+		apbridgeDevice8->AddBridgePort(apDeviceSets[8].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode9 = wifi_ap_nodes[9].Get(0);
@@ -11546,8 +10925,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice9->AddBridgePort(ap_device_sets[9].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices9.GetN(); ++portIter) {
-		apbridgeDevice9->AddBridgePort(apDevices9.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[9].GetN(); ++portIter) {
+		apbridgeDevice9->AddBridgePort(apDeviceSets[9].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode10 = wifi_ap_nodes[10].Get(0);
@@ -11559,8 +10938,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice10->AddBridgePort(ap_device_sets[10].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices10.GetN(); ++portIter) {
-		apbridgeDevice10->AddBridgePort(apDevices10.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[10].GetN(); ++portIter) {
+		apbridgeDevice10->AddBridgePort(apDeviceSets[10].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode11 = wifi_ap_nodes[11].Get(0);
@@ -11572,8 +10951,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice11->AddBridgePort(ap_device_sets[11].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices11.GetN(); ++portIter) {
-		apbridgeDevice11->AddBridgePort(apDevices11.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[11].GetN(); ++portIter) {
+		apbridgeDevice11->AddBridgePort(apDeviceSets[11].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode12 = wifi_ap_nodes[12].Get(0);
@@ -11585,8 +10964,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice12->AddBridgePort(ap_device_sets[12].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices12.GetN(); ++portIter) {
-		apbridgeDevice12->AddBridgePort(apDevices12.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[12].GetN(); ++portIter) {
+		apbridgeDevice12->AddBridgePort(apDeviceSets[12].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode13 = wifi_ap_nodes[13].Get(0);
@@ -11598,8 +10977,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice13->AddBridgePort(ap_device_sets[13].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices13.GetN(); ++portIter) {
-		apbridgeDevice13->AddBridgePort(apDevices13.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[13].GetN(); ++portIter) {
+		apbridgeDevice13->AddBridgePort(apDeviceSets[13].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode14 = wifi_ap_nodes[14].Get(0);
@@ -11611,8 +10990,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice14->AddBridgePort(ap_device_sets[14].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices14.GetN(); ++portIter) {
-		apbridgeDevice14->AddBridgePort(apDevices14.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[14].GetN(); ++portIter) {
+		apbridgeDevice14->AddBridgePort(apDeviceSets[14].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode15 = wifi_ap_nodes[15].Get(0);
@@ -11624,8 +11003,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice15->AddBridgePort(ap_device_sets[15].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices15.GetN(); ++portIter) {
-		apbridgeDevice15->AddBridgePort(apDevices15.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[15].GetN(); ++portIter) {
+		apbridgeDevice15->AddBridgePort(apDeviceSets[15].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode16 = wifi_ap_nodes[16].Get(0);
@@ -11637,8 +11016,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice16->AddBridgePort(ap_device_sets[16].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices16.GetN(); ++portIter) {
-		apbridgeDevice16->AddBridgePort(apDevices16.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[16].GetN(); ++portIter) {
+		apbridgeDevice16->AddBridgePort(apDeviceSets[16].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode17 = wifi_ap_nodes[17].Get(0);
@@ -11650,8 +11029,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice17->AddBridgePort(ap_device_sets[17].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices17.GetN(); ++portIter) {
-		apbridgeDevice17->AddBridgePort(apDevices17.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[17].GetN(); ++portIter) {
+		apbridgeDevice17->AddBridgePort(apDeviceSets[17].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode18 = wifi_ap_nodes[18].Get(0);
@@ -11663,8 +11042,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice18->AddBridgePort(ap_device_sets[18].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices18.GetN(); ++portIter) {
-		apbridgeDevice18->AddBridgePort(apDevices18.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[18].GetN(); ++portIter) {
+		apbridgeDevice18->AddBridgePort(apDeviceSets[18].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode19 = wifi_ap_nodes[19].Get(0);
@@ -11676,8 +11055,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice19->AddBridgePort(ap_device_sets[19].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices19.GetN(); ++portIter) {
-		apbridgeDevice19->AddBridgePort(apDevices19.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[19].GetN(); ++portIter) {
+		apbridgeDevice19->AddBridgePort(apDeviceSets[19].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode20 = wifi_ap_nodes[20].Get(0);
@@ -11689,8 +11068,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice20->AddBridgePort(ap_device_sets[20].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices20.GetN(); ++portIter) {
-		apbridgeDevice20->AddBridgePort(apDevices20.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[20].GetN(); ++portIter) {
+		apbridgeDevice20->AddBridgePort(apDeviceSets[20].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode21 = wifi_ap_nodes[21].Get(0);
@@ -11702,8 +11081,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice21->AddBridgePort(ap_device_sets[21].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices21.GetN(); ++portIter) {
-		apbridgeDevice21->AddBridgePort(apDevices21.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[21].GetN(); ++portIter) {
+		apbridgeDevice21->AddBridgePort(apDeviceSets[21].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode22 = wifi_ap_nodes[22].Get(0);
@@ -11715,8 +11094,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice22->AddBridgePort(ap_device_sets[22].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices22.GetN(); ++portIter) {
-		apbridgeDevice22->AddBridgePort(apDevices22.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[22].GetN(); ++portIter) {
+		apbridgeDevice22->AddBridgePort(apDeviceSets[22].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode23 = wifi_ap_nodes[23].Get(0);
@@ -11728,8 +11107,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice23->AddBridgePort(ap_device_sets[23].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices23.GetN(); ++portIter) {
-		apbridgeDevice23->AddBridgePort(apDevices23.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[23].GetN(); ++portIter) {
+		apbridgeDevice23->AddBridgePort(apDeviceSets[23].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode24 = wifi_ap_nodes[24].Get(0);
@@ -11741,8 +11120,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice24->AddBridgePort(ap_device_sets[24].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices24.GetN(); ++portIter) {
-		apbridgeDevice24->AddBridgePort(apDevices24.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[24].GetN(); ++portIter) {
+		apbridgeDevice24->AddBridgePort(apDeviceSets[24].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode25 = wifi_ap_nodes[25].Get(0);
@@ -11754,8 +11133,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice25->AddBridgePort(ap_device_sets[25].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices25.GetN(); ++portIter) {
-		apbridgeDevice25->AddBridgePort(apDevices25.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[25].GetN(); ++portIter) {
+		apbridgeDevice25->AddBridgePort(apDeviceSets[25].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode26 = wifi_ap_nodes[26].Get(0);
@@ -11767,8 +11146,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice26->AddBridgePort(ap_device_sets[26].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices26.GetN(); ++portIter) {
-		apbridgeDevice26->AddBridgePort(apDevices26.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[26].GetN(); ++portIter) {
+		apbridgeDevice26->AddBridgePort(apDeviceSets[26].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode27 = wifi_ap_nodes[27].Get(0);
@@ -11780,8 +11159,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice27->AddBridgePort(ap_device_sets[27].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices27.GetN(); ++portIter) {
-		apbridgeDevice27->AddBridgePort(apDevices27.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[27].GetN(); ++portIter) {
+		apbridgeDevice27->AddBridgePort(apDeviceSets[27].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode28 = wifi_ap_nodes[28].Get(0);
@@ -11793,8 +11172,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice28->AddBridgePort(ap_device_sets[28].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices28.GetN(); ++portIter) {
-		apbridgeDevice28->AddBridgePort(apDevices28.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[28].GetN(); ++portIter) {
+		apbridgeDevice28->AddBridgePort(apDeviceSets[28].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode29 = wifi_ap_nodes[29].Get(0);
@@ -11806,8 +11185,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice29->AddBridgePort(ap_device_sets[29].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices29.GetN(); ++portIter) {
-		apbridgeDevice29->AddBridgePort(apDevices29.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[29].GetN(); ++portIter) {
+		apbridgeDevice29->AddBridgePort(apDeviceSets[29].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode30 = wifi_ap_nodes[30].Get(0);
@@ -11819,8 +11198,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice30->AddBridgePort(ap_device_sets[30].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices30.GetN(); ++portIter) {
-		apbridgeDevice30->AddBridgePort(apDevices30.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[30].GetN(); ++portIter) {
+		apbridgeDevice30->AddBridgePort(apDeviceSets[30].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode31 = wifi_ap_nodes[31].Get(0);
@@ -11832,8 +11211,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice31->AddBridgePort(ap_device_sets[31].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices31.GetN(); ++portIter) {
-		apbridgeDevice31->AddBridgePort(apDevices31.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[31].GetN(); ++portIter) {
+		apbridgeDevice31->AddBridgePort(apDeviceSets[31].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode32 = wifi_ap_nodes[32].Get(0);
@@ -11845,8 +11224,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice32->AddBridgePort(ap_device_sets[32].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices32.GetN(); ++portIter) {
-		apbridgeDevice32->AddBridgePort(apDevices32.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[32].GetN(); ++portIter) {
+		apbridgeDevice32->AddBridgePort(apDeviceSets[32].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode33 = wifi_ap_nodes[33].Get(0);
@@ -11858,8 +11237,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice33->AddBridgePort(ap_device_sets[33].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices33.GetN(); ++portIter) {
-		apbridgeDevice33->AddBridgePort(apDevices33.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[33].GetN(); ++portIter) {
+		apbridgeDevice33->AddBridgePort(apDeviceSets[33].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode34 = wifi_ap_nodes[34].Get(0);
@@ -11871,8 +11250,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice34->AddBridgePort(ap_device_sets[34].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices34.GetN(); ++portIter) {
-		apbridgeDevice34->AddBridgePort(apDevices34.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[34].GetN(); ++portIter) {
+		apbridgeDevice34->AddBridgePort(apDeviceSets[34].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode35 = wifi_ap_nodes[35].Get(0);
@@ -11884,8 +11263,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice35->AddBridgePort(ap_device_sets[35].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices35.GetN(); ++portIter) {
-		apbridgeDevice35->AddBridgePort(apDevices35.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[35].GetN(); ++portIter) {
+		apbridgeDevice35->AddBridgePort(apDeviceSets[35].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode36 = wifi_ap_nodes[36].Get(0);
@@ -11897,8 +11276,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice36->AddBridgePort(ap_device_sets[36].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices36.GetN(); ++portIter) {
-		apbridgeDevice36->AddBridgePort(apDevices36.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[36].GetN(); ++portIter) {
+		apbridgeDevice36->AddBridgePort(apDeviceSets[36].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode37 = wifi_ap_nodes[37].Get(0);
@@ -11910,8 +11289,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice37->AddBridgePort(ap_device_sets[37].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices37.GetN(); ++portIter) {
-		apbridgeDevice37->AddBridgePort(apDevices37.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[37].GetN(); ++portIter) {
+		apbridgeDevice37->AddBridgePort(apDeviceSets[37].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode38 = wifi_ap_nodes[38].Get(0);
@@ -11923,8 +11302,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice38->AddBridgePort(ap_device_sets[38].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices38.GetN(); ++portIter) {
-		apbridgeDevice38->AddBridgePort(apDevices38.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[38].GetN(); ++portIter) {
+		apbridgeDevice38->AddBridgePort(apDeviceSets[38].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode39 = wifi_ap_nodes[39].Get(0);
@@ -11936,8 +11315,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice39->AddBridgePort(ap_device_sets[39].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices39.GetN(); ++portIter) {
-		apbridgeDevice39->AddBridgePort(apDevices39.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[39].GetN(); ++portIter) {
+		apbridgeDevice39->AddBridgePort(apDeviceSets[39].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode40 = wifi_ap_nodes[40].Get(0);
@@ -11949,8 +11328,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice40->AddBridgePort(ap_device_sets[40].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices40.GetN(); ++portIter) {
-		apbridgeDevice40->AddBridgePort(apDevices40.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[40].GetN(); ++portIter) {
+		apbridgeDevice40->AddBridgePort(apDeviceSets[40].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode41 = wifi_ap_nodes[41].Get(0);
@@ -11962,8 +11341,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice41->AddBridgePort(ap_device_sets[41].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices41.GetN(); ++portIter) {
-		apbridgeDevice41->AddBridgePort(apDevices41.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[41].GetN(); ++portIter) {
+		apbridgeDevice41->AddBridgePort(apDeviceSets[41].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode42 = wifi_ap_nodes[42].Get(0);
@@ -11975,8 +11354,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice42->AddBridgePort(ap_device_sets[42].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices42.GetN(); ++portIter) {
-		apbridgeDevice42->AddBridgePort(apDevices42.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[42].GetN(); ++portIter) {
+		apbridgeDevice42->AddBridgePort(apDeviceSets[42].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode43 = wifi_ap_nodes[43].Get(0);
@@ -11988,8 +11367,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice43->AddBridgePort(ap_device_sets[43].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices43.GetN(); ++portIter) {
-		apbridgeDevice43->AddBridgePort(apDevices43.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[43].GetN(); ++portIter) {
+		apbridgeDevice43->AddBridgePort(apDeviceSets[43].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode44 = wifi_ap_nodes[44].Get(0);
@@ -12001,8 +11380,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice44->AddBridgePort(ap_device_sets[44].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices44.GetN(); ++portIter) {
-		apbridgeDevice44->AddBridgePort(apDevices44.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[44].GetN(); ++portIter) {
+		apbridgeDevice44->AddBridgePort(apDeviceSets[44].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode45 = wifi_ap_nodes[45].Get(0);
@@ -12014,8 +11393,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice45->AddBridgePort(ap_device_sets[45].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices45.GetN(); ++portIter) {
-		apbridgeDevice45->AddBridgePort(apDevices45.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[45].GetN(); ++portIter) {
+		apbridgeDevice45->AddBridgePort(apDeviceSets[45].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode46 = wifi_ap_nodes[46].Get(0);
@@ -12027,8 +11406,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice46->AddBridgePort(ap_device_sets[46].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices46.GetN(); ++portIter) {
-		apbridgeDevice46->AddBridgePort(apDevices46.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[46].GetN(); ++portIter) {
+		apbridgeDevice46->AddBridgePort(apDeviceSets[46].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode47 = wifi_ap_nodes[47].Get(0);
@@ -12040,8 +11419,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice47->AddBridgePort(ap_device_sets[47].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices47.GetN(); ++portIter) {
-		apbridgeDevice47->AddBridgePort(apDevices47.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[47].GetN(); ++portIter) {
+		apbridgeDevice47->AddBridgePort(apDeviceSets[47].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode48 = wifi_ap_nodes[48].Get(0);
@@ -12053,8 +11432,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice48->AddBridgePort(ap_device_sets[48].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices48.GetN(); ++portIter) {
-		apbridgeDevice48->AddBridgePort(apDevices48.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[48].GetN(); ++portIter) {
+		apbridgeDevice48->AddBridgePort(apDeviceSets[48].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode49 = wifi_ap_nodes[49].Get(0);
@@ -12066,8 +11445,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice49->AddBridgePort(ap_device_sets[49].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices49.GetN(); ++portIter) {
-		apbridgeDevice49->AddBridgePort(apDevices49.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[49].GetN(); ++portIter) {
+		apbridgeDevice49->AddBridgePort(apDeviceSets[49].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode50 = wifi_ap_nodes[50].Get(0);
@@ -12079,8 +11458,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice50->AddBridgePort(ap_device_sets[50].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices50.GetN(); ++portIter) {
-		apbridgeDevice50->AddBridgePort(apDevices50.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[50].GetN(); ++portIter) {
+		apbridgeDevice50->AddBridgePort(apDeviceSets[50].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode51 = wifi_ap_nodes[51].Get(0);
@@ -12092,8 +11471,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice51->AddBridgePort(ap_device_sets[51].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices51.GetN(); ++portIter) {
-		apbridgeDevice51->AddBridgePort(apDevices51.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[51].GetN(); ++portIter) {
+		apbridgeDevice51->AddBridgePort(apDeviceSets[51].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode52 = wifi_ap_nodes[52].Get(0);
@@ -12105,8 +11484,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice52->AddBridgePort(ap_device_sets[52].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices52.GetN(); ++portIter) {
-		apbridgeDevice52->AddBridgePort(apDevices52.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[52].GetN(); ++portIter) {
+		apbridgeDevice52->AddBridgePort(apDeviceSets[52].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode53 = wifi_ap_nodes[53].Get(0);
@@ -12118,8 +11497,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice53->AddBridgePort(ap_device_sets[53].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices53.GetN(); ++portIter) {
-		apbridgeDevice53->AddBridgePort(apDevices53.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[53].GetN(); ++portIter) {
+		apbridgeDevice53->AddBridgePort(apDeviceSets[53].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode54 = wifi_ap_nodes[54].Get(0);
@@ -12131,8 +11510,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice54->AddBridgePort(ap_device_sets[54].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices54.GetN(); ++portIter) {
-		apbridgeDevice54->AddBridgePort(apDevices54.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[54].GetN(); ++portIter) {
+		apbridgeDevice54->AddBridgePort(apDeviceSets[54].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode55 = wifi_ap_nodes[55].Get(0);
@@ -12144,8 +11523,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice55->AddBridgePort(ap_device_sets[55].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices55.GetN(); ++portIter) {
-		apbridgeDevice55->AddBridgePort(apDevices55.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[55].GetN(); ++portIter) {
+		apbridgeDevice55->AddBridgePort(apDeviceSets[55].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode56 = wifi_ap_nodes[56].Get(0);
@@ -12157,8 +11536,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice56->AddBridgePort(ap_device_sets[56].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices56.GetN(); ++portIter) {
-		apbridgeDevice56->AddBridgePort(apDevices56.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[56].GetN(); ++portIter) {
+		apbridgeDevice56->AddBridgePort(apDeviceSets[56].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode57 = wifi_ap_nodes[57].Get(0);
@@ -12170,8 +11549,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice57->AddBridgePort(ap_device_sets[57].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices57.GetN(); ++portIter) {
-		apbridgeDevice57->AddBridgePort(apDevices57.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[57].GetN(); ++portIter) {
+		apbridgeDevice57->AddBridgePort(apDeviceSets[57].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode58 = wifi_ap_nodes[58].Get(0);
@@ -12183,8 +11562,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice58->AddBridgePort(ap_device_sets[58].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices58.GetN(); ++portIter) {
-		apbridgeDevice58->AddBridgePort(apDevices58.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[58].GetN(); ++portIter) {
+		apbridgeDevice58->AddBridgePort(apDeviceSets[58].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode59 = wifi_ap_nodes[59].Get(0);
@@ -12196,8 +11575,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice59->AddBridgePort(ap_device_sets[59].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices59.GetN(); ++portIter) {
-		apbridgeDevice59->AddBridgePort(apDevices59.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[59].GetN(); ++portIter) {
+		apbridgeDevice59->AddBridgePort(apDeviceSets[59].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode60 = wifi_ap_nodes[60].Get(0);
@@ -12209,8 +11588,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice60->AddBridgePort(ap_device_sets[60].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices60.GetN(); ++portIter) {
-		apbridgeDevice60->AddBridgePort(apDevices60.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[60].GetN(); ++portIter) {
+		apbridgeDevice60->AddBridgePort(apDeviceSets[60].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode61 = wifi_ap_nodes[61].Get(0);
@@ -12222,8 +11601,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice61->AddBridgePort(ap_device_sets[61].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices61.GetN(); ++portIter) {
-		apbridgeDevice61->AddBridgePort(apDevices61.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[61].GetN(); ++portIter) {
+		apbridgeDevice61->AddBridgePort(apDeviceSets[61].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode62 = wifi_ap_nodes[62].Get(0);
@@ -12235,8 +11614,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice62->AddBridgePort(ap_device_sets[62].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices62.GetN(); ++portIter) {
-		apbridgeDevice62->AddBridgePort(apDevices62.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[62].GetN(); ++portIter) {
+		apbridgeDevice62->AddBridgePort(apDeviceSets[62].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode63 = wifi_ap_nodes[63].Get(0);
@@ -12248,8 +11627,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice63->AddBridgePort(ap_device_sets[63].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices63.GetN(); ++portIter) {
-		apbridgeDevice63->AddBridgePort(apDevices63.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[63].GetN(); ++portIter) {
+		apbridgeDevice63->AddBridgePort(apDeviceSets[63].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode64 = wifi_ap_nodes[64].Get(0);
@@ -12261,8 +11640,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice64->AddBridgePort(ap_device_sets[64].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices64.GetN(); ++portIter) {
-		apbridgeDevice64->AddBridgePort(apDevices64.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[64].GetN(); ++portIter) {
+		apbridgeDevice64->AddBridgePort(apDeviceSets[64].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode65 = wifi_ap_nodes[65].Get(0);
@@ -12274,8 +11653,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice65->AddBridgePort(ap_device_sets[65].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices65.GetN(); ++portIter) {
-		apbridgeDevice65->AddBridgePort(apDevices65.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[65].GetN(); ++portIter) {
+		apbridgeDevice65->AddBridgePort(apDeviceSets[65].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode66 = wifi_ap_nodes[66].Get(0);
@@ -12287,8 +11666,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice66->AddBridgePort(ap_device_sets[66].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices66.GetN(); ++portIter) {
-		apbridgeDevice66->AddBridgePort(apDevices66.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[66].GetN(); ++portIter) {
+		apbridgeDevice66->AddBridgePort(apDeviceSets[66].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode67 = wifi_ap_nodes[67].Get(0);
@@ -12300,8 +11679,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice67->AddBridgePort(ap_device_sets[67].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices67.GetN(); ++portIter) {
-		apbridgeDevice67->AddBridgePort(apDevices67.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[67].GetN(); ++portIter) {
+		apbridgeDevice67->AddBridgePort(apDeviceSets[67].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode68 = wifi_ap_nodes[68].Get(0);
@@ -12313,8 +11692,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice68->AddBridgePort(ap_device_sets[68].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices68.GetN(); ++portIter) {
-		apbridgeDevice68->AddBridgePort(apDevices68.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[68].GetN(); ++portIter) {
+		apbridgeDevice68->AddBridgePort(apDeviceSets[68].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode69 = wifi_ap_nodes[69].Get(0);
@@ -12326,8 +11705,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice69->AddBridgePort(ap_device_sets[69].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices69.GetN(); ++portIter) {
-		apbridgeDevice69->AddBridgePort(apDevices69.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[69].GetN(); ++portIter) {
+		apbridgeDevice69->AddBridgePort(apDeviceSets[69].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode70 = wifi_ap_nodes[70].Get(0);
@@ -12339,8 +11718,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice70->AddBridgePort(ap_device_sets[70].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices70.GetN(); ++portIter) {
-		apbridgeDevice70->AddBridgePort(apDevices70.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[70].GetN(); ++portIter) {
+		apbridgeDevice70->AddBridgePort(apDeviceSets[70].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode71 = wifi_ap_nodes[71].Get(0);
@@ -12352,8 +11731,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice71->AddBridgePort(ap_device_sets[71].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices71.GetN(); ++portIter) {
-		apbridgeDevice71->AddBridgePort(apDevices71.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[71].GetN(); ++portIter) {
+		apbridgeDevice71->AddBridgePort(apDeviceSets[71].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode72 = wifi_ap_nodes[72].Get(0);
@@ -12365,8 +11744,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice72->AddBridgePort(ap_device_sets[72].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices72.GetN(); ++portIter) {
-		apbridgeDevice72->AddBridgePort(apDevices72.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[72].GetN(); ++portIter) {
+		apbridgeDevice72->AddBridgePort(apDeviceSets[72].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode73 = wifi_ap_nodes[73].Get(0);
@@ -12378,8 +11757,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice73->AddBridgePort(ap_device_sets[73].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices73.GetN(); ++portIter) {
-		apbridgeDevice73->AddBridgePort(apDevices73.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[73].GetN(); ++portIter) {
+		apbridgeDevice73->AddBridgePort(apDeviceSets[73].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode74 = wifi_ap_nodes[74].Get(0);
@@ -12391,8 +11770,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice74->AddBridgePort(ap_device_sets[74].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices74.GetN(); ++portIter) {
-		apbridgeDevice74->AddBridgePort(apDevices74.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[74].GetN(); ++portIter) {
+		apbridgeDevice74->AddBridgePort(apDeviceSets[74].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode75 = wifi_ap_nodes[75].Get(0);
@@ -12404,8 +11783,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice75->AddBridgePort(ap_device_sets[75].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices75.GetN(); ++portIter) {
-		apbridgeDevice75->AddBridgePort(apDevices75.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[75].GetN(); ++portIter) {
+		apbridgeDevice75->AddBridgePort(apDeviceSets[75].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode76 = wifi_ap_nodes[76].Get(0);
@@ -12417,8 +11796,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice76->AddBridgePort(ap_device_sets[76].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices76.GetN(); ++portIter) {
-		apbridgeDevice76->AddBridgePort(apDevices76.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[76].GetN(); ++portIter) {
+		apbridgeDevice76->AddBridgePort(apDeviceSets[76].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode77 = wifi_ap_nodes[77].Get(0);
@@ -12430,8 +11809,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice77->AddBridgePort(ap_device_sets[77].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices77.GetN(); ++portIter) {
-		apbridgeDevice77->AddBridgePort(apDevices77.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[77].GetN(); ++portIter) {
+		apbridgeDevice77->AddBridgePort(apDeviceSets[77].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode78 = wifi_ap_nodes[78].Get(0);
@@ -12443,8 +11822,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice78->AddBridgePort(ap_device_sets[78].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices78.GetN(); ++portIter) {
-		apbridgeDevice78->AddBridgePort(apDevices78.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[78].GetN(); ++portIter) {
+		apbridgeDevice78->AddBridgePort(apDeviceSets[78].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode79 = wifi_ap_nodes[79].Get(0);
@@ -12456,8 +11835,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice79->AddBridgePort(ap_device_sets[79].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices79.GetN(); ++portIter) {
-		apbridgeDevice79->AddBridgePort(apDevices79.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[79].GetN(); ++portIter) {
+		apbridgeDevice79->AddBridgePort(apDeviceSets[79].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode80 = wifi_ap_nodes[80].Get(0);
@@ -12469,8 +11848,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice80->AddBridgePort(ap_device_sets[80].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices80.GetN(); ++portIter) {
-		apbridgeDevice80->AddBridgePort(apDevices80.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[80].GetN(); ++portIter) {
+		apbridgeDevice80->AddBridgePort(apDeviceSets[80].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode81 = wifi_ap_nodes[81].Get(0);
@@ -12482,8 +11861,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice81->AddBridgePort(ap_device_sets[81].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices81.GetN(); ++portIter) {
-		apbridgeDevice81->AddBridgePort(apDevices81.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[81].GetN(); ++portIter) {
+		apbridgeDevice81->AddBridgePort(apDeviceSets[81].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode82 = wifi_ap_nodes[82].Get(0);
@@ -12495,8 +11874,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice82->AddBridgePort(ap_device_sets[82].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices82.GetN(); ++portIter) {
-		apbridgeDevice82->AddBridgePort(apDevices82.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[82].GetN(); ++portIter) {
+		apbridgeDevice82->AddBridgePort(apDeviceSets[82].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode83 = wifi_ap_nodes[83].Get(0);
@@ -12508,8 +11887,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice83->AddBridgePort(ap_device_sets[83].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices83.GetN(); ++portIter) {
-		apbridgeDevice83->AddBridgePort(apDevices83.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[83].GetN(); ++portIter) {
+		apbridgeDevice83->AddBridgePort(apDeviceSets[83].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode84 = wifi_ap_nodes[84].Get(0);
@@ -12521,8 +11900,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice84->AddBridgePort(ap_device_sets[84].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices84.GetN(); ++portIter) {
-		apbridgeDevice84->AddBridgePort(apDevices84.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[84].GetN(); ++portIter) {
+		apbridgeDevice84->AddBridgePort(apDeviceSets[84].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode85 = wifi_ap_nodes[85].Get(0);
@@ -12534,8 +11913,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice85->AddBridgePort(ap_device_sets[85].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices85.GetN(); ++portIter) {
-		apbridgeDevice85->AddBridgePort(apDevices85.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[85].GetN(); ++portIter) {
+		apbridgeDevice85->AddBridgePort(apDeviceSets[85].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode86 = wifi_ap_nodes[86].Get(0);
@@ -12547,8 +11926,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice86->AddBridgePort(ap_device_sets[86].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices86.GetN(); ++portIter) {
-		apbridgeDevice86->AddBridgePort(apDevices86.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[86].GetN(); ++portIter) {
+		apbridgeDevice86->AddBridgePort(apDeviceSets[86].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode87 = wifi_ap_nodes[87].Get(0);
@@ -12560,8 +11939,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice87->AddBridgePort(ap_device_sets[87].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices87.GetN(); ++portIter) {
-		apbridgeDevice87->AddBridgePort(apDevices87.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[87].GetN(); ++portIter) {
+		apbridgeDevice87->AddBridgePort(apDeviceSets[87].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode88 = wifi_ap_nodes[88].Get(0);
@@ -12573,8 +11952,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice88->AddBridgePort(ap_device_sets[88].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices88.GetN(); ++portIter) {
-		apbridgeDevice88->AddBridgePort(apDevices88.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[88].GetN(); ++portIter) {
+		apbridgeDevice88->AddBridgePort(apDeviceSets[88].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode89 = wifi_ap_nodes[89].Get(0);
@@ -12586,8 +11965,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice89->AddBridgePort(ap_device_sets[89].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices89.GetN(); ++portIter) {
-		apbridgeDevice89->AddBridgePort(apDevices89.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[89].GetN(); ++portIter) {
+		apbridgeDevice89->AddBridgePort(apDeviceSets[89].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode90 = wifi_ap_nodes[90].Get(0);
@@ -12599,8 +11978,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice90->AddBridgePort(ap_device_sets[90].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices90.GetN(); ++portIter) {
-		apbridgeDevice90->AddBridgePort(apDevices90.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[90].GetN(); ++portIter) {
+		apbridgeDevice90->AddBridgePort(apDeviceSets[90].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode91 = wifi_ap_nodes[91].Get(0);
@@ -12612,8 +11991,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice91->AddBridgePort(ap_device_sets[91].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices91.GetN(); ++portIter) {
-		apbridgeDevice91->AddBridgePort(apDevices91.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[91].GetN(); ++portIter) {
+		apbridgeDevice91->AddBridgePort(apDeviceSets[91].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode92 = wifi_ap_nodes[92].Get(0);
@@ -12625,8 +12004,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice92->AddBridgePort(ap_device_sets[92].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices92.GetN(); ++portIter) {
-		apbridgeDevice92->AddBridgePort(apDevices92.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[92].GetN(); ++portIter) {
+		apbridgeDevice92->AddBridgePort(apDeviceSets[92].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode93 = wifi_ap_nodes[93].Get(0);
@@ -12638,8 +12017,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice93->AddBridgePort(ap_device_sets[93].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices93.GetN(); ++portIter) {
-		apbridgeDevice93->AddBridgePort(apDevices93.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[93].GetN(); ++portIter) {
+		apbridgeDevice93->AddBridgePort(apDeviceSets[93].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode94 = wifi_ap_nodes[94].Get(0);
@@ -12651,8 +12030,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice94->AddBridgePort(ap_device_sets[94].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices94.GetN(); ++portIter) {
-		apbridgeDevice94->AddBridgePort(apDevices94.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[94].GetN(); ++portIter) {
+		apbridgeDevice94->AddBridgePort(apDeviceSets[94].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode95 = wifi_ap_nodes[95].Get(0);
@@ -12664,8 +12043,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice95->AddBridgePort(ap_device_sets[95].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices95.GetN(); ++portIter) {
-		apbridgeDevice95->AddBridgePort(apDevices95.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[95].GetN(); ++portIter) {
+		apbridgeDevice95->AddBridgePort(apDeviceSets[95].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode96 = wifi_ap_nodes[96].Get(0);
@@ -12677,8 +12056,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice96->AddBridgePort(ap_device_sets[96].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices96.GetN(); ++portIter) {
-		apbridgeDevice96->AddBridgePort(apDevices96.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[96].GetN(); ++portIter) {
+		apbridgeDevice96->AddBridgePort(apDeviceSets[96].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode97 = wifi_ap_nodes[97].Get(0);
@@ -12690,8 +12069,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice97->AddBridgePort(ap_device_sets[97].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices97.GetN(); ++portIter) {
-		apbridgeDevice97->AddBridgePort(apDevices97.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[97].GetN(); ++portIter) {
+		apbridgeDevice97->AddBridgePort(apDeviceSets[97].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode98 = wifi_ap_nodes[98].Get(0);
@@ -12703,8 +12082,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice98->AddBridgePort(ap_device_sets[98].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices98.GetN(); ++portIter) {
-		apbridgeDevice98->AddBridgePort(apDevices98.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[98].GetN(); ++portIter) {
+		apbridgeDevice98->AddBridgePort(apDeviceSets[98].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode99 = wifi_ap_nodes[99].Get(0);
@@ -12716,8 +12095,8 @@ int main(int argc, char** argv) {
 		apbridgeDevice99->AddBridgePort(ap_device_sets[99].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices99.GetN(); ++portIter) {
-		apbridgeDevice99->AddBridgePort(apDevices99.Get(portIter));
+	for (unsigned int portIter = 0; portIter < apDeviceSets[99].GetN(); ++portIter) {
+		apbridgeDevice99->AddBridgePort(apDeviceSets[99].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode100 = wifi_ap_nodes[100].Get(0);
@@ -12730,9 +12109,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice100->AddBridgePort(ap_device_sets[100].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices100.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[100].GetN();
 			++portIter) {
-		apbridgeDevice100->AddBridgePort(apDevices100.Get(portIter));
+		apbridgeDevice100->AddBridgePort(apDeviceSets[100].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode101 = wifi_ap_nodes[101].Get(0);
@@ -12745,9 +12124,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice101->AddBridgePort(ap_device_sets[101].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices101.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[101].GetN();
 			++portIter) {
-		apbridgeDevice101->AddBridgePort(apDevices101.Get(portIter));
+		apbridgeDevice101->AddBridgePort(apDeviceSets[101].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode102 = wifi_ap_nodes[102].Get(0);
@@ -12760,9 +12139,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice102->AddBridgePort(ap_device_sets[102].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices102.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[102].GetN();
 			++portIter) {
-		apbridgeDevice102->AddBridgePort(apDevices102.Get(portIter));
+		apbridgeDevice102->AddBridgePort(apDeviceSets[102].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode103 = wifi_ap_nodes[103].Get(0);
@@ -12775,9 +12154,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice103->AddBridgePort(ap_device_sets[103].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices103.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[103].GetN();
 			++portIter) {
-		apbridgeDevice103->AddBridgePort(apDevices103.Get(portIter));
+		apbridgeDevice103->AddBridgePort(apDeviceSets[103].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode104 = wifi_ap_nodes[104].Get(0);
@@ -12790,9 +12169,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice104->AddBridgePort(ap_device_sets[104].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices104.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[104].GetN();
 			++portIter) {
-		apbridgeDevice104->AddBridgePort(apDevices104.Get(portIter));
+		apbridgeDevice104->AddBridgePort(apDeviceSets[104].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode105 = wifi_ap_nodes[105].Get(0);
@@ -12805,9 +12184,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice105->AddBridgePort(ap_device_sets[105].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices105.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[105].GetN();
 			++portIter) {
-		apbridgeDevice105->AddBridgePort(apDevices105.Get(portIter));
+		apbridgeDevice105->AddBridgePort(apDeviceSets[105].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode106 = wifi_ap_nodes[106].Get(0);
@@ -12820,9 +12199,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice106->AddBridgePort(ap_device_sets[106].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices106.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[106].GetN();
 			++portIter) {
-		apbridgeDevice106->AddBridgePort(apDevices106.Get(portIter));
+		apbridgeDevice106->AddBridgePort(apDeviceSets[106].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode107 = wifi_ap_nodes[107].Get(0);
@@ -12835,9 +12214,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice107->AddBridgePort(ap_device_sets[107].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices107.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[107].GetN();
 			++portIter) {
-		apbridgeDevice107->AddBridgePort(apDevices107.Get(portIter));
+		apbridgeDevice107->AddBridgePort(apDeviceSets[107].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode108 = wifi_ap_nodes[108].Get(0);
@@ -12850,9 +12229,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice108->AddBridgePort(ap_device_sets[108].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices108.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[108].GetN();
 			++portIter) {
-		apbridgeDevice108->AddBridgePort(apDevices108.Get(portIter));
+		apbridgeDevice108->AddBridgePort(apDeviceSets[108].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode109 = wifi_ap_nodes[109].Get(0);
@@ -12865,9 +12244,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice109->AddBridgePort(ap_device_sets[109].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices109.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[109].GetN();
 			++portIter) {
-		apbridgeDevice109->AddBridgePort(apDevices109.Get(portIter));
+		apbridgeDevice109->AddBridgePort(apDeviceSets[109].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode110 = wifi_ap_nodes[110].Get(0);
@@ -12880,9 +12259,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice110->AddBridgePort(ap_device_sets[110].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices110.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[110].GetN();
 			++portIter) {
-		apbridgeDevice110->AddBridgePort(apDevices110.Get(portIter));
+		apbridgeDevice110->AddBridgePort(apDeviceSets[110].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode111 = wifi_ap_nodes[111].Get(0);
@@ -12895,9 +12274,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice111->AddBridgePort(ap_device_sets[111].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices111.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[111].GetN();
 			++portIter) {
-		apbridgeDevice111->AddBridgePort(apDevices111.Get(portIter));
+		apbridgeDevice111->AddBridgePort(apDeviceSets[111].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode112 = wifi_ap_nodes[112].Get(0);
@@ -12910,9 +12289,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice112->AddBridgePort(ap_device_sets[112].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices112.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[112].GetN();
 			++portIter) {
-		apbridgeDevice112->AddBridgePort(apDevices112.Get(portIter));
+		apbridgeDevice112->AddBridgePort(apDeviceSets[112].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode113 = wifi_ap_nodes[113].Get(0);
@@ -12925,9 +12304,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice113->AddBridgePort(ap_device_sets[113].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices113.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[113].GetN();
 			++portIter) {
-		apbridgeDevice113->AddBridgePort(apDevices113.Get(portIter));
+		apbridgeDevice113->AddBridgePort(apDeviceSets[113].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode114 = wifi_ap_nodes[114].Get(0);
@@ -12940,9 +12319,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice114->AddBridgePort(ap_device_sets[114].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices114.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[114].GetN();
 			++portIter) {
-		apbridgeDevice114->AddBridgePort(apDevices114.Get(portIter));
+		apbridgeDevice114->AddBridgePort(apDeviceSets[114].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode115 = wifi_ap_nodes[115].Get(0);
@@ -12955,9 +12334,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice115->AddBridgePort(ap_device_sets[115].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices115.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[115].GetN();
 			++portIter) {
-		apbridgeDevice115->AddBridgePort(apDevices115.Get(portIter));
+		apbridgeDevice115->AddBridgePort(apDeviceSets[115].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode116 = wifi_ap_nodes[116].Get(0);
@@ -12970,9 +12349,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice116->AddBridgePort(ap_device_sets[116].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices116.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[116].GetN();
 			++portIter) {
-		apbridgeDevice116->AddBridgePort(apDevices116.Get(portIter));
+		apbridgeDevice116->AddBridgePort(apDeviceSets[116].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode117 = wifi_ap_nodes[117].Get(0);
@@ -12985,9 +12364,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice117->AddBridgePort(ap_device_sets[117].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices117.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[117].GetN();
 			++portIter) {
-		apbridgeDevice117->AddBridgePort(apDevices117.Get(portIter));
+		apbridgeDevice117->AddBridgePort(apDeviceSets[117].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode118 = wifi_ap_nodes[118].Get(0);
@@ -13000,9 +12379,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice118->AddBridgePort(ap_device_sets[118].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices118.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[118].GetN();
 			++portIter) {
-		apbridgeDevice118->AddBridgePort(apDevices118.Get(portIter));
+		apbridgeDevice118->AddBridgePort(apDeviceSets[118].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode119 = wifi_ap_nodes[119].Get(0);
@@ -13015,9 +12394,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice119->AddBridgePort(ap_device_sets[119].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices119.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[119].GetN();
 			++portIter) {
-		apbridgeDevice119->AddBridgePort(apDevices119.Get(portIter));
+		apbridgeDevice119->AddBridgePort(apDeviceSets[119].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode120 = wifi_ap_nodes[120].Get(0);
@@ -13030,9 +12409,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice120->AddBridgePort(ap_device_sets[120].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices120.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[120].GetN();
 			++portIter) {
-		apbridgeDevice120->AddBridgePort(apDevices120.Get(portIter));
+		apbridgeDevice120->AddBridgePort(apDeviceSets[120].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode121 = wifi_ap_nodes[121].Get(0);
@@ -13045,9 +12424,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice121->AddBridgePort(ap_device_sets[121].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices121.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[121].GetN();
 			++portIter) {
-		apbridgeDevice121->AddBridgePort(apDevices121.Get(portIter));
+		apbridgeDevice121->AddBridgePort(apDeviceSets[121].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode122 = wifi_ap_nodes[122].Get(0);
@@ -13060,9 +12439,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice122->AddBridgePort(ap_device_sets[122].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices122.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[122].GetN();
 			++portIter) {
-		apbridgeDevice122->AddBridgePort(apDevices122.Get(portIter));
+		apbridgeDevice122->AddBridgePort(apDeviceSets[122].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode123 = wifi_ap_nodes[123].Get(0);
@@ -13075,9 +12454,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice123->AddBridgePort(ap_device_sets[123].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices123.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[123].GetN();
 			++portIter) {
-		apbridgeDevice123->AddBridgePort(apDevices123.Get(portIter));
+		apbridgeDevice123->AddBridgePort(apDeviceSets[123].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode124 = wifi_ap_nodes[124].Get(0);
@@ -13090,9 +12469,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice124->AddBridgePort(ap_device_sets[124].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices124.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[124].GetN();
 			++portIter) {
-		apbridgeDevice124->AddBridgePort(apDevices124.Get(portIter));
+		apbridgeDevice124->AddBridgePort(apDeviceSets[124].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode125 = wifi_ap_nodes[125].Get(0);
@@ -13105,9 +12484,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice125->AddBridgePort(ap_device_sets[125].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices125.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[125].GetN();
 			++portIter) {
-		apbridgeDevice125->AddBridgePort(apDevices125.Get(portIter));
+		apbridgeDevice125->AddBridgePort(apDeviceSets[125].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode126 = wifi_ap_nodes[126].Get(0);
@@ -13120,9 +12499,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice126->AddBridgePort(ap_device_sets[126].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices126.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[126].GetN();
 			++portIter) {
-		apbridgeDevice126->AddBridgePort(apDevices126.Get(portIter));
+		apbridgeDevice126->AddBridgePort(apDeviceSets[126].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode127 = wifi_ap_nodes[127].Get(0);
@@ -13135,9 +12514,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice127->AddBridgePort(ap_device_sets[127].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices127.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[127].GetN();
 			++portIter) {
-		apbridgeDevice127->AddBridgePort(apDevices127.Get(portIter));
+		apbridgeDevice127->AddBridgePort(apDeviceSets[127].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode128 = wifi_ap_nodes[128].Get(0);
@@ -13150,9 +12529,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice128->AddBridgePort(ap_device_sets[128].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices128.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[128].GetN();
 			++portIter) {
-		apbridgeDevice128->AddBridgePort(apDevices128.Get(portIter));
+		apbridgeDevice128->AddBridgePort(apDeviceSets[128].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode129 = wifi_ap_nodes[129].Get(0);
@@ -13165,9 +12544,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice129->AddBridgePort(ap_device_sets[129].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices129.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[129].GetN();
 			++portIter) {
-		apbridgeDevice129->AddBridgePort(apDevices129.Get(portIter));
+		apbridgeDevice129->AddBridgePort(apDeviceSets[129].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode130 = wifi_ap_nodes[130].Get(0);
@@ -13180,9 +12559,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice130->AddBridgePort(ap_device_sets[130].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices130.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[130].GetN();
 			++portIter) {
-		apbridgeDevice130->AddBridgePort(apDevices130.Get(portIter));
+		apbridgeDevice130->AddBridgePort(apDeviceSets[130].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode131 = wifi_ap_nodes[131].Get(0);
@@ -13195,9 +12574,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice131->AddBridgePort(ap_device_sets[131].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices131.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[131].GetN();
 			++portIter) {
-		apbridgeDevice131->AddBridgePort(apDevices131.Get(portIter));
+		apbridgeDevice131->AddBridgePort(apDeviceSets[131].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode132 = wifi_ap_nodes[132].Get(0);
@@ -13210,9 +12589,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice132->AddBridgePort(ap_device_sets[132].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices132.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[132].GetN();
 			++portIter) {
-		apbridgeDevice132->AddBridgePort(apDevices132.Get(portIter));
+		apbridgeDevice132->AddBridgePort(apDeviceSets[132].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode133 = wifi_ap_nodes[133].Get(0);
@@ -13225,9 +12604,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice133->AddBridgePort(ap_device_sets[133].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices133.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[133].GetN();
 			++portIter) {
-		apbridgeDevice133->AddBridgePort(apDevices133.Get(portIter));
+		apbridgeDevice133->AddBridgePort(apDeviceSets[133].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode134 = wifi_ap_nodes[134].Get(0);
@@ -13240,9 +12619,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice134->AddBridgePort(ap_device_sets[134].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices134.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[134].GetN();
 			++portIter) {
-		apbridgeDevice134->AddBridgePort(apDevices134.Get(portIter));
+		apbridgeDevice134->AddBridgePort(apDeviceSets[134].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode135 = wifi_ap_nodes[135].Get(0);
@@ -13255,9 +12634,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice135->AddBridgePort(ap_device_sets[135].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices135.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[135].GetN();
 			++portIter) {
-		apbridgeDevice135->AddBridgePort(apDevices135.Get(portIter));
+		apbridgeDevice135->AddBridgePort(apDeviceSets[135].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode136 = wifi_ap_nodes[136].Get(0);
@@ -13270,9 +12649,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice136->AddBridgePort(ap_device_sets[136].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices136.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[136].GetN();
 			++portIter) {
-		apbridgeDevice136->AddBridgePort(apDevices136.Get(portIter));
+		apbridgeDevice136->AddBridgePort(apDeviceSets[136].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode137 = wifi_ap_nodes[137].Get(0);
@@ -13285,9 +12664,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice137->AddBridgePort(ap_device_sets[137].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices137.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[137].GetN();
 			++portIter) {
-		apbridgeDevice137->AddBridgePort(apDevices137.Get(portIter));
+		apbridgeDevice137->AddBridgePort(apDeviceSets[137].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode138 = wifi_ap_nodes[138].Get(0);
@@ -13300,9 +12679,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice138->AddBridgePort(ap_device_sets[138].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices138.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[138].GetN();
 			++portIter) {
-		apbridgeDevice138->AddBridgePort(apDevices138.Get(portIter));
+		apbridgeDevice138->AddBridgePort(apDeviceSets[138].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode139 = wifi_ap_nodes[139].Get(0);
@@ -13315,9 +12694,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice139->AddBridgePort(ap_device_sets[139].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices139.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[139].GetN();
 			++portIter) {
-		apbridgeDevice139->AddBridgePort(apDevices139.Get(portIter));
+		apbridgeDevice139->AddBridgePort(apDeviceSets[139].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode140 = wifi_ap_nodes[140].Get(0);
@@ -13330,9 +12709,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice140->AddBridgePort(ap_device_sets[140].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices140.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[140].GetN();
 			++portIter) {
-		apbridgeDevice140->AddBridgePort(apDevices140.Get(portIter));
+		apbridgeDevice140->AddBridgePort(apDeviceSets[140].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode141 = wifi_ap_nodes[141].Get(0);
@@ -13345,9 +12724,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice141->AddBridgePort(ap_device_sets[141].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices141.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[141].GetN();
 			++portIter) {
-		apbridgeDevice141->AddBridgePort(apDevices141.Get(portIter));
+		apbridgeDevice141->AddBridgePort(apDeviceSets[141].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode142 = wifi_ap_nodes[142].Get(0);
@@ -13360,9 +12739,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice142->AddBridgePort(ap_device_sets[142].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices142.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[142].GetN();
 			++portIter) {
-		apbridgeDevice142->AddBridgePort(apDevices142.Get(portIter));
+		apbridgeDevice142->AddBridgePort(apDeviceSets[142].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode143 = wifi_ap_nodes[143].Get(0);
@@ -13375,9 +12754,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice143->AddBridgePort(ap_device_sets[143].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices143.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[143].GetN();
 			++portIter) {
-		apbridgeDevice143->AddBridgePort(apDevices143.Get(portIter));
+		apbridgeDevice143->AddBridgePort(apDeviceSets[143].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode144 = wifi_ap_nodes[144].Get(0);
@@ -13390,9 +12769,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice144->AddBridgePort(ap_device_sets[144].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices144.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[144].GetN();
 			++portIter) {
-		apbridgeDevice144->AddBridgePort(apDevices144.Get(portIter));
+		apbridgeDevice144->AddBridgePort(apDeviceSets[144].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode145 = wifi_ap_nodes[145].Get(0);
@@ -13405,9 +12784,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice145->AddBridgePort(ap_device_sets[145].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices145.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[145].GetN();
 			++portIter) {
-		apbridgeDevice145->AddBridgePort(apDevices145.Get(portIter));
+		apbridgeDevice145->AddBridgePort(apDeviceSets[145].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode146 = wifi_ap_nodes[146].Get(0);
@@ -13420,9 +12799,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice146->AddBridgePort(ap_device_sets[146].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices146.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[146].GetN();
 			++portIter) {
-		apbridgeDevice146->AddBridgePort(apDevices146.Get(portIter));
+		apbridgeDevice146->AddBridgePort(apDeviceSets[146].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode147 = wifi_ap_nodes[147].Get(0);
@@ -13435,9 +12814,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice147->AddBridgePort(ap_device_sets[147].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices147.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[147].GetN();
 			++portIter) {
-		apbridgeDevice147->AddBridgePort(apDevices147.Get(portIter));
+		apbridgeDevice147->AddBridgePort(apDeviceSets[147].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode148 = wifi_ap_nodes[148].Get(0);
@@ -13450,9 +12829,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice148->AddBridgePort(ap_device_sets[148].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices148.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[148].GetN();
 			++portIter) {
-		apbridgeDevice148->AddBridgePort(apDevices148.Get(portIter));
+		apbridgeDevice148->AddBridgePort(apDeviceSets[148].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode149 = wifi_ap_nodes[149].Get(0);
@@ -13465,9 +12844,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice149->AddBridgePort(ap_device_sets[149].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices149.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[149].GetN();
 			++portIter) {
-		apbridgeDevice149->AddBridgePort(apDevices149.Get(portIter));
+		apbridgeDevice149->AddBridgePort(apDeviceSets[149].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode150 = wifi_ap_nodes[150].Get(0);
@@ -13480,9 +12859,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice150->AddBridgePort(ap_device_sets[150].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices150.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[150].GetN();
 			++portIter) {
-		apbridgeDevice150->AddBridgePort(apDevices150.Get(portIter));
+		apbridgeDevice150->AddBridgePort(apDeviceSets[150].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode151 = wifi_ap_nodes[151].Get(0);
@@ -13495,9 +12874,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice151->AddBridgePort(ap_device_sets[151].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices151.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[151].GetN();
 			++portIter) {
-		apbridgeDevice151->AddBridgePort(apDevices151.Get(portIter));
+		apbridgeDevice151->AddBridgePort(apDeviceSets[151].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode152 = wifi_ap_nodes[152].Get(0);
@@ -13510,9 +12889,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice152->AddBridgePort(ap_device_sets[152].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices152.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[152].GetN();
 			++portIter) {
-		apbridgeDevice152->AddBridgePort(apDevices152.Get(portIter));
+		apbridgeDevice152->AddBridgePort(apDeviceSets[152].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode153 = wifi_ap_nodes[153].Get(0);
@@ -13525,9 +12904,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice153->AddBridgePort(ap_device_sets[153].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices153.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[153].GetN();
 			++portIter) {
-		apbridgeDevice153->AddBridgePort(apDevices153.Get(portIter));
+		apbridgeDevice153->AddBridgePort(apDeviceSets[153].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode154 = wifi_ap_nodes[154].Get(0);
@@ -13540,9 +12919,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice154->AddBridgePort(ap_device_sets[154].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices154.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[154].GetN();
 			++portIter) {
-		apbridgeDevice154->AddBridgePort(apDevices154.Get(portIter));
+		apbridgeDevice154->AddBridgePort(apDeviceSets[154].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode155 = wifi_ap_nodes[155].Get(0);
@@ -13555,9 +12934,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice155->AddBridgePort(ap_device_sets[155].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices155.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[155].GetN();
 			++portIter) {
-		apbridgeDevice155->AddBridgePort(apDevices155.Get(portIter));
+		apbridgeDevice155->AddBridgePort(apDeviceSets[155].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode156 = wifi_ap_nodes[156].Get(0);
@@ -13570,9 +12949,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice156->AddBridgePort(ap_device_sets[156].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices156.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[156].GetN();
 			++portIter) {
-		apbridgeDevice156->AddBridgePort(apDevices156.Get(portIter));
+		apbridgeDevice156->AddBridgePort(apDeviceSets[156].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode157 = wifi_ap_nodes[157].Get(0);
@@ -13585,9 +12964,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice157->AddBridgePort(ap_device_sets[157].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices157.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[157].GetN();
 			++portIter) {
-		apbridgeDevice157->AddBridgePort(apDevices157.Get(portIter));
+		apbridgeDevice157->AddBridgePort(apDeviceSets[157].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode158 = wifi_ap_nodes[158].Get(0);
@@ -13600,9 +12979,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice158->AddBridgePort(ap_device_sets[158].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices158.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[158].GetN();
 			++portIter) {
-		apbridgeDevice158->AddBridgePort(apDevices158.Get(portIter));
+		apbridgeDevice158->AddBridgePort(apDeviceSets[158].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode159 = wifi_ap_nodes[159].Get(0);
@@ -13615,9 +12994,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice159->AddBridgePort(ap_device_sets[159].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices159.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[159].GetN();
 			++portIter) {
-		apbridgeDevice159->AddBridgePort(apDevices159.Get(portIter));
+		apbridgeDevice159->AddBridgePort(apDeviceSets[159].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode160 = wifi_ap_nodes[160].Get(0);
@@ -13630,9 +13009,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice160->AddBridgePort(ap_device_sets[160].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices160.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[160].GetN();
 			++portIter) {
-		apbridgeDevice160->AddBridgePort(apDevices160.Get(portIter));
+		apbridgeDevice160->AddBridgePort(apDeviceSets[160].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode161 = wifi_ap_nodes[161].Get(0);
@@ -13645,9 +13024,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice161->AddBridgePort(ap_device_sets[161].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices161.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[161].GetN();
 			++portIter) {
-		apbridgeDevice161->AddBridgePort(apDevices161.Get(portIter));
+		apbridgeDevice161->AddBridgePort(apDeviceSets[161].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode162 = wifi_ap_nodes[162].Get(0);
@@ -13660,9 +13039,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice162->AddBridgePort(ap_device_sets[162].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices162.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[162].GetN();
 			++portIter) {
-		apbridgeDevice162->AddBridgePort(apDevices162.Get(portIter));
+		apbridgeDevice162->AddBridgePort(apDeviceSets[162].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode163 = wifi_ap_nodes[163].Get(0);
@@ -13675,9 +13054,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice163->AddBridgePort(ap_device_sets[163].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices163.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[163].GetN();
 			++portIter) {
-		apbridgeDevice163->AddBridgePort(apDevices163.Get(portIter));
+		apbridgeDevice163->AddBridgePort(apDeviceSets[163].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode164 = wifi_ap_nodes[164].Get(0);
@@ -13690,9 +13069,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice164->AddBridgePort(ap_device_sets[164].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices164.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[164].GetN();
 			++portIter) {
-		apbridgeDevice164->AddBridgePort(apDevices164.Get(portIter));
+		apbridgeDevice164->AddBridgePort(apDeviceSets[164].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode165 = wifi_ap_nodes[165].Get(0);
@@ -13705,9 +13084,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice165->AddBridgePort(ap_device_sets[165].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices165.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[165].GetN();
 			++portIter) {
-		apbridgeDevice165->AddBridgePort(apDevices165.Get(portIter));
+		apbridgeDevice165->AddBridgePort(apDeviceSets[165].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode166 = wifi_ap_nodes[166].Get(0);
@@ -13720,9 +13099,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice166->AddBridgePort(ap_device_sets[166].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices166.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[166].GetN();
 			++portIter) {
-		apbridgeDevice166->AddBridgePort(apDevices166.Get(portIter));
+		apbridgeDevice166->AddBridgePort(apDeviceSets[166].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode167 = wifi_ap_nodes[167].Get(0);
@@ -13735,9 +13114,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice167->AddBridgePort(ap_device_sets[167].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices167.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[167].GetN();
 			++portIter) {
-		apbridgeDevice167->AddBridgePort(apDevices167.Get(portIter));
+		apbridgeDevice167->AddBridgePort(apDeviceSets[167].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode168 = wifi_ap_nodes[168].Get(0);
@@ -13750,9 +13129,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice168->AddBridgePort(ap_device_sets[168].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices168.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[168].GetN();
 			++portIter) {
-		apbridgeDevice168->AddBridgePort(apDevices168.Get(portIter));
+		apbridgeDevice168->AddBridgePort(apDeviceSets[168].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode169 = wifi_ap_nodes[169].Get(0);
@@ -13765,9 +13144,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice169->AddBridgePort(ap_device_sets[169].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices169.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[169].GetN();
 			++portIter) {
-		apbridgeDevice169->AddBridgePort(apDevices169.Get(portIter));
+		apbridgeDevice169->AddBridgePort(apDeviceSets[169].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode170 = wifi_ap_nodes[170].Get(0);
@@ -13780,9 +13159,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice170->AddBridgePort(ap_device_sets[170].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices170.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[170].GetN();
 			++portIter) {
-		apbridgeDevice170->AddBridgePort(apDevices170.Get(portIter));
+		apbridgeDevice170->AddBridgePort(apDeviceSets[170].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode171 = wifi_ap_nodes[171].Get(0);
@@ -13795,9 +13174,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice171->AddBridgePort(ap_device_sets[171].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices171.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[171].GetN();
 			++portIter) {
-		apbridgeDevice171->AddBridgePort(apDevices171.Get(portIter));
+		apbridgeDevice171->AddBridgePort(apDeviceSets[171].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode172 = wifi_ap_nodes[172].Get(0);
@@ -13810,9 +13189,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice172->AddBridgePort(ap_device_sets[172].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices172.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[172].GetN();
 			++portIter) {
-		apbridgeDevice172->AddBridgePort(apDevices172.Get(portIter));
+		apbridgeDevice172->AddBridgePort(apDeviceSets[172].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode173 = wifi_ap_nodes[173].Get(0);
@@ -13825,9 +13204,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice173->AddBridgePort(ap_device_sets[173].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices173.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[173].GetN();
 			++portIter) {
-		apbridgeDevice173->AddBridgePort(apDevices173.Get(portIter));
+		apbridgeDevice173->AddBridgePort(apDeviceSets[173].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode174 = wifi_ap_nodes[174].Get(0);
@@ -13840,9 +13219,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice174->AddBridgePort(ap_device_sets[174].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices174.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[174].GetN();
 			++portIter) {
-		apbridgeDevice174->AddBridgePort(apDevices174.Get(portIter));
+		apbridgeDevice174->AddBridgePort(apDeviceSets[174].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode175 = wifi_ap_nodes[175].Get(0);
@@ -13855,9 +13234,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice175->AddBridgePort(ap_device_sets[175].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices175.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[175].GetN();
 			++portIter) {
-		apbridgeDevice175->AddBridgePort(apDevices175.Get(portIter));
+		apbridgeDevice175->AddBridgePort(apDeviceSets[175].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode176 = wifi_ap_nodes[176].Get(0);
@@ -13870,9 +13249,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice176->AddBridgePort(ap_device_sets[176].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices176.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[176].GetN();
 			++portIter) {
-		apbridgeDevice176->AddBridgePort(apDevices176.Get(portIter));
+		apbridgeDevice176->AddBridgePort(apDeviceSets[176].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode177 = wifi_ap_nodes[177].Get(0);
@@ -13885,9 +13264,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice177->AddBridgePort(ap_device_sets[177].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices177.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[177].GetN();
 			++portIter) {
-		apbridgeDevice177->AddBridgePort(apDevices177.Get(portIter));
+		apbridgeDevice177->AddBridgePort(apDeviceSets[177].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode178 = wifi_ap_nodes[178].Get(0);
@@ -13900,9 +13279,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice178->AddBridgePort(ap_device_sets[178].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices178.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[178].GetN();
 			++portIter) {
-		apbridgeDevice178->AddBridgePort(apDevices178.Get(portIter));
+		apbridgeDevice178->AddBridgePort(apDeviceSets[178].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode179 = wifi_ap_nodes[179].Get(0);
@@ -13915,9 +13294,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice179->AddBridgePort(ap_device_sets[179].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices179.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[179].GetN();
 			++portIter) {
-		apbridgeDevice179->AddBridgePort(apDevices179.Get(portIter));
+		apbridgeDevice179->AddBridgePort(apDeviceSets[179].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode180 = wifi_ap_nodes[180].Get(0);
@@ -13930,9 +13309,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice180->AddBridgePort(ap_device_sets[180].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices180.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[180].GetN();
 			++portIter) {
-		apbridgeDevice180->AddBridgePort(apDevices180.Get(portIter));
+		apbridgeDevice180->AddBridgePort(apDeviceSets[180].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode181 = wifi_ap_nodes[181].Get(0);
@@ -13945,9 +13324,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice181->AddBridgePort(ap_device_sets[181].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices181.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[181].GetN();
 			++portIter) {
-		apbridgeDevice181->AddBridgePort(apDevices181.Get(portIter));
+		apbridgeDevice181->AddBridgePort(apDeviceSets[181].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode182 = wifi_ap_nodes[182].Get(0);
@@ -13960,9 +13339,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice182->AddBridgePort(ap_device_sets[182].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices182.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[182].GetN();
 			++portIter) {
-		apbridgeDevice182->AddBridgePort(apDevices182.Get(portIter));
+		apbridgeDevice182->AddBridgePort(apDeviceSets[182].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode183 = wifi_ap_nodes[183].Get(0);
@@ -13975,9 +13354,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice183->AddBridgePort(ap_device_sets[183].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices183.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[183].GetN();
 			++portIter) {
-		apbridgeDevice183->AddBridgePort(apDevices183.Get(portIter));
+		apbridgeDevice183->AddBridgePort(apDeviceSets[183].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode184 = wifi_ap_nodes[184].Get(0);
@@ -13990,9 +13369,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice184->AddBridgePort(ap_device_sets[184].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices184.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[184].GetN();
 			++portIter) {
-		apbridgeDevice184->AddBridgePort(apDevices184.Get(portIter));
+		apbridgeDevice184->AddBridgePort(apDeviceSets[184].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode185 = wifi_ap_nodes[185].Get(0);
@@ -14005,9 +13384,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice185->AddBridgePort(ap_device_sets[185].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices185.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[185].GetN();
 			++portIter) {
-		apbridgeDevice185->AddBridgePort(apDevices185.Get(portIter));
+		apbridgeDevice185->AddBridgePort(apDeviceSets[185].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode186 = wifi_ap_nodes[186].Get(0);
@@ -14020,9 +13399,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice186->AddBridgePort(ap_device_sets[186].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices186.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[186].GetN();
 			++portIter) {
-		apbridgeDevice186->AddBridgePort(apDevices186.Get(portIter));
+		apbridgeDevice186->AddBridgePort(apDeviceSets[186].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode187 = wifi_ap_nodes[187].Get(0);
@@ -14035,9 +13414,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice187->AddBridgePort(ap_device_sets[187].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices187.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[187].GetN();
 			++portIter) {
-		apbridgeDevice187->AddBridgePort(apDevices187.Get(portIter));
+		apbridgeDevice187->AddBridgePort(apDeviceSets[187].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode188 = wifi_ap_nodes[188].Get(0);
@@ -14050,9 +13429,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice188->AddBridgePort(ap_device_sets[188].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices188.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[188].GetN();
 			++portIter) {
-		apbridgeDevice188->AddBridgePort(apDevices188.Get(portIter));
+		apbridgeDevice188->AddBridgePort(apDeviceSets[188].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode189 = wifi_ap_nodes[189].Get(0);
@@ -14065,9 +13444,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice189->AddBridgePort(ap_device_sets[189].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices189.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[189].GetN();
 			++portIter) {
-		apbridgeDevice189->AddBridgePort(apDevices189.Get(portIter));
+		apbridgeDevice189->AddBridgePort(apDeviceSets[189].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode190 = wifi_ap_nodes[190].Get(0);
@@ -14080,9 +13459,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice190->AddBridgePort(ap_device_sets[190].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices190.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[190].GetN();
 			++portIter) {
-		apbridgeDevice190->AddBridgePort(apDevices190.Get(portIter));
+		apbridgeDevice190->AddBridgePort(apDeviceSets[190].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode191 = wifi_ap_nodes[191].Get(0);
@@ -14095,9 +13474,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice191->AddBridgePort(ap_device_sets[191].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices191.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[191].GetN();
 			++portIter) {
-		apbridgeDevice191->AddBridgePort(apDevices191.Get(portIter));
+		apbridgeDevice191->AddBridgePort(apDeviceSets[191].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode192 = wifi_ap_nodes[192].Get(0);
@@ -14110,9 +13489,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice192->AddBridgePort(ap_device_sets[192].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices192.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[192].GetN();
 			++portIter) {
-		apbridgeDevice192->AddBridgePort(apDevices192.Get(portIter));
+		apbridgeDevice192->AddBridgePort(apDeviceSets[192].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode193 = wifi_ap_nodes[193].Get(0);
@@ -14125,9 +13504,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice193->AddBridgePort(ap_device_sets[193].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices193.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[193].GetN();
 			++portIter) {
-		apbridgeDevice193->AddBridgePort(apDevices193.Get(portIter));
+		apbridgeDevice193->AddBridgePort(apDeviceSets[193].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode194 = wifi_ap_nodes[194].Get(0);
@@ -14140,9 +13519,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice194->AddBridgePort(ap_device_sets[194].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices194.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[194].GetN();
 			++portIter) {
-		apbridgeDevice194->AddBridgePort(apDevices194.Get(portIter));
+		apbridgeDevice194->AddBridgePort(apDeviceSets[194].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode195 = wifi_ap_nodes[195].Get(0);
@@ -14155,9 +13534,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice195->AddBridgePort(ap_device_sets[195].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices195.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[195].GetN();
 			++portIter) {
-		apbridgeDevice195->AddBridgePort(apDevices195.Get(portIter));
+		apbridgeDevice195->AddBridgePort(apDeviceSets[195].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode196 = wifi_ap_nodes[196].Get(0);
@@ -14170,9 +13549,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice196->AddBridgePort(ap_device_sets[196].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices196.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[196].GetN();
 			++portIter) {
-		apbridgeDevice196->AddBridgePort(apDevices196.Get(portIter));
+		apbridgeDevice196->AddBridgePort(apDeviceSets[196].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode197 = wifi_ap_nodes[197].Get(0);
@@ -14185,9 +13564,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice197->AddBridgePort(ap_device_sets[197].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices197.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[197].GetN();
 			++portIter) {
-		apbridgeDevice197->AddBridgePort(apDevices197.Get(portIter));
+		apbridgeDevice197->AddBridgePort(apDeviceSets[197].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode198 = wifi_ap_nodes[198].Get(0);
@@ -14200,9 +13579,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice198->AddBridgePort(ap_device_sets[198].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices198.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[198].GetN();
 			++portIter) {
-		apbridgeDevice198->AddBridgePort(apDevices198.Get(portIter));
+		apbridgeDevice198->AddBridgePort(apDeviceSets[198].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode199 = wifi_ap_nodes[199].Get(0);
@@ -14215,9 +13594,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice199->AddBridgePort(ap_device_sets[199].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices199.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[199].GetN();
 			++portIter) {
-		apbridgeDevice199->AddBridgePort(apDevices199.Get(portIter));
+		apbridgeDevice199->AddBridgePort(apDeviceSets[199].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode200 = wifi_ap_nodes[200].Get(0);
@@ -14230,9 +13609,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice200->AddBridgePort(ap_device_sets[200].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices200.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[200].GetN();
 			++portIter) {
-		apbridgeDevice200->AddBridgePort(apDevices200.Get(portIter));
+		apbridgeDevice200->AddBridgePort(apDeviceSets[200].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode201 = wifi_ap_nodes[201].Get(0);
@@ -14245,9 +13624,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice201->AddBridgePort(ap_device_sets[201].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices201.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[201].GetN();
 			++portIter) {
-		apbridgeDevice201->AddBridgePort(apDevices201.Get(portIter));
+		apbridgeDevice201->AddBridgePort(apDeviceSets[201].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode202 = wifi_ap_nodes[202].Get(0);
@@ -14260,9 +13639,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice202->AddBridgePort(ap_device_sets[202].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices202.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[202].GetN();
 			++portIter) {
-		apbridgeDevice202->AddBridgePort(apDevices202.Get(portIter));
+		apbridgeDevice202->AddBridgePort(apDeviceSets[202].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode203 = wifi_ap_nodes[203].Get(0);
@@ -14275,9 +13654,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice203->AddBridgePort(ap_device_sets[203].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices203.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[203].GetN();
 			++portIter) {
-		apbridgeDevice203->AddBridgePort(apDevices203.Get(portIter));
+		apbridgeDevice203->AddBridgePort(apDeviceSets[203].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode204 = wifi_ap_nodes[204].Get(0);
@@ -14290,9 +13669,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice204->AddBridgePort(ap_device_sets[204].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices204.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[204].GetN();
 			++portIter) {
-		apbridgeDevice204->AddBridgePort(apDevices204.Get(portIter));
+		apbridgeDevice204->AddBridgePort(apDeviceSets[204].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode205 = wifi_ap_nodes[205].Get(0);
@@ -14305,9 +13684,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice205->AddBridgePort(ap_device_sets[205].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices205.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[205].GetN();
 			++portIter) {
-		apbridgeDevice205->AddBridgePort(apDevices205.Get(portIter));
+		apbridgeDevice205->AddBridgePort(apDeviceSets[205].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode206 = wifi_ap_nodes[206].Get(0);
@@ -14320,9 +13699,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice206->AddBridgePort(ap_device_sets[206].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices206.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[206].GetN();
 			++portIter) {
-		apbridgeDevice206->AddBridgePort(apDevices206.Get(portIter));
+		apbridgeDevice206->AddBridgePort(apDeviceSets[206].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode207 = wifi_ap_nodes[207].Get(0);
@@ -14335,9 +13714,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice207->AddBridgePort(ap_device_sets[207].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices207.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[207].GetN();
 			++portIter) {
-		apbridgeDevice207->AddBridgePort(apDevices207.Get(portIter));
+		apbridgeDevice207->AddBridgePort(apDeviceSets[207].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode208 = wifi_ap_nodes[208].Get(0);
@@ -14350,9 +13729,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice208->AddBridgePort(ap_device_sets[208].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices208.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[208].GetN();
 			++portIter) {
-		apbridgeDevice208->AddBridgePort(apDevices208.Get(portIter));
+		apbridgeDevice208->AddBridgePort(apDeviceSets[208].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode209 = wifi_ap_nodes[209].Get(0);
@@ -14365,9 +13744,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice209->AddBridgePort(ap_device_sets[209].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices209.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[209].GetN();
 			++portIter) {
-		apbridgeDevice209->AddBridgePort(apDevices209.Get(portIter));
+		apbridgeDevice209->AddBridgePort(apDeviceSets[209].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode210 = wifi_ap_nodes[210].Get(0);
@@ -14380,9 +13759,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice210->AddBridgePort(ap_device_sets[210].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices210.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[210].GetN();
 			++portIter) {
-		apbridgeDevice210->AddBridgePort(apDevices210.Get(portIter));
+		apbridgeDevice210->AddBridgePort(apDeviceSets[210].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode211 = wifi_ap_nodes[211].Get(0);
@@ -14395,9 +13774,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice211->AddBridgePort(ap_device_sets[211].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices211.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[211].GetN();
 			++portIter) {
-		apbridgeDevice211->AddBridgePort(apDevices211.Get(portIter));
+		apbridgeDevice211->AddBridgePort(apDeviceSets[211].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode212 = wifi_ap_nodes[212].Get(0);
@@ -14410,9 +13789,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice212->AddBridgePort(ap_device_sets[212].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices212.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[212].GetN();
 			++portIter) {
-		apbridgeDevice212->AddBridgePort(apDevices212.Get(portIter));
+		apbridgeDevice212->AddBridgePort(apDeviceSets[212].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode213 = wifi_ap_nodes[213].Get(0);
@@ -14425,9 +13804,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice213->AddBridgePort(ap_device_sets[213].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices213.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[213].GetN();
 			++portIter) {
-		apbridgeDevice213->AddBridgePort(apDevices213.Get(portIter));
+		apbridgeDevice213->AddBridgePort(apDeviceSets[213].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode214 = wifi_ap_nodes[214].Get(0);
@@ -14440,9 +13819,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice214->AddBridgePort(ap_device_sets[214].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices214.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[214].GetN();
 			++portIter) {
-		apbridgeDevice214->AddBridgePort(apDevices214.Get(portIter));
+		apbridgeDevice214->AddBridgePort(apDeviceSets[214].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode215 = wifi_ap_nodes[215].Get(0);
@@ -14455,9 +13834,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice215->AddBridgePort(ap_device_sets[215].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices215.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[215].GetN();
 			++portIter) {
-		apbridgeDevice215->AddBridgePort(apDevices215.Get(portIter));
+		apbridgeDevice215->AddBridgePort(apDeviceSets[215].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode216 = wifi_ap_nodes[216].Get(0);
@@ -14470,9 +13849,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice216->AddBridgePort(ap_device_sets[216].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices216.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[216].GetN();
 			++portIter) {
-		apbridgeDevice216->AddBridgePort(apDevices216.Get(portIter));
+		apbridgeDevice216->AddBridgePort(apDeviceSets[216].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode217 = wifi_ap_nodes[217].Get(0);
@@ -14485,9 +13864,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice217->AddBridgePort(ap_device_sets[217].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices217.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[217].GetN();
 			++portIter) {
-		apbridgeDevice217->AddBridgePort(apDevices217.Get(portIter));
+		apbridgeDevice217->AddBridgePort(apDeviceSets[217].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode218 = wifi_ap_nodes[218].Get(0);
@@ -14500,9 +13879,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice218->AddBridgePort(ap_device_sets[218].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices218.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[218].GetN();
 			++portIter) {
-		apbridgeDevice218->AddBridgePort(apDevices218.Get(portIter));
+		apbridgeDevice218->AddBridgePort(apDeviceSets[218].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode219 = wifi_ap_nodes[219].Get(0);
@@ -14515,9 +13894,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice219->AddBridgePort(ap_device_sets[219].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices219.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[219].GetN();
 			++portIter) {
-		apbridgeDevice219->AddBridgePort(apDevices219.Get(portIter));
+		apbridgeDevice219->AddBridgePort(apDeviceSets[219].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode220 = wifi_ap_nodes[220].Get(0);
@@ -14530,9 +13909,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice220->AddBridgePort(ap_device_sets[220].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices220.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[220].GetN();
 			++portIter) {
-		apbridgeDevice220->AddBridgePort(apDevices220.Get(portIter));
+		apbridgeDevice220->AddBridgePort(apDeviceSets[220].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode221 = wifi_ap_nodes[221].Get(0);
@@ -14545,9 +13924,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice221->AddBridgePort(ap_device_sets[221].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices221.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[221].GetN();
 			++portIter) {
-		apbridgeDevice221->AddBridgePort(apDevices221.Get(portIter));
+		apbridgeDevice221->AddBridgePort(apDeviceSets[221].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode222 = wifi_ap_nodes[222].Get(0);
@@ -14560,9 +13939,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice222->AddBridgePort(ap_device_sets[222].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices222.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[222].GetN();
 			++portIter) {
-		apbridgeDevice222->AddBridgePort(apDevices222.Get(portIter));
+		apbridgeDevice222->AddBridgePort(apDeviceSets[222].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode223 = wifi_ap_nodes[223].Get(0);
@@ -14575,9 +13954,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice223->AddBridgePort(ap_device_sets[223].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices223.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[223].GetN();
 			++portIter) {
-		apbridgeDevice223->AddBridgePort(apDevices223.Get(portIter));
+		apbridgeDevice223->AddBridgePort(apDeviceSets[223].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode224 = wifi_ap_nodes[224].Get(0);
@@ -14590,9 +13969,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice224->AddBridgePort(ap_device_sets[224].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices224.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[224].GetN();
 			++portIter) {
-		apbridgeDevice224->AddBridgePort(apDevices224.Get(portIter));
+		apbridgeDevice224->AddBridgePort(apDeviceSets[224].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode225 = wifi_ap_nodes[225].Get(0);
@@ -14605,9 +13984,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice225->AddBridgePort(ap_device_sets[225].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices225.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[225].GetN();
 			++portIter) {
-		apbridgeDevice225->AddBridgePort(apDevices225.Get(portIter));
+		apbridgeDevice225->AddBridgePort(apDeviceSets[225].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode226 = wifi_ap_nodes[226].Get(0);
@@ -14620,9 +13999,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice226->AddBridgePort(ap_device_sets[226].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices226.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[226].GetN();
 			++portIter) {
-		apbridgeDevice226->AddBridgePort(apDevices226.Get(portIter));
+		apbridgeDevice226->AddBridgePort(apDeviceSets[226].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode227 = wifi_ap_nodes[227].Get(0);
@@ -14635,9 +14014,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice227->AddBridgePort(ap_device_sets[227].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices227.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[227].GetN();
 			++portIter) {
-		apbridgeDevice227->AddBridgePort(apDevices227.Get(portIter));
+		apbridgeDevice227->AddBridgePort(apDeviceSets[227].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode228 = wifi_ap_nodes[228].Get(0);
@@ -14650,9 +14029,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice228->AddBridgePort(ap_device_sets[228].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices228.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[228].GetN();
 			++portIter) {
-		apbridgeDevice228->AddBridgePort(apDevices228.Get(portIter));
+		apbridgeDevice228->AddBridgePort(apDeviceSets[228].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode229 = wifi_ap_nodes[229].Get(0);
@@ -14665,9 +14044,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice229->AddBridgePort(ap_device_sets[229].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices229.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[229].GetN();
 			++portIter) {
-		apbridgeDevice229->AddBridgePort(apDevices229.Get(portIter));
+		apbridgeDevice229->AddBridgePort(apDeviceSets[229].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode230 = wifi_ap_nodes[230].Get(0);
@@ -14680,9 +14059,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice230->AddBridgePort(ap_device_sets[230].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices230.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[230].GetN();
 			++portIter) {
-		apbridgeDevice230->AddBridgePort(apDevices230.Get(portIter));
+		apbridgeDevice230->AddBridgePort(apDeviceSets[230].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode231 = wifi_ap_nodes[231].Get(0);
@@ -14695,9 +14074,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice231->AddBridgePort(ap_device_sets[231].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices231.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[231].GetN();
 			++portIter) {
-		apbridgeDevice231->AddBridgePort(apDevices231.Get(portIter));
+		apbridgeDevice231->AddBridgePort(apDeviceSets[231].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode232 = wifi_ap_nodes[232].Get(0);
@@ -14710,9 +14089,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice232->AddBridgePort(ap_device_sets[232].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices232.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[232].GetN();
 			++portIter) {
-		apbridgeDevice232->AddBridgePort(apDevices232.Get(portIter));
+		apbridgeDevice232->AddBridgePort(apDeviceSets[232].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode233 = wifi_ap_nodes[233].Get(0);
@@ -14725,9 +14104,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice233->AddBridgePort(ap_device_sets[233].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices233.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[233].GetN();
 			++portIter) {
-		apbridgeDevice233->AddBridgePort(apDevices233.Get(portIter));
+		apbridgeDevice233->AddBridgePort(apDeviceSets[233].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode234 = wifi_ap_nodes[234].Get(0);
@@ -14740,9 +14119,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice234->AddBridgePort(ap_device_sets[234].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices234.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[234].GetN();
 			++portIter) {
-		apbridgeDevice234->AddBridgePort(apDevices234.Get(portIter));
+		apbridgeDevice234->AddBridgePort(apDeviceSets[234].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode235 = wifi_ap_nodes[235].Get(0);
@@ -14755,9 +14134,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice235->AddBridgePort(ap_device_sets[235].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices235.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[235].GetN();
 			++portIter) {
-		apbridgeDevice235->AddBridgePort(apDevices235.Get(portIter));
+		apbridgeDevice235->AddBridgePort(apDeviceSets[235].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode236 = wifi_ap_nodes[236].Get(0);
@@ -14770,9 +14149,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice236->AddBridgePort(ap_device_sets[236].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices236.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[236].GetN();
 			++portIter) {
-		apbridgeDevice236->AddBridgePort(apDevices236.Get(portIter));
+		apbridgeDevice236->AddBridgePort(apDeviceSets[236].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode237 = wifi_ap_nodes[237].Get(0);
@@ -14785,9 +14164,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice237->AddBridgePort(ap_device_sets[237].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices237.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[237].GetN();
 			++portIter) {
-		apbridgeDevice237->AddBridgePort(apDevices237.Get(portIter));
+		apbridgeDevice237->AddBridgePort(apDeviceSets[237].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode238 = wifi_ap_nodes[238].Get(0);
@@ -14800,9 +14179,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice238->AddBridgePort(ap_device_sets[238].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices238.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[238].GetN();
 			++portIter) {
-		apbridgeDevice238->AddBridgePort(apDevices238.Get(portIter));
+		apbridgeDevice238->AddBridgePort(apDeviceSets[238].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode239 = wifi_ap_nodes[239].Get(0);
@@ -14815,9 +14194,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice239->AddBridgePort(ap_device_sets[239].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices239.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[239].GetN();
 			++portIter) {
-		apbridgeDevice239->AddBridgePort(apDevices239.Get(portIter));
+		apbridgeDevice239->AddBridgePort(apDeviceSets[239].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode240 = wifi_ap_nodes[240].Get(0);
@@ -14830,9 +14209,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice240->AddBridgePort(ap_device_sets[240].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices240.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[240].GetN();
 			++portIter) {
-		apbridgeDevice240->AddBridgePort(apDevices240.Get(portIter));
+		apbridgeDevice240->AddBridgePort(apDeviceSets[240].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode241 = wifi_ap_nodes[241].Get(0);
@@ -14845,9 +14224,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice241->AddBridgePort(ap_device_sets[241].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices241.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[241].GetN();
 			++portIter) {
-		apbridgeDevice241->AddBridgePort(apDevices241.Get(portIter));
+		apbridgeDevice241->AddBridgePort(apDeviceSets[241].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode242 = wifi_ap_nodes[242].Get(0);
@@ -14860,9 +14239,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice242->AddBridgePort(ap_device_sets[242].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices242.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[242].GetN();
 			++portIter) {
-		apbridgeDevice242->AddBridgePort(apDevices242.Get(portIter));
+		apbridgeDevice242->AddBridgePort(apDeviceSets[242].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode243 = wifi_ap_nodes[243].Get(0);
@@ -14875,9 +14254,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice243->AddBridgePort(ap_device_sets[243].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices243.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[243].GetN();
 			++portIter) {
-		apbridgeDevice243->AddBridgePort(apDevices243.Get(portIter));
+		apbridgeDevice243->AddBridgePort(apDeviceSets[243].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode244 = wifi_ap_nodes[244].Get(0);
@@ -14890,9 +14269,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice244->AddBridgePort(ap_device_sets[244].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices244.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[244].GetN();
 			++portIter) {
-		apbridgeDevice244->AddBridgePort(apDevices244.Get(portIter));
+		apbridgeDevice244->AddBridgePort(apDeviceSets[244].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode245 = wifi_ap_nodes[245].Get(0);
@@ -14905,9 +14284,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice245->AddBridgePort(ap_device_sets[245].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices245.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[245].GetN();
 			++portIter) {
-		apbridgeDevice245->AddBridgePort(apDevices245.Get(portIter));
+		apbridgeDevice245->AddBridgePort(apDeviceSets[245].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode246 = wifi_ap_nodes[246].Get(0);
@@ -14920,9 +14299,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice246->AddBridgePort(ap_device_sets[246].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices246.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[246].GetN();
 			++portIter) {
-		apbridgeDevice246->AddBridgePort(apDevices246.Get(portIter));
+		apbridgeDevice246->AddBridgePort(apDeviceSets[246].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode247 = wifi_ap_nodes[247].Get(0);
@@ -14935,9 +14314,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice247->AddBridgePort(ap_device_sets[247].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices247.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[247].GetN();
 			++portIter) {
-		apbridgeDevice247->AddBridgePort(apDevices247.Get(portIter));
+		apbridgeDevice247->AddBridgePort(apDeviceSets[247].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode248 = wifi_ap_nodes[248].Get(0);
@@ -14950,9 +14329,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice248->AddBridgePort(ap_device_sets[248].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices248.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[248].GetN();
 			++portIter) {
-		apbridgeDevice248->AddBridgePort(apDevices248.Get(portIter));
+		apbridgeDevice248->AddBridgePort(apDeviceSets[248].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode249 = wifi_ap_nodes[249].Get(0);
@@ -14965,9 +14344,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice249->AddBridgePort(ap_device_sets[249].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices249.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[249].GetN();
 			++portIter) {
-		apbridgeDevice249->AddBridgePort(apDevices249.Get(portIter));
+		apbridgeDevice249->AddBridgePort(apDeviceSets[249].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode250 = wifi_ap_nodes[250].Get(0);
@@ -14980,9 +14359,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice250->AddBridgePort(ap_device_sets[250].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices250.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[250].GetN();
 			++portIter) {
-		apbridgeDevice250->AddBridgePort(apDevices250.Get(portIter));
+		apbridgeDevice250->AddBridgePort(apDeviceSets[250].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode251 = wifi_ap_nodes[251].Get(0);
@@ -14995,9 +14374,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice251->AddBridgePort(ap_device_sets[251].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices251.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[251].GetN();
 			++portIter) {
-		apbridgeDevice251->AddBridgePort(apDevices251.Get(portIter));
+		apbridgeDevice251->AddBridgePort(apDeviceSets[251].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode252 = wifi_ap_nodes[252].Get(0);
@@ -15010,9 +14389,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice252->AddBridgePort(ap_device_sets[252].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices252.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[252].GetN();
 			++portIter) {
-		apbridgeDevice252->AddBridgePort(apDevices252.Get(portIter));
+		apbridgeDevice252->AddBridgePort(apDeviceSets[252].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode253 = wifi_ap_nodes[253].Get(0);
@@ -15025,9 +14404,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice253->AddBridgePort(ap_device_sets[253].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices253.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[253].GetN();
 			++portIter) {
-		apbridgeDevice253->AddBridgePort(apDevices253.Get(portIter));
+		apbridgeDevice253->AddBridgePort(apDeviceSets[253].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode254 = wifi_ap_nodes[254].Get(0);
@@ -15040,9 +14419,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice254->AddBridgePort(ap_device_sets[254].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices254.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[254].GetN();
 			++portIter) {
-		apbridgeDevice254->AddBridgePort(apDevices254.Get(portIter));
+		apbridgeDevice254->AddBridgePort(apDeviceSets[254].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode255 = wifi_ap_nodes[255].Get(0);
@@ -15055,9 +14434,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice255->AddBridgePort(ap_device_sets[255].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices255.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[255].GetN();
 			++portIter) {
-		apbridgeDevice255->AddBridgePort(apDevices255.Get(portIter));
+		apbridgeDevice255->AddBridgePort(apDeviceSets[255].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode256 = wifi_ap_nodes[256].Get(0);
@@ -15070,9 +14449,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice256->AddBridgePort(ap_device_sets[256].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices256.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[256].GetN();
 			++portIter) {
-		apbridgeDevice256->AddBridgePort(apDevices256.Get(portIter));
+		apbridgeDevice256->AddBridgePort(apDeviceSets[256].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode257 = wifi_ap_nodes[257].Get(0);
@@ -15085,9 +14464,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice257->AddBridgePort(ap_device_sets[257].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices257.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[257].GetN();
 			++portIter) {
-		apbridgeDevice257->AddBridgePort(apDevices257.Get(portIter));
+		apbridgeDevice257->AddBridgePort(apDeviceSets[257].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode258 = wifi_ap_nodes[258].Get(0);
@@ -15100,9 +14479,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice258->AddBridgePort(ap_device_sets[258].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices258.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[258].GetN();
 			++portIter) {
-		apbridgeDevice258->AddBridgePort(apDevices258.Get(portIter));
+		apbridgeDevice258->AddBridgePort(apDeviceSets[258].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode259 = wifi_ap_nodes[259].Get(0);
@@ -15115,9 +14494,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice259->AddBridgePort(ap_device_sets[259].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices259.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[259].GetN();
 			++portIter) {
-		apbridgeDevice259->AddBridgePort(apDevices259.Get(portIter));
+		apbridgeDevice259->AddBridgePort(apDeviceSets[259].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode260 = wifi_ap_nodes[260].Get(0);
@@ -15130,9 +14509,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice260->AddBridgePort(ap_device_sets[260].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices260.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[260].GetN();
 			++portIter) {
-		apbridgeDevice260->AddBridgePort(apDevices260.Get(portIter));
+		apbridgeDevice260->AddBridgePort(apDeviceSets[260].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode261 = wifi_ap_nodes[261].Get(0);
@@ -15145,9 +14524,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice261->AddBridgePort(ap_device_sets[261].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices261.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[261].GetN();
 			++portIter) {
-		apbridgeDevice261->AddBridgePort(apDevices261.Get(portIter));
+		apbridgeDevice261->AddBridgePort(apDeviceSets[261].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode262 = wifi_ap_nodes[262].Get(0);
@@ -15160,9 +14539,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice262->AddBridgePort(ap_device_sets[262].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices262.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[262].GetN();
 			++portIter) {
-		apbridgeDevice262->AddBridgePort(apDevices262.Get(portIter));
+		apbridgeDevice262->AddBridgePort(apDeviceSets[262].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode263 = wifi_ap_nodes[263].Get(0);
@@ -15175,9 +14554,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice263->AddBridgePort(ap_device_sets[263].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices263.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[263].GetN();
 			++portIter) {
-		apbridgeDevice263->AddBridgePort(apDevices263.Get(portIter));
+		apbridgeDevice263->AddBridgePort(apDeviceSets[263].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode264 = wifi_ap_nodes[264].Get(0);
@@ -15190,9 +14569,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice264->AddBridgePort(ap_device_sets[264].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices264.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[264].GetN();
 			++portIter) {
-		apbridgeDevice264->AddBridgePort(apDevices264.Get(portIter));
+		apbridgeDevice264->AddBridgePort(apDeviceSets[264].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode265 = wifi_ap_nodes[265].Get(0);
@@ -15205,9 +14584,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice265->AddBridgePort(ap_device_sets[265].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices265.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[265].GetN();
 			++portIter) {
-		apbridgeDevice265->AddBridgePort(apDevices265.Get(portIter));
+		apbridgeDevice265->AddBridgePort(apDeviceSets[265].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode266 = wifi_ap_nodes[266].Get(0);
@@ -15220,9 +14599,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice266->AddBridgePort(ap_device_sets[266].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices266.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[266].GetN();
 			++portIter) {
-		apbridgeDevice266->AddBridgePort(apDevices266.Get(portIter));
+		apbridgeDevice266->AddBridgePort(apDeviceSets[266].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode267 = wifi_ap_nodes[267].Get(0);
@@ -15235,9 +14614,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice267->AddBridgePort(ap_device_sets[267].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices267.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[267].GetN();
 			++portIter) {
-		apbridgeDevice267->AddBridgePort(apDevices267.Get(portIter));
+		apbridgeDevice267->AddBridgePort(apDeviceSets[267].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode268 = wifi_ap_nodes[268].Get(0);
@@ -15250,9 +14629,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice268->AddBridgePort(ap_device_sets[268].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices268.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[268].GetN();
 			++portIter) {
-		apbridgeDevice268->AddBridgePort(apDevices268.Get(portIter));
+		apbridgeDevice268->AddBridgePort(apDeviceSets[268].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode269 = wifi_ap_nodes[269].Get(0);
@@ -15265,9 +14644,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice269->AddBridgePort(ap_device_sets[269].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices269.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[269].GetN();
 			++portIter) {
-		apbridgeDevice269->AddBridgePort(apDevices269.Get(portIter));
+		apbridgeDevice269->AddBridgePort(apDeviceSets[269].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode270 = wifi_ap_nodes[270].Get(0);
@@ -15280,9 +14659,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice270->AddBridgePort(ap_device_sets[270].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices270.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[270].GetN();
 			++portIter) {
-		apbridgeDevice270->AddBridgePort(apDevices270.Get(portIter));
+		apbridgeDevice270->AddBridgePort(apDeviceSets[270].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode271 = wifi_ap_nodes[271].Get(0);
@@ -15295,9 +14674,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice271->AddBridgePort(ap_device_sets[271].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices271.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[271].GetN();
 			++portIter) {
-		apbridgeDevice271->AddBridgePort(apDevices271.Get(portIter));
+		apbridgeDevice271->AddBridgePort(apDeviceSets[271].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode272 = wifi_ap_nodes[272].Get(0);
@@ -15310,9 +14689,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice272->AddBridgePort(ap_device_sets[272].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices272.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[272].GetN();
 			++portIter) {
-		apbridgeDevice272->AddBridgePort(apDevices272.Get(portIter));
+		apbridgeDevice272->AddBridgePort(apDeviceSets[272].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode273 = wifi_ap_nodes[273].Get(0);
@@ -15325,9 +14704,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice273->AddBridgePort(ap_device_sets[273].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices273.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[273].GetN();
 			++portIter) {
-		apbridgeDevice273->AddBridgePort(apDevices273.Get(portIter));
+		apbridgeDevice273->AddBridgePort(apDeviceSets[273].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode274 = wifi_ap_nodes[274].Get(0);
@@ -15340,9 +14719,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice274->AddBridgePort(ap_device_sets[274].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices274.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[274].GetN();
 			++portIter) {
-		apbridgeDevice274->AddBridgePort(apDevices274.Get(portIter));
+		apbridgeDevice274->AddBridgePort(apDeviceSets[274].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode275 = wifi_ap_nodes[275].Get(0);
@@ -15355,9 +14734,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice275->AddBridgePort(ap_device_sets[275].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices275.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[275].GetN();
 			++portIter) {
-		apbridgeDevice275->AddBridgePort(apDevices275.Get(portIter));
+		apbridgeDevice275->AddBridgePort(apDeviceSets[275].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode276 = wifi_ap_nodes[276].Get(0);
@@ -15370,9 +14749,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice276->AddBridgePort(ap_device_sets[276].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices276.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[276].GetN();
 			++portIter) {
-		apbridgeDevice276->AddBridgePort(apDevices276.Get(portIter));
+		apbridgeDevice276->AddBridgePort(apDeviceSets[276].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode277 = wifi_ap_nodes[277].Get(0);
@@ -15385,9 +14764,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice277->AddBridgePort(ap_device_sets[277].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices277.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[277].GetN();
 			++portIter) {
-		apbridgeDevice277->AddBridgePort(apDevices277.Get(portIter));
+		apbridgeDevice277->AddBridgePort(apDeviceSets[277].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode278 = wifi_ap_nodes[278].Get(0);
@@ -15400,9 +14779,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice278->AddBridgePort(ap_device_sets[278].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices278.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[278].GetN();
 			++portIter) {
-		apbridgeDevice278->AddBridgePort(apDevices278.Get(portIter));
+		apbridgeDevice278->AddBridgePort(apDeviceSets[278].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode279 = wifi_ap_nodes[279].Get(0);
@@ -15415,9 +14794,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice279->AddBridgePort(ap_device_sets[279].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices279.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[279].GetN();
 			++portIter) {
-		apbridgeDevice279->AddBridgePort(apDevices279.Get(portIter));
+		apbridgeDevice279->AddBridgePort(apDeviceSets[279].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode280 = wifi_ap_nodes[280].Get(0);
@@ -15430,9 +14809,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice280->AddBridgePort(ap_device_sets[280].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices280.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[280].GetN();
 			++portIter) {
-		apbridgeDevice280->AddBridgePort(apDevices280.Get(portIter));
+		apbridgeDevice280->AddBridgePort(apDeviceSets[280].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode281 = wifi_ap_nodes[281].Get(0);
@@ -15445,9 +14824,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice281->AddBridgePort(ap_device_sets[281].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices281.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[281].GetN();
 			++portIter) {
-		apbridgeDevice281->AddBridgePort(apDevices281.Get(portIter));
+		apbridgeDevice281->AddBridgePort(apDeviceSets[281].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode282 = wifi_ap_nodes[282].Get(0);
@@ -15460,9 +14839,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice282->AddBridgePort(ap_device_sets[282].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices282.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[282].GetN();
 			++portIter) {
-		apbridgeDevice282->AddBridgePort(apDevices282.Get(portIter));
+		apbridgeDevice282->AddBridgePort(apDeviceSets[282].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode283 = wifi_ap_nodes[283].Get(0);
@@ -15475,9 +14854,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice283->AddBridgePort(ap_device_sets[283].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices283.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[283].GetN();
 			++portIter) {
-		apbridgeDevice283->AddBridgePort(apDevices283.Get(portIter));
+		apbridgeDevice283->AddBridgePort(apDeviceSets[283].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode284 = wifi_ap_nodes[284].Get(0);
@@ -15490,9 +14869,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice284->AddBridgePort(ap_device_sets[284].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices284.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[284].GetN();
 			++portIter) {
-		apbridgeDevice284->AddBridgePort(apDevices284.Get(portIter));
+		apbridgeDevice284->AddBridgePort(apDeviceSets[284].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode285 = wifi_ap_nodes[285].Get(0);
@@ -15505,9 +14884,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice285->AddBridgePort(ap_device_sets[285].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices285.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[285].GetN();
 			++portIter) {
-		apbridgeDevice285->AddBridgePort(apDevices285.Get(portIter));
+		apbridgeDevice285->AddBridgePort(apDeviceSets[285].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode286 = wifi_ap_nodes[286].Get(0);
@@ -15520,9 +14899,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice286->AddBridgePort(ap_device_sets[286].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices286.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[286].GetN();
 			++portIter) {
-		apbridgeDevice286->AddBridgePort(apDevices286.Get(portIter));
+		apbridgeDevice286->AddBridgePort(apDeviceSets[286].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode287 = wifi_ap_nodes[287].Get(0);
@@ -15535,9 +14914,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice287->AddBridgePort(ap_device_sets[287].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices287.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[287].GetN();
 			++portIter) {
-		apbridgeDevice287->AddBridgePort(apDevices287.Get(portIter));
+		apbridgeDevice287->AddBridgePort(apDeviceSets[287].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode288 = wifi_ap_nodes[288].Get(0);
@@ -15550,9 +14929,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice288->AddBridgePort(ap_device_sets[288].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices288.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[288].GetN();
 			++portIter) {
-		apbridgeDevice288->AddBridgePort(apDevices288.Get(portIter));
+		apbridgeDevice288->AddBridgePort(apDeviceSets[288].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode289 = wifi_ap_nodes[289].Get(0);
@@ -15565,9 +14944,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice289->AddBridgePort(ap_device_sets[289].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices289.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[289].GetN();
 			++portIter) {
-		apbridgeDevice289->AddBridgePort(apDevices289.Get(portIter));
+		apbridgeDevice289->AddBridgePort(apDeviceSets[289].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode290 = wifi_ap_nodes[290].Get(0);
@@ -15580,9 +14959,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice290->AddBridgePort(ap_device_sets[290].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices290.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[290].GetN();
 			++portIter) {
-		apbridgeDevice290->AddBridgePort(apDevices290.Get(portIter));
+		apbridgeDevice290->AddBridgePort(apDeviceSets[290].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode291 = wifi_ap_nodes[291].Get(0);
@@ -15595,9 +14974,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice291->AddBridgePort(ap_device_sets[291].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices291.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[291].GetN();
 			++portIter) {
-		apbridgeDevice291->AddBridgePort(apDevices291.Get(portIter));
+		apbridgeDevice291->AddBridgePort(apDeviceSets[291].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode292 = wifi_ap_nodes[292].Get(0);
@@ -15610,9 +14989,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice292->AddBridgePort(ap_device_sets[292].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices292.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[292].GetN();
 			++portIter) {
-		apbridgeDevice292->AddBridgePort(apDevices292.Get(portIter));
+		apbridgeDevice292->AddBridgePort(apDeviceSets[292].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode293 = wifi_ap_nodes[293].Get(0);
@@ -15625,9 +15004,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice293->AddBridgePort(ap_device_sets[293].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices293.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[293].GetN();
 			++portIter) {
-		apbridgeDevice293->AddBridgePort(apDevices293.Get(portIter));
+		apbridgeDevice293->AddBridgePort(apDeviceSets[293].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode294 = wifi_ap_nodes[294].Get(0);
@@ -15640,9 +15019,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice294->AddBridgePort(ap_device_sets[294].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices294.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[294].GetN();
 			++portIter) {
-		apbridgeDevice294->AddBridgePort(apDevices294.Get(portIter));
+		apbridgeDevice294->AddBridgePort(apDeviceSets[294].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode295 = wifi_ap_nodes[295].Get(0);
@@ -15655,9 +15034,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice295->AddBridgePort(ap_device_sets[295].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices295.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[295].GetN();
 			++portIter) {
-		apbridgeDevice295->AddBridgePort(apDevices295.Get(portIter));
+		apbridgeDevice295->AddBridgePort(apDeviceSets[295].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode296 = wifi_ap_nodes[296].Get(0);
@@ -15670,9 +15049,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice296->AddBridgePort(ap_device_sets[296].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices296.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[296].GetN();
 			++portIter) {
-		apbridgeDevice296->AddBridgePort(apDevices296.Get(portIter));
+		apbridgeDevice296->AddBridgePort(apDeviceSets[296].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode297 = wifi_ap_nodes[297].Get(0);
@@ -15685,9 +15064,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice297->AddBridgePort(ap_device_sets[297].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices297.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[297].GetN();
 			++portIter) {
-		apbridgeDevice297->AddBridgePort(apDevices297.Get(portIter));
+		apbridgeDevice297->AddBridgePort(apDeviceSets[297].Get(portIter));
 	}
 
 //    aoNode298 = wifiApNode298.Get(0)
@@ -15720,9 +15099,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice300->AddBridgePort(ap_device_sets[300].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices300.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[300].GetN();
 			++portIter) {
-		apbridgeDevice300->AddBridgePort(apDevices300.Get(portIter));
+		apbridgeDevice300->AddBridgePort(apDeviceSets[300].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode301 = wifi_ap_nodes[301].Get(0);
@@ -15735,9 +15114,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice301->AddBridgePort(ap_device_sets[301].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices301.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[301].GetN();
 			++portIter) {
-		apbridgeDevice301->AddBridgePort(apDevices301.Get(portIter));
+		apbridgeDevice301->AddBridgePort(apDeviceSets[301].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode302 = wifi_ap_nodes[302].Get(0);
@@ -15750,9 +15129,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice302->AddBridgePort(ap_device_sets[302].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices302.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[302].GetN();
 			++portIter) {
-		apbridgeDevice302->AddBridgePort(apDevices302.Get(portIter));
+		apbridgeDevice302->AddBridgePort(apDeviceSets[302].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode303 = wifi_ap_nodes[303].Get(0);
@@ -15765,9 +15144,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice303->AddBridgePort(ap_device_sets[303].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices303.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[303].GetN();
 			++portIter) {
-		apbridgeDevice303->AddBridgePort(apDevices303.Get(portIter));
+		apbridgeDevice303->AddBridgePort(apDeviceSets[303].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode304 = wifi_ap_nodes[304].Get(0);
@@ -15780,9 +15159,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice304->AddBridgePort(ap_device_sets[304].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices304.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[304].GetN();
 			++portIter) {
-		apbridgeDevice304->AddBridgePort(apDevices304.Get(portIter));
+		apbridgeDevice304->AddBridgePort(apDeviceSets[304].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode305 = wifi_ap_nodes[305].Get(0);
@@ -15795,9 +15174,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice305->AddBridgePort(ap_device_sets[305].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices305.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[305].GetN();
 			++portIter) {
-		apbridgeDevice305->AddBridgePort(apDevices305.Get(portIter));
+		apbridgeDevice305->AddBridgePort(apDeviceSets[305].Get(portIter));
 	}
 
 //    aoNode306 = wifiApNode306.Get(0)
@@ -15820,9 +15199,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice307->AddBridgePort(ap_device_sets[307].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices307.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[307].GetN();
 			++portIter) {
-		apbridgeDevice307->AddBridgePort(apDevices307.Get(portIter));
+		apbridgeDevice307->AddBridgePort(apDeviceSets[307].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode308 = wifi_ap_nodes[308].Get(0);
@@ -15835,9 +15214,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice308->AddBridgePort(ap_device_sets[308].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices308.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[308].GetN();
 			++portIter) {
-		apbridgeDevice308->AddBridgePort(apDevices308.Get(portIter));
+		apbridgeDevice308->AddBridgePort(apDeviceSets[308].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode309 = wifi_ap_nodes[309].Get(0);
@@ -15850,9 +15229,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice309->AddBridgePort(ap_device_sets[309].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices309.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[309].GetN();
 			++portIter) {
-		apbridgeDevice309->AddBridgePort(apDevices309.Get(portIter));
+		apbridgeDevice309->AddBridgePort(apDeviceSets[309].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode310 = wifi_ap_nodes[310].Get(0);
@@ -15865,9 +15244,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice310->AddBridgePort(ap_device_sets[310].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices310.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[310].GetN();
 			++portIter) {
-		apbridgeDevice310->AddBridgePort(apDevices310.Get(portIter));
+		apbridgeDevice310->AddBridgePort(apDeviceSets[310].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode311 = wifi_ap_nodes[311].Get(0);
@@ -15880,9 +15259,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice311->AddBridgePort(ap_device_sets[311].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices311.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[311].GetN();
 			++portIter) {
-		apbridgeDevice311->AddBridgePort(apDevices311.Get(portIter));
+		apbridgeDevice311->AddBridgePort(apDeviceSets[311].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode312 = wifi_ap_nodes[312].Get(0);
@@ -15895,9 +15274,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice312->AddBridgePort(ap_device_sets[312].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices312.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[312].GetN();
 			++portIter) {
-		apbridgeDevice312->AddBridgePort(apDevices312.Get(portIter));
+		apbridgeDevice312->AddBridgePort(apDeviceSets[312].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode313 = wifi_ap_nodes[313].Get(0);
@@ -15910,9 +15289,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice313->AddBridgePort(ap_device_sets[313].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices313.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[313].GetN();
 			++portIter) {
-		apbridgeDevice313->AddBridgePort(apDevices313.Get(portIter));
+		apbridgeDevice313->AddBridgePort(apDeviceSets[313].Get(portIter));
 	}
 
 	ns3::Ptr<ns3::Node> aoNode314 = wifi_ap_nodes[314].Get(0);
@@ -15925,9 +15304,9 @@ int main(int argc, char** argv) {
 		apbridgeDevice314->AddBridgePort(ap_device_sets[314].Get(portIter));
 	}
 
-	for (unsigned int portIter = 0; portIter < apDevices314.GetN();
+	for (unsigned int portIter = 0; portIter < apDeviceSets[314].GetN();
 			++portIter) {
-		apbridgeDevice314->AddBridgePort(apDevices314.Get(portIter));
+		apbridgeDevice314->AddBridgePort(apDeviceSets[314].Get(portIter));
 	}
 
 //    aoNode315 = wifiApNode315.Get(0)
