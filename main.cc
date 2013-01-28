@@ -4318,10 +4318,10 @@ int main(int argc, char** argv) {
 			ns3::Address(
 					ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.1"),
 							port)));
-	onoff1.SetAttribute("OnTime",
-			ns3::RandomVariableValue(ns3::ConstantVariable(5)));
-	onoff1.SetAttribute("OffTime",
-			ns3::RandomVariableValue(ns3::ConstantVariable(0)));
+	//onoff1.SetAttribute("OnTime",
+	//		ns3::RandomVariableValue(ns3::ConstantVariable(5)));
+	//onoff1.SetAttribute("OffTime",
+	//		ns3::RandomVariableValue(ns3::ConstantVariable(0)));
 	onoff1.SetAttribute("DataRate",
 			ns3::DataRateValue(ns3::DataRate("100kbps")));
 	onoff1.SetAttribute("PacketSize", ns3::StringValue("1024"));
