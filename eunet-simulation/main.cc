@@ -63,7 +63,7 @@ int main(int argc, char** argv) {
 	ns3::NetDeviceContainer switchDevicestarumi;
 
 	TerminalDeviceSets terminal_device_sets(350);
-	ApDeviceSets ap_device_sets(348);
+	ApDeviceSets ap_device_sets(350);
 
 //wifi
 	ns3::WifiHelper Wifi;
@@ -815,14 +815,16 @@ int main(int argc, char** argv) {
 	topology_helper.InstallCsmaLink(csmaSwitches[336], switch_devices[336], csmaSwitches[342], switch_devices[342], 1000000000, 2);
 // switch create
 
+	{
 	ns3::Ptr<ns3::Node> switchNoderouter = csmaSwitchrouter.get();
-	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevicerouter = ns3::CreateObject<
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevicerouter = ns3::Create<
 			ns3::BridgeNetDevice>();
 	switchNoderouter->AddDevice(bridgeDevicerouter);
 
 	for (unsigned int portIter; portIter < switchDevicesrouter.GetN();
 			++portIter) {
 		bridgeDevicerouter->AddBridgePort(switchDevicesrouter.Get(portIter));
+	}
 	}
 
 	ns3::Ptr<ns3::Node> switchNode6506E = csmaSwitch6506E.get();

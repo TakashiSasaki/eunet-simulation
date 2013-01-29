@@ -19,17 +19,7 @@ public:
 	void InstallCsmaLink(const ns3::NodeContainer& nc1,
 			ns3::NetDeviceContainer& ndc1, const ns3::NodeContainer& nc2,
 			ns3::NetDeviceContainer& ndc2, const uint64_t bps,
-			const uint64_t ms) {
-		ns3::CsmaHelper csma_helper;
-		csma_helper.SetChannelAttribute("DataRate",
-				ns3::DataRateValue(ns3::DataRate(bps)));
-		csma_helper.SetChannelAttribute("Delay",
-				ns3::TimeValue(ns3::MilliSeconds(ms)));
-		ns3::NetDeviceContainer csma_net_device = csma_helper.Install(
-				ns3::NodeContainer(nc1, nc2));
-		ndc1.Add(csma_net_device.Get(0));
-		ndc2.Add(csma_net_device.Get(1));
-	} //InstallCsmaLink
+			const uint64_t ms);
 };
 
 #endif /* TOPOLOGYHELPER_H_ */

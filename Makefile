@@ -8,7 +8,7 @@ main: InternetRouter.o CoreSwitch.o TopologyHelper.o main.o
 	/usr/lib/libns3.14.1-csma.a  \
 	/usr/lib/libns3.14.1-internet.a  \
 	/usr/lib/libns3.14.1-network.a  \
-	$? 
+	$^
 
 main.s: main.cc
 	g++ $(CXXFLAGS) -S $<
@@ -22,5 +22,6 @@ hello: hello.o
 	g++ -o hello $<
 
 debug:
-	(cd ..; ./waf --run main --command-template="gdb --args %s")
+	(ulimit -m 1000000)
+	(cd ..; ./waf --run eunet-simulation --command-template="gdb --args %s")
 

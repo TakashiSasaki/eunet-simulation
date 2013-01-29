@@ -17,7 +17,7 @@ ns3::Ptr<ns3::Node> CoreSwitch::get() const {
 }
 
 CoreSwitch::operator const ns3::NodeContainer&() const {
-	return this->get();
+	return this->nodeContainer;
 }
 
 CoreSwitch::~CoreSwitch() {
