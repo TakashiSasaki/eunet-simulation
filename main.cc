@@ -148,217 +148,40 @@ int main(int argc, char** argv) {
 	}// for
 
 //#channel define
-	csma = ns3::CsmaHelper();
-	csma.SetChannelAttribute("DataRate",
-			ns3::DataRateValue(ns3::DataRate(22000000000)));
-	csma.SetChannelAttribute("Delay", ns3::TimeValue(ns3::MilliSeconds(2)));
+	topology_helper.InstallCsmaLink(csmaSwitchrouter, switchDevicesrouter, csmaSwitchsigenobu, switchDevicessigenobu, 22000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchrouter, switchDevicesrouter, csmaSwitchtarumi, switchDevicestarumi, 22000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchrouter, switchDevicesrouter, csmaSwitches[335], switch_devices[335], 22000000000, 2); //motida
+	topology_helper.InstallCsmaLink(csmaSwitchtarumi, switchDevicestarumi, csmaSwitches[285], switch_devices[285], 22000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchrouter, switchDevicesrouter, csmaSwitch6506E, switchDevices6506E, 20000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, switchDevices6506E, csmaSwitches[9], switch_devices[9], 20000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, switchDevices6506E, csmaSwitches[7], switch_devices[7], 20000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, switchDevices6506E, csmaSwitches[80], switch_devices[80], 20000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, switchDevices6506E, csmaSwitches[126], switch_devices[126], 20000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, switchDevices6506E, csmaSwitches[161], switch_devices[161], 20000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, switchDevices6506E, csmaSwitches[275], switch_devices[275], 20000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[5], switch_devices[5], csmaSwitches[6], switch_devices[6], 16000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, switchDevices6506E, csmaSwitches[40], switch_devices[40], 11000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, switchDevices6506E, csmaSwitches[70], switch_devices[70], 11000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, switchDevices6506E, csmaSwitches[141], switch_devices[141], 11000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, switchDevices6506E, csmaSwitches[197], switch_devices[197], 11000000000, 2);
 
-	{
-		ns3::NetDeviceContainer csma_net_devices = csma.Install(
-				ns3::NodeContainer(csmaSwitchrouter, csmaSwitchsigenobu));
-		switchDevicesrouter.Add(csma_net_devices.Get(0));
-		switchDevicessigenobu.Add(csma_net_devices.Get(1));
-	}
+	topology_helper.InstallCsmaLink(csmaSwitchsigenobu, switchDevicessigenobu, csmaSwitches[226], switch_devices[226], 8000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchtarumi, switchDevicestarumi, csmaSwitches[316], switch_devices[316], 8000000000, 2);
 
-	ns3::NetDeviceContainer linktarumi;
-	linktarumi = csma.Install(
-			ns3::NodeContainer(csmaSwitchrouter, csmaSwitchtarumi));
-	switchDevicesrouter.Add(linktarumi.Get(0));
-	switchDevicestarumi.Add(linktarumi.Get(1));
 
-	ns3::NetDeviceContainer linkmotida;
-	linkmotida = csma.Install(
-			ns3::NodeContainer(csmaSwitchrouter, csmaSwitches[335]));
-	switchDevicesrouter.Add(linkmotida.Get(0));
-	switch_devices[335].Add(linkmotida.Get(1));
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, switchDevices6506E, csmaSwitches[5], switch_devices[5], 7000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, switchDevices6506E, csmaSwitches[8], switch_devices[8], 7000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, switchDevices6506E, csmaSwitches[113], switch_devices[113], 7000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, switchDevices6506E, csmaSwitches[160], switch_devices[160], 7000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, switchDevices6506E, csmaSwitches[213], switch_devices[213], 7000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchsigenobu, switchDevicessigenobu, csmaSwitches[283], switch_devices[283], 7000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchtarumi, switchDevicestarumi, csmaSwitches[333], switch_devices[333], 7000000000, 2);
 
-	ns3::NetDeviceContainer link285;
-	link285 = csma.Install(
-			ns3::NodeContainer(csmaSwitchtarumi, csmaSwitches[285]));
-	switchDevicestarumi.Add(link285.Get(0));
-	switch_devices[285].Add(link285.Get(1));
-//#channel define
-	csma = ns3::CsmaHelper();
-	csma.SetChannelAttribute("DataRate",
-			ns3::DataRateValue(ns3::DataRate(20000000000)));
-	csma.SetChannelAttribute("Delay", ns3::TimeValue(ns3::MilliSeconds(2)));
+	topology_helper.InstallCsmaLink(csmaSwitches[334], switch_devices[334], csmaSwitches[335], switch_devices[335], 6000000000, 2);
 
-	ns3::NetDeviceContainer link6506E;
-	link6506E = csma.Install(
-			ns3::NodeContainer(csmaSwitchrouter, csmaSwitch6506E));
-	switchDevicesrouter.Add(link6506E.Get(0));
-	switchDevices6506E.Add(link6506E.Get(1));
+	topology_helper.InstallCsmaLink(csmaSwitchsigenobu, switchDevicessigenobu, csmaSwitches[266], switch_devices[266], 4000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchsigenobu, switchDevicessigenobu, csmaSwitches[276], switch_devices[276], 4000000000, 2);
 
-	ns3::NetDeviceContainer link9;
-	link9 = csma.Install(ns3::NodeContainer(csmaSwitch6506E, csmaSwitches[9]));
-	switchDevices6506E.Add(link9.Get(0));
-	switch_devices[9].Add(link9.Get(1));
-
-	ns3::NetDeviceContainer link7;
-	link7 = csma.Install(ns3::NodeContainer(csmaSwitch6506E, csmaSwitches[7]));
-	switchDevices6506E.Add(link7.Get(0));
-	switch_devices[7].Add(link7.Get(1));
-
-	ns3::NetDeviceContainer link80;
-	link80 = csma.Install(
-			ns3::NodeContainer(csmaSwitch6506E, csmaSwitches[80]));
-	switchDevices6506E.Add(link80.Get(0));
-	switch_devices[80].Add(link80.Get(1));
-
-	ns3::NetDeviceContainer link126;
-	link126 = csma.Install(
-			ns3::NodeContainer(csmaSwitch6506E, csmaSwitches[126]));
-	switchDevices6506E.Add(link126.Get(0));
-	switch_devices[126].Add(link126.Get(1));
-
-	ns3::NetDeviceContainer link161;
-	link161 = csma.Install(
-			ns3::NodeContainer(csmaSwitch6506E, csmaSwitches[161]));
-	switchDevices6506E.Add(link161.Get(0));
-	switch_devices[161].Add(link161.Get(1));
-
-	ns3::NetDeviceContainer link275;
-	link275 = csma.Install(
-			ns3::NodeContainer(csmaSwitchsigenobu, csmaSwitches[275]));
-	switchDevicessigenobu.Add(link275.Get(0));
-	switch_devices[275].Add(link275.Get(1));
-
-//#channel define
-	csma = ns3::CsmaHelper();
-	csma.SetChannelAttribute("DataRate",
-			ns3::DataRateValue(ns3::DataRate(16000000000)));
-	csma.SetChannelAttribute("Delay", ns3::TimeValue(ns3::MilliSeconds(2)));
-
-	ns3::NetDeviceContainer link6;
-	link6 = csma.Install(ns3::NodeContainer(csmaSwitches[5], csmaSwitches[6]));
-	switch_devices[5].Add(link6.Get(0));
-	switch_devices[6].Add(link6.Get(1));
-
-//#channel define
-	csma = ns3::CsmaHelper();
-	csma.SetChannelAttribute("DataRate",
-			ns3::DataRateValue(ns3::DataRate(11000000000)));
-	csma.SetChannelAttribute("Delay", ns3::TimeValue(ns3::MilliSeconds(2)));
-
-	ns3::NetDeviceContainer link40;
-	link40 = csma.Install(
-			ns3::NodeContainer(csmaSwitch6506E, csmaSwitches[40]));
-	switchDevices6506E.Add(link40.Get(0));
-	switch_devices[40].Add(link40.Get(1));
-
-	ns3::NetDeviceContainer link70;
-	link70 = csma.Install(
-			ns3::NodeContainer(csmaSwitch6506E, csmaSwitches[70]));
-	switchDevices6506E.Add(link70.Get(0));
-	switch_devices[70].Add(link70.Get(1));
-
-	ns3::NetDeviceContainer link141;
-	link141 = csma.Install(
-			ns3::NodeContainer(csmaSwitch6506E, csmaSwitches[141]));
-	switchDevices6506E.Add(link141.Get(0));
-	switch_devices[141].Add(link141.Get(1));
-
-	ns3::NetDeviceContainer link197;
-	link197 = csma.Install(
-			ns3::NodeContainer(csmaSwitch6506E, csmaSwitches[197]));
-	switchDevices6506E.Add(link197.Get(0));
-	switch_devices[197].Add(link197.Get(1));
-
-//#channel define
-	csma = ns3::CsmaHelper();
-	csma.SetChannelAttribute("DataRate",
-			ns3::DataRateValue(ns3::DataRate(8000000000)));
-	csma.SetChannelAttribute("Delay", ns3::TimeValue(ns3::MilliSeconds(2)));
-
-	ns3::NetDeviceContainer link226;
-	link226 = csma.Install(
-			ns3::NodeContainer(csmaSwitchsigenobu, csmaSwitches[226]));
-	switchDevicessigenobu.Add(link226.Get(0));
-	switch_devices[226].Add(link226.Get(1));
-
-	ns3::NetDeviceContainer link316;
-	link316 = csma.Install(
-			ns3::NodeContainer(csmaSwitchtarumi, csmaSwitches[316]));
-	switchDevicestarumi.Add(link316.Get(0));
-	switch_devices[316].Add(link316.Get(1));
-
-//#channel define
-	csma = ns3::CsmaHelper();
-	csma.SetChannelAttribute("DataRate",
-			ns3::DataRateValue(ns3::DataRate(7000000000)));
-	csma.SetChannelAttribute("Delay", ns3::TimeValue(ns3::MilliSeconds(2)));
-
-	ns3::NetDeviceContainer link5;
-	link5 = csma.Install(ns3::NodeContainer(csmaSwitch6506E, csmaSwitches[5]));
-	switchDevices6506E.Add(link5.Get(0));
-	switch_devices[5].Add(link5.Get(1));
-
-	ns3::NetDeviceContainer link8;
-	link8 = csma.Install(ns3::NodeContainer(csmaSwitch6506E, csmaSwitches[8]));
-	switchDevices6506E.Add(link8.Get(0));
-	switch_devices[8].Add(link8.Get(1));
-
-	ns3::NetDeviceContainer link113;
-	link113 = csma.Install(
-			ns3::NodeContainer(csmaSwitch6506E, csmaSwitches[113]));
-	switchDevices6506E.Add(link113.Get(0));
-	switch_devices[113].Add(link113.Get(1));
-
-	ns3::NetDeviceContainer link160;
-	link160 = csma.Install(
-			ns3::NodeContainer(csmaSwitch6506E, csmaSwitches[160]));
-	switchDevices6506E.Add(link160.Get(0));
-	switch_devices[160].Add(link160.Get(1));
-
-	ns3::NetDeviceContainer link213;
-	link213 = csma.Install(
-			ns3::NodeContainer(csmaSwitch6506E, csmaSwitches[213]));
-	switchDevices6506E.Add(link213.Get(0));
-	switch_devices[213].Add(link213.Get(1));
-
-	ns3::NetDeviceContainer link283;
-	link283 = csma.Install(
-			ns3::NodeContainer(csmaSwitchsigenobu, csmaSwitches[283]));
-	switchDevicessigenobu.Add(link283.Get(0));
-	switch_devices[283].Add(link283.Get(1));
-
-	ns3::NetDeviceContainer link333;
-	link333 = csma.Install(
-			ns3::NodeContainer(csmaSwitchtarumi, csmaSwitches[333]));
-	switchDevicestarumi.Add(link333.Get(0));
-	switch_devices[333].Add(link333.Get(1));
-
-//channel define
-	csma = ns3::CsmaHelper();
-	csma.SetChannelAttribute("DataRate",
-			ns3::DataRateValue(ns3::DataRate(6000000000)));
-	csma.SetChannelAttribute("Delay", ns3::TimeValue(ns3::MilliSeconds(2)));
-
-	ns3::NetDeviceContainer link335;
-	link335 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[334], csmaSwitches[335]));
-	switch_devices[334].Add(link335.Get(0));
-	switch_devices[335].Add(link335.Get(1));
-
-//channel define
-	csma = ns3::CsmaHelper();
-	csma.SetChannelAttribute("DataRate",
-			ns3::DataRateValue(ns3::DataRate(4000000000)));
-	csma.SetChannelAttribute("Delay", ns3::TimeValue(ns3::MilliSeconds(2)));
-
-	ns3::NetDeviceContainer link266;
-	link266 = csma.Install(
-			ns3::NodeContainer(csmaSwitchsigenobu, csmaSwitches[266]));
-	switchDevicessigenobu.Add(link266.Get(0));
-	switch_devices[266].Add(link266.Get(1));
-
-	ns3::NetDeviceContainer link276;
-	link276 = csma.Install(
-			ns3::NodeContainer(csmaSwitchsigenobu, csmaSwitches[276]));
-	switchDevicessigenobu.Add(link276.Get(0));
-	switch_devices[276].Add(link276.Get(1));
-
-//#channel define
 	topology_helper.InstallCsmaLink(csmaSwitches[81], switch_devices[81], wifi_ap_nodes[1], ap_device_sets[1], 2000000000, 2);
 	topology_helper.InstallCsmaLink(csmaSwitches[82], switch_devices[82], wifi_ap_nodes[2], ap_device_sets[2], 2000000000, 2);
 	topology_helper.InstallCsmaLink(csmaSwitches[83], switch_devices[83], wifi_ap_nodes[3], ap_device_sets[3], 2000000000, 2);
@@ -672,294 +495,60 @@ int main(int argc, char** argv) {
 	topology_helper.InstallCsmaLink(csmaSwitches[342], switch_devices[342], wifi_ap_nodes[314], ap_device_sets[314], 2000000000, 2);
 
 //switch link
-	ns3::NetDeviceContainer link11;
-	link11 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[9], csmaSwitches[11]));
-	switch_devices[9].Add(link11.Get(0));
-	switch_devices[11].Add(link11.Get(1));
+	topology_helper.InstallCsmaLink(csmaSwitches[9], switch_devices[9], wifi_ap_nodes[11], ap_device_sets[1], 2000000000, 2);
 
-	ns3::NetDeviceContainer link14;
-	link14 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[11], csmaSwitches[14]));
-	switch_devices[11].Add(link14.Get(0));
-	switch_devices[14].Add(link14.Get(1));
+	topology_helper.InstallCsmaLink(csmaSwitches[9], switch_devices[9], wifi_ap_nodes[11], ap_device_sets[11], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[11], switch_devices[11], wifi_ap_nodes[14], ap_device_sets[14], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[9], switch_devices[9], wifi_ap_nodes[15], ap_device_sets[15], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[9], switch_devices[9], wifi_ap_nodes[17], ap_device_sets[17], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[9], switch_devices[9], wifi_ap_nodes[18], ap_device_sets[18], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[9], switch_devices[9], wifi_ap_nodes[19], ap_device_sets[19], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[9], switch_devices[9], wifi_ap_nodes[20], ap_device_sets[20], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[20], switch_devices[20], wifi_ap_nodes[21], ap_device_sets[21], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[24], switch_devices[24], wifi_ap_nodes[25], ap_device_sets[25], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[9], switch_devices[9], wifi_ap_nodes[29], ap_device_sets[29], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[9], switch_devices[9], wifi_ap_nodes[30], ap_device_sets[30], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[9], switch_devices[9], wifi_ap_nodes[33], ap_device_sets[33], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[9], switch_devices[9], wifi_ap_nodes[34], ap_device_sets[34], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[9], switch_devices[9], wifi_ap_nodes[35], ap_device_sets[35], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[9], switch_devices[9], wifi_ap_nodes[37], ap_device_sets[37], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[9], switch_devices[9], wifi_ap_nodes[38], ap_device_sets[38], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[9], switch_devices[9], wifi_ap_nodes[39], ap_device_sets[39], 2000000000, 2);
 
-	ns3::NetDeviceContainer link15;
-	link15 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[9], csmaSwitches[15]));
-	switch_devices[9].Add(link15.Get(0));
-	switch_devices[15].Add(link15.Get(1));
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, switchDevices6506E, wifi_ap_nodes[50], ap_device_sets[50], 2000000000, 2);
 
-	ns3::NetDeviceContainer link17;
-	link17 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[9], csmaSwitches[17]));
-	switch_devices[9].Add(link17.Get(0));
-	switch_devices[17].Add(link17.Get(1));
+	topology_helper.InstallCsmaLink(csmaSwitches[50], switch_devices[50], wifi_ap_nodes[51], ap_device_sets[51], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[51], switch_devices[51], wifi_ap_nodes[52], ap_device_sets[52], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[51], switch_devices[51], wifi_ap_nodes[53], ap_device_sets[53], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[53], switch_devices[53], wifi_ap_nodes[54], ap_device_sets[54], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[51], switch_devices[51], wifi_ap_nodes[55], ap_device_sets[55], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[55], switch_devices[55], wifi_ap_nodes[56], ap_device_sets[56], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[50], switch_devices[50], wifi_ap_nodes[57], ap_device_sets[57], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[50], switch_devices[50], wifi_ap_nodes[58], ap_device_sets[58], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[50], switch_devices[50], wifi_ap_nodes[59], ap_device_sets[59], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[59], switch_devices[59], wifi_ap_nodes[60], ap_device_sets[60], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[59], switch_devices[59], wifi_ap_nodes[61], ap_device_sets[61], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[59], switch_devices[59], wifi_ap_nodes[62], ap_device_sets[62], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[64], switch_devices[64], wifi_ap_nodes[65], ap_device_sets[65], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[64], switch_devices[64], wifi_ap_nodes[66], ap_device_sets[66], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[64], switch_devices[64], wifi_ap_nodes[68], ap_device_sets[68], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[64], switch_devices[64], wifi_ap_nodes[69], ap_device_sets[69], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[70], switch_devices[70], wifi_ap_nodes[71], ap_device_sets[71], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[70], switch_devices[70], wifi_ap_nodes[72], ap_device_sets[72], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[72], switch_devices[72], wifi_ap_nodes[73], ap_device_sets[73], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[70], switch_devices[70], wifi_ap_nodes[74], ap_device_sets[74], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[74], switch_devices[74], wifi_ap_nodes[75], ap_device_sets[75], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[70], switch_devices[70], wifi_ap_nodes[76], ap_device_sets[76], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[76], switch_devices[76], wifi_ap_nodes[77], ap_device_sets[77], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[70], switch_devices[70], wifi_ap_nodes[78], ap_device_sets[78], 2000000000, 2);
 
-	ns3::NetDeviceContainer link18;
-	link18 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[9], csmaSwitches[18]));
-	switch_devices[9].Add(link18.Get(0));
-	switch_devices[18].Add(link18.Get(1));
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, switchDevices6506E, wifi_ap_nodes[79], ap_device_sets[79], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[80], switch_devices[80], wifi_ap_nodes[81], ap_device_sets[81], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[81], switch_devices[81], wifi_ap_nodes[82], ap_device_sets[82], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[81], switch_devices[81], wifi_ap_nodes[84], ap_device_sets[84], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[80], switch_devices[80], wifi_ap_nodes[85], ap_device_sets[85], 2000000000, 2);
 
-	ns3::NetDeviceContainer link19;
-	link19 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[9], csmaSwitches[19]));
-	switch_devices[9].Add(link19.Get(0));
-	switch_devices[19].Add(link19.Get(1));
-
-	ns3::NetDeviceContainer link20;
-	link20 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[9], csmaSwitches[20]));
-	switch_devices[9].Add(link20.Get(0));
-	switch_devices[20].Add(link20.Get(1));
-
-	ns3::NetDeviceContainer link21;
-	link21 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[20], csmaSwitches[21]));
-	switch_devices[20].Add(link21.Get(0));
-	switch_devices[21].Add(link21.Get(1));
-
-	ns3::NetDeviceContainer link25;
-	link25 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[24], csmaSwitches[25]));
-	switch_devices[24].Add(link25.Get(0));
-	switch_devices[25].Add(link25.Get(1));
-
-	ns3::NetDeviceContainer link29;
-	link29 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[9], csmaSwitches[29]));
-	switch_devices[9].Add(link29.Get(0));
-	switch_devices[29].Add(link29.Get(1));
-
-	ns3::NetDeviceContainer link30;
-	link30 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[9], csmaSwitches[30]));
-	switch_devices[9].Add(link30.Get(0));
-	switch_devices[30].Add(link30.Get(1));
-
-	ns3::NetDeviceContainer link33;
-	link33 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[9], csmaSwitches[33]));
-	switch_devices[9].Add(link33.Get(0));
-	switch_devices[33].Add(link33.Get(1));
-
-	ns3::NetDeviceContainer link34;
-	link34 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[9], csmaSwitches[34]));
-	switch_devices[9].Add(link34.Get(0));
-	switch_devices[34].Add(link34.Get(1));
-
-	ns3::NetDeviceContainer link35;
-	link35 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[9], csmaSwitches[35]));
-	switch_devices[9].Add(link35.Get(0));
-	switch_devices[35].Add(link35.Get(1));
-
-	ns3::NetDeviceContainer link37;
-	link37 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[9], csmaSwitches[37]));
-	switch_devices[9].Add(link37.Get(0));
-	switch_devices[37].Add(link37.Get(1));
-
-	ns3::NetDeviceContainer link38;
-	link38 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[9], csmaSwitches[38]));
-	switch_devices[9].Add(link38.Get(0));
-	switch_devices[38].Add(link38.Get(1));
-
-	ns3::NetDeviceContainer link39;
-	link39 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[9], csmaSwitches[39]));
-	switch_devices[9].Add(link39.Get(0));
-	switch_devices[39].Add(link39.Get(1));
-
-	ns3::NetDeviceContainer link50;
-	link50 = csma.Install(
-			ns3::NodeContainer(csmaSwitch6506E, csmaSwitches[50]));
-	switchDevices6506E.Add(link50.Get(0));
-	switch_devices[50].Add(link50.Get(1));
-
-	ns3::NetDeviceContainer link51;
-	link51 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[50], csmaSwitches[51]));
-	switch_devices[50].Add(link51.Get(0));
-	switch_devices[51].Add(link51.Get(1));
-
-	ns3::NetDeviceContainer link52;
-	link52 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[51], csmaSwitches[52]));
-	switch_devices[51].Add(link52.Get(0));
-	switch_devices[52].Add(link52.Get(1));
-
-	ns3::NetDeviceContainer link53;
-	link53 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[51], csmaSwitches[53]));
-	switch_devices[51].Add(link53.Get(0));
-	switch_devices[53].Add(link53.Get(1));
-
-	ns3::NetDeviceContainer link54;
-	link54 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[53], csmaSwitches[54]));
-	switch_devices[53].Add(link54.Get(0));
-	switch_devices[54].Add(link54.Get(1));
-
-	ns3::NetDeviceContainer link55;
-	link55 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[51], csmaSwitches[55]));
-	switch_devices[51].Add(link55.Get(0));
-	switch_devices[55].Add(link55.Get(1));
-
-	ns3::NetDeviceContainer link56;
-	link56 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[55], csmaSwitches[56]));
-	switch_devices[55].Add(link56.Get(0));
-	switch_devices[56].Add(link56.Get(1));
-
-	ns3::NetDeviceContainer link57;
-	link57 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[50], csmaSwitches[57]));
-	switch_devices[50].Add(link57.Get(0));
-	switch_devices[57].Add(link57.Get(1));
-
-	ns3::NetDeviceContainer link58;
-	link58 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[50], csmaSwitches[58]));
-	switch_devices[50].Add(link58.Get(0));
-	switch_devices[58].Add(link58.Get(1));
-
-	ns3::NetDeviceContainer link59;
-	link59 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[50], csmaSwitches[59]));
-	switch_devices[50].Add(link59.Get(0));
-	switch_devices[59].Add(link59.Get(1));
-
-	ns3::NetDeviceContainer link60;
-	link60 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[59], csmaSwitches[60]));
-	switch_devices[59].Add(link60.Get(0));
-	switch_devices[60].Add(link60.Get(1));
-
-	ns3::NetDeviceContainer link61;
-	link61 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[59], csmaSwitches[61]));
-	switch_devices[59].Add(link61.Get(0));
-	switch_devices[61].Add(link61.Get(1));
-
-	ns3::NetDeviceContainer link62;
-	link62 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[59], csmaSwitches[62]));
-	switch_devices[59].Add(link62.Get(0));
-	switch_devices[62].Add(link62.Get(1));
-
-	ns3::NetDeviceContainer link65;
-	link65 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[64], csmaSwitches[65]));
-	switch_devices[64].Add(link65.Get(0));
-	switch_devices[65].Add(link65.Get(1));
-
-	ns3::NetDeviceContainer link66;
-	link66 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[64], csmaSwitches[66]));
-	switch_devices[64].Add(link66.Get(0));
-	switch_devices[66].Add(link66.Get(1));
-
-	ns3::NetDeviceContainer link68;
-	link68 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[64], csmaSwitches[68]));
-	switch_devices[64].Add(link68.Get(0));
-	switch_devices[68].Add(link68.Get(1));
-
-	ns3::NetDeviceContainer link69;
-	link69 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[64], csmaSwitches[69]));
-	switch_devices[64].Add(link69.Get(0));
-	switch_devices[69].Add(link69.Get(1));
-
-	ns3::NetDeviceContainer link71;
-	link71 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[70], csmaSwitches[71]));
-	switch_devices[70].Add(link71.Get(0));
-	switch_devices[71].Add(link71.Get(1));
-
-	ns3::NetDeviceContainer link72;
-	link72 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[70], csmaSwitches[72]));
-	switch_devices[70].Add(link72.Get(0));
-	switch_devices[72].Add(link72.Get(1));
-
-	ns3::NetDeviceContainer link73;
-	link73 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[72], csmaSwitches[73]));
-	switch_devices[72].Add(link73.Get(0));
-	switch_devices[73].Add(link73.Get(1));
-
-	ns3::NetDeviceContainer link74;
-	link74 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[70], csmaSwitches[74]));
-	switch_devices[70].Add(link74.Get(0));
-	switch_devices[74].Add(link74.Get(1));
-
-	ns3::NetDeviceContainer link75;
-	link75 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[74], csmaSwitches[75]));
-	switch_devices[74].Add(link75.Get(0));
-	switch_devices[75].Add(link75.Get(1));
-
-	ns3::NetDeviceContainer link76;
-	link76 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[70], csmaSwitches[76]));
-	switch_devices[70].Add(link76.Get(0));
-	switch_devices[76].Add(link76.Get(1));
-
-	ns3::NetDeviceContainer link77;
-	link77 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[76], csmaSwitches[77]));
-	switch_devices[76].Add(link77.Get(0));
-	switch_devices[77].Add(link77.Get(1));
-
-	ns3::NetDeviceContainer link78;
-	link78 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[70], csmaSwitches[78]));
-	switch_devices[70].Add(link78.Get(0));
-	switch_devices[78].Add(link78.Get(1));
-
-	ns3::NetDeviceContainer link79;
-	link79 = csma.Install(
-			ns3::NodeContainer(csmaSwitch6506E, csmaSwitches[79]));
-	switchDevices6506E.Add(link79.Get(0));
-	switch_devices[79].Add(link79.Get(1));
-
-	ns3::NetDeviceContainer link81;
-	link81 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[80], csmaSwitches[81]));
-	switch_devices[80].Add(link81.Get(0));
-	switch_devices[81].Add(link81.Get(1));
-
-	ns3::NetDeviceContainer link82;
-	link82 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[81], csmaSwitches[82]));
-	switch_devices[81].Add(link82.Get(0));
-	switch_devices[82].Add(link82.Get(1));
-
-	ns3::NetDeviceContainer link84;
-	link84 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[81], csmaSwitches[84]));
-	switch_devices[81].Add(link84.Get(0));
-	switch_devices[84].Add(link84.Get(1));
-
-	ns3::NetDeviceContainer link85;
-	link85 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[80], csmaSwitches[85]));
-	switch_devices[80].Add(link85.Get(0));
-	switch_devices[85].Add(link85.Get(1));
-
-	ns3::NetDeviceContainer link99;
-	link99 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[80], csmaSwitches[99]));
-	switch_devices[80].Add(link99.Get(0));
-	switch_devices[99].Add(link99.Get(1));
-
+	topology_helper.InstallCsmaLink(csmaSwitches[80], switch_devices[80], wifi_ap_nodes[99], ap_device_sets[99], 2000000000, 2);
 	ns3::NetDeviceContainer link114;
 	link114 = csma.Install(
 			ns3::NodeContainer(csmaSwitch6506E, csmaSwitches[114]));
@@ -984,174 +573,34 @@ int main(int argc, char** argv) {
 	switchDevices6506E.Add(link123.Get(0));
 	switch_devices[123].Add(link123.Get(1));
 
-	ns3::NetDeviceContainer link127;
-	link127 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[126], csmaSwitches[127]));
-	switch_devices[126].Add(link127.Get(0));
-	switch_devices[127].Add(link127.Get(1));
-
-	ns3::NetDeviceContainer link128;
-	link128 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[126], csmaSwitches[128]));
-	switch_devices[126].Add(link128.Get(0));
-	switch_devices[128].Add(link128.Get(1));
-
-	ns3::NetDeviceContainer link129;
-	link129 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[126], csmaSwitches[129]));
-	switch_devices[126].Add(link129.Get(0));
-	switch_devices[129].Add(link129.Get(1));
-
-	ns3::NetDeviceContainer link130;
-	link130 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[126], csmaSwitches[130]));
-	switch_devices[126].Add(link130.Get(0));
-	switch_devices[130].Add(link130.Get(1));
-
-	ns3::NetDeviceContainer link131;
-	link131 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[126], csmaSwitches[131]));
-	switch_devices[126].Add(link131.Get(0));
-	switch_devices[131].Add(link131.Get(1));
-
-	ns3::NetDeviceContainer link132;
-	link132 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[126], csmaSwitches[132]));
-	switch_devices[126].Add(link132.Get(0));
-	switch_devices[132].Add(link132.Get(1));
-
-	ns3::NetDeviceContainer link133;
-	link133 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[132], csmaSwitches[133]));
-	switch_devices[132].Add(link133.Get(0));
-	switch_devices[133].Add(link133.Get(1));
-
-	ns3::NetDeviceContainer link134;
-	link134 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[132], csmaSwitches[134]));
-	switch_devices[132].Add(link134.Get(0));
-	switch_devices[134].Add(link134.Get(1));
-
-	ns3::NetDeviceContainer link135;
-	link135 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[132], csmaSwitches[135]));
-	switch_devices[132].Add(link135.Get(0));
-	switch_devices[135].Add(link135.Get(1));
-
-	ns3::NetDeviceContainer link136;
-	link136 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[132], csmaSwitches[136]));
-	switch_devices[132].Add(link136.Get(0));
-	switch_devices[136].Add(link136.Get(1));
-
-	ns3::NetDeviceContainer link137;
-	link137 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[126], csmaSwitches[137]));
-	switch_devices[126].Add(link137.Get(0));
-	switch_devices[137].Add(link137.Get(1));
-
-	ns3::NetDeviceContainer link142;
-	link142 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[141], csmaSwitches[142]));
-	switch_devices[141].Add(link142.Get(0));
-	switch_devices[142].Add(link142.Get(1));
-
-	ns3::NetDeviceContainer link143;
-	link143 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[141], csmaSwitches[143]));
-	switch_devices[141].Add(link143.Get(0));
-	switch_devices[143].Add(link143.Get(1));
-
-	ns3::NetDeviceContainer link144;
-	link144 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[141], csmaSwitches[144]));
-	switch_devices[141].Add(link144.Get(0));
-	switch_devices[144].Add(link144.Get(1));
-
-	ns3::NetDeviceContainer link145;
-	link145 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[141], csmaSwitches[145]));
-	switch_devices[141].Add(link145.Get(0));
-	switch_devices[145].Add(link145.Get(1));
-
-	ns3::NetDeviceContainer link146;
-	link146 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[142], csmaSwitches[146]));
-	switch_devices[142].Add(link146.Get(0));
-	switch_devices[146].Add(link146.Get(1));
-
-	ns3::NetDeviceContainer link149;
-	link149 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[143], csmaSwitches[149]));
-	switch_devices[143].Add(link149.Get(0));
-	switch_devices[149].Add(link149.Get(1));
-
-	ns3::NetDeviceContainer link150;
-	link150 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[145], csmaSwitches[150]));
-	switch_devices[145].Add(link150.Get(0));
-	switch_devices[150].Add(link150.Get(1));
-
-	ns3::NetDeviceContainer link151;
-	link151 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[150], csmaSwitches[151]));
-	switch_devices[150].Add(link151.Get(0));
-	switch_devices[151].Add(link151.Get(1));
-
-	ns3::NetDeviceContainer link154;
-	link154 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[150], csmaSwitches[154]));
-	switch_devices[150].Add(link154.Get(0));
-	switch_devices[154].Add(link154.Get(1));
-
-	ns3::NetDeviceContainer link158;
-	link158 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[145], csmaSwitches[158]));
-	switch_devices[145].Add(link158.Get(0));
-	switch_devices[158].Add(link158.Get(1));
-
-	ns3::NetDeviceContainer link165;
-	link165 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[161], csmaSwitches[165]));
-	switch_devices[161].Add(link165.Get(0));
-	switch_devices[165].Add(link165.Get(1));
-
-	ns3::NetDeviceContainer link167;
-	link167 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[161], csmaSwitches[167]));
-	switch_devices[161].Add(link167.Get(0));
-	switch_devices[167].Add(link167.Get(1));
-
-	ns3::NetDeviceContainer link172;
-	link172 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[167], csmaSwitches[172]));
-	switch_devices[167].Add(link172.Get(0));
-	switch_devices[172].Add(link172.Get(1));
-
-	ns3::NetDeviceContainer link178;
-	link178 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[161], csmaSwitches[178]));
-	switch_devices[161].Add(link178.Get(0));
-	switch_devices[178].Add(link178.Get(1));
-
-	ns3::NetDeviceContainer link180;
-	link180 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[161], csmaSwitches[180]));
-	switch_devices[161].Add(link180.Get(0));
-	switch_devices[180].Add(link180.Get(1));
-
-	ns3::NetDeviceContainer link181;
-	link181 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[180], csmaSwitches[181]));
-	switch_devices[180].Add(link181.Get(0));
-	switch_devices[181].Add(link181.Get(1));
-
-	ns3::NetDeviceContainer link183;
-	link183 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[161], csmaSwitches[183]));
-	switch_devices[161].Add(link183.Get(0));
-	switch_devices[183].Add(link183.Get(1));
-
+	topology_helper.InstallCsmaLink(csmaSwitches[126], switch_devices[126], wifi_ap_nodes[127], ap_device_sets[127], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[126], switch_devices[126], wifi_ap_nodes[128], ap_device_sets[128], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[126], switch_devices[126], wifi_ap_nodes[129], ap_device_sets[129], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[126], switch_devices[126], wifi_ap_nodes[130], ap_device_sets[130], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[126], switch_devices[126], wifi_ap_nodes[131], ap_device_sets[131], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[126], switch_devices[126], wifi_ap_nodes[132], ap_device_sets[132], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[132], switch_devices[132], wifi_ap_nodes[133], ap_device_sets[133], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[132], switch_devices[132], wifi_ap_nodes[134], ap_device_sets[134], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[132], switch_devices[132], wifi_ap_nodes[135], ap_device_sets[135], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[132], switch_devices[132], wifi_ap_nodes[136], ap_device_sets[136], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[126], switch_devices[126], wifi_ap_nodes[137], ap_device_sets[137], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[141], switch_devices[141], wifi_ap_nodes[142], ap_device_sets[142], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[141], switch_devices[141], wifi_ap_nodes[143], ap_device_sets[143], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[141], switch_devices[141], wifi_ap_nodes[144], ap_device_sets[144], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[141], switch_devices[141], wifi_ap_nodes[145], ap_device_sets[145], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[142], switch_devices[142], wifi_ap_nodes[146], ap_device_sets[146], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[143], switch_devices[143], wifi_ap_nodes[149], ap_device_sets[149], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[145], switch_devices[145], wifi_ap_nodes[150], ap_device_sets[150], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[150], switch_devices[150], wifi_ap_nodes[151], ap_device_sets[151], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[150], switch_devices[150], wifi_ap_nodes[154], ap_device_sets[154], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[145], switch_devices[145], wifi_ap_nodes[158], ap_device_sets[158], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[161], switch_devices[161], wifi_ap_nodes[165], ap_device_sets[165], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[161], switch_devices[161], wifi_ap_nodes[167], ap_device_sets[167], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[167], switch_devices[167], wifi_ap_nodes[172], ap_device_sets[172], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[161], switch_devices[161], wifi_ap_nodes[178], ap_device_sets[178], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[161], switch_devices[161], wifi_ap_nodes[180], ap_device_sets[180], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[180], switch_devices[180], wifi_ap_nodes[181], ap_device_sets[181], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[161], switch_devices[161], wifi_ap_nodes[183], ap_device_sets[183], 2000000000, 2);
 	ns3::NetDeviceContainer link193;
 	link193 = csma.Install(
 			ns3::NodeContainer(csmaSwitch6506E, csmaSwitches[193]));
@@ -1164,60 +613,15 @@ int main(int argc, char** argv) {
 	switchDevices6506E.Add(link200.Get(0));
 	switch_devices[200].Add(link200.Get(1));
 
-	ns3::NetDeviceContainer link201;
-	link201 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[200], csmaSwitches[201]));
-	switch_devices[200].Add(link201.Get(0));
-	switch_devices[201].Add(link201.Get(1));
-
-	ns3::NetDeviceContainer link202;
-	link202 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[201], csmaSwitches[202]));
-	switch_devices[201].Add(link202.Get(0));
-	switch_devices[202].Add(link202.Get(1));
-
-	ns3::NetDeviceContainer link203;
-	link203 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[201], csmaSwitches[203]));
-	switch_devices[201].Add(link203.Get(0));
-	switch_devices[203].Add(link203.Get(1));
-
-	ns3::NetDeviceContainer link204;
-	link204 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[201], csmaSwitches[204]));
-	switch_devices[201].Add(link204.Get(0));
-	switch_devices[204].Add(link204.Get(1));
-
-	ns3::NetDeviceContainer link206;
-	link206 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[200], csmaSwitches[206]));
-	switch_devices[200].Add(link206.Get(0));
-	switch_devices[206].Add(link206.Get(1));
-
-	ns3::NetDeviceContainer link208;
-	link208 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[206], csmaSwitches[208]));
-	switch_devices[206].Add(link208.Get(0));
-	switch_devices[208].Add(link208.Get(1));
-
-	ns3::NetDeviceContainer link209;
-	link209 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[208], csmaSwitches[209]));
-	switch_devices[208].Add(link209.Get(0));
-	switch_devices[209].Add(link209.Get(1));
-
-	ns3::NetDeviceContainer link210;
-	link210 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[208], csmaSwitches[210]));
-	switch_devices[208].Add(link210.Get(0));
-	switch_devices[210].Add(link210.Get(1));
-
-	ns3::NetDeviceContainer link211;
-	link211 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[208], csmaSwitches[211]));
-	switch_devices[208].Add(link211.Get(0));
-	switch_devices[211].Add(link211.Get(1));
-
+	topology_helper.InstallCsmaLink(csmaSwitches[200], switch_devices[200], wifi_ap_nodes[201], ap_device_sets[201], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[201], switch_devices[201], wifi_ap_nodes[202], ap_device_sets[202], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[201], switch_devices[201], wifi_ap_nodes[203], ap_device_sets[203], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[201], switch_devices[201], wifi_ap_nodes[204], ap_device_sets[204], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[200], switch_devices[200], wifi_ap_nodes[206], ap_device_sets[206], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[206], switch_devices[206], wifi_ap_nodes[208], ap_device_sets[208], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[208], switch_devices[208], wifi_ap_nodes[209], ap_device_sets[209], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[208], switch_devices[208], wifi_ap_nodes[210], ap_device_sets[210], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[208], switch_devices[208], wifi_ap_nodes[211], ap_device_sets[211], 2000000000, 2);
 	ns3::NetDeviceContainer link214;
 	link214 = csma.Install(
 			ns3::NodeContainer(csmaSwitchsigenobu, csmaSwitches[214]));
@@ -1242,300 +646,64 @@ int main(int argc, char** argv) {
 	switchDevicessigenobu.Add(link220.Get(0));
 	switch_devices[220].Add(link220.Get(1));
 
-	ns3::NetDeviceContainer link227;
-	link227 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[226], csmaSwitches[227]));
-	switch_devices[226].Add(link227.Get(0));
-	switch_devices[227].Add(link227.Get(1));
+	topology_helper.InstallCsmaLink(csmaSwitches[226], switch_devices[226], wifi_ap_nodes[227], ap_device_sets[227], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[227], switch_devices[227], wifi_ap_nodes[228], ap_device_sets[228], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[226], switch_devices[226], wifi_ap_nodes[229], ap_device_sets[229], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[226], switch_devices[226], wifi_ap_nodes[230], ap_device_sets[230], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[230], switch_devices[230], wifi_ap_nodes[231], ap_device_sets[231], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[230], switch_devices[230], wifi_ap_nodes[248], ap_device_sets[248], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[226], switch_devices[226], wifi_ap_nodes[256], ap_device_sets[256], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[256], switch_devices[256], wifi_ap_nodes[257], ap_device_sets[257], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[256], switch_devices[256], wifi_ap_nodes[258], ap_device_sets[258], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[256], switch_devices[256], wifi_ap_nodes[259], ap_device_sets[259], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[226], switch_devices[226], wifi_ap_nodes[260], ap_device_sets[260], 2000000000, 2);
 
-	ns3::NetDeviceContainer link228;
-	link228 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[227], csmaSwitches[228]));
-	switch_devices[227].Add(link228.Get(0));
-	switch_devices[228].Add(link228.Get(1));
+	topology_helper.InstallCsmaLink(csmaSwitchsigenobu, switchDevicessigenobu, csmaSwitches[264], switch_devices[264], 2000000000, 2);
 
-	ns3::NetDeviceContainer link229;
-	link229 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[226], csmaSwitches[229]));
-	switch_devices[226].Add(link229.Get(0));
-	switch_devices[229].Add(link229.Get(1));
+	topology_helper.InstallCsmaLink(csmaSwitchtarumi, switchDevicestarumi, csmaSwitches[287], switch_devices[287], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchtarumi, switchDevicestarumi, csmaSwitches[288], switch_devices[288], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchtarumi, switchDevicestarumi, csmaSwitches[290], switch_devices[290], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchtarumi, switchDevicestarumi, csmaSwitches[291], switch_devices[291], 2000000000, 2);
 
-	ns3::NetDeviceContainer link230;
-	link230 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[226], csmaSwitches[230]));
-	switch_devices[226].Add(link230.Get(0));
-	switch_devices[230].Add(link230.Get(1));
+	topology_helper.InstallCsmaLink(csmaSwitches[291], switch_devices[291], wifi_ap_nodes[294], ap_device_sets[294], 2000000000, 2);
 
-	ns3::NetDeviceContainer link231;
-	link231 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[230], csmaSwitches[231]));
-	switch_devices[230].Add(link231.Get(0));
-	switch_devices[231].Add(link231.Get(1));
+	topology_helper.InstallCsmaLink(csmaSwitchtarumi, switchDevicestarumi, csmaSwitches[295], switch_devices[295], 2000000000, 2);
 
-	ns3::NetDeviceContainer link248;
-	link248 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[230], csmaSwitches[248]));
-	switch_devices[230].Add(link248.Get(0));
-	switch_devices[248].Add(link248.Get(1));
+	topology_helper.InstallCsmaLink(csmaSwitches[295], switch_devices[295], wifi_ap_nodes[296], ap_device_sets[296], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[295], switch_devices[295], wifi_ap_nodes[300], ap_device_sets[300], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[295], switch_devices[295], wifi_ap_nodes[301], ap_device_sets[301], 2000000000, 2);
 
-	ns3::NetDeviceContainer link256;
-	link256 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[226], csmaSwitches[256]));
-	switch_devices[226].Add(link256.Get(0));
-	switch_devices[256].Add(link256.Get(1));
+	topology_helper.InstallCsmaLink(csmaSwitchtarumi, switchDevicestarumi, csmaSwitches[304], switch_devices[304], 2000000000, 2);
 
-	ns3::NetDeviceContainer link257;
-	link257 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[256], csmaSwitches[257]));
-	switch_devices[256].Add(link257.Get(0));
-	switch_devices[257].Add(link257.Get(1));
+	topology_helper.InstallCsmaLink(csmaSwitches[304], switch_devices[304], wifi_ap_nodes[305], ap_device_sets[305], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[304], switch_devices[304], wifi_ap_nodes[306], ap_device_sets[306], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[304], switch_devices[304], wifi_ap_nodes[308], ap_device_sets[308], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[304], switch_devices[304], wifi_ap_nodes[309], ap_device_sets[309], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[304], switch_devices[304], wifi_ap_nodes[310], ap_device_sets[310], 2000000000, 2);
 
-	ns3::NetDeviceContainer link258;
-	link258 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[256], csmaSwitches[258]));
-	switch_devices[256].Add(link258.Get(0));
-	switch_devices[258].Add(link258.Get(1));
+	topology_helper.InstallCsmaLink(csmaSwitchtarumi, switchDevicestarumi, csmaSwitches[311], switch_devices[311], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchtarumi, switchDevicestarumi, csmaSwitches[312], switch_devices[312], 2000000000, 2);
 
-	ns3::NetDeviceContainer link259;
-	link259 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[256], csmaSwitches[259]));
-	switch_devices[256].Add(link259.Get(0));
-	switch_devices[259].Add(link259.Get(1));
-
-	ns3::NetDeviceContainer link260;
-	link260 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[226], csmaSwitches[260]));
-	switch_devices[226].Add(link260.Get(0));
-	switch_devices[260].Add(link260.Get(1));
-
-	ns3::NetDeviceContainer link264;
-	link264 = csma.Install(
-			ns3::NodeContainer(csmaSwitchsigenobu, csmaSwitches[264]));
-	switchDevicessigenobu.Add(link264.Get(0));
-	switch_devices[264].Add(link264.Get(1));
-
-	ns3::NetDeviceContainer link287;
-	link287 = csma.Install(
-			ns3::NodeContainer(csmaSwitchtarumi, csmaSwitches[287]));
-	switchDevicestarumi.Add(link287.Get(0));
-	switch_devices[287].Add(link287.Get(1));
-
-	ns3::NetDeviceContainer link288;
-	link288 = csma.Install(
-			ns3::NodeContainer(csmaSwitchtarumi, csmaSwitches[288]));
-	switchDevicestarumi.Add(link288.Get(0));
-	switch_devices[288].Add(link288.Get(1));
-
-	ns3::NetDeviceContainer link290;
-	link290 = csma.Install(
-			ns3::NodeContainer(csmaSwitchtarumi, csmaSwitches[290]));
-	switchDevicestarumi.Add(link290.Get(0));
-	switch_devices[290].Add(link290.Get(1));
-
-	ns3::NetDeviceContainer link291;
-	link291 = csma.Install(
-			ns3::NodeContainer(csmaSwitchtarumi, csmaSwitches[291]));
-	switchDevicestarumi.Add(link291.Get(0));
-	switch_devices[291].Add(link291.Get(1));
-
-	ns3::NetDeviceContainer link294;
-	link294 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[291], csmaSwitches[294]));
-	switch_devices[291].Add(link294.Get(0));
-	switch_devices[294].Add(link294.Get(1));
-
-	ns3::NetDeviceContainer link295;
-	link295 = csma.Install(
-			ns3::NodeContainer(csmaSwitchtarumi, csmaSwitches[295]));
-	switchDevicestarumi.Add(link295.Get(0));
-	switch_devices[295].Add(link295.Get(1));
-
-	ns3::NetDeviceContainer link296;
-	link296 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[295], csmaSwitches[296]));
-	switch_devices[295].Add(link296.Get(0));
-	switch_devices[296].Add(link296.Get(1));
-
-	ns3::NetDeviceContainer link300;
-	link300 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[295], csmaSwitches[300]));
-	switch_devices[295].Add(link300.Get(0));
-	switch_devices[300].Add(link300.Get(1));
-
-	ns3::NetDeviceContainer link301;
-	link301 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[295], csmaSwitches[301]));
-	switch_devices[295].Add(link301.Get(0));
-	switch_devices[301].Add(link301.Get(1));
-
-	ns3::NetDeviceContainer link304;
-	link304 = csma.Install(
-			ns3::NodeContainer(csmaSwitchtarumi, csmaSwitches[304]));
-	switchDevicestarumi.Add(link304.Get(0));
-	switch_devices[304].Add(link304.Get(1));
-
-	ns3::NetDeviceContainer link305;
-	link305 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[304], csmaSwitches[305]));
-	switch_devices[304].Add(link305.Get(0));
-	switch_devices[305].Add(link305.Get(1));
-
-	ns3::NetDeviceContainer link306;
-	link306 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[304], csmaSwitches[306]));
-	switch_devices[304].Add(link306.Get(0));
-	switch_devices[306].Add(link306.Get(1));
-
-	ns3::NetDeviceContainer link308;
-	link308 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[304], csmaSwitches[308]));
-	switch_devices[304].Add(link308.Get(0));
-	switch_devices[308].Add(link308.Get(1));
-
-	ns3::NetDeviceContainer link309;
-	link309 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[304], csmaSwitches[309]));
-	switch_devices[304].Add(link309.Get(0));
-	switch_devices[309].Add(link309.Get(1));
-
-	ns3::NetDeviceContainer link310;
-	link310 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[304], csmaSwitches[310]));
-	switch_devices[304].Add(link310.Get(0));
-	switch_devices[310].Add(link310.Get(1));
-
-	ns3::NetDeviceContainer link311;
-	link311 = csma.Install(
-			ns3::NodeContainer(csmaSwitchtarumi, csmaSwitches[311]));
-	switchDevicestarumi.Add(link311.Get(0));
-	switch_devices[311].Add(link311.Get(1));
-
-	ns3::NetDeviceContainer link312;
-	link312 = csma.Install(
-			ns3::NodeContainer(csmaSwitchtarumi, csmaSwitches[312]));
-	switchDevicestarumi.Add(link312.Get(0));
-	switch_devices[312].Add(link312.Get(1));
-
-	ns3::NetDeviceContainer link313;
-	link313 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[312], csmaSwitches[313]));
-	switch_devices[312].Add(link313.Get(0));
-	switch_devices[313].Add(link313.Get(1));
-
-	ns3::NetDeviceContainer link314;
-	link314 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[312], csmaSwitches[314]));
-	switch_devices[312].Add(link314.Get(0));
-	switch_devices[314].Add(link314.Get(1));
-
-	ns3::NetDeviceContainer link317;
-	link317 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[316], csmaSwitches[317]));
-	switch_devices[316].Add(link317.Get(0));
-	switch_devices[317].Add(link317.Get(1));
-
-	ns3::NetDeviceContainer link318;
-	link318 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[317], csmaSwitches[318]));
-	switch_devices[317].Add(link318.Get(0));
-	switch_devices[318].Add(link318.Get(1));
-
-	ns3::NetDeviceContainer link319;
-	link319 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[317], csmaSwitches[319]));
-	switch_devices[317].Add(link319.Get(0));
-	switch_devices[319].Add(link319.Get(1));
-
-	ns3::NetDeviceContainer link320;
-	link320 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[317], csmaSwitches[320]));
-	switch_devices[317].Add(link320.Get(0));
-	switch_devices[320].Add(link320.Get(1));
-
-	ns3::NetDeviceContainer link322;
-	link322 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[321], csmaSwitches[322]));
-	switch_devices[321].Add(link322.Get(0));
-	switch_devices[322].Add(link322.Get(1));
-
-	ns3::NetDeviceContainer link323;
-	link323 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[321], csmaSwitches[323]));
-	switch_devices[321].Add(link323.Get(0));
-	switch_devices[323].Add(link323.Get(1));
-
-	ns3::NetDeviceContainer link324;
-	link324 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[321], csmaSwitches[324]));
-	switch_devices[321].Add(link324.Get(0));
-	switch_devices[324].Add(link324.Get(1));
-
-	ns3::NetDeviceContainer link325;
-	link325 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[316], csmaSwitches[325]));
-	switch_devices[316].Add(link325.Get(0));
-	switch_devices[325].Add(link325.Get(1));
-
-	ns3::NetDeviceContainer link327;
-	link327 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[316], csmaSwitches[327]));
-	switch_devices[316].Add(link327.Get(0));
-	switch_devices[327].Add(link327.Get(1));
-
-	ns3::NetDeviceContainer link328;
-	link328 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[316], csmaSwitches[328]));
-	switch_devices[316].Add(link328.Get(0));
-	switch_devices[328].Add(link328.Get(1));
-
-	ns3::NetDeviceContainer link331;
-	link331 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[316], csmaSwitches[331]));
-	switch_devices[316].Add(link331.Get(0));
-	switch_devices[331].Add(link331.Get(1));
-
-	ns3::NetDeviceContainer link332;
-	link332 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[331], csmaSwitches[332]));
-	switch_devices[331].Add(link332.Get(0));
-	switch_devices[332].Add(link332.Get(1));
-
-	ns3::NetDeviceContainer link343;
-	link343 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[197], csmaSwitches[343]));
-	switch_devices[197].Add(link343.Get(0));
-	switch_devices[343].Add(link343.Get(1));
-
-	ns3::NetDeviceContainer link344;
-	link344 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[45], csmaSwitches[344]));
-	switch_devices[45].Add(link344.Get(0));
-	switch_devices[344].Add(link344.Get(1));
-
-	ns3::NetDeviceContainer link345;
-	link345 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[41], csmaSwitches[345]));
-	switch_devices[41].Add(link345.Get(0));
-	switch_devices[345].Add(link345.Get(1));
-
-	ns3::NetDeviceContainer link346;
-	link346 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[41], csmaSwitches[346]));
-	switch_devices[41].Add(link346.Get(0));
-	switch_devices[346].Add(link346.Get(1));
-
-	ns3::NetDeviceContainer link347;
-	link347 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[206], csmaSwitches[347]));
-	switch_devices[206].Add(link347.Get(0));
-	switch_devices[347].Add(link347.Get(1));
-
-	ns3::NetDeviceContainer link348;
-	link348 = csma.Install(
-			ns3::NodeContainer(csmaSwitches[206], csmaSwitches[348]));
-	switch_devices[206].Add(link348.Get(0));
-	switch_devices[348].Add(link348.Get(1));
-
+	topology_helper.InstallCsmaLink(csmaSwitches[312], switch_devices[312], wifi_ap_nodes[313], ap_device_sets[313], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[312], switch_devices[312], wifi_ap_nodes[314], ap_device_sets[314], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[316], switch_devices[316], wifi_ap_nodes[317], ap_device_sets[317], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[317], switch_devices[317], wifi_ap_nodes[318], ap_device_sets[318], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[317], switch_devices[317], wifi_ap_nodes[319], ap_device_sets[319], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[317], switch_devices[317], wifi_ap_nodes[320], ap_device_sets[320], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[321], switch_devices[321], wifi_ap_nodes[322], ap_device_sets[322], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[321], switch_devices[321], wifi_ap_nodes[323], ap_device_sets[323], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[321], switch_devices[321], wifi_ap_nodes[324], ap_device_sets[324], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[316], switch_devices[316], wifi_ap_nodes[325], ap_device_sets[325], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[316], switch_devices[316], wifi_ap_nodes[327], ap_device_sets[327], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[316], switch_devices[316], wifi_ap_nodes[328], ap_device_sets[328], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[316], switch_devices[316], wifi_ap_nodes[331], ap_device_sets[331], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[331], switch_devices[331], wifi_ap_nodes[332], ap_device_sets[332], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[197], switch_devices[197], wifi_ap_nodes[343], ap_device_sets[343], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[45], switch_devices[45], wifi_ap_nodes[344], ap_device_sets[344], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[41], switch_devices[41], wifi_ap_nodes[345], ap_device_sets[345], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[41], switch_devices[41], wifi_ap_nodes[346], ap_device_sets[346], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[206], switch_devices[206], wifi_ap_nodes[347], ap_device_sets[347], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitches[206], switch_devices[206], wifi_ap_nodes[348], ap_device_sets[348], 2000000000, 2);
 //#channel define
 	csma = ns3::CsmaHelper();
 	csma.SetChannelAttribute("DataRate",
