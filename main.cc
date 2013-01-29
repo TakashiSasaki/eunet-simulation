@@ -4345,10 +4345,10 @@ int main(int argc, char** argv) {
 			ns3::Address(
 					ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.2"),
 							port)));
-	onoff2.SetAttribute("OnTime",
-			ns3::RandomVariableValue(ns3::ConstantVariable(5)));
-	onoff2.SetAttribute("OffTime",
-			ns3::RandomVariableValue(ns3::ConstantVariable(0)));
+	//onoff2.SetAttribute("OnTime",
+	//		ns3::RandomVariableValue(ns3::ConstantVariable(5)));
+	//onoff2.SetAttribute("OffTime",
+	//		ns3::RandomVariableValue(ns3::ConstantVariable(0)));
 	onoff2.SetAttribute("DataRate",
 			ns3::DataRateValue(ns3::DataRate("100kbps")));
 	onoff2.SetAttribute("PacketSize", ns3::StringValue("1024"));
@@ -4371,10 +4371,10 @@ int main(int argc, char** argv) {
 			ns3::Address(
 					ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.3"),
 							port)));
-	onoff3.SetAttribute("OnTime",
-			ns3::RandomVariableValue(ns3::ConstantVariable(5)));
-	onoff3.SetAttribute("OffTime",
-			ns3::RandomVariableValue(ns3::ConstantVariable(0)));
+	//onoff3.SetAttribute("OnTime",
+	//		ns3::RandomVariableValue(ns3::ConstantVariable(5)));
+	//onoff3.SetAttribute("OffTime",
+	//		ns3::RandomVariableValue(ns3::ConstantVariable(0)));
 	onoff3.SetAttribute("DataRate",
 			ns3::DataRateValue(ns3::DataRate("100kbps")));
 	onoff3.SetAttribute("PacketSize", ns3::StringValue("1024"));
@@ -4397,10 +4397,10 @@ int main(int argc, char** argv) {
 			ns3::Address(
 					ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.4"),
 							port)));
-	onoff4.SetAttribute("OnTime",
-			ns3::RandomVariableValue(ns3::ConstantVariable(5)));
-	onoff4.SetAttribute("OffTime",
-			ns3::RandomVariableValue(ns3::ConstantVariable(0)));
+	//onoff4.SetAttribute("OnTime",
+	//		ns3::RandomVariableValue(ns3::ConstantVariable(5)));
+	//onoff4.SetAttribute("OffTime",
+	//		ns3::RandomVariableValue(ns3::ConstantVariable(0)));
 	onoff4.SetAttribute("DataRate",
 			ns3::DataRateValue(ns3::DataRate("100kbps")));
 	onoff4.SetAttribute("PacketSize", ns3::StringValue("1024"));
@@ -4423,10 +4423,10 @@ int main(int argc, char** argv) {
 			ns3::Address(
 					ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.5"),
 							port)));
-	onoff5.SetAttribute("OnTime",
-			ns3::RandomVariableValue(ns3::ConstantVariable(5)));
-	onoff5.SetAttribute("OffTime",
-			ns3::RandomVariableValue(ns3::ConstantVariable(0)));
+	//onoff5.SetAttribute("OnTime",
+	//		ns3::RandomVariableValue(ns3::ConstantVariable(5)));
+	//onoff5.SetAttribute("OffTime",
+	//		ns3::RandomVariableValue(ns3::ConstantVariable(0)));
 	onoff5.SetAttribute("DataRate",
 			ns3::DataRateValue(ns3::DataRate("100kbps")));
 	onoff5.SetAttribute("PacketSize", ns3::StringValue("1024"));
@@ -4448,10 +4448,10 @@ int main(int argc, char** argv) {
 			ns3::Address(
 					ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.6"),
 							port)));
-	onoff6.SetAttribute("OnTime",
-			ns3::RandomVariableValue(ns3::ConstantVariable(5)));
-	onoff6.SetAttribute("OffTime",
-			ns3::RandomVariableValue(ns3::ConstantVariable(0)));
+	//onoff6.SetAttribute("OnTime",
+	//		ns3::RandomVariableValue(ns3::ConstantVariable(5)));
+	//onoff6.SetAttribute("OffTime",
+	//		ns3::RandomVariableValue(ns3::ConstantVariable(0)));
 	onoff6.SetAttribute("DataRate",
 			ns3::DataRateValue(ns3::DataRate("100kbps")));
 	onoff6.SetAttribute("PacketSize", ns3::StringValue("1024"));
@@ -4474,10 +4474,10 @@ int main(int argc, char** argv) {
 			ns3::Address(
 					ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.7"),
 							port)));
-	onoff7.SetAttribute("OnTime",
-			ns3::RandomVariableValue(ns3::ConstantVariable(5)));
-	onoff7.SetAttribute("OffTime",
-			ns3::RandomVariableValue(ns3::ConstantVariable(0)));
+	//onoff7.SetAttribute("OnTime",
+	//		ns3::RandomVariableValue(ns3::ConstantVariable(5)));
+	//onoff7.SetAttribute("OffTime",
+	//		ns3::RandomVariableValue(ns3::ConstantVariable(0)));
 	onoff7.SetAttribute("DataRate",
 			ns3::DataRateValue(ns3::DataRate("100kbps")));
 	onoff7.SetAttribute("PacketSize", ns3::StringValue("1024"));
@@ -4500,10 +4500,10 @@ int main(int argc, char** argv) {
 			ns3::Address(
 					ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.8"),
 							port)));
-	onoff8.SetAttribute("OnTime",
-			ns3::RandomVariableValue(ns3::ConstantVariable(5)));
-	onoff8.SetAttribute("OffTime",
-			ns3::RandomVariableValue(ns3::ConstantVariable(0)));
+	//onoff8.SetAttribute("OnTime",
+	//		ns3::RandomVariableValue(ns3::ConstantVariable(5)));
+	//onoff8.SetAttribute("OffTime",
+	//		ns3::RandomVariableValue(ns3::ConstantVariable(0)));
 	onoff8.SetAttribute("DataRate",
 			ns3::DataRateValue(ns3::DataRate("100kbps")));
 	onoff8.SetAttribute("PacketSize", ns3::StringValue("1024"));
@@ -4526,10 +4526,10 @@ int main(int argc, char** argv) {
 			ns3::Address(
 					ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.9"),
 							port)));
-	onoff9.SetAttribute("OnTime",
-			ns3::RandomVariableValue(ns3::ConstantVariable(5)));
-	onoff9.SetAttribute("OffTime",
-			ns3::RandomVariableValue(ns3::ConstantVariable(0)));
+	//onoff9.SetAttribute("OnTime",
+	//		ns3::RandomVariableValue(ns3::ConstantVariable(5)));
+	//onoff9.SetAttribute("OffTime",
+	//		ns3::RandomVariableValue(ns3::ConstantVariable(0)));
 	onoff9.SetAttribute("DataRate",
 			ns3::DataRateValue(ns3::DataRate("100kbps")));
 	onoff9.SetAttribute("PacketSize", ns3::StringValue("1024"));
@@ -4552,10 +4552,10 @@ int main(int argc, char** argv) {
 			ns3::Address(
 					ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.10"),
 							port)));
-	onoff10.SetAttribute("OnTime",
-			ns3::RandomVariableValue(ns3::ConstantVariable(5)));
-	onoff10.SetAttribute("OffTime",
-			ns3::RandomVariableValue(ns3::ConstantVariable(0)));
+	//onoff10.SetAttribute("OnTime",
+	//		ns3::RandomVariableValue(ns3::ConstantVariable(5)));
+	//onoff10.SetAttribute("OffTime",
+	//		ns3::RandomVariableValue(ns3::ConstantVariable(0)));
 	onoff10.SetAttribute("DataRate",
 			ns3::DataRateValue(ns3::DataRate("100kbps")));
 	onoff10.SetAttribute("PacketSize", ns3::StringValue("1024"));
