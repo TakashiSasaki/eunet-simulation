@@ -27,6 +27,7 @@
 #include "DefaultMobilityHelper.h"
 #include "WifiPhys.h"
 #include "InternetRouter.h"
+#include "CoreSwitch.h"
 
 //NS_LOG_COMPONENT_DEFINE("OnOffApplication");
 
@@ -38,27 +39,11 @@ int main(int argc, char** argv) {
 
 	InternetRouter internet_router;
 
-	//jouhoku--sigenobu--tarumi--motida
-	ns3::NodeContainer csmaSwitchrouter;
-	csmaSwitchrouter.Create(1);
-
-	//sougoujouhoumediacenter
-	//sougoujouhoumediacenter 2F network-kanrisitu-main
-	ns3::NodeContainer csmaSwitch6506E;
-	csmaSwitch6506E.Create(1);
-
+	CoreSwitch csmaSwitchrouter("jouhoku--sigenobu--tarumi--motida");
+	CoreSwitch csmaSwitch6506E("sougoujouhoumediacenter 2F network-kanrisitu-main");
+	CoreSwitch csmaSwitchsigenobu("2F serversitu-mediacenterbunsitu-main");
+	CoreSwitch csmaSwitchtarumi("3F serversitu-mediacenterbunsitu-left-main");
 	CsmaSwitches csmaSwitches(350);
-
-	//networkkanrisitu-serversegment-ue
-
-//2F serversitu-mediacenterbunsitu-main
-	ns3::NodeContainer csmaSwitchsigenobu;
-	csmaSwitchsigenobu.Create(1);
-
-//3F serversitu-mediacenterbunsitu-left-main
-	ns3::NodeContainer csmaSwitchtarumi;
-//csmaSwitchtarumi = ns3::NodeContainer()
-	csmaSwitchtarumi.Create(1);
 
 	TerminalSets terminal_sets(350);
 
@@ -4181,7 +4166,7 @@ int main(int argc, char** argv) {
 
 // switch create
 
-	ns3::Ptr<ns3::Node> switchNoderouter = csmaSwitchrouter.Get(0);
+	ns3::Ptr<ns3::Node> switchNoderouter = csmaSwitchrouter.get();
 	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevicerouter = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	switchNoderouter->AddDevice(bridgeDevicerouter);
@@ -4191,7 +4176,7 @@ int main(int argc, char** argv) {
 		bridgeDevicerouter->AddBridgePort(switchDevicesrouter.Get(portIter));
 	}
 
-	ns3::Ptr<ns3::Node> switchNode6506E = csmaSwitch6506E.Get(0);
+	ns3::Ptr<ns3::Node> switchNode6506E = csmaSwitch6506E.get();
 	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice6506E = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	switchNode6506E->AddDevice(bridgeDevice6506E);
@@ -4214,7 +4199,7 @@ int main(int argc, char** argv) {
 			p_bridge_net_device->AddBridgePort(switch_devices[i].Get(portIter));
 		}
 	}
-	ns3::Ptr<ns3::Node> switchNodesigenobu = csmaSwitchsigenobu.Get(0);
+	ns3::Ptr<ns3::Node> switchNodesigenobu = csmaSwitchsigenobu.get();
 	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevicesigenobu = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	switchNodesigenobu->AddDevice(bridgeDevicesigenobu);
@@ -4224,7 +4209,7 @@ int main(int argc, char** argv) {
 		bridgeDevicesigenobu->AddBridgePort(
 				switchDevicessigenobu.Get(portIter));
 	}
-	ns3::Ptr<ns3::Node> switchNodetarumi = csmaSwitchtarumi.Get(0);
+	ns3::Ptr<ns3::Node> switchNodetarumi = csmaSwitchtarumi.get();
 	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevicetarumi = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	switchNodetarumi->AddDevice(bridgeDevicetarumi);
@@ -4258,12 +4243,12 @@ int main(int argc, char** argv) {
 	ns3::InternetStackHelper internet;
 	internet.Install(internet_router.get());
 
-	internet.Install(csmaSwitchrouter.Get(0));
-	internet.Install(csmaSwitch6506E.Get(0));
+	internet.Install(csmaSwitchrouter.get());
+	internet.Install(csmaSwitch6506E.get());
 	for (int i = 5; i <= 348; ++i) {
 		internet.Install(csmaSwitches[i].Get(0));
 	}
-	internet.Install(csmaSwitchsigenobu.Get(0));
+	internet.Install(csmaSwitchsigenobu.get());
 
 	for (int i = 5; i <= 348; ++i) {
 		internet.Install(terminal_sets[i]);
