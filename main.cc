@@ -113,37 +113,15 @@ int main(int argc, char** argv) {
 
 //channel define
 
-	ns3::CsmaHelper csma;
-	csma = ns3::CsmaHelper();
-	csma.SetChannelAttribute("DataRate",
-			ns3::DataRateValue(ns3::DataRate(1000000000)));
-	csma.SetChannelAttribute("Delay", ns3::TimeValue(ns3::MilliSeconds(2)));
-
 	for (int i; i < 1; ++i) {
-		ns3::NetDeviceContainer nodelinkinternet;
-		nodelinkinternet = csma.Install(
-				ns3::NodeContainer(ns3::NodeContainer(internet_router.get()),
-						csmaSwitchrouter));
-		internetrouterdevices.Add(nodelinkinternet.Get(1));
-		switchDevicesrouter.Add(nodelinkinternet.Get(0));
+		topology_helper.InstallCsmaLink(ns3::NodeContainer(internet_router.get()), internetrouterdevices , csmaSwitchrouter, switchDevicesrouter, 1000000000, 2);
 	}
-
-	csma = ns3::CsmaHelper();
-	csma.SetChannelAttribute("DataRate",
-			ns3::DataRateValue(ns3::DataRate(5000000)));
-	csma.SetChannelAttribute("Delay", ns3::TimeValue(ns3::MilliSeconds(2)));
 
 	for (int j = 5; j <= 348; ++j) {
 		if (j == 80 || j == 113 || j == 160 || j == 213 || j == 271 || j == 333)
 			continue;
 		for (int i = 0; i < 15; ++i) {
-			ns3::NetDeviceContainer net_device_container;
-			net_device_container = csma.Install(
-					ns3::NodeContainer(
-							ns3::NodeContainer(terminal_sets[j].Get(i)),
-							csmaSwitches[j]));
-			switch_devices[j].Add(net_device_container.Get(1));
-			terminal_device_sets[j].Add(net_device_container.Get(0));
+			topology_helper.InstallCsmaLink(ns3::NodeContainer(terminal_sets[j].Get(i)), switch_devices[j], csmaSwitches[j], terminal_device_sets[j], 5000000, 2);
 		}// for
 	}// for
 
