@@ -21,7 +21,7 @@
 #include "TerminalSets.h"
 #include "WifiStaNodeSets.h"
 #include "WifiApNodes.h"
-#include "TerminalDeviceSets.h"
+//#include "TerminalDeviceSets.h"
 #include "ApDeviceSets.h"
 #include "DefaultWifiPhyHelper.h"
 #include "DefaultMobilityHelper.h"
@@ -29,6 +29,7 @@
 #include "SimpleNode.h"
 #include "TopologyHelper.h"
 #include <assert.h>
+#include "TerminalSet.h"
 
 //NS_LOG_COMPONENT_DEFINE("OnOffApplication");
 
@@ -49,7 +50,7 @@ int main(int argc, char** argv) {
 			"3F serversitu-mediacenterbunsitu-left-main");
 	CsmaSwitches csmaSwitches(350);
 
-	TerminalSets terminal_sets(350);
+	std::vector<TerminalSet> terminal_sets(350);
 
 	WifiStaNodeSets wifi_sta_node_sets(350);
 	WifiApNodes wifi_ap_nodes(350);
@@ -63,7 +64,7 @@ int main(int argc, char** argv) {
 	ns3::NetDeviceContainer switchDevicessigenobu;
 	ns3::NetDeviceContainer switchDevicestarumi;
 
-	TerminalDeviceSets terminal_device_sets(350);
+	//TerminalDeviceSets terminal_device_sets(350);
 	ApDeviceSets ap_device_sets(350);
 
 //wifi
@@ -124,8 +125,8 @@ int main(int argc, char** argv) {
 			continue;
 		for (int i = 0; i < 15; ++i) {
 			topology_helper.InstallCsmaLink(
-					ns3::NodeContainer(terminal_sets[j].Get(i)),
-					switch_devices[j], csmaSwitches[j], terminal_device_sets[j],
+					terminal_sets[j][i],
+					csmaSwitches[j], switch_devices[j],
 					5000000, 2);
 		}	// for
 	}	// for
@@ -1555,18 +1556,14 @@ int main(int argc, char** argv) {
 
 // Add internet stack to the terminals
 	ns3::InternetStackHelper internet;
-	internet.Install(internet_router);
+	//internet.Install(internet_router);
 
-	internet.Install(core_switch);
-	internet.Install(jyouhoku_switch);
+	//internet.Install(core_switch);
+	//internet.Install(jyouhoku_switch);
 	for (int i = 5; i <= 348; ++i) {
 		internet.Install(csmaSwitches[i].Get(0));
 	}
-	internet.Install(shigenobu_switch);
-
-	for (int i = 5; i <= 348; ++i) {
-		internet.Install(terminal_sets[i]);
-	}
+	//internet.Install(shigenobu_switch);
 
 	for (int i = 1; i <= 287; ++i) {
 		internet.Install(wifi_ap_nodes[i]);
@@ -1601,7 +1598,7 @@ int main(int argc, char** argv) {
 	for (int i = 5; i <= 348; ++i) {
 		if (i == 80 || i == 113 || i == 160 || i == 213 || i == 271 || i == 333)
 			continue;
-		p2p_interface_sets[i] = ipv4.Assign(terminal_device_sets[i]);
+		p2p_interface_sets[i] = ipv4.Assign(terminal_sets[i]);
 	}
 
 	std::vector<ns3::Ipv4InterfaceContainer> apinterface_sets(320);
@@ -1633,7 +1630,7 @@ int main(int argc, char** argv) {
 	apps.Stop(ns3::Seconds(10.0));
 	ns3::PacketSinkHelper sink("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	ns3::ApplicationContainer appsink = sink.Install(terminal_sets[5].Get(0));
+	ns3::ApplicationContainer appsink = sink.Install(terminal_sets[5][0]);
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 
@@ -1660,7 +1657,7 @@ int main(int argc, char** argv) {
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminal_sets[5].Get(1));
+	appsink = sink.Install(terminal_sets[5][1]);
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 //UDPecho
@@ -1686,7 +1683,7 @@ int main(int argc, char** argv) {
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminal_sets[5].Get(2));
+	appsink = sink.Install(terminal_sets[5][2]);
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 //UDPecho
@@ -1712,7 +1709,7 @@ int main(int argc, char** argv) {
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminal_sets[5].Get(3));
+	appsink = sink.Install(terminal_sets[5][3]);
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 //UDPecho
@@ -1738,7 +1735,7 @@ int main(int argc, char** argv) {
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminal_sets[5].Get(4));
+	appsink = sink.Install(terminal_sets[5][4]);
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 	//int port = 9;
@@ -1763,7 +1760,7 @@ int main(int argc, char** argv) {
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminal_sets[6].Get(0));
+	appsink = sink.Install(terminal_sets[6][0]);
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 //UDPecho
@@ -1789,7 +1786,7 @@ int main(int argc, char** argv) {
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminal_sets[6].Get(1));
+	appsink = sink.Install(terminal_sets[6][1]);
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 //UDPecho
@@ -1815,7 +1812,7 @@ int main(int argc, char** argv) {
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminal_sets[6].Get(2));
+	appsink = sink.Install(terminal_sets[6][2]);
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 //UDPecho
@@ -1841,7 +1838,7 @@ int main(int argc, char** argv) {
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminal_sets[6].Get(3));
+	appsink = sink.Install(terminal_sets[6][3]);
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 //UDPecho
@@ -1867,7 +1864,7 @@ int main(int argc, char** argv) {
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminal_sets[6].Get(4));
+	appsink = sink.Install(terminal_sets[6][4]);
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 

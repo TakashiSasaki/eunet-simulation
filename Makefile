@@ -1,11 +1,11 @@
 .PHONY: debug clean all main default sandbox
 
-CXXFLAGS=-v -Wall -I/usr/include/ns3.14.1 -O0 -L/usr/lib
+CXXFLAGS=-v -Wall -I/usr/include/ns3.14.1 -O0 -L/usr/lib -std=gnu++0x
 VPATH = eunet-simulation 
 
 default: main
 
-main: InternetRouter.o TopologyHelper.o Sandbox.o main.o
+main: InternetRouter.o TopologyHelper.o Sandbox.o main.o TerminalSet.o
 	g++ -o main $(CXXFLAGS)  \
 	/usr/lib/libns3.14.1-core.a  \
 	/usr/lib/libns3.14.1-csma.a  \
