@@ -26,7 +26,7 @@
 #include "DefaultWifiPhyHelper.h"
 #include "DefaultMobilityHelper.h"
 #include "WifiPhys.h"
-#include "InternetRouter.h"
+#include "SimpleNode.h"
 #include "TopologyHelper.h"
 #include <assert.h>
 
@@ -39,13 +39,13 @@ int main(int argc, char** argv) {
 	cmd.Parse(argc, argv);
 
 	TopologyHelper topology_helper;
-	InternetRouter internet_router("the most external router");
+	SimpleNode internet_router("the most external router");
 
-	InternetRouter csmaSwitchrouter("jouhoku--sigenobu--tarumi--motida");
-	InternetRouter csmaSwitch6506E(
+	SimpleNode csmaSwitchrouter("jouhoku--sigenobu--tarumi--motida");
+	SimpleNode csmaSwitch6506E(
 			"sougoujouhoumediacenter 2F network-kanrisitu-main");
-	InternetRouter csmaSwitchsigenobu("2F serversitu-mediacenterbunsitu-main");
-	InternetRouter csmaSwitchtarumi(
+	SimpleNode csmaSwitchsigenobu("2F serversitu-mediacenterbunsitu-main");
+	SimpleNode csmaSwitchtarumi(
 			"3F serversitu-mediacenterbunsitu-left-main");
 	CsmaSwitches csmaSwitches(350);
 

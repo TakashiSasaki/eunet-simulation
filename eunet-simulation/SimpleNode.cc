@@ -5,22 +5,22 @@
  *      Author: sasaki
  */
 
-#include "InternetRouter.h"
+#include "SimpleNode.h"
 
-InternetRouter::InternetRouter(const std::string& description_) :
+SimpleNode::SimpleNode(const std::string& description_) :
 		description(description_) {
 	this->internetrouter.Create(1);
 }
 
-InternetRouter::operator ns3::Ptr<ns3::Node>() const {
+SimpleNode::operator ns3::Ptr<ns3::Node>() const {
 	return this->internetrouter.Get(0);
 }
 
-InternetRouter::operator const ns3::NetDeviceContainer &() const {
+SimpleNode::operator const ns3::NetDeviceContainer &() const {
 	return this->netDeviceContainer;
 }
 
-InternetRouter::~InternetRouter() {
+SimpleNode::~SimpleNode() {
 	// TODO Auto-generated destructor stub
 }
 
