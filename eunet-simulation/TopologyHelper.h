@@ -21,11 +21,11 @@ public:
 			ns3::NetDeviceContainer& ndc1, const ns3::NodeContainer& nc2,
 			ns3::NetDeviceContainer& ndc2, const uint64_t bps,
 			const uint64_t ms);
-	void InstallCsmaLink(const InternetRouter& internet_router1, const ns3::NodeContainer& nc2,
-			ns3::NetDeviceContainer& ndc2, const uint64_t bps,
-			const uint64_t ms);
-	void InstallCsmaLink(const InternetRouter& internet_router1, const InternetRouter& nc2, const uint64_t bps,
-			const uint64_t ms);
+	void InstallCsmaLink(const InternetRouter& internet_router1,
+			const ns3::NodeContainer& nc2, ns3::NetDeviceContainer& ndc2,
+			const uint64_t bps, const uint64_t ms);
+	void InstallCsmaLink(const InternetRouter& internet_router1,
+			const InternetRouter& nc2, const uint64_t bps, const uint64_t ms);
 };
 
 #endif /* TOPOLOGYHELPER_H_ */

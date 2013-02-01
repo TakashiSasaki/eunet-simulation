@@ -37,14 +37,17 @@ void TopologyHelper::InstallCsmaLink(const ns3::NodeContainer& nc1,
 	ndc2.Add(csma_net_device.Get(1));
 } //InstallCsmaLink
 
-void TopologyHelper::InstallCsmaLink(const InternetRouter& n1, const InternetRouter& n2, const uint64_t bps, const uint64_t ms){
-	this->InstallCsmaLink((ns3::NodeContainer&) n1, (ns3::NetDeviceContainer&) n1,
-			(ns3::NodeContainer&) n2, (ns3::NetDeviceContainer&) n2,
-			bps, ms);
+void TopologyHelper::InstallCsmaLink(const InternetRouter& n1,
+		const InternetRouter& n2, const uint64_t bps, const uint64_t ms) {
+	this->InstallCsmaLink((ns3::NodeContainer&) n1,
+			(ns3::NetDeviceContainer&) n1, (ns3::NodeContainer&) n2,
+			(ns3::NetDeviceContainer&) n2, bps, ms);
 }
 
-void TopologyHelper::InstallCsmaLink(const InternetRouter& n1, const ns3::NodeContainer& nc2,
-		ns3::NetDeviceContainer& ndc2, const uint64_t bps, const uint64_t ms){
-	this->InstallCsmaLink((ns3::NodeContainer&) n1, (ns3::NetDeviceContainer&) n1, nc2, ndc2, bps, ms);
+void TopologyHelper::InstallCsmaLink(const InternetRouter& n1,
+		const ns3::NodeContainer& nc2, ns3::NetDeviceContainer& ndc2,
+		const uint64_t bps, const uint64_t ms) {
+	this->InstallCsmaLink((ns3::NodeContainer&) n1,
+			(ns3::NetDeviceContainer&) n1, nc2, ndc2, bps, ms);
 
 }

@@ -45,7 +45,8 @@ int main(int argc, char** argv) {
 	InternetRouter csmaSwitch6506E(
 			"sougoujouhoumediacenter 2F network-kanrisitu-main");
 	InternetRouter csmaSwitchsigenobu("2F serversitu-mediacenterbunsitu-main");
-	InternetRouter csmaSwitchtarumi("3F serversitu-mediacenterbunsitu-left-main");
+	InternetRouter csmaSwitchtarumi(
+			"3F serversitu-mediacenterbunsitu-left-main");
 	CsmaSwitches csmaSwitches(350);
 
 	TerminalSets terminal_sets(350);
@@ -114,8 +115,7 @@ int main(int argc, char** argv) {
 //channel define
 
 	for (int i; i < 1; ++i) {
-		topology_helper.InstallCsmaLink(
-				internet_router,csmaSwitchrouter,
+		topology_helper.InstallCsmaLink(internet_router, csmaSwitchrouter,
 				1000000000, 2);
 	}
 
@@ -131,66 +131,66 @@ int main(int argc, char** argv) {
 	}	// for
 
 //#channel define
-	topology_helper.InstallCsmaLink(csmaSwitchrouter,
-			csmaSwitchsigenobu, 22000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitchrouter,
-			csmaSwitchtarumi, 22000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitchrouter,
-			csmaSwitches[335], switch_devices[335], 22000000000, 2); //motida
-	topology_helper.InstallCsmaLink(csmaSwitchtarumi,
-			csmaSwitches[285], switch_devices[285], 22000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitchrouter,
-			csmaSwitch6506E, 20000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitch6506E,
-			csmaSwitches[9], switch_devices[9], 20000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitch6506E,
-			csmaSwitches[7], switch_devices[7], 20000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitch6506E,
-			csmaSwitches[80], switch_devices[80], 20000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitch6506E,
-			csmaSwitches[126], switch_devices[126], 20000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitch6506E,
-			csmaSwitches[161], switch_devices[161], 20000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitch6506E,
-			csmaSwitches[275], switch_devices[275], 20000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchrouter, csmaSwitchsigenobu,
+			22000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchrouter, csmaSwitchtarumi,
+			22000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchrouter, csmaSwitches[335],
+			switch_devices[335], 22000000000, 2); //motida
+	topology_helper.InstallCsmaLink(csmaSwitchtarumi, csmaSwitches[285],
+			switch_devices[285], 22000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchrouter, csmaSwitch6506E,
+			20000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, csmaSwitches[9],
+			switch_devices[9], 20000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, csmaSwitches[7],
+			switch_devices[7], 20000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, csmaSwitches[80],
+			switch_devices[80], 20000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, csmaSwitches[126],
+			switch_devices[126], 20000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, csmaSwitches[161],
+			switch_devices[161], 20000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, csmaSwitches[275],
+			switch_devices[275], 20000000000, 2);
 	topology_helper.InstallCsmaLink(csmaSwitches[5], switch_devices[5],
 			csmaSwitches[6], switch_devices[6], 16000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitch6506E,
-			csmaSwitches[40], switch_devices[40], 11000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitch6506E,
-			csmaSwitches[70], switch_devices[70], 11000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitch6506E,
-			csmaSwitches[141], switch_devices[141], 11000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitch6506E,
-			csmaSwitches[197], switch_devices[197], 11000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, csmaSwitches[40],
+			switch_devices[40], 11000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, csmaSwitches[70],
+			switch_devices[70], 11000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, csmaSwitches[141],
+			switch_devices[141], 11000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, csmaSwitches[197],
+			switch_devices[197], 11000000000, 2);
 
-	topology_helper.InstallCsmaLink(csmaSwitchsigenobu,
-			csmaSwitches[226], switch_devices[226], 8000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitchtarumi,
-			csmaSwitches[316], switch_devices[316], 8000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchsigenobu, csmaSwitches[226],
+			switch_devices[226], 8000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchtarumi, csmaSwitches[316],
+			switch_devices[316], 8000000000, 2);
 
-	topology_helper.InstallCsmaLink(csmaSwitch6506E,
-			csmaSwitches[5], switch_devices[5], 7000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitch6506E,
-			csmaSwitches[8], switch_devices[8], 7000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitch6506E,
-			csmaSwitches[113], switch_devices[113], 7000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitch6506E,
-			csmaSwitches[160], switch_devices[160], 7000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitch6506E,
-			csmaSwitches[213], switch_devices[213], 7000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitchsigenobu,
-			csmaSwitches[283], switch_devices[283], 7000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitchtarumi,
-			csmaSwitches[333], switch_devices[333], 7000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, csmaSwitches[5],
+			switch_devices[5], 7000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, csmaSwitches[8],
+			switch_devices[8], 7000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, csmaSwitches[113],
+			switch_devices[113], 7000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, csmaSwitches[160],
+			switch_devices[160], 7000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, csmaSwitches[213],
+			switch_devices[213], 7000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchsigenobu, csmaSwitches[283],
+			switch_devices[283], 7000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchtarumi, csmaSwitches[333],
+			switch_devices[333], 7000000000, 2);
 
 	topology_helper.InstallCsmaLink(csmaSwitches[334], switch_devices[334],
 			csmaSwitches[335], switch_devices[335], 6000000000, 2);
 
-	topology_helper.InstallCsmaLink(csmaSwitchsigenobu,
-			csmaSwitches[266], switch_devices[266], 4000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitchsigenobu,
-			csmaSwitches[276], switch_devices[276], 4000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchsigenobu, csmaSwitches[266],
+			switch_devices[266], 4000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchsigenobu, csmaSwitches[276],
+			switch_devices[276], 4000000000, 2);
 
 	topology_helper.InstallCsmaLink(csmaSwitches[81], switch_devices[81],
 			wifi_ap_nodes[1], ap_device_sets[1], 2000000000, 2);
@@ -854,8 +854,8 @@ int main(int argc, char** argv) {
 	topology_helper.InstallCsmaLink(csmaSwitches[9], switch_devices[9],
 			wifi_ap_nodes[39], ap_device_sets[39], 2000000000, 2);
 
-	topology_helper.InstallCsmaLink(csmaSwitch6506E,
-			wifi_ap_nodes[50], ap_device_sets[50], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, wifi_ap_nodes[50],
+			ap_device_sets[50], 2000000000, 2);
 
 	topology_helper.InstallCsmaLink(csmaSwitches[50], switch_devices[50],
 			wifi_ap_nodes[51], ap_device_sets[51], 2000000000, 2);
@@ -906,8 +906,8 @@ int main(int argc, char** argv) {
 	topology_helper.InstallCsmaLink(csmaSwitches[70], switch_devices[70],
 			wifi_ap_nodes[78], ap_device_sets[78], 2000000000, 2);
 
-	topology_helper.InstallCsmaLink(csmaSwitch6506E,
-			wifi_ap_nodes[79], ap_device_sets[79], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, wifi_ap_nodes[79],
+			ap_device_sets[79], 2000000000, 2);
 	topology_helper.InstallCsmaLink(csmaSwitches[80], switch_devices[80],
 			wifi_ap_nodes[81], ap_device_sets[81], 2000000000, 2);
 	topology_helper.InstallCsmaLink(csmaSwitches[81], switch_devices[81],
@@ -920,15 +920,15 @@ int main(int argc, char** argv) {
 	topology_helper.InstallCsmaLink(csmaSwitches[80], switch_devices[80],
 			wifi_ap_nodes[99], ap_device_sets[99], 2000000000, 2);
 
-	topology_helper.InstallCsmaLink(csmaSwitch6506E,
-			csmaSwitches[114], switch_devices[114], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, csmaSwitches[114],
+			switch_devices[114], 2000000000, 2);
 
-	topology_helper.InstallCsmaLink(csmaSwitch6506E,
-			csmaSwitches[115], switch_devices[115], 2000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitch6506E,
-			csmaSwitches[116], switch_devices[116], 2000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitch6506E,
-			csmaSwitches[123], switch_devices[123], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, csmaSwitches[115],
+			switch_devices[115], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, csmaSwitches[116],
+			switch_devices[116], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, csmaSwitches[123],
+			switch_devices[123], 2000000000, 2);
 	topology_helper.InstallCsmaLink(csmaSwitches[126], switch_devices[126],
 			wifi_ap_nodes[127], ap_device_sets[127], 2000000000, 2);
 	topology_helper.InstallCsmaLink(csmaSwitches[126], switch_devices[126],
@@ -985,10 +985,10 @@ int main(int argc, char** argv) {
 			wifi_ap_nodes[181], ap_device_sets[181], 2000000000, 2);
 	topology_helper.InstallCsmaLink(csmaSwitches[161], switch_devices[161],
 			wifi_ap_nodes[183], ap_device_sets[183], 2000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitch6506E,
-			csmaSwitches[193], switch_devices[193], 2000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitch6506E,
-			csmaSwitches[200], switch_devices[200], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, csmaSwitches[193],
+			switch_devices[193], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitch6506E, csmaSwitches[200],
+			switch_devices[200], 2000000000, 2);
 	topology_helper.InstallCsmaLink(csmaSwitches[200], switch_devices[200],
 			wifi_ap_nodes[201], ap_device_sets[201], 2000000000, 2);
 	topology_helper.InstallCsmaLink(csmaSwitches[201], switch_devices[201],
@@ -1007,14 +1007,14 @@ int main(int argc, char** argv) {
 			wifi_ap_nodes[210], ap_device_sets[210], 2000000000, 2);
 	topology_helper.InstallCsmaLink(csmaSwitches[208], switch_devices[208],
 			wifi_ap_nodes[211], ap_device_sets[211], 2000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitchsigenobu,
-			csmaSwitches[214], switch_devices[214], 2000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitchsigenobu,
-			csmaSwitches[215], switch_devices[215], 2000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitchsigenobu,
-			csmaSwitches[217], switch_devices[217], 2000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitchsigenobu,
-			csmaSwitches[220], switch_devices[220], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchsigenobu, csmaSwitches[214],
+			switch_devices[214], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchsigenobu, csmaSwitches[215],
+			switch_devices[215], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchsigenobu, csmaSwitches[217],
+			switch_devices[217], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchsigenobu, csmaSwitches[220],
+			switch_devices[220], 2000000000, 2);
 	topology_helper.InstallCsmaLink(csmaSwitches[226], switch_devices[226],
 			wifi_ap_nodes[227], ap_device_sets[227], 2000000000, 2);
 	topology_helper.InstallCsmaLink(csmaSwitches[227], switch_devices[227],
@@ -1038,23 +1038,23 @@ int main(int argc, char** argv) {
 	topology_helper.InstallCsmaLink(csmaSwitches[226], switch_devices[226],
 			wifi_ap_nodes[260], ap_device_sets[260], 2000000000, 2);
 
-	topology_helper.InstallCsmaLink(csmaSwitchsigenobu,
-			csmaSwitches[264], switch_devices[264], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchsigenobu, csmaSwitches[264],
+			switch_devices[264], 2000000000, 2);
 
-	topology_helper.InstallCsmaLink(csmaSwitchtarumi,
-			csmaSwitches[287], switch_devices[287], 2000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitchtarumi,
-			csmaSwitches[288], switch_devices[288], 2000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitchtarumi,
-			csmaSwitches[290], switch_devices[290], 2000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitchtarumi,
-			csmaSwitches[291], switch_devices[291], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchtarumi, csmaSwitches[287],
+			switch_devices[287], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchtarumi, csmaSwitches[288],
+			switch_devices[288], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchtarumi, csmaSwitches[290],
+			switch_devices[290], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchtarumi, csmaSwitches[291],
+			switch_devices[291], 2000000000, 2);
 
 	topology_helper.InstallCsmaLink(csmaSwitches[291], switch_devices[291],
 			wifi_ap_nodes[294], ap_device_sets[294], 2000000000, 2);
 
-	topology_helper.InstallCsmaLink(csmaSwitchtarumi,
-			csmaSwitches[295], switch_devices[295], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchtarumi, csmaSwitches[295],
+			switch_devices[295], 2000000000, 2);
 
 	topology_helper.InstallCsmaLink(csmaSwitches[295], switch_devices[295],
 			wifi_ap_nodes[296], ap_device_sets[296], 2000000000, 2);
@@ -1063,8 +1063,8 @@ int main(int argc, char** argv) {
 	topology_helper.InstallCsmaLink(csmaSwitches[295], switch_devices[295],
 			wifi_ap_nodes[301], ap_device_sets[301], 2000000000, 2);
 
-	topology_helper.InstallCsmaLink(csmaSwitchtarumi,
-			csmaSwitches[304], switch_devices[304], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchtarumi, csmaSwitches[304],
+			switch_devices[304], 2000000000, 2);
 
 	topology_helper.InstallCsmaLink(csmaSwitches[304], switch_devices[304],
 			wifi_ap_nodes[305], ap_device_sets[305], 2000000000, 2);
@@ -1077,10 +1077,10 @@ int main(int argc, char** argv) {
 	topology_helper.InstallCsmaLink(csmaSwitches[304], switch_devices[304],
 			wifi_ap_nodes[310], ap_device_sets[310], 2000000000, 2);
 
-	topology_helper.InstallCsmaLink(csmaSwitchtarumi,
-			csmaSwitches[311], switch_devices[311], 2000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitchtarumi,
-			csmaSwitches[312], switch_devices[312], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchtarumi, csmaSwitches[311],
+			switch_devices[311], 2000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchtarumi, csmaSwitches[312],
+			switch_devices[312], 2000000000, 2);
 
 	topology_helper.InstallCsmaLink(csmaSwitches[312], switch_devices[312],
 			wifi_ap_nodes[313], ap_device_sets[313], 2000000000, 2);
@@ -1430,8 +1430,8 @@ int main(int argc, char** argv) {
 			csmaSwitches[281], switch_devices[281], 1000000000, 2);
 	topology_helper.InstallCsmaLink(csmaSwitches[276], switch_devices[276],
 			csmaSwitches[282], switch_devices[282], 1000000000, 2);
-	topology_helper.InstallCsmaLink(csmaSwitchtarumi,
-			csmaSwitches[286], switch_devices[286], 1000000000, 2);
+	topology_helper.InstallCsmaLink(csmaSwitchtarumi, csmaSwitches[286],
+			switch_devices[286], 1000000000, 2);
 	topology_helper.InstallCsmaLink(csmaSwitches[288], switch_devices[288],
 			csmaSwitches[289], switch_devices[289], 1000000000, 2);
 	topology_helper.InstallCsmaLink(csmaSwitches[291], switch_devices[291],

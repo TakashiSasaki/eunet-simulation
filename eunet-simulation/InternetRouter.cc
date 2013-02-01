@@ -8,7 +8,7 @@
 #include "InternetRouter.h"
 
 InternetRouter::InternetRouter(const std::string& description_) :
-description(description_){
+		description(description_) {
 	this->internetrouter.Create(1);
 }
 
