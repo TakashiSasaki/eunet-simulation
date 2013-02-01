@@ -17,16 +17,18 @@
 
 //internet-edge
 class SimpleNode : public ns3::Object{
+public:
 	ns3::NodeContainer internetrouter;
 	ns3::NetDeviceContainer netDeviceContainer;
 	const std::string description;
 	static ns3::InternetStackHelper internetStackHelper;
 
 public:
-	SimpleNode(const std::string& description_);
+	SimpleNode(const std::string& description_= "simple_node");
 	virtual ~SimpleNode();
-	operator ns3::Ptr<ns3::Node>() const;
+	operator const ns3::Ptr<ns3::Node> () const;
 	operator const ns3::NetDeviceContainer&() const;
+	operator ns3::NetDeviceContainer&() ;
 	//ns3::Ptr<ns3::Node> get() const;
 };
 

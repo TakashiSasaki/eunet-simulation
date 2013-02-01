@@ -20,11 +20,6 @@ const SimpleNode& TerminalSet::operator[](const int index) const {
 	return *simpleNodes[index];
 }
 
-TerminalSet::operator const ns3::NetDeviceContainer() const {
-	ns3::NetDeviceContainer net_device_container;
-	for (unsigned int i = 0; i < net_device_container.GetN(); ++i) {
-		net_device_container.Add(
-				simpleNodes[i]->operator const ns3::NetDeviceContainer &());
-	}
-	return net_device_container;
+SimpleNode& TerminalSet::operator[](const int index){
+	return *simpleNodes[index];
 }

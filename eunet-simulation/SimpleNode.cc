@@ -5,6 +5,7 @@
  *      Author: sasaki
  */
 
+#include <assert.h>
 #include <ns3/internet-stack-helper.h>
 #include "SimpleNode.h"
 
@@ -12,15 +13,28 @@ ns3::InternetStackHelper SimpleNode::internetStackHelper;
 
 SimpleNode::SimpleNode(const std::string& description_) :
 		description(description_) {
+	assert(this->internetrouter.GetN()==0);
 	this->internetrouter.Create(1);
-	internetStackHelper.Install(this->operator ns3::Ptr<ns3::Node>());
+	assert(this->internetrouter.GetN()==1);
+	internetStackHelper.Install(this->operator const ns3::Ptr<ns3::Node>());
+	assert(this->internetrouter.GetN()==1);
 }
 
-SimpleNode::operator ns3::Ptr<ns3::Node>() const {
+SimpleNode::operator const ns3::Ptr<ns3::Node> () const {
+	std::cerr << "node" << internetrouter.GetN();
+	assert(this->internetrouter.GetN()==1);
 	return this->internetrouter.Get(0);
 }
 
 SimpleNode::operator const ns3::NetDeviceContainer &() const {
+	std::cerr << "ndc" << internetrouter.GetN();
+	assert(this->internetrouter.GetN()==1);
+	return this->netDeviceContainer;
+}
+
+SimpleNode::operator ns3::NetDeviceContainer &()  {
+	std::cerr << "ndc" << internetrouter.GetN();
+	assert(this->internetrouter.GetN()==1);
 	return this->netDeviceContainer;
 }
 

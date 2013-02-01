@@ -25,11 +25,10 @@ public:
 	TerminalSet(const int number_of_terminals = 15,
 			const std::string& description_ = "terminal_set");
 	const SimpleNode& operator[](const int index) const;
-	operator const ns3::NetDeviceContainer() const;
-
+	SimpleNode& operator[](const int index);
+	size_t size() const {return simpleNodes.size();}
 	virtual ~TerminalSet() {
 	}
-}
-;
+};
 
 #endif /* TERMINALSET_H_ */
