@@ -35,8 +35,7 @@ void TopologyHelper::InstallCsmaLink(const ns3::Ptr<ns3::Node>& pn1,
 } //InstallCsmaLink
 
 void TopologyHelper::InstallCsmaLink(SimpleNode& simple_node_1,
-		SimpleNode& simple_node_2, const uint64_t bps,
-		const uint64_t ms) {
+		SimpleNode& simple_node_2, const uint64_t bps, const uint64_t ms) {
 	this->InstallCsmaLink(simple_node_1,
 			(ns3::NetDeviceContainer&) simple_node_1, simple_node_2,
 			(ns3::NetDeviceContainer&) simple_node_2, bps, ms);
@@ -48,4 +47,12 @@ void TopologyHelper::InstallCsmaLink(const SimpleNode& simple_node_1,
 	this->InstallCsmaLink(simple_node_1,
 			(ns3::NetDeviceContainer&) simple_node_1, pn2, ndc2, bps, ms);
 
+}
+
+void TopologyHelper::InstallCsmaLink(SimpleNode& upstream_switch,
+		WifiApNode& wifi_ap_node, const uint64_t bps, const uint64_t ms) {
+	this->InstallCsmaLink(upstream_switch.operator const ns3::Ptr<ns3::Node>(),
+			upstream_switch.operator ns3::NetDeviceContainer &(),
+			wifi_ap_node.operator const ns3::Ptr<ns3::Node>(),
+			wifi_ap_node.getWiredNetDeviceContainer(), bps, ms);
 }

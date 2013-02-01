@@ -11,6 +11,7 @@
 #include <ns3/net-device-container.h>
 #include <ns3/csma-helper.h>
 #include <ns3/node-container.h>
+#include "WifiApNode.h"
 #include "SimpleNode.h"
 
 class TopologyHelper {
@@ -30,6 +31,14 @@ public:
 			const uint64_t bps, const uint64_t ms);
 	void InstallCsmaLink(SimpleNode& simple_node_1,
 			SimpleNode& simple_node_2, const uint64_t bps, const uint64_t ms);
+	void InstallCsmaLink(SimpleNode& upstream_switch,
+			WifiApNode& wifi_ap_node, const uint64_t bps, const uint64_t ms);
+
+//	void InstallWifiLink(WifiApNode& wifi_ap_node, WifiStaNode& wifi_sta_node){
+//		DefaultWifiPhyHelper default_wifi_phy_helper;
+//		wifi_ap_node.install(default_wifi_phy_helper);
+//		wifi_sta_node.install(default_wifi_phy_helper);
+//	}
 };
 
 #endif /* TOPOLOGYHELPER_H_ */

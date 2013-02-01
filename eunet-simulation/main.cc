@@ -30,6 +30,7 @@
 #include "TopologyHelper.h"
 #include <assert.h>
 #include "TerminalSet.h"
+#include "WifiStaNodeSet.h"
 
 //NS_LOG_COMPONENT_DEFINE("OnOffApplication");
 
@@ -53,9 +54,10 @@ int main(int argc, char** argv) {
 
 	std::vector<TerminalSet> terminal_sets(350);
 
-	WifiStaNodeSets wifi_sta_node_sets(350);
+	//WifiStaNodeSets wifi_sta_node_sets(350);
+	std::vector<WifiStaNodeSet> wifi_sta_node_sets(350);
 	//WifiApNodes wifi_ap_nodes(350);
-	std::vector<SimpleNode> wifi_ap_nodes(350);
+	std::vector<WifiApNode> wifi_ap_nodes(350);
 
 // Create the csma links, from each terminal to the switch
 
@@ -70,49 +72,57 @@ int main(int argc, char** argv) {
 	//ApDeviceSets ap_device_sets(350);
 
 //wifi
-	ns3::WifiHelper Wifi;
-	Wifi = ns3::WifiHelper::Default();
-	Wifi.SetRemoteStationManager("ns3::ArfWifiManager");
+	//ns3::WifiHelper Wifi;
+	//Wifi = ns3::WifiHelper::Default();
+	//Wifi.SetRemoteStationManager("ns3::ArfWifiManager");
 
 //wifi channel
-	WifiPhys wifiPhys(315);
+	//WifiPhys wifiPhys(315);
 
 //stanodes mac
-	ns3::NqosWifiMacHelper mac;
-	mac = ns3::NqosWifiMacHelper::Default();
+	//ns3::NqosWifiMacHelper mac;
+	//mac = ns3::NqosWifiMacHelper::Default();
 	//mac = ns.wifi.NqosWifiMacHelper.Default()
-	ns3::Ssid ssid;
-	ssid = ns3::Ssid("wifi-default");
+	//ns3::Ssid ssid;
+	//ssid = ns3::Ssid("wifi-default");
 	//ssid = ns.wifi.Ssid("wifi-default")
-	mac.SetType("ns3::StaWifiMac", "Ssid", ns3::SsidValue(ssid),
-			"ActiveProbing", ns3::BooleanValue(false));
+	//mac.SetType("ns3::StaWifiMac", "Ssid", ns3::SsidValue(ssid),
+	//		"ActiveProbing", ns3::BooleanValue(false));
 
-	std::vector<ns3::NetDeviceContainer> staDeviceSets(316);
+
+	//std::vector<ns3::NetDeviceContainer> staDeviceSets(316);
 	for (int i = 1; i <= 315; ++i) {
 		if (i == 298 || i == 299 || i == 306 || i == 315)
 			continue;
-		staDeviceSets[i] = Wifi.Install(wifiPhys[i], mac,
-				wifi_sta_node_sets[i]);
+		DefaultWifiPhyHelper* p_default_wifi_phy_helper
+		= new DefaultWifiPhyHelper();
+		wifi_sta_node_sets[i].install(*p_default_wifi_phy_helper);
+		wifi_ap_nodes[i].install(*p_default_wifi_phy_helper);
+		delete p_default_wifi_phy_helper;
+		//staDeviceSets[i] = Wifi.Install(wifiPhys[i], mac,
+		//		wifi_sta_node_sets[i]);
 	}	//for
 
 // apnodes mac
-	mac.SetType("ns3::ApWifiMac", "Ssid", ns3::SsidValue(ssid),
-			"BeaconGeneration", ns3::BooleanValue(true), "BeaconInterval",
-			ns3::TimeValue(ns3::Seconds(2.5)));
+	//mac.SetType("ns3::ApWifiMac", "Ssid", ns3::SsidValue(ssid),
+	//		"BeaconGeneration", ns3::BooleanValue(true), "BeaconInterval",
+	//		ns3::TimeValue(ns3::Seconds(2.5)));
 
-	std::vector<ns3::NetDeviceContainer> apDeviceSets(316);
-	for (int i = 1; i <= 315; ++i) {
-		if (i == 298 || i == 299 || i == 306 || i == 315)
-			continue;
-		apDeviceSets[i] = Wifi.Install(wifiPhys[i], mac, wifi_ap_nodes[i]);
-	}	//for
+	//std::vector<ns3::NetDeviceContainer> apDeviceSets(316);
+	//for (int i = 1; i <= 315; ++i) {
+	//	if (i == 298 || i == 299 || i == 306 || i == 315)
+	//		continue;
+	//	apDeviceSets[i] = Wifi.Install(wifiPhys[i], mac, wifi_ap_nodes[i]);
+	//}	//for
 
 //wifi area
 	std::vector<DefaultMobilityHelper> mobilities(316);
 	for (int i = 1; i <= 315; ++i) {
 		if (i == 298 || i == 299 || i == 306 || i == 315)
 			continue;
-		mobilities[i].Install(wifi_sta_node_sets[i]);
+		DefaultMobilityHelper default_mobility_helper;
+		wifi_sta_node_sets[i].install(default_mobility_helper);
+		//mobilities[i].Install(wifi_sta_node_sets[i]);
 	}
 
 //channel define
@@ -1540,56 +1550,57 @@ int main(int argc, char** argv) {
 	for (int i = 1; i <= 315; ++i) {
 		if (i == 298 || i == 299 || i == 306 || i == 315)
 			continue;
-		ns3::Ptr<ns3::Node> p_node = wifi_ap_nodes[i];
-		ns3::Ptr<ns3::BridgeNetDevice> p_bridge_net_device = ns3::CreateObject<
-				ns3::BridgeNetDevice>();
-		p_node->AddDevice(p_bridge_net_device);
-
-		for (unsigned int portIter = 0; portIter < wifi_ap_nodes[i].operator const ns3::NetDeviceContainer &().GetN();
-				++portIter) {
-			p_bridge_net_device->AddBridgePort(wifi_ap_nodes[i].operator const ns3::NetDeviceContainer &().Get(portIter));
-		}
-
-		for (unsigned int portIter = 0; portIter < apDeviceSets[i].GetN();
-				++portIter) {
-			p_bridge_net_device->AddBridgePort(apDeviceSets[i].Get(portIter));
-		}
+		wifi_ap_nodes[i].installBridgeDevice();
+//		ns3::Ptr<ns3::Node> p_node = wifi_ap_nodes[i];
+//		ns3::Ptr<ns3::BridgeNetDevice> p_bridge_net_device = ns3::CreateObject<
+//				ns3::BridgeNetDevice>();
+//		p_node->AddDevice(p_bridge_net_device);
+//
+//		for (unsigned int portIter = 0; portIter < wifi_ap_nodes[i].operator const ns3::NetDeviceContainer &().GetN();
+//				++portIter) {
+//			p_bridge_net_device->AddBridgePort(wifi_ap_nodes[i].operator const ns3::NetDeviceContainer &().Get(portIter));
+//		}
+//
+//		for (unsigned int portIter = 0; portIter < apDeviceSets[i].GetN();
+//				++portIter) {
+//			p_bridge_net_device->AddBridgePort(apDeviceSets[i].Get(portIter));
+//		}
 	}	//for
 
 // Add internet stack to the terminals
-	ns3::InternetStackHelper internet;
+	//ns3::InternetStackHelper internet;
 	//internet.Install(internet_router);
 
 	//internet.Install(core_switch);
 	//internet.Install(jyouhoku_switch);
-	for (int i = 5; i <= 348; ++i) {
-		internet.Install(csmaSwitches[i]);
-	}
+//	for (int i = 5; i <= 348; ++i) {
+//		internet.Install(csmaSwitches[i]);
+//	}
 	//internet.Install(shigenobu_switch);
 
-	for (int i = 1; i <= 287; ++i) {
-		internet.Install(wifi_ap_nodes[i]);
-	}
+//	for (int i = 1; i <= 287; ++i) {
+//		internet.Install(wifi_ap_nodes[i]);
+//	}
 
-	for (int i = 300; i <= 305; ++i) {
-		internet.Install(wifi_ap_nodes[i]);
-	}
+//	for (int i = 300; i <= 305; ++i) {
+//		internet.Install(wifi_ap_nodes[i]);
+//	}
 
-	for (int i = 307; i <= 314; ++i) {
-		internet.Install(wifi_ap_nodes[i]);
-	}
+//	for (int i = 307; i <= 314; ++i) {
+//		internet.Install(wifi_ap_nodes[i]);
+//	}
 
-	for (int i = 1; i <= 299; ++i) {
-		internet.Install(wifi_sta_node_sets[i]);
-	}
+	//for (int i = 1; i <= 299; ++i) {
+	//	internet.Install(wifi_sta_node_sets[i]);
+	//}
 
-	for (int i = 300; i <= 305; ++i) {
-		internet.Install(wifi_sta_node_sets[i]);
-	}
+	//for (int i = 300; i <= 305; ++i) {
+	//	internet.Install(wifi_sta_node_sets[i]);
+	//}
 
-	for (int i = 307; i <= 314; ++i) {
-		internet.Install(wifi_sta_node_sets[i]);
-	}
+	//for (int i = 307; i <= 314; ++i) {
+	//	internet.Install(wifi_sta_node_sets[i]);
+	//}
 
 // We've got the "hardware" in place.  Now we need to add IP addresses.
 //
@@ -1605,11 +1616,12 @@ int main(int argc, char** argv) {
 		}
 	}
 
-	std::vector<ns3::Ipv4InterfaceContainer> apinterface_sets(320);
+	//std::vector<ns3::Ipv4InterfaceContainer> apinterface_sets(320);
 	for (int i = 1; i <= 315; ++i) {
 		if (i == 298 || i == 299 || i == 306 || i == 315)
 			continue;
-		apinterface_sets[i] = ipv4.Assign(staDeviceSets[i]);
+		wifi_sta_node_sets[i].install(ipv4);
+		//apinterface_sets[i] = ipv4.Assign(staDeviceSets[i]);
 	}
 
 	int port = 9;
