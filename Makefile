@@ -5,7 +5,7 @@ VPATH = eunet-simulation
 
 default: main
 
-main: InternetRouter.o CoreSwitch.o TopologyHelper.o Sandbox.o main.o
+main: InternetRouter.o TopologyHelper.o Sandbox.o main.o
 	g++ -o main $(CXXFLAGS)  \
 	/usr/lib/libns3.14.1-core.a  \
 	/usr/lib/libns3.14.1-csma.a  \

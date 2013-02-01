@@ -16,8 +16,9 @@
 class InternetRouter {
 	ns3::NodeContainer internetrouter;
 	ns3::NetDeviceContainer netDeviceContainer;
+	const std::string description;
 public:
-	InternetRouter();
+	InternetRouter(const std::string& description_);
 	virtual ~InternetRouter();
 	operator ns3::Ptr<ns3::Node>() const;
 	operator const ns3::NetDeviceContainer&() const;
