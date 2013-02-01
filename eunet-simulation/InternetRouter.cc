@@ -11,6 +11,10 @@ InternetRouter::InternetRouter() {
 	this->internetrouter.Create(1);
 }
 
+InternetRouter::operator ns3::Ptr<ns3::Node>(){
+	return this->internetrouter.Get(0);
+}
+
 ns3::Ptr<ns3::Node> InternetRouter::get() const {
 	return this->internetrouter.Get(0);
 }

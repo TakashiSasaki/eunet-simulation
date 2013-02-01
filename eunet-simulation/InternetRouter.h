@@ -17,7 +17,8 @@ class InternetRouter {
 public:
 	InternetRouter();
 	virtual ~InternetRouter();
-	ns3::Ptr<ns3::Node> get() const;
+	operator ns3::Ptr<ns3::Node>() const;
+	//ns3::Ptr<ns3::Node> get() const;
 };
 
 #endif /* INTERNETROUTER_H_ */

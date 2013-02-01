@@ -117,7 +117,7 @@ int main(int argc, char** argv) {
 
 	for (int i; i < 1; ++i) {
 		topology_helper.InstallCsmaLink(
-				ns3::NodeContainer(internet_router.get()),
+				ns3::NodeContainer(internet_router),
 				internetrouterdevices, csmaSwitchrouter, switchDevicesrouter,
 				1000000000, 2);
 	}
@@ -1558,7 +1558,7 @@ int main(int argc, char** argv) {
 
 // Add internet stack to the terminals
 	ns3::InternetStackHelper internet;
-	internet.Install(internet_router.get());
+	internet.Install(internet_router);
 
 	internet.Install(csmaSwitchrouter.get());
 	internet.Install(csmaSwitch6506E.get());
@@ -1631,7 +1631,7 @@ int main(int argc, char** argv) {
 			ns3::AddressValue(
 					ns3::InetSocketAddress(p2p_interface_sets[5].GetAddress(0),
 							port)));
-	ns3::ApplicationContainer apps = onoff1.Install(internet_router.get());
+	ns3::ApplicationContainer apps = onoff1.Install(internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
 	ns3::PacketSinkHelper sink("ns3::UdpSocketFactory",
@@ -1658,7 +1658,7 @@ int main(int argc, char** argv) {
 			ns3::AddressValue(
 					ns3::InetSocketAddress(p2p_interface_sets[5].GetAddress(1),
 							port)));
-	apps = onoff2.Install(internet_router.get());
+	apps = onoff2.Install(internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
@@ -1684,7 +1684,7 @@ int main(int argc, char** argv) {
 			ns3::AddressValue(
 					ns3::InetSocketAddress(p2p_interface_sets[5].GetAddress(2),
 							port)));
-	apps = onoff3.Install(internet_router.get());
+	apps = onoff3.Install(internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
@@ -1710,7 +1710,7 @@ int main(int argc, char** argv) {
 			ns3::AddressValue(
 					ns3::InetSocketAddress(p2p_interface_sets[5].GetAddress(3),
 							port)));
-	apps = onoff4.Install(internet_router.get());
+	apps = onoff4.Install(internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
@@ -1736,7 +1736,7 @@ int main(int argc, char** argv) {
 			ns3::AddressValue(
 					ns3::InetSocketAddress(p2p_interface_sets[5].GetAddress(4),
 							port)));
-	apps = onoff5.Install(internet_router.get());
+	apps = onoff5.Install(internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
@@ -1761,7 +1761,7 @@ int main(int argc, char** argv) {
 			ns3::AddressValue(
 					ns3::InetSocketAddress(p2p_interface_sets[6].GetAddress(0),
 							port)));
-	apps = onoff6.Install(internet_router.get());
+	apps = onoff6.Install(internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
@@ -1787,7 +1787,7 @@ int main(int argc, char** argv) {
 			ns3::AddressValue(
 					ns3::InetSocketAddress(p2p_interface_sets[6].GetAddress(1),
 							port)));
-	apps = onoff7.Install(internet_router.get());
+	apps = onoff7.Install(internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
@@ -1813,7 +1813,7 @@ int main(int argc, char** argv) {
 			ns3::AddressValue(
 					ns3::InetSocketAddress(p2p_interface_sets[6].GetAddress(2),
 							port)));
-	apps = onoff8.Install(internet_router.get());
+	apps = onoff8.Install(internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
@@ -1839,7 +1839,7 @@ int main(int argc, char** argv) {
 			ns3::AddressValue(
 					ns3::InetSocketAddress(p2p_interface_sets[6].GetAddress(3),
 							port)));
-	apps = onoff9.Install(internet_router.get());
+	apps = onoff9.Install(internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
@@ -1865,7 +1865,7 @@ int main(int argc, char** argv) {
 			ns3::AddressValue(
 					ns3::InetSocketAddress(p2p_interface_sets[6].GetAddress(4),
 							port)));
-	apps = onoff10.Install(internet_router.get());
+	apps = onoff10.Install(internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
