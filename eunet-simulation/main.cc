@@ -29,6 +29,7 @@
 #include "InternetRouter.h"
 #include "CoreSwitch.h"
 #include "TopologyHelper.h"
+#include <assert.h>
 
 //NS_LOG_COMPONENT_DEFINE("OnOffApplication");
 
@@ -817,7 +818,8 @@ int main(int argc, char** argv) {
 
 	{
 	ns3::Ptr<ns3::Node> switchNoderouter = csmaSwitchrouter.get();
-	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevicerouter = ns3::Create<
+	assert(switchNoderouter->GetNDevices()>=0);
+	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevicerouter = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	switchNoderouter->AddDevice(bridgeDevicerouter);
 

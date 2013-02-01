@@ -1,8 +1,11 @@
+.PHONY: debug clean all main default sandbox
+
 CXXFLAGS=-v -Wall -I/usr/include/ns3.14.1 -O0 -L/usr/lib
+VPATH = eunet-simulation 
 
 default: main
 
-main: InternetRouter.o CoreSwitch.o TopologyHelper.o main.o
+main: InternetRouter.o CoreSwitch.o TopologyHelper.o Sandbox.o main.o
 	g++ -o main $(CXXFLAGS)  \
 	/usr/lib/libns3.14.1-core.a  \
 	/usr/lib/libns3.14.1-csma.a  \
@@ -20,6 +23,14 @@ clean:
 
 hello: hello.o
 	g++ -o hello $<
+
+debug-sandbox:
+	(ulimit -m 1000000)
+	(cd ..; ./waf --run sandbox --command-template="gdb --args %s -ex run")
+	
+run-sandbox:
+	(ulimit -m 1000000)
+	(cd ..; ./waf --run sandbox)
 
 debug:
 	(ulimit -m 1000000)

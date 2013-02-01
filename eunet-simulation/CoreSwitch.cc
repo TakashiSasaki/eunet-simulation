@@ -13,7 +13,7 @@ CoreSwitch::CoreSwitch(const std::string& description_) :
 }
 
 ns3::Ptr<ns3::Node> CoreSwitch::get() const {
-	return nodeContainer.Get(1);
+	return nodeContainer.Get(0);
 }
 
 CoreSwitch::operator const ns3::NodeContainer&() const {
