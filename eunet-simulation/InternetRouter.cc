@@ -11,12 +11,12 @@ InternetRouter::InternetRouter() {
 	this->internetrouter.Create(1);
 }
 
-InternetRouter::operator ns3::Ptr<ns3::Node>(){
+InternetRouter::operator ns3::Ptr<ns3::Node>() const {
 	return this->internetrouter.Get(0);
 }
 
-ns3::Ptr<ns3::Node> InternetRouter::get() const {
-	return this->internetrouter.Get(0);
+InternetRouter::operator const ns3::NetDeviceContainer &() const {
+	return this->netDeviceContainer;
 }
 
 InternetRouter::~InternetRouter() {

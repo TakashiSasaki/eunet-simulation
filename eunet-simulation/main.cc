@@ -56,7 +56,6 @@ int main(int argc, char** argv) {
 
 // Create the csma links, from each terminal to the switch
 
-	ns3::NetDeviceContainer internetrouterdevices;
 	ns3::NetDeviceContainer switchDevicesrouter;
 	ns3::NetDeviceContainer switchDevices6506E;
 	SwitchDevices switch_devices(350);
@@ -118,7 +117,7 @@ int main(int argc, char** argv) {
 	for (int i; i < 1; ++i) {
 		topology_helper.InstallCsmaLink(
 				ns3::NodeContainer(internet_router),
-				internetrouterdevices, csmaSwitchrouter, switchDevicesrouter,
+				(ns3::NetDeviceContainer&)internet_router, csmaSwitchrouter, switchDevicesrouter,
 				1000000000, 2);
 	}
 

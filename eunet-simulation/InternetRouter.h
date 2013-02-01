@@ -9,15 +9,18 @@
 #define INTERNETROUTER_H_
 
 #include <ns3/node-container.h>
+#include <ns3/net-device-container.h>
 #include <ns3/node.h>
 
 //internet-edge
 class InternetRouter {
 	ns3::NodeContainer internetrouter;
+	ns3::NetDeviceContainer netDeviceContainer;
 public:
 	InternetRouter();
 	virtual ~InternetRouter();
 	operator ns3::Ptr<ns3::Node>() const;
+	operator const ns3::NetDeviceContainer&() const;
 	//ns3::Ptr<ns3::Node> get() const;
 };
 
