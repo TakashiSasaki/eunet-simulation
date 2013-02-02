@@ -12,7 +12,7 @@
 class SwitchNode: public SimpleNode {
 	ns3::Ptr<ns3::BridgeNetDevice> pBridgeNetDevice;
 public:
-	SwitchNode(std::string const& description_) :
+	SwitchNode(std::string const& description_ = "switch_node") :
 			SimpleNode(description_), pBridgeNetDevice(
 					ns3::CreateObject<ns3::BridgeNetDevice>()) {
 		assert(1==nodeContainer.GetN());
