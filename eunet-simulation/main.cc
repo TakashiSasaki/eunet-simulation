@@ -73,10 +73,10 @@ int main(int argc, char** argv) {
 
 // Create the csma links, from each terminal to the switch
 
-	ns3::NetDeviceContainer switchDevicesrouter;
-	ns3::NetDeviceContainer switchDevices6506E;
-	ns3::NetDeviceContainer switchDevicessigenobu;
-	ns3::NetDeviceContainer switchDevicestarumi;
+	//ns3::NetDeviceContainer switchDevicesrouter;
+	//ns3::NetDeviceContainer switchDevices6506E;
+	//ns3::NetDeviceContainer switchDevicessigenobu;
+	//ns3::NetDeviceContainer switchDevicestarumi;
 
 	for (int i = 1; i <= 315; ++i) {
 		if (i == 298 || i == 299 || i == 306 || i == 315)
@@ -1485,24 +1485,24 @@ int main(int argc, char** argv) {
 //		bridgeDevice6506E->AddBridgePort(switchDevices6506E.Get(portIter));
 //	}
 
-	for (int i = 5; i <= 348; ++i) {
-		if (i == 271)
-			continue;
-		ns3::Ptr<ns3::Node> p_node =
-				csmaSwitches[i]->operator const ns3::Ptr<ns3::Node>();
-		ns3::Ptr<ns3::BridgeNetDevice> p_bridge_net_device = ns3::CreateObject<
-				ns3::BridgeNetDevice>();
-		p_node->AddDevice(p_bridge_net_device);
-
-		for (unsigned int portIter;
-				portIter
-						< csmaSwitches[i]->operator const ns3::NetDeviceContainer &().GetN();
-				++portIter) {
-			p_bridge_net_device->AddBridgePort(
-					csmaSwitches[i]->operator const ns3::NetDeviceContainer &().Get(
-							portIter));
-		}
-	}
+//	for (int i = 5; i <= 348; ++i) {
+//		if (i == 271)
+//			continue;
+//		ns3::Ptr<ns3::Node> p_node =
+//				csmaSwitches[i]->operator const ns3::Ptr<ns3::Node>();
+//		ns3::Ptr<ns3::BridgeNetDevice> p_bridge_net_device = ns3::CreateObject<
+//				ns3::BridgeNetDevice>();
+//		p_node->AddDevice(p_bridge_net_device);
+//
+//		for (unsigned int portIter;
+//				portIter
+//						< csmaSwitches[i]->operator const ns3::NetDeviceContainer &().GetN();
+//				++portIter) {
+//			p_bridge_net_device->AddBridgePort(
+//					csmaSwitches[i]->operator const ns3::NetDeviceContainer &().Get(
+//							portIter));
+//		}
+//	}
 //	ns3::Ptr<ns3::Node> const & switchNodesigenobu =
 //			shigenobu_switch->operator const ns3::Ptr<ns3::Node>();
 //	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevicesigenobu = ns3::CreateObject<
