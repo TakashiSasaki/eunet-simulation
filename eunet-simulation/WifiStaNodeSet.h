@@ -13,7 +13,7 @@
 #include <ns3/wifi-phy.h>
 #include "WifiStaNode.h"
 
-class WifiStaNodeSet {
+class WifiStaNodeSet: public ns3::Object {
 	std::vector<ns3::Ptr<WifiStaNode> > wifiStaNodes;
 	const std::string& description;
 public:

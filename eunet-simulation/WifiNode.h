@@ -50,12 +50,15 @@ public:
 				wifiNetDeviceContainer);
 	}
 
-	operator const ns3::Ptr<ns3::Node> () const {
+	operator const ns3::Ptr<ns3::Node>() const {
 		return pNode;
 	}
 
 	virtual ~WifiNode() {
 	}
+private:
+	WifiNode(const WifiNode &);
+	WifiNode& operator=(const WifiNode &);
 };
 
 #endif /* WIFINODE_H_ */

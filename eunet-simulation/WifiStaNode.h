@@ -36,11 +36,11 @@ public:
 				nqosWifiMacHelper, pNode);
 	}
 
-	void install(ns3::MobilityHelper& mobility_helper){
+	void install(ns3::MobilityHelper& mobility_helper) {
 		mobility_helper.Install(pNode);
 	}
 
-	void install(ns3::Ipv4AddressHelper& x){
+	void install(ns3::Ipv4AddressHelper& x) {
 		WifiNode::install(x);
 	}
 

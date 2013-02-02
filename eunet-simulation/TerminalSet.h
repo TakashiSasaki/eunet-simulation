@@ -13,22 +13,27 @@
 #include <ns3/net-device-container.h>
 #include "SimpleNode.h"
 
-class TerminalSet {
+class TerminalSet: public ns3::Object {
 	const std::string& description;
 	std::vector<ns3::Ptr<SimpleNode> > simpleNodes;
-
-private:
-	void copyNewSimpleNode(
-			const std::vector<ns3::Ptr<SimpleNode> >::iterator& i);
+//
+//private:
+//	void copyNewSimpleNode(
+//			const std::vector<ns3::Ptr<SimpleNode> >::iterator& i);
 
 public:
 	TerminalSet(const int number_of_terminals = 15,
 			const std::string& description_ = "terminal_set");
 	const SimpleNode& operator[](const int index) const;
 	SimpleNode& operator[](const int index);
-	size_t size() const {return simpleNodes.size();}
+	size_t size() const {
+		return simpleNodes.size();
+	}
 	virtual ~TerminalSet() {
 	}
+private:
+	TerminalSet(const TerminalSet&);
+	TerminalSet operator=(const TerminalSet&);
 };
 
 #endif /* TERMINALSET_H_ */

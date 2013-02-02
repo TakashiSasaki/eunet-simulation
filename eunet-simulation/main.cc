@@ -36,22 +36,38 @@ int main(int argc, char** argv) {
 	cmd.Parse(argc, argv);
 
 	TopologyHelper topology_helper;
-	SimpleNode internet_router("the most external router");
+	ns3::Ptr<SimpleNode> internet_router(
+			new SimpleNode("the most external router"));
 
-	SimpleNode core_switch("jouhoku--sigenobu--tarumi--motida");
-	SimpleNode jyouhoku_switch(
-			"sougoujouhoumediacenter 2F network-kanrisitu-main");
-	SimpleNode shigenobu_switch("2F serversitu-mediacenterbunsitu-main");
-	SimpleNode tarumi_switch("3F serversitu-mediacenterbunsitu-left-main");
+	ns3::Ptr<SimpleNode> core_switch(
+			new SimpleNode("jouhoku--sigenobu--tarumi--motida"));
+	ns3::Ptr<SimpleNode> jyouhoku_switch(
+			new SimpleNode(
+					"sougoujouhoumediacenter 2F network-kanrisitu-main"));
+	ns3::Ptr<SimpleNode> shigenobu_switch(
+			new SimpleNode("2F serversitu-mediacenterbunsitu-main"));
+	ns3::Ptr<SimpleNode> tarumi_switch(
+			new SimpleNode("3F serversitu-mediacenterbunsitu-left-main"));
 	//CsmaSwitches csmaSwitches(350);
-	std::vector<SimpleNode> csmaSwitches(350);
+	std::vector<ns3::Ptr<SimpleNode> > csmaSwitches;
+	for (int i = 0; i < 350; ++i) {
+		csmaSwitches.push_back(new SimpleNode);
+	} //for
 
-	std::vector<TerminalSet> terminal_sets(350);
+	std::vector<ns3::Ptr<TerminalSet> > terminal_sets;
+	for (int i = 0; i < 350; ++i) {
+		terminal_sets.push_back(new TerminalSet);
+	} //for
 
-	//WifiStaNodeSets wifi_sta_node_sets(350);
-	std::vector<WifiStaNodeSet> wifi_sta_node_sets(350);
-	//WifiApNodes wifi_ap_nodes(350);
-	std::vector<WifiApNode> wifi_ap_nodes(350);
+	std::vector<ns3::Ptr<WifiStaNodeSet> > wifi_sta_node_sets;
+	for (int i = 0; i < 350; ++i) {
+		wifi_sta_node_sets.push_back(new WifiStaNodeSet);
+	} //for
+
+	std::vector<ns3::Ptr<WifiApNode> > wifi_ap_nodes;
+	for (int i = 0; i < 350; ++i) {
+		wifi_ap_nodes.push_back(new WifiApNode);
+	} //for
 
 // Create the csma links, from each terminal to the switch
 
@@ -89,8 +105,8 @@ int main(int argc, char** argv) {
 			continue;
 		DefaultWifiPhyHelper* p_default_wifi_phy_helper =
 				new DefaultWifiPhyHelper();
-		wifi_sta_node_sets[i].install(*p_default_wifi_phy_helper);
-		wifi_ap_nodes[i].install(*p_default_wifi_phy_helper);
+		wifi_sta_node_sets[i]->install(*p_default_wifi_phy_helper);
+		wifi_ap_nodes[i]->install(*p_default_wifi_phy_helper);
 		delete p_default_wifi_phy_helper;
 		//staDeviceSets[i] = Wifi.Install(wifiPhys[i], mac,
 		//		wifi_sta_node_sets[i]);
@@ -114,7 +130,7 @@ int main(int argc, char** argv) {
 		if (i == 298 || i == 299 || i == 306 || i == 315)
 			continue;
 		DefaultMobilityHelper default_mobility_helper;
-		wifi_sta_node_sets[i].install(default_mobility_helper);
+		wifi_sta_node_sets[i]->install(default_mobility_helper);
 		//mobilities[i].Install(wifi_sta_node_sets[i]);
 	}
 
@@ -125,9 +141,14 @@ int main(int argc, char** argv) {
 	for (int j = 5; j <= 348; ++j) {
 		if (j == 80 || j == 113 || j == 160 || j == 213 || j == 271 || j == 333)
 			continue;
+		SimpleNode & csma_switch = *csmaSwitches[j];
+		TerminalSet & terminal_set = *terminal_sets[j];
 		for (int i = 0; i < 15; ++i) {
-			topology_helper.InstallCsmaLink(terminal_sets[j][i],
-					csmaSwitches[j], 5000000, 2);
+			SimpleNode & terminal = terminal_set[i];
+			std::cerr << i << ',' << j << ',' << terminal.countNetDevices()
+					<< std::endl;
+			assert( 0 == terminal.countNetDevices());
+			topology_helper.InstallCsmaLink(terminal, csma_switch, 5000000, 2);
 		}	// for
 	}	// for
 
@@ -1477,7 +1498,8 @@ int main(int argc, char** argv) {
 // switch create
 
 	{
-		ns3::Ptr<ns3::Node> switchNoderouter = core_switch;
+		ns3::Ptr<ns3::Node> switchNoderouter =
+				core_switch->operator const ns3::Ptr<ns3::Node>();
 		assert(switchNoderouter->GetNDevices()>=0);
 		ns3::Ptr<ns3::BridgeNetDevice> bridgeDevicerouter = ns3::CreateObject<
 				ns3::BridgeNetDevice>();
@@ -1490,7 +1512,8 @@ int main(int argc, char** argv) {
 		}
 	}
 
-	ns3::Ptr<ns3::Node> switchNode6506E = jyouhoku_switch;
+	ns3::Ptr<ns3::Node> switchNode6506E =
+			jyouhoku_switch->operator const ns3::Ptr<ns3::Node>();
 	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice6506E = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	switchNode6506E->AddDevice(bridgeDevice6506E);
@@ -1503,21 +1526,23 @@ int main(int argc, char** argv) {
 	for (int i = 5; i <= 348; ++i) {
 		if (i == 271)
 			continue;
-		ns3::Ptr<ns3::Node> p_node = csmaSwitches[i];
+		ns3::Ptr<ns3::Node> p_node =
+				csmaSwitches[i]->operator const ns3::Ptr<ns3::Node>();
 		ns3::Ptr<ns3::BridgeNetDevice> p_bridge_net_device = ns3::CreateObject<
 				ns3::BridgeNetDevice>();
 		p_node->AddDevice(p_bridge_net_device);
 
 		for (unsigned int portIter;
 				portIter
-						< csmaSwitches[i].operator const ns3::NetDeviceContainer &().GetN();
+						< csmaSwitches[i]->operator const ns3::NetDeviceContainer &().GetN();
 				++portIter) {
 			p_bridge_net_device->AddBridgePort(
-					csmaSwitches[i].operator const ns3::NetDeviceContainer &().Get(
+					csmaSwitches[i]->operator const ns3::NetDeviceContainer &().Get(
 							portIter));
 		}
 	}
-	ns3::Ptr<ns3::Node> switchNodesigenobu = shigenobu_switch;
+	ns3::Ptr<ns3::Node> const & switchNodesigenobu =
+			shigenobu_switch->operator const ns3::Ptr<ns3::Node>();
 	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevicesigenobu = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	switchNodesigenobu->AddDevice(bridgeDevicesigenobu);
@@ -1527,7 +1552,8 @@ int main(int argc, char** argv) {
 		bridgeDevicesigenobu->AddBridgePort(
 				switchDevicessigenobu.Get(portIter));
 	}
-	ns3::Ptr<ns3::Node> switchNodetarumi = tarumi_switch;
+	ns3::Ptr<ns3::Node> const & switchNodetarumi =
+			tarumi_switch->operator const ns3::Ptr<ns3::Node>();
 	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevicetarumi = ns3::CreateObject<
 			ns3::BridgeNetDevice>();
 	switchNodetarumi->AddDevice(bridgeDevicetarumi);
@@ -1541,7 +1567,7 @@ int main(int argc, char** argv) {
 	for (int i = 1; i <= 315; ++i) {
 		if (i == 298 || i == 299 || i == 306 || i == 315)
 			continue;
-		wifi_ap_nodes[i].installBridgeDevice();
+		wifi_ap_nodes[i]->installBridgeDevice();
 //		ns3::Ptr<ns3::Node> p_node = wifi_ap_nodes[i];
 //		ns3::Ptr<ns3::BridgeNetDevice> p_bridge_net_device = ns3::CreateObject<
 //				ns3::BridgeNetDevice>();
@@ -1602,8 +1628,8 @@ int main(int argc, char** argv) {
 	for (int i = 5; i <= 348; ++i) {
 		if (i == 80 || i == 113 || i == 160 || i == 213 || i == 271 || i == 333)
 			continue;
-		for (size_t j = 0; j < terminal_sets[i].size(); ++j) {
-			TerminalSet const& terminal_set = terminal_sets[i];
+		for (size_t j = 0; j < terminal_sets[i]->size(); ++j) {
+			TerminalSet const& terminal_set = *terminal_sets[i];
 			ns3::NetDeviceContainer const & net_device_container =
 					terminal_set[j];
 			p2p_interface_sets[i] = ipv4.Assign(net_device_container);
@@ -1617,7 +1643,7 @@ int main(int argc, char** argv) {
 	for (int i = 1; i <= 315; ++i) {
 		if (i == 298 || i == 299 || i == 306 || i == 315)
 			continue;
-		wifi_sta_node_sets[i].install(ipv4);
+		wifi_sta_node_sets[i]->install(ipv4);
 		//apinterface_sets[i] = ipv4.Assign(staDeviceSets[i]);
 	}
 
@@ -1638,12 +1664,13 @@ int main(int argc, char** argv) {
 			ns3::AddressValue(
 					ns3::InetSocketAddress(p2p_interface_sets[5].GetAddress(0),
 							port)));
-	ns3::ApplicationContainer apps = onoff1.Install(internet_router);
+	ns3::ApplicationContainer apps = onoff1.Install(*internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
 	ns3::PacketSinkHelper sink("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	ns3::ApplicationContainer appsink = sink.Install(terminal_sets[5][0]);
+	ns3::ApplicationContainer appsink = sink.Install(
+			terminal_sets[5]->operator [](0));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 
@@ -1665,12 +1692,12 @@ int main(int argc, char** argv) {
 			ns3::AddressValue(
 					ns3::InetSocketAddress(p2p_interface_sets[5].GetAddress(1),
 							port)));
-	apps = onoff2.Install(internet_router);
+	apps = onoff2.Install(*internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminal_sets[5][1]);
+	appsink = sink.Install(terminal_sets[5]->operator [](1));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 //UDPecho
@@ -1691,12 +1718,12 @@ int main(int argc, char** argv) {
 			ns3::AddressValue(
 					ns3::InetSocketAddress(p2p_interface_sets[5].GetAddress(2),
 							port)));
-	apps = onoff3.Install(internet_router);
+	apps = onoff3.Install(*internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminal_sets[5][2]);
+	appsink = sink.Install(terminal_sets[5]->operator [](2));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 //UDPecho
@@ -1717,12 +1744,12 @@ int main(int argc, char** argv) {
 			ns3::AddressValue(
 					ns3::InetSocketAddress(p2p_interface_sets[5].GetAddress(3),
 							port)));
-	apps = onoff4.Install(internet_router);
+	apps = onoff4.Install(*internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminal_sets[5][3]);
+	appsink = sink.Install(terminal_sets[5]->operator [](3));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 //UDPecho
@@ -1743,12 +1770,12 @@ int main(int argc, char** argv) {
 			ns3::AddressValue(
 					ns3::InetSocketAddress(p2p_interface_sets[5].GetAddress(4),
 							port)));
-	apps = onoff5.Install(internet_router);
+	apps = onoff5.Install(*internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminal_sets[5][4]);
+	appsink = sink.Install(terminal_sets[5]->operator [](4));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 	//int port = 9;
@@ -1768,12 +1795,12 @@ int main(int argc, char** argv) {
 			ns3::AddressValue(
 					ns3::InetSocketAddress(p2p_interface_sets[6].GetAddress(0),
 							port)));
-	apps = onoff6.Install(internet_router);
+	apps = onoff6.Install(*internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminal_sets[6][0]);
+	appsink = sink.Install(terminal_sets[6]->operator [](0));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 //UDPecho
@@ -1794,12 +1821,12 @@ int main(int argc, char** argv) {
 			ns3::AddressValue(
 					ns3::InetSocketAddress(p2p_interface_sets[6].GetAddress(1),
 							port)));
-	apps = onoff7.Install(internet_router);
+	apps = onoff7.Install(*internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminal_sets[6][1]);
+	appsink = sink.Install(terminal_sets[6]->operator [](1));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 //UDPecho
@@ -1820,12 +1847,12 @@ int main(int argc, char** argv) {
 			ns3::AddressValue(
 					ns3::InetSocketAddress(p2p_interface_sets[6].GetAddress(2),
 							port)));
-	apps = onoff8.Install(internet_router);
+	apps = onoff8.Install(*internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminal_sets[6][2]);
+	appsink = sink.Install(terminal_sets[6]->operator [](2));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 //UDPecho
@@ -1846,12 +1873,12 @@ int main(int argc, char** argv) {
 			ns3::AddressValue(
 					ns3::InetSocketAddress(p2p_interface_sets[6].GetAddress(3),
 							port)));
-	apps = onoff9.Install(internet_router);
+	apps = onoff9.Install(*internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminal_sets[6][3]);
+	appsink = sink.Install(terminal_sets[6]->operator [](3));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 //UDPecho
@@ -1872,12 +1899,12 @@ int main(int argc, char** argv) {
 			ns3::AddressValue(
 					ns3::InetSocketAddress(p2p_interface_sets[6].GetAddress(4),
 							port)));
-	apps = onoff10.Install(internet_router);
+	apps = onoff10.Install(*internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
 	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-	appsink = sink.Install(terminal_sets[6][4]);
+	appsink = sink.Install(terminal_sets[6]->operator [](4));
 	appsink.Start(ns3::Seconds(0.0));
 	appsink.Stop(ns3::Seconds(10.0));
 
