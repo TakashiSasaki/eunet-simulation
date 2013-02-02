@@ -3,27 +3,9 @@
 #include <iostream>
 #include <iomanip>
 #include <ns3/core-module.h>
-#include <ns3/network-module.h>
-#include <ns3/csma-module.h>
-#include <ns3/internet-module.h>
 #include <ns3/point-to-point-helper.h>
 #include <ns3/applications-module.h>
 #include <ns3/ipv4-global-routing-helper.h>
-#include <ns3/yans-wifi-helper.h>
-#include <ns3/yans-wifi-phy.h>
-#include <ns3/nqos-wifi-mac-helper.h>
-#include <ns3/ssid.h>
-#include <ns3/mobility-helper.h>
-//#include <ns3/rectangle.h>
-#include "SwitchDevices.h"
-#include "CsmaSwitches.h"
-//#include "WifiApNodes.h"
-#include "ApDeviceSets.h"
-#include "DefaultWifiPhyHelper.h"
-#include "DefaultMobilityHelper.h"
-#include "WifiPhys.h"
-#include "SimpleNode.h"
-#include "TopologyHelper.h"
 #include "TerminalSet.h"
 #include "WifiStaNodeSet.h"
 #include "SimpleOnOffHelper.h"
@@ -47,20 +29,10 @@ int main(int argc, char** argv) {
 	eunet.Attach(wifi_sta_node_sets);
 
 	ns3::Ipv4AddressHelper ipv4_address_helper;
-	ipv4_address_helper.SetBase(ns3::Ipv4Address("133.71.0.0"), ns3::Ipv4Mask("255.255.0.0"));
+	ipv4_address_helper.SetBase(ns3::Ipv4Address("133.71.0.0"),
+			ns3::Ipv4Mask("255.255.0.0"));
 	terminal_sets.assign(ipv4_address_helper);
-//	for (int i = 5; i <= 348; ++i) {
-//		if (i == 80 || i == 113 || i == 160 || i == 213 || i == 271 || i == 333)
-//			continue;
-//		terminal_sets[i]->Assign(ipv4);
-//	}	//for
-
 	wifi_sta_node_sets.assign(ipv4_address_helper);
-//	for (int i = 1; i <= 315; ++i) {
-//		if (i == 298 || i == 299 || i == 306 || i == 315)
-//			continue;
-//		wifi_sta_node_sets[i]->assign(ipv4);
-//	}	//for
 
 	SwitchNodeP internet_router = eunet.getSwitch(Eunet::INTERNET_ROUTER_INDEX);
 	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[5])[0]);

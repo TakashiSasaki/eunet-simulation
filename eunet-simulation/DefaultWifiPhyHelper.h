@@ -8,6 +8,14 @@
 #ifndef DEFAULTWIFIPHY_H_
 #define DEFAULTWIFIPHY_H_
 
+#include <ns3/yans-wifi-channel.h>
+#include <ns3/yans-wifi-helper.h>
+#include <ns3/yans-wifi-phy.h>
+#include <ns3/error-rate-model.h>
+#include <ns3/propagation-delay-model.h>
+#include <ns3/propagation-loss-model.h>
+#include <ns3/propagation-environment.h>
+
 class DefaultWifiChannelHelper: public ns3::YansWifiChannelHelper {
 public:
 	DefaultWifiChannelHelper() {
