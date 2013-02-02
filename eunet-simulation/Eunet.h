@@ -27,7 +27,7 @@ public:
 
 private:
 	TopologyHelper topology_helper;
-	SwitchNodes csmaSwitches;
+	SwitchNodes switch_nodes;
 	WifiApNodes wifi_ap_nodes;
 
 private:
@@ -35,7 +35,7 @@ private:
 		for (size_t i = 0; i < terminal_set.size(); ++i) {
 			SimpleNode & terminal = terminal_set[i];
 			assert( 0 == terminal.countNetDevices());
-			topology_helper.InstallCsmaLink(terminal, *csmaSwitches[i_switch],
+			topology_helper.InstallCsmaLink(terminal, *switch_nodes[i_switch],
 					5000000, 2);
 		}	// for
 	}	//Attach
@@ -52,11 +52,11 @@ private:
 
 public:
 	SwitchNodeP getSwitch(const size_t i) {
-		return csmaSwitches[i];
+		return switch_nodes[i];
 	}
 
 	void Attach(TerminalSets& terminal_sets) {
-		assert(terminal_sets.size()==csmaSwitches.size());
+		assert(terminal_sets.size()==switch_nodes.size());
 		for (size_t i = 0; i < terminal_sets.size(); ++i) {
 			Attach(*terminal_sets[i], i);
 		}	//for
@@ -70,9 +70,9 @@ public:
 	}	//Attach
 
 	Eunet() :
-			csmaSwitches(350), wifi_ap_nodes(350) {
+			switch_nodes(350), wifi_ap_nodes(350) {
 		InstallCsmaLink();
-		csmaSwitches.bridgeEach();
+		switch_nodes.bridgeEach();
 		wifi_ap_nodes.bridgeEach();
 	}	// the default constructor
 	virtual ~Eunet() {
