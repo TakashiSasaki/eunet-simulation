@@ -27,7 +27,7 @@ public:
 		sinkApplicationContainer = packet_sink_helper.Install(
 				this->internetrouter);
 		sinkApplicationContainer.Start(ns3::Seconds(0.0));
-		sinkApplicationContainer.Stop(ns3::Seconds(10.0));
+		//sinkApplicationContainer.Stop(ns3::Seconds(10.0));
 	}
 
 	virtual ~Terminal() {

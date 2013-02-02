@@ -21,6 +21,8 @@
 class WifiStaNode: public WifiNode {
 	static ns3::NqosWifiMacHelper nqosWifiMacHelper;
 	static bool initialized;
+	ns3::ApplicationContainer sinkApplicationContainer;
+	static const int port = 9;
 public:
 	WifiStaNode() {
 		if (!initialized) {
@@ -29,23 +31,23 @@ public:
 					ns3::SsidValue(ssid), "ActiveProbing",
 					ns3::BooleanValue(false));
 		}
-	}
+		ns3::PacketSinkHelper packet_sink_helper("ns3::UdpSocketFactory",
+				ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
+		sinkApplicationContainer = packet_sink_helper.Install(this->pNode);
+		sinkApplicationContainer.Start(ns3::Seconds(0.0));
+	} // default constructor
 
 	void install(ns3::WifiPhyHelper& wifi_phy_helper) {
 		wifiNetDeviceContainer = wifiHelper.Install(wifi_phy_helper,
 				nqosWifiMacHelper, pNode);
-	}
+	} //install
 
 	void install(ns3::MobilityHelper& mobility_helper) {
 		mobility_helper.Install(pNode);
-	}
-
-//	void install(ns3::Ipv4AddressHelper& x) {
-//		WifiNode::assign(x);
-//	}
+	} //install
 
 	virtual ~WifiStaNode() {
-	}
+	} // destructor
 };
 
 #endif /* WIFISTANODE_H_ */
