@@ -40,9 +40,9 @@ public:
 		mobility_helper.Install(pNode);
 	}
 
-	void install(ns3::Ipv4AddressHelper& x) {
-		WifiNode::install(x);
-	}
+//	void install(ns3::Ipv4AddressHelper& x) {
+//		WifiNode::assign(x);
+//	}
 
 	virtual ~WifiStaNode() {
 	}

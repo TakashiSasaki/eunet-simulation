@@ -1545,7 +1545,7 @@ int main(int argc, char** argv) {
 	for (int i = 1; i <= 315; ++i) {
 		if (i == 298 || i == 299 || i == 306 || i == 315)
 			continue;
-		wifi_sta_node_sets[i]->install(ipv4);
+		wifi_sta_node_sets[i]->assign(ipv4);
 	}//for
 
 

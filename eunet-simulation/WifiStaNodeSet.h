@@ -37,10 +37,10 @@ public:
 		}
 	}
 
-	void install(ns3::Ipv4AddressHelper& ipv4_address_helper) {
+	void assign(ns3::Ipv4AddressHelper& ipv4_address_helper) {
 		for (size_t i = 0; i < wifiStaNodes.size(); ++i) {
 			ns3::Ptr<WifiStaNode> p_wifi_sta_node = wifiStaNodes[i];
-			p_wifi_sta_node->install(ipv4_address_helper);
+			p_wifi_sta_node->assign(ipv4_address_helper);
 		}
 	}
 

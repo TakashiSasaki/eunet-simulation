@@ -45,7 +45,7 @@ public:
 		return wifiNetDeviceContainer.Get(i);
 	}
 
-	void install(ns3::Ipv4AddressHelper& ipv4_address_helper) {
+	void assign(ns3::Ipv4AddressHelper& ipv4_address_helper) {
 		wifiIpv4InterfaceContainer = ipv4_address_helper.Assign(
 				wifiNetDeviceContainer);
 	}
