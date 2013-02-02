@@ -25,7 +25,7 @@ public:
 		ns3::PacketSinkHelper packet_sink_helper("ns3::UdpSocketFactory",
 				ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
 		sinkApplicationContainer = packet_sink_helper.Install(
-				this->internetrouter);
+				this->nodeContainer);
 		sinkApplicationContainer.Start(ns3::Seconds(0.0));
 		//sinkApplicationContainer.Stop(ns3::Seconds(10.0));
 	}
@@ -39,7 +39,12 @@ public:
 		assert(1==ipv4InterfaceContainer.GetN());
 		assert(1==netDeviceContainer.GetN());
 	}
-	ns3::Ipv4Address GetAddress() const {
+
+//	ns3::Ipv4Address GetAddress() const {
+//		return ipv4InterfaceContainer.GetAddress(0, 0);
+//	}
+//
+	operator ns3::Ipv4Address() const {
 		return ipv4InterfaceContainer.GetAddress(0, 0);
 	}
 };

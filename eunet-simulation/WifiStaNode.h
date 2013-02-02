@@ -16,6 +16,8 @@
 #include <ns3/ssid.h>
 #include <assert.h>
 #include <ns3/mobility-helper.h>
+#include <ns3/packet-sink-helper.h>
+#include <ns3/inet-socket-address.h>
 #include "WifiNode.h"
 
 class WifiStaNode: public WifiNode {
