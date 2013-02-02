@@ -1608,8 +1608,13 @@ int main(int argc, char** argv) {
 		if (i == 80 || i == 113 || i == 160 || i == 213 || i == 271 || i == 333)
 			continue;
 		for (size_t j = 0; j < terminal_sets[i].size(); ++j) {
-			p2p_interface_sets[i] = ipv4.Assign(terminal_sets[i][j]);
-			std::cerr << p2p_interface_sets[i].GetAddress(0, 0) << std::endl;
+			TerminalSet const& terminal_set = terminal_sets[i];
+			ns3::NetDeviceContainer const & net_device_container =
+					terminal_set[j];
+			p2p_interface_sets[i] = ipv4.Assign(net_device_container);
+			std::cerr << i << "," << j << "," << net_device_container.GetN()
+					<< "," << p2p_interface_sets[i].GetAddress(0, 0)
+					<< std::endl;
 		}
 	}
 
