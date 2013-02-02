@@ -94,7 +94,7 @@ int main(int argc, char** argv) {
 		wifi_sta_node_sets[i]->assign(ipv4);
 	}	//for
 
-	SwitchNodeP internet_router = eunet.internet_router;
+	SwitchNodeP internet_router = eunet.getSwitch(Eunet::INTERNET_ROUTER_INDEX);
 	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[5])[0]);
 	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[5])[1]);
 	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[5])[2]);

@@ -14,15 +14,28 @@
 #include "Terminal.h"
 
 class Eunet {
+public:
+	enum {
+		INTERNET_ROUTER_INDEX = 0,
+		CORE_SWITCH_INDEX = 1,
+		JYOUHOKU_SWITCH_INDEX = 2,
+		SHIGENOBU_SWITCH_INDEX = 3,
+		TARUMI_SWITCH_INDEX = 4
+	};
+
+private:
 	TopologyHelper topology_helper;
 	SwitchNodes csmaSwitches;
-	SwitchNodeP core_switch;
-	SwitchNodeP jyouhoku_switch;
-	SwitchNodeP shigenobu_switch;
-	SwitchNodeP tarumi_switch;
+//	SwitchNodeP core_switch;
+//	SwitchNodeP jyouhoku_switch;
+//	SwitchNodeP shigenobu_switch;
+//	SwitchNodeP tarumi_switch;
 	std::vector<ns3::Ptr<WifiApNode> > wifi_ap_nodes;
 public:
-	SwitchNodeP internet_router;
+//	SwitchNodeP internet_router;
+	SwitchNodeP getSwitch(const size_t i) {
+		return csmaSwitches[i];
+	}
 
 	void Attach(TerminalSet & terminal_set, const int i_switch) {
 		for (size_t i = 0; i < terminal_set.size(); ++i) {
@@ -43,82 +56,82 @@ public:
 
 	Eunet() :
 			csmaSwitches(350) {
-		internet_router = csmaSwitches.Create("the most external router");
-		core_switch = csmaSwitches.Create("jouhoku--sigenobu--tarumi--motida");
-		jyouhoku_switch = csmaSwitches.Create(
-				"sougoujouhoumediacenter 2F network-kanrisitu-main");
-		shigenobu_switch = csmaSwitches.Create(
-				"2F serversitu-mediacenterbunsitu-main");
-		tarumi_switch = csmaSwitches.Create(
-				"3F serversitu-mediacenterbunsitu-left-main");
-
+//		internet_router = csmaSwitches.Create("the most external router");
+//		core_switch = csmaSwitches.Create("jouhoku--sigenobu--tarumi--motida");
+//		jyouhoku_switch = csmaSwitches.Create(
+//				"sougoujouhoumediacenter 2F network-kanrisitu-main");
+//		shigenobu_switch = csmaSwitches.Create(
+//				"2F serversitu-mediacenterbunsitu-main");
+//		tarumi_switch = csmaSwitches.Create(
+//				"3F serversitu-mediacenterbunsitu-left-main");
+//
 		for (int i = 0; i < 350; ++i) {
 			wifi_ap_nodes.push_back(new WifiApNode);
 		} //for
 
-		topology_helper.InstallCsmaLink(*internet_router, *core_switch,
-				1000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[INTERNET_ROUTER_INDEX],
+				*csmaSwitches[CORE_SWITCH_INDEX], 1000000000, 2);
 
-		topology_helper.InstallCsmaLink(*core_switch, *shigenobu_switch,
-				22000000000, 2);
-		topology_helper.InstallCsmaLink(*core_switch, *tarumi_switch,
-				22000000000, 2);
-		topology_helper.InstallCsmaLink(*core_switch, *csmaSwitches[335],
-				22000000000, 2); //motida
-		topology_helper.InstallCsmaLink(*tarumi_switch, *csmaSwitches[285],
-				22000000000, 2);
-		topology_helper.InstallCsmaLink(*core_switch, *jyouhoku_switch,
-				20000000000, 2);
-		topology_helper.InstallCsmaLink(*jyouhoku_switch, *csmaSwitches[9],
-				20000000000, 2);
-		topology_helper.InstallCsmaLink(*jyouhoku_switch, *csmaSwitches[7],
-				20000000000, 2);
-		topology_helper.InstallCsmaLink(*jyouhoku_switch, *csmaSwitches[80],
-				20000000000, 2);
-		topology_helper.InstallCsmaLink(*jyouhoku_switch, *csmaSwitches[126],
-				20000000000, 2);
-		topology_helper.InstallCsmaLink(*jyouhoku_switch, *csmaSwitches[161],
-				20000000000, 2);
-		topology_helper.InstallCsmaLink(*jyouhoku_switch, *csmaSwitches[275],
-				20000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[CORE_SWITCH_INDEX],
+				*csmaSwitches[SHIGENOBU_SWITCH_INDEX], 22000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[CORE_SWITCH_INDEX],
+				*csmaSwitches[TARUMI_SWITCH_INDEX], 22000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[CORE_SWITCH_INDEX],
+				*csmaSwitches[335], 22000000000, 2); //motida
+		topology_helper.InstallCsmaLink(*csmaSwitches[TARUMI_SWITCH_INDEX],
+				*csmaSwitches[285], 22000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[CORE_SWITCH_INDEX],
+				*csmaSwitches[JYOUHOKU_SWITCH_INDEX], 20000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[JYOUHOKU_SWITCH_INDEX],
+				*csmaSwitches[9], 20000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[JYOUHOKU_SWITCH_INDEX],
+				*csmaSwitches[7], 20000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[JYOUHOKU_SWITCH_INDEX],
+				*csmaSwitches[80], 20000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[JYOUHOKU_SWITCH_INDEX],
+				*csmaSwitches[126], 20000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[JYOUHOKU_SWITCH_INDEX],
+				*csmaSwitches[161], 20000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[JYOUHOKU_SWITCH_INDEX],
+				*csmaSwitches[275], 20000000000, 2);
 		topology_helper.InstallCsmaLink(*csmaSwitches[5], *csmaSwitches[6],
 				16000000000, 2);
-		topology_helper.InstallCsmaLink(*jyouhoku_switch, *csmaSwitches[40],
-				11000000000, 2);
-		topology_helper.InstallCsmaLink(*jyouhoku_switch, *csmaSwitches[70],
-				11000000000, 2);
-		topology_helper.InstallCsmaLink(*jyouhoku_switch, *csmaSwitches[141],
-				11000000000, 2);
-		topology_helper.InstallCsmaLink(*jyouhoku_switch, *csmaSwitches[197],
-				11000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[JYOUHOKU_SWITCH_INDEX],
+				*csmaSwitches[40], 11000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[JYOUHOKU_SWITCH_INDEX],
+				*csmaSwitches[70], 11000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[JYOUHOKU_SWITCH_INDEX],
+				*csmaSwitches[141], 11000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[JYOUHOKU_SWITCH_INDEX],
+				*csmaSwitches[197], 11000000000, 2);
 
-		topology_helper.InstallCsmaLink(*shigenobu_switch, *csmaSwitches[226],
-				8000000000, 2);
-		topology_helper.InstallCsmaLink(*tarumi_switch, *csmaSwitches[316],
-				8000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[SHIGENOBU_SWITCH_INDEX],
+				*csmaSwitches[226], 8000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[TARUMI_SWITCH_INDEX],
+				*csmaSwitches[316], 8000000000, 2);
 
-		topology_helper.InstallCsmaLink(*jyouhoku_switch, *csmaSwitches[5],
-				7000000000, 2);
-		topology_helper.InstallCsmaLink(*jyouhoku_switch, *csmaSwitches[8],
-				7000000000, 2);
-		topology_helper.InstallCsmaLink(*jyouhoku_switch, *csmaSwitches[113],
-				7000000000, 2);
-		topology_helper.InstallCsmaLink(*jyouhoku_switch, *csmaSwitches[160],
-				7000000000, 2);
-		topology_helper.InstallCsmaLink(*jyouhoku_switch, *csmaSwitches[213],
-				7000000000, 2);
-		topology_helper.InstallCsmaLink(*shigenobu_switch, *csmaSwitches[283],
-				7000000000, 2);
-		topology_helper.InstallCsmaLink(*tarumi_switch, *csmaSwitches[333],
-				7000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[JYOUHOKU_SWITCH_INDEX],
+				*csmaSwitches[5], 7000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[JYOUHOKU_SWITCH_INDEX],
+				*csmaSwitches[8], 7000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[JYOUHOKU_SWITCH_INDEX],
+				*csmaSwitches[113], 7000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[JYOUHOKU_SWITCH_INDEX],
+				*csmaSwitches[160], 7000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[JYOUHOKU_SWITCH_INDEX],
+				*csmaSwitches[213], 7000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[SHIGENOBU_SWITCH_INDEX],
+				*csmaSwitches[283], 7000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[TARUMI_SWITCH_INDEX],
+				*csmaSwitches[333], 7000000000, 2);
 
 		topology_helper.InstallCsmaLink(*csmaSwitches[334], *csmaSwitches[335],
 				6000000000, 2);
 
-		topology_helper.InstallCsmaLink(*shigenobu_switch, *csmaSwitches[266],
-				4000000000, 2);
-		topology_helper.InstallCsmaLink(*shigenobu_switch, *csmaSwitches[276],
-				4000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[SHIGENOBU_SWITCH_INDEX],
+				*csmaSwitches[266], 4000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[SHIGENOBU_SWITCH_INDEX],
+				*csmaSwitches[276], 4000000000, 2);
 
 		topology_helper.InstallCsmaLink(*csmaSwitches[81], *wifi_ap_nodes[1],
 				2000000000, 2);
@@ -782,8 +795,8 @@ public:
 		topology_helper.InstallCsmaLink(*csmaSwitches[9], *wifi_ap_nodes[39],
 				2000000000, 2);
 
-		topology_helper.InstallCsmaLink(*jyouhoku_switch, *wifi_ap_nodes[50],
-				2000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[JYOUHOKU_SWITCH_INDEX],
+				*wifi_ap_nodes[50], 2000000000, 2);
 
 		topology_helper.InstallCsmaLink(*csmaSwitches[50], *wifi_ap_nodes[51],
 				2000000000, 2);
@@ -834,8 +847,8 @@ public:
 		topology_helper.InstallCsmaLink(*csmaSwitches[70], *wifi_ap_nodes[78],
 				2000000000, 2);
 
-		topology_helper.InstallCsmaLink(*jyouhoku_switch, *wifi_ap_nodes[79],
-				2000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[JYOUHOKU_SWITCH_INDEX],
+				*wifi_ap_nodes[79], 2000000000, 2);
 		topology_helper.InstallCsmaLink(*csmaSwitches[80], *wifi_ap_nodes[81],
 				2000000000, 2);
 		topology_helper.InstallCsmaLink(*csmaSwitches[81], *wifi_ap_nodes[82],
@@ -848,15 +861,15 @@ public:
 		topology_helper.InstallCsmaLink(*csmaSwitches[80], *wifi_ap_nodes[99],
 				2000000000, 2);
 
-		topology_helper.InstallCsmaLink(*jyouhoku_switch, *csmaSwitches[114],
-				2000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[JYOUHOKU_SWITCH_INDEX],
+				*csmaSwitches[114], 2000000000, 2);
 
-		topology_helper.InstallCsmaLink(*jyouhoku_switch, *csmaSwitches[115],
-				2000000000, 2);
-		topology_helper.InstallCsmaLink(*jyouhoku_switch, *csmaSwitches[116],
-				2000000000, 2);
-		topology_helper.InstallCsmaLink(*jyouhoku_switch, *csmaSwitches[123],
-				2000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[JYOUHOKU_SWITCH_INDEX],
+				*csmaSwitches[115], 2000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[JYOUHOKU_SWITCH_INDEX],
+				*csmaSwitches[116], 2000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[JYOUHOKU_SWITCH_INDEX],
+				*csmaSwitches[123], 2000000000, 2);
 		topology_helper.InstallCsmaLink(*csmaSwitches[126], *wifi_ap_nodes[127],
 				2000000000, 2);
 		topology_helper.InstallCsmaLink(*csmaSwitches[126], *wifi_ap_nodes[128],
@@ -913,10 +926,10 @@ public:
 				2000000000, 2);
 		topology_helper.InstallCsmaLink(*csmaSwitches[161], *wifi_ap_nodes[183],
 				2000000000, 2);
-		topology_helper.InstallCsmaLink(*jyouhoku_switch, *csmaSwitches[193],
-				2000000000, 2);
-		topology_helper.InstallCsmaLink(*jyouhoku_switch, *csmaSwitches[200],
-				2000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[JYOUHOKU_SWITCH_INDEX],
+				*csmaSwitches[193], 2000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[JYOUHOKU_SWITCH_INDEX],
+				*csmaSwitches[200], 2000000000, 2);
 		topology_helper.InstallCsmaLink(*csmaSwitches[200], *wifi_ap_nodes[201],
 				2000000000, 2);
 		topology_helper.InstallCsmaLink(*csmaSwitches[201], *wifi_ap_nodes[202],
@@ -935,14 +948,14 @@ public:
 				2000000000, 2);
 		topology_helper.InstallCsmaLink(*csmaSwitches[208], *wifi_ap_nodes[211],
 				2000000000, 2);
-		topology_helper.InstallCsmaLink(*shigenobu_switch, *csmaSwitches[214],
-				2000000000, 2);
-		topology_helper.InstallCsmaLink(*shigenobu_switch, *csmaSwitches[215],
-				2000000000, 2);
-		topology_helper.InstallCsmaLink(*shigenobu_switch, *csmaSwitches[217],
-				2000000000, 2);
-		topology_helper.InstallCsmaLink(*shigenobu_switch, *csmaSwitches[220],
-				2000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[SHIGENOBU_SWITCH_INDEX],
+				*csmaSwitches[214], 2000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[SHIGENOBU_SWITCH_INDEX],
+				*csmaSwitches[215], 2000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[SHIGENOBU_SWITCH_INDEX],
+				*csmaSwitches[217], 2000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[SHIGENOBU_SWITCH_INDEX],
+				*csmaSwitches[220], 2000000000, 2);
 		topology_helper.InstallCsmaLink(*csmaSwitches[226], *wifi_ap_nodes[227],
 				2000000000, 2);
 		topology_helper.InstallCsmaLink(*csmaSwitches[227], *wifi_ap_nodes[228],
@@ -966,23 +979,23 @@ public:
 		topology_helper.InstallCsmaLink(*csmaSwitches[226], *wifi_ap_nodes[260],
 				2000000000, 2);
 
-		topology_helper.InstallCsmaLink(*shigenobu_switch, *csmaSwitches[264],
-				2000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[SHIGENOBU_SWITCH_INDEX],
+				*csmaSwitches[264], 2000000000, 2);
 
-		topology_helper.InstallCsmaLink(*tarumi_switch, *csmaSwitches[287],
-				2000000000, 2);
-		topology_helper.InstallCsmaLink(*tarumi_switch, *csmaSwitches[288],
-				2000000000, 2);
-		topology_helper.InstallCsmaLink(*tarumi_switch, *csmaSwitches[290],
-				2000000000, 2);
-		topology_helper.InstallCsmaLink(*tarumi_switch, *csmaSwitches[291],
-				2000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[TARUMI_SWITCH_INDEX],
+				*csmaSwitches[287], 2000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[TARUMI_SWITCH_INDEX],
+				*csmaSwitches[288], 2000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[TARUMI_SWITCH_INDEX],
+				*csmaSwitches[290], 2000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[TARUMI_SWITCH_INDEX],
+				*csmaSwitches[291], 2000000000, 2);
 
 		topology_helper.InstallCsmaLink(*csmaSwitches[291], *wifi_ap_nodes[294],
 				2000000000, 2);
 
-		topology_helper.InstallCsmaLink(*tarumi_switch, *csmaSwitches[295],
-				2000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[TARUMI_SWITCH_INDEX],
+				*csmaSwitches[295], 2000000000, 2);
 
 		topology_helper.InstallCsmaLink(*csmaSwitches[295], *wifi_ap_nodes[296],
 				2000000000, 2);
@@ -991,8 +1004,8 @@ public:
 		topology_helper.InstallCsmaLink(*csmaSwitches[295], *wifi_ap_nodes[301],
 				2000000000, 2);
 
-		topology_helper.InstallCsmaLink(*tarumi_switch, *csmaSwitches[304],
-				2000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[TARUMI_SWITCH_INDEX],
+				*csmaSwitches[304], 2000000000, 2);
 
 		topology_helper.InstallCsmaLink(*csmaSwitches[304], *wifi_ap_nodes[305],
 				2000000000, 2);
@@ -1005,10 +1018,10 @@ public:
 		topology_helper.InstallCsmaLink(*csmaSwitches[304], *wifi_ap_nodes[310],
 				2000000000, 2);
 
-		topology_helper.InstallCsmaLink(*tarumi_switch, *csmaSwitches[311],
-				2000000000, 2);
-		topology_helper.InstallCsmaLink(*tarumi_switch, *csmaSwitches[312],
-				2000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[TARUMI_SWITCH_INDEX],
+				*csmaSwitches[311], 2000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[TARUMI_SWITCH_INDEX],
+				*csmaSwitches[312], 2000000000, 2);
 
 		topology_helper.InstallCsmaLink(*csmaSwitches[312], *wifi_ap_nodes[313],
 				2000000000, 2);
@@ -1358,8 +1371,8 @@ public:
 				1000000000, 2);
 		topology_helper.InstallCsmaLink(*csmaSwitches[276], *csmaSwitches[282],
 				1000000000, 2);
-		topology_helper.InstallCsmaLink(*tarumi_switch, *csmaSwitches[286],
-				1000000000, 2);
+		topology_helper.InstallCsmaLink(*csmaSwitches[TARUMI_SWITCH_INDEX],
+				*csmaSwitches[286], 1000000000, 2);
 		topology_helper.InstallCsmaLink(*csmaSwitches[288], *csmaSwitches[289],
 				1000000000, 2);
 		topology_helper.InstallCsmaLink(*csmaSwitches[291], *csmaSwitches[292],
