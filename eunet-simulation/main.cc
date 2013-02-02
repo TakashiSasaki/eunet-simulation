@@ -1,3 +1,7 @@
+#include <cstdlib>
+#include <cassert>
+#include <iostream>
+#include <iomanip>
 #include <ns3/core-module.h>
 #include <ns3/network-module.h>
 #include <ns3/csma-module.h>
@@ -9,11 +13,8 @@
 #include <ns3/yans-wifi-phy.h>
 #include <ns3/nqos-wifi-mac-helper.h>
 #include <ns3/ssid.h>
-#include <stdlib.h>
-#include <iostream>
-#include <iomanip>
 #include <ns3/mobility-helper.h>
-#include <ns3/rectangle.h>
+//#include <ns3/rectangle.h>
 #include "SwitchDevices.h"
 #include "CsmaSwitches.h"
 #include "WifiApNodes.h"
@@ -23,10 +24,10 @@
 #include "WifiPhys.h"
 #include "SimpleNode.h"
 #include "TopologyHelper.h"
-#include <assert.h>
 #include "TerminalSet.h"
 #include "WifiStaNodeSet.h"
 #include "SimpleOnOffHelper.h"
+#include "SwitchNode.h"
 
 NS_LOG_COMPONENT_DEFINE("eunet-simulation");
 
@@ -1458,31 +1459,31 @@ int main(int argc, char** argv) {
 			1000000000, 2);
 // switch create
 
-	{
-		ns3::Ptr<ns3::Node> switchNoderouter =
-				core_switch->operator const ns3::Ptr<ns3::Node>();
-		assert(switchNoderouter->GetNDevices()>=0);
-		ns3::Ptr<ns3::BridgeNetDevice> bridgeDevicerouter = ns3::CreateObject<
-				ns3::BridgeNetDevice>();
-		switchNoderouter->AddDevice(bridgeDevicerouter);
+//	{
+//		ns3::Ptr<ns3::Node> switchNoderouter =
+//				core_switch->operator const ns3::Ptr<ns3::Node>();
+//		assert(switchNoderouter->GetNDevices()>=0);
+//		ns3::Ptr<ns3::BridgeNetDevice> bridgeDevicerouter = ns3::CreateObject<
+//				ns3::BridgeNetDevice>();
+//		switchNoderouter->AddDevice(bridgeDevicerouter);
+//
+//		for (unsigned int portIter; portIter < switchDevicesrouter.GetN();
+//				++portIter) {
+//			bridgeDevicerouter->AddBridgePort(
+//					switchDevicesrouter.Get(portIter));
+//		}
+//	}
 
-		for (unsigned int portIter; portIter < switchDevicesrouter.GetN();
-				++portIter) {
-			bridgeDevicerouter->AddBridgePort(
-					switchDevicesrouter.Get(portIter));
-		}
-	}
-
-	ns3::Ptr<ns3::Node> switchNode6506E =
-			jyouhoku_switch->operator const ns3::Ptr<ns3::Node>();
-	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice6506E = ns3::CreateObject<
-			ns3::BridgeNetDevice>();
-	switchNode6506E->AddDevice(bridgeDevice6506E);
-
-	for (unsigned int portIter; portIter < switchDevices6506E.GetN();
-			++portIter) {
-		bridgeDevice6506E->AddBridgePort(switchDevices6506E.Get(portIter));
-	}
+//	ns3::Ptr<ns3::Node> switchNode6506E =
+//			jyouhoku_switch->operator const ns3::Ptr<ns3::Node>();
+//	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice6506E = ns3::CreateObject<
+//			ns3::BridgeNetDevice>();
+//	switchNode6506E->AddDevice(bridgeDevice6506E);
+//
+//	for (unsigned int portIter; portIter < switchDevices6506E.GetN();
+//			++portIter) {
+//		bridgeDevice6506E->AddBridgePort(switchDevices6506E.Get(portIter));
+//	}
 
 	for (int i = 5; i <= 348; ++i) {
 		if (i == 271)
@@ -1502,27 +1503,28 @@ int main(int argc, char** argv) {
 							portIter));
 		}
 	}
-	ns3::Ptr<ns3::Node> const & switchNodesigenobu =
-			shigenobu_switch->operator const ns3::Ptr<ns3::Node>();
-	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevicesigenobu = ns3::CreateObject<
-			ns3::BridgeNetDevice>();
-	switchNodesigenobu->AddDevice(bridgeDevicesigenobu);
+//	ns3::Ptr<ns3::Node> const & switchNodesigenobu =
+//			shigenobu_switch->operator const ns3::Ptr<ns3::Node>();
+//	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevicesigenobu = ns3::CreateObject<
+//			ns3::BridgeNetDevice>();
+//	switchNodesigenobu->AddDevice(bridgeDevicesigenobu);
+//
+//	for (unsigned int portIter; portIter < switchDevicessigenobu.GetN();
+//			++portIter) {
+//		bridgeDevicesigenobu->AddBridgePort(
+//				switchDevicessigenobu.Get(portIter));
+//	}
 
-	for (unsigned int portIter; portIter < switchDevicessigenobu.GetN();
-			++portIter) {
-		bridgeDevicesigenobu->AddBridgePort(
-				switchDevicessigenobu.Get(portIter));
-	}
-	ns3::Ptr<ns3::Node> const & switchNodetarumi =
-			tarumi_switch->operator const ns3::Ptr<ns3::Node>();
-	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevicetarumi = ns3::CreateObject<
-			ns3::BridgeNetDevice>();
-	switchNodetarumi->AddDevice(bridgeDevicetarumi);
-
-	for (unsigned int portIter; portIter < switchDevicestarumi.GetN();
-			++portIter) {
-		bridgeDevicetarumi->AddBridgePort(switchDevicestarumi.Get(portIter));
-	}
+//	ns3::Ptr<ns3::Node> const & switchNodetarumi =
+//			tarumi_switch->operator const ns3::Ptr<ns3::Node>();
+//	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevicetarumi = ns3::CreateObject<
+//			ns3::BridgeNetDevice>();
+//	switchNodetarumi->AddDevice(bridgeDevicetarumi);
+//
+//	for (unsigned int portIter; portIter < switchDevicestarumi.GetN();
+//			++portIter) {
+//		bridgeDevicetarumi->AddBridgePort(switchDevicestarumi.Get(portIter));
+//	}
 
 //apDevices switchDevices setuzoku
 	for (int i = 1; i <= 315; ++i) {

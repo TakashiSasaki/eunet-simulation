@@ -10,6 +10,7 @@
 
 #include <ns3/mobility-helper.h>
 #include <ns3/mobility-model.h>
+#include <ns3/rectangle.h>
 
 class DefaultMobilityHelper: public ns3::MobilityHelper {
 public:
