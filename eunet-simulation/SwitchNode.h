@@ -10,9 +10,8 @@
 
 #include <cassert>
 #include <vector>
-
-class SwitchNode;
-typedef ns3::Ptr<SwitchNode> SwitchNodeP;
+#include <ns3/bridge-net-device.h>
+#include "SimpleNode.h"
 
 class SwitchNode: public SimpleNode {
 	ns3::Ptr<ns3::BridgeNetDevice> pBridgeNetDevice;
@@ -31,6 +30,8 @@ public:
 	} // destructor
 };
 //SwitchNode
+
+typedef ns3::Ptr<SwitchNode> SwitchNodeP;
 
 class SwitchNodes: public std::vector<SwitchNodeP> {
 public:

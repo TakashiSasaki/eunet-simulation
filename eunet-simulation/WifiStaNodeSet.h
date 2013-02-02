@@ -12,6 +12,7 @@
 #include <ns3/mobility-helper.h>
 #include <ns3/wifi-phy.h>
 #include "WifiStaNode.h"
+#include "DefaultMobilityHelper.h"
 
 class WifiStaNodeSet: public ns3::Object {
 	std::vector<ns3::Ptr<WifiStaNode> > wifiStaNodes;
