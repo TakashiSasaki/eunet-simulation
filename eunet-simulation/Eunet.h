@@ -46,12 +46,26 @@ public:
 		}	// for
 	}	//Attach
 
+	void Attach(TerminalSets& terminal_sets) {
+		assert(terminal_sets.size()==csmaSwitches.size());
+		for (size_t i = 0; i < terminal_sets.size(); ++i) {
+			Attach(*terminal_sets[i], i);
+		}	//for
+	}	//Attach
+
 	void Attach(WifiStaNodeSet & wifi_sta_node_set, const int i_wifi_ap) {
 		DefaultWifiPhyHelper* p_default_wifi_phy_helper =
 				new DefaultWifiPhyHelper();
 		wifi_sta_node_set.install(*p_default_wifi_phy_helper);
 		wifi_ap_nodes[i_wifi_ap]->install(*p_default_wifi_phy_helper);
 		delete p_default_wifi_phy_helper;
+	}	//Attach
+
+	void Attach(WifiStaNodeSets & wifi_sta_node_sets) {
+		assert(wifi_ap_nodes.size()==wifi_sta_node_sets.size());
+		for (size_t i = 0; i < wifi_sta_node_sets.size(); ++i) {
+			Attach(*wifi_sta_node_sets[i], i);
+		}	//for
 	}	//Attach
 
 	Eunet() :

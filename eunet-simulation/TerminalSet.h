@@ -40,5 +40,16 @@ private:
 	TerminalSet(const TerminalSet&);
 	TerminalSet operator=(const TerminalSet&);
 };
+// TerminalSet
+
+class TerminalSets: public std::vector<ns3::Ptr<TerminalSet> > {
+public:
+	TerminalSets(const size_t n_terminal_set) {
+		for (size_t i = 0; i < n_terminal_set; ++i) {
+			push_back(new TerminalSet);
+		} //for
+	} // the constructor
+};
+//TermianlSets
 
 #endif /* TERMINALSET_H_ */
