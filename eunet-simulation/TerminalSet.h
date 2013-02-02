@@ -42,6 +42,8 @@ private:
 };
 // TerminalSet
 
+typedef ns3::Ptr<TerminalSet> TerminalSetP;
+
 class TerminalSets: public std::vector<ns3::Ptr<TerminalSet> > {
 public:
 	TerminalSets(const size_t n_terminal_set) {
@@ -49,6 +51,13 @@ public:
 			push_back(new TerminalSet);
 		} //for
 	} // the constructor
+
+	void assign(ns3::Ipv4AddressHelper& ipv4_address_helper) {
+		for (size_t i = 0; i < size(); ++i) {
+			TerminalSetP x = (*this)[i];
+			x->Assign(ipv4_address_helper);
+		} //for
+	} //Assign
 };
 //TermianlSets
 

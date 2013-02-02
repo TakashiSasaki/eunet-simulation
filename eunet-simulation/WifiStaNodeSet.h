@@ -62,6 +62,13 @@ public:
 
 		} //for
 	} // the constructor
+
+	void assign(ns3::Ipv4AddressHelper& ipv4_address_helper) {
+		for (size_t i = 0; i < size(); ++i) {
+			WifiStaNodeSetP x = (*this)[i];
+			x->assign(ipv4_address_helper);
+		} //for
+	} //assign
 };
 
 #endif /* WIFISTANODESET_H_ */

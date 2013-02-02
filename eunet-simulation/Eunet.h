@@ -78,5 +78,6 @@ public:
 	virtual ~Eunet() {
 	}
 };
+//Eunet
 
 #endif /* EUNET_H_ */

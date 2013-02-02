@@ -46,19 +46,21 @@ int main(int argc, char** argv) {
 	WifiStaNodeSets wifi_sta_node_sets(350);
 	eunet.Attach(wifi_sta_node_sets);
 
-	ns3::Ipv4AddressHelper ipv4;
-	ipv4.SetBase(ns3::Ipv4Address("133.71.0.0"), ns3::Ipv4Mask("255.255.0.0"));
-	for (int i = 5; i <= 348; ++i) {
-		if (i == 80 || i == 113 || i == 160 || i == 213 || i == 271 || i == 333)
-			continue;
-		terminal_sets[i]->Assign(ipv4);
-	}	//for
+	ns3::Ipv4AddressHelper ipv4_address_helper;
+	ipv4_address_helper.SetBase(ns3::Ipv4Address("133.71.0.0"), ns3::Ipv4Mask("255.255.0.0"));
+	terminal_sets.assign(ipv4_address_helper);
+//	for (int i = 5; i <= 348; ++i) {
+//		if (i == 80 || i == 113 || i == 160 || i == 213 || i == 271 || i == 333)
+//			continue;
+//		terminal_sets[i]->Assign(ipv4);
+//	}	//for
 
-	for (int i = 1; i <= 315; ++i) {
-		if (i == 298 || i == 299 || i == 306 || i == 315)
-			continue;
-		wifi_sta_node_sets[i]->assign(ipv4);
-	}	//for
+	wifi_sta_node_sets.assign(ipv4_address_helper);
+//	for (int i = 1; i <= 315; ++i) {
+//		if (i == 298 || i == 299 || i == 306 || i == 315)
+//			continue;
+//		wifi_sta_node_sets[i]->assign(ipv4);
+//	}	//for
 
 	SwitchNodeP internet_router = eunet.getSwitch(Eunet::INTERNET_ROUTER_INDEX);
 	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[5])[0]);
