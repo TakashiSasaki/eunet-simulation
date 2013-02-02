@@ -53,7 +53,7 @@ private:
 public:
 	SwitchNodeP getSwitch(const size_t i) {
 		return switch_nodes[i];
-	}
+	}	//getSwitch
 
 	void Attach(TerminalSets& terminal_sets) {
 		assert(terminal_sets.size()==switch_nodes.size());
@@ -76,7 +76,7 @@ public:
 		wifi_ap_nodes.bridgeEach();
 	}	// the default constructor
 	virtual ~Eunet() {
-	}
+	}	// destructor
 };
 //Eunet
 
