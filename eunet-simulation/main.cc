@@ -28,11 +28,11 @@
 #include "WifiStaNodeSet.h"
 #include "SimpleOnOffHelper.h"
 
-//NS_LOG_COMPONENT_DEFINE("OnOffApplication");
+NS_LOG_COMPONENT_DEFINE("eunet-simulation");
 
 int main(int argc, char** argv) {
 	std::cout << "entered in main function." << std::endl;
-	//ns3::LogComponentEnable("CsmaBridgeOneHopExample", ns3::LOG_LEVEL_INFO);
+	ns3::LogComponentEnable("eunet-simulation", ns3::LOG_LEVEL_INFO);
 	ns3::CommandLine cmd;
 	cmd.Parse(argc, argv);
 
@@ -74,33 +74,9 @@ int main(int argc, char** argv) {
 
 	ns3::NetDeviceContainer switchDevicesrouter;
 	ns3::NetDeviceContainer switchDevices6506E;
-	//SwitchDevices switch_devices(350);
-
 	ns3::NetDeviceContainer switchDevicessigenobu;
 	ns3::NetDeviceContainer switchDevicestarumi;
 
-	//TerminalDeviceSets terminal_device_sets(350);
-	//ApDeviceSets ap_device_sets(350);
-
-//wifi
-	//ns3::WifiHelper Wifi;
-	//Wifi = ns3::WifiHelper::Default();
-	//Wifi.SetRemoteStationManager("ns3::ArfWifiManager");
-
-//wifi channel
-	//WifiPhys wifiPhys(315);
-
-//stanodes mac
-	//ns3::NqosWifiMacHelper mac;
-	//mac = ns3::NqosWifiMacHelper::Default();
-	//mac = ns.wifi.NqosWifiMacHelper.Default()
-	//ns3::Ssid ssid;
-	//ssid = ns3::Ssid("wifi-default");
-	//ssid = ns.wifi.Ssid("wifi-default")
-	//mac.SetType("ns3::StaWifiMac", "Ssid", ns3::SsidValue(ssid),
-	//		"ActiveProbing", ns3::BooleanValue(false));
-
-	//std::vector<ns3::NetDeviceContainer> staDeviceSets(316);
 	for (int i = 1; i <= 315; ++i) {
 		if (i == 298 || i == 299 || i == 306 || i == 315)
 			continue;
@@ -109,21 +85,7 @@ int main(int argc, char** argv) {
 		wifi_sta_node_sets[i]->install(*p_default_wifi_phy_helper);
 		wifi_ap_nodes[i]->install(*p_default_wifi_phy_helper);
 		delete p_default_wifi_phy_helper;
-		//staDeviceSets[i] = Wifi.Install(wifiPhys[i], mac,
-		//		wifi_sta_node_sets[i]);
 	}	//for
-
-// apnodes mac
-	//mac.SetType("ns3::ApWifiMac", "Ssid", ns3::SsidValue(ssid),
-	//		"BeaconGeneration", ns3::BooleanValue(true), "BeaconInterval",
-	//		ns3::TimeValue(ns3::Seconds(2.5)));
-
-	//std::vector<ns3::NetDeviceContainer> apDeviceSets(316);
-	//for (int i = 1; i <= 315; ++i) {
-	//	if (i == 298 || i == 299 || i == 306 || i == 315)
-	//		continue;
-	//	apDeviceSets[i] = Wifi.Install(wifiPhys[i], mac, wifi_ap_nodes[i]);
-	//}	//for
 
 //wifi area
 	std::vector<DefaultMobilityHelper> mobilities(316);
@@ -132,7 +94,6 @@ int main(int argc, char** argv) {
 			continue;
 		DefaultMobilityHelper default_mobility_helper;
 		wifi_sta_node_sets[i]->install(default_mobility_helper);
-		//mobilities[i].Install(wifi_sta_node_sets[i]);
 	}
 
 //channel define
@@ -146,8 +107,6 @@ int main(int argc, char** argv) {
 		TerminalSet & terminal_set = *terminal_sets[j];
 		for (int i = 0; i < 15; ++i) {
 			SimpleNode & terminal = terminal_set[i];
-//			std::cerr << i << ',' << j << ',' << terminal.countNetDevices()
-//					<< std::endl;
 			assert( 0 == terminal.countNetDevices());
 			topology_helper.InstallCsmaLink(terminal, csma_switch, 5000000, 2);
 		}	// for
@@ -1569,56 +1528,7 @@ int main(int argc, char** argv) {
 		if (i == 298 || i == 299 || i == 306 || i == 315)
 			continue;
 		wifi_ap_nodes[i]->installBridgeDevice();
-//		ns3::Ptr<ns3::Node> p_node = wifi_ap_nodes[i];
-//		ns3::Ptr<ns3::BridgeNetDevice> p_bridge_net_device = ns3::CreateObject<
-//				ns3::BridgeNetDevice>();
-//		p_node->AddDevice(p_bridge_net_device);
-//
-//		for (unsigned int portIter = 0; portIter < wifi_ap_nodes[i].operator const ns3::NetDeviceContainer &().GetN();
-//				++portIter) {
-//			p_bridge_net_device->AddBridgePort(wifi_ap_nodes[i].operator const ns3::NetDeviceContainer &().Get(portIter));
-//		}
-//
-//		for (unsigned int portIter = 0; portIter < apDeviceSets[i].GetN();
-//				++portIter) {
-//			p_bridge_net_device->AddBridgePort(apDeviceSets[i].Get(portIter));
-//		}
 	}	//for
-
-// Add internet stack to the terminals
-	//ns3::InternetStackHelper internet;
-	//internet.Install(internet_router);
-
-	//internet.Install(core_switch);
-	//internet.Install(jyouhoku_switch);
-//	for (int i = 5; i <= 348; ++i) {
-//		internet.Install(csmaSwitches[i]);
-//	}
-	//internet.Install(shigenobu_switch);
-
-//	for (int i = 1; i <= 287; ++i) {
-//		internet.Install(wifi_ap_nodes[i]);
-//	}
-
-//	for (int i = 300; i <= 305; ++i) {
-//		internet.Install(wifi_ap_nodes[i]);
-//	}
-
-//	for (int i = 307; i <= 314; ++i) {
-//		internet.Install(wifi_ap_nodes[i]);
-//	}
-
-	//for (int i = 1; i <= 299; ++i) {
-	//	internet.Install(wifi_sta_node_sets[i]);
-	//}
-
-	//for (int i = 300; i <= 305; ++i) {
-	//	internet.Install(wifi_sta_node_sets[i]);
-	//}
-
-	//for (int i = 307; i <= 314; ++i) {
-	//	internet.Install(wifi_sta_node_sets[i]);
-	//}
 
 // We've got the "hardware" in place.  Now we need to add IP addresses.
 //
@@ -1629,17 +1539,8 @@ int main(int argc, char** argv) {
 	for (int i = 5; i <= 348; ++i) {
 		if (i == 80 || i == 113 || i == 160 || i == 213 || i == 271 || i == 333)
 			continue;
-//		for (size_t j = 0; j < terminal_sets[i]->size(); ++j) {
-//			TerminalSet const& terminal_set = *terminal_sets[i];
-//			ns3::NetDeviceContainer const & net_device_container =
-//					terminal_set[j];
-//			p2p_interface_sets[i] = ipv4.Assign(net_device_container);
-//			std::cerr << i << "," << j << "," << net_device_container.GetN()
-//					<< "," << p2p_interface_sets[i].GetAddress(0, 0)
-//					<< std::endl;
-//		}
 		terminal_sets[i]->Assign(ipv4);
-	}
+	}//for
 
 	//std::vector<ns3::Ipv4InterfaceContainer> apinterface_sets(320);
 	for (int i = 1; i <= 315; ++i) {
@@ -1647,301 +1548,72 @@ int main(int argc, char** argv) {
 			continue;
 		wifi_sta_node_sets[i]->install(ipv4);
 		//apinterface_sets[i] = ipv4.Assign(staDeviceSets[i]);
-	}
+	}//for
 
 
 	Terminal & terminal_5_0 = terminal_sets[5]->operator [](0);
 	SimpleOnOffHelper onoff1(terminal_5_0.GetAddress());;
-
-//	int port = 9;
-//	ns3::OnOffHelper onoff1("ns3::UdpSocketFactory",
-//			ns3::Address(
-//					ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.1"),
-//							port)));
-	//onoff1.SetAttribute("OnTime",
-	//		ns3::RandomVariableValue(ns3::ConstantVariable(5)));
-	//onoff1.SetAttribute("OffTime",
-	//		ns3::RandomVariableValue(ns3::ConstantVariable(0)));
-//	onoff1.SetAttribute("DataRate",
-//			ns3::DataRateValue(ns3::DataRate("100kbps")));
-//	onoff1.SetAttribute("PacketSize", ns3::StringValue("1024"));
-//	onoff1.SetAttribute("MaxBytes", ns3::UintegerValue(100000000));
-//	onoff1.SetAttribute("Remote",
-//			ns3::AddressValue(
-//					ns3::InetSocketAddress(p2p_interface_sets[5].GetAddress(0),
-//							port)));
 	ns3::ApplicationContainer apps = onoff1.Install(*internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
-
-//	ns3::PacketSinkHelper sink("ns3::UdpSocketFactory",
-//			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-//	ns3::ApplicationContainer appsink = sink.Install(
-//			terminal_sets[5]->operator [](0));
-//	appsink.Start(ns3::Seconds(0.0));
-//	appsink.Stop(ns3::Seconds(10.0));
-
-//UDPecho
-	//int port = 9;
-//	ns3::OnOffHelper onoff2("ns3::UdpSocketFactory",
-//			ns3::Address(
-//					ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.2"),
-//							port)));
-	//onoff2.SetAttribute("OnTime",
-	//		ns3::RandomVariableValue(ns3::ConstantVariable(5)));
-	//onoff2.SetAttribute("OffTime",
-	//		ns3::RandomVariableValue(ns3::ConstantVariable(0)));
-
 	Terminal & terminal_5_1 = terminal_sets[5]->operator [](1);
 	SimpleOnOffHelper onoff2(terminal_5_1.GetAddress());
-//	onoff2.SetAttribute("DataRate",
-//			ns3::DataRateValue(ns3::DataRate("100kbps")));
-//	onoff2.SetAttribute("PacketSize", ns3::StringValue("1024"));
-//	onoff2.SetAttribute("MaxBytes", ns3::UintegerValue(100000000));
-//	onoff2.SetAttribute("Remote",
-//			ns3::AddressValue(
-//					ns3::InetSocketAddress(p2p_interface_sets[5].GetAddress(1),
-//							port)));
 	apps = onoff2.Install(*internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
-//	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
-//			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-//	appsink = sink.Install(terminal_sets[5]->operator [](1));
-//	appsink.Start(ns3::Seconds(0.0));
-//	appsink.Stop(ns3::Seconds(10.0));
-//UDPecho
-	//int port = 9;
 	Terminal & terminal_5_2 = terminal_sets[5]->operator [](2);
 	SimpleOnOffHelper onoff3(terminal_5_2.GetAddress());
-//	ns3::OnOffHelper onoff3("ns3::UdpSocketFactory",
-//			ns3::Address(
-//					ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.3"),
-//							port)));
-	//onoff3.SetAttribute("OnTime",
-	//		ns3::RandomVariableValue(ns3::ConstantVariable(5)));
-	//onoff3.SetAttribute("OffTime",
-	//		ns3::RandomVariableValue(ns3::ConstantVariable(0)));
-//	onoff3.SetAttribute("DataRate",
-//			ns3::DataRateValue(ns3::DataRate("100kbps")));
-//	onoff3.SetAttribute("PacketSize", ns3::StringValue("1024"));
-//	onoff3.SetAttribute("MaxBytes", ns3::UintegerValue(100000000));
-//	onoff3.SetAttribute("Remote",
-//			ns3::AddressValue(
-//					ns3::InetSocketAddress(p2p_interface_sets[5].GetAddress(2),
-//							port)));
 	apps = onoff3.Install(*internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
-//	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
-//			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-//	appsink = sink.Install(terminal_sets[5]->operator [](2));
-//	appsink.Start(ns3::Seconds(0.0));
-//	appsink.Stop(ns3::Seconds(10.0));
-//UDPecho
-	//int port = 9;
-
 	Terminal & terminal_5_3 = terminal_sets[5]->operator [](3);
 	SimpleOnOffHelper onoff4(terminal_5_3.GetAddress());
-//	ns3::OnOffHelper onoff4("ns3::UdpSocketFactory",
-//			ns3::Address(
-//					ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.4"),
-//							port)));
-	//onoff4.SetAttribute("OnTime",
-	//		ns3::RandomVariableValue(ns3::ConstantVariable(5)));
-	//onoff4.SetAttribute("OffTime",
-	//		ns3::RandomVariableValue(ns3::ConstantVariable(0)));
-//	onoff4.SetAttribute("DataRate",
-//			ns3::DataRateValue(ns3::DataRate("100kbps")));
-//	onoff4.SetAttribute("PacketSize", ns3::StringValue("1024"));
-//	onoff4.SetAttribute("MaxBytes", ns3::UintegerValue(100000000));
-//	onoff4.SetAttribute("Remote",
-//			ns3::AddressValue(
-//					ns3::InetSocketAddress(p2p_interface_sets[5].GetAddress(3),
-//							port)));
 	apps = onoff4.Install(*internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
-//	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
-//			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-//	appsink = sink.Install(terminal_sets[5]->operator [](3));
-//	appsink.Start(ns3::Seconds(0.0));
-//	appsink.Stop(ns3::Seconds(10.0));
-//UDPecho
-	//int port = 9;
 	Terminal& terminal_5_4 = terminal_sets[5]->operator [](4);
 	SimpleOnOffHelper onoff5(terminal_5_4.GetAddress());
-//
-//	ns3::OnOffHelper onoff5("ns3::UdpSocketFactory",
-//			ns3::Address(
-//					ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.5"),
-//							port)));
-	//onoff5.SetAttribute("OnTime",
-	//		ns3::RandomVariableValue(ns3::ConstantVariable(5)));
-	//onoff5.SetAttribute("OffTime",
-	//		ns3::RandomVariableValue(ns3::ConstantVariable(0)));
-//	onoff5.SetAttribute("DataRate",
-//			ns3::DataRateValue(ns3::DataRate("100kbps")));
-//	onoff5.SetAttribute("PacketSize", ns3::StringValue("1024"));
-//	onoff5.SetAttribute("MaxBytes", ns3::UintegerValue(100000000));
-//	onoff5.SetAttribute("Remote",
-//			ns3::AddressValue(
-//					ns3::InetSocketAddress(p2p_interface_sets[5].GetAddress(4),
-//							port)));
 	apps = onoff5.Install(*internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
-//	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
-//			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-//	appsink = sink.Install(terminal_sets[5]->operator [](4));
-//	appsink.Start(ns3::Seconds(0.0));
-//	appsink.Stop(ns3::Seconds(10.0));
-	//int port = 9;
-
 	Terminal & terminal_6_0 = terminal_sets[6]->operator [](0);
 	SimpleOnOffHelper onoff6(terminal_6_0.GetAddress());
-//	ns3::OnOffHelper onoff6("ns3::UdpSocketFactory",
-//			ns3::Address(
-//					ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.6"),
-//							port)));
-	//onoff6.SetAttribute("OnTime",
-	//		ns3::RandomVariableValue(ns3::ConstantVariable(5)));
-	//onoff6.SetAttribute("OffTime",
-	//		ns3::RandomVariableValue(ns3::ConstantVariable(0)));
-//	onoff6.SetAttribute("DataRate",
-//			ns3::DataRateValue(ns3::DataRate("100kbps")));
-//	onoff6.SetAttribute("PacketSize", ns3::StringValue("1024"));
-//	onoff6.SetAttribute("MaxBytes", ns3::UintegerValue(100000000));
-//	onoff6.SetAttribute("Remote",
-//			ns3::AddressValue(
-//					ns3::InetSocketAddress(p2p_interface_sets[6].GetAddress(0),
-//							port)));
 	apps = onoff6.Install(*internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
-//	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
-//			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-//	appsink = sink.Install(terminal_sets[6]->operator [](0));
-//	appsink.Start(ns3::Seconds(0.0));
-//	appsink.Stop(ns3::Seconds(10.0));
-//UDPecho
-	//int port = 9;
 	Terminal & terminal_6_1 = terminal_sets[6]->operator [](1);
 	SimpleOnOffHelper onoff7(terminal_6_1.GetAddress());
-//	ns3::OnOffHelper onoff7("ns3::UdpSocketFactory",
-//			ns3::Address(
-//					ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.7"),
-//							port)));
-	//onoff7.SetAttribute("OnTime",
-	//		ns3::RandomVariableValue(ns3::ConstantVariable(5)));
-	//onoff7.SetAttribute("OffTime",
-	//		ns3::RandomVariableValue(ns3::ConstantVariable(0)));
-//	onoff7.SetAttribute("DataRate",
-//			ns3::DataRateValue(ns3::DataRate("100kbps")));
-//	onoff7.SetAttribute("PacketSize", ns3::StringValue("1024"));
-//	onoff7.SetAttribute("MaxBytes", ns3::UintegerValue(100000000));
-//	onoff7.SetAttribute("Remote",
-//			ns3::AddressValue(
-//					ns3::InetSocketAddress(p2p_interface_sets[6].GetAddress(1),
-//							port)));
 	apps = onoff7.Install(*internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
-//	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
-//			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-//	appsink = sink.Install(terminal_sets[6]->operator [](1));
-//	appsink.Start(ns3::Seconds(0.0));
-//	appsink.Stop(ns3::Seconds(10.0));
-//UDPecho
-	//int port = 9;
 	Terminal & terminal_6_2 = terminal_sets[6]->operator [](2);
 	SimpleOnOffHelper onoff8(terminal_6_2.GetAddress());
-//	ns3::OnOffHelper onoff8("ns3::UdpSocketFactory",
-//			ns3::Address(
-//					ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.8"),
-//							port)));
-	//onoff8.SetAttribute("OnTime",
-	//		ns3::RandomVariableValue(ns3::ConstantVariable(5)));
-	//onoff8.SetAttribute("OffTime",
-	//		ns3::RandomVariableValue(ns3::ConstantVariable(0)));
-//	onoff8.SetAttribute("DataRate",
-//			ns3::DataRateValue(ns3::DataRate("100kbps")));
-//	onoff8.SetAttribute("PacketSize", ns3::StringValue("1024"));
-//	onoff8.SetAttribute("MaxBytes", ns3::UintegerValue(100000000));
-//	onoff8.SetAttribute("Remote",
-//			ns3::AddressValue(
-//					ns3::InetSocketAddress(p2p_interface_sets[6].GetAddress(2),
-//							port)));
 	apps = onoff8.Install(*internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
-//	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
-//			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-//	appsink = sink.Install(terminal_sets[6]->operator [](2));
-//	appsink.Start(ns3::Seconds(0.0));
-//	appsink.Stop(ns3::Seconds(10.0));
-//UDPecho
-	//int port = 9;
 	Terminal& terminal_6_3 = terminal_sets[6]->operator [](3);
 	SimpleOnOffHelper onoff9(terminal_6_3.GetAddress());
-//	ns3::OnOffHelper onoff9("ns3::UdpSocketFactory",
-//			ns3::Address(
-//					ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.9"),
-//							port)));
-	//onoff9.SetAttribute("OnTime",
-	//		ns3::RandomVariableValue(ns3::ConstantVariable(5)));
-	//onoff9.SetAttribute("OffTime",
-	//		ns3::RandomVariableValue(ns3::ConstantVariable(0)));
-//	onoff9.SetAttribute("DataRate",
-//			ns3::DataRateValue(ns3::DataRate("100kbps")));
-//	onoff9.SetAttribute("PacketSize", ns3::StringValue("1024"));
-//	onoff9.SetAttribute("MaxBytes", ns3::UintegerValue(100000000));
-//	onoff9.SetAttribute("Remote",
-//			ns3::AddressValue(
-//					ns3::InetSocketAddress(p2p_interface_sets[6].GetAddress(3),
-//							port)));
 	apps = onoff9.Install(*internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
-//	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
-//			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-//	appsink = sink.Install(terminal_sets[6]->operator [](3));
-//	appsink.Start(ns3::Seconds(0.0));
-//	appsink.Stop(ns3::Seconds(10.0));
-//UDPecho
-	//int port = 9;
 	Terminal& terminal_6_4 = terminal_sets[6]->operator [](4);
 	SimpleOnOffHelper onoff10(terminal_6_4.GetAddress());
-//	ns3::OnOffHelper onoff10("ns3::UdpSocketFactory",
-//			ns3::Address(
-//					ns3::InetSocketAddress(ns3::Ipv4Address("133.71.0.10"),
-//							port)));
-	//onoff10.SetAttribute("OnTime",
-	//		ns3::RandomVariableValue(ns3::ConstantVariable(5)));
-	//onoff10.SetAttribute("OffTime",
-	//		ns3::RandomVariableValue(ns3::ConstantVariable(0)));
-//	onoff10.SetAttribute("DataRate",
-//			ns3::DataRateValue(ns3::DataRate("100kbps")));
-//	onoff10.SetAttribute("PacketSize", ns3::StringValue("1024"));
-//	onoff10.SetAttribute("MaxBytes", ns3::UintegerValue(100000000));
-//	onoff10.SetAttribute("Remote",
-//			ns3::AddressValue(
-//					ns3::InetSocketAddress(p2p_interface_sets[6].GetAddress(4),
-//							port)));
 	apps = onoff10.Install(*internet_router);
 	apps.Start(ns3::Seconds(0.0));
 	apps.Stop(ns3::Seconds(10.0));
-//	sink = ns3::PacketSinkHelper("ns3::UdpSocketFactory",
-//			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-//	appsink = sink.Install(terminal_sets[6]->operator [](4));
-//	appsink.Start(ns3::Seconds(0.0));
-//	appsink.Stop(ns3::Seconds(10.0));
 
+	std::cerr << "Population routing table ..";
 	ns3::Ipv4GlobalRoutingHelper().PopulateRoutingTables();
+	std::cerr << " done." << std::endl;
 
-	ns3::Simulator::Stop(ns3::Seconds(10.00));
+	ns3::Simulator::Stop(ns3::Seconds(1.00));
+	std::cerr << "Running simulator ..";
 	ns3::Simulator::Run();
+	std::cerr << " done." << std::endl;
+
+	std::cerr << "Destroying simulator .. ";
 	ns3::Simulator::Destroy();
+	std::cerr << " done." << std::endl;
 
 	return EXIT_SUCCESS;
 } //main
