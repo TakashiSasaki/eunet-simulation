@@ -1540,75 +1540,24 @@ int main(int argc, char** argv) {
 		if (i == 80 || i == 113 || i == 160 || i == 213 || i == 271 || i == 333)
 			continue;
 		terminal_sets[i]->Assign(ipv4);
-	}//for
+	}	//for
 
 	for (int i = 1; i <= 315; ++i) {
 		if (i == 298 || i == 299 || i == 306 || i == 315)
 			continue;
 		wifi_sta_node_sets[i]->assign(ipv4);
-	}//for
-
+	}	//for
 
 	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[5])[0]);
-//	Terminal & terminal_5_0 = (*terminal_sets[5])[0];
-//	SimpleOnOffHelper onoff1(terminal_5_0.GetAddress());;
-//	ns3::ApplicationContainer apps = onoff1.Install(*internet_router);
-//	apps.Start(ns3::Seconds(0.0));
-//	apps.Stop(ns3::Seconds(10.0));
 	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[5])[1]);
-//	Terminal & terminal_5_1 = terminal_sets[5]->operator [](1);
-//	SimpleOnOffHelper onoff2(terminal_5_1.GetAddress());
-//	apps = onoff2.Install(*internet_router);
-//	apps.Start(ns3::Seconds(0.0));
-//	apps.Stop(ns3::Seconds(10.0));
 	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[5])[2]);
-//	Terminal & terminal_5_2 = terminal_sets[5]->operator [](2);
-//	SimpleOnOffHelper onoff3(terminal_5_2.GetAddress());
-//	apps = onoff3.Install(*internet_router);
-//	apps.Start(ns3::Seconds(0.0));
-//	apps.Stop(ns3::Seconds(10.0));
 	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[5])[3]);
-//	Terminal & terminal_5_3 = terminal_sets[5]->operator [](3);
-//	SimpleOnOffHelper onoff4(terminal_5_3.GetAddress());
-//	apps = onoff4.Install(*internet_router);
-//	apps.Start(ns3::Seconds(0.0));
-//	apps.Stop(ns3::Seconds(10.0));
 	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[5])[4]);
-//	Terminal& terminal_5_4 = terminal_sets[5]->operator [](4);
-//	SimpleOnOffHelper onoff5(terminal_5_4.GetAddress());
-//	apps = onoff5.Install(*internet_router);
-//	apps.Start(ns3::Seconds(0.0));
-//	apps.Stop(ns3::Seconds(10.0));
 	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[6])[0]);
-//	Terminal & terminal_6_0 = terminal_sets[6]->operator [](0);
-//	SimpleOnOffHelper onoff6(terminal_6_0.GetAddress());
-//	apps = onoff6.Install(*internet_router);
-//	apps.Start(ns3::Seconds(0.0));
-//	apps.Stop(ns3::Seconds(10.0));
 	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[6])[1]);
-//	Terminal & terminal_6_1 = terminal_sets[6]->operator [](1);
-//	SimpleOnOffHelper onoff7(terminal_6_1.GetAddress());
-//	apps = onoff7.Install(*internet_router);
-//	apps.Start(ns3::Seconds(0.0));
-//	apps.Stop(ns3::Seconds(10.0));
 	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[6])[2]);
-//	Terminal & terminal_6_2 = terminal_sets[6]->operator [](2);
-//	SimpleOnOffHelper onoff8(terminal_6_2.GetAddress());
-//	apps = onoff8.Install(*internet_router);
-//	apps.Start(ns3::Seconds(0.0));
-//	apps.Stop(ns3::Seconds(10.0));
 	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[6])[3]);
-//	Terminal& terminal_6_3 = terminal_sets[6]->operator [](3);
-//	SimpleOnOffHelper onoff9(terminal_6_3.GetAddress());
-//	apps = onoff9.Install(*internet_router);
-//	apps.Start(ns3::Seconds(0.0));
-//	apps.Stop(ns3::Seconds(10.0));
 	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[6])[4]);
-//	Terminal& terminal_6_4 = terminal_sets[6]->operator [](4);
-//	SimpleOnOffHelper onoff10(terminal_6_4.GetAddress());
-//	apps = onoff10.Install(*internet_router);
-//	apps.Start(ns3::Seconds(0.0));
-//	apps.Stop(ns3::Seconds(10.0));
 
 	std::cerr << "Population routing table ..";
 	ns3::Ipv4GlobalRoutingHelper().PopulateRoutingTables();
