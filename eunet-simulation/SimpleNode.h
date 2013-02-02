@@ -14,10 +14,9 @@
 #include <ns3/object.h>
 #include <ns3/internet-stack-helper.h>
 
-//internet-edge
 class SimpleNode: public ns3::Object {
 public:
-	ns3::NodeContainer internetrouter;
+	ns3::NodeContainer nodeContainer;
 	ns3::NetDeviceContainer netDeviceContainer;
 	const std::string description;
 	static ns3::InternetStackHelper internetStackHelper;
