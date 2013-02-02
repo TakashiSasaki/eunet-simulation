@@ -126,9 +126,6 @@ int main(int argc, char** argv) {
 	}
 
 //channel define
-	std::cerr << "abcde";
-	std::cerr << "/" << internet_router.internetrouter.GetN() << "/";
-	std::cerr << "/" << internet_router.internetrouter.GetN() << "/";
 	topology_helper.InstallCsmaLink(internet_router, core_switch,
 			1000000000, 2);
 
@@ -1613,6 +1610,7 @@ int main(int argc, char** argv) {
 			continue;
 		for(size_t j=0; j<terminal_sets[i].size(); ++j){
 		p2p_interface_sets[i] = ipv4.Assign(terminal_sets[i][j]);
+		std::cerr << p2p_interface_sets[i].GetAddress(0,0) << std::endl;
 		}
 	}
 

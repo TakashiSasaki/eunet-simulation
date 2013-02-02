@@ -32,8 +32,6 @@ public:
 	}
 
 	void install(ns3::WifiPhyHelper& wifi_phy_helper) {
-		//std::cerr << "*" << wifiNetDeviceContainer.GetN() << "*";
-		//assert(wifiNetDeviceContainer.GetN()==0);
 		wifiNetDeviceContainer = wifiHelper.Install(wifi_phy_helper,
 				nqosWifiMacHelper, pNode);
 	}

@@ -21,19 +21,16 @@ SimpleNode::SimpleNode(const std::string& description_) :
 }
 
 SimpleNode::operator const ns3::Ptr<ns3::Node> () const {
-	std::cerr << "node" << internetrouter.GetN();
 	assert(this->internetrouter.GetN()==1);
 	return this->internetrouter.Get(0);
 }
 
 SimpleNode::operator const ns3::NetDeviceContainer &() const {
-	std::cerr << "ndc" << internetrouter.GetN();
 	assert(this->internetrouter.GetN()==1);
 	return this->netDeviceContainer;
 }
 
 SimpleNode::operator ns3::NetDeviceContainer &()  {
-	std::cerr << "ndc" << internetrouter.GetN();
 	assert(this->internetrouter.GetN()==1);
 	return this->netDeviceContainer;
 }
