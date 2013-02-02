@@ -32,7 +32,7 @@ public:
 		}
 	}
 
-	void installBridgeDevice() {
+	void bridge() {
 		ns3::Ptr<ns3::BridgeNetDevice> p_bridge_net_device = ns3::CreateObject<
 				ns3::BridgeNetDevice>();
 		pNode->AddDevice(p_bridge_net_device);
@@ -74,7 +74,7 @@ public:
 
 	void bridgeEach() {
 		for (size_t i = 0; i < size(); ++i) {
-			(*this)[i]->installBridgeDevice();
+			(*this)[i]->bridge();
 		} //for
 	} //bridgeEach
 };
