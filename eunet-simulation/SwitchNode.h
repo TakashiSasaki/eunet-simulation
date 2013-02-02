@@ -7,7 +7,12 @@
 
 #ifndef SWITCHNODE_H_
 #define SWITCHNODE_H_
-#include <assert.h>
+
+#include <cassert>
+#include <vector>
+
+class SwitchNode;
+typedef ns3::Ptr<SwitchNode> SwitchNodeP;
 
 class SwitchNode: public SimpleNode {
 	ns3::Ptr<ns3::BridgeNetDevice> pBridgeNetDevice;
@@ -23,8 +28,23 @@ public:
 	} //default constructor
 	virtual ~SwitchNode() {
 
-	}
+	} // destructor
 };
 //SwitchNode
+
+class SwitchNodes: public std::vector<SwitchNodeP> {
+public:
+	SwitchNodes(size_t n_switch_nodes) {
+		for (size_t i = 0; i < n_switch_nodes; ++i) {
+			this->push_back(new SwitchNode);
+		} //for
+	} // a constructor
+
+	SwitchNodeP Create(std::string const& s) {
+		this->push_back(new SwitchNode(s));
+		return *this->end();
+	} // Create
+};
+//SwitchNodes
 
 #endif /* SWITCHNODE_H_ */

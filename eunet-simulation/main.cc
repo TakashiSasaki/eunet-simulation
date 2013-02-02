@@ -38,23 +38,18 @@ int main(int argc, char** argv) {
 	cmd.Parse(argc, argv);
 
 	TopologyHelper topology_helper;
-	ns3::Ptr<SwitchNode> internet_router(
-			new SwitchNode("the most external router"));
 
-	ns3::Ptr<SwitchNode> core_switch(
-			new SwitchNode("jouhoku--sigenobu--tarumi--motida"));
-	ns3::Ptr<SwitchNode> jyouhoku_switch(
-			new SwitchNode(
-					"sougoujouhoumediacenter 2F network-kanrisitu-main"));
-	ns3::Ptr<SwitchNode> shigenobu_switch(
-			new SwitchNode("2F serversitu-mediacenterbunsitu-main"));
-	ns3::Ptr<SwitchNode> tarumi_switch(
-			new SwitchNode("3F serversitu-mediacenterbunsitu-left-main"));
-
-	std::vector<ns3::Ptr<SwitchNode> > csmaSwitches;
-	for (int i = 0; i < 350; ++i) {
-		csmaSwitches.push_back(new SwitchNode);
-	} //for
+	SwitchNodes csmaSwitches(350);
+	SwitchNodeP internet_router = csmaSwitches.Create(
+			"the most external router");
+	SwitchNodeP core_switch = csmaSwitches.Create(
+			"jouhoku--sigenobu--tarumi--motida");
+	SwitchNodeP jyouhoku_switch = csmaSwitches.Create(
+			"sougoujouhoumediacenter 2F network-kanrisitu-main");
+	SwitchNodeP shigenobu_switch = csmaSwitches.Create(
+			"2F serversitu-mediacenterbunsitu-main");
+	SwitchNodeP tarumi_switch = csmaSwitches.Create(
+			"3F serversitu-mediacenterbunsitu-left-main");
 
 	std::vector<ns3::Ptr<TerminalSet> > terminal_sets;
 	for (int i = 0; i < 350; ++i) {
@@ -70,13 +65,6 @@ int main(int argc, char** argv) {
 	for (int i = 0; i < 350; ++i) {
 		wifi_ap_nodes.push_back(new WifiApNode);
 	} //for
-
-// Create the csma links, from each terminal to the switch
-
-	//ns3::NetDeviceContainer switchDevicesrouter;
-	//ns3::NetDeviceContainer switchDevices6506E;
-	//ns3::NetDeviceContainer switchDevicessigenobu;
-	//ns3::NetDeviceContainer switchDevicestarumi;
 
 	for (int i = 1; i <= 315; ++i) {
 		if (i == 298 || i == 299 || i == 306 || i == 315)
@@ -1457,74 +1445,6 @@ int main(int argc, char** argv) {
 			1000000000, 2);
 	topology_helper.InstallCsmaLink(*csmaSwitches[336], *csmaSwitches[342],
 			1000000000, 2);
-// switch create
-
-//	{
-//		ns3::Ptr<ns3::Node> switchNoderouter =
-//				core_switch->operator const ns3::Ptr<ns3::Node>();
-//		assert(switchNoderouter->GetNDevices()>=0);
-//		ns3::Ptr<ns3::BridgeNetDevice> bridgeDevicerouter = ns3::CreateObject<
-//				ns3::BridgeNetDevice>();
-//		switchNoderouter->AddDevice(bridgeDevicerouter);
-//
-//		for (unsigned int portIter; portIter < switchDevicesrouter.GetN();
-//				++portIter) {
-//			bridgeDevicerouter->AddBridgePort(
-//					switchDevicesrouter.Get(portIter));
-//		}
-//	}
-
-//	ns3::Ptr<ns3::Node> switchNode6506E =
-//			jyouhoku_switch->operator const ns3::Ptr<ns3::Node>();
-//	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevice6506E = ns3::CreateObject<
-//			ns3::BridgeNetDevice>();
-//	switchNode6506E->AddDevice(bridgeDevice6506E);
-//
-//	for (unsigned int portIter; portIter < switchDevices6506E.GetN();
-//			++portIter) {
-//		bridgeDevice6506E->AddBridgePort(switchDevices6506E.Get(portIter));
-//	}
-
-//	for (int i = 5; i <= 348; ++i) {
-//		if (i == 271)
-//			continue;
-//		ns3::Ptr<ns3::Node> p_node =
-//				csmaSwitches[i]->operator const ns3::Ptr<ns3::Node>();
-//		ns3::Ptr<ns3::BridgeNetDevice> p_bridge_net_device = ns3::CreateObject<
-//				ns3::BridgeNetDevice>();
-//		p_node->AddDevice(p_bridge_net_device);
-//
-//		for (unsigned int portIter;
-//				portIter
-//						< csmaSwitches[i]->operator const ns3::NetDeviceContainer &().GetN();
-//				++portIter) {
-//			p_bridge_net_device->AddBridgePort(
-//					csmaSwitches[i]->operator const ns3::NetDeviceContainer &().Get(
-//							portIter));
-//		}
-//	}
-//	ns3::Ptr<ns3::Node> const & switchNodesigenobu =
-//			shigenobu_switch->operator const ns3::Ptr<ns3::Node>();
-//	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevicesigenobu = ns3::CreateObject<
-//			ns3::BridgeNetDevice>();
-//	switchNodesigenobu->AddDevice(bridgeDevicesigenobu);
-//
-//	for (unsigned int portIter; portIter < switchDevicessigenobu.GetN();
-//			++portIter) {
-//		bridgeDevicesigenobu->AddBridgePort(
-//				switchDevicessigenobu.Get(portIter));
-//	}
-
-//	ns3::Ptr<ns3::Node> const & switchNodetarumi =
-//			tarumi_switch->operator const ns3::Ptr<ns3::Node>();
-//	ns3::Ptr<ns3::BridgeNetDevice> bridgeDevicetarumi = ns3::CreateObject<
-//			ns3::BridgeNetDevice>();
-//	switchNodetarumi->AddDevice(bridgeDevicetarumi);
-//
-//	for (unsigned int portIter; portIter < switchDevicestarumi.GetN();
-//			++portIter) {
-//		bridgeDevicetarumi->AddBridgePort(switchDevicestarumi.Get(portIter));
-//	}
 
 //apDevices switchDevices setuzoku
 	for (int i = 1; i <= 315; ++i) {
@@ -1534,8 +1454,6 @@ int main(int argc, char** argv) {
 	}	//for
 
 // We've got the "hardware" in place.  Now we need to add IP addresses.
-//
-//print "Assign IP Addresses."
 
 	ns3::Ipv4AddressHelper ipv4;
 	ipv4.SetBase(ns3::Ipv4Address("133.71.0.0"), ns3::Ipv4Mask("255.255.0.0"));
