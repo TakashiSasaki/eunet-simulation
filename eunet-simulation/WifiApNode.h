@@ -62,4 +62,22 @@ public:
 	}
 };
 
+typedef ns3::Ptr<WifiApNode> WifiApNodeP;
+
+class WifiApNodes: public std::vector<WifiApNodeP> {
+public:
+	WifiApNodes(const size_t n) {
+		for (size_t i = 0; i < n; ++i) {
+			push_back(new WifiApNode);
+		} //for
+	} //a constructor
+
+	void bridgeEach() {
+		for (size_t i = 0; i < size(); ++i) {
+			(*this)[i]->installBridgeDevice();
+		} //for
+	} //bridgeEach
+};
+// WifiApNodes
+
 #endif /* WIFIAPNODE_H_ */

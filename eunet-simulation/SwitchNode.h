@@ -19,15 +19,18 @@ public:
 	SwitchNode(std::string const& description_ = "switch_node") :
 			SimpleNode(description_), pBridgeNetDevice(
 					ns3::CreateObject<ns3::BridgeNetDevice>()) {
+	} //default constructor
+	virtual ~SwitchNode() {
+
+	} // destructor
+
+	void bridge() {
 		assert(1==nodeContainer.GetN());
 		nodeContainer.Get(0)->AddDevice(pBridgeNetDevice);
 		for (size_t i = 0; i < netDeviceContainer.GetN(); ++i) {
 			pBridgeNetDevice->AddBridgePort(netDeviceContainer.Get(i));
 		} //for
-	} //default constructor
-	virtual ~SwitchNode() {
-
-	} // destructor
+	} //bridge
 };
 //SwitchNode
 
@@ -45,6 +48,12 @@ public:
 		this->push_back(new SwitchNode(s));
 		return *this->end();
 	} // Create
+
+	void bridgeEach() {
+		for (size_t i = 0; i < size(); ++i) {
+			(*this)[i]->bridge();
+		} //for
+	} //bridgeEach
 };
 //SwitchNodes
 
