@@ -28,7 +28,6 @@ public:
 private:
 	TopologyHelper topology_helper;
 	SwitchNodes csmaSwitches;
-	//std::vector<ns3::Ptr<WifiApNode> > wifi_ap_nodes;
 	WifiApNodes wifi_ap_nodes;
 
 private:
@@ -72,23 +71,11 @@ public:
 
 	Eunet() :
 			csmaSwitches(350), wifi_ap_nodes(350) {
-
-//		for (int i = 0; i < 350; ++i) {
-//			wifi_ap_nodes.push_back(new WifiApNode);
-//		} //for
-
 		InstallCsmaLink();
 		csmaSwitches.bridgeEach();
 		wifi_ap_nodes.bridgeEach();
-		//apDevices switchDevices setuzoku
-//		for (int i = 1; i <= 315; ++i) {
-//			if (i == 298 || i == 299 || i == 306 || i == 315)
-//				continue;
-//			wifi_ap_nodes[i]->installBridgeDevice();
-//		}	//for
 	}	// the default constructor
 	virtual ~Eunet() {
-
 	}
 };
 
