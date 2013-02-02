@@ -31,6 +31,7 @@ public:
 	int countNetDevices() const {
 		return netDeviceContainer.GetN();
 	}
+
 private:
 	SimpleNode(const SimpleNode&);
 	SimpleNode& operator=(const SimpleNode&);

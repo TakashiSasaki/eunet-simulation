@@ -10,22 +10,21 @@
 
 TerminalSet::TerminalSet(const int number_of_terminals,
 		const std::string& description_) :
-		description(description_), simpleNodes(number_of_terminals) {
+		description(description_), terminals(number_of_terminals) {
 
-	for (unsigned int i = 0; i < simpleNodes.size(); ++i) {
-		simpleNodes[i] = ns3::Ptr<SimpleNode>(
-				new SimpleNode(this->description));
+	for (unsigned int i = 0; i < terminals.size(); ++i) {
+		terminals[i] = ns3::Ptr<Terminal>(new Terminal(this->description));
 	} //for
 } // default constructor
 
-SimpleNode const & TerminalSet::operator[](const int index) const {
-	SimpleNode const & simple_node = *simpleNodes[index];
-	assert(1 >= simple_node.operator const ns3::NetDeviceContainer &().GetN());
-	return simple_node;
+Terminal const & TerminalSet::operator[](const int index) const {
+	Terminal const & terminal = *terminals[index];
+	assert(1 >= terminal.operator const ns3::NetDeviceContainer &().GetN());
+	return terminal;
 }
 
-SimpleNode& TerminalSet::operator[](const int index) {
-	SimpleNode & simple_node = *simpleNodes[index];
-	assert(1 >= simple_node.operator const ns3::NetDeviceContainer &().GetN());
-	return simple_node;
+Terminal& TerminalSet::operator[](const int index) {
+	Terminal & terminal = *terminals[index];
+	assert(1 >= terminal.operator const ns3::NetDeviceContainer &().GetN());
+	return terminal;
 }

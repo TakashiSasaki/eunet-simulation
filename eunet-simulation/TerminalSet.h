@@ -11,11 +11,11 @@
 #include <vector>
 #include <functional>
 #include <ns3/net-device-container.h>
-#include "SimpleNode.h"
+#include "Terminal.h"
 
 class TerminalSet: public ns3::Object {
 	const std::string& description;
-	std::vector<ns3::Ptr<SimpleNode> > simpleNodes;
+	std::vector<ns3::Ptr<Terminal> > terminals;
 //
 //private:
 //	void copyNewSimpleNode(
@@ -24,12 +24,17 @@ class TerminalSet: public ns3::Object {
 public:
 	TerminalSet(const int number_of_terminals = 15,
 			const std::string& description_ = "terminal_set");
-	const SimpleNode& operator[](const int index) const;
-	SimpleNode& operator[](const int index);
+	const Terminal& operator[](const int index) const;
+	Terminal& operator[](const int index);
 	size_t size() const {
-		return simpleNodes.size();
+		return terminals.size();
 	}
 	virtual ~TerminalSet() {
+	}
+	void Assign(ns3::Ipv4AddressHelper& ipv4_address_helper) {
+		for (size_t i = 0; i < terminals.size(); ++i) {
+			terminals[i]->Assign(ipv4_address_helper);
+		}
 	}
 private:
 	TerminalSet(const TerminalSet&);
