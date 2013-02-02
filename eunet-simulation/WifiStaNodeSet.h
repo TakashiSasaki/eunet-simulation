@@ -22,30 +22,45 @@ public:
 			wifiStaNodes(number_of_wifi_sta_nodes), description(description_) {
 		for (size_t i = 0; i < wifiStaNodes.size(); ++i) {
 			wifiStaNodes[i] = new WifiStaNode();
-		}
-	}
+		} //for
+	} //
 
 	void install(ns3::WifiPhyHelper& wifi_phy_helper) {
 		for (size_t i = 0; i < wifiStaNodes.size(); ++i) {
 			wifiStaNodes[i]->install(wifi_phy_helper);
-		}
-	}
+		} //for
+	} //install
 
 	void install(ns3::MobilityHelper& mobility_helper) {
 		for (size_t i = 0; i < wifiStaNodes.size(); ++i) {
 			wifiStaNodes[i]->install(mobility_helper);
-		}
-	}
+		} //for
+	} //install
 
 	void assign(ns3::Ipv4AddressHelper& ipv4_address_helper) {
 		for (size_t i = 0; i < wifiStaNodes.size(); ++i) {
 			ns3::Ptr<WifiStaNode> p_wifi_sta_node = wifiStaNodes[i];
 			p_wifi_sta_node->assign(ipv4_address_helper);
-		}
-	}
+		} //for
+	} //assign
 
 	virtual ~WifiStaNodeSet() {
 	}
+};
+
+typedef ns3::Ptr<WifiStaNodeSet> WifiStaNodeSetP;
+
+class WifiStaNodeSets: public std::vector<ns3::Ptr<WifiStaNodeSet> > {
+public:
+	WifiStaNodeSets(const size_t n_wifi_sta_node_set) {
+		for (size_t i = 0; i < n_wifi_sta_node_set; ++i) {
+			WifiStaNodeSetP p_wifi_sta_node_set = new WifiStaNodeSet;
+			DefaultMobilityHelper default_mobility_helper;
+			p_wifi_sta_node_set->install(default_mobility_helper);
+			this->push_back(p_wifi_sta_node_set);
+
+		} //for
+	} // the constructor
 };
 
 #endif /* WIFISTANODESET_H_ */

@@ -40,7 +40,7 @@ int main(int argc, char** argv) {
 
 	Eunet eunet;
 	std::vector<ns3::Ptr<TerminalSet> > terminal_sets;
-	std::vector<ns3::Ptr<WifiStaNodeSet> > wifi_sta_node_sets;
+
 	for (int i = 0; i < 350; ++i) {
 		terminal_sets.push_back(new TerminalSet);
 	} //for
@@ -56,9 +56,12 @@ int main(int argc, char** argv) {
 //			topology_helper.InstallCsmaLink(terminal, csma_switch, 5000000, 2);
 //		}	// for
 	}	// for
-	for (int i = 0; i < 350; ++i) {
-		wifi_sta_node_sets.push_back(new WifiStaNodeSet);
-	} //for
+
+	WifiStaNodeSets wifi_sta_node_sets(350);
+//	std::vector<ns3::Ptr<WifiStaNodeSet> > wifi_sta_node_sets;
+//	for (int i = 0; i < 350; ++i) {
+//		wifi_sta_node_sets.push_back(new WifiStaNodeSet);
+//	} //for
 	for (int i = 1; i <= 315; ++i) {
 		if (i == 298 || i == 299 || i == 306 || i == 315)
 			continue;
@@ -70,13 +73,14 @@ int main(int argc, char** argv) {
 //		delete p_default_wifi_phy_helper;
 	}	//for
 	//wifi area
-	std::vector<DefaultMobilityHelper> mobilities(316);
-	for (int i = 0; i <= 315; ++i) {
-		//		if (i==0 || i == 298 || i == 299 || i == 306 || i == 315)
-		//			continue;
-		DefaultMobilityHelper default_mobility_helper;
-		wifi_sta_node_sets[i]->install(default_mobility_helper);
-	}
+
+//	std::vector<DefaultMobilityHelper> mobilities(316);
+//	for (int i = 0; i <= 315; ++i) {
+//		//		if (i==0 || i == 298 || i == 299 || i == 306 || i == 315)
+//		//			continue;
+//		DefaultMobilityHelper default_mobility_helper;
+//		wifi_sta_node_sets[i]->install(default_mobility_helper);
+//	}
 
 // We've got the "hardware" in place.  Now we need to add IP addresses.
 
