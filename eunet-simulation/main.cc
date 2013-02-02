@@ -5,8 +5,6 @@
 #include <ns3/point-to-point-helper.h>
 #include <ns3/applications-module.h>
 #include <ns3/ipv4-global-routing-helper.h>
-//#include <ns3/wifi-helper.h>
-//#include <ns3/wifi-channel.h>
 #include <ns3/yans-wifi-helper.h>
 #include <ns3/yans-wifi-phy.h>
 #include <ns3/nqos-wifi-mac-helper.h>
@@ -18,10 +16,7 @@
 #include <ns3/rectangle.h>
 #include "SwitchDevices.h"
 #include "CsmaSwitches.h"
-#include "TerminalSets.h"
-#include "WifiStaNodeSets.h"
 #include "WifiApNodes.h"
-//#include "TerminalDeviceSets.h"
 #include "ApDeviceSets.h"
 #include "DefaultWifiPhyHelper.h"
 #include "DefaultMobilityHelper.h"

@@ -8,6 +8,8 @@
 #ifndef TERMINALSETS_H_
 #define TERMINALSETS_H_
 
+#error "TerminalSets.h was obsoleted"
+
 void initTerminalSet(ns3::NodeContainer & x) {
 	x.Create(15);
 }
