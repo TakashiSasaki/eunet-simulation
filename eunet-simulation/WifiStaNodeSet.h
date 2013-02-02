@@ -48,6 +48,7 @@ public:
 	virtual ~WifiStaNodeSet() {
 	}
 };
+//WifiStaNodeSet
 
 typedef ns3::Ptr<WifiStaNodeSet> WifiStaNodeSetP;
 
@@ -70,5 +71,6 @@ public:
 		} //for
 	} //assign
 };
+//WifiStaNodeSets
 
 #endif /* WIFISTANODESET_H_ */

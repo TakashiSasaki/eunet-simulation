@@ -47,7 +47,7 @@ public:
 		ns3::ApplicationContainer application_container =
 				simple_on_off_helper.Install(source_node);
 		application_container.Start(ns3::Seconds(0.0));
-		application_container.Stop(ns3::Seconds(10.0));
+		//application_container.Stop(ns3::Seconds(10.0));
 	} // install
 };
 

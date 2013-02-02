@@ -1,11 +1,11 @@
 /*
- * InternetRouter.cpp
+ * SimpleNode.cpp
  *
  *  Created on: Jan 29, 2013
  *      Author: sasaki
  */
 
-#include <assert.h>
+#include <cassert>
 #include <ns3/internet-stack-helper.h>
 #include "SimpleNode.h"
 
@@ -34,8 +34,3 @@ SimpleNode::operator ns3::NetDeviceContainer &() {
 	assert(this->nodeContainer.GetN()==1);
 	return this->netDeviceContainer;
 }
-
-SimpleNode::~SimpleNode() {
-	// TODO Auto-generated destructor stub
-}
-

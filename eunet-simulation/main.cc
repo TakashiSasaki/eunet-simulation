@@ -9,7 +9,6 @@
 #include "TerminalSet.h"
 #include "WifiStaNodeSet.h"
 #include "SimpleOnOffHelper.h"
-#include "SwitchNode.h"
 #include "Eunet.h"
 
 NS_LOG_COMPONENT_DEFINE("eunet-simulation");

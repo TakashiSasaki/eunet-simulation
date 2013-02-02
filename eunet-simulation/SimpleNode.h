@@ -1,12 +1,12 @@
 /*
- * InternetRouter.h
+ * SimpleNode.h
  *
  *  Created on: Jan 29, 2013
  *      Author: sasaki
  */
 
-#ifndef INTERNETROUTER_H_
-#define INTERNETROUTER_H_
+#ifndef SIMPLENODE_H_
+#define SIMPLENODE_H_
 
 #include <ns3/node-container.h>
 #include <ns3/net-device-container.h>
@@ -23,18 +23,20 @@ public:
 
 public:
 	SimpleNode(const std::string& description_ = "simple_node");
-	virtual ~SimpleNode();
+	virtual ~SimpleNode() {
+	}
 	operator const ns3::Ptr<ns3::Node>() const;
 	operator const ns3::NetDeviceContainer&() const;
 	operator ns3::NetDeviceContainer&();
 	int countNetDevices() const {
 		return netDeviceContainer.GetN();
-	}
+	} //countNetDevices
 
 private:
 	SimpleNode(const SimpleNode&);
 	SimpleNode& operator=(const SimpleNode&);
 
 };
+//SimpleNode
 
-#endif /* INTERNETROUTER_H_ */
+#endif /* SIMPLENODE_H_ */

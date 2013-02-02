@@ -1,6 +1,7 @@
 #include <vector>
 #include <algorithm>
-#include <assert.h>
+#include <cassert>
+#include <ns3/net-device-container.h>
 #include "TerminalSet.h"
 
 //void TerminalSet::copyNewSimpleNode(
@@ -17,14 +18,16 @@ TerminalSet::TerminalSet(const int number_of_terminals,
 	} //for
 } // default constructor
 
-Terminal const & TerminalSet::operator[](const int index) const {
-	Terminal const & terminal = *terminals[index];
-	assert(1 >= terminal.operator const ns3::NetDeviceContainer &().GetN());
+Terminal const & TerminalSet::operator[](const int i_terminal) const {
+	Terminal const & terminal = *terminals[i_terminal];
+	ns3::NetDeviceContainer const & net_device_container = terminal;
+	assert(1 >= net_device_container.GetN());
 	return terminal;
 }
 
-Terminal& TerminalSet::operator[](const int index) {
-	Terminal & terminal = *terminals[index];
-	assert(1 >= terminal.operator const ns3::NetDeviceContainer &().GetN());
+Terminal& TerminalSet::operator[](const int i_terminal) {
+	Terminal & terminal = *terminals[i_terminal];
+	ns3::NetDeviceContainer const & net_device_container = terminal;
+	assert(1 >= net_device_container.GetN());
 	return terminal;
 }

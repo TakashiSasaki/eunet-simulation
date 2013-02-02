@@ -38,15 +38,12 @@ public:
 		assert(ipv4InterfaceContainer.GetN()==netDeviceContainer.GetN());
 		assert(1==ipv4InterfaceContainer.GetN());
 		assert(1==netDeviceContainer.GetN());
-	}
+	} //Assign
 
-//	ns3::Ipv4Address GetAddress() const {
-//		return ipv4InterfaceContainer.GetAddress(0, 0);
-//	}
-//
 	operator ns3::Ipv4Address() const {
 		return ipv4InterfaceContainer.GetAddress(0, 0);
 	}
+
 };
 
 #endif /* TERMINAL_H_ */
