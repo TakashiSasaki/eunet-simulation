@@ -22,6 +22,7 @@ int main(int argc, char** argv) {
 	Eunet eunet;
 
 	TerminalSets terminal_sets(350);
+	std::cerr << terminal_sets;
 	eunet.Attach(terminal_sets);
 
 	WifiStaNodeSets wifi_sta_node_sets(350);
@@ -48,8 +49,25 @@ int main(int argc, char** argv) {
 	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(6, 4)));
 
 	std::cerr << "Populating routing table ..";
-	ns3::Ipv4GlobalRoutingHelper().PopulateRoutingTables();
+	ns3::Ipv4GlobalRoutingHelper ipv4_global_routing_helper;
+	ipv4_global_routing_helper.PopulateRoutingTables();
 	std::cerr << " done." << std::endl;
+	std::cerr << terminal_sets;
+
+	{
+		ns3::OutputStreamWrapper output_stream_wrapper(
+				"ipv4_global_routing_helper.0.txt", std::ios::out);
+		ipv4_global_routing_helper.PrintRoutingTableAllAt(ns3::Time(0.0),
+				&output_stream_wrapper);
+	}
+
+	{
+		ns3::OutputStreamWrapper output_stream_wrapper(
+				"ipv4_static_routing_helper.0.txt", std::ios::out);
+		ns3::Ipv4StaticRoutingHelper ipv4_static_routing_helper;
+		ipv4_static_routing_helper.PrintRoutingTableAllAt(ns3::Time(0.0),
+				&output_stream_wrapper);
+	}
 
 	ns3::Simulator::Stop(ns3::Seconds(1.00));
 	std::cerr << "Running simulator ..";

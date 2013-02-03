@@ -14,6 +14,10 @@
 #include <ns3/packet-sink-helper.h>
 #include <ns3/inet-socket-address.h>
 #include <ns3/on-off-helper.h>
+#include <ns3/ipv4-routing-helper.h>
+#include <ns3/ipv4-static-routing-helper.h>
+#include <ns3/ipv4-route.h>
+#include <ns3/ipv4-static-routing.h>
 #include "SimpleNode.h"
 
 class Terminal: public SimpleNode {
@@ -29,10 +33,10 @@ public:
 				this->nodeContainer);
 		sinkApplicationContainer.Start(ns3::Seconds(0.0));
 		//sinkApplicationContainer.Stop(ns3::Seconds(10.0));
-	}
+	} // a constructor
 
 	virtual ~Terminal() {
-	}
+	} // destructor
 
 	void Assign(ns3::Ipv4AddressHelper& ipv4_address_helper) {
 		ipv4InterfaceContainer = ipv4_address_helper.Assign(netDeviceContainer);
@@ -43,7 +47,7 @@ public:
 
 	operator ns3::Ipv4Address() const {
 		return ipv4InterfaceContainer.GetAddress(0, 0);
-	}
+	} //operator ns3::Ipv4Address
 
 	void install(ns3::OnOffHelper const & on_off_helper) const {
 		assert(1==nodeContainer.GetN());
@@ -51,6 +55,24 @@ public:
 				nodeContainer.Get(0));
 		application_container.Start(ns3::Seconds(0.0));
 	} //install
+
+	ns3::Ptr<ns3::Ipv4StaticRouting> getStaticRouting() const {
+		ns3::Ipv4StaticRoutingHelper const ipv4_static_routing_helper;
+		assert(1 == nodeContainer.GetN());
+		ns3::Ptr<ns3::Ipv4> const p_ipv4 = nodeContainer.Get(0)->GetObject<
+				ns3::Ipv4>();
+		return ipv4_static_routing_helper.GetStaticRouting(p_ipv4);
+	} //getStaticRouting
+
+	friend std::ostream& operator<<(std::ostream& ostream,
+			Terminal const & terminal);
 };
+// class Terminal
+
+inline std::ostream& operator<<(std::ostream& ostream, Terminal const & terminal) {
+	ostream << terminal.operator ns3::Ipv4Address()
+			<< terminal.getStaticRouting();
+	return ostream;
+} //operator <<
 
 #endif /* TERMINAL_H_ */

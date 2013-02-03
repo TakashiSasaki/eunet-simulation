@@ -38,11 +38,22 @@ public:
 			terminals[i]->Assign(ipv4_address_helper);
 		}
 	}
+
+	friend std::ostream& operator<<(std::ostream& ostream,
+			TerminalSet const & terminal_set);
 private:
 	TerminalSet(const TerminalSet&);
 	TerminalSet operator=(const TerminalSet&);
 };
 // TerminalSet
+
+inline std::ostream& operator<<(std::ostream& ostream,
+		TerminalSet const & terminal_set) {
+	for (size_t i = 0; i < terminal_set.terminals.size(); ++i) {
+		ostream << i << '\t' << *terminal_set.terminals[i];
+	}
+	return ostream;
+}
 
 typedef ns3::Ptr<TerminalSet> TerminalSetP;
 
@@ -66,7 +77,18 @@ public:
 		Terminal const & terminal = (*p_terminal_set)[i_terminal];
 		return terminal;
 	} //get
+
+	friend std::ostream& operator<<(std::ostream& ostream,
+			TerminalSets const & terminal_sets);
 };
 //TermianlSets
+
+inline std::ostream& operator<<(std::ostream& ostream,
+		TerminalSets const & terminal_sets) {
+	for (size_t i = 0; i < terminal_sets.size(); ++i) {
+		ostream << i << '\t' << terminal_sets[i];
+	} //for
+	return ostream;
+} //operator <<
 
 #endif /* TERMINALSET_H_ */
