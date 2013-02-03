@@ -46,6 +46,7 @@ public:
 	} //install
 
 	void install(ns3::MobilityHelper& mobility_helper) {
+		assert(pNode != NULL);
 		mobility_helper.Install(pNode);
 	} //install
 

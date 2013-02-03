@@ -58,8 +58,8 @@ public:
 	WifiStaNodeSets(const size_t n_wifi_sta_node_set) {
 		for (size_t i = 0; i < n_wifi_sta_node_set; ++i) {
 			WifiStaNodeSetP p_wifi_sta_node_set = new WifiStaNodeSet;
-			DefaultMobilityHelper default_mobility_helper;
-			p_wifi_sta_node_set->install(default_mobility_helper);
+			RandomWalkMobilityHelper random_walk_mobility_helper;
+			p_wifi_sta_node_set->install(random_walk_mobility_helper);
 			this->push_back(p_wifi_sta_node_set);
 		} //for
 	} // the constructor
