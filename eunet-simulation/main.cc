@@ -33,17 +33,19 @@ int main(int argc, char** argv) {
 	terminal_sets.assign(ipv4_address_helper);
 	wifi_sta_node_sets.assign(ipv4_address_helper);
 
-	SwitchNodeP internet_router = eunet.getSwitch(Eunet::INTERNET_ROUTER_INDEX);
-	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[5])[0]);
-	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[5])[1]);
-	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[5])[2]);
-	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[5])[3]);
-	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[5])[4]);
-	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[6])[0]);
-	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[6])[1]);
-	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[6])[2]);
-	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[6])[3]);
-	SimpleOnOffHelper::install(*internet_router, (*terminal_sets[6])[4]);
+	Terminal const & internet_terminal = terminal_sets.get(
+			Eunet::INTERNET_ROUTER_INDEX, 0);
+
+	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(5, 0)));
+	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(5, 1)));
+	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(5, 2)));
+	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(5, 3)));
+	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(5, 4)));
+	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(6, 0)));
+	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(6, 1)));
+	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(6, 2)));
+	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(6, 3)));
+	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(6, 4)));
 
 	std::cerr << "Populating routing table ..";
 	ns3::Ipv4GlobalRoutingHelper().PopulateRoutingTables();

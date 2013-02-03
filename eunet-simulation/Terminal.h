@@ -13,6 +13,7 @@
 #include <ns3/ipv4-address-helper.h>
 #include <ns3/packet-sink-helper.h>
 #include <ns3/inet-socket-address.h>
+#include <ns3/on-off-helper.h>
 #include "SimpleNode.h"
 
 class Terminal: public SimpleNode {
@@ -44,6 +45,12 @@ public:
 		return ipv4InterfaceContainer.GetAddress(0, 0);
 	}
 
+	void install(ns3::OnOffHelper const & on_off_helper) const {
+		assert(1==nodeContainer.GetN());
+		ns3::ApplicationContainer application_container = on_off_helper.Install(
+				nodeContainer.Get(0));
+		application_container.Start(ns3::Seconds(0.0));
+	} //install
 };
 
 #endif /* TERMINAL_H_ */

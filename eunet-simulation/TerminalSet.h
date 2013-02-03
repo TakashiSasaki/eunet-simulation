@@ -13,6 +13,8 @@
 #include <ns3/net-device-container.h>
 #include "Terminal.h"
 
+typedef ns3::Ptr<Terminal> TerminalP;
+
 class TerminalSet: public ns3::Object {
 	const std::string& description;
 	std::vector<ns3::Ptr<Terminal> > terminals;
@@ -58,6 +60,12 @@ public:
 			x->Assign(ipv4_address_helper);
 		} //for
 	} //Assign
+
+	Terminal const & get(const int i_terminal_set, const int i_terminal) const {
+		TerminalSetP const p_terminal_set = (*this)[i_terminal_set];
+		Terminal const & terminal = (*p_terminal_set)[i_terminal];
+		return terminal;
+	} //get
 };
 //TermianlSets
 

@@ -21,6 +21,7 @@ class SimpleOnOffHelper: public ns3::OnOffHelper {
 	static const int remotePort = 9;
 	static ns3::ExponentialVariable exponentialVariable;
 	//ns3::OnOffHelper onOffHelper;
+public:
 	SimpleOnOffHelper(ns3::Ipv4Address const & remote_address) :
 			ns3::OnOffHelper("ns3::UdpSocketFactory",
 					ns3::Address(
@@ -40,7 +41,8 @@ class SimpleOnOffHelper: public ns3::OnOffHelper {
 	} // a constructor
 	virtual ~SimpleOnOffHelper() {
 	}
-public:
+private:
+	// obsoleted methods
 	static void install(SimpleNode const& source_node,
 			ns3::Ipv4Address const& remote_address) {
 		SimpleOnOffHelper simple_on_off_helper(remote_address);
@@ -50,5 +52,6 @@ public:
 		//application_container.Stop(ns3::Seconds(10.0));
 	} // install
 };
+//SimpleOnOffHelper
 
 #endif /* SIMPLEAPPLICATION_H_ */
