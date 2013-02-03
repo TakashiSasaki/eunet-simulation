@@ -10,6 +10,7 @@
 #include "WifiStaNodeSet.h"
 #include "SimpleOnOffHelper.h"
 #include "Eunet.h"
+#include "EunetBase.h"
 
 NS_LOG_COMPONENT_DEFINE("eunet-simulation");
 
@@ -35,7 +36,7 @@ int main(int argc, char** argv) {
 	wifi_sta_node_sets.assign(ipv4_address_helper);
 
 	Terminal const & internet_terminal = terminal_sets.get(
-			Eunet::INTERNET_ROUTER_INDEX, 0);
+			EunetBase::INTERNET_ROUTER_INDEX, 0);
 
 	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(5, 0)));
 	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(5, 1)));

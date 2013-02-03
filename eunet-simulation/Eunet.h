@@ -14,9 +14,8 @@
 #include "Terminal.h"
 #include "TerminalSet.h"
 #include "TopologyHelper.h"
-#include "EunetBase.h"
 
-class Eunet :public EunetBase{
+class Eunet {
 private:
 	TopologyHelper topology_helper;
 	SwitchNodes switch_nodes;
