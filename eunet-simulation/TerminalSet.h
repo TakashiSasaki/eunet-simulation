@@ -22,7 +22,7 @@ class TerminalSet: public ns3::Object {
 	std::vector<ns3::Ptr<Terminal> > terminals;
 
 public:
-	TerminalSet(const std::string& prefix = "terminal_",
+	TerminalSet(const std::string& prefix = "terminal",
 			const int number_of_terminals = 15) :
 			terminals(number_of_terminals) {
 		for (unsigned int i = 0; i < terminals.size(); ++i) {

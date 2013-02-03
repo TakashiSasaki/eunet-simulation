@@ -16,13 +16,14 @@
 
 class WifiStaNodeSet: public ns3::Object {
 	std::vector<ns3::Ptr<WifiStaNode> > wifiStaNodes;
-	const std::string& description;
 public:
 	WifiStaNodeSet(const int number_of_wifi_sta_nodes = 15,
-			const std::string& description_ = "wifi_sta_node_set") :
-			wifiStaNodes(number_of_wifi_sta_nodes), description(description_) {
+			const std::string& prefix = "wifiStaNode") :
+			wifiStaNodes(number_of_wifi_sta_nodes) {
 		for (size_t i = 0; i < wifiStaNodes.size(); ++i) {
-			wifiStaNodes[i] = new WifiStaNode();
+			std::stringstream ss;
+			ss << prefix << i;
+			wifiStaNodes[i] = new WifiStaNode(ss.str());
 		} //for
 	} //
 
@@ -55,9 +56,11 @@ typedef ns3::Ptr<WifiStaNodeSet> WifiStaNodeSetP;
 
 class WifiStaNodeSets: public std::vector<ns3::Ptr<WifiStaNodeSet> > {
 public:
-	WifiStaNodeSets(const size_t n_wifi_sta_node_set) {
+	WifiStaNodeSets(const size_t n_wifi_sta_node_set,
+			std::string const & prefix = "wifiStaNodeSet") {
 		for (size_t i = 0; i < n_wifi_sta_node_set; ++i) {
-			WifiStaNodeSetP p_wifi_sta_node_set = new WifiStaNodeSet;
+			WifiStaNodeSetP p_wifi_sta_node_set = new WifiStaNodeSet(15,
+					prefix);
 			RandomWalkMobilityHelper random_walk_mobility_helper;
 			p_wifi_sta_node_set->install(random_walk_mobility_helper);
 			this->push_back(p_wifi_sta_node_set);

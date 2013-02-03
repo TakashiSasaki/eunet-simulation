@@ -27,12 +27,11 @@ protected:
 	ns3::Ptr<ns3::Node> pNode;
 	ns3::NetDeviceContainer wifiNetDeviceContainer;
 	ns3::Ipv4InterfaceContainer wifiIpv4InterfaceContainer;
-	//const std::string description;
 public:
-	WifiNode(const std::string& name = "wifi_node") {
+	WifiNode(const std::string& name) {
 		if (!initialized) {
 			wifiHelper.SetRemoteStationManager("ns3::ArfWifiManager");
-		}
+		}//if
 		pNode = ns3::CreateObject<ns3::Node>();
 		ns3::Names::Add(name, pNode);
 		internetStackHelper.Install(pNode);

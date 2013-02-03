@@ -27,7 +27,8 @@ class WifiStaNode: public WifiNode {
 	ns3::ApplicationContainer sinkApplicationContainer;
 	static const int port = 9;
 public:
-	WifiStaNode() {
+	WifiStaNode(std::string const & name) :
+			WifiNode(name) {
 		if (!initialized) {
 			nqosWifiMacHelper = ns3::NqosWifiMacHelper::Default();
 			nqosWifiMacHelper.SetType("ns3::StaWifiMac", "Ssid",
