@@ -8,69 +8,42 @@
 #include "Eunet.h"
 
 void Eunet::InstallCsmaLink() {
-	topology_helper.InstallCsmaLink(*switch_nodes[INTERNET_ROUTER_INDEX],
-			*switch_nodes[CORE_SWITCH_INDEX], 1000000000, 2);
+	connectSwitchNodes(INTERNET_ROUTER_INDEX, CORE_SWITCH_INDEX, 1000000000, 2);
 
-	topology_helper.InstallCsmaLink(*switch_nodes[CORE_SWITCH_INDEX],
-			*switch_nodes[SHIGENOBU_SWITCH_INDEX], 22000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[CORE_SWITCH_INDEX],
-			*switch_nodes[TARUMI_SWITCH_INDEX], 22000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[CORE_SWITCH_INDEX],
-			*switch_nodes[335], 22000000000, 2); //motida
-	topology_helper.InstallCsmaLink(*switch_nodes[TARUMI_SWITCH_INDEX],
-			*switch_nodes[285], 22000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[CORE_SWITCH_INDEX],
-			*switch_nodes[JYOUHOKU_SWITCH_INDEX], 20000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[JYOUHOKU_SWITCH_INDEX],
-			*switch_nodes[9], 20000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[JYOUHOKU_SWITCH_INDEX],
-			*switch_nodes[7], 20000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[JYOUHOKU_SWITCH_INDEX],
-			*switch_nodes[80], 20000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[JYOUHOKU_SWITCH_INDEX],
-			*switch_nodes[126], 20000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[JYOUHOKU_SWITCH_INDEX],
-			*switch_nodes[161], 20000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[JYOUHOKU_SWITCH_INDEX],
-			*switch_nodes[275], 20000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[5], *switch_nodes[6],
-			16000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[JYOUHOKU_SWITCH_INDEX],
-			*switch_nodes[40], 11000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[JYOUHOKU_SWITCH_INDEX],
-			*switch_nodes[70], 11000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[JYOUHOKU_SWITCH_INDEX],
-			*switch_nodes[141], 11000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[JYOUHOKU_SWITCH_INDEX],
-			*switch_nodes[197], 11000000000, 2);
+	connectSwitchNodes(CORE_SWITCH_INDEX, SHIGENOBU_SWITCH_INDEX, 22000000000,
+			2);
+	connectSwitchNodes(CORE_SWITCH_INDEX, TARUMI_SWITCH_INDEX, 22000000000, 2);
+	connectSwitchNodes(CORE_SWITCH_INDEX, 335, 22000000000, 2); //motida
+	connectSwitchNodes(TARUMI_SWITCH_INDEX, 285, 22000000000, 2);
+	connectSwitchNodes(CORE_SWITCH_INDEX, JYOUHOKU_SWITCH_INDEX, 20000000000,
+			2);
+	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 9, 20000000000, 2);
+	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 7, 20000000000, 2);
+	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 80, 20000000000, 2);
+	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 126, 20000000000, 2);
+	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 161, 20000000000, 2);
+	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 275, 20000000000, 2);
+	connectSwitchNodes(5, 6, 16000000000, 2);
+	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 40, 11000000000, 2);
+	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 70, 11000000000, 2);
+	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 141, 11000000000, 2);
+	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 197, 11000000000, 2);
 
-	topology_helper.InstallCsmaLink(*switch_nodes[SHIGENOBU_SWITCH_INDEX],
-			*switch_nodes[226], 8000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[TARUMI_SWITCH_INDEX],
-			*switch_nodes[316], 8000000000, 2);
+	connectSwitchNodes(SHIGENOBU_SWITCH_INDEX, 226, 8000000000, 2);
+	connectSwitchNodes(TARUMI_SWITCH_INDEX, 316, 8000000000, 2);
 
-	topology_helper.InstallCsmaLink(*switch_nodes[JYOUHOKU_SWITCH_INDEX],
-			*switch_nodes[5], 7000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[JYOUHOKU_SWITCH_INDEX],
-			*switch_nodes[8], 7000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[JYOUHOKU_SWITCH_INDEX],
-			*switch_nodes[113], 7000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[JYOUHOKU_SWITCH_INDEX],
-			*switch_nodes[160], 7000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[JYOUHOKU_SWITCH_INDEX],
-			*switch_nodes[213], 7000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[SHIGENOBU_SWITCH_INDEX],
-			*switch_nodes[283], 7000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[TARUMI_SWITCH_INDEX],
-			*switch_nodes[333], 7000000000, 2);
+	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 5, 7000000000, 2);
+	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 8, 7000000000, 2);
+	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 113, 7000000000, 2);
+	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 160, 7000000000, 2);
+	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 213, 7000000000, 2);
+	connectSwitchNodes(SHIGENOBU_SWITCH_INDEX, 283, 7000000000, 2);
+	connectSwitchNodes(TARUMI_SWITCH_INDEX, 333, 7000000000, 2);
 
-	topology_helper.InstallCsmaLink(*switch_nodes[334], *switch_nodes[335],
-			6000000000, 2);
+	connectSwitchNodes(334, 335, 6000000000, 2);
 
-	topology_helper.InstallCsmaLink(*switch_nodes[SHIGENOBU_SWITCH_INDEX],
-			*switch_nodes[266], 4000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[SHIGENOBU_SWITCH_INDEX],
-			*switch_nodes[276], 4000000000, 2);
+	connectSwitchNodes(SHIGENOBU_SWITCH_INDEX, 266, 4000000000, 2);
+	connectSwitchNodes(SHIGENOBU_SWITCH_INDEX, 276, 4000000000, 2);
 
 	topology_helper.InstallCsmaLink(*switch_nodes[81], *wifi_ap_nodes[1],
 			2000000000, 2);
@@ -800,15 +773,11 @@ void Eunet::InstallCsmaLink() {
 	topology_helper.InstallCsmaLink(*switch_nodes[80], *wifi_ap_nodes[99],
 			2000000000, 2);
 
-	topology_helper.InstallCsmaLink(*switch_nodes[JYOUHOKU_SWITCH_INDEX],
-			*switch_nodes[114], 2000000000, 2);
+	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 114, 2000000000, 2);
 
-	topology_helper.InstallCsmaLink(*switch_nodes[JYOUHOKU_SWITCH_INDEX],
-			*switch_nodes[115], 2000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[JYOUHOKU_SWITCH_INDEX],
-			*switch_nodes[116], 2000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[JYOUHOKU_SWITCH_INDEX],
-			*switch_nodes[123], 2000000000, 2);
+	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 115, 2000000000, 2);
+	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 116, 2000000000, 2);
+	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 123, 2000000000, 2);
 	topology_helper.InstallCsmaLink(*switch_nodes[126], *wifi_ap_nodes[127],
 			2000000000, 2);
 	topology_helper.InstallCsmaLink(*switch_nodes[126], *wifi_ap_nodes[128],
@@ -865,10 +834,8 @@ void Eunet::InstallCsmaLink() {
 			2000000000, 2);
 	topology_helper.InstallCsmaLink(*switch_nodes[161], *wifi_ap_nodes[183],
 			2000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[JYOUHOKU_SWITCH_INDEX],
-			*switch_nodes[193], 2000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[JYOUHOKU_SWITCH_INDEX],
-			*switch_nodes[200], 2000000000, 2);
+	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 193, 2000000000, 2);
+	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 200, 2000000000, 2);
 	topology_helper.InstallCsmaLink(*switch_nodes[200], *wifi_ap_nodes[201],
 			2000000000, 2);
 	topology_helper.InstallCsmaLink(*switch_nodes[201], *wifi_ap_nodes[202],
@@ -887,14 +854,10 @@ void Eunet::InstallCsmaLink() {
 			2000000000, 2);
 	topology_helper.InstallCsmaLink(*switch_nodes[208], *wifi_ap_nodes[211],
 			2000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[SHIGENOBU_SWITCH_INDEX],
-			*switch_nodes[214], 2000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[SHIGENOBU_SWITCH_INDEX],
-			*switch_nodes[215], 2000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[SHIGENOBU_SWITCH_INDEX],
-			*switch_nodes[217], 2000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[SHIGENOBU_SWITCH_INDEX],
-			*switch_nodes[220], 2000000000, 2);
+	connectSwitchNodes(SHIGENOBU_SWITCH_INDEX, 214, 2000000000, 2);
+	connectSwitchNodes(SHIGENOBU_SWITCH_INDEX, 215, 2000000000, 2);
+	connectSwitchNodes(SHIGENOBU_SWITCH_INDEX, 217, 2000000000, 2);
+	connectSwitchNodes(SHIGENOBU_SWITCH_INDEX, 220, 2000000000, 2);
 	topology_helper.InstallCsmaLink(*switch_nodes[226], *wifi_ap_nodes[227],
 			2000000000, 2);
 	topology_helper.InstallCsmaLink(*switch_nodes[227], *wifi_ap_nodes[228],
@@ -918,23 +881,17 @@ void Eunet::InstallCsmaLink() {
 	topology_helper.InstallCsmaLink(*switch_nodes[226], *wifi_ap_nodes[260],
 			2000000000, 2);
 
-	topology_helper.InstallCsmaLink(*switch_nodes[SHIGENOBU_SWITCH_INDEX],
-			*switch_nodes[264], 2000000000, 2);
+	connectSwitchNodes(SHIGENOBU_SWITCH_INDEX, 264, 2000000000, 2);
 
-	topology_helper.InstallCsmaLink(*switch_nodes[TARUMI_SWITCH_INDEX],
-			*switch_nodes[287], 2000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[TARUMI_SWITCH_INDEX],
-			*switch_nodes[288], 2000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[TARUMI_SWITCH_INDEX],
-			*switch_nodes[290], 2000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[TARUMI_SWITCH_INDEX],
-			*switch_nodes[291], 2000000000, 2);
+	connectSwitchNodes(TARUMI_SWITCH_INDEX, 287, 2000000000, 2);
+	connectSwitchNodes(TARUMI_SWITCH_INDEX, 288, 2000000000, 2);
+	connectSwitchNodes(TARUMI_SWITCH_INDEX, 290, 2000000000, 2);
+	connectSwitchNodes(TARUMI_SWITCH_INDEX, 291, 2000000000, 2);
 
 	topology_helper.InstallCsmaLink(*switch_nodes[291], *wifi_ap_nodes[294],
 			2000000000, 2);
 
-	topology_helper.InstallCsmaLink(*switch_nodes[TARUMI_SWITCH_INDEX],
-			*switch_nodes[295], 2000000000, 2);
+	connectSwitchNodes(TARUMI_SWITCH_INDEX, 295, 2000000000, 2);
 
 	topology_helper.InstallCsmaLink(*switch_nodes[295], *wifi_ap_nodes[296],
 			2000000000, 2);
@@ -943,8 +900,7 @@ void Eunet::InstallCsmaLink() {
 	topology_helper.InstallCsmaLink(*switch_nodes[295], *wifi_ap_nodes[301],
 			2000000000, 2);
 
-	topology_helper.InstallCsmaLink(*switch_nodes[TARUMI_SWITCH_INDEX],
-			*switch_nodes[304], 2000000000, 2);
+	connectSwitchNodes(TARUMI_SWITCH_INDEX, 304, 2000000000, 2);
 
 	topology_helper.InstallCsmaLink(*switch_nodes[304], *wifi_ap_nodes[305],
 			2000000000, 2);
@@ -957,10 +913,8 @@ void Eunet::InstallCsmaLink() {
 	topology_helper.InstallCsmaLink(*switch_nodes[304], *wifi_ap_nodes[310],
 			2000000000, 2);
 
-	topology_helper.InstallCsmaLink(*switch_nodes[TARUMI_SWITCH_INDEX],
-			*switch_nodes[311], 2000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[TARUMI_SWITCH_INDEX],
-			*switch_nodes[312], 2000000000, 2);
+	connectSwitchNodes(TARUMI_SWITCH_INDEX, 311, 2000000000, 2);
+	connectSwitchNodes(TARUMI_SWITCH_INDEX, 312, 2000000000, 2);
 
 	topology_helper.InstallCsmaLink(*switch_nodes[312], *wifi_ap_nodes[313],
 			2000000000, 2);
@@ -1003,355 +957,181 @@ void Eunet::InstallCsmaLink() {
 	topology_helper.InstallCsmaLink(*switch_nodes[206], *wifi_ap_nodes[348],
 			2000000000, 2);
 
-	topology_helper.InstallCsmaLink(*switch_nodes[9], *switch_nodes[10],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[11], *switch_nodes[12],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[11], *switch_nodes[13],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[15], *switch_nodes[16],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[9], *switch_nodes[22],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[9], *switch_nodes[23],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[9], *switch_nodes[24],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[24], *switch_nodes[26],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[24], *switch_nodes[27],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[24], *switch_nodes[28],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[9], *switch_nodes[31],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[9], *switch_nodes[32],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[9], *switch_nodes[36],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[40], *switch_nodes[41],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[41], *switch_nodes[42],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[41], *switch_nodes[43],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[41], *switch_nodes[44],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[41], *switch_nodes[45],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[45], *switch_nodes[46],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[46], *switch_nodes[47],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[45], *switch_nodes[48],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[45], *switch_nodes[49],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[59], *switch_nodes[63],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[59], *switch_nodes[64],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[66], *switch_nodes[67],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[81], *switch_nodes[83],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[85], *switch_nodes[86],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[85], *switch_nodes[87],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[85], *switch_nodes[88],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[85], *switch_nodes[89],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[89], *switch_nodes[90],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[80], *switch_nodes[91],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[91], *switch_nodes[92],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[91], *switch_nodes[93],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[91], *switch_nodes[94],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[91], *switch_nodes[95],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[91], *switch_nodes[96],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[91], *switch_nodes[97],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[91], *switch_nodes[98],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[99], *switch_nodes[100],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[100], *switch_nodes[101],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[100], *switch_nodes[102],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[100], *switch_nodes[103],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[100], *switch_nodes[104],
-			1000000000, 2);
+	connectSwitchNodes(9, 10, 1000000000, 2);
+	connectSwitchNodes(11, 12, 1000000000, 2);
+	connectSwitchNodes(11, 13, 1000000000, 2);
+	connectSwitchNodes(15, 16, 1000000000, 2);
+	connectSwitchNodes(9, 22, 1000000000, 2);
+	connectSwitchNodes(9, 23, 1000000000, 2);
+	connectSwitchNodes(9, 24, 1000000000, 2);
+	connectSwitchNodes(24, 26, 1000000000, 2);
+	connectSwitchNodes(24, 27, 1000000000, 2);
+	connectSwitchNodes(24, 28, 1000000000, 2);
+	connectSwitchNodes(9, 31, 1000000000, 2);
+	connectSwitchNodes(9, 32, 1000000000, 2);
+	connectSwitchNodes(9, 36, 1000000000, 2);
+	connectSwitchNodes(40, 41, 1000000000, 2);
+	connectSwitchNodes(41, 42, 1000000000, 2);
+	connectSwitchNodes(41, 43, 1000000000, 2);
+	connectSwitchNodes(41, 44, 1000000000, 2);
+	connectSwitchNodes(41, 45, 1000000000, 2);
+	connectSwitchNodes(45, 46, 1000000000, 2);
+	connectSwitchNodes(46, 47, 1000000000, 2);
+	connectSwitchNodes(45, 48, 1000000000, 2);
+	connectSwitchNodes(45, 49, 1000000000, 2);
+	connectSwitchNodes(59, 63, 1000000000, 2);
+	connectSwitchNodes(59, 64, 1000000000, 2);
+	connectSwitchNodes(66, 67, 1000000000, 2);
+	connectSwitchNodes(81, 83, 1000000000, 2);
+	connectSwitchNodes(85, 86, 1000000000, 2);
+	connectSwitchNodes(85, 87, 1000000000, 2);
+	connectSwitchNodes(85, 88, 1000000000, 2);
+	connectSwitchNodes(85, 89, 1000000000, 2);
+	connectSwitchNodes(89, 90, 1000000000, 2);
+	connectSwitchNodes(80, 91, 1000000000, 2);
+	connectSwitchNodes(91, 92, 1000000000, 2);
+	connectSwitchNodes(91, 93, 1000000000, 2);
+	connectSwitchNodes(91, 94, 1000000000, 2);
+	connectSwitchNodes(91, 95, 1000000000, 2);
+	connectSwitchNodes(91, 96, 1000000000, 2);
+	connectSwitchNodes(91, 97, 1000000000, 2);
+	connectSwitchNodes(91, 98, 1000000000, 2);
+	connectSwitchNodes(99, 100, 1000000000, 2);
+	connectSwitchNodes(100, 101, 1000000000, 2);
+	connectSwitchNodes(100, 102, 1000000000, 2);
+	connectSwitchNodes(100, 103, 1000000000, 2);
+	connectSwitchNodes(100, 104, 1000000000, 2);
 
-	topology_helper.InstallCsmaLink(*switch_nodes[100], *switch_nodes[105],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[100], *switch_nodes[106],
-			1000000000, 2);
+	connectSwitchNodes(100, 105, 1000000000, 2);
+	connectSwitchNodes(100, 106, 1000000000, 2);
 
-	topology_helper.InstallCsmaLink(*switch_nodes[99], *switch_nodes[99],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[107], *switch_nodes[107],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[107], *switch_nodes[107],
-			1000000000, 2);
+	connectSwitchNodes(99, 99, 1000000000, 2);
+	connectSwitchNodes(107, 107, 1000000000, 2);
+	connectSwitchNodes(107, 107, 1000000000, 2);
 
-	topology_helper.InstallCsmaLink(*switch_nodes[107], *switch_nodes[110],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[107], *switch_nodes[111],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[99], *switch_nodes[112],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[116], *switch_nodes[117],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[116], *switch_nodes[118],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[116], *switch_nodes[119],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[116], *switch_nodes[120],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[116], *switch_nodes[121],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[116], *switch_nodes[122],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[123], *switch_nodes[124],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[123], *switch_nodes[125],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[137], *switch_nodes[138],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[137], *switch_nodes[139],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[137], *switch_nodes[140],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[146], *switch_nodes[147],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[146], *switch_nodes[148],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[151], *switch_nodes[152],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[151], *switch_nodes[153],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[154], *switch_nodes[155],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[154], *switch_nodes[156],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[154], *switch_nodes[157],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[158], *switch_nodes[159],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[161], *switch_nodes[162],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[161], *switch_nodes[163],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[161], *switch_nodes[164],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[161], *switch_nodes[166],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[167], *switch_nodes[168],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[167], *switch_nodes[169],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[167], *switch_nodes[170],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[167], *switch_nodes[171],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[172], *switch_nodes[173],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[172], *switch_nodes[174],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[174], *switch_nodes[175],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[167], *switch_nodes[176],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[176], *switch_nodes[177],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[178], *switch_nodes[179],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[181], *switch_nodes[182],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[183], *switch_nodes[184],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[183], *switch_nodes[185],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[183], *switch_nodes[186],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[183], *switch_nodes[187],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[183], *switch_nodes[188],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[183], *switch_nodes[189],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[183], *switch_nodes[190],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[183], *switch_nodes[191],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[183], *switch_nodes[192],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[193], *switch_nodes[194],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[193], *switch_nodes[195],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[193], *switch_nodes[196],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[197], *switch_nodes[198],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[197], *switch_nodes[199],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[200], *switch_nodes[205],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[206], *switch_nodes[207],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[206], *switch_nodes[212],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[215], *switch_nodes[216],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[217], *switch_nodes[218],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[217], *switch_nodes[219],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[220], *switch_nodes[221],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[220], *switch_nodes[222],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[220], *switch_nodes[223],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[220], *switch_nodes[224],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[220], *switch_nodes[225],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[231], *switch_nodes[232],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[230], *switch_nodes[233],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[230], *switch_nodes[234],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[230], *switch_nodes[235],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[230], *switch_nodes[236],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[230], *switch_nodes[237],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[230], *switch_nodes[238],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[230], *switch_nodes[239],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[230], *switch_nodes[240],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[230], *switch_nodes[241],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[230], *switch_nodes[242],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[230], *switch_nodes[243],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[230], *switch_nodes[244],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[230], *switch_nodes[245],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[230], *switch_nodes[246],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[230], *switch_nodes[247],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[248], *switch_nodes[284],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[248], *switch_nodes[249],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[248], *switch_nodes[250],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[248], *switch_nodes[251],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[248], *switch_nodes[252],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[248], *switch_nodes[253],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[248], *switch_nodes[254],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[248], *switch_nodes[255],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[226], *switch_nodes[261],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[226], *switch_nodes[262],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[226], *switch_nodes[263],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[264], *switch_nodes[265],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[266], *switch_nodes[267],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[266], *switch_nodes[268],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[266], *switch_nodes[269],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[266], *switch_nodes[270],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[270], *switch_nodes[272],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[266], *switch_nodes[273],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[266], *switch_nodes[274],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[276], *switch_nodes[277],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[276], *switch_nodes[278],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[278], *switch_nodes[279],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[276], *switch_nodes[280],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[280], *switch_nodes[281],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[276], *switch_nodes[282],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[TARUMI_SWITCH_INDEX],
-			*switch_nodes[286], 1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[288], *switch_nodes[289],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[291], *switch_nodes[292],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[291], *switch_nodes[293],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[295], *switch_nodes[297],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[297], *switch_nodes[298],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[295], *switch_nodes[299],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[295], *switch_nodes[302],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[295], *switch_nodes[303],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[304], *switch_nodes[307],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[312], *switch_nodes[315],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[317], *switch_nodes[321],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[316], *switch_nodes[326],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[328], *switch_nodes[329],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[328], *switch_nodes[330],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[335], *switch_nodes[336],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[336], *switch_nodes[337],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[336], *switch_nodes[338],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[336], *switch_nodes[339],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[336], *switch_nodes[340],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[340], *switch_nodes[341],
-			1000000000, 2);
-	topology_helper.InstallCsmaLink(*switch_nodes[336], *switch_nodes[342],
-			1000000000, 2);
+	connectSwitchNodes(107, 110, 1000000000, 2);
+	connectSwitchNodes(107, 111, 1000000000, 2);
+	connectSwitchNodes(99, 112, 1000000000, 2);
+	connectSwitchNodes(116, 117, 1000000000, 2);
+	connectSwitchNodes(116, 118, 1000000000, 2);
+	connectSwitchNodes(116, 119, 1000000000, 2);
+	connectSwitchNodes(116, 120, 1000000000, 2);
+	connectSwitchNodes(116, 121, 1000000000, 2);
+	connectSwitchNodes(116, 122, 1000000000, 2);
+	connectSwitchNodes(123, 124, 1000000000, 2);
+	connectSwitchNodes(123, 125, 1000000000, 2);
+	connectSwitchNodes(137, 138, 1000000000, 2);
+	connectSwitchNodes(137, 139, 1000000000, 2);
+	connectSwitchNodes(137, 140, 1000000000, 2);
+	connectSwitchNodes(146, 147, 1000000000, 2);
+	connectSwitchNodes(146, 148, 1000000000, 2);
+	connectSwitchNodes(151, 152, 1000000000, 2);
+	connectSwitchNodes(151, 153, 1000000000, 2);
+	connectSwitchNodes(154, 155, 1000000000, 2);
+	connectSwitchNodes(154, 156, 1000000000, 2);
+	connectSwitchNodes(154, 157, 1000000000, 2);
+	connectSwitchNodes(158, 159, 1000000000, 2);
+	connectSwitchNodes(161, 162, 1000000000, 2);
+	connectSwitchNodes(161, 163, 1000000000, 2);
+	connectSwitchNodes(161, 164, 1000000000, 2);
+	connectSwitchNodes(161, 166, 1000000000, 2);
+	connectSwitchNodes(167, 168, 1000000000, 2);
+	connectSwitchNodes(167, 169, 1000000000, 2);
+	connectSwitchNodes(167, 170, 1000000000, 2);
+	connectSwitchNodes(167, 171, 1000000000, 2);
+	connectSwitchNodes(172, 173, 1000000000, 2);
+	connectSwitchNodes(172, 174, 1000000000, 2);
+	connectSwitchNodes(174, 175, 1000000000, 2);
+	connectSwitchNodes(167, 176, 1000000000, 2);
+	connectSwitchNodes(176, 177, 1000000000, 2);
+	connectSwitchNodes(178, 179, 1000000000, 2);
+	connectSwitchNodes(181, 182, 1000000000, 2);
+	connectSwitchNodes(183, 184, 1000000000, 2);
+	connectSwitchNodes(183, 185, 1000000000, 2);
+	connectSwitchNodes(183, 186, 1000000000, 2);
+	connectSwitchNodes(183, 187, 1000000000, 2);
+	connectSwitchNodes(183, 188, 1000000000, 2);
+	connectSwitchNodes(183, 189, 1000000000, 2);
+	connectSwitchNodes(183, 190, 1000000000, 2);
+	connectSwitchNodes(183, 191, 1000000000, 2);
+	connectSwitchNodes(183, 192, 1000000000, 2);
+	connectSwitchNodes(193, 194, 1000000000, 2);
+	connectSwitchNodes(193, 195, 1000000000, 2);
+	connectSwitchNodes(193, 196, 1000000000, 2);
+	connectSwitchNodes(197, 198, 1000000000, 2);
+	connectSwitchNodes(197, 199, 1000000000, 2);
+	connectSwitchNodes(200, 205, 1000000000, 2);
+	connectSwitchNodes(206, 207, 1000000000, 2);
+	connectSwitchNodes(206, 212, 1000000000, 2);
+	connectSwitchNodes(215, 216, 1000000000, 2);
+	connectSwitchNodes(217, 218, 1000000000, 2);
+	connectSwitchNodes(217, 219, 1000000000, 2);
+	connectSwitchNodes(220, 221, 1000000000, 2);
+	connectSwitchNodes(220, 222, 1000000000, 2);
+	connectSwitchNodes(220, 223, 1000000000, 2);
+	connectSwitchNodes(220, 224, 1000000000, 2);
+	connectSwitchNodes(220, 225, 1000000000, 2);
+	connectSwitchNodes(231, 232, 1000000000, 2);
+	connectSwitchNodes(230, 233, 1000000000, 2);
+	connectSwitchNodes(230, 234, 1000000000, 2);
+	connectSwitchNodes(230, 235, 1000000000, 2);
+	connectSwitchNodes(230, 236, 1000000000, 2);
+	connectSwitchNodes(230, 237, 1000000000, 2);
+	connectSwitchNodes(230, 238, 1000000000, 2);
+	connectSwitchNodes(230, 239, 1000000000, 2);
+	connectSwitchNodes(230, 240, 1000000000, 2);
+	connectSwitchNodes(230, 241, 1000000000, 2);
+	connectSwitchNodes(230, 242, 1000000000, 2);
+	connectSwitchNodes(230, 243, 1000000000, 2);
+	connectSwitchNodes(230, 244, 1000000000, 2);
+	connectSwitchNodes(230, 245, 1000000000, 2);
+	connectSwitchNodes(230, 246, 1000000000, 2);
+	connectSwitchNodes(230, 247, 1000000000, 2);
+	connectSwitchNodes(248, 284, 1000000000, 2);
+	connectSwitchNodes(248, 249, 1000000000, 2);
+	connectSwitchNodes(248, 250, 1000000000, 2);
+	connectSwitchNodes(248, 251, 1000000000, 2);
+	connectSwitchNodes(248, 252, 1000000000, 2);
+	connectSwitchNodes(248, 253, 1000000000, 2);
+	connectSwitchNodes(248, 254, 1000000000, 2);
+	connectSwitchNodes(248, 255, 1000000000, 2);
+	connectSwitchNodes(226, 261, 1000000000, 2);
+	connectSwitchNodes(226, 262, 1000000000, 2);
+	connectSwitchNodes(226, 263, 1000000000, 2);
+	connectSwitchNodes(264, 265, 1000000000, 2);
+	connectSwitchNodes(266, 267, 1000000000, 2);
+	connectSwitchNodes(266, 268, 1000000000, 2);
+	connectSwitchNodes(266, 269, 1000000000, 2);
+	connectSwitchNodes(266, 270, 1000000000, 2);
+	connectSwitchNodes(270, 272, 1000000000, 2);
+	connectSwitchNodes(266, 273, 1000000000, 2);
+	connectSwitchNodes(266, 274, 1000000000, 2);
+	connectSwitchNodes(276, 277, 1000000000, 2);
+	connectSwitchNodes(276, 278, 1000000000, 2);
+	connectSwitchNodes(278, 279, 1000000000, 2);
+	connectSwitchNodes(276, 280, 1000000000, 2);
+	connectSwitchNodes(280, 281, 1000000000, 2);
+	connectSwitchNodes(276, 282, 1000000000, 2);
+	connectSwitchNodes(TARUMI_SWITCH_INDEX, 286, 1000000000, 2);
+	connectSwitchNodes(288, 289, 1000000000, 2);
+	connectSwitchNodes(291, 292, 1000000000, 2);
+	connectSwitchNodes(291, 293, 1000000000, 2);
+	connectSwitchNodes(295, 297, 1000000000, 2);
+	connectSwitchNodes(297, 298, 1000000000, 2);
+	connectSwitchNodes(295, 299, 1000000000, 2);
+	connectSwitchNodes(295, 302, 1000000000, 2);
+	connectSwitchNodes(295, 303, 1000000000, 2);
+	connectSwitchNodes(304, 307, 1000000000, 2);
+	connectSwitchNodes(312, 315, 1000000000, 2);
+	connectSwitchNodes(317, 321, 1000000000, 2);
+	connectSwitchNodes(316, 326, 1000000000, 2);
+	connectSwitchNodes(328, 329, 1000000000, 2);
+	connectSwitchNodes(328, 330, 1000000000, 2);
+	connectSwitchNodes(335, 336, 1000000000, 2);
+	connectSwitchNodes(336, 337, 1000000000, 2);
+	connectSwitchNodes(336, 338, 1000000000, 2);
+	connectSwitchNodes(336, 339, 1000000000, 2);
+	connectSwitchNodes(336, 340, 1000000000, 2);
+	connectSwitchNodes(340, 341, 1000000000, 2);
+	connectSwitchNodes(336, 342, 1000000000, 2);
 }

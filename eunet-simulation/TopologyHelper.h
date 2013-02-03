@@ -47,12 +47,6 @@ public:
 		InstallCsmaLink(*p_upstream_switch, *p_wifi_ap_node, bps, ms);
 
 	}
-
-	//	void InstallWifiLink(WifiApNode& wifi_ap_node, WifiStaNode& wifi_sta_node){
-//		DefaultWifiPhyHelper default_wifi_phy_helper;
-//		wifi_ap_node.install(default_wifi_phy_helper);
-//		wifi_sta_node.install(default_wifi_phy_helper);
-//	}
 };
 
 #endif /* TOPOLOGYHELPER_H_ */

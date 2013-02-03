@@ -50,6 +50,13 @@ private:
 
 	void InstallCsmaLink();
 
+	void connectSwitchNodes(const int i_switch_node_1,
+			const int i_switch_node_2, const uint64_t bps, const uint64_t ms) {
+		SwitchNode & switch_node_1 = *switch_nodes[i_switch_node_1];
+		SwitchNode & switch_node_2 = *switch_nodes[i_switch_node_2];
+		topology_helper.InstallCsmaLink(switch_node_1, switch_node_2, bps, ms);
+	}	//connectSwitchNodes
+
 public:
 	SwitchNodeP getSwitch(const size_t i) {
 		return switch_nodes[i];
