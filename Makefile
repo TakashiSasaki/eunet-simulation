@@ -20,6 +20,10 @@ main.o: main.cc
 
 clean:
 	rm -rf main.s *.o
+	(cd ..; ./waf clean)
+
+config: clean
+	(cd ..; ./waf configure -d release)
 
 hello: hello.o
 	g++ -o hello $<
@@ -35,4 +39,8 @@ run-sandbox:
 debug:
 	(ulimit -m 1000000)
 	(cd ..; ./waf --run eunet-simulation --command-template="gdb --args %s")
+
+run:
+	(ulimit -m 1000000)
+	(cd ..; ./waf -d release --run eunet-simulation)
 
