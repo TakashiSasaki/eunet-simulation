@@ -35,6 +35,7 @@ public:
 	void install(ns3::MobilityHelper& mobility_helper) {
 		for (size_t i = 0; i < wifiStaNodes.size(); ++i) {
 			wifiStaNodes[i]->install(mobility_helper);
+			assert(wifiStaNodes[i]->getMobilityModel() != NULL);
 		} //for
 	} //install
 
@@ -60,7 +61,6 @@ public:
 			DefaultMobilityHelper default_mobility_helper;
 			p_wifi_sta_node_set->install(default_mobility_helper);
 			this->push_back(p_wifi_sta_node_set);
-
 		} //for
 	} // the constructor
 

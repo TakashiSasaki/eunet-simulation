@@ -14,6 +14,10 @@
 #include <ns3/bridge-net-device.h>
 #include <ns3/ssid.h>
 #include <ns3/boolean.h>
+#include <ns3/mobility-helper.h>
+#include <ns3/rectangle.h>
+#include <ns3/double.h>
+#include <ns3/string.h>
 #include <assert.h>
 #include "WifiNode.h"
 
@@ -50,6 +54,11 @@ public:
 				nqosWifiMacHelper, pNode);
 	}
 
+	void install(ns3::MobilityHelper const & mobility_helper) {
+		assert(pNode!=NULL);
+		mobility_helper.Install(pNode);
+	}
+
 	ns3::NetDeviceContainer& getWiredNetDeviceContainer() {
 		return wiredNetDeviceContainer;
 	}
@@ -67,10 +76,28 @@ typedef ns3::Ptr<WifiApNode> WifiApNodeP;
 class WifiApNodes: public std::vector<WifiApNodeP> {
 public:
 	WifiApNodes(const size_t n) {
+		ns3::MobilityHelper mobility_helper;
+		mobility_helper.SetPositionAllocator("ns3::GridPositionAllocator",
+				"MinX", ns3::DoubleValue(-30), "MinY", ns3::DoubleValue(0),
+				"DeltaX", ns3::DoubleValue(1.0), "DeltaY",
+				ns3::DoubleValue(0.0), "GridWidth", ns3::UintegerValue(3),
+				"LayoutType", ns3::StringValue("RowFirst"));
+//		mobility_helper.SetMobilityModel("ns3::RandomWalk2dMobilityModel",
+//				"Bounds",
+//				ns3::RectangleValue(ns3::Rectangle(-30, 30, -30, 30)));
+		mobility_helper.SetMobilityModel("ns3::ConstantPositionMobilityModel");
 		for (size_t i = 0; i < n; ++i) {
-			push_back(new WifiApNode);
+			WifiApNode* p_wifi_ap_node = new WifiApNode;
+			p_wifi_ap_node->install(mobility_helper);
+			push_back(p_wifi_ap_node);
 		} //for
 	} //a constructor
+
+	void install(ns3::MobilityHelper const & mobility_helper) {
+		for (size_t i = 0; i < size(); ++i) {
+			(*this)[i]->install(mobility_helper);
+		} //for
+	} //install
 
 	void bridgeEach() {
 		for (size_t i = 0; i < size(); ++i) {
