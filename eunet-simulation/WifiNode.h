@@ -8,6 +8,8 @@
 #ifndef WIFINODE_H_
 #define WIFINODE_H_
 
+#include <cassert>
+#include <exception>
 #include <ns3/wifi-helper.h>
 #include <ns3/ssid.h>
 #include <ns3/ipv4-address-helper.h>
@@ -16,7 +18,6 @@
 #include <ns3/internet-stack-helper.h>
 #include <ns3/object.h>
 #include <ns3/names.h>
-//#include "SimpleNode.h"
 
 class WifiNode: public ns3::Object {
 	static ns3::InternetStackHelper internetStackHelper;
@@ -31,8 +32,11 @@ public:
 	WifiNode(const std::string& name) {
 		if (!initialized) {
 			wifiHelper.SetRemoteStationManager("ns3::ArfWifiManager");
-		}//if
+		} //if
 		pNode = ns3::CreateObject<ns3::Node>();
+		std::cerr << "adding new WifiNode with the name of " << name
+				<< std::endl;
+		assert(!ns3::Names::Find<ns3::Node>(name));
 		ns3::Names::Add(name, pNode);
 		internetStackHelper.Install(pNode);
 	} // a constructor

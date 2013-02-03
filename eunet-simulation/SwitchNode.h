@@ -16,8 +16,8 @@
 class SwitchNode: public SimpleNode {
 	ns3::Ptr<ns3::BridgeNetDevice> pBridgeNetDevice;
 public:
-	SwitchNode(std::string const& description_ = "switch_node") :
-			SimpleNode(description_), pBridgeNetDevice(
+	SwitchNode(std::string const& name) :
+			SimpleNode(name), pBridgeNetDevice(
 					ns3::CreateObject<ns3::BridgeNetDevice>()) {
 	} //default constructor
 	virtual ~SwitchNode() {
@@ -38,9 +38,12 @@ typedef ns3::Ptr<SwitchNode> SwitchNodeP;
 
 class SwitchNodes: public std::vector<SwitchNodeP> {
 public:
-	SwitchNodes(size_t n_switch_nodes) {
+	SwitchNodes(size_t n_switch_nodes,
+			std::string const& prefix = "switchNode") {
 		for (size_t i = 0; i < n_switch_nodes; ++i) {
-			this->push_back(new SwitchNode);
+			std::stringstream ss;
+			ss << prefix << i << std::ends;
+			this->push_back(new SwitchNode(ss.str()));
 		} //for
 	} // a constructor
 

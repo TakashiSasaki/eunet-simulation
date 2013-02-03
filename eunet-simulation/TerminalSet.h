@@ -12,7 +12,9 @@
 #include <functional>
 #include <cstring>
 #include <sstream>
+#include <cassert>
 #include <ns3/net-device-container.h>
+#include <ns3/names.h>
 #include "Terminal.h"
 
 typedef ns3::Ptr<Terminal> TerminalP;
@@ -22,12 +24,12 @@ class TerminalSet: public ns3::Object {
 	std::vector<ns3::Ptr<Terminal> > terminals;
 
 public:
-	TerminalSet(const std::string& prefix = "terminal",
+	TerminalSet(const std::string& prefix = "/Names",
 			const int number_of_terminals = 15) :
 			terminals(number_of_terminals) {
 		for (unsigned int i = 0; i < terminals.size(); ++i) {
 			std::stringstream ss;
-			ss << prefix << i;
+			ss << prefix << i << std::ends;
 			terminals[i] = ns3::Ptr<Terminal>(new Terminal(ss.str()));
 		} //for
 	} // a constructor
@@ -66,10 +68,11 @@ typedef ns3::Ptr<TerminalSet> TerminalSetP;
 class TerminalSets: public std::vector<ns3::Ptr<TerminalSet> > {
 public:
 	TerminalSets(const size_t n_terminal_set = 350, std::string const& prefix =
-			"terminal_set_") {
+			"terminalSet") {
 		for (size_t i = 0; i < n_terminal_set; ++i) {
 			std::stringstream ss;
-			ss << prefix << i;
+			ss << prefix << i << "_terminal" << std::ends;
+			//assert(!ns3::Names::Find<TerminalSet>(ss.str()));
 			push_back(new TerminalSet(ss.str()));
 		} //for
 	} // the constructor
