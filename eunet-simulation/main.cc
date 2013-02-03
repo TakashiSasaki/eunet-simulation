@@ -48,6 +48,7 @@ int main(int argc, char** argv) {
 	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(6, 3)));
 	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(6, 4)));
 
+#if 0
 	std::cerr << "Populating routing table ..";
 	ns3::Ipv4GlobalRoutingHelper ipv4_global_routing_helper;
 	ipv4_global_routing_helper.PopulateRoutingTables();
@@ -58,6 +59,7 @@ int main(int argc, char** argv) {
 			"ipv4_global_routing_helper.0.txt", std::ios::out);
 	ipv4_global_routing_helper.PrintRoutingTableAllAt(ns3::Time(0.0),
 			&ipv4_global_routing_help_output_stream_wrapper);
+#endif
 
 	ns3::OutputStreamWrapper ipv4_static_routing_helper_output_stream_wrapper(
 			"ipv4_static_routing_helper.0.txt", std::ios::out);
