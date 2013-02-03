@@ -15,6 +15,7 @@
 #include <ns3/net-device-container.h>
 #include <ns3/internet-stack-helper.h>
 #include <ns3/object.h>
+#include <ns3/names.h>
 //#include "SimpleNode.h"
 
 class WifiNode: public ns3::Object {
@@ -26,16 +27,16 @@ protected:
 	ns3::Ptr<ns3::Node> pNode;
 	ns3::NetDeviceContainer wifiNetDeviceContainer;
 	ns3::Ipv4InterfaceContainer wifiIpv4InterfaceContainer;
-	const std::string description;
+	//const std::string description;
 public:
-	WifiNode(const std::string& description_ = "wifi_node") :
-			description(description_) {
+	WifiNode(const std::string& name = "wifi_node") {
 		if (!initialized) {
 			wifiHelper.SetRemoteStationManager("ns3::ArfWifiManager");
 		}
 		pNode = ns3::CreateObject<ns3::Node>();
+		ns3::Names::Add(name, pNode);
 		internetStackHelper.Install(pNode);
-	}
+	} // a constructor
 
 	ns3::NetDeviceContainer& getWifiNetDeviceContainer() {
 		return wifiNetDeviceContainer;
