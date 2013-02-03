@@ -14,23 +14,15 @@
 #include "Terminal.h"
 #include "TerminalSet.h"
 #include "TopologyHelper.h"
+#include "EunetBase.h"
 
-class Eunet {
-public:
-	enum {
-		INTERNET_ROUTER_INDEX = 0,
-		CORE_SWITCH_INDEX = 1,
-		JYOUHOKU_SWITCH_INDEX = 2,
-		SHIGENOBU_SWITCH_INDEX = 3,
-		TARUMI_SWITCH_INDEX = 4
-	};
-
+class Eunet :public EunetBase{
 private:
 	TopologyHelper topology_helper;
 	SwitchNodes switch_nodes;
 	WifiApNodes wifi_ap_nodes;
 
-private:
+public:
 	void Attach(TerminalSet & terminal_set, const int i_switch) {
 		for (size_t i = 0; i < terminal_set.size(); ++i) {
 			SimpleNode & terminal = terminal_set[i];

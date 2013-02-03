@@ -6,15 +6,16 @@
  */
 
 #include "Eunet.h"
+#include "EunetTarumi.h"
 
 void Eunet::InstallCsmaLink() {
 	connectSwitchNodes(INTERNET_ROUTER_INDEX, CORE_SWITCH_INDEX, 1000000000, 2);
+	EunetTarumi eunet_tarumi(*this);
+	eunet_tarumi.connectTier1();
 
 	connectSwitchNodes(CORE_SWITCH_INDEX, SHIGENOBU_SWITCH_INDEX, 22000000000,
 			2);
-	connectSwitchNodes(CORE_SWITCH_INDEX, TARUMI_SWITCH_INDEX, 22000000000, 2);
 	connectSwitchNodes(CORE_SWITCH_INDEX, 335, 22000000000, 2); //motida
-	connectSwitchNodes(TARUMI_SWITCH_INDEX, 285, 22000000000, 2);
 	connectSwitchNodes(CORE_SWITCH_INDEX, JYOUHOKU_SWITCH_INDEX, 20000000000,
 			2);
 	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 9, 20000000000, 2);
@@ -30,7 +31,6 @@ void Eunet::InstallCsmaLink() {
 	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 197, 11000000000, 2);
 
 	connectSwitchNodes(SHIGENOBU_SWITCH_INDEX, 226, 8000000000, 2);
-	connectSwitchNodes(TARUMI_SWITCH_INDEX, 316, 8000000000, 2);
 
 	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 5, 7000000000, 2);
 	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 8, 7000000000, 2);
@@ -38,7 +38,6 @@ void Eunet::InstallCsmaLink() {
 	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 160, 7000000000, 2);
 	connectSwitchNodes(JYOUHOKU_SWITCH_INDEX, 213, 7000000000, 2);
 	connectSwitchNodes(SHIGENOBU_SWITCH_INDEX, 283, 7000000000, 2);
-	connectSwitchNodes(TARUMI_SWITCH_INDEX, 333, 7000000000, 2);
 
 	connectSwitchNodes(334, 335, 6000000000, 2);
 
@@ -475,29 +474,17 @@ void Eunet::InstallCsmaLink() {
 
 	connectSwitchNodes(SHIGENOBU_SWITCH_INDEX, 264, 2000000000, 2);
 
-	connectSwitchNodes(TARUMI_SWITCH_INDEX, 287, 2000000000, 2);
-	connectSwitchNodes(TARUMI_SWITCH_INDEX, 288, 2000000000, 2);
-	connectSwitchNodes(TARUMI_SWITCH_INDEX, 290, 2000000000, 2);
-	connectSwitchNodes(TARUMI_SWITCH_INDEX, 291, 2000000000, 2);
-
 	connectSwitchNodes(291, 294, 2000000000, 2);
-
-	connectSwitchNodes(TARUMI_SWITCH_INDEX, 295, 2000000000, 2);
 
 	connectSwitchNodes(295, 296, 2000000000, 2);
 	connectSwitchNodes(295, 300, 2000000000, 2);
 	connectSwitchNodes(295, 301, 2000000000, 2);
-
-	connectSwitchNodes(TARUMI_SWITCH_INDEX, 304, 2000000000, 2);
 
 	connectSwitchNodes(304, 305, 2000000000, 2);
 	connectSwitchNodes(304, 306, 2000000000, 2);
 	connectSwitchNodes(304, 308, 2000000000, 2);
 	connectSwitchNodes(304, 309, 2000000000, 2);
 	connectSwitchNodes(304, 310, 2000000000, 2);
-
-	connectSwitchNodes(TARUMI_SWITCH_INDEX, 311, 2000000000, 2);
-	connectSwitchNodes(TARUMI_SWITCH_INDEX, 312, 2000000000, 2);
 
 	connectSwitchNodes(312, 313, 2000000000, 2);
 	connectSwitchNodes(312, 314, 2000000000, 2);
@@ -675,7 +662,7 @@ void Eunet::InstallCsmaLink() {
 	connectSwitchNodes(276, 280, 1000000000, 2);
 	connectSwitchNodes(280, 281, 1000000000, 2);
 	connectSwitchNodes(276, 282, 1000000000, 2);
-	connectSwitchNodes(TARUMI_SWITCH_INDEX, 286, 1000000000, 2);
+
 	connectSwitchNodes(288, 289, 1000000000, 2);
 	connectSwitchNodes(291, 292, 1000000000, 2);
 	connectSwitchNodes(291, 293, 1000000000, 2);
