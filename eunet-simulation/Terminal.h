@@ -29,8 +29,7 @@ public:
 			SimpleNode(description_) {
 		ns3::PacketSinkHelper packet_sink_helper("ns3::UdpSocketFactory",
 				ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-		sinkApplicationContainer = packet_sink_helper.Install(
-				this->nodeContainer);
+		sinkApplicationContainer = packet_sink_helper.Install(this->pNode);
 		sinkApplicationContainer.Start(ns3::Seconds(0.0));
 		//sinkApplicationContainer.Stop(ns3::Seconds(10.0));
 	} // a constructor
@@ -50,17 +49,16 @@ public:
 	} //operator ns3::Ipv4Address
 
 	void install(ns3::OnOffHelper const & on_off_helper) const {
-		assert(1==nodeContainer.GetN());
+		//assert(1==nodeContainer.GetN());
 		ns3::ApplicationContainer application_container = on_off_helper.Install(
-				nodeContainer.Get(0));
+				pNode);
 		application_container.Start(ns3::Seconds(0.0));
 	} //install
 
 	ns3::Ptr<ns3::Ipv4StaticRouting> getStaticRouting() const {
 		ns3::Ipv4StaticRoutingHelper const ipv4_static_routing_helper;
-		assert(1 == nodeContainer.GetN());
-		ns3::Ptr<ns3::Ipv4> const p_ipv4 = nodeContainer.Get(0)->GetObject<
-				ns3::Ipv4>();
+		//assert(1 == nodeContainer.GetN());
+		ns3::Ptr<ns3::Ipv4> const p_ipv4 = pNode->GetObject<ns3::Ipv4>();
 		return ipv4_static_routing_helper.GetStaticRouting(p_ipv4);
 	} //getStaticRouting
 
@@ -69,7 +67,8 @@ public:
 };
 // class Terminal
 
-inline std::ostream& operator<<(std::ostream& ostream, Terminal const & terminal) {
+inline std::ostream& operator<<(std::ostream& ostream,
+		Terminal const & terminal) {
 	ostream << terminal.operator ns3::Ipv4Address()
 			<< terminal.getStaticRouting();
 	return ostream;

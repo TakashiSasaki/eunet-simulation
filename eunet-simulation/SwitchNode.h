@@ -25,8 +25,8 @@ public:
 	} // destructor
 
 	void bridge() {
-		assert(1==nodeContainer.GetN());
-		nodeContainer.Get(0)->AddDevice(pBridgeNetDevice);
+		//assert(1==nodeContainer.GetN());
+		pNode->AddDevice(pBridgeNetDevice);
 		for (size_t i = 0; i < netDeviceContainer.GetN(); ++i) {
 			pBridgeNetDevice->AddBridgePort(netDeviceContainer.Get(i));
 		} //for

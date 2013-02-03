@@ -16,9 +16,10 @@
 
 class SimpleNode: public ns3::Object {
 public:
-	ns3::NodeContainer nodeContainer;
+	//ns3::NodeContainer nodeContainer;
+	ns3::Ptr<ns3::Node> pNode;
 	ns3::NetDeviceContainer netDeviceContainer;
-	const std::string description;
+	//const std::string description;
 	static ns3::InternetStackHelper internetStackHelper;
 
 public:
@@ -37,6 +38,6 @@ private:
 	SimpleNode& operator=(const SimpleNode&);
 
 };
-//SimpleNode
+//class SimpleNode
 
 #endif /* SIMPLENODE_H_ */
