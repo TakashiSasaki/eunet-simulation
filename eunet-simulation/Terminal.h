@@ -18,19 +18,29 @@
 #include <ns3/ipv4-static-routing-helper.h>
 #include <ns3/ipv4-route.h>
 #include <ns3/ipv4-static-routing.h>
+#include <ns3/udp-client-server-helper.h>
+#include <ns3/udp-echo-helper.h>
 #include "SimpleNode.h"
 
 class Terminal: public SimpleNode {
 	ns3::Ipv4InterfaceContainer ipv4InterfaceContainer;
-	ns3::ApplicationContainer sinkApplicationContainer;
-	static const int port = 9;
+	ns3::ApplicationContainer packetSinkApplicationContainer;
+	ns3::ApplicationContainer udpEchoServerApplicationContainer;
+	static const int echoPort = 7;
+	static const int discardPort = 9;
 public:
 	Terminal(const std::string name) :
 			SimpleNode(name) {
 		ns3::PacketSinkHelper packet_sink_helper("ns3::UdpSocketFactory",
-				ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
-		sinkApplicationContainer = packet_sink_helper.Install(this->pNode);
-		sinkApplicationContainer.Start(ns3::Seconds(0.0));
+				ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(),
+						discardPort));
+		packetSinkApplicationContainer = packet_sink_helper.Install(
+				this->pNode);
+		packetSinkApplicationContainer.Start(ns3::Seconds(0.0));
+		ns3::UdpEchoServerHelper udp_echo_server_helper(echoPort);
+		udpEchoServerApplicationContainer = udp_echo_server_helper.Install(
+				this->pNode);
+
 		//sinkApplicationContainer.Stop(ns3::Seconds(10.0));
 	} // a constructor
 
