@@ -25,8 +25,8 @@ class Terminal: public SimpleNode {
 	ns3::ApplicationContainer sinkApplicationContainer;
 	static const int port = 9;
 public:
-	Terminal(const std::string description_) :
-			SimpleNode(description_) {
+	Terminal(const std::string name) :
+			SimpleNode(name) {
 		ns3::PacketSinkHelper packet_sink_helper("ns3::UdpSocketFactory",
 				ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), port));
 		sinkApplicationContainer = packet_sink_helper.Install(this->pNode);

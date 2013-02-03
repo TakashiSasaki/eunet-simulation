@@ -10,22 +10,28 @@
 #include <memory>
 #include <vector>
 #include <functional>
+#include <cstring>
+#include <sstream>
 #include <ns3/net-device-container.h>
 #include "Terminal.h"
 
 typedef ns3::Ptr<Terminal> TerminalP;
 
 class TerminalSet: public ns3::Object {
-	const std::string& description;
+	//const std::string& description;
 	std::vector<ns3::Ptr<Terminal> > terminals;
-//
-//private:
-//	void copyNewSimpleNode(
-//			const std::vector<ns3::Ptr<SimpleNode> >::iterator& i);
 
 public:
-	TerminalSet(const int number_of_terminals = 15,
-			const std::string& description_ = "terminal_set");
+	TerminalSet(const std::string& prefix = "terminal_",
+			const int number_of_terminals = 15) :
+			terminals(number_of_terminals) {
+		for (unsigned int i = 0; i < terminals.size(); ++i) {
+			std::stringstream ss;
+			ss << prefix << i;
+			terminals[i] = ns3::Ptr<Terminal>(new Terminal(ss.str()));
+		} //for
+	} // a constructor
+
 	const Terminal& operator[](const int index) const;
 	Terminal& operator[](const int index);
 	size_t size() const {
@@ -59,9 +65,12 @@ typedef ns3::Ptr<TerminalSet> TerminalSetP;
 
 class TerminalSets: public std::vector<ns3::Ptr<TerminalSet> > {
 public:
-	TerminalSets(const size_t n_terminal_set) {
+	TerminalSets(const size_t n_terminal_set = 350, std::string const& prefix =
+			"terminal_set_") {
 		for (size_t i = 0; i < n_terminal_set; ++i) {
-			push_back(new TerminalSet);
+			std::stringstream ss;
+			ss << prefix << i;
+			push_back(new TerminalSet(ss.str()));
 		} //for
 	} // the constructor
 
