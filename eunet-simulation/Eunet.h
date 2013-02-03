@@ -59,7 +59,7 @@ private:
 
 	void connectSwitchAndWifiAp(const int i_switch_node,
 			const int i_wifi_ap_node) {
-		SwitchNode & switch_node = *switch_node[i_switch_node];
+		SwitchNode & switch_node = *switch_nodes[i_switch_node];
 		WifiApNode & wifi_ap_node = *wifi_ap_nodes[i_wifi_ap_node];
 		topology_helper.InstallCsmaLink(switch_node, wifi_ap_node, 2000000000,
 				2);
