@@ -54,20 +54,16 @@ int main(int argc, char** argv) {
 	std::cerr << " done." << std::endl;
 	std::cerr << terminal_sets;
 
-	{
-		ns3::OutputStreamWrapper output_stream_wrapper(
-				"ipv4_global_routing_helper.0.txt", std::ios::out);
-		ipv4_global_routing_helper.PrintRoutingTableAllAt(ns3::Time(0.0),
-				&output_stream_wrapper);
-	}
+	ns3::OutputStreamWrapper ipv4_global_routing_help_output_stream_wrapper(
+			"ipv4_global_routing_helper.0.txt", std::ios::out);
+	ipv4_global_routing_helper.PrintRoutingTableAllAt(ns3::Time(0.0),
+			&ipv4_global_routing_help_output_stream_wrapper);
 
-	{
-		ns3::OutputStreamWrapper output_stream_wrapper(
-				"ipv4_static_routing_helper.0.txt", std::ios::out);
-		ns3::Ipv4StaticRoutingHelper ipv4_static_routing_helper;
-		ipv4_static_routing_helper.PrintRoutingTableAllAt(ns3::Time(0.0),
-				&output_stream_wrapper);
-	}
+	ns3::OutputStreamWrapper ipv4_static_routing_helper_output_stream_wrapper(
+			"ipv4_static_routing_helper.0.txt", std::ios::out);
+	ns3::Ipv4StaticRoutingHelper ipv4_static_routing_helper;
+	ipv4_static_routing_helper.PrintRoutingTableAllAt(ns3::Time(0.0),
+			&ipv4_static_routing_helper_output_stream_wrapper);
 
 	ns3::Simulator::Stop(ns3::Seconds(1.00));
 	std::cerr << "Running simulator ..";
