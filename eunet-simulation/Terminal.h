@@ -8,7 +8,7 @@
 #ifndef TERMINAL_H_
 #define TERMINAL_H_
 
-#include <assert.h>
+#include <cassert>
 #include <ns3/application-container.h>
 #include <ns3/ipv4-address-helper.h>
 #include <ns3/packet-sink-helper.h>
@@ -24,24 +24,31 @@
 
 class Terminal: public SimpleNode {
 	ns3::Ipv4InterfaceContainer ipv4InterfaceContainer;
-	ns3::ApplicationContainer packetSinkApplicationContainer;
-	ns3::ApplicationContainer udpEchoServerApplicationContainer;
+	ns3::Ptr<ns3::Application> pPacketSinkApplication;
+	ns3::Ptr<ns3::Application> pUdpEchoServerApplication;
+	ns3::Ptr<ns3::Application> pUdpEchoClientApplication;
+	ns3::Ptr<ns3::Application> pOnOffApplication;
 	static const int echoPort = 7;
 	static const int discardPort = 9;
 public:
 	Terminal(const std::string name) :
 			SimpleNode(name) {
+
 		ns3::PacketSinkHelper packet_sink_helper("ns3::UdpSocketFactory",
 				ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(),
 						discardPort));
-		packetSinkApplicationContainer = packet_sink_helper.Install(
-				this->pNode);
-		packetSinkApplicationContainer.Start(ns3::Seconds(0.0));
-		ns3::UdpEchoServerHelper udp_echo_server_helper(echoPort);
-		udpEchoServerApplicationContainer = udp_echo_server_helper.Install(
-				this->pNode);
+		pPacketSinkApplication = packet_sink_helper.Install(*this).Get(0);
+		pPacketSinkApplication->SetStartTime(ns3::Seconds(0.0));
 
-		//sinkApplicationContainer.Stop(ns3::Seconds(10.0));
+		ns3::UdpEchoServerHelper udp_echo_server_helper(echoPort);
+		pUdpEchoServerApplication = udp_echo_server_helper.Install(*this).Get(
+				0);
+		pUdpEchoServerApplication->SetStartTime(ns3::Seconds(0.0));
+
+		ns3::UdpEchoClientHelper udp_echo_client_helper(*this, echoPort);
+		pUdpEchoClientApplication = udp_echo_client_helper.Install(*this).Get(
+				0);
+
 	} // a constructor
 
 	virtual ~Terminal() {
@@ -59,7 +66,6 @@ public:
 	} //operator ns3::Ipv4Address
 
 	void install(ns3::OnOffHelper const & on_off_helper) const {
-		//assert(1==nodeContainer.GetN());
 		ns3::ApplicationContainer application_container = on_off_helper.Install(
 				pNode);
 		application_container.Start(ns3::Seconds(0.0));
@@ -67,7 +73,6 @@ public:
 
 	ns3::Ptr<ns3::Ipv4StaticRouting> getStaticRouting() const {
 		ns3::Ipv4StaticRoutingHelper const ipv4_static_routing_helper;
-		//assert(1 == nodeContainer.GetN());
 		ns3::Ptr<ns3::Ipv4> const p_ipv4 = pNode->GetObject<ns3::Ipv4>();
 		return ipv4_static_routing_helper.GetStaticRouting(p_ipv4);
 	} //getStaticRouting
