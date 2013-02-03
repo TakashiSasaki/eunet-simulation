@@ -38,6 +38,7 @@ public:
 				<< std::endl;
 		assert(!ns3::Names::Find<ns3::Node>(name));
 		ns3::Names::Add(name, pNode);
+		internetStackHelper.SetIpv6StackInstall(false);
 		internetStackHelper.Install(pNode);
 	} // a constructor
 

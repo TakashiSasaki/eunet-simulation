@@ -17,6 +17,7 @@ SimpleNode::SimpleNode(const std::string& name) {
 	std::cerr << "adding new SimpleNode with the name of " << name << std::endl;
 	pNode = ns3::CreateObject<ns3::Node>();
 	ns3::Names::Add(name, pNode);
+	internetStackHelper.SetIpv6StackInstall(false);
 	internetStackHelper.Install(this->operator const ns3::Ptr<ns3::Node>());
 }
 
