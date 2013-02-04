@@ -2,8 +2,10 @@
 #include <algorithm>
 #include <cassert>
 #include <ns3/net-device-container.h>
+#include <ns3/log.h>
 #include "TerminalSet.h"
 
+NS_LOG_COMPONENT_DEFINE("TerminalSet");
 //void TerminalSet::copyNewSimpleNode(
 //		const std::vector<ns3::Ptr<SimpleNode> >::iterator & i) {
 //	*i = ns3::Ptr<SimpleNode>(new SimpleNode(this->description));

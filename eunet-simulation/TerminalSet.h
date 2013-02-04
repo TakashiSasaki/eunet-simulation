@@ -15,6 +15,7 @@
 #include <cassert>
 #include <ns3/net-device-container.h>
 #include <ns3/names.h>
+#include <ns3/log.h>
 #include "Terminal.h"
 
 typedef ns3::Ptr<Terminal> TerminalP;
@@ -24,7 +25,7 @@ class TerminalSet: public ns3::Object {
 	std::vector<ns3::Ptr<Terminal> > terminals;
 
 public:
-	TerminalSet(const std::string& prefix = "/Names",
+	TerminalSet(const std::string& prefix = "/Names/",
 			const int number_of_terminals = 15) :
 			terminals(number_of_terminals) {
 		for (unsigned int i = 0; i < terminals.size(); ++i) {
@@ -100,11 +101,7 @@ public:
 	friend std::ostream& operator<<(std::ostream& ostream,
 			TerminalSets const & terminal_sets);
 
-	void installUdpEchoClient(ns3::Ipv4Address const & remote_ipv4_address) {
-		for (size_t i = 0; i < this->size(); ++i) {
-			this->operator [](i)->installUdpEchoClient(remote_ipv4_address);
-		} //for
-	} //installUdpEchoClient
+	void installUdpEchoClient(ns3::Ipv4Address const & remote_ipv4_address);
 };
 //TermianlSets
 

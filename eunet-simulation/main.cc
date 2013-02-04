@@ -6,6 +6,7 @@
 #include <ns3/point-to-point-helper.h>
 #include <ns3/applications-module.h>
 #include <ns3/ipv4-global-routing-helper.h>
+#include <ns3/log.h>
 #include "TerminalSet.h"
 #include "WifiStaNodeSet.h"
 #include "Eunet.h"
@@ -16,10 +17,11 @@ NS_LOG_COMPONENT_DEFINE("main");
 int main(int argc, char** argv) {
 	ns3::LogComponentEnable("OnOffApplication", ns3::LOG_LEVEL_ALL);
 	ns3::LogComponentEnable("PacketSink", ns3::LOG_LEVEL_INFO);
-	ns3::LogComponentEnable("UdpEchoClientApplication", ns3::LOG_LEVEL_INFO);
-	ns3::LogComponentEnable("UdpEchoServerApplication", ns3::LOG_LEVEL_INFO);
+	ns3::LogComponentEnable("UdpEchoClientApplication", ns3::LOG_LEVEL_DEBUG);
+	ns3::LogComponentEnable("UdpEchoServerApplication", ns3::LOG_LEVEL_DEBUG);
 	ns3::LogComponentEnable("main", ns3::LOG_LEVEL_INFO);
 	ns3::LogComponentEnable("Terminal", ns3::LOG_LEVEL_DEBUG);
+	ns3::LogComponentEnable("TerminalSets", ns3::LOG_LEVEL_INFO);
 	ns3::LogComponentEnable("Ipv4GlobalRouting", ns3::LOG_LEVEL_INFO);
 	ns3::LogComponentEnable("Simulator", ns3::LOG_LEVEL_INFO);
 	ns3::LogComponentEnable("BridgeNetDevice", ns3::LOG_LEVEL_WARN);
@@ -46,8 +48,9 @@ int main(int argc, char** argv) {
 	Terminal & internet_terminal = terminal_sets.get(
 			EunetBase::INTERNET_ROUTER_INDEX, 0);
 
-	terminal_sets[5]->installUdpEchoClient(internet_terminal);
-	terminal_sets[6]->installUdpEchoClient(internet_terminal);
+	//terminal_sets[5]->installUdpEchoClient(internet_terminal);
+	//terminal_sets[6]->installUdpEchoClient(internet_terminal);
+	terminal_sets.installUdpEchoClient(internet_terminal);
 
 	ns3::Ipv4GlobalRoutingHelper ipv4_global_routing_helper;
 
