@@ -15,12 +15,13 @@ NS_LOG_COMPONENT_DEFINE("main");
 
 int main(int argc, char** argv) {
 	ns3::LogComponentEnable("OnOffApplication", ns3::LOG_LEVEL_ALL);
-	ns3::LogComponentEnable("PacketSink", ns3::LOG_LEVEL_ALL);
+	ns3::LogComponentEnable("PacketSink", ns3::LOG_LEVEL_INFO);
 	ns3::LogComponentEnable("UdpEchoClientApplication", ns3::LOG_LEVEL_INFO);
 	ns3::LogComponentEnable("UdpEchoServerApplication", ns3::LOG_LEVEL_INFO);
 	ns3::LogComponentEnable("main", ns3::LOG_LEVEL_INFO);
 	ns3::LogComponentEnable("Terminal", ns3::LOG_LEVEL_DEBUG);
-	ns3::LogComponentEnable("Ipv4GlobalRoutingHelper", ns3::LOG_LEVEL_INFO);
+	ns3::LogComponentEnable("Ipv4GlobalRouting", ns3::LOG_LEVEL_INFO);
+	ns3::LogComponentEnable("Simulator", ns3::LOG_LEVEL_INFO);
 	NS_LOG_INFO("main:""entered in main function.");
 	//ns3::LogComponentEnable("WifiNode", ns3::LOG_LEVEL_ALL);
 	//ns3::LogComponentEnableAll(ns3::LOG_LEVEL_ALL);
@@ -69,9 +70,10 @@ int main(int argc, char** argv) {
 	terminal_sets.get(6, 3).installUdpEchoClientApplication(internet_terminal);
 	terminal_sets.get(6, 4).installUdpEchoClientApplication(internet_terminal);
 
+	ns3::Ipv4GlobalRoutingHelper ipv4_global_routing_helper;
+
 #if 0
 	std::cerr << "Populating routing table ..";
-	ns3::Ipv4GlobalRoutingHelper ipv4_global_routing_helper;
 	ipv4_global_routing_helper.PopulateRoutingTables();
 	std::cerr << " done." << std::endl;
 	std::cerr << terminal_sets;
