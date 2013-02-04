@@ -57,8 +57,7 @@ int main(int argc, char** argv) {
 	//terminal_sets[5]->installUdpEchoClient(internet_terminal);
 	//terminal_sets.installOnOffApplication(internet_terminal);
 	//terminal_sets[5]->installOnOffApplication(lan_terminal);
-	terminal_sets.get(5, 1).installOnOffApplication(lan_terminal);
-	terminal_sets.get(5, 2).installOnOffApplication(lan_terminal);
+	terminal_sets[5]->installOnOffApplication(lan_terminal);
 
 	ns3::Simulator::Stop(ns3::Seconds(10.0));
 	NS_LOG_INFO("main: simulator started");
