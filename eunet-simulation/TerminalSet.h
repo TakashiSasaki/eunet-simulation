@@ -48,16 +48,18 @@ public:
 	}
 
 	void installUdpEchoClient(ns3::Ipv4Address const & remote_ipv4_address) {
+		assert(0<terminals.size());
 		for (size_t i = 0; i < terminals.size(); ++i) {
 			Terminal & terminal = *terminals[i];
-			terminal.installUdpEchoClient(remote_ipv4_address);
+			terminal.installUdpEchoClient(remote_ipv4_address, 1000 + i);
 		} //for
 	} //installUdpEchoClient
 
 	void installOnOffApplication(ns3::Ipv4Address const & remote_ipv4_address) {
+		assert(0<terminals.size());
 		for (size_t i = 0; i < terminals.size(); ++i) {
 			Terminal & terminal = *terminals[i];
-			terminal.installOnOffApplication(remote_ipv4_address);
+			terminal.installOnOffApplication(remote_ipv4_address, 1000 + i);
 		} //for
 	} //installUdpEchoClient
 
