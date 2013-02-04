@@ -1,4 +1,4 @@
-.PHONY: config config-debug run run-debug clean all main default sandbox
+PHONY: config debug-config clean all main default sandbox debug-sandbox
 
 CXXFLAGS=-v -Wall -I/usr/include/ns3.14.1 -O0 -L/usr/lib -std=gnu++0x
 VPATH = eunet-simulation 
@@ -25,21 +25,21 @@ clean:
 config: clean
 	(cd ..; ./waf configure -j 8  -d release)
 
-config-debug: clean
+debug-config: clean
 	(cd ..; ./waf configure -j 8 -d debug)
 
 hello: hello.o
 	g++ -o hello $<
 
-run-sandbox:
+debug-sandbox:
 	(ulimit -m 1000000)
 	(cd ..; ./waf --run sandbox --command-template="gdb --args %s -ex run")
 	
-run-sandbox:
+sandbox:
 	(ulimit -m 1000000)
 	(cd ..; ./waf --jobs=8 --run sandbox)
 
-run-debug:
+debug:
 	(ulimit -m 1000000)
 	(cd ..; ./waf --jobs=8 --run eunet-simulation --command-template="gdb -ex run --args %s")
 

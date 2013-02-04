@@ -69,14 +69,14 @@ int main(int argc, char** argv) {
 	ipv4_static_routing_helper.PrintRoutingTableAllAt(ns3::Time(0.0),
 			&ipv4_static_routing_helper_output_stream_wrapper);
 
-	ns3::Simulator::Stop(ns3::Seconds(0.01));
-	NS_LOG_INFO("main:simulator started");
+	ns3::Simulator::Stop(ns3::Seconds(10.0));
+	NS_LOG_INFO("main: simulator started");
 	ns3::Simulator::Run();
-	NS_LOG_INFO("main:simulator finished");
+	NS_LOG_INFO("main: simulator finished");
 
-	NS_LOG_INFO("main:simulator is being destroyed");
+	NS_LOG_INFO("main: simulator is being destroyed");
 	//ns3::Simulator::Destroy();
-	NS_LOG_INFO("main:simulator has been destroyed");
+	NS_LOG_INFO("main: simulator has been destroyed");
 
 	return EXIT_SUCCESS;
 } //main
