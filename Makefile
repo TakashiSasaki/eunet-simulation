@@ -23,10 +23,10 @@ clean:
 	(cd ..; ./waf clean)
 
 config: clean
-	(cd ..; ./waf configure -d release)
+	(cd ..; ./waf configure -j 8  -d release)
 
 config-debug: clean
-	(cd ..; ./waf configure -d release)
+	(cd ..; ./waf configure -j 8 -d debug)
 
 hello: hello.o
 	g++ -o hello $<
@@ -37,11 +37,11 @@ run-sandbox:
 	
 run-sandbox:
 	(ulimit -m 1000000)
-	(cd ..; ./waf --run sandbox)
+	(cd ..; ./waf --jobs=8 --run sandbox)
 
 run-debug:
 	(ulimit -m 1000000)
-	(cd ..; ./waf --run eunet-simulation --command-template="gdb --args %s")
+	(cd ..; ./waf --jobs=8 --run eunet-simulation --command-template="gdb --args %s")
 
 run:
 	(ulimit -m 1000000)

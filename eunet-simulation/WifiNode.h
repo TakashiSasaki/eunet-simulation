@@ -29,19 +29,7 @@ protected:
 	ns3::NetDeviceContainer wifiNetDeviceContainer;
 	ns3::Ipv4InterfaceContainer wifiIpv4InterfaceContainer;
 public:
-	WifiNode(const std::string& name) {
-		if (!initialized) {
-			wifiHelper.SetRemoteStationManager("ns3::ArfWifiManager");
-		} //if
-		pNode = ns3::CreateObject<ns3::Node>();
-		std::cerr << "adding new WifiNode with the name of " << name
-				<< std::endl;
-		assert(!ns3::Names::Find<ns3::Node>(name));
-		ns3::Names::Add(name, pNode);
-		internetStackHelper.SetIpv6StackInstall(false);
-		internetStackHelper.Install(pNode);
-	} // a constructor
-
+	WifiNode(const std::string& name);
 	ns3::NetDeviceContainer& getWifiNetDeviceContainer() {
 		return wifiNetDeviceContainer;
 	}

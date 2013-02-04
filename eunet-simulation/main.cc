@@ -16,6 +16,7 @@
 int main(int argc, char** argv) {
 	std::cout << "entered in main function." << std::endl;
 	ns3::LogComponentEnable("OnOffApplication", ns3::LOG_LEVEL_ALL);
+	//ns3::LogComponentEnable("WifiNode", ns3::LOG_LEVEL_ALL);
 	//ns3::LogComponentEnableAll(ns3::LOG_LEVEL_ALL);
 	ns3::CommandLine cmd;
 	cmd.Parse(argc, argv);
@@ -23,7 +24,7 @@ int main(int argc, char** argv) {
 	Eunet eunet;
 
 	TerminalSets terminal_sets(350);
-	std::cerr << terminal_sets;
+	//std::cerr << terminal_sets;
 	eunet.Attach(terminal_sets);
 
 	WifiStaNodeSets wifi_sta_node_sets(350);

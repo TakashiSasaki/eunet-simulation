@@ -52,12 +52,12 @@ public:
 				0);
 		pUdpEchoServerApplication->SetStartTime(ns3::Seconds(0.0));
 
-		ns3::UdpEchoClientHelper udp_echo_client_helper(*this, echoPort);
-		udpEchoClientApplications.Add(udp_echo_client_helper.Install(*this));
-
-		ns3::OnOffHelper on_off_helper("ns3::UdpSocketFactory",
-				ns3::Address(ns3::InetSocketAddress(*this, discardPort)));
-		onOffApplications.Add(on_off_helper.Install(*this));
+//		ns3::UdpEchoClientHelper udp_echo_client_helper(*this, echoPort);
+//		udpEchoClientApplications.Add(udp_echo_client_helper.Install(*this));
+//
+//		ns3::OnOffHelper on_off_helper("ns3::UdpSocketFactory",
+//				ns3::Address(ns3::InetSocketAddress(*this, discardPort)));
+//		onOffApplications.Add(on_off_helper.Install(*this));
 
 	} // a constructor
 
