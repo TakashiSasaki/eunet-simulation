@@ -8,7 +8,6 @@
 #include <ns3/ipv4-global-routing-helper.h>
 #include "TerminalSet.h"
 #include "WifiStaNodeSet.h"
-#include "SimpleOnOffHelper.h"
 #include "Eunet.h"
 #include "EunetBase.h"
 
@@ -36,19 +35,19 @@ int main(int argc, char** argv) {
 	terminal_sets.assign(ipv4_address_helper);
 	wifi_sta_node_sets.assign(ipv4_address_helper);
 
-	Terminal const & internet_terminal = terminal_sets.get(
+	Terminal & internet_terminal = terminal_sets.get(
 			EunetBase::INTERNET_ROUTER_INDEX, 0);
 
-	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(5, 0)));
-	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(5, 1)));
-	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(5, 2)));
-	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(5, 3)));
-	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(5, 4)));
-	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(6, 0)));
-	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(6, 1)));
-	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(6, 2)));
-	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(6, 3)));
-	internet_terminal.install(SimpleOnOffHelper(terminal_sets.get(6, 4)));
+	terminal_sets.get(5, 0).installOnOffApplication(internet_terminal);
+	terminal_sets.get(5, 1).installOnOffApplication(internet_terminal);
+	terminal_sets.get(5, 2).installOnOffApplication(internet_terminal);
+	terminal_sets.get(5, 3).installOnOffApplication(internet_terminal);
+	terminal_sets.get(5, 4).installOnOffApplication(internet_terminal);
+	terminal_sets.get(6, 0).installOnOffApplication(internet_terminal);
+	terminal_sets.get(6, 1).installOnOffApplication(internet_terminal);
+	terminal_sets.get(6, 2).installOnOffApplication(internet_terminal);
+	terminal_sets.get(6, 3).installOnOffApplication(internet_terminal);
+	terminal_sets.get(6, 4).installOnOffApplication(internet_terminal);
 
 #if 0
 	std::cerr << "Populating routing table ..";

@@ -70,16 +70,17 @@ public:
 		ac.Get(0)->SetAttribute("Interval", interval);
 		ac.Get(0)->SetAttribute("PacketSize", ns3::UintegerValue(1024));
 		ac.Get(0)->SetAttribute("MaxPackets", max_packets);
+		ac.Get(0)->SetStartTime(ns3::Seconds(0.0));
 		udpEchoClientApplications.Add(ac);
 		return ac.Get(0);
 	} // installUdpEchoClientApplication
 
 	ns3::Ptr<ns3::Application> installOnOffApplication(
-			ns3::Ipv4Address const& remote_address,
-			ns3::DataRateValue data_rate_value, ns3::UintegerValue packet_size =
-					1024, ns3::UintegerValue max_bytes = 100000000,
-			ns3::StringValue on_time = ns3::StringValue(
-					"ns3::ConstantRandomVariable[Constant=5]"),
+			ns3::Ipv4Address remote_address,
+			ns3::DataRateValue data_rate_value = ns3::DataRate("100kbps"),
+			ns3::UintegerValue packet_size = 1024,
+			ns3::UintegerValue max_bytes = 100000000, ns3::StringValue on_time =
+					ns3::StringValue("ns3::ConstantRandomVariable[Constant=5]"),
 			ns3::StringValue off_time = ns3::StringValue(
 					"ns3::ConstantRandomVariable[Constant=0]")) {
 		ns3::OnOffHelper on_off_helper("ns3::UdpSocketFactory",
@@ -91,6 +92,7 @@ public:
 		ac.Get(0)->SetAttribute("MaxBytes", max_bytes);
 		ac.Get(0)->SetAttribute("OnTime", on_time);
 		ac.Get(0)->SetAttribute("OffTime", off_time);
+		ac.Get(0)->SetStartTime(ns3::Seconds(0.0));
 		onOffApplications.Add(ac);
 		return ac.Get(0);
 	} //installOnOffApplication

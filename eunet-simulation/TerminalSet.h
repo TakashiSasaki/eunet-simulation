@@ -84,9 +84,9 @@ public:
 		} //for
 	} //Assign
 
-	Terminal const & get(const int i_terminal_set, const int i_terminal) const {
-		TerminalSetP const p_terminal_set = (*this)[i_terminal_set];
-		Terminal const & terminal = (*p_terminal_set)[i_terminal];
+	Terminal & get(const int i_terminal_set, const int i_terminal) {
+		TerminalSetP p_terminal_set = (*this)[i_terminal_set];
+		Terminal & terminal = (*p_terminal_set)[i_terminal];
 		return terminal;
 	} //get
 
