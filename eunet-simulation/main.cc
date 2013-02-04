@@ -7,10 +7,19 @@
 #include <ns3/applications-module.h>
 #include <ns3/ipv4-global-routing-helper.h>
 #include <ns3/log.h>
+#include <ns3/packet.h>
+#include "ns3/object.h"
+#include "ns3/uinteger.h"
+#include "ns3/traced-value.h"
+#include "ns3/trace-source-accessor.h"
 #include "TerminalSet.h"
 #include "WifiStaNodeSet.h"
 #include "Eunet.h"
 #include "EunetBase.h"
+
+void MyTrace(ns3::Ptr<const ns3::Packet> oldValue) {
+	std::cout << "Traced " << oldValue << std::endl;
+}
 
 #define COMPONENT_NAME "main"
 NS_LOG_COMPONENT_DEFINE(COMPONENT_NAME);
@@ -52,7 +61,7 @@ int main(int argc, char** argv) {
 
 	//Terminal & internet_terminal = terminal_sets.get(
 	//		EunetBase::INTERNET_ROUTER_INDEX, 0);
-	//Terminal & lan_terminal = terminal_sets.get(6, 0);
+	Terminal & lan_terminal = terminal_sets.get(6, 0);
 
 	//terminal_sets.installUdpEchoClient(internet_terminal);
 	//terminal_sets[5]->installUdpEchoClient(internet_terminal);
@@ -60,10 +69,13 @@ int main(int argc, char** argv) {
 	//terminal_sets[5]->installOnOffApplication(lan_terminal);
 	//terminal_sets[5]->installOnOffApplication(lan_terminal);
 
-	terminal_sets[220]->installOnOffApplication(terminal_sets.get(EunetBase::INTERNET_ROUTER_INDEX, 1));
+	lan_terminal.installOnOffApplication(
+			terminal_sets.get(EunetBase::INTERNET_ROUTER_INDEX, 1));
+	lan_terminal.getOnOffApplication()->TraceConnectWithoutContext("Tx",
+			ns3::MakeCallback(&MyTrace));
+
 	//terminal_sets.installUdpEchoClient(terminal_sets.get(EunetBase::INTERNET_ROUTER_INDEX, 0));
 	//terminal_sets.installOnOffApplication(terminal_sets.get(EunetBase::INTERNET_ROUTER_INDEX, 0));
-
 
 	ns3::Simulator::Stop(ns3::Seconds(10.0));
 	NS_LOG_INFO(COMPONENT_NAME": simulator started");

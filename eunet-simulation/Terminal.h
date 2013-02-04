@@ -82,6 +82,15 @@ public:
 
 	friend std::ostream& operator<<(std::ostream& ostream,
 			Terminal const & terminal);
+
+	ns3::Ptr<ns3::Application> getOnOffApplication(
+			const int i_application = 0) {
+		return onOffApplications.Get(i_application);
+	}
+
+	ns3::Ptr<ns3::Application> getUdpEchoClient(const int i_application = 0) {
+		return udpEchoClients.Get(i_application);
+	}
 };
 // class Terminal
 
