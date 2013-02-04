@@ -45,10 +45,10 @@ public:
 
 	ns3::Ptr<ns3::Application> installOnOffApplication(
 			ns3::Ipv4Address remote_address,
-			ns3::DataRateValue data_rate_value = ns3::DataRate("100kbps"),
+			ns3::DataRateValue data_rate_value = ns3::DataRate("1000kbps"),
 			ns3::UintegerValue packet_size = 1024,
-			ns3::UintegerValue max_bytes = 100000000, ns3::StringValue on_time =
-					ns3::StringValue("ns3::ConstantRandomVariable[Constant=5]"),
+			ns3::UintegerValue max_bytes = 1000000000, ns3::StringValue on_time =
+					ns3::StringValue("ns3::ConstantRandomVariable[Constant=10]"),
 			ns3::StringValue off_time = ns3::StringValue(
 					"ns3::ConstantRandomVariable[Constant=0]")); //installOnOffApplication
 
