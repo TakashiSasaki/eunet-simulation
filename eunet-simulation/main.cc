@@ -12,7 +12,8 @@
 #include "Eunet.h"
 #include "EunetBase.h"
 
-NS_LOG_COMPONENT_DEFINE("main");
+#define COMPONENT_NAME "main"
+NS_LOG_COMPONENT_DEFINE(COMPONENT_NAME);
 
 int main(int argc, char** argv) {
 	ns3::LogComponentEnable("OnOffApplication", ns3::LOG_LEVEL_DEBUG);
@@ -51,7 +52,7 @@ int main(int argc, char** argv) {
 
 	//Terminal & internet_terminal = terminal_sets.get(
 	//		EunetBase::INTERNET_ROUTER_INDEX, 0);
-	Terminal & lan_terminal = terminal_sets.get(5, 0);
+	Terminal & lan_terminal = terminal_sets.get(6, 0);
 
 	//terminal_sets.installUdpEchoClient(internet_terminal);
 	//terminal_sets[5]->installUdpEchoClient(internet_terminal);
@@ -59,14 +60,16 @@ int main(int argc, char** argv) {
 	//terminal_sets[5]->installOnOffApplication(lan_terminal);
 	terminal_sets[5]->installOnOffApplication(lan_terminal);
 
-	ns3::Simulator::Stop(ns3::Seconds(10.0));
-	NS_LOG_INFO("main: simulator started");
-	ns3::Simulator::Run();
-	NS_LOG_INFO("main: simulator finished");
+	terminal_sets[220]->installOnOffApplication(terminal_sets.get(223, 1));
 
-	NS_LOG_INFO("main: simulator is being destroyed");
+	ns3::Simulator::Stop(ns3::Seconds(10.0));
+	NS_LOG_INFO(COMPONENT_NAME": simulator started");
+	ns3::Simulator::Run();
+	NS_LOG_INFO(COMPONENT_NAME": simulator finished");
+
+	NS_LOG_INFO(COMPONENT_NAME": simulator is being destroyed");
 	ns3::Simulator::Destroy();
-	NS_LOG_INFO("main: simulator has been destroyed");
+	NS_LOG_INFO(COMPONENT_NAME": simulator has been destroyed");
 
 	return EXIT_SUCCESS;
 } //main

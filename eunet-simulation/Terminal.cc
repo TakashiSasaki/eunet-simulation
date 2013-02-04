@@ -3,11 +3,12 @@
 #include <ns3/uinteger.h>
 #include "Terminal.h"
 
-NS_LOG_COMPONENT_DEFINE("Terminal");
+#define COMPONENT_NAME "Terminal"
+NS_LOG_COMPONENT_DEFINE(COMPONENT_NAME);
 
 Terminal::Terminal(const std::string name) :
 		SimpleNode(name) {
-	NS_LOG_INFO("Terminal:creating " << name << " with PacketSink and UdpEchoServer");
+	NS_LOG_INFO(COMPONENT_NAME ":creating " << name << " with PacketSink and UdpEchoServer");
 	ns3::PacketSinkHelper packet_sink_helper("ns3::UdpSocketFactory",
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), discardPort));
 	pPacketSink = packet_sink_helper.Install(*this).Get(0);
@@ -32,7 +33,7 @@ ns3::Ptr<ns3::Application> Terminal::installUdpEchoClient(
 		ns3::Ipv4Address const& remote_ipv4_address,
 		ns3::UintegerValue packet_size, ns3::UintegerValue max_packets,
 		ns3::TimeValue interval, ns3::DataRateValue) {
-	NS_LOG_INFO("Terminal:installUdpEchoClientApplication with packet size " << packet_size.Get()
+	NS_LOG_INFO( COMPONENT_NAME ":installUdpEchoClientApplication with packet size " << packet_size.Get()
 			<< " to " << remote_ipv4_address
 			<< " on " << this->operator ns3::Ipv4Address());
 	ns3::UdpEchoClientHelper udp_echo_client_helper(*this, echoPort);
@@ -54,7 +55,7 @@ ns3::Ptr<ns3::Application> Terminal::installOnOffApplication(
 		ns3::Ipv4Address remote_ipv4_address, ns3::UintegerValue packet_size,
 		ns3::DataRateValue data_rate_value, ns3::UintegerValue max_bytes,
 		ns3::StringValue on_time, ns3::StringValue off_time) {
-	NS_LOG_INFO("Terminal:installOnOffApplication with packet size " << packet_size.Get()
+	NS_LOG_INFO(COMPONENT_NAME ":installOnOffApplication with packet size " << packet_size.Get()
 			<< " to " << remote_ipv4_address << " on " << this->operator ns3::Ipv4Address());
 	ns3::OnOffHelper on_off_helper("ns3::UdpSocketFactory",
 			ns3::Address(

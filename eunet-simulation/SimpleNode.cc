@@ -12,12 +12,13 @@
 #include <ns3/log.h>
 #include "SimpleNode.h"
 
-NS_LOG_COMPONENT_DEFINE("SimpleNode");
+#define COMPONENT_NAME "SimpleNode"
+NS_LOG_COMPONENT_DEFINE(COMPONENT_NAME);
 
 ns3::InternetStackHelper SimpleNode::internetStackHelper;
 
 SimpleNode::SimpleNode(const std::string& name) {
-	NS_LOG_INFO("SimpleNode:adding new SimpleNode with the name of " << name);
+	NS_LOG_INFO(COMPONENT_NAME ":adding new SimpleNode with the name of " << name);
 	pNode = ns3::CreateObject<ns3::Node>();
 	ns3::Names::Add(name, pNode);
 	internetStackHelper.SetIpv6StackInstall(false);
