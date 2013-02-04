@@ -60,9 +60,9 @@ int main(int argc, char** argv) {
 	//terminal_sets[5]->installOnOffApplication(lan_terminal);
 	//terminal_sets[5]->installOnOffApplication(lan_terminal);
 
-	//terminal_sets[220]->installOnOffApplication(terminal_sets.get(223, 1));
-	terminal_sets.installUdpEchoClient(terminal_sets.get(EunetBase::INTERNET_ROUTER_INDEX, 0));
-	terminal_sets.installOnOffApplication(terminal_sets.get(EunetBase::INTERNET_ROUTER_INDEX, 0));
+	terminal_sets[220]->installOnOffApplication(terminal_sets.get(EunetBase::INTERNET_ROUTER_INDEX, 1));
+	//terminal_sets.installUdpEchoClient(terminal_sets.get(EunetBase::INTERNET_ROUTER_INDEX, 0));
+	//terminal_sets.installOnOffApplication(terminal_sets.get(EunetBase::INTERNET_ROUTER_INDEX, 0));
 
 
 	ns3::Simulator::Stop(ns3::Seconds(10.0));
