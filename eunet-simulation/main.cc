@@ -17,8 +17,15 @@
 #include "Eunet.h"
 #include "EunetBase.h"
 
-void MyTrace(ns3::Ptr<const ns3::Packet> oldValue) {
-	std::cout << "Traced " << oldValue << std::endl;
+static int tx_count = 0;
+static int rx_count = 0;
+
+void countTx(ns3::Ptr<const ns3::Packet> oldValue) {
+	++tx_count;
+}
+
+void countRx(ns3::Ptr<const ns3::Packet> oldValue, const ns3::Address &) {
+	++rx_count;
 }
 
 #define COMPONENT_NAME "main"
@@ -59,8 +66,8 @@ int main(int argc, char** argv) {
 	terminal_sets.assign(ipv4_address_helper);
 	wifi_sta_node_sets.assign(ipv4_address_helper);
 
-	//Terminal & internet_terminal = terminal_sets.get(
-	//		EunetBase::INTERNET_ROUTER_INDEX, 0);
+	Terminal & internet_terminal = terminal_sets.get(
+			EunetBase::INTERNET_ROUTER_INDEX, 0);
 	Terminal & lan_terminal = terminal_sets.get(6, 0);
 
 	//terminal_sets.installUdpEchoClient(internet_terminal);
@@ -69,10 +76,11 @@ int main(int argc, char** argv) {
 	//terminal_sets[5]->installOnOffApplication(lan_terminal);
 	//terminal_sets[5]->installOnOffApplication(lan_terminal);
 
-	lan_terminal.installOnOffApplication(
-			terminal_sets.get(EunetBase::INTERNET_ROUTER_INDEX, 1));
+	lan_terminal.installOnOffApplication(internet_terminal);
 	lan_terminal.getOnOffApplication()->TraceConnectWithoutContext("Tx",
-			ns3::MakeCallback(&MyTrace));
+			ns3::MakeCallback(&countTx));
+	internet_terminal.getPacketSink()->TraceConnectWithoutContext("Rx",
+			ns3::MakeCallback(&countRx));
 
 	//terminal_sets.installUdpEchoClient(terminal_sets.get(EunetBase::INTERNET_ROUTER_INDEX, 0));
 	//terminal_sets.installOnOffApplication(terminal_sets.get(EunetBase::INTERNET_ROUTER_INDEX, 0));
@@ -85,6 +93,8 @@ int main(int argc, char** argv) {
 	NS_LOG_INFO(COMPONENT_NAME": simulator is being destroyed");
 	ns3::Simulator::Destroy();
 	NS_LOG_INFO(COMPONENT_NAME": simulator has been destroyed");
+
+	std::cout << "tx=" << tx_count << ", rx=" << rx_count << std::endl;
 
 	return EXIT_SUCCESS;
 } //main

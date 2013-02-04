@@ -20,11 +20,13 @@
 #include <ns3/ipv4-static-routing.h>
 #include <ns3/udp-client-server-helper.h>
 #include <ns3/udp-echo-helper.h>
+#include <ns3/udp-echo-server.h>
 #include <ns3/uinteger.h>
 #include <ns3/data-rate.h>
 #include <ns3/nstime.h>
 #include <ns3/pointer.h>
 #include <ns3/string.h>
+#include <ns3/packet-sink.h>
 #include "SimpleNode.h"
 
 class Terminal: public SimpleNode {
@@ -90,6 +92,10 @@ public:
 
 	ns3::Ptr<ns3::Application> getUdpEchoClient(const int i_application = 0) {
 		return udpEchoClients.Get(i_application);
+	}
+
+	ns3::Ptr<ns3::Application> getPacketSink() {
+		return pPacketSink;
 	}
 };
 // class Terminal
