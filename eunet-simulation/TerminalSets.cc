@@ -13,3 +13,15 @@ void TerminalSets::installUdpEchoClient(
 		this->operator [](i)->installUdpEchoClient(remote_ipv4_address);
 	} //for
 } //installUdpEchoClient
+
+void TerminalSets::installOnOffApplication(
+		ns3::Ipv4Address const & remote_ipv4_address) {
+	std::stringstream ss;
+	remote_ipv4_address.Print(ss);
+	ss << std::ends;
+	NS_LOG_INFO("TerminalSets:installOnOffApplication to " << ss.str()
+			<< " for " << this->size() << " terminal sets");
+	for (size_t i = 0; i < this->size(); ++i) {
+		this->operator [](i)->installOnOffApplication(remote_ipv4_address);
+	} //for
+} //installUdpEchoClient

@@ -15,7 +15,7 @@
 NS_LOG_COMPONENT_DEFINE("main");
 
 int main(int argc, char** argv) {
-	ns3::LogComponentEnable("OnOffApplication", ns3::LOG_LEVEL_ALL);
+	ns3::LogComponentEnable("OnOffApplication", ns3::LOG_LEVEL_WARN);
 	ns3::LogComponentEnable("PacketSink", ns3::LOG_LEVEL_INFO);
 	ns3::LogComponentEnable("UdpEchoClientApplication", ns3::LOG_LEVEL_DEBUG);
 	ns3::LogComponentEnable("UdpEchoServerApplication", ns3::LOG_LEVEL_DEBUG);
@@ -48,9 +48,8 @@ int main(int argc, char** argv) {
 	Terminal & internet_terminal = terminal_sets.get(
 			EunetBase::INTERNET_ROUTER_INDEX, 0);
 
-	//terminal_sets[5]->installUdpEchoClient(internet_terminal);
-	//terminal_sets[6]->installUdpEchoClient(internet_terminal);
 	terminal_sets.installUdpEchoClient(internet_terminal);
+	terminal_sets.installOnOffApplication(internet_terminal);
 
 	ns3::Ipv4GlobalRoutingHelper ipv4_global_routing_helper;
 
@@ -78,7 +77,7 @@ int main(int argc, char** argv) {
 	NS_LOG_INFO("main: simulator finished");
 
 	NS_LOG_INFO("main: simulator is being destroyed");
-	//ns3::Simulator::Destroy();
+	ns3::Simulator::Destroy();
 	NS_LOG_INFO("main: simulator has been destroyed");
 
 	return EXIT_SUCCESS;

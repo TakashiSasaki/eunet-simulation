@@ -21,7 +21,6 @@
 typedef ns3::Ptr<Terminal> TerminalP;
 
 class TerminalSet: public ns3::Object {
-	//const std::string& description;
 	std::vector<ns3::Ptr<Terminal> > terminals;
 
 public:
@@ -55,6 +54,13 @@ public:
 		} //for
 	} //installUdpEchoClient
 
+	void installOnOffApplication(ns3::Ipv4Address const & remote_ipv4_address) {
+		for (size_t i = 0; i < terminals.size(); ++i) {
+			Terminal & terminal = *terminals[i];
+			terminal.installOnOffApplication(remote_ipv4_address);
+		} //for
+	} //installUdpEchoClient
+
 	friend std::ostream& operator<<(std::ostream& ostream,
 			TerminalSet const & terminal_set);
 private:
@@ -80,7 +86,6 @@ public:
 		for (size_t i = 0; i < n_terminal_set; ++i) {
 			std::stringstream ss;
 			ss << prefix << i << "_terminal" << std::ends;
-			//assert(!ns3::Names::Find<TerminalSet>(ss.str()));
 			push_back(new TerminalSet(ss.str()));
 		} //for
 	} // the constructor
@@ -102,6 +107,7 @@ public:
 			TerminalSets const & terminal_sets);
 
 	void installUdpEchoClient(ns3::Ipv4Address const & remote_ipv4_address);
+	void installOnOffApplication(ns3::Ipv4Address const & remote_ipv4_address);
 };
 //TermianlSets
 
