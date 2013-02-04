@@ -85,7 +85,7 @@ void Eunet::Attach(TerminalSet & terminal_set, const int i_switch) {
 
 void Eunet::connectSwitchNodes(const int i_switch_node_1,
 		const int i_switch_node_2, const uint64_t bps, const uint64_t ms) {
-	NS_LOG_DEBUG(COMPONENT_NAME ": connecting switch nodes "
+	NS_LOG_INFO(COMPONENT_NAME ": connecting switch nodes "
 			<< i_switch_node_1 << " and " << i_switch_node_2);
 	SwitchNode & switch_node_1 = *switch_nodes[i_switch_node_1];
 	SwitchNode & switch_node_2 = *switch_nodes[i_switch_node_2];
