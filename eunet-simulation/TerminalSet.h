@@ -47,6 +47,13 @@ public:
 		}
 	}
 
+	void installUdpEchoClient(ns3::Ipv4Address const & remote_ipv4_address) {
+		for (size_t i = 0; i < terminals.size(); ++i) {
+			Terminal & terminal = *terminals[i];
+			terminal.installUdpEchoClient(remote_ipv4_address);
+		} //for
+	} //installUdpEchoClient
+
 	friend std::ostream& operator<<(std::ostream& ostream,
 			TerminalSet const & terminal_set);
 private:
@@ -92,6 +99,12 @@ public:
 
 	friend std::ostream& operator<<(std::ostream& ostream,
 			TerminalSets const & terminal_sets);
+
+	void installUdpEchoClient(ns3::Ipv4Address const & remote_ipv4_address) {
+		for (size_t i = 0; i < this->size(); ++i) {
+			this->operator [](i)->installUdpEchoClient(remote_ipv4_address);
+		} //for
+	} //installUdpEchoClient
 };
 //TermianlSets
 

@@ -11,10 +11,12 @@ Terminal::Terminal(const std::string name) :
 			ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(), discardPort));
 	pPacketSink = packet_sink_helper.Install(*this).Get(0);
 	pPacketSink->SetStartTime(ns3::Seconds(0.0));
+	pPacketSink->SetStopTime(ns3::Seconds(10.0));
 
 	ns3::UdpEchoServerHelper udp_echo_server_helper(echoPort);
 	pUdpEchoServer = udp_echo_server_helper.Install(*this).Get(0);
 	pUdpEchoServer->SetStartTime(ns3::Seconds(0.0));
+	pUdpEchoServer->SetStopTime(ns3::Seconds(10.0));
 
 //		ns3::UdpEchoClientHelper udp_echo_client_helper(*this, echoPort);
 //		udpEchoClientApplications.Add(udp_echo_client_helper.Install(*this));
@@ -25,7 +27,7 @@ Terminal::Terminal(const std::string name) :
 
 } // a constructor
 
-ns3::Ptr<ns3::Application> Terminal::installUdpEchoClientApplication(
+ns3::Ptr<ns3::Application> Terminal::installUdpEchoClient(
 		ns3::Ipv4Address const& ipv4_address, ns3::UintegerValue max_packets,
 		ns3::TimeValue interval, ns3::DataRateValue) {
 	NS_LOG_INFO("Terminal:installUdpEchoClientApplication to " << ipv4_address
@@ -36,7 +38,8 @@ ns3::Ptr<ns3::Application> Terminal::installUdpEchoClientApplication(
 	ac.Get(0)->SetAttribute("PacketSize", ns3::UintegerValue(1024));
 	ac.Get(0)->SetAttribute("MaxPackets", max_packets);
 	ac.Get(0)->SetStartTime(ns3::Seconds(0.0));
-	udpEchoClientApplications.Add(ac);
+	ac.Get(0)->SetStopTime(ns3::Seconds(10.0));
+	udpEchoClients.Add(ac);
 	return ac.Get(0);
 } // installUdpEchoClientApplication
 
@@ -55,6 +58,7 @@ ns3::Ptr<ns3::Application> Terminal::installOnOffApplication(
 	ac.Get(0)->SetAttribute("OnTime", on_time);
 	ac.Get(0)->SetAttribute("OffTime", off_time);
 	ac.Get(0)->SetStartTime(ns3::Seconds(0.0));
+	ac.Get(0)->SetStopTime(ns3::Seconds(10.0));
 	onOffApplications.Add(ac);
 	return ac.Get(0);
 } //installOnOffApplication

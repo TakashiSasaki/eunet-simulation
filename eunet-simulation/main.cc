@@ -22,8 +22,9 @@ int main(int argc, char** argv) {
 	ns3::LogComponentEnable("Terminal", ns3::LOG_LEVEL_DEBUG);
 	ns3::LogComponentEnable("Ipv4GlobalRouting", ns3::LOG_LEVEL_INFO);
 	ns3::LogComponentEnable("Simulator", ns3::LOG_LEVEL_INFO);
-	NS_LOG_INFO("main:""entered in main function.");
-	//ns3::LogComponentEnable("WifiNode", ns3::LOG_LEVEL_ALL);
+	ns3::LogComponentEnable("BridgeNetDevice", ns3::LOG_LEVEL_WARN);
+	ns3::LogComponentEnable("WifiNode", ns3::LOG_LEVEL_ERROR);
+	NS_LOG_INFO("main: entered in main function.");
 	//ns3::LogComponentEnableAll(ns3::LOG_LEVEL_ALL);
 	ns3::CommandLine cmd;
 	cmd.Parse(argc, argv);
@@ -31,10 +32,9 @@ int main(int argc, char** argv) {
 	Eunet eunet;
 
 	TerminalSets terminal_sets(350);
-	//std::cerr << terminal_sets;
 	eunet.Attach(terminal_sets);
 
-	WifiStaNodeSets wifi_sta_node_sets(350);
+	WifiStaNodeSets wifi_sta_node_sets(350, "wifiStaNodeSet");
 	eunet.Attach(wifi_sta_node_sets);
 
 	ns3::Ipv4AddressHelper ipv4_address_helper;
@@ -46,29 +46,8 @@ int main(int argc, char** argv) {
 	Terminal & internet_terminal = terminal_sets.get(
 			EunetBase::INTERNET_ROUTER_INDEX, 0);
 
-#if 0
-	terminal_sets.get(5, 0).installOnOffApplication(internet_terminal);
-	terminal_sets.get(5, 1).installOnOffApplication(internet_terminal);
-	terminal_sets.get(5, 2).installOnOffApplication(internet_terminal);
-	terminal_sets.get(5, 3).installOnOffApplication(internet_terminal);
-	terminal_sets.get(5, 4).installOnOffApplication(internet_terminal);
-	terminal_sets.get(6, 0).installOnOffApplication(internet_terminal);
-	terminal_sets.get(6, 1).installOnOffApplication(internet_terminal);
-	terminal_sets.get(6, 2).installOnOffApplication(internet_terminal);
-	terminal_sets.get(6, 3).installOnOffApplication(internet_terminal);
-	terminal_sets.get(6, 4).installOnOffApplication(internet_terminal);
-#endif
-
-	terminal_sets.get(5, 0).installUdpEchoClientApplication(internet_terminal);
-	terminal_sets.get(5, 1).installUdpEchoClientApplication(internet_terminal);
-	terminal_sets.get(5, 2).installUdpEchoClientApplication(internet_terminal);
-	terminal_sets.get(5, 3).installUdpEchoClientApplication(internet_terminal);
-	terminal_sets.get(5, 4).installUdpEchoClientApplication(internet_terminal);
-	terminal_sets.get(6, 0).installUdpEchoClientApplication(internet_terminal);
-	terminal_sets.get(6, 1).installUdpEchoClientApplication(internet_terminal);
-	terminal_sets.get(6, 2).installUdpEchoClientApplication(internet_terminal);
-	terminal_sets.get(6, 3).installUdpEchoClientApplication(internet_terminal);
-	terminal_sets.get(6, 4).installUdpEchoClientApplication(internet_terminal);
+	terminal_sets[5]->installUdpEchoClient(internet_terminal);
+	terminal_sets[6]->installUdpEchoClient(internet_terminal);
 
 	ns3::Ipv4GlobalRoutingHelper ipv4_global_routing_helper;
 
@@ -90,13 +69,13 @@ int main(int argc, char** argv) {
 	ipv4_static_routing_helper.PrintRoutingTableAllAt(ns3::Time(0.0),
 			&ipv4_static_routing_helper_output_stream_wrapper);
 
-	ns3::Simulator::Stop(ns3::Seconds(1.00));
+	ns3::Simulator::Stop(ns3::Seconds(0.01));
 	NS_LOG_INFO("main:simulator started");
 	ns3::Simulator::Run();
 	NS_LOG_INFO("main:simulator finished");
 
 	NS_LOG_INFO("main:simulator is being destroyed");
-	ns3::Simulator::Destroy();
+	//ns3::Simulator::Destroy();
 	NS_LOG_INFO("main:simulator has been destroyed");
 
 	return EXIT_SUCCESS;

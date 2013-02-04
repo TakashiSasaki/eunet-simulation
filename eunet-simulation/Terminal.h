@@ -31,19 +31,17 @@ class Terminal: public SimpleNode {
 	ns3::Ipv4InterfaceContainer ipv4InterfaceContainer;
 	ns3::Ptr<ns3::Application> pPacketSink;
 	ns3::Ptr<ns3::Application> pUdpEchoServer;
-	ns3::ApplicationContainer udpEchoClientApplications;
-	//ns3::Ptr<ns3::Application> pUdpEchoClientApplication;
+	ns3::ApplicationContainer udpEchoClients;
 	ns3::ApplicationContainer onOffApplications;
-	//ns3::Ptr<ns3::Application> pOnOffApplication;
 	static const int echoPort = 7;
 	static const int discardPort = 9;
 public:
 	Terminal(const std::string name); // a constructor
 
-	ns3::Ptr<ns3::Application> installUdpEchoClientApplication(
-			ns3::Ipv4Address const&, ns3::UintegerValue max_packets = 1,
-			ns3::TimeValue interval = ns3::Seconds(1), ns3::DataRateValue =
-					ns3::DataRate("100kbps")); // installUdpEchoClientApplication
+	ns3::Ptr<ns3::Application> installUdpEchoClient(ns3::Ipv4Address const&,
+			ns3::UintegerValue max_packets = 1, ns3::TimeValue interval =
+					ns3::Seconds(1),
+			ns3::DataRateValue = ns3::DataRate("100kbps")); // installUdpEchoClientApplication
 
 	ns3::Ptr<ns3::Application> installOnOffApplication(
 			ns3::Ipv4Address remote_address,
