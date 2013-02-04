@@ -22,6 +22,11 @@ private:
 	WifiApNodes wifi_ap_nodes;
 
 public:
+	static void PopulateGlobalRoutingTables();
+	static void DumpGlobalRoutingTableAllAt(ns3::Time);
+	static void DumpStaticRoutingTableAllAt(ns3::Time);
+
+public:
 	void Attach(TerminalSet & terminal_set, const int i_switch) {
 		for (size_t i = 0; i < terminal_set.size(); ++i) {
 			SimpleNode & terminal = terminal_set[i];

@@ -4,13 +4,17 @@
  *  Created on: Feb 2, 2013
  *      Author: sasaki
  */
-
+#include <ns3/ipv4-global-routing-helper.h>
+#include <ns3/ipv4-static-routing-helper.h>
 #include "Eunet.h"
 #include "EunetBase.h"
 #include "EunetTarumi.h"
 #include "EunetJyouhoku.h"
 #include "EunetShigenobu.h"
 #include "EunetMochida.h"
+
+#define COMPONENT_NAME "Eunet"
+NS_LOG_COMPONENT_DEFINE(COMPONENT_NAME);
 
 void Eunet::InstallCsmaLink() {
 	connectSwitchNodes(EunetBase::INTERNET_ROUTER_INDEX,
@@ -42,3 +46,29 @@ void Eunet::InstallCsmaLink() {
 	eunet_mochida.connectTier1();
 	eunet_mochida.connectTier2();
 } //InstallCsmaLink
+
+void Eunet::PopulateGlobalRoutingTables() {
+	ns3::Ipv4GlobalRoutingHelper ipv4_global_routing_helper;
+
+	NS_LOG_INFO(COMPONENT_NAME ": Starting to populate global routing table.");
+	ipv4_global_routing_helper.PopulateRoutingTables();
+	NS_LOG_INFO(COMPONENT_NAME ": Finished the population global routing table.");
+}
+
+void Eunet::DumpGlobalRoutingTableAllAt(ns3::Time time_at = ns3::Time(0.0)) {
+	ns3::Ipv4GlobalRoutingHelper ipv4_global_routing_helper;
+	NS_LOG_INFO(COMPONENT_NAME ": writing ipv4_global_routing_helper.0.txt.");
+	ns3::OutputStreamWrapper ipv4_global_routing_help_output_stream_wrapper(
+			"ipv4_global_routing_helper.0.txt", std::ios::out);
+	ipv4_global_routing_helper.PrintRoutingTableAllAt(time_at,
+			&ipv4_global_routing_help_output_stream_wrapper);
+}
+
+void Eunet::DumpStaticRoutingTableAllAt(ns3::Time time_at = ns3::Time(0.0)) {
+	NS_LOG_INFO(COMPONENT_NAME ": writing ipv4_static_routing_helper.0.txt.");
+	ns3::OutputStreamWrapper ipv4_static_routing_helper_output_stream_wrapper(
+			"ipv4_static_routing_helper.0.txt", std::ios::out);
+	ns3::Ipv4StaticRoutingHelper ipv4_static_routing_helper;
+	ipv4_static_routing_helper.PrintRoutingTableAllAt(time_at,
+			&ipv4_static_routing_helper_output_stream_wrapper);
+}
