@@ -5,8 +5,12 @@
  *      Author: sasaki
  */
 
-#include "TopologyHelper.h"
 #include <assert.h>
+#include <ns3/log.h>
+#include "TopologyHelper.h"
+
+#define COMPONENT_NAME "TopologyHelper"
+NS_LOG_COMPONENT_DEFINE(COMPONENT_NAME);
 
 TopologyHelper::TopologyHelper() {
 	// TODO Auto-generated constructor stub
@@ -20,6 +24,8 @@ TopologyHelper::~TopologyHelper() {
 void TopologyHelper::InstallCsmaLink(const ns3::Ptr<ns3::Node>& pn1,
 		ns3::NetDeviceContainer& ndc1, const ns3::Ptr<ns3::Node>& pn2,
 		ns3::NetDeviceContainer& ndc2, const uint64_t bps, const uint64_t ms) {
+	NS_LOG_INFO(COMPONENT_NAME << ": connecting " << ns3::Names::FindName(pn1) << "/device0"
+			<< " to " << ns3::Names::FindName(pn2) << "/device0" );
 	assert(ndc1.GetN()>=0);
 	assert(ndc2.GetN()>=0);
 	ns3::CsmaHelper csma_helper;
@@ -39,7 +45,7 @@ void TopologyHelper::InstallCsmaLink(SimpleNode& simple_node_1,
 	this->InstallCsmaLink(simple_node_1,
 			(ns3::NetDeviceContainer&) simple_node_1, simple_node_2,
 			(ns3::NetDeviceContainer&) simple_node_2, bps, ms);
-}
+} //InstallCsmaLink
 
 void TopologyHelper::InstallCsmaLink(const SimpleNode& simple_node_1,
 		const ns3::Ptr<ns3::Node>& pn2, ns3::NetDeviceContainer& ndc2,
@@ -47,7 +53,7 @@ void TopologyHelper::InstallCsmaLink(const SimpleNode& simple_node_1,
 	this->InstallCsmaLink(simple_node_1,
 			(ns3::NetDeviceContainer&) simple_node_1, pn2, ndc2, bps, ms);
 
-}
+} //InstallCsmaLink
 
 void TopologyHelper::InstallCsmaLink(SimpleNode& upstream_switch,
 		WifiApNode& wifi_ap_node, const uint64_t bps, const uint64_t ms) {
@@ -55,4 +61,4 @@ void TopologyHelper::InstallCsmaLink(SimpleNode& upstream_switch,
 			upstream_switch.operator ns3::NetDeviceContainer &(),
 			wifi_ap_node.operator const ns3::Ptr<ns3::Node>(),
 			wifi_ap_node.getWiredNetDeviceContainer(), bps, ms);
-}
+} //InstallCsmaLink

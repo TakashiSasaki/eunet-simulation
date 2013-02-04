@@ -72,3 +72,14 @@ void Eunet::DumpStaticRoutingTableAllAt(ns3::Time time_at = ns3::Time(0.0)) {
 	ipv4_static_routing_helper.PrintRoutingTableAllAt(time_at,
 			&ipv4_static_routing_helper_output_stream_wrapper);
 }
+
+void Eunet::Attach(TerminalSet & terminal_set, const int i_switch) {
+	for (size_t i = 0; i < terminal_set.size(); ++i) {
+		NS_LOG_INFO(COMPONENT_NAME": attaching terminal " << i << " to switch " << i_switch);
+		SimpleNode & terminal = terminal_set[i];
+		assert( 0 == terminal.countNetDevices());
+		topology_helper.InstallCsmaLink(terminal, *switch_nodes[i_switch],
+				5000000, 2);
+	}	// for
+}	//Attach
+

@@ -27,14 +27,7 @@ public:
 	static void DumpStaticRoutingTableAllAt(ns3::Time);
 
 public:
-	void Attach(TerminalSet & terminal_set, const int i_switch) {
-		for (size_t i = 0; i < terminal_set.size(); ++i) {
-			SimpleNode & terminal = terminal_set[i];
-			assert( 0 == terminal.countNetDevices());
-			topology_helper.InstallCsmaLink(terminal, *switch_nodes[i_switch],
-					5000000, 2);
-		}	// for
-	}	//Attach
+	void Attach(TerminalSet & terminal_set, const int i_switch);
 
 	void Attach(WifiStaNodeSet & wifi_sta_node_set, const int i_wifi_ap) {
 		DefaultWifiPhyHelper* p_default_wifi_phy_helper =
@@ -66,19 +59,23 @@ public:
 		return switch_nodes[i];
 	}	//getSwitch
 
-	void Attach(TerminalSets& terminal_sets) {
+	void attach(TerminalSets& terminal_sets) {
 		assert(terminal_sets.size()==switch_nodes.size());
 		for (size_t i = 0; i < terminal_sets.size(); ++i) {
 			Attach(*terminal_sets[i], i);
 		}	//for
 	}	//Attach
 
-	void Attach(WifiStaNodeSets & wifi_sta_node_sets) {
+	void attach(WifiStaNodeSets & wifi_sta_node_sets) {
 		assert(wifi_ap_nodes.size()==wifi_sta_node_sets.size());
 		for (size_t i = 0; i < wifi_sta_node_sets.size(); ++i) {
 			Attach(*wifi_sta_node_sets[i], i);
 		}	//for
 	}	//Attach
+
+	void bridgeEachSwitchNode() {
+		switch_nodes.bridgeEach();
+	}	//bridgeEachSwitchNode
 
 	Eunet() :
 			switch_nodes(350), wifi_ap_nodes(350) {
@@ -86,6 +83,7 @@ public:
 		switch_nodes.bridgeEach();
 		wifi_ap_nodes.bridgeEach();
 	}	// the default constructor
+
 	virtual ~Eunet() {
 	}	// destructor
 };

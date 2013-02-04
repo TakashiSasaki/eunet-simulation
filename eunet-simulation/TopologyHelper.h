@@ -46,7 +46,8 @@ public:
 			const uint64_t ms) {
 		InstallCsmaLink(*p_upstream_switch, *p_wifi_ap_node, bps, ms);
 
-	}
+	} //InstallCsmaLink
 };
+//TopologyHelper
 
 #endif /* TOPOLOGYHELPER_H_ */

@@ -17,12 +17,14 @@ NS_LOG_COMPONENT_DEFINE("main");
 int main(int argc, char** argv) {
 	ns3::LogComponentEnable("OnOffApplication", ns3::LOG_LEVEL_DEBUG);
 	ns3::LogComponentEnable("PacketSink", ns3::LOG_LEVEL_INFO);
-	ns3::LogComponentEnable("UdpEchoClientApplication", ns3::LOG_LEVEL_INFO);
-	ns3::LogComponentEnable("UdpEchoServerApplication", ns3::LOG_LEVEL_INFO);
+	ns3::LogComponentEnable("UdpEchoClientApplication", ns3::LOG_LEVEL_DEBUG);
+	ns3::LogComponentEnable("UdpEchoServerApplication", ns3::LOG_LEVEL_DEBUG);
 	ns3::LogComponentEnable("main", ns3::LOG_LEVEL_INFO);
+	ns3::LogComponentEnable("Eunet", ns3::LOG_LEVEL_DEBUG);
+	ns3::LogComponentEnable("TopologyHelper", ns3::LOG_LEVEL_DEBUG);
 	ns3::LogComponentEnable("Terminal", ns3::LOG_LEVEL_DEBUG);
 	ns3::LogComponentEnable("TerminalSets", ns3::LOG_LEVEL_DEBUG);
-	ns3::LogComponentEnable("Ipv4GlobalRouting", ns3::LOG_LEVEL_INFO);
+	ns3::LogComponentEnable("Ipv4GlobalRouting", ns3::LOG_LEVEL_DEBUG);
 	ns3::LogComponentEnable("Simulator", ns3::LOG_LEVEL_INFO);
 	ns3::LogComponentEnable("BridgeNetDevice", ns3::LOG_LEVEL_WARN);
 	ns3::LogComponentEnable("WifiNode", ns3::LOG_LEVEL_ERROR);
@@ -34,10 +36,12 @@ int main(int argc, char** argv) {
 	Eunet eunet;
 
 	TerminalSets terminal_sets(350);
-	eunet.Attach(terminal_sets);
+	eunet.attach(terminal_sets);
 
 	WifiStaNodeSets wifi_sta_node_sets(350, "wifiStaNodeSet");
-	eunet.Attach(wifi_sta_node_sets);
+	eunet.attach(wifi_sta_node_sets);
+
+	eunet.bridgeEachSwitchNode();
 
 	ns3::Ipv4AddressHelper ipv4_address_helper;
 	ipv4_address_helper.SetBase(ns3::Ipv4Address("133.71.0.0"),
@@ -53,7 +57,8 @@ int main(int argc, char** argv) {
 	//terminal_sets[5]->installUdpEchoClient(internet_terminal);
 	//terminal_sets.installOnOffApplication(internet_terminal);
 	//terminal_sets[5]->installOnOffApplication(lan_terminal);
-	terminal_sets.get(5,0).installOnOffApplication(lan_terminal);
+	terminal_sets.get(5, 1).installOnOffApplication(lan_terminal);
+	terminal_sets.get(5, 2).installOnOffApplication(lan_terminal);
 
 	ns3::Simulator::Stop(ns3::Seconds(10.0));
 	NS_LOG_INFO("main: simulator started");
