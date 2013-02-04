@@ -29,8 +29,8 @@
 
 class Terminal: public SimpleNode {
 	ns3::Ipv4InterfaceContainer ipv4InterfaceContainer;
-	ns3::Ptr<ns3::Application> pPacketSinkApplication;
-	ns3::Ptr<ns3::Application> pUdpEchoServerApplication;
+	ns3::Ptr<ns3::Application> pPacketSink;
+	ns3::Ptr<ns3::Application> pUdpEchoServer;
 	ns3::ApplicationContainer udpEchoClientApplications;
 	//ns3::Ptr<ns3::Application> pUdpEchoClientApplication;
 	ns3::ApplicationContainer onOffApplications;
@@ -38,42 +38,12 @@ class Terminal: public SimpleNode {
 	static const int echoPort = 7;
 	static const int discardPort = 9;
 public:
-	Terminal(const std::string name) :
-			SimpleNode(name) {
-
-		ns3::PacketSinkHelper packet_sink_helper("ns3::UdpSocketFactory",
-				ns3::InetSocketAddress(ns3::Ipv4Address::GetAny(),
-						discardPort));
-		pPacketSinkApplication = packet_sink_helper.Install(*this).Get(0);
-		pPacketSinkApplication->SetStartTime(ns3::Seconds(0.0));
-
-		ns3::UdpEchoServerHelper udp_echo_server_helper(echoPort);
-		pUdpEchoServerApplication = udp_echo_server_helper.Install(*this).Get(
-				0);
-		pUdpEchoServerApplication->SetStartTime(ns3::Seconds(0.0));
-
-//		ns3::UdpEchoClientHelper udp_echo_client_helper(*this, echoPort);
-//		udpEchoClientApplications.Add(udp_echo_client_helper.Install(*this));
-//
-//		ns3::OnOffHelper on_off_helper("ns3::UdpSocketFactory",
-//				ns3::Address(ns3::InetSocketAddress(*this, discardPort)));
-//		onOffApplications.Add(on_off_helper.Install(*this));
-
-	} // a constructor
+	Terminal(const std::string name); // a constructor
 
 	ns3::Ptr<ns3::Application> installUdpEchoClientApplication(
 			ns3::Ipv4Address const&, ns3::UintegerValue max_packets = 1,
 			ns3::TimeValue interval = ns3::Seconds(1), ns3::DataRateValue =
-					ns3::DataRate("100kbps")) {
-		ns3::UdpEchoClientHelper udp_echo_client_helper(*this, echoPort);
-		ns3::ApplicationContainer ac = udp_echo_client_helper.Install(*this);
-		ac.Get(0)->SetAttribute("Interval", interval);
-		ac.Get(0)->SetAttribute("PacketSize", ns3::UintegerValue(1024));
-		ac.Get(0)->SetAttribute("MaxPackets", max_packets);
-		ac.Get(0)->SetStartTime(ns3::Seconds(0.0));
-		udpEchoClientApplications.Add(ac);
-		return ac.Get(0);
-	} // installUdpEchoClientApplication
+					ns3::DataRate("100kbps")); // installUdpEchoClientApplication
 
 	ns3::Ptr<ns3::Application> installOnOffApplication(
 			ns3::Ipv4Address remote_address,
@@ -82,20 +52,7 @@ public:
 			ns3::UintegerValue max_bytes = 100000000, ns3::StringValue on_time =
 					ns3::StringValue("ns3::ConstantRandomVariable[Constant=5]"),
 			ns3::StringValue off_time = ns3::StringValue(
-					"ns3::ConstantRandomVariable[Constant=0]")) {
-		ns3::OnOffHelper on_off_helper("ns3::UdpSocketFactory",
-				ns3::Address(
-						ns3::InetSocketAddress(remote_address, discardPort)));
-		ns3::ApplicationContainer ac = on_off_helper.Install(*this);
-		ac.Get(0)->SetAttribute("DataRate", data_rate_value);
-		ac.Get(0)->SetAttribute("PacketSize", packet_size);
-		ac.Get(0)->SetAttribute("MaxBytes", max_bytes);
-		ac.Get(0)->SetAttribute("OnTime", on_time);
-		ac.Get(0)->SetAttribute("OffTime", off_time);
-		ac.Get(0)->SetStartTime(ns3::Seconds(0.0));
-		onOffApplications.Add(ac);
-		return ac.Get(0);
-	} //installOnOffApplication
+					"ns3::ConstantRandomVariable[Constant=0]")); //installOnOffApplication
 
 	virtual ~Terminal() {
 	} // destructor

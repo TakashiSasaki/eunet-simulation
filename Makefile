@@ -41,7 +41,7 @@ run-sandbox:
 
 run-debug:
 	(ulimit -m 1000000)
-	(cd ..; ./waf --jobs=8 --run eunet-simulation --command-template="gdb --args %s")
+	(cd ..; ./waf --jobs=8 --run eunet-simulation --command-template="gdb -ex run --args %s")
 
 run:
 	(ulimit -m 1000000)
