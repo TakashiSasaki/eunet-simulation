@@ -18,6 +18,7 @@
 #include <ns3/ipv4-static-routing-helper.h>
 #include <ns3/ipv4-route.h>
 #include <ns3/ipv4-static-routing.h>
+#include <ns3/ipv4-address-generator.h>
 #include <ns3/udp-client-server-helper.h>
 #include <ns3/udp-echo-helper.h>
 #include <ns3/udp-echo-server.h>
@@ -59,12 +60,7 @@ public:
 	virtual ~Terminal() {
 	} // destructor
 
-	void Assign(ns3::Ipv4AddressHelper& ipv4_address_helper) {
-		ipv4InterfaceContainer = ipv4_address_helper.Assign(netDeviceContainer);
-		assert(ipv4InterfaceContainer.GetN()==netDeviceContainer.GetN());
-		assert(1==ipv4InterfaceContainer.GetN());
-		assert(1==netDeviceContainer.GetN());
-	} //Assign
+	void assign(ns3::Ipv4AddressHelper & ipv4_address_helper);
 
 	operator ns3::Ipv4Address() const {
 		return ipv4InterfaceContainer.GetAddress(0, 0);

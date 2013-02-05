@@ -74,3 +74,11 @@ ns3::Ptr<ns3::Application> Terminal::installOnOffApplication(
 	assert(onOffApplications.GetN()==n_applications_before+1);
 	return ac.Get(0);
 } //installOnOffApplication
+
+void Terminal::assign(ns3::Ipv4AddressHelper & ipv4_address_helper) {
+	ipv4InterfaceContainer = ipv4_address_helper.Assign(netDeviceContainer);
+	NS_LOG_DEBUG(COMPONENT_NAME ": assigning " << ipv4InterfaceContainer.GetAddress(0,0));
+	assert(ipv4InterfaceContainer.GetN()==netDeviceContainer.GetN());
+	assert(1==ipv4InterfaceContainer.GetN());
+	assert(1==netDeviceContainer.GetN());
+} //Assign

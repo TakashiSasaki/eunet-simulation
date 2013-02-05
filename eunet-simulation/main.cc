@@ -8,10 +8,11 @@
 #include <ns3/ipv4-global-routing-helper.h>
 #include <ns3/log.h>
 #include <ns3/packet.h>
-#include "ns3/object.h"
-#include "ns3/uinteger.h"
-#include "ns3/traced-value.h"
-#include "ns3/trace-source-accessor.h"
+#include <ns3/object.h>
+#include <ns3/uinteger.h>
+#include <ns3/traced-value.h>
+#include <ns3/trace-source-accessor.h>
+#include <ns3/ipv4-address-generator.h>
 #include "TerminalSet.h"
 #include "WifiStaNodeSet.h"
 #include "Eunet.h"
@@ -60,10 +61,25 @@ int main(int argc, char** argv) {
 
 	eunet.bridgeEachSwitchNode();
 
+#if 0
+	ns3::Ipv4AddressGenerator::Init(ns3::Ipv4Address("33.71.0.0"),
+			ns3::Ipv4Mask("/25"));
+	ns3::Ipv4AddressGenerator::NextAddress(ns3::Ipv4Mask("/25")).Print(
+			std::cerr);
+	ns3::Ipv4AddressGenerator::NextNetwork(ns3::Ipv4Mask("/25")).Print(
+			std::cerr);
+	//ns3::Ipv4AddressGenerator::Init(
+	//		ns3::Ipv4AddressGenerator::NextNetwork(ns3::Ipv4Mask("/25")),
+	//		ns3::Ipv4Mask("/25"));
+	ns3::Ipv4AddressGenerator::NextAddress(ns3::Ipv4Mask("/25")).Print(
+			std::cerr);
+#endif
+
+	terminal_sets.assign(ns3::Ipv4Address("133.71.0.0"), ns3::Ipv4Mask("/26"));
+
 	ns3::Ipv4AddressHelper ipv4_address_helper;
-	ipv4_address_helper.SetBase(ns3::Ipv4Address("133.71.0.0"),
-			ns3::Ipv4Mask("255.255.0.0"));
-	terminal_sets.assign(ipv4_address_helper);
+	ipv4_address_helper.SetBase(ns3::Ipv4Address("133.71.128.0"),
+			ns3::Ipv4Mask("/17"));
 	wifi_sta_node_sets.assign(ipv4_address_helper);
 
 	Terminal & internet_terminal = terminal_sets.get(

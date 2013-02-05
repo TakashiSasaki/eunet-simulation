@@ -16,6 +16,8 @@
 #include <ns3/net-device-container.h>
 #include <ns3/names.h>
 #include <ns3/log.h>
+#include <ns3/ipv4-address-generator.h>
+#include <ns3/ipv4-address-helper.h>
 #include "Terminal.h"
 
 typedef ns3::Ptr<Terminal> TerminalP;
@@ -41,11 +43,11 @@ public:
 	}
 	virtual ~TerminalSet() {
 	}
-	void Assign(ns3::Ipv4AddressHelper& ipv4_address_helper) {
+	void Assign(ns3::Ipv4AddressHelper & ipv4_address_helper) {
 		for (size_t i = 0; i < terminals.size(); ++i) {
-			terminals[i]->Assign(ipv4_address_helper);
-		}
-	}
+			terminals[i]->assign(ipv4_address_helper);
+		} //for
+	} ////Assign
 
 	void installUdpEchoClient(ns3::Ipv4Address const & remote_ipv4_address) {
 		assert(0<terminals.size());
@@ -65,6 +67,7 @@ public:
 
 	friend std::ostream& operator<<(std::ostream& ostream,
 			TerminalSet const & terminal_set);
+
 private:
 	TerminalSet(const TerminalSet&);
 	TerminalSet operator=(const TerminalSet&);
@@ -99,6 +102,19 @@ public:
 		} //for
 	} //Assign
 
+	void assign(ns3::Ipv4Address const & ipv4_address,
+			ns3::Ipv4Mask const &ipv4_mask) {
+		ns3::Ipv4AddressGenerator::Init(ipv4_address, ipv4_mask);
+		for (size_t i = 0; i < size(); ++i) {
+			TerminalSetP x = (*this)[i];
+			ns3::Ipv4AddressHelper ipv4_address_helper(
+					ns3::Ipv4AddressGenerator::GetNetwork(ipv4_mask), ipv4_mask,
+					ns3::Ipv4Address("0.0.0.1"));
+			x->Assign(ipv4_address_helper);
+			ns3::Ipv4AddressGenerator::NextNetwork(ipv4_mask);
+		} //for
+	} //assign
+
 	Terminal & get(const int i_terminal_set, const int i_terminal) {
 		TerminalSetP p_terminal_set = (*this)[i_terminal_set];
 		Terminal & terminal = (*p_terminal_set)[i_terminal];
@@ -110,6 +126,7 @@ public:
 
 	void installUdpEchoClient(ns3::Ipv4Address const & remote_ipv4_address);
 	void installOnOffApplication(ns3::Ipv4Address const & remote_ipv4_address);
+
 };
 //TermianlSets
 
